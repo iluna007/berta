@@ -1,15 +1,16 @@
 const one_day = 1440;
 
 const config = {
-  title: "ukraine",
-  display_title: "Civilian Harm\nin Ukraine",
-  SERVER_ROOT: "https://bellingcat-embeds.ams3.cdn.digitaloceanspaces.com/production/ukr",
-  EVENTS_EXT: "/timemap/events.json",
-  SOURCES_EXT: "/timemap/sources.json",
-  ASSOCIATIONS_EXT: "/timemap/associations.json",
-  API_DATA: "https://bellingcat-embeds.ams3.cdn.digitaloceanspaces.com/production/ukr/timemap/api.json",
+  title: "Berta",
+  display_title: "Berta",
+  SERVER_ROOT: "",
+  EVENTS_EXT: "public/data/events.json",
+  SOURCES_EXT: "public/data/sources.json",
+  ASSOCIATIONS_EXT: "public/data/associations.json",
+  API_DATA: "",
   MAPBOX_TOKEN:
     "pk.eyJ1IjoiYmVsbGluZ2NhdC1tYXBib3giLCJhIjoiY2tleW0wbWliMDA1cTJ5bzdkbTRraHgwZSJ9.GJQkjPzj8554VhR5SPsfJg",
+    //"pk.eyJ1IjoiaWtlcmx1bmEiLCJhIjoiY203NjMwZHptMHAzaDJrcXlrbnNuMHJlZiJ9.hkoRlM6gQ-BflcGjpI40GA",
   // MEDIA_EXT: "/api/media",
   DATE_FMT: "M/D/YYYY",
   TIME_FMT: "HH:mm",
@@ -18,11 +19,11 @@ const config = {
     app: {
       debug: true,
       map: {
-        // anchor: [49.02421913, 31.43836003],
-        anchor: [48.3326259, 33.19951447],
+        anchor: [14.8, -86.6],
+        //anchor: [48.3326259, 33.19951447],
         maxZoom: 18,
         minZoom: 4,
-        startZoom: 6,
+        startZoom: 8,
         // maxBounds: []
       },
       cluster: { radius: 50, minZoom: 5, maxZoom: 12 },
@@ -140,12 +141,15 @@ const config = {
       },
       tiles: {
         current: "bellingcat-mapbox/cl0qnou2y003m15s8ieuyhgsy",
+        //current: "ikerluna/cmf6r44f700wq01pl39994oti",
+        //default: "mapbox://styles/ikerluna/cmf6r44f700wq01pl39994oti",
         default: "bellingcat-mapbox/cl0qnou2y003m15s8ieuyhgsy",
         satellite: "bellingcat-mapbox/cl1win2vp003914pdhateva6p"
       },
     },
     features: {
       USE_CATEGORIES: false,
+      USE_NARRATIVES: false,
       CATEGORIES_AS_FILTERS: false,
       COLOR_BY_CATEGORY: false,
       COLOR_BY_ASSOCIATION: true,
@@ -160,6 +164,7 @@ const config = {
       USE_SATELLITE_OVERLAY_TOGGLE: true,
       USE_SEARCH: false,
       USE_SITES: false,
+      USE_GEOJSON_LAYERS: true,
       ZOOM_TO_TIMEFRAME_ON_TIMELINE_CLICK: one_day,
       FETCH_EXTERNAL_MEDIA: false,
       USE_MEDIA_CACHE: false,
@@ -167,6 +172,10 @@ const config = {
       NARRATIVE_STEP_STYLES: false,
       CUSTOM_EVENT_FIELDS: [],
     },
+    GEOJSON_LAYERS: [
+    "public/geojson/Rio Gualcarque.geojson",
+    "public/geojson/Poligonos_Predios_Sisimetera.geojson"
+    ],
   },
 };
 

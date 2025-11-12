@@ -45,6 +45,8 @@ class Map extends Component {
     this.getClusterChildren = this.getClusterChildren.bind(this);
     this.svgRef = createRef();
     this.map = null;
+    window.__LEAFLET_MAP__ = this.map;
+
     this.superclusterIndex = null;
     this.tileLayer = null;
     this.state = {
@@ -57,12 +59,30 @@ class Map extends Component {
   }
 
   componentDidMount() {
-    if (this.map === null) {
-      this.initializeMap();
-      this.initializeTileLayer();
-    }
-    window.dispatchEvent(new Event("resize"));
+  if (this.map === null) {
+    // Inicializa el mapa Leaflet (posición, zoom, bounds, etc.)
+    this.initializeMap();
+
+    // Añade el mapa base inicial (por defecto "current" desde config)
+    this.baseLayer = this.addBaseMap(this.map, "current");
+
+    // Guarda el estilo actual (para poder alternar luego)
+    this.currentStyle = "current";
+
+    // Agrega un listener simple al botón o evento de alternancia
+    // (Puedes borrar esta parte si usas un botón en Toolbar.jsx)
+    window.addEventListener("toggleMapStyle", () => {
+      const next = this.currentStyle === "current" ? "satellite" : "current";
+      this.map.removeLayer(this.baseLayer);
+      this.baseLayer = this.addBaseMap(this.map, next);
+      this.currentStyle = next;
+    });
   }
+
+  // Ajusta el tamaño del mapa al cargar
+  window.dispatchEvent(new Event("resize"));
+}
+
 
   componentDidUpdate(prevProps) {
     if (prevProps.ui.tile !== this.props.ui.tile && this.map) {
@@ -106,21 +126,22 @@ class Map extends Component {
     }
   }
 
-  getTileUrl(tile) {
-    if (
-      supportedMapboxMap.indexOf(this.props.ui.tiles) !== -1 &&
-      config.MAPBOX_TOKEN &&
-      config.MAPBOX_TOKEN !== defaultToken
-    ) {
-      return `http://a.tiles.mapbox.com/v4/mapbox.${tile}/{z}/{x}/{y}@2x.png?access_token=${config.MAPBOX_TOKEN}`;
-    } else if (config.MAPBOX_TOKEN && config.MAPBOX_TOKEN !== defaultToken) {
-      return `https://api.mapbox.com/styles/v1/${tile}/tiles/256/{z}/{x}/{y}@2x?access_token=${config.MAPBOX_TOKEN}`;
-      // `http://a.tiles.mapbox.com/styles/v1/${this.props.ui.tiles}/tiles/{z}/{x}/{y}?access_token=${config.MAPBOX_TOKEN}`
-    } else {
-      return "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
-      // "https://api.maptiler.com/maps/bright/256/{z}/{x}/{y}.png?key="
-    }
-  }
+  getTileUrl(styleId) {
+  return `https://api.mapbox.com/styles/v1/${styleId}/tiles/{z}/{x}/{y}?access_token=${config.MAPBOX_TOKEN}`;
+}
+
+addBaseMap(map, styleKey = "current") {
+  const styleId = config.store.ui.tiles[styleKey];
+  const tileLayer = L.tileLayer(this.getTileUrl(styleId), {
+    tileSize: 512,
+    zoomOffset: -1,
+    attribution:
+      '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  });
+  tileLayer.addTo(map);
+  return tileLayer;
+}
+
 
   /**
    * Initialize the base tile layer based on the ui state
@@ -153,6 +174,12 @@ class Map extends Component {
       .setMinZoom(mapConfig.minZoom)
       .setMaxZoom(mapConfig.maxZoom)
       .setMaxBounds(mapConfig.maxBounds);
+
+
+    // Make the map globally accessible
+    window.__LEAFLET_MAP__ = map;
+    console.log("✅ Leaflet map initialized:", map);
+
     // This assumes your map is the constant 'map'
     map.attributionControl.addAttribution(
       `<a href="http://mapbox.com/about/maps" class='mapbox-logo' target="_blank">Mapbox</a>© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>`

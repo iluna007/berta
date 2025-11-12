@@ -5,6 +5,11 @@ import * as actions from "../actions";
 import * as selectors from "../selectors";
 import config from "../../config";
 
+
+//Agregar capas de GeoJSON
+import GeoJsonLayers from "./controls/GeoJsonLayers";
+
+
 import { Tabs, TabList, TabPanel } from "react-tabs";
 import FilterListPanel from "./controls/FilterListPanel";
 import CategoriesListPanel from "./controls/CategoriesListPanel";
@@ -249,6 +254,34 @@ class Toolbar extends Component {
         {features.USE_ASSOCIATIONS ? this.renderToolbarFilterPanel() : null}
         {features.USE_SHAPES ? this.renderToolbarShapePanel() : null}
         {features.USE_DOWNLOAD ? this.renderToolbarDownloadPanel() : null}
+        
+        
+        {features.USE_GEOJSON_LAYERS && ( //AGREGAR PANEL DE CAPAS GEOJSON
+        <TabPanel>
+          {window.__LEAFLET_MAP__ ? (
+            <GeoJsonLayers
+              map={window.__LEAFLET_MAP__}
+              layersConfig={[
+                { label: "Río Gualcarque", url: "/geojson/Rio Gualcarque.geojson", color: "#0077be" },
+                { label: "Antenas Telefónicas", url: "/geojson/Antenas Telefonicas.geojson", color: "#000000" },
+                { label: "Impronta Bertha Cáceres", url: "/geojson/Impronta_Bertha Isabel Caceres Flores.geojson", color: "#4caf50" },
+                { label: "Impronta Oscar Aroldo", url: "/geojson/Impronta_Oscar Aroldo.geojson", color: "#ff0000" },
+                { label: "Impronta Douglas, Andys, Samir", url: "/geojson/Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson", color: "#ff9800" },
+                { label: "Predios Cuchilla El Naranjal", url: "/geojson/Poligonos_Predios_Cuchilla El Naranjal.geojson", color: "#f44336" },
+                { label: "Predios La Vega", url: "/geojson/Poligonos_Predios_La Vega.geojson", color: "#2196f3" },
+                { label: "Predios Las Lagunas", url: "/geojson/Poligonos_Predios_Las Lagunas.geojson", color: "#009688" },
+                { label: "Predios Río Blanco", url: "/geojson/Poligonos_Predios_Rio Blanco.geojson", color: "#e91e63" },
+                { label: "Predios Sisimetera", url: "/geojson/Poligonos_Predios_Sisimetera.geojson", color: "#3f51b5" }
+              ]}
+            />
+          ) : (
+            <p style={{ padding: "1rem" }}>⏳ Esperando inicialización del mapa...</p>
+          )}
+        </TabPanel>
+      )}
+
+
+
       </div>
     );
   }
@@ -296,6 +329,8 @@ class Toolbar extends Component {
     );
     const shapesIdx = filtersIdx + features.USE_SHAPES;
     const downloadIdx = shapesIdx + features.USE_DOWNLOAD;
+    
+
 
     return (
       <div className="toolbar">
@@ -335,6 +370,12 @@ class Toolbar extends Component {
                   panels.download.icon
                 )
               : null}
+              {features.USE_GEOJSON_LAYERS &&
+                this.renderToolbarTab(
+                  downloadIdx + 1,
+                  "Capas",
+                  "layers"
+                )}  
             {features.USE_FULLSCREEN && (
               <FullscreenToggle language={this.props.language} />
             )}
@@ -387,7 +428,13 @@ function mapStateToProps(state) {
   return {
     filters: selectors.getFilters(state),
     categories: selectors.getCategories(state),
-    narratives: selectors.selectNarratives(state),
+    narratives: selectors.selectNarratives(state) || [
+      { id: "test1", desc: "Ejemplo de narrativa de prueba" },
+      { id: "test2", desc: "Segunda narrativa de ejemplo" }
+    ],
+
+
+
     shapes: selectors.getShapes(state),
     language: state.app.language,
     toolbarCopy: state.app.toolbar,

@@ -1,0 +1,4437 @@
+[
+    {
+        "sources": [
+            "src2",
+            "src3",
+            "src4",
+            "src5",
+            "src6"
+        ],
+        "id": "IOHGWA",
+        "description": "Houses heavily damaged by a strike.",
+        "date": "02/28/2025",
+        "location": "Odessa",
+        "latitude": "46.325673",
+        "longitude": "30.628717",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src2",
+            "src7",
+            "src6"
+        ],
+        "id": "ZNDX3A",
+        "description": "Truck stop damaged by a strike.",
+        "date": "02/28/2025",
+        "location": "Odessa",
+        "latitude": "46.316885",
+        "longitude": "30.636955",
+        "graphic": "FALSE",
+        "associations": [
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src8"
+        ],
+        "id": "KPJG21",
+        "description": "An educational center damaged after reported UAV attacks in the region\n",
+        "date": "12/19/2023",
+        "location": "Komyshany district, Kherson",
+        "latitude": "46.62035",
+        "longitude": "32.47516",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src9",
+            "src10",
+            "src11"
+        ],
+        "id": "6AW7TC",
+        "description": "A lyceum reported to be damaged after a drone strike.",
+        "date": "03/06/2024",
+        "location": "Martove, Kharkiv Region\n\n",
+        "latitude": "49.935303",
+        "longitude": "36.956315",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src12"
+        ],
+        "id": "TEK6WF",
+        "description": "A 7-storey building damaged after reported strike.",
+        "date": "01/03/2025",
+        "location": "Kherson",
+        "latitude": "46.643586",
+        "longitude": "32.588995",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src13",
+            "src14",
+            "src15",
+            "src16",
+            "src17"
+        ],
+        "id": "H2ILT3",
+        "description": "A building damaged in a shelling of a city's residential area.",
+        "date": "09/26/2024",
+        "location": "Kramatorsk, Donetsk region\n\n",
+        "latitude": "48.73332",
+        "longitude": "37.605631",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src18"
+        ],
+        "id": "7141U8",
+        "description": "A building of a mine damaged after a reported strike.",
+        "date": "08/20/2024",
+        "location": "Myrnohrad, Donetsk region",
+        "latitude": "48.26737",
+        "longitude": "37.290798",
+        "graphic": "FALSE",
+        "associations": [
+            "asc4"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src19",
+            "src20",
+            "src21",
+            "src22",
+            "src23",
+            "src24",
+            "src25",
+            "src26",
+            "src27"
+        ],
+        "id": "3J557P",
+        "description": "Severely damaged children's clinic.",
+        "date": "02/19/2025",
+        "location": "Odesa\n\n",
+        "latitude": "46.398528",
+        "longitude": "30.712343",
+        "graphic": "FALSE",
+        "associations": [
+            "asc5"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src28",
+            "src29",
+            "src30",
+            "src31"
+        ],
+        "id": "E6EOT8",
+        "description": "A one year old killed by a FPV drone",
+        "date": "07/09/2025",
+        "location": "Pravdyne, Kherson Oblast\n",
+        "latitude": "46.736543",
+        "longitude": "32.190167",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src32"
+        ],
+        "id": "53S1IF",
+        "description": "School damaged following a reported strike",
+        "date": "06/24/2025",
+        "location": "Dnipro",
+        "latitude": "48.480676",
+        "longitude": "34.94569",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src33"
+        ],
+        "id": "2D1UIW",
+        "description": "Damaged flat following a reported strike. ",
+        "date": "12/17/2024",
+        "location": "Horlivka, Donetsk region",
+        "latitude": "48.337642",
+        "longitude": "37.97702",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src34"
+        ],
+        "id": "1DHTO1",
+        "description": "Damaged residential building. ",
+        "date": "12/17/2024",
+        "location": "Pokrovsk, Donetsk region",
+        "latitude": "48.262777",
+        "longitude": "37.18492",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src35"
+        ],
+        "id": "D2OXJS",
+        "description": "At least one person reportedly killed following a strike on a residential area. ",
+        "date": "12/24/2024",
+        "location": "Kryvyi Rih",
+        "latitude": "47.902076",
+        "longitude": "33.338989",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src36",
+            "src37",
+            "src38"
+        ],
+        "id": "S4TLR4",
+        "description": "Damaged building following a reported strike. ",
+        "date": "01/05/2025",
+        "location": "Lyman, Donetsk region",
+        "latitude": "48.96463",
+        "longitude": "37.822554",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src39",
+            "src40"
+        ],
+        "id": "ZU3AAG",
+        "description": "What appears to be a school is damaged following a reported strike. ",
+        "date": "01/05/2025",
+        "location": "Kherson",
+        "latitude": "46.645709",
+        "longitude": "32.629831",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src41",
+            "src42",
+            "src43"
+        ],
+        "id": "X6BLR3",
+        "description": "Damaged tractor following a reported strike. ",
+        "date": "01/05/2025",
+        "location": "Belgorod region",
+        "latitude": "50.407241",
+        "longitude": "36.466165",
+        "graphic": "FALSE",
+        "associations": [
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src44",
+            "src45",
+            "src46",
+            "src47",
+            "src48"
+        ],
+        "id": "97BV6P",
+        "description": "Damaged residential building. ",
+        "date": "01/04/2025",
+        "location": "Shakhtarsky, Pokrovsk",
+        "latitude": "48.259938",
+        "longitude": "37.185827",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src49"
+        ],
+        "id": "83WJ6J",
+        "description": "Damaged vehicle following a reported strike. ",
+        "date": "01/04/2025",
+        "location": "Shebekino, Belgorod region",
+        "latitude": "50.362623",
+        "longitude": "36.84912",
+        "graphic": "FALSE",
+        "associations": [
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src50",
+            "src51",
+            "src52",
+            "src53"
+        ],
+        "id": "D6VDKS",
+        "description": "Damaged residential building following a reported strike. ",
+        "date": "01/04/2025",
+        "location": "Chernihiv",
+        "latitude": "51.535833",
+        "longitude": "31.308611",
+        "graphic": "TRUE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src54",
+            "src55",
+            "src56"
+        ],
+        "id": "7QJPTB",
+        "description": "A residential building on fire following a reported strike. ",
+        "date": "01/07/2025",
+        "location": "Semenivka, Chernihiv region",
+        "latitude": "52.184066",
+        "longitude": "32.581904",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src57"
+        ],
+        "id": "F66EN4",
+        "description": "Damaged residential building. ",
+        "date": "01/21/2025",
+        "location": "Pokrovsk, Donetsk region",
+        "latitude": "48.279397",
+        "longitude": "37.175616",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src58",
+            "src59",
+            "src60",
+            "src61",
+            "src62"
+        ],
+        "id": "58NCZ0",
+        "description": "Multiple vehicles and a building damaged following a reported strike. ",
+        "date": "01/28/2025",
+        "location": "Odesa",
+        "latitude": "46.42267",
+        "longitude": "30.767645",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src63",
+            "src64",
+            "src65",
+            "src66",
+            "src67"
+        ],
+        "id": "CJ4G1J",
+        "description": "Two women killed following a reported strike. ",
+        "date": "01/28/2025",
+        "location": "Mykolaiv",
+        "latitude": "46.870376",
+        "longitude": "32.059475",
+        "graphic": "TRUE",
+        "associations": [
+            "asc4"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src68",
+            "src69"
+        ],
+        "id": "39MZ78",
+        "description": "Damaged shop following a reported strike. ",
+        "date": "02/04/2025",
+        "location": "Horlivka, Donetsk region",
+        "latitude": "48.337464",
+        "longitude": "37.969206",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src70",
+            "src71"
+        ],
+        "id": "WXJY9P",
+        "description": "Five people killed following a reported strike. ",
+        "date": "02/04/2025",
+        "location": "Izium, Kharkiv region",
+        "latitude": "49.191923",
+        "longitude": "37.278356",
+        "graphic": "TRUE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src72",
+            "src73"
+        ],
+        "id": "YU2XGS",
+        "description": "Multiple damaged vehicles following a reported strike. ",
+        "date": "02/08/2025",
+        "location": "Makeevka, Donetsk region",
+        "latitude": "48.042456",
+        "longitude": "37.958979",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1",
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src74",
+            "src75",
+            "src76",
+            "src77"
+        ],
+        "id": "VZUDRT",
+        "description": "A flat in a multi-storey residential building is on fire following a reported strike. ",
+        "date": "02/18/2025",
+        "location": "Dolynska , Kirovohrad region",
+        "latitude": "48.114532",
+        "longitude": "32.780564",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src78",
+            "src79",
+            "src80"
+        ],
+        "id": "E3MIHT",
+        "description": "A shop and a vehicle damaged following a reported strike.",
+        "date": "02/18/2025",
+        "location": "Makeevka, Donetsk region",
+        "latitude": "48.040522",
+        "longitude": "37.963793",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src81",
+            "src82"
+        ],
+        "id": "AWJJTF",
+        "description": "Residential buildings damaged following a reported strike. ",
+        "date": "02/25/2025",
+        "location": "Sumy",
+        "latitude": "50.907095",
+        "longitude": "34.825634",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src83"
+        ],
+        "id": "5CXCWW",
+        "description": "Damaged hospital following a reported strike. ",
+        "date": "03/01/2025",
+        "location": "Kharkiv",
+        "latitude": "50.007257",
+        "longitude": "36.235007",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src84",
+            "src85"
+        ],
+        "id": "7TBLMY",
+        "description": "A building on fire following a reported strike. ",
+        "date": "03/11/2025",
+        "location": "Shebekino, Belgorod region",
+        "latitude": "50.41277",
+        "longitude": "36.915279",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src86"
+        ],
+        "id": "J2SD2W",
+        "description": "What appears to be a residential building is on fire following a reported strike.",
+        "date": "03/16/2025",
+        "location": "Horlivka, Donetsk region",
+        "latitude": "48.338767",
+        "longitude": "37.965956",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src87"
+        ],
+        "id": "34RDSC",
+        "description": "Extensive damage to an area in the village following a reported strike.",
+        "date": "03/16/2025",
+        "location": "Ivanopillya, Donetsk region",
+        "latitude": "48.473583",
+        "longitude": "37.763972",
+        "graphic": "FALSE",
+        "associations": [
+            "asc8"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src88"
+        ],
+        "id": "2K5ESC",
+        "description": "What appears to be a shop is damaged following a reported strike.",
+        "date": "03/16/2025",
+        "location": "Pokrovsk, Donetsk region",
+        "latitude": "48.276014",
+        "longitude": "37.168612",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src89"
+        ],
+        "id": "EXOYPY",
+        "description": "Damaged school following a reported strike.",
+        "date": "03/15/2025",
+        "location": "Bohodukhiv, Kharkiv region",
+        "latitude": "50.159285",
+        "longitude": "35.51538",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src90",
+            "src91"
+        ],
+        "id": "C7R886",
+        "description": "A school building severely damaged following a reported strike.",
+        "date": "03/18/2025",
+        "location": "Grafovka, Belgorod region",
+        "latitude": "50.919239",
+        "longitude": "35.427082",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src92"
+        ],
+        "id": "K9WIH6",
+        "description": "A drone on fire on the ground next to a school.",
+        "date": "03/18/2025",
+        "location": "Kyiv",
+        "latitude": "50.47378",
+        "longitude": "30.669707",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src93",
+            "src94"
+        ],
+        "id": "3INL8C",
+        "description": "Damaged administrative building and a house of culture following a reported strike.",
+        "date": "03/25/2025",
+        "location": "Dudchany, Kherson region",
+        "latitude": "47.190408",
+        "longitude": "33.774384",
+        "graphic": "FALSE",
+        "associations": [
+            "asc9",
+            "asc10"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src95"
+        ],
+        "id": "P6EM4Q",
+        "description": "A multi-storey residential building damaged following a reported attack.",
+        "date": "04/01/2025",
+        "location": "Pokrovsk, Donetsk region",
+        "latitude": "48.269677",
+        "longitude": "37.179795",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src96",
+            "src97",
+            "src98",
+            "src99",
+            "src100",
+            "src101",
+            "src102",
+            "src103",
+            "src101",
+            "src102",
+            "src103"
+        ],
+        "id": "HLNWEE",
+        "description": "House of culture damaged following a reported strike.",
+        "date": "04/01/2025",
+        "location": "Krasnopillya, Sumy region",
+        "latitude": "50.771562",
+        "longitude": "35.256937",
+        "graphic": "FALSE",
+        "associations": [
+            "asc10"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src104",
+            "src105",
+            "src106",
+            "src107",
+            "src108",
+            "src109",
+            "src110",
+            "src111",
+            "src112",
+            "src107",
+            "src113",
+            "src108",
+            "src114",
+            "src109",
+            "src115",
+            "src110",
+            "src116",
+            "src111",
+            "src117",
+            "src112",
+            "src113",
+            "src114",
+            "src115",
+            "src116",
+            "src117"
+        ],
+        "id": "W4DR1R",
+        "description": "Heavily damaged residential buildings following a reported strike.",
+        "date": "04/08/2025",
+        "location": "Krasnopillya, Sumy region",
+        "latitude": "50.775975",
+        "longitude": "35.251465",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src118",
+            "src119",
+            "src120",
+            "src121"
+        ],
+        "id": "FSSSCK",
+        "description": "Heavy smoke following a reported strike.",
+        "date": "04/15/2025",
+        "location": "Rylsk, Kursk region",
+        "latitude": "51.571647",
+        "longitude": "34.689563",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src122"
+        ],
+        "id": "579P2O",
+        "description": "An explosion near a multi-storey residential building following a reported drone strike.",
+        "date": "04/19/2025",
+        "location": "Nikopol, Dnipropetrovsk region",
+        "latitude": "47.56775",
+        "longitude": "34.385756",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src123"
+        ],
+        "id": "1Q9Y97",
+        "description": "A multi-storey residential building on fire following a reported strike.",
+        "date": "04/19/2025",
+        "location": "Kherson",
+        "latitude": "46.651589",
+        "longitude": "32.644087",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src124",
+            "src125"
+        ],
+        "id": "AN87Y1",
+        "description": "A damaged multi-storey building following a reported strike.",
+        "date": "04/29/2025",
+        "location": "Horlivka, Donetsk region",
+        "latitude": "48.297277",
+        "longitude": "38.028991",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src126",
+            "src127",
+            "src128",
+            "src129",
+            "src130",
+            "src131",
+            "src132",
+            "src133",
+            "src134"
+        ],
+        "id": "H7HT35",
+        "description": "Huge fire following a reported strike on a market.",
+        "date": "05/06/2025",
+        "location": "Kharkiv",
+        "latitude": "50.000727",
+        "longitude": "36.300088",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7",
+            "asc12"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src135",
+            "src136",
+            "src137",
+            "src138"
+        ],
+        "id": "PMT08F",
+        "description": "What appears to be a church damaged following a reported strike.",
+        "date": "05/06/2025",
+        "location": "Dobropillya, Donetsk region",
+        "latitude": "48.478382",
+        "longitude": "37.069437",
+        "graphic": "FALSE",
+        "associations": [
+            "asc13"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src139",
+            "src140",
+            "src141",
+            "src142"
+        ],
+        "id": "YTLSNV",
+        "description": "A vehicle damaged following an explosion of a mine.",
+        "date": "05/06/2025",
+        "location": "Kherson, Dniprovs'kyi district, Kherson Oblast",
+        "latitude": "46.653313",
+        "longitude": "32.628195",
+        "graphic": "FALSE",
+        "associations": [
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "srcHidden"
+        ],
+        "id": "W5UP1B",
+        "description": "Two people injured following a reported strike on a residential building.",
+        "date": "05/20/2025",
+        "location": "Korabelny district, Kherson",
+        "latitude": "46.645731",
+        "longitude": "32.587902",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src143"
+        ],
+        "id": "NALK7P",
+        "description": "Dome of a church on fire following a reported strike.",
+        "date": "05/25/2025",
+        "location": "Tula region",
+        "latitude": "53.826222",
+        "longitude": "38.552711",
+        "graphic": "FALSE",
+        "associations": [
+            "asc13"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src144",
+            "src145",
+            "src146",
+            "src147"
+        ],
+        "id": "XFCN1K",
+        "description": "Two people reportedly killed following a strike on a multi-storey residential building.",
+        "date": "06/28/2025",
+        "location": "Odesa",
+        "latitude": "46.471569",
+        "longitude": "30.706476",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src148",
+            "src149"
+        ],
+        "id": "US9MI2",
+        "description": "People are injured in what appears to be a transport station is damaged following a reported strike.",
+        "date": "06/24/2025",
+        "location": "Dnipro, Dnipropetrovsk Region",
+        "latitude": "48.475497",
+        "longitude": "34.958987",
+        "graphic": "TRUE",
+        "associations": [
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src150",
+            "src151",
+            "src152",
+            "src153",
+            "src154",
+            "src155",
+            "src156",
+            "src157",
+            "src158",
+            "src159",
+            "src160",
+            "src161",
+            "src162",
+            "src163",
+            "src164",
+            "src165",
+            "src166",
+            "src167",
+            "src168",
+            "src169",
+            "src170",
+            "src171",
+            "src172",
+            "src173",
+            "src174",
+            "src175",
+            "src176",
+            "src177",
+            "src178",
+            "src179",
+            "src180",
+            "src181",
+            "src182"
+        ],
+        "id": "974DKY",
+        "description": "A tram damage following a reported strike.",
+        "date": "06/24/2025",
+        "location": "Dnipro",
+        "latitude": "48.482448",
+        "longitude": "34.964904",
+        "graphic": "TRUE",
+        "associations": [
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src183",
+            "src184"
+        ],
+        "id": "WZMVVV",
+        "description": "A flat in a multi-storey residential building damaged following a reported strike.",
+        "date": "06/24/2025",
+        "location": "Krasnogorsk, Moscow region",
+        "latitude": "55.835648",
+        "longitude": "37.317498",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src185"
+        ],
+        "id": "ZYYY0C",
+        "description": "Unfinished hospital facility damaged following a reported drone attack.",
+        "date": "06/17/2025",
+        "location": "Velyka Pysarivka, Sumy region",
+        "latitude": "50.428547",
+        "longitude": "35.481846",
+        "graphic": "FALSE",
+        "associations": [
+            "asc5"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src186",
+            "src187",
+            "src188",
+            "src189",
+            "src190",
+            "src191",
+            "src192",
+            "src193",
+            "src194",
+            "src195",
+            "src196",
+            "src197",
+            "src198",
+            "src199",
+            "src200",
+            "src201",
+            "src202",
+            "src203",
+            "src204",
+            "src205",
+            "src206",
+            "src207",
+            "src208",
+            "src209",
+            "src210",
+            "src211",
+            "src212",
+            "src213",
+            "src214",
+            "src215",
+            "src216",
+            "src217",
+            "src218",
+            "src219",
+            "src220",
+            "src221",
+            "src222",
+            "src223",
+            "src224",
+            "src225",
+            "src226",
+            "src227",
+            "src228",
+            "src229",
+            "src230",
+            "src231",
+            "src232",
+            "src233",
+            "src234",
+            "src235",
+            "src236",
+            "src237",
+            "src238",
+            "src239",
+            "src240",
+            "src241",
+            "src242",
+            "src243"
+        ],
+        "id": "GQM66O",
+        "description": "A multi-storey residential building severely damaged following a reported attack.",
+        "date": "06/17/2025",
+        "location": "Kyiv",
+        "latitude": "50.444435",
+        "longitude": "30.41355",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src244"
+        ],
+        "id": "Q9906Q",
+        "description": "Strike on the residential building. At least 6 people reported killed, dozens injured.",
+        "date": "06/23/2025",
+        "location": "Kyiv (Shevchenkivskyi district)",
+        "latitude": "50.465117",
+        "longitude": "30.442054",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc14"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src245"
+        ],
+        "id": "M1M1LJ",
+        "description": "Drone strike on the high rise residential building.",
+        "date": "06/17/2025",
+        "location": "Kyiv (Darnytskyi microdistrict)",
+        "latitude": "50.415796",
+        "longitude": "30.625502",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src246"
+        ],
+        "id": "JT1BZN",
+        "description": "Aftermath of the night multiple missiles and drones attack. ",
+        "date": "06/17/2025",
+        "location": "Kyiv (Darnytskyi misrodistrict)",
+        "latitude": "50.428502",
+        "longitude": "30.670532",
+        "graphic": "FALSE",
+        "associations": [
+            "asc4"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src247",
+            "src248",
+            "src249",
+            "src250"
+        ],
+        "id": "16C553",
+        "description": "Regional State Administration building hit twice, reportedly by KAB missiles.",
+        "date": "06/05/2025",
+        "location": "Kherson",
+        "latitude": "46.640599",
+        "longitude": "32.615809",
+        "graphic": "FALSE",
+        "associations": [
+            "asc9"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src251",
+            "src252",
+            "src253",
+            "src254",
+            "src255",
+            "src256",
+            "src257",
+            "src258",
+            "src259",
+            "src260",
+            "src261",
+            "src262",
+            "src263",
+            "src264"
+        ],
+        "id": "SGRIEZ",
+        "description": "A building on fire following a reported strike.",
+        "date": "06/03/2025",
+        "location": "Chernihiv",
+        "latitude": "51.519178",
+        "longitude": "31.326482",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src265",
+            "src266",
+            "src267",
+            "src268",
+            "src269",
+            "src270",
+            "src271",
+            "src272",
+            "src273",
+            "src274",
+            "src267",
+            "src268",
+            "src269",
+            "src270",
+            "src271",
+            "src272",
+            "src273",
+            "src274"
+        ],
+        "id": "3ITVQ0",
+        "description": "What appears to be a school is damaged following a reported strike.",
+        "date": "06/03/2025",
+        "location": "Sloviansk, Donetsk region",
+        "latitude": "48.859728",
+        "longitude": "37.57915",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src275",
+            "src276"
+        ],
+        "id": "CJ3JE4",
+        "description": "A building on fire following a reported strike.",
+        "date": "06/03/2025",
+        "location": "Horlivka, Donetsk region",
+        "latitude": "48.294235",
+        "longitude": "37.993364",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src277",
+            "src278",
+            "src279",
+            "src280"
+        ],
+        "id": "ECRGL6",
+        "description": "Multiple people killed and injured following a strike on a street with vehicles.",
+        "date": "06/03/2025",
+        "location": "Sumy ",
+        "latitude": "50.916986",
+        "longitude": "34.805971",
+        "graphic": "TRUE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src281"
+        ],
+        "id": "DSKY8V",
+        "description": "The moment a drone explodes, damaging a multi-storey residential building.",
+        "date": "06/03/2025",
+        "location": "Nikopol",
+        "latitude": "47.567919",
+        "longitude": "34.384828",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src282",
+            "src283",
+            "src284",
+            "src285",
+            "src286"
+        ],
+        "id": "06QTY4",
+        "description": "Court yard of a multi-storey residential building damaged following a reported drone explosion.",
+        "date": "06/03/2025",
+        "location": "Sumy",
+        "latitude": "50.918478",
+        "longitude": "34.808501",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src287",
+            "src288",
+            "src289",
+            "src290",
+            "src291",
+            "src292",
+            "src293",
+            "src294",
+            "src295",
+            "src296",
+            "src297",
+            "src298",
+            "src299",
+            "src300",
+            "src301",
+            "src302",
+            "src303"
+        ],
+        "id": "OW2ME1",
+        "description": "A driver killed following a strike on an ambulance vehicle.",
+        "date": "06/03/2025",
+        "location": "Kherson",
+        "latitude": "46.633855",
+        "longitude": "32.616788",
+        "graphic": "FALSE",
+        "associations": [
+            "asc5"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src304",
+            "src305"
+        ],
+        "id": "E5RX3M",
+        "description": "A car washing facility damaged following a reported strike.",
+        "date": "06/03/2025",
+        "location": "Tavrovo, Belgorod region",
+        "latitude": "50.49448",
+        "longitude": "36.574565",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7",
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src306",
+            "src307",
+            "src308"
+        ],
+        "id": "ILGLC6",
+        "description": "What appears to be a medical facility is severely damaged following a reported strike.",
+        "date": "06/10/2025",
+        "location": "Odesa",
+        "latitude": "46.463306",
+        "longitude": "30.737972",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src309",
+            "src310",
+            "src311",
+            "src312",
+            "src313",
+            "src314",
+            "src315",
+            "src316",
+            "src317",
+            "src318",
+            "src318",
+            "src319",
+            "src319",
+            "src320",
+            "src320",
+            "src321",
+            "src321"
+        ],
+        "id": "S4Y7UX",
+        "description": "A building is on fire following a reported strike.",
+        "date": "06/10/2025",
+        "location": "Kyiv",
+        "latitude": "50.460703",
+        "longitude": "30.486767",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src322",
+            "src323",
+            "src324",
+            "src325",
+            "src326",
+            "src327",
+            "src328",
+            "src329",
+            "src330",
+            "src331",
+            "src332",
+            "src333",
+            "src334",
+            "src335",
+            "src322",
+            "src323",
+            "src324",
+            "src325",
+            "src326",
+            "src327",
+            "src328",
+            "src329",
+            "src330",
+            "src331",
+            "src332",
+            "src333",
+            "src334",
+            "src335"
+        ],
+        "id": "EK1S10",
+        "description": "A severely damaged building following a reported strike.",
+        "date": "06/10/2025",
+        "location": "Odesa",
+        "latitude": "46.46315",
+        "longitude": "30.738132",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src336",
+            "src337",
+            "src338"
+        ],
+        "id": "FS2DUY",
+        "description": "A stadium is damaged following a reported strike.",
+        "date": "06/10/2025",
+        "location": "Kyiv",
+        "latitude": "50.48326",
+        "longitude": "30.474936",
+        "graphic": "FALSE",
+        "associations": [
+            "asc10"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src339",
+            "src340"
+        ],
+        "id": "STZWG4",
+        "description": "A gas station is damaged following a reported strike.",
+        "date": "06/10/2025",
+        "location": "Belgorod, Belgorod region",
+        "latitude": "50.608776",
+        "longitude": "36.547433",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src341",
+            "src342",
+            "src343",
+            "src344",
+            "src345",
+            "src346",
+            "src347",
+            "src341",
+            "src348",
+            "src342",
+            "src349",
+            "src343",
+            "src344",
+            "src345",
+            "src346",
+            "src347",
+            "src348",
+            "src349",
+            "src350",
+            "src351",
+            "src347",
+            "src348",
+            "src349",
+            "src352",
+            "src350",
+            "src351",
+            "src352",
+            "src353",
+            "src354",
+            "src355",
+            "src356",
+            "src357",
+            "src358",
+            "src359",
+            "src353",
+            "src354",
+            "src355",
+            "src356",
+            "src357",
+            "src358",
+            "src359"
+        ],
+        "id": "7V4AGI",
+        "description": "St. sophia's cathedral damaged following a reported strike.",
+        "date": "06/10/2025",
+        "location": "Kyiv",
+        "latitude": "50.452861",
+        "longitude": "30.514307",
+        "graphic": "FALSE",
+        "associations": [
+            "asc13"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src360",
+            "src361",
+            "src362",
+            "src363",
+            "src364",
+            "src365",
+            "src366",
+            "src367",
+            "src368",
+            "src369",
+            "src370",
+            "src371",
+            "src372",
+            "src373",
+            "src374",
+            "src375",
+            "src376"
+        ],
+        "id": "OB85GU",
+        "description": "A multi-storey residential building sustained extensive damage following a reported strike.",
+        "date": "06/10/2025",
+        "location": "Kyiv",
+        "latitude": "50.49735",
+        "longitude": "30.468051",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src377",
+            "src378",
+            "src379",
+            "src380",
+            "src381",
+            "src382",
+            "src383",
+            "src384",
+            "src385"
+        ],
+        "id": "6KSDOR",
+        "description": "A multi-storey residential building on fire following a reported strike.",
+        "date": "06/10/2025",
+        "location": "Kharkiv",
+        "latitude": "49.945445",
+        "longitude": "36.259244",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src386",
+            "src387"
+        ],
+        "id": "7NSSNZ",
+        "description": "Residential buildings and a recreational center damaged in a reported drone attack.",
+        "date": "06/01/2025",
+        "location": "Bilhorod-Dnistrovs'kyi, Odesa region",
+        "latitude": "45.648127",
+        "longitude": "29.836646",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc7",
+            "asc5"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src388",
+            "src389",
+            "src390"
+        ],
+        "id": "6TP4Z5",
+        "description": "Grocery store on fire after shelling.",
+        "date": "06/01/2025",
+        "location": "Dnipro district, Kherson",
+        "latitude": "46.647512",
+        "longitude": "32.632602",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src391"
+        ],
+        "id": "1D57JB",
+        "description": "A central market reportedly damaged in a shelling.",
+        "date": "05/31/2025",
+        "location": "Kherson",
+        "latitude": "46.638099",
+        "longitude": "32.610534",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src392"
+        ],
+        "id": "AO3MSO",
+        "description": "What appears to be commercial and residential buildings damaged in  a shelling.",
+        "date": "05/31/2025",
+        "location": "Kherson",
+        "latitude": "46.659456",
+        "longitude": "32.653997",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src393",
+            "src394"
+        ],
+        "id": "VIAEUY",
+        "description": "Multi-story residential building damaged in a shelling.",
+        "date": "05/31/2025",
+        "location": "Kherson",
+        "latitude": "46.623115",
+        "longitude": "32.576501",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src395",
+            "src396",
+            "src397"
+        ],
+        "id": "T8MS32",
+        "description": "A culture house and a school destroyed in a reported drone attack.",
+        "date": "05/29/2025",
+        "location": "Verkhnya Syrovatka, Sumy region",
+        "latitude": "50.830119",
+        "longitude": "34.945853",
+        "graphic": "FALSE",
+        "associations": [
+            "asc10"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src398",
+            "src399",
+            "src400",
+            "src401",
+            "src402"
+        ],
+        "id": "F1ZYO0",
+        "description": "A city transport depot destroyed in a reported drone attack.",
+        "date": "05/30/2025",
+        "location": "Kharkiv",
+        "latitude": "49.942841",
+        "longitude": "36.268465",
+        "graphic": "FALSE",
+        "associations": [
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src403",
+            "src404"
+        ],
+        "id": "NA5H0W",
+        "description": "What appears to be a memorial and surrounding area damaged in a strike.",
+        "date": "05/29/2025",
+        "location": "Slovyansk, Donetsk region",
+        "latitude": "48.875859",
+        "longitude": "37.61491",
+        "graphic": "FALSE",
+        "associations": [
+            "asc10",
+            "asc8"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src405",
+            "src406",
+            "src407",
+            "src408"
+        ],
+        "id": "8QNHO9",
+        "description": "A kindergarten reportedly hit by a drone.",
+        "date": "05/29/2025",
+        "location": "Mezhova, Dnipropetrovsk region",
+        "latitude": "48.243216",
+        "longitude": "36.740427",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src409",
+            "src410",
+            "src411",
+            "src412",
+            "src413"
+        ],
+        "id": "T6YS5H",
+        "description": "One person reported killed after a village reportedly hit by KAB missiles.",
+        "date": "05/29/2025",
+        "location": "Verkhnia Tersa, Zaporizhzhia region",
+        "latitude": "47.695195",
+        "longitude": "36.089408",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src414",
+            "src415"
+        ],
+        "id": "MCSCM7",
+        "description": "A church damaged in a strike.",
+        "date": "05/28/2025",
+        "location": "Kherson",
+        "latitude": "46.628639",
+        "longitude": "32.616014",
+        "graphic": "FALSE",
+        "associations": [
+            "asc13"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src416",
+            "src417",
+            "src418",
+            "src419"
+        ],
+        "id": "XBKDLV",
+        "description": "Damaged residential building after reported strike.",
+        "date": "03/12/2025",
+        "location": "Myrnograd, Donetsk region",
+        "latitude": "48.301156",
+        "longitude": "37.283562",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src420",
+            "src421",
+            "src422"
+        ],
+        "id": "MBZIVC",
+        "description": "Damaged cars and fire at what appears to be industrial area.",
+        "date": "03/12/2025",
+        "location": "Kozyrevka, Kursk Oblast",
+        "latitude": "51.2416",
+        "longitude": "35.538406",
+        "graphic": "FALSE",
+        "associations": [
+            "asc12",
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src423",
+            "src424",
+            "src425",
+            "src426"
+        ],
+        "id": "UA3VG8",
+        "description": "Damaged residential house on fire after reported strike.",
+        "date": "03/12/2025",
+        "location": "Oleksiivo-Druzhkivka, Donetsk Oblast",
+        "latitude": "48.57194",
+        "longitude": "37.61549",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src427",
+            "src428",
+            "src429"
+        ],
+        "id": "VUX6P5",
+        "description": "Severely damaged hotel after reported strike. 6 reportedly injured.",
+        "date": "03/12/2025",
+        "location": "Kryvyi Rih",
+        "latitude": "47.911735",
+        "longitude": "33.422298",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src430"
+        ],
+        "id": "64IFWR",
+        "description": "Damaged residential building and car after reported rocket strike.",
+        "date": "03/12/2025",
+        "location": "Kryvyi Rih",
+        "latitude": "47.912643",
+        "longitude": "33.422856",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src431",
+            "src432",
+            "src433"
+        ],
+        "id": "NP8CA1",
+        "description": "Two people reported dead in a shelling. ",
+        "date": "02/16/2025",
+        "location": "Bilyts'ke, Donetsk region",
+        "latitude": "48.407376",
+        "longitude": "37.17978",
+        "graphic": "FALSE",
+        "associations": [
+            "asc10"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src434",
+            "src435",
+            "src436",
+            "src437",
+            "src438"
+        ],
+        "id": "JP2KF0",
+        "description": "Central part of the city shelled damaging residential and commercial buildings.",
+        "date": "02/16/2025",
+        "location": "Mykolaiv",
+        "latitude": "46.966756",
+        "longitude": "31.99681",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src439"
+        ],
+        "id": "ZL1HV5",
+        "description": "Commercial area reportedly struck in artillery shelling.",
+        "date": "02/16/2025",
+        "location": "Vostochny/Kindiyka area in Kherson",
+        "latitude": "46.67517",
+        "longitude": "32.67749",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src440",
+            "src441"
+        ],
+        "id": "CJNDD9",
+        "description": "A point of invincibility and humanitarian hub reportedly hit by a drone.",
+        "date": "02/16/2025",
+        "location": "Beryslav, Kherson region",
+        "latitude": "46.839167",
+        "longitude": "33.426667",
+        "graphic": "FALSE",
+        "associations": [
+            "asc15",
+            "asc9"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src442",
+            "src443"
+        ],
+        "id": "RF0LMG",
+        "description": "Residential buildings and critical infrastructure damaged in a shelling.",
+        "date": "02/16/2025",
+        "location": "Nova Kakhovka, Kherson region",
+        "latitude": "46.751813",
+        "longitude": "33.343108",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src444"
+        ],
+        "id": "KOU66N",
+        "description": "A probable school reportedly damaged in a shelling.",
+        "date": "02/15/2025",
+        "location": "Chervonyi Mayak, Kherson region",
+        "latitude": "46.953908",
+        "longitude": "33.604857",
+        "graphic": "FALSE",
+        "associations": [
+            "asc8"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src445"
+        ],
+        "id": "IHIRPV",
+        "description": "A medical clinic damaged in a shelling.",
+        "date": "02/27/2025",
+        "location": "Slovyansk, Donetsk region",
+        "latitude": "48.87668",
+        "longitude": "37.63806",
+        "graphic": "FALSE",
+        "associations": [
+            "asc5"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src446"
+        ],
+        "id": "2ORX61",
+        "description": "Residential building on fire after shelling.",
+        "date": "02/27/2025",
+        "location": "Kostyantynivka, Donetsk region",
+        "latitude": "48.511129",
+        "longitude": "37.681451",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src447",
+            "src448"
+        ],
+        "id": "W7V9WH",
+        "description": "Residential and commercial buildings damaged in a shelling.",
+        "date": "02/27/2025",
+        "location": "Kostyantynivka, Donetsk region",
+        "latitude": "48.508344",
+        "longitude": "37.676271",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src449",
+            "src450"
+        ],
+        "id": "K7FY8M",
+        "description": "Office of Nikopol City's mayor reportedly struck by a drone.",
+        "date": "02/14/2025",
+        "location": "Nikopol, Dnipropetrovsk region",
+        "latitude": "47.568311",
+        "longitude": "34.391282",
+        "graphic": "FALSE",
+        "associations": [
+            "asc9"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src451"
+        ],
+        "id": "CT1IZB",
+        "description": "Three people reportedly killed after a strike on a supermarket.",
+        "date": "02/27/2025",
+        "location": "Oleshky, Kherson region",
+        "latitude": "46.624006",
+        "longitude": "32.718753",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src452",
+            "src453"
+        ],
+        "id": "3Z6554",
+        "description": "A village hit in an artillery strike, several private homes reportedly damaged.",
+        "date": "02/27/2025",
+        "location": "Tomyna Balka, Kherson region",
+        "latitude": "46.625648",
+        "longitude": "32.311814",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src454",
+            "src455",
+            "src456",
+            "src457",
+            "src458"
+        ],
+        "id": "40K25U",
+        "description": "Central part of the city reportedly hit with aerial bombs.",
+        "date": "02/20/2025",
+        "location": "Kherson",
+        "latitude": "46.66005",
+        "longitude": "32.596815",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc9",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src459",
+            "src460"
+        ],
+        "id": "FUIL1W",
+        "description": "Two people injured in a reported drone attack on a civilian car.",
+        "date": "02/13/2025",
+        "location": "Dnipro district, Kherson",
+        "latitude": "46.672608",
+        "longitude": "32.654365",
+        "graphic": "FALSE",
+        "associations": [
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src461",
+            "src462"
+        ],
+        "id": "22YK2J",
+        "description": "Police car hit in a reported drone attack.",
+        "date": "02/13/2025",
+        "location": "Huliaipole, Zaporizhzhia region",
+        "latitude": "47.662383",
+        "longitude": "36.253641",
+        "graphic": "FALSE",
+        "associations": [
+            "asc9",
+            "asc2",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src463",
+            "src464"
+        ],
+        "id": "41QXAJ",
+        "description": "Two people injured after in a shelling of a high-rise.",
+        "date": "02/13/2025",
+        "location": "Kherson (Centralnyi District)",
+        "latitude": "46.666985",
+        "longitude": "32.624262",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src465",
+            "src466",
+            "src467"
+        ],
+        "id": "L8350M",
+        "description": "Aftermath of a reported strike on the courtyard.",
+        "date": "03/29/2025",
+        "location": "Kharkiv",
+        "latitude": "50.011472",
+        "longitude": "36.23862",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src468",
+            "src469"
+        ],
+        "id": "W1Y7SQ",
+        "description": "Reported explosions of drones near football fields.",
+        "date": "03/26/2025",
+        "location": " football field in Shakhtar, Donetsk oblast",
+        "latitude": "49.982622",
+        "longitude": "36.263912",
+        "graphic": "FALSE",
+        "associations": [
+            "asc10",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src470",
+            "src471",
+            "src472"
+        ],
+        "id": "H19FMV",
+        "description": "Reported strike on operational medical facilities and high-rise buildings.",
+        "date": "03/19/2025",
+        "location": "Krasnopillya, Sumy district",
+        "latitude": "50.768392",
+        "longitude": "35.263592",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc5",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src473"
+        ],
+        "id": "UG4QM7",
+        "description": "A residential building after reported strike.",
+        "date": "03/12/2025",
+        "location": "Kryvyi Rih",
+        "latitude": "47.910886",
+        "longitude": "33.423562",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src474"
+        ],
+        "id": "AZPK5G",
+        "description": "Hotel building damaged as a result of the reorted night massive attack.",
+        "date": "05/25/2025",
+        "location": "Kyiv (Shevchenkivskyi district)",
+        "latitude": "50.462841",
+        "longitude": "30.478579",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src475",
+            "src476"
+        ],
+        "id": "28P7GO",
+        "description": "At least two people reported injured as a result of the air strike.",
+        "date": "05/23/2025",
+        "location": "Kupiansk (Kharkiv region)",
+        "latitude": "49.7188",
+        "longitude": "37.61041",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src477"
+        ],
+        "id": "9O68ZP",
+        "description": "Damaged hotel after reported strike.",
+        "date": "03/05/2025",
+        "location": "Kryvyi Rih",
+        "latitude": "48.03434",
+        "longitude": "33.479099",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src478",
+            "src479",
+            "src480",
+            "src481"
+        ],
+        "id": "A9KD6N",
+        "description": "Civil infrastructure facilities damaged after a reported drone strike.",
+        "date": "03/05/2025",
+        "location": "Odesa",
+        "latitude": "46.346932",
+        "longitude": "30.680433",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7",
+            "asc9",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src482"
+        ],
+        "id": "MYF70Q",
+        "description": "Damage to buildings caused by the reported drone strike.",
+        "date": "02/26/2025",
+        "location": "Sumy",
+        "latitude": "50.000402",
+        "longitude": "36.234395",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc2",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src483",
+            "src484",
+            "src485",
+            "src486"
+        ],
+        "id": "2173W2",
+        "description": "Aftermath of the reported attack, school building damaged.",
+        "date": "05/18/2025",
+        "location": "Kursk region, Russia",
+        "latitude": "51.23613",
+        "longitude": "35.55303",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src487",
+            "src488"
+        ],
+        "id": "7LM944",
+        "description": "Aftermath of the reported shelling, residential buildings damaged.",
+        "date": "05/18/2025",
+        "location": "Svitlodarsk (Donetsk oblast)",
+        "latitude": "48.435279",
+        "longitude": "38.215166",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc9"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src489",
+            "src490",
+            "src491",
+            "src492"
+        ],
+        "id": "HJTUHI",
+        "description": "Residential building damaged as a result of reported drone attack.",
+        "date": "05/03/2025",
+        "location": "Novorossiysk, Russia",
+        "latitude": "44.6935",
+        "longitude": "37.788347",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src493",
+            "src494",
+            "src495"
+        ],
+        "id": "XMJWU7",
+        "description": "\"strela\" factorty building reported damaged as a result of the attack.",
+        "date": "05/04/2025",
+        "location": "Bryansk region, Russia",
+        "latitude": "52.31828",
+        "longitude": "34.070109",
+        "graphic": "FALSE",
+        "associations": [
+            "asc16"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src496",
+            "src497",
+            "src498",
+            "src499",
+            "src500",
+            "src501"
+        ],
+        "id": "OM4JZ8",
+        "description": "High rise residential building reported damaged as a result of the drone strike.",
+        "date": "05/04/2025",
+        "location": "Kyiv, Obolon district",
+        "latitude": "50.515896",
+        "longitude": "30.49814",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src502",
+            "src503"
+        ],
+        "id": "6Q0ZLI",
+        "description": "Aftermath of the city shelling.",
+        "date": "05/04/2025",
+        "location": "Druzhkivka (Donetsk oblast)",
+        "latitude": "48.623396",
+        "longitude": "37.528476",
+        "graphic": "FALSE",
+        "associations": [
+            "asc8"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src504",
+            "src505"
+        ],
+        "id": "3V9HF6",
+        "description": "The crater and the aftermath of the reported drone strike.",
+        "date": "05/04/2025",
+        "location": "Kyiv, Obolon districy",
+        "latitude": "50.515917",
+        "longitude": "30.498271",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src506",
+            "src507",
+            "src508",
+            "src509",
+            "src510",
+            "src511",
+            "src512",
+            "src513",
+            "src514"
+        ],
+        "id": "PMN1OQ",
+        "description": "Nova poshta reported attacked by drones. post office building is damaged.",
+        "date": "05/04/2025",
+        "location": "Iziyum (Kharkiv oblast)",
+        "latitude": "49.214909",
+        "longitude": "37.314865",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src515"
+        ],
+        "id": "CDBLCJ",
+        "description": "The moment of strike on the  building of the department store.",
+        "date": "05/04/2025",
+        "location": "Beryslav (Kherson oblast)",
+        "latitude": "46.83732",
+        "longitude": "33.423247",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src516",
+            "src517"
+        ],
+        "id": "TFNPCW",
+        "description": "Aftermath of the reported yesterday's attack of the city, residential buildings damaged.",
+        "date": "05/05/2025",
+        "location": "Myrnohrad (Donetsk oblast)",
+        "latitude": "48.303262",
+        "longitude": "37.27953",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src518"
+        ],
+        "id": "DHSUJ7",
+        "description": "Aftermath of the shelling of the market.",
+        "date": "04/27/2025",
+        "location": "Gorlivka (Donetsk oblast)",
+        "latitude": "48.337444",
+        "longitude": "37.969139",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src519",
+            "src520",
+            "src521",
+            "src522",
+            "src523"
+        ],
+        "id": "WDIX53",
+        "description": "Ostrich farm reported damaged as a result of the combined kab and fpv drones strikes.",
+        "date": "04/21/2025",
+        "location": "Novopavlivka (Dnipropetrovsk Oblast)",
+        "latitude": "48.158606",
+        "longitude": "36.810781",
+        "graphic": "TRUE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src524",
+            "src525",
+            "src526",
+            "src527",
+            "src528"
+        ],
+        "id": "XA958D",
+        "description": "A building of the kindergarten reported damaged as a result of the attack.",
+        "date": "04/21/2025",
+        "location": "Kherson (Dniprovskyi district)",
+        "latitude": "46.663621",
+        "longitude": "32.658312",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src529"
+        ],
+        "id": "11U6SD",
+        "description": "Strike on a high rise residential building.",
+        "date": "04/21/2025",
+        "location": "Kherson",
+        "latitude": "46.66024",
+        "longitude": "32.65473",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src530"
+        ],
+        "id": "VDV2NU",
+        "description": "Second strike on the city center.",
+        "date": "04/13/2025",
+        "location": "Sumy",
+        "latitude": "50.905838",
+        "longitude": "34.793893",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1",
+            "asc9",
+            "asc14"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src531",
+            "src532",
+            "src533",
+            "src534",
+            "src535",
+            "src536",
+            "src537",
+            "src538",
+            "src539",
+            "src540",
+            "src541",
+            "src542"
+        ],
+        "id": "MGVV9V",
+        "description": "[Very graphic] At least 34 people including two children reported killed and over one hundred people injured as a result of the double missile strike on the city center.",
+        "date": "04/13/2025",
+        "location": "Sumy",
+        "latitude": "50.905183",
+        "longitude": "34.794994",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src543",
+            "src544"
+        ],
+        "id": "SPLFDI",
+        "description": "Aftermath of the reported shelling, trucks damaged.",
+        "date": "04/13/2025",
+        "location": "Rakitnoye, Belgorod region",
+        "latitude": "50.829893",
+        "longitude": "35.936262",
+        "graphic": "FALSE",
+        "associations": [
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src545",
+            "src546",
+            "src547",
+            "src548"
+        ],
+        "id": "OXATVZ",
+        "description": "Fuel station on fire due to the reported fpv drone impact.",
+        "date": "04/14/2025",
+        "location": "Stepnohirsk, Zaporizhzhia",
+        "latitude": "47.848688",
+        "longitude": "35.245574",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7",
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src549",
+            "src550"
+        ],
+        "id": "YQ93VZ",
+        "description": "Shevchenka street damage",
+        "date": "04/06/2025",
+        "location": "Pokrovsk (Donetsk oblast)",
+        "latitude": "48.276763",
+        "longitude": "37.167616",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7",
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src551",
+            "src552",
+            "src553"
+        ],
+        "id": "OF66DD",
+        "description": "Aftermath of the reported ballistic attack, office building damaged.",
+        "date": "04/06/2025",
+        "location": "Kyiv (Obolon district)",
+        "latitude": "50.489805",
+        "longitude": "30.47513",
+        "graphic": "FALSE",
+        "associations": [
+            "asc4"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src554",
+            "src555",
+            "src556",
+            "src557",
+            "src558",
+            "src559",
+            "src560",
+            "src561",
+            "src562",
+            "src563",
+            "src564",
+            "src565"
+        ],
+        "id": "S23173",
+        "description": "At least one person killed and two injured including one minor as a result of the reported shelling, residential buildings damaged.",
+        "date": "04/07/2025",
+        "location": "Kostiantynivka (Donetsk oblast)",
+        "latitude": "48.50781",
+        "longitude": "37.747111",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1",
+            "asc9",
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src566",
+            "src567",
+            "src568"
+        ],
+        "id": "HD3SO1",
+        "description": "Residential buildings damaged as a result of the reported attack.",
+        "date": "04/06/2025",
+        "location": "Kupiansk (Kharkiv region)",
+        "latitude": "49.696361",
+        "longitude": "37.598276",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src569",
+            "src570",
+            "src571",
+            "src572",
+            "src573",
+            "src574",
+            "src575",
+            "src576",
+            "src577"
+        ],
+        "id": "AVHMTY",
+        "description": "Aftermath of the reported drones attack.",
+        "date": "04/06/2025",
+        "location": "Sumy",
+        "latitude": "50.876219",
+        "longitude": "34.87082",
+        "graphic": "FALSE",
+        "associations": [
+            "asc4"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src578",
+            "src579",
+            "src580",
+            "src581"
+        ],
+        "id": "43D9RF",
+        "description": "Aftermath of the reported shelling, residential buildings damaged.",
+        "date": "04/05/2025",
+        "location": "Gorlivka (Donetsk oblast)",
+        "latitude": "48.311429",
+        "longitude": "37.981522",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src582",
+            "src583",
+            "src584",
+            "src585",
+            "src586",
+            "src582",
+            "src583",
+            "src584",
+            "src585",
+            "src587",
+            "src588",
+            "src589",
+            "src590",
+            "src591",
+            "src592",
+            "src588",
+            "src589",
+            "src590",
+            "src592",
+            "src593",
+            "src594",
+            "src595"
+        ],
+        "id": "ZF8FJY",
+        "description": "[VERY GRAPHIC CONTENT!] At least 18 people killed including 9 children as a result of reported ballistic missile strike on the residential area near the playground.",
+        "date": "04/04/2025",
+        "location": "Kryvyi Rih",
+        "latitude": "47.964942",
+        "longitude": "33.441603",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src596",
+            "src597",
+            "src598",
+            "src599",
+            "src597",
+            "src598",
+            "src599"
+        ],
+        "id": "1FLSR0",
+        "description": "Aftermath of the reported drones attack, at least two people reported injured.",
+        "date": "04/04/2025",
+        "location": "Brovary (Kyiv oblast)",
+        "latitude": "50.511055",
+        "longitude": "30.848238",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src600"
+        ],
+        "id": "4ORDFQ",
+        "description": "Reported damage to the Kharkivproject Institute building and surroundings.",
+        "date": "03/30/2025",
+        "location": "Kharkiv",
+        "latitude": "50.022715",
+        "longitude": "36.224694",
+        "graphic": "FALSE",
+        "associations": [
+            "asc4"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src601",
+            "src602",
+            "src603",
+            "src604",
+            "src601",
+            "src602",
+            "src603",
+            "src604",
+            "src601",
+            "src602",
+            "src603",
+            "src604",
+            "src601",
+            "src602",
+            "src603",
+            "src604",
+            "src601",
+            "src602",
+            "src603",
+            "src604",
+            "src601",
+            "src602",
+            "src603",
+            "src604",
+            "src601",
+            "src602",
+            "src603",
+            "src604",
+            "src601",
+            "src602",
+            "src603",
+            "src604",
+            "src601",
+            "src602",
+            "src603",
+            "src604"
+        ],
+        "id": "24X57T",
+        "description": "Civilian truck reporerted attacked with the fpv drone, driver injured.",
+        "date": "03/30/2025",
+        "location": "Rodynske (Donetsk oblast)",
+        "latitude": "48.35384",
+        "longitude": "37.2027",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src605",
+            "src606",
+            "src607",
+            "src608"
+        ],
+        "id": "IOG3IX",
+        "description": "Aftermath of reported shelling, residential buildings damaged.",
+        "date": "03/30/2025",
+        "location": "Pokrovsk (Donetsk oblast)",
+        "latitude": "48.281639",
+        "longitude": "37.146747",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src609",
+            "src610",
+            "src611",
+            "src612",
+            "src613",
+            "src614",
+            "src615",
+            "src616",
+            "src617"
+        ],
+        "id": "N06CT8",
+        "description": "Aftermath of reported residential area shelling.",
+        "date": "03/30/2025",
+        "location": "Kupiansk (Kharkiv region)",
+        "latitude": "49.69761",
+        "longitude": "37.597114",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src618",
+            "src619",
+            "src620",
+            "src621",
+            "src622",
+            "src623",
+            "src624",
+            "src625",
+            "src626",
+            "src627",
+            "src628"
+        ],
+        "id": "7I21L0",
+        "description": "Industrial buildings reported damaged as a result of drones attack.",
+        "date": "03/31/2025",
+        "location": "Kharkiv",
+        "latitude": "50.033626",
+        "longitude": "36.283164",
+        "graphic": "FALSE",
+        "associations": [
+            "asc4"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src629",
+            "src630",
+            "src631",
+            "src632"
+        ],
+        "id": "WOU49G",
+        "description": "Firefighters' facilities and trucks reported damaged as a result of attack.",
+        "date": "03/31/2025",
+        "location": "Bilozerske (Donetsk oblast)",
+        "latitude": "48.536816",
+        "longitude": "37.05671",
+        "graphic": "FALSE",
+        "associations": [
+            "asc15"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src633",
+            "src634",
+            "src635",
+            "src636",
+            "src637",
+            "src638",
+            "src639",
+            "src640"
+        ],
+        "id": "FO5CWJ",
+        "description": "Children\u2019s dental hospital damaged by strike. ",
+        "date": "03/01/2025",
+        "location": "Kharkiv",
+        "latitude": "50.007065",
+        "longitude": "36.234834",
+        "graphic": "FALSE",
+        "associations": [
+            "asc5",
+            "asc3",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src641",
+            "src642"
+        ],
+        "id": "9A8VK4",
+        "description": "Commercial and residential area damaged by strike. ",
+        "date": "02/28/2025",
+        "location": "Kharkiv, [Klas shop]",
+        "latitude": "50.002087",
+        "longitude": "36.218613",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src643",
+            "src644",
+            "src3",
+            "src4",
+            "src645",
+            "src7",
+            "src646",
+            "src647",
+            "src6"
+        ],
+        "id": "7T9H90",
+        "description": "Part of a football training facility damaged by a strike.",
+        "date": "02/28/2025",
+        "location": "Odessa",
+        "latitude": "46.34517",
+        "longitude": "30.692778",
+        "graphic": "FALSE",
+        "associations": [
+            "asc10",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src648",
+            "src649",
+            "src650",
+            "src651",
+            "src652",
+            "src653",
+            "src654"
+        ],
+        "id": "K6HG5D",
+        "description": "Residential area heavily damaged by strike.",
+        "date": "02/28/2025",
+        "location": "Zaporozhye",
+        "latitude": "47.825663",
+        "longitude": "35.237681",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src655"
+        ],
+        "id": "HMP89P",
+        "description": "Printing press building heavily damaged by strike.",
+        "date": "02/27/2025",
+        "location": "Kherson",
+        "latitude": "46.647716",
+        "longitude": "32.632874",
+        "graphic": "FALSE",
+        "associations": [
+            "asc4",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src656"
+        ],
+        "id": "A3QPBQ",
+        "description": "Residential area damaged by strikes.",
+        "date": "02/21/2025",
+        "location": "Horlivka",
+        "latitude": "48.339396",
+        "longitude": "37.965888",
+        "graphic": "FALSE",
+        "associations": [
+            "asc10",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src657",
+            "src658"
+        ],
+        "id": "QZYZ92",
+        "description": "House destroyed and two people wounded as a result of an airstrike.",
+        "date": "02/21/2025",
+        "location": "Zolochiv (Kharkiv oblast)",
+        "latitude": "50.269946",
+        "longitude": "35.986363",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1",
+            "asc17"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src659",
+            "src660"
+        ],
+        "id": "76064B",
+        "description": "Buses damaged, reportedly after strike by UAV.",
+        "date": "02/14/2025",
+        "location": "Horlivka",
+        "latitude": "48.316831",
+        "longitude": "37.967308",
+        "graphic": "FALSE",
+        "associations": [
+            "asc2",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src661",
+            "src662",
+            "src663",
+            "src664"
+        ],
+        "id": "LGH5QB",
+        "description": "Boarding school destroyed, reportedly during preparations for evacuating civilians.",
+        "date": "02/01/2025",
+        "location": "Sudzha\n",
+        "latitude": "51.190139",
+        "longitude": "35.274706",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src665",
+            "src666",
+            "src667",
+            "src668",
+            "src669",
+            "src670",
+            "src671",
+            "src672",
+            "src673",
+            "src674",
+            "src675",
+            "src676",
+            "src677",
+            "src678",
+            "src679"
+        ],
+        "id": "MCF9LU",
+        "description": "14 people reported killed, including one child, and 20 injured, including two children, after residential area heavily damaged by strike. ",
+        "date": "02/01/2025",
+        "location": "Poltava",
+        "latitude": "49.603458",
+        "longitude": "34.496363",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1",
+            "asc18"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src680",
+            "src681",
+            "src682",
+            "src683"
+        ],
+        "id": "L6N282",
+        "description": "Two women reported injured after enter of city hit by strike. ",
+        "date": "01/31/2025",
+        "location": "Odessa, Bristol Hotel",
+        "latitude": "46.481393",
+        "longitude": "30.743031",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src684",
+            "src685",
+            "src686",
+            "src687",
+            "src688",
+            "src689",
+            "src690",
+            "src691",
+            "src692"
+        ],
+        "id": "58WGRE",
+        "description": "One person killed and one person injured as a result of reported city center shelling.",
+        "date": "03/27/2025",
+        "location": "Kherson",
+        "latitude": "46.654859",
+        "longitude": "32.606315",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src693"
+        ],
+        "id": "QS2N43",
+        "description": "Church damaged as a result or reported shelling.",
+        "date": "03/24/2025",
+        "location": "Sudzha, Russia",
+        "latitude": "51.193837",
+        "longitude": "35.269648",
+        "graphic": "FALSE",
+        "associations": [
+            "asc13"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src694",
+            "src695",
+            "src696",
+            "src697",
+            "src698",
+            "src699",
+            "src700",
+            "src701",
+            "src702"
+        ],
+        "id": "OXV0XS",
+        "description": "Air strike on the city center. dozens reported injured including children, school and residential buildings damages.",
+        "date": "03/24/2025",
+        "location": "Sumy",
+        "latitude": "50.925004",
+        "longitude": "34.786551",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1",
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src703"
+        ],
+        "id": "SBAS3N",
+        "description": "School reported damaged as a result of reported drones attack.",
+        "date": "03/24/2025",
+        "location": "Novoivanivka (Zaporizhzhia oblast)",
+        "latitude": "47.793503",
+        "longitude": "35.642273",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src704",
+            "src705"
+        ],
+        "id": "HG1XU0",
+        "description": "Petrol station reportedly damaged by loitering munition strike.",
+        "date": "03/21/2025",
+        "location": "Okhtyrka (Sumy oblast)",
+        "latitude": "50.304454",
+        "longitude": "34.905933",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src706",
+            "src707",
+            "src708",
+            "src709",
+            "src710",
+            "src711",
+            "src712",
+            "src713",
+            "src714"
+        ],
+        "id": "74C8S6",
+        "description": "Nebesnoi Avenue commercial area very heavily damaged by strike.",
+        "date": "03/21/2025",
+        "location": "Odesa",
+        "latitude": "46.382671",
+        "longitude": "30.704535",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src715",
+            "src716",
+            "src717",
+            "src718",
+            "src719"
+        ],
+        "id": "JGLJGN",
+        "description": "School damaged as a result of a strike.",
+        "date": "03/21/2025",
+        "location": "Korabelny district, Kherson",
+        "latitude": "46.619556",
+        "longitude": "32.585632",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src720",
+            "src721",
+            "src722",
+            "src723"
+        ],
+        "id": "Q2NXX3",
+        "description": "At least one child injured after strike impacted residential area.",
+        "date": "03/21/2025",
+        "location": "Zaporizhia district, Sichemo",
+        "latitude": "47.771915",
+        "longitude": "35.14317",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src724",
+            "src725"
+        ],
+        "id": "JUF44C",
+        "description": "Cultural center damaged after loitering munition strike.",
+        "date": "03/21/2025",
+        "location": "Velyka Babka, Chuguyiv district, Kharkiv",
+        "latitude": "49.983747",
+        "longitude": "36.743871",
+        "graphic": "FALSE",
+        "associations": [
+            "asc10"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src726",
+            "src727"
+        ],
+        "id": "BIUZNV",
+        "description": "The moment of strike not far from the hypermarket \"epicentr\".",
+        "date": "03/20/2025",
+        "location": "Odesa",
+        "latitude": "46.391826",
+        "longitude": "30.705917",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src728",
+            "src729",
+            "src730",
+            "src731",
+            "src732",
+            "src733",
+            "src734",
+            "src735"
+        ],
+        "id": "CR6RTO",
+        "description": "Hypermarket and what appears to be other shopping facilities on fire as a result of reported drones attack.",
+        "date": "03/20/2025",
+        "location": "Odesa ",
+        "latitude": "46.387838",
+        "longitude": "30.705849",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src736",
+            "src737",
+            "src738"
+        ],
+        "id": "DV6M2E",
+        "description": "A trolley bus hit injuring one person.",
+        "date": "03/12/2025",
+        "location": "Kryvyi Rih",
+        "latitude": "47.911685",
+        "longitude": "33.424768",
+        "graphic": "TRUE",
+        "associations": [
+            "asc2",
+            "asc15"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src739",
+            "src740",
+            "src741",
+            "src742"
+        ],
+        "id": "YMJS0S",
+        "description": "The aftermath of the shelling by reported smerch missile. at least one person killed and two wounded reported. a warehouse, residential building and a power line were damaged.",
+        "date": "03/19/2025",
+        "location": "Kostiantynivka (Donetsk oblast)",
+        "latitude": "48.500601",
+        "longitude": "37.706607",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src743",
+            "src744",
+            "src745",
+            "src746",
+            "src747"
+        ],
+        "id": "Q8I94T",
+        "description": "Kindergarten building damaged as a result of reported night attack.",
+        "date": "03/17/2025",
+        "location": "Nova Dofinivka, Odesa region",
+        "latitude": "46.581716",
+        "longitude": "30.902965",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src748"
+        ],
+        "id": "475Z5M",
+        "description": "Industrial building damaged as a result of reported drone attack.",
+        "date": "03/17/2025",
+        "location": "Kam\u02bcyana Yaruga (Kharkiv oblast)",
+        "latitude": "49.881383",
+        "longitude": "36.60596",
+        "graphic": "FALSE",
+        "associations": [
+            "asc4"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src749",
+            "src750",
+            "src751",
+            "src752"
+        ],
+        "id": "06977E",
+        "description": "Commercial and residential buildings damaged as a result of reported shelling.",
+        "date": "03/17/2025",
+        "location": "Pokrovsk (Dometsk oblast)",
+        "latitude": "48.26613",
+        "longitude": "37.180374",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src753"
+        ],
+        "id": "U0TYCN",
+        "description": "Aftermath of reported drones attack.",
+        "date": "03/17/2025",
+        "location": "Belgorod, Russia",
+        "latitude": "50.574004",
+        "longitude": "36.56868",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src754"
+        ],
+        "id": "TI9P3X",
+        "description": "Impact crater visible after a drone strike close to a multi-storey residential building.",
+        "date": "03/11/2025",
+        "location": "Horlivka, Donetsk region",
+        "latitude": "48.315676",
+        "longitude": "37.969668",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src755",
+            "src756",
+            "src757",
+            "src758",
+            "src759"
+        ],
+        "id": "BVMNCE",
+        "description": "A flat damaged following a reported drone strike.",
+        "date": "03/11/2025",
+        "location": "Ramenskoye, Moscow region",
+        "latitude": "55.579244",
+        "longitude": "38.217639",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src760",
+            "src761"
+        ],
+        "id": "9SY3DM",
+        "description": "A multi-storey residential building sustained extensive damage following a reported strike.",
+        "date": "03/11/2025",
+        "location": "Pokrovsk",
+        "latitude": "48.280852",
+        "longitude": "37.173916",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src762",
+            "src763",
+            "src764"
+        ],
+        "id": "6XEJ0J",
+        "description": "A vehicle damaged following a drone strike.",
+        "date": "03/10/2025",
+        "location": "Kherson",
+        "latitude": "46.657181",
+        "longitude": "32.650398",
+        "graphic": "FALSE",
+        "associations": [
+            "asc2",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src765"
+        ],
+        "id": "86CSIS",
+        "description": "Residential building damaged as a result of reported attack of the outskirts of the city.",
+        "date": "03/12/2025",
+        "location": "Odesa",
+        "latitude": "46.419273",
+        "longitude": "30.750446",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src766",
+            "src767",
+            "src768"
+        ],
+        "id": "0OGLIW",
+        "description": "Aftermath of the reported shelling to what appears to be a residential area.",
+        "date": "03/07/2025",
+        "location": "Mykolaiv\n\u041c\u0438\u043a\u043e\u043b\u0430\u0457\u0432\u043a\u0430\nOblast Donezk",
+        "latitude": "48.84783",
+        "longitude": "37.764294",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src769",
+            "src770"
+        ],
+        "id": "6CQ22X",
+        "description": "Reported mass drone attack on critical infrastructure, a commercial building is on fire.",
+        "date": "03/07/2025",
+        "location": "",
+        "latitude": "46.515141",
+        "longitude": "30.72459",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7",
+            "asc17"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src771",
+            "src772",
+            "src770"
+        ],
+        "id": "O6FRT2",
+        "description": "Reported moment of strike of a \"shahed\" drone into a car and a commercial building next to a fuel station.",
+        "date": "03/07/2025",
+        "location": "Odesa",
+        "latitude": "46.517125",
+        "longitude": "30.723348",
+        "graphic": "FALSE",
+        "associations": [
+            "asc2",
+            "asc7",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src773",
+            "src774",
+            "src775",
+            "src776",
+            "src777",
+            "src778"
+        ],
+        "id": "85ZE8N",
+        "description": "As a result of reported triple shelling at least 5 people killed and 15 injured, residential buildings damaged.",
+        "date": "03/07/2025",
+        "location": "Dobropillya, Donetsk",
+        "latitude": "48.465453",
+        "longitude": "37.082086",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src779",
+            "src780",
+            "src781",
+            "src782",
+            "src783",
+            "src784",
+            "src785",
+            "src786",
+            "src787"
+        ],
+        "id": "XQ6DXE",
+        "description": "Severely damaged residential building after reported strike. 2 reportedly killed and several injured, including 2 children.",
+        "date": "02/19/2025",
+        "location": "Kherson",
+        "latitude": "46.651889",
+        "longitude": "32.611",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc17"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src788",
+            "src789",
+            "src790",
+            "src791",
+            "src792"
+        ],
+        "id": "CQF1A5",
+        "description": "Damaged residential building after reported drone strike.",
+        "date": "02/19/2025",
+        "location": "Odesa",
+        "latitude": "46.513983",
+        "longitude": "30.722196",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src793",
+            "src794",
+            "src795",
+            "src796",
+            "src797",
+            "src798",
+            "src799"
+        ],
+        "id": "48MH5H",
+        "description": "Strike on the Chernobyl Nuclear Power Plant.",
+        "date": "02/14/2025",
+        "location": "Chernobyl (Kyiv oblast)",
+        "latitude": "51.390123",
+        "longitude": "30.097372",
+        "graphic": "FALSE",
+        "associations": [
+            "asc4",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src800",
+            "src801"
+        ],
+        "id": "GBTWQU",
+        "description": "Burning truck after reported drone strike.",
+        "date": "02/19/2025",
+        "location": "",
+        "latitude": "48.097056",
+        "longitude": "37.580889",
+        "graphic": "FALSE",
+        "associations": [
+            "asc2",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src802",
+            "src20",
+            "src803",
+            "src804",
+            "src805",
+            "src806",
+            "src27"
+        ],
+        "id": "VN79GG",
+        "description": "Severely damaged kindergarten.",
+        "date": "02/19/2025",
+        "location": "Odesa",
+        "latitude": "46.399282",
+        "longitude": "30.710345",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src807",
+            "src808",
+            "src809",
+            "src810",
+            "src811"
+        ],
+        "id": "NX8QV5",
+        "description": "Severely damaged children's hospital after reported drone strike.",
+        "date": "02/19/2025",
+        "location": "Odesa",
+        "latitude": "46.398318",
+        "longitude": "30.712258",
+        "graphic": "FALSE",
+        "associations": [
+            "asc5",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src812"
+        ],
+        "id": "98QMAL",
+        "description": "Damaged Thermal Power Plant after reported strike",
+        "date": "01/19/2025",
+        "location": "Sloviansk, Donetsk Oblast",
+        "latitude": "48.8704",
+        "longitude": "37.761679",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src813"
+        ],
+        "id": "BIYYRL",
+        "description": "Residential edifice damaged after reported drone strike.",
+        "date": "01/19/2025",
+        "location": "Cheremoshnoye, Belgorod Oblast",
+        "latitude": "50.383788",
+        "longitude": "36.49242",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src814",
+            "src815",
+            "src816",
+            "src817"
+        ],
+        "id": "F0X79Z",
+        "description": "Residential buildings damaged as a result of the reported night shelling.",
+        "date": "02/24/2025",
+        "location": "Hlukhiv (Sumy oblast)",
+        "latitude": "51.70005",
+        "longitude": "33.898864",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src818"
+        ],
+        "id": "15KPBH",
+        "description": "Damaged industrial plant after reported strike.",
+        "date": "02/05/2025",
+        "location": "Udachne",
+        "latitude": "48.258321",
+        "longitude": "36.992238",
+        "graphic": "FALSE",
+        "associations": [
+            "asc4",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src819"
+        ],
+        "id": "G9K3B8",
+        "description": "Damaged vehicle and grocery store after reported drone strike.",
+        "date": "02/05/2025",
+        "location": "Horlivka",
+        "latitude": "48.358237",
+        "longitude": "38.031876",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7",
+            "asc2",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src820",
+            "src821"
+        ],
+        "id": "PJX6BV",
+        "description": "Aftermath of artillery shelling of the city of Marhanets.",
+        "date": "02/17/2025",
+        "location": "Marhanets (Dnipropetrovsk oblast)",
+        "latitude": "47.639121",
+        "longitude": "34.627078",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc7",
+            "asc3",
+            "asc9",
+            "asc19",
+            "asc20",
+            "asc21"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src822"
+        ],
+        "id": "8K9YSR",
+        "description": "Damaged residential building after reported drone strike.",
+        "date": "01/29/2025",
+        "location": "Razumnoye, Belgorod Oblast",
+        "latitude": "50.520456",
+        "longitude": "36.680713",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src823",
+            "src824",
+            "src825",
+            "src826"
+        ],
+        "id": "EYRMG3",
+        "description": "Fire in the aftermath of the reported drone strike.",
+        "date": "01/22/2025",
+        "location": "Zaporizhzhia",
+        "latitude": "47.830612",
+        "longitude": "35.198098",
+        "graphic": "FALSE",
+        "associations": [
+            "asc4",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src827"
+        ],
+        "id": "EW3CN7",
+        "description": "Damaged Energy Company building after reported strike.",
+        "date": "01/22/2025",
+        "location": "Horlivka",
+        "latitude": "48.307664",
+        "longitude": "38.030308",
+        "graphic": "FALSE",
+        "associations": [
+            "asc9",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src828"
+        ],
+        "id": "TFXNJ2",
+        "description": "Damaged building after reported shelling.",
+        "date": "01/22/2025",
+        "location": "Mykolaivka, Donetsk Oblast",
+        "latitude": "48.855191",
+        "longitude": "37.779726",
+        "graphic": "FALSE",
+        "associations": [
+            "asc8",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src829",
+            "src830"
+        ],
+        "id": "CALYLW",
+        "description": "Damaged hospital and medical centre after reported shelling.",
+        "date": "01/22/2025",
+        "location": "Kakhovka",
+        "latitude": "46.817533",
+        "longitude": "33.488199",
+        "graphic": "FALSE",
+        "associations": [
+            "asc5",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src831",
+            "src832",
+            "src833",
+            "src834",
+            "src835",
+            "src836"
+        ],
+        "id": "GPUS8I",
+        "description": "Damaged buildings after reported rocket strike. 4 reportedly injured, 1 killed.",
+        "date": "02/12/2025",
+        "location": "Kyiv",
+        "latitude": "50.491063",
+        "longitude": "30.473656",
+        "graphic": "TRUE",
+        "associations": [
+            "asc7",
+            "asc11"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src837"
+        ],
+        "id": "ARQ0QG",
+        "description": "Upper floor of a multi-storey building is damaged following a reported strike. ",
+        "date": "01/21/2025",
+        "location": "Yasnye Zori, Belgorod Oblast",
+        "latitude": "50.369639",
+        "longitude": "36.505039",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src838",
+            "src839",
+            "src840"
+        ],
+        "id": "PU1WAL",
+        "description": "An observatory damaged following a reported strike. ",
+        "date": "01/21/2025",
+        "location": "Kherson",
+        "latitude": "46.64681",
+        "longitude": "32.6289",
+        "graphic": "FALSE",
+        "associations": [
+            "asc10",
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src841",
+            "src842",
+            "src843",
+            "src844",
+            "src845",
+            "src846"
+        ],
+        "id": "G9Z4LG",
+        "description": "Five people were killed (incl. pregnant woman), and dozens wounded (incl. children) in a reported Iskander-M attack on a residential area.",
+        "date": "02/04/2025",
+        "location": "Izjum",
+        "latitude": "49.191982",
+        "longitude": "37.278635",
+        "graphic": "TRUE",
+        "associations": [
+            "asc9",
+            "asc1",
+            "asc14"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src847"
+        ],
+        "id": "L2YMTX",
+        "description": "A postal service car damaged in a shelling.",
+        "date": "02/06/2025",
+        "location": "Pokrovsk, Donetsk region",
+        "latitude": "48.291825",
+        "longitude": "37.210315",
+        "graphic": "FALSE",
+        "associations": [
+            "asc2"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src848",
+            "src849",
+            "src850",
+            "src851",
+            "src852",
+            "src853"
+        ],
+        "id": "UOL2TO",
+        "description": "A market destroyed in a drone attack.",
+        "date": "02/06/2025",
+        "location": "Kharkiv (Kyivskyi district)",
+        "latitude": "50.002709",
+        "longitude": "36.305169",
+        "graphic": "FALSE",
+        "associations": [
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src854",
+            "src855",
+            "src856",
+            "src857",
+            "src858",
+            "src859",
+            "src860"
+        ],
+        "id": "MZIS0L",
+        "description": "A 10-story residential building directly hit; several people killed and injured.",
+        "date": "01/30/2025",
+        "location": "Sumy",
+        "latitude": "50.907086",
+        "longitude": "34.842886",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src861",
+            "src862"
+        ],
+        "id": "3IPU6X",
+        "description": "A large bomb crater visible in what appears to be a city centre. ",
+        "date": "01/30/2025",
+        "location": "Kramatorsk, Donetsk region",
+        "latitude": "48.740305",
+        "longitude": "37.58068",
+        "graphic": "FALSE",
+        "associations": [
+            "asc8"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src863",
+            "src864",
+            "src865",
+            "src866"
+        ],
+        "id": "UVPBMN",
+        "description": "A lyceum destroyed in a shelling. ",
+        "date": "01/29/2025",
+        "location": "Novopavlivka, Dnipropetrovsk region",
+        "latitude": "48.135046",
+        "longitude": "36.79166",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src867",
+            "src868"
+        ],
+        "id": "6YPUKZ",
+        "description": "A medical institution damaged in a reported drone attack.",
+        "date": "01/30/2025",
+        "location": "Izmail, Odes'ka oblast",
+        "latitude": "45.333913",
+        "longitude": "28.830261",
+        "graphic": "FALSE",
+        "associations": [
+            "asc5",
+            "asc6"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src869",
+            "src870"
+        ],
+        "id": "H6A3LK",
+        "description": "A gas station damaged in a shelling; one person severely injured.",
+        "date": "01/30/2025",
+        "location": "Kherson",
+        "latitude": "46.650541",
+        "longitude": "32.574904",
+        "graphic": "TRUE",
+        "associations": [
+            "asc2",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src871"
+        ],
+        "id": "U00MQ7",
+        "description": "University buildings reportedly damaged in a shelling.",
+        "date": "01/23/2025",
+        "location": "Zaporizhzhia",
+        "latitude": "47.81919",
+        "longitude": "35.183408",
+        "graphic": "FALSE",
+        "associations": [
+            "asc3"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src872",
+            "src873"
+        ],
+        "id": "TUI70C",
+        "description": "A museum building damaged in areported shelling.",
+        "date": "01/23/2025",
+        "location": "Zaporizhzhia",
+        "latitude": "47.813702",
+        "longitude": "35.183319",
+        "graphic": "FALSE",
+        "associations": [
+            "asc10"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src874",
+            "src875",
+            "src876",
+            "src877",
+            "src878",
+            "src879"
+        ],
+        "id": "BPOQSW",
+        "description": "A multi-story residential building damaged in a reported hit by a missile.",
+        "date": "01/23/2025",
+        "location": "Zaporizhzhia",
+        "latitude": "47.818144",
+        "longitude": "35.191175",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src880",
+            "src881",
+            "src882"
+        ],
+        "id": "XZ33YE",
+        "description": "A sports facility reportedly hit by R-60 (Molniya); three people injured.",
+        "date": "01/16/2025",
+        "location": "Kharkiv",
+        "latitude": "49.979483",
+        "longitude": "36.261119",
+        "graphic": "FALSE",
+        "associations": [
+            "asc8"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src883",
+            "src884",
+            "src885",
+            "src886",
+            "src887",
+            "src888",
+            "src889"
+        ],
+        "id": "WQ3GGR",
+        "description": "One person reportedly killed and 17 injured following a strike that destroyed a multi-storey residential building. ",
+        "date": "12/24/2024",
+        "location": "Kryvyi Rih, Dnipropetrovsk region \n",
+        "latitude": "47.902154",
+        "longitude": "33.338987",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src890",
+            "src891",
+            "src892",
+            "src893"
+        ],
+        "id": "0TY0HR",
+        "description": "A gas station on fire following a reported drone strike. ",
+        "date": "12/24/2024",
+        "location": "Pokrovske, Nikopol district, Dnipropetrovsk region",
+        "latitude": "47.614171",
+        "longitude": "34.137257",
+        "graphic": "FALSE",
+        "associations": [
+            "asc2",
+            "asc7"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src894"
+        ],
+        "id": "BYBCQT",
+        "description": "A multi-storey residential building damaged following a reported strike. ",
+        "date": "12/17/2024",
+        "location": "Pokrovsk, Donetsk region",
+        "latitude": "48.262624",
+        "longitude": "37.184916",
+        "graphic": "FALSE",
+        "associations": [
+            "asc1"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src895",
+            "src896"
+        ],
+        "id": "O3SL3D",
+        "description": "11 people reportedly injured following reported strikes on a residential area.",
+        "date": "12/10/2024",
+        "location": "Zlatopil, Kharkiv region",
+        "latitude": "49.384219",
+        "longitude": "36.211366",
+        "graphic": "FALSE",
+        "associations": [],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src897",
+            "src898",
+            "src899",
+            "src900",
+            "src901",
+            "src902"
+        ],
+        "id": "SFSOTX",
+        "description": "11 people reportedly killed and 22 injured following a strike on a hospital. ",
+        "date": "12/10/2024",
+        "location": "Zaporizhzhia",
+        "latitude": "47.840124",
+        "longitude": "35.123211",
+        "graphic": "TRUE",
+        "associations": [
+            "asc5"
+        ],
+        "time": "00:00"
+    },
+    {
+        "sources": [
+            "src903",
+            "src904",
+            "src905"
+        ],
+        "id": "8P9TR2",
+        "description": "One person reportedly killed and three others injured following a reported strike on residential buildings. ",
+        "date": "12/03/2024",
+        "location": "Kostyantynivka, Donetsk region",
+        "latitude": "48.504821",
+        "longitude": "37.683427",
+        "graphic": "TRUE",
+        "associations": [
+            "asc1",
+            "asc2"
+        ],
+        "time": "00:00"
+    }
+    
+]

@@ -94,6 +94,14 @@ export function fetchDomain() {
         .catch(() => handleError(domainMsg("shapes")));
     }
 
+    let narrativesPromise = Promise.resolve([]);
+    if (features.USE_NARRATIVES) {
+        narrativesPromise = fetch("/data/narratives.json")
+    .then((response) => response.json())
+    .catch(() => handleError(domainMsg("narratives")));
+    }
+
+
     return Promise.all([
       eventPromise,
       associationsPromise,
@@ -101,6 +109,7 @@ export function fetchDomain() {
       sitesPromise,
       regionsPromise,
       shapesPromise,
+      narrativesPromise,
     ])
       .then((response) => {
         const result = {
@@ -110,6 +119,7 @@ export function fetchDomain() {
           sites: response[3],
           regions: response[4],
           shapes: response[5],
+          narratives: response[6],
           notifications,
         };
         if (

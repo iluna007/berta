@@ -257,3 +257,15 @@
   background-position: 0 0;
   background-size: 65px 20px;
 }
+
+/* Suavizado visual para puntos GeoJSON (L.circleMarker) */
+.leaflet-interactive.soft-point {
+  filter: blur(2px);
+  opacity: 0.9;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.leaflet-interactive.soft-point:hover {
+  filter: blur(0.5px);
+  opacity: 1;
+}
