@@ -4,9 +4,9 @@ const config = {
   title: "Berta",
   display_title: "Berta",
   SERVER_ROOT: "",
-  EVENTS_EXT: "public/data/events.json",
-  SOURCES_EXT: "public/data/sources.json",
-  ASSOCIATIONS_EXT: "public/data/associations.json",
+  EVENTS_EXT: "public/data/events1.json",
+  SOURCES_EXT: "public/data/sources1.json",
+  ASSOCIATIONS_EXT: "public/data/associations1.json",
   API_DATA: "",
   MAPBOX_TOKEN:
     "pk.eyJ1IjoiYmVsbGluZ2NhdC1tYXBib3giLCJhIjoiY2tleW0wbWliMDA1cTJ5bzdkbTRraHgwZSJ9.GJQkjPzj8554VhR5SPsfJg",
@@ -37,10 +37,23 @@ const config = {
         },
         zoomLevels: [
           // { label: "Zoom to 2 weeks", duration: 14 * one_day },
-          { label: "Zoom to 1 month", duration: 31 * one_day },
-          { label: "Zoom to 6 months", duration: 6 * 31 * one_day },
+          //{ label: "Zoom to 1 month", duration: 31 * one_day },
+          //{ label: "Zoom to 6 months", duration: 6 * 31 * one_day },
+          //{ label: "Zoom to 1 year", duration: 12 * 31 * one_day },
           { label: "Zoom to 1 year", duration: 12 * 31 * one_day },
           { label: "Zoom to 2 years", duration: 24 * 31 * one_day },
+          { label: "Zoom to 3 years", duration: 36 * 31 * one_day },
+          { label: "Zoom to 4 years", duration: 48 * 31 * one_day },
+          { label: "Zoom to 5 years", duration: 60 * 31 * one_day },
+          { label: "Zoom to 6 years", duration: 72 * 31 * one_day },
+          //{ label: "Zoom to 8 years", duration: 96 * 31 * one_day },
+          //{ label: "Zoom to 10 years", duration: 120 * 31 * one_day },
+          //{ label: "Zoom to 12 years", duration: 144 * 31 * one_day },
+          //{ label: "Zoom to 14 years", duration: 168 * 31 * one_day },
+          //{ label: "Zoom to 16 years", duration: 192 * 31 * one_day },
+          //{ label: "Zoom to 18 years", duration: 216 * 31 * one_day },
+
+
         ],
         range: {
           /**
