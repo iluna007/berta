@@ -24,8 +24,10 @@ function domain(domainState = initial.domain, action) {
   switch (action.type) {
     case UPDATE_DOMAIN:
       return updateDomain(domainState, action);
+
     case MARK_NOTIFICATIONS_READ:
       return markNotificationsRead(domainState, action);
+
     default:
       return domainState;
   }

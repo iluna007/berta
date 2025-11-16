@@ -54,7 +54,11 @@ export function validateDomain(domain, features) {
     sources: {},
     regions: [],
     shapes: [],
-    notifications: domain ? domain.notifications : null,
+    // notifications: domain ? domain.notifications : null,
+    notifications:
+      domain && Array.isArray(domain.notifications)
+        ? domain.notifications
+        : [],
   };
 
   if (domain === undefined) {
@@ -70,6 +74,10 @@ export function validateDomain(domain, features) {
     shapes: [],
   };
 
+  // ============================
+  // 🚫 BLOQUE DE VALIDACIÓN JOI DESACTIVADO
+  // ============================
+  /*
   function validateArrayItem(item, domainKey, schema) {
     const result = schema.validate(item);
     if (result.error != null) {
@@ -120,11 +128,24 @@ export function validateDomain(domain, features) {
   validateObject(domain.sources, "sources", sourceSchema);
   validateArray(domain.regions, "regions", regionSchema);
   validateArray(domain.shapes, "shapes", shapeSchema);
+  */
+
+  // ============================
+  // ✅ NUEVO COMPORTAMIENTO: PASSTHROUGH SIN JOI
+  // ============================
+  sanitizedDomain.events = domain.events || [];
+  sanitizedDomain.sites = domain.sites || [];
+  sanitizedDomain.associations = domain.associations || [];
+  sanitizedDomain.sources = domain.sources || {};
+  sanitizedDomain.regions = domain.regions || [];
+  sanitizedDomain.shapes = domain.shapes || [];
 
   // NB: [lat, lon] array is best format for projecting into map
   sanitizedDomain.regions = sanitizedDomain.regions.map((region) => ({
     name: region.name,
-    points: region.items.map((coords) => coords.replace(/\s/g, "").split(",")),
+    points: region.items.map((coords) =>
+      coords.replace(/\s/g, "").split(",")
+    ),
   }));
 
   sanitizedDomain.shapes = sanitizedDomain.shapes.reduce((acc, val) => {
@@ -143,7 +164,10 @@ export function validateDomain(domain, features) {
     return acc;
   }, []);
 
-  const duplicateAssociations = findDuplicateAssociations(domain.associations);
+  const duplicateAssociations = findDuplicateAssociations(
+    domain.associations || []
+  );
+
   // Duplicated associations
   if (duplicateAssociations.length > 0) {
     sanitizedDomain.notifications.push({
@@ -153,15 +177,16 @@ export function validateDomain(domain, features) {
       type: "error",
     });
   }
-  sanitizedDomain.associations = domain.associations;
+  sanitizedDomain.associations = domain.associations || [];
 
   // append events with datetime and sort
   sanitizedDomain.events = sanitizedDomain.events.filter((event, idx) => {
     let errorMsg = "";
     event.civId = event.id;
     event.id = idx;
-    // event.associations comes in as a [association.ids...]; convert to actual association objects
-    event.associations = event.associations.reduce((acc, id) => {
+
+    // event.associations viene como [association.id...]; conviértelo a objetos
+    event.associations = (event.associations || []).reduce((acc, id) => {
       const foundAssociation = sanitizedDomain.associations.find(
         (elem) => elem.id === id
       );
@@ -180,9 +205,14 @@ export function validateDomain(domain, features) {
         event.shape = relatedShapeObj;
       }
     }
+
     // if lat, long come in with commas, replace with decimal format
-    event.latitude = event.latitude.replace(",", ".");
-    event.longitude = event.longitude.replace(",", ".");
+    if (typeof event.latitude === "string") {
+      event.latitude = event.latitude.replace(",", ".");
+    }
+    if (typeof event.longitude === "string") {
+      event.longitude = event.longitude.replace(",", ".");
+    }
 
     event.datetime = calcDatetime(event.date, event.time);
     if (!isValidDate(event.datetime))
@@ -212,5 +242,6 @@ export function validateDomain(domain, features) {
       });
     }
   });
+
   return sanitizedDomain;
 }
