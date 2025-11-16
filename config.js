@@ -28,7 +28,7 @@ const config = {
       },
       cluster: { radius: 50, minZoom: 5, maxZoom: 12 },
       associations: {
-        defaultCategory: "Weapon System",
+        defaultCategory: "Tipo de daño",
       },
       timeline: {
         dimensions: {
@@ -46,7 +46,7 @@ const config = {
           { label: "Zoom to 4 years", duration: 48 * 31 * one_day },
           { label: "Zoom to 5 years", duration: 60 * 31 * one_day },
           { label: "Zoom to 6 years", duration: 72 * 31 * one_day },
-          //{ label: "Zoom to 8 years", duration: 96 * 31 * one_day },
+          { label: "Zoom to 8 years", duration: 96 * 31 * one_day },
           //{ label: "Zoom to 10 years", duration: 120 * 31 * one_day },
           //{ label: "Zoom to 12 years", duration: 144 * 31 * one_day },
           //{ label: "Zoom to 14 years", duration: 168 * 31 * one_day },
@@ -188,6 +188,7 @@ const config = {
     GEOJSON_LAYERS: [
     "public/geojson/Rio Gualcarque.geojson",
     "public/geojson/Poligonos_Predios_Sisimetera.geojson"
+    
     ],
   },
 };

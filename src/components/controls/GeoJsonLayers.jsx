@@ -11,9 +11,9 @@ const GeoJsonLayers = ({ map, layersConfig }) => {
     layersConfig.map(l => ({ ...l, visible: false, layer: null }))
   );
 
+  // Limpieza al desmontar
   useEffect(() => {
     return () => {
-      // Limpiar las capas al desmontar
       layers.forEach(l => {
         if (map && l.layer) map.removeLayer(l.layer);
       });
@@ -29,12 +29,21 @@ const GeoJsonLayers = ({ map, layersConfig }) => {
         fetch(target.url)
           .then(res => res.json())
           .then(data => {
+
             const geoLayer = L.geoJSON(data, {
-              style: feature => ({
+
+              /** 🔴 DESACTIVA INTERACTIVIDAD PARA TODO TYPE */
+              interactive: false,
+
+              /** Estilo para líneas y polígonos */
+              style: () => ({
                 color: target.color || "#0077be",
                 weight: target.weight || 2,
                 fillOpacity: target.fillOpacity ?? 0.3,
+                interactive: false   // <- también aquí por seguridad
               }),
+
+              /** Estilo para puntos */
               pointToLayer: (feature, latlng) =>
                 L.circleMarker(latlng, {
                   radius: 5,
@@ -42,16 +51,21 @@ const GeoJsonLayers = ({ map, layersConfig }) => {
                   color: "#000",
                   weight: 1,
                   opacity: 1,
-                  fillOpacity: 0.8
+                  fillOpacity: 0.8,
+                  className: "leaflet-interactive soft-point",
+
                 })
             });
+
             geoLayer.addTo(map);
+
             updated[idx] = { ...target, visible: true, layer: geoLayer };
             setLayers([...updated]);
           });
+
       } else {
         if (target.layer) map.removeLayer(target.layer);
-        updated[idx] = { ...target, visible: false };
+        updated[idx] = { ...target, visible: false, layer: null };
         setLayers([...updated]);
       }
 
