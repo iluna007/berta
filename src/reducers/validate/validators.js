@@ -7,9 +7,19 @@ import shapeSchema from "./shapeSchema";
 
 import { calcDatetime, capitalize } from "../../common/utilities";
 
+/* ---------------------------------------------
+ * SWITCH ELEGANTE PARA ACTIVAR/DESACTIVAR VALIDACIÓN
+ * ---------------------------------------------
+ */
+const VALIDATION_ENABLED = false; // Cambiar a true/false según se necesite
+
+console.log(
+  `%c[VALIDATORS] Validation is ${VALIDATION_ENABLED ? "ENABLED ✔️" : "DISABLED🚨"}.`,
+  `color: ${VALIDATION_ENABLED ? "green" : "orange"}; font-weight: bold;`
+);
+
 /*
  * Create an error notification object
- * Types: ['error', 'warning', 'good', 'neural']
  */
 function makeError(type, id, message) {
   return {
@@ -44,7 +54,9 @@ function findDuplicateAssociations(associations) {
 }
 
 /*
- * Validate domain schema
+ * -------------------------------------------------------
+ * VALIDACIÓN + NORMALIZACIÓN (VALIDACIÓN ACTIVABLE)
+ * -------------------------------------------------------
  */
 export function validateDomain(domain, features) {
   const sanitizedDomain = {
@@ -54,16 +66,10 @@ export function validateDomain(domain, features) {
     sources: {},
     regions: [],
     shapes: [],
-    // notifications: domain ? domain.notifications : null,
-    notifications:
-      domain && Array.isArray(domain.notifications)
-        ? domain.notifications
-        : [],
+    notifications: domain ? domain.notifications : [],
   };
 
-  if (domain === undefined) {
-    return sanitizedDomain;
-  }
+  if (!domain) return sanitizedDomain;
 
   const discardedDomain = {
     events: [],
@@ -74,53 +80,62 @@ export function validateDomain(domain, features) {
     shapes: [],
   };
 
-  // ============================
-  // 🚫 BLOQUE DE VALIDACIÓN JOI DESACTIVADO
-  // ============================
   /*
+   *  VALIDACIÓN MODIFICADA:
+   *  - Si VALIDATION_ENABLED = false → no se descarta nada.
+   *  - Si VALIDATION_ENABLED = true → se valida normalmente.
+   */
   function validateArrayItem(item, domainKey, schema) {
-    const result = schema.validate(item);
-    if (result.error != null) {
-      const id = item.id || "-";
-      const domainStr = capitalize(domainKey);
-      const error = makeError(domainStr, id, result.error.message);
-
-      discardedDomain[domainKey].push(Object.assign(item, { error }));
-    } else {
-      sanitizedDomain[domainKey].push(item);
+    if (VALIDATION_ENABLED) {
+      const result = schema.validate(item);
+      if (result.error != null) {
+        const id = item.id || "-";
+        const domainStr = capitalize(domainKey);
+        const error = makeError(domainStr, id, result.error.message);
+        discardedDomain[domainKey].push({ ...item, error });
+        return; // no lo agregamos a sanitizedDomain
+      }
     }
+
+    // SIEMPRE agregar el item (cuando VALIDATION_ENABLED está desactivado)
+    sanitizedDomain[domainKey].push(item);
   }
 
   function validateArray(items, domainKey, schema) {
     items.forEach((item) => {
-      if (domainKey === "events" && item.date === "" && item.time === "")
-        return;
+      if (domainKey === "events" && item.date === "" && item.time === "") return;
       validateArrayItem(item, domainKey, schema);
     });
   }
 
   function validateObject(obj, domainKey, itemSchema) {
     Object.keys(obj).forEach((key) => {
-      if (key === "") return;
+      if (!key) return;
       const vl = obj[key];
-      const result = itemSchema.validate(vl);
-      if (result.error != null) {
-        const id = vl.id || "-";
-        const domainStr = capitalize(domainKey);
-        discardedDomain[domainKey].push({
-          ...vl,
-          error: makeError(domainStr, id, result.error.message),
-        });
-      } else {
-        sanitizedDomain[domainKey][key] = vl;
+
+      if (VALIDATION_ENABLED) {
+        const result = itemSchema.validate(vl);
+        if (result.error != null) {
+          const id = vl.id || "-";
+          const domainStr = capitalize(domainKey);
+          discardedDomain[domainKey].push({
+            ...vl,
+            error: makeError(domainStr, id, result.error.message),
+          });
+          return;
+        }
       }
+
+      sanitizedDomain[domainKey][key] = vl;
     });
   }
 
+  // Asegura que CUSTOM_EVENT_FIELDS exista
   if (!Array.isArray(features.CUSTOM_EVENT_FIELDS)) {
     features.CUSTOM_EVENT_FIELDS = [];
   }
 
+  // VALIDACIONES (pueden quedar activadas o no)
   const eventSchema = createEventSchema(features.CUSTOM_EVENT_FIELDS);
   validateArray(domain.events, "events", eventSchema);
   validateArray(domain.sites, "sites", siteSchema);
@@ -128,19 +143,15 @@ export function validateDomain(domain, features) {
   validateObject(domain.sources, "sources", sourceSchema);
   validateArray(domain.regions, "regions", regionSchema);
   validateArray(domain.shapes, "shapes", shapeSchema);
-  */
 
-  // ============================
-  // ✅ NUEVO COMPORTAMIENTO: PASSTHROUGH SIN JOI
-  // ============================
-  sanitizedDomain.events = domain.events || [];
-  sanitizedDomain.sites = domain.sites || [];
-  sanitizedDomain.associations = domain.associations || [];
-  sanitizedDomain.sources = domain.sources || {};
-  sanitizedDomain.regions = domain.regions || [];
-  sanitizedDomain.shapes = domain.shapes || [];
+  /*
+   * ----------------------------------------------------
+   * NORMALIZACIÓN — SIEMPRE SE EJECUTA
+   * (indispensable para que mapa/timeline funcionen)
+   * ----------------------------------------------------
+   */
 
-  // NB: [lat, lon] array is best format for projecting into map
+  // REGIONS → normalización a points[]
   sanitizedDomain.regions = sanitizedDomain.regions.map((region) => ({
     name: region.name,
     points: region.items.map((coords) =>
@@ -148,28 +159,28 @@ export function validateDomain(domain, features) {
     ),
   }));
 
+  // SHAPES → convertir IDs a objetos reales
   sanitizedDomain.shapes = sanitizedDomain.shapes.reduce((acc, val) => {
     if (!val.shape) {
-      discardedDomain.shapes.push({
-        ...val,
-        error: makeError(
-          "events",
-          val.id,
-          "Invalid event shape. Please specify a shape for this type of event."
-        ),
-      });
+      if (VALIDATION_ENABLED) {
+        discardedDomain.shapes.push({
+          ...val,
+          error: makeError(
+            "events",
+            val.id,
+            "Invalid event shape. Please specify a shape for this type of event."
+          ),
+        });
+      }
     } else {
       acc.push(val);
     }
     return acc;
   }, []);
 
-  const duplicateAssociations = findDuplicateAssociations(
-    domain.associations || []
-  );
-
-  // Duplicated associations
-  if (duplicateAssociations.length > 0) {
+  // Asociaciones duplicadas
+  const duplicateAssociations = findDuplicateAssociations(domain.associations);
+  if (duplicateAssociations.length > 0 && VALIDATION_ENABLED) {
     sanitizedDomain.notifications.push({
       message:
         "Associations are required to be unique. Ignoring duplicates for now.",
@@ -177,71 +188,76 @@ export function validateDomain(domain, features) {
       type: "error",
     });
   }
-  sanitizedDomain.associations = domain.associations || [];
+  sanitizedDomain.associations = domain.associations;
 
-  // append events with datetime and sort
+  // EVENTS — normalización profunda
   sanitizedDomain.events = sanitizedDomain.events.filter((event, idx) => {
     let errorMsg = "";
     event.civId = event.id;
     event.id = idx;
 
-    // event.associations viene como [association.id...]; conviértelo a objetos
-    event.associations = (event.associations || []).reduce((acc, id) => {
-      const foundAssociation = sanitizedDomain.associations.find(
-        (elem) => elem.id === id
-      );
-      if (foundAssociation) acc.push(foundAssociation);
+    // associations como objetos, no strings
+    event.associations = event.associations.reduce((acc, id) => {
+      const found = sanitizedDomain.associations.find((elem) => elem.id === id);
+      if (found) acc.push(found);
       return acc;
     }, []);
 
+    // shapes como objetos
     if (event.shape) {
       const relatedShapeObj = sanitizedDomain.shapes.find(
         (elem) => elem.id === event.shape
       );
-      if (!relatedShapeObj)
-        errorMsg =
-          "Failed to find related shape. Please verify shape type for event.";
-      else {
+      if (!relatedShapeObj) {
+        if (VALIDATION_ENABLED) {
+          errorMsg =
+            "Failed to find related shape. Please verify shape type for event.";
+        }
+      } else {
         event.shape = relatedShapeObj;
       }
     }
 
-    // if lat, long come in with commas, replace with decimal format
-    if (typeof event.latitude === "string") {
-      event.latitude = event.latitude.replace(",", ".");
-    }
-    if (typeof event.longitude === "string") {
-      event.longitude = event.longitude.replace(",", ".");
-    }
+    // lat/long → reemplazar coma por punto
+    event.latitude = event.latitude.replace(",", ".");
+    event.longitude = event.longitude.replace(",", ".");
 
+    // datetime
     event.datetime = calcDatetime(event.date, event.time);
-    if (!isValidDate(event.datetime))
-      errorMsg =
-        "Invalid date. It's been dropped, as otherwise timemap won't work as expected.";
+    if (!isValidDate(event.datetime)) {
+      if (VALIDATION_ENABLED) {
+        errorMsg =
+          "Invalid date. It's been dropped, as otherwise timemap won't work as expected.";
+      }
+    }
 
-    if (errorMsg) {
+    if (errorMsg && VALIDATION_ENABLED) {
       discardedDomain.events.push({
         ...event,
         error: makeError("events", event.id, errorMsg),
       });
       return false;
     }
+
     return true;
   });
 
+  // Ordenar eventos
   sanitizedDomain.events.sort((a, b) => a.datetime - b.datetime);
 
-  // Message the number of failed items in domain
-  Object.keys(discardedDomain).forEach((disc) => {
-    const len = discardedDomain[disc].length;
-    if (len) {
-      sanitizedDomain.notifications.push({
-        message: `${len} invalid ${disc} not displayed.`,
-        items: discardedDomain[disc],
-        type: "error",
-      });
-    }
-  });
+  // Mensajes finales (solo si VALIDATION_ENABLED = true)
+  if (VALIDATION_ENABLED) {
+    Object.keys(discardedDomain).forEach((disc) => {
+      const len = discardedDomain[disc].length;
+      if (len) {
+        sanitizedDomain.notifications.push({
+          message: `${len} invalid ${disc} not displayed.`,
+          items: discardedDomain[disc],
+          type: "error",
+        });
+      }
+    });
+  }
 
   return sanitizedDomain;
 }

@@ -7,7 +7,7 @@ function joiFromCustom(custom) {
       output[field.key] = Joi.string().allow("");
     }
     if (field.kind === "list") {
-      output[field.key] = Joi.array().items(Joi.string()).allow("");
+      output[field.key] = Joi.array().allow("");
     }
   });
   return output;
@@ -28,7 +28,6 @@ function createEventSchema(custom) {
       location: Joi.string().allow(""),
       latitude: Joi.string().allow(""),
       longitude: Joi.string().allow(""),
-
       /* space */
       x: Joi.string().allow(""),
       y: Joi.string().allow(""),
@@ -37,21 +36,14 @@ function createEventSchema(custom) {
       type: Joi.string().allow(""),
       category: Joi.string().allow(""),
       category_full: Joi.string().allow(""),
-
-      associations: Joi.array().items(Joi.string()).default([]),
-
+      associations: Joi.array().default([]),
       sources: Joi.array(),
       comments: Joi.string().allow(""),
       time_display: Joi.string().allow(""),
-
       // nested
       narrative___stepStyles: Joi.array(),
       shape: Joi.string().allow(""),
       colour: Joi.string().allow(""),
-
-      /* NUEVO CAMPO ACEPTADO */
-      victims: Joi.array().items(Joi.string()).default([]),
-
       ...joiFromCustom(custom),
     })
     .and("latitude", "longitude")

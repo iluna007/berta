@@ -29,7 +29,34 @@ export const generateCardLayout = {
           value: event.civId || `—`,
         },
       ],
+
+      // ⬇️ NUEVA SECCIÓN: LISTA DE VÍCTIMAS
+      event.victims && event.victims.length > 0
+        ? [
+            {
+              kind: "list",
+              title: "Victims",
+              value: event.victims,
+            },
+          ]
+        : [],
+        
+
       [{ kind: "line-break", times: 0.4 }],
+      // ⬇️ NUEVA SECCIÓN: LISTA DE ATACANTES
+      event.attackers && event.attackers.length > 0
+        ? [
+            {
+              kind: "list",
+              title: "Attackers",
+              value: event.attackers,
+            },
+          ]
+        : [],
+        
+
+      [{ kind: "line-break", times: 0.4 }],
+
       [
         {
           kind: "text",
@@ -40,6 +67,7 @@ export const generateCardLayout = {
       ],
     ];
   },
+
   sourced: ({ event }) => {
     return [
       [
@@ -59,6 +87,31 @@ export const generateCardLayout = {
           value: event.civId || `—`,
         },
       ],
+
+      // ⬇️ NUEVA SECCIÓN: LISTA DE VÍCTIMAS TAMBIÉN EN SOURCED
+      event.victims && event.victims.length > 0
+        ? [
+            {
+              kind: "list",
+              title: "Victims",
+              value: event.victims,
+            },
+          ]
+        : [],
+        // ⬇️ NUEVA SECCIÓN: LISTA DE ATACANTES
+      event.attackers && event.attackers.length > 0
+        ? [
+            {
+              kind: "list",
+              title: "Attackers",
+              value: event.attackers,
+            },
+          ]
+        : [],
+        
+
+      [{ kind: "line-break", times: 0.4 }],
+
       [
         {
           kind: "text",
@@ -97,7 +150,6 @@ export const Card = ({
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-  // NB: should be internationalized.
   const renderTime = (field) => (
     <CardTime
       language={language}
@@ -144,7 +196,6 @@ export const Card = ({
           <div style={{ height: `${field.times || 1}rem`, width: `100%` }} />
         );
       case "item":
-        // this is like a span
         return null;
       case "markdown":
         return <CardCustom {...field} />;
@@ -172,11 +223,9 @@ export const Card = ({
         return (
           <div className="card-cell">
             {field.title && <h4>{field.title}</h4>}
-            {/* <div className="card-row"> */}
             {field.value.map((t, idx) => (
               <CardButton key={`card-button-${idx}`} {...t} />
             ))}
-            {/* </div> */}
           </div>
         );
       case "text":
@@ -197,12 +246,10 @@ export const Card = ({
           </div>
         );
       case "list":
-        // Only render if some of the list's strings are non-empty
         const shouldFieldRender =
           !!field.value.length &&
           !!field.value.filter((s) => !isEmptyString(s)).length;
         return shouldFieldRender ? (
-          // <div className="card-cell">
           <div>
             {field.title && <h4>{field.title}</h4>}
             <div className="card-row m0">
@@ -221,7 +268,6 @@ export const Card = ({
     return (
       <div className="card-row" key={hash({ ...row, salt })}>
         {row.map((field) => (
-          // src by src meaning wrapGrahpic must be called around a map of renderField for sources
           <span key={hash({ ...field, row: row })}>
             {renderField(field, cardIdx)}
           </span>
@@ -230,7 +276,6 @@ export const Card = ({
     );
   }
 
-  // TODO: render afterCaret appropriately from props
   sources = [];
 
   return (
@@ -260,13 +305,6 @@ export const Card = ({
         } else return renderRow(row, cardIdx);
       })}
 
-      {/* {isOpen && (
-        <div className="card-bottomhalf">
-          {sources.map(() => (
-            <div className="card-row"></div>
-          ))}
-        </div>
-      )} */}
       {sources.length > 0 ? renderCaret() : null}
     </li>
   );

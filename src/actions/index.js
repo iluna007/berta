@@ -96,7 +96,7 @@ export function fetchDomain() {
 
     let narrativesPromise = Promise.resolve([]);
     if (features.USE_NARRATIVES) {
-        narrativesPromise = fetch("/data/narratives.json")
+        narrativesPromise = fetch("/narratives/narratives.json")
     .then((response) => response.json())
     .catch(() => handleError(domainMsg("narratives")));
     }
