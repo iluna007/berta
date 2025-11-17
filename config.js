@@ -102,14 +102,13 @@ const config = {
       },
     },
     features: {
-      USE_CATEGORIES: true,
-      USE_NARRATIVES: true, // ✅ Activa narrativas
+      USE_CATEGORIES: false,
       CATEGORIES_AS_FILTERS: true,
       COLOR_BY_CATEGORY: false,
       COLOR_BY_ASSOCIATION: true,
       USE_ASSOCIATIONS: true,
       USE_FULLSCREEN: true,
-      USE_DOWNLOAD: true,
+      USE_DOWNLOAD: false,
       USE_SOURCES: true,
       USE_SPOTLIGHTS: false,
       USE_SHAPES: false,

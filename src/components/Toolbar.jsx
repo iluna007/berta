@@ -30,6 +30,7 @@ import {
 import { ToolbarButton } from "./controls/atoms/ToolbarButton";
 import { FullscreenToggle } from "./controls/FullScreenToggle";
 import DownloadPanel from "./controls/DownloadPanel";
+import NarrativeControls from "./controls/NarrativeControls";
 
 class Toolbar extends Component {
   constructor(props) {
@@ -102,31 +103,42 @@ class Toolbar extends Component {
     this.props.methods.onSelectNarrative(narrative);
   }
 
-  renderToolbarNarrativePanel() {
-    const { panels } = this.props.toolbarCopy;
+renderToolbarNarrativePanel() {
+  const { panels } = this.props.toolbarCopy;
+  const { narratives } = this.props;
+
+  if (!narratives || narratives.length === 0) {
     return (
       <TabPanel>
         <h2>{panels.narratives.label}</h2>
-        <p>{panels.narratives.description}</p>
-        {this.props.narratives.map((narr) => {
-          return (
-            <div className="panel-action action">
-              <button
-                onClick={() => {
-                  this.goToNarrative(narr);
-                }}
-              >
-                <p>{narr.id}</p>
-                <p>
-                  <small>{trimAndEllipse(narr.desc, 120)}</small>
-                </p>
-              </button>
-            </div>
-          );
-        })}
+        <p>No hay narrativas disponibles.</p>
       </TabPanel>
     );
   }
+
+  return (
+    <TabPanel>
+      <h2>{panels.narratives.label}</h2>
+      <p>{panels.narratives.description}</p>
+
+      {/* Lista de narrativas */}
+      {narratives.map((narr) => (
+        <div key={narr.id} className="panel-action action">
+          <button onClick={() => this.goToNarrative(narr)}>
+            <p><strong>{narr.label || narr.id}</strong></p>
+            <p><small>{trimAndEllipse(narr.description || narr.desc || "", 120)}</small></p>
+          </button>
+        </div>
+      ))}
+
+      {/* Herramientas adicionales */}
+      <NarrativeControls
+        narratives={narratives}
+        onSelectNarrative={this.goToNarrative.bind(this)}
+      />
+    </TabPanel>
+  );
+}
 
   renderToolbarCategoriesPanel() {
     const { categories: panelCategories } = this.props.toolbarCopy.panels;
@@ -254,6 +266,9 @@ class Toolbar extends Component {
         {features.USE_ASSOCIATIONS ? this.renderToolbarFilterPanel() : null}
         {features.USE_SHAPES ? this.renderToolbarShapePanel() : null}
         {features.USE_DOWNLOAD ? this.renderToolbarDownloadPanel() : null}
+
+
+
         
         
         {features.USE_GEOJSON_LAYERS && ( //AGREGAR PANEL DE CAPAS GEOJSON
@@ -280,8 +295,6 @@ class Toolbar extends Component {
         </TabPanel>
       )}
 
-
-
       </div>
     );
   }
@@ -296,6 +309,7 @@ class Toolbar extends Component {
 
         return (
           <div
+            key={nar.id || idx}
             className={classes}
             onClick={() => {
               this.selectTab(idx);
