@@ -120,8 +120,13 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
       zoom,
       pitch,
       bearing,
-      speed: 0.7,
-      curve: 1.5,
+      
+      duration: 3500,     // ← duración del vuelo (ms)
+      speed: 0.5,         // ← más lento, más flotante
+      curve: 1.8,         // ← suavidad de la curva del vuelo
+      easing: (t) => t,   // ← easing lineal suave
+
+      essential: true
     });
 
     // --- Procesar GeoJSONs (enter/exit) ---
