@@ -16,6 +16,7 @@ export default defineConfig({
 
   build: {
     outDir: "build",
+    chunkSizeWarningLimit: 3000, // 🔥 elimina el warning de chunks grandes
   },
 
   server: {
