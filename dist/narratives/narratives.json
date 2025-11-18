@@ -1,0 +1,144 @@
+{
+  "chapters": [
+    {
+      "id": "intro",
+      "title": "Introducción",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae sapien vel sapien dignissim feugiat eget quis lorem. Praesent ac ultrices arcu, vitae viverra massa.\n\nMorbi in volutpat nisl. Aenean id libero vel lacus bibendum porttitor. Phasellus vel pharetra turpis. Mauris fringilla consequat tincidunt.",
+      
+      "location": {
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 0,
+        "bearing": 0
+      },
+
+      "fadeIn": true,
+      "fadeOut": true,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/intro1.jpeg",
+          "position": "center",
+          "opacity": 1
+        }
+      ],
+
+      "geojsonOnEnter": [
+        "Poligonos_Predios_La Vega.geojson",
+        "Poligonos_Predios_Rio Blanco.geojson"
+      ],
+      "geojsonOnExit": [
+        "Poligonos_Predios_La Vega.geojson",
+        "Poligonos_Predios_Rio Blanco.geojson"
+      ]
+    },
+
+    {
+      "id": "cap-2",
+      "title": "Capítulo 2 — Territorio y extracción",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique velit non magna dictum. Donec vulputate, nisl ac iaculis volutpat, lorem magna dignissim est, vitae facilisis nunc elit id massa.\n\nSed elementum mauris sed justo dignissim sagittis. Morbi rhoncus sapien a ligula faucibus tempor. Vestibulum id accumsan lacus.",
+      
+      "location": {
+        "center": [-88.15, 14.32],
+        "zoom": 11,
+        "pitch": 20,
+        "bearing": -10
+      },
+
+      "fadeIn": true,
+      "fadeOut": true,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/extractivismo1.jpeg",
+          "position": "center",
+          "opacity": 1
+        }
+      ],
+
+      "geojsonOnEnter": [
+        "Poligonos_Predios_Sisimetera.geojson",
+        "Antenas Telefonicas.geojson"
+      ],
+      "geojsonOnExit": [
+        "Poligonos_Predios_Sisimetera.geojson",
+        "Antenas Telefonicas.geojson"
+      ]
+    },
+
+    {
+      "id": "cap-3",
+      "title": "Capítulo 3 — Redes y Violencia",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed dui vitae libero vulputate dictum. Suspendisse id libero ac ante convallis tempor.\n\nDonec at laoreet orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+      
+      "location": {
+        "center": [-88.23, 14.43],
+        "zoom": 12,
+        "pitch": 30,
+        "bearing": 15
+      },
+
+      "fadeIn": true,
+      "fadeOut": true,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/violencia_redes.jpeg",
+          "position": "center",
+          "opacity": 1
+        }
+      ],
+
+      "geojsonOnEnter": [
+        "Impronta_Bertha Isabel Caceres Flores.geojson",
+        "Impronta_Oscar Aroldo.geojson"
+      ],
+      "geojsonOnExit": [
+        "Impronta_Bertha Isabel Caceres Flores.geojson",
+        "Impronta_Oscar Aroldo.geojson"
+      ]
+    },
+
+    {
+      "id": "cap-4",
+      "title": "Capítulo 4 — Infraestructura en Disputa",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan neque sed nulla semper dignissim. Sed rutrum ligula a urna bibendum, sit amet laoreet urna posuere.\n\nNulla vel justo augue. Suspendisse pretium pulvinar hendrerit. Etiam fringilla, erat sed gravida dapibus, augue justo interdum turpis.",
+      
+      "location": {
+        "center": [-88.04, 15.03],
+        "zoom": 12,
+        "pitch": 10,
+        "bearing": -5
+      },
+
+      "fadeIn": true,
+      "fadeOut": true,
+
+      "media": [
+        {
+          "type": "video",
+          "src": "/narratives/media/infraestructura_conflicto.mp4",
+          "autoplay": true,
+          "loop": true,
+          "muted": true,
+          "position": "center",
+          "opacity": 1
+        }
+      ],
+
+      "geojsonOnEnter": [
+        "Poligonos_Predios_Cuchilla El Naranjal.geojson",
+        "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson",
+        "Rio Gualcarque.geojson"
+      ],
+      "geojsonOnExit": [
+        "Poligonos_Predios_Cuchilla El Naranjal.geojson",
+        "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson",
+        "Rio Gualcarque.geojson"
+      ]
+    }
+  ]
+}
