@@ -1,7 +1,7 @@
 import { Component } from "react";
-
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
+import { useLocation } from "react-router-dom";   // ← NUEVO
 import * as actions from "../actions";
 import * as selectors from "../selectors";
 
@@ -48,8 +48,6 @@ class Dashboard extends Component {
       this.props.actions.rehydrateState();
     });
 
-    // NOTE: hack to get the timeline to always show. Not entirely sure why
-    // this is necessary.
     window.dispatchEvent(new Event("resize"));
   }
 
@@ -78,39 +76,31 @@ class Dashboard extends Component {
     const TIMELINE_AXIS = 0;
     if (axis === TIMELINE_AXIS) {
       matchedEvents.push(selected);
-      // find in events
       const { events } = this.props.domain;
       const idx = this.findEventIdx(selected);
-      // binary search can return event with different id
+
       if (events[idx].id !== selected.id) {
         matchedEvents.push(events[idx]);
       }
 
-      // check events before
       let ptr = idx - 1;
       while (
         ptr >= 0 &&
         events[idx].datetime.getTime() === events[ptr].datetime.getTime()
       ) {
-        if (events[ptr].id !== selected.id) {
-          matchedEvents.push(events[ptr]);
-        }
+        if (events[ptr].id !== selected.id) matchedEvents.push(events[ptr]);
         ptr -= 1;
       }
 
-      // check events after
       ptr = idx + 1;
       while (
         ptr < events.length &&
         events[idx].datetime.getTime() === events[ptr].datetime.getTime()
       ) {
-        if (events[ptr].id !== selected.id) {
-          matchedEvents.push(events[ptr]);
-        }
+        if (events[ptr].id !== selected.id) matchedEvents.push(events[ptr]);
         ptr += 1;
       }
     } else {
-      // Map..
       const std = { ...selected };
       delete std.sources;
       Object.values(std).forEach((ev) => matchedEvents.push(ev));
@@ -125,15 +115,11 @@ class Dashboard extends Component {
     }
 
     const cat = this.props.ui.style.categories[category];
-    if (cat) {
-      return cat;
-    } else {
-      return this.props.ui.style.categories.default;
-    }
+    if (cat) return cat;
+    return this.props.ui.style.categories.default;
   }
 
   setNarrative(narrative) {
-    // only handleSelect if narrative is not null and has associated events
     if (narrative && narrative.steps.length >= 1) {
       this.handleSelect([narrative.steps[0]]);
     }
@@ -153,15 +139,13 @@ class Dashboard extends Component {
 
     const evs = domain.events.filter((ev) => {
       let hasOne = false;
-      // add event if it has at least one matching filter
       for (let i = 0; i < activeFilters.length; i++) {
         if (ev.associations.includes(activeFilters[i].name)) {
           hasOne = true;
           break;
         }
       }
-      if (hasOne) return true;
-      return false;
+      return hasOne;
     });
 
     if (evs.length === 0) {
@@ -171,6 +155,7 @@ class Dashboard extends Component {
 
     const name = activeFilters.map((f) => f.name).join("-");
     const desc = activeFilters.map((f) => f.description).join("\n\n");
+
     this.setNarrative({
       id: name,
       label: name,
@@ -181,20 +166,13 @@ class Dashboard extends Component {
   }
 
   selectNarrativeStep(idx) {
-    // Try to find idx if event passed rather than number
     if (typeof idx !== "number") {
       const e = idx[0] || idx;
-
       if (this.props.app.associations.narrative) {
         const { steps } = this.props.app.associations.narrative;
-        // choose the first event at a given location
-        const locationEventId = e.id;
-        const narrativeIdxObj = steps.find((s) => s.id === locationEventId);
+        const narrativeIdxObj = steps.find((s) => s.id === e.id);
         const narrativeIdx = steps.indexOf(narrativeIdxObj);
-
-        if (narrativeIdx > -1) {
-          idx = narrativeIdx;
-        }
+        if (narrativeIdx > -1) idx = narrativeIdx;
       }
     }
 
@@ -203,7 +181,6 @@ class Dashboard extends Component {
 
     if (idx < narrative.steps.length && idx >= 0) {
       const step = narrative.steps[idx];
-
       this.handleSelect([step]);
       this.props.actions.updateNarrativeStepIdx(idx);
     }
@@ -214,30 +191,26 @@ class Dashboard extends Component {
     const { events } = this.props.domain;
 
     const prev = (idx) => {
-      if (narrative === null) {
-        this.handleSelect(events[idx - 1], 0);
-      } else {
-        this.selectNarrativeStep(this.props.narrativeIdx - 1);
-      }
+      if (narrative === null) this.handleSelect(events[idx - 1], 0);
+      else this.selectNarrativeStep(this.props.narrativeIdx - 1);
     };
+
     const next = (idx) => {
-      if (narrative === null) {
-        this.handleSelect(events[idx + 1], 0);
-      } else {
-        this.selectNarrativeStep(this.props.narrativeIdx + 1);
-      }
+      if (narrative === null) this.handleSelect(events[idx + 1], 0);
+      else this.selectNarrativeStep(this.props.narrativeIdx + 1);
     };
+
     if (selected.length > 0) {
       const ev = selected[selected.length - 1];
       const idx = this.findEventIdx(ev);
       switch (e.keyCode) {
-        case 37: // left arrow
-        case 38: // up arrow
+        case 37:
+        case 38:
           if (idx <= 0) return;
           prev(idx);
           break;
-        case 39: // right arrow
-        case 40: // down arrow
+        case 39:
+        case 40:
           if (idx < 0 || idx >= this.props.domain.length - 1) return;
           next(idx);
           break;
@@ -248,12 +221,13 @@ class Dashboard extends Component {
 
   renderIntroPopup(styles) {
     const { app, actions } = this.props;
-    const localStorageKey = "rememberDismissedIntro2"; // can be incremented when new data appears on the cover
+    const localStorageKey = "rememberDismissedIntro2";
 
     let searchParams = new URLSearchParams(window.location.href.split("?")[1]);
     let rememberDismissedIntro =
       localStorage.getItem(localStorageKey) === "true";
     let forceShowIntro = searchParams.get("cover") === "true";
+
     if (
       (forceShowIntro || !rememberDismissedIntro) &&
       !searchParams.has("id")
@@ -271,11 +245,10 @@ class Dashboard extends Component {
           }}
           content={app.intro}
           styles={styles}
-        ></Popup>
+        />
       );
-    } else {
-      return null;
     }
+    return null;
   }
 
   render() {
@@ -285,21 +258,20 @@ class Dashboard extends Component {
 
     return (
       <div>
-        {
-          <Toolbar
-            isNarrative={!!app.associations.narrative}
-            domain={domain}
-            methods={{
-              onTitle: actions.toggleCover,
-              onSelectFilter: (filters) =>
-                actions.toggleAssociations("filters", filters),
-              onCategoryFilter: (categories) =>
-                actions.toggleAssociations("categories", categories),
-              onShapeFilter: actions.toggleShapes,
-              onSelectNarrative: this.setNarrative,
-            }}
-          />
-        }
+        <Toolbar
+          isNarrative={!!app.associations.narrative}
+          domain={domain}
+          methods={{
+            onTitle: actions.toggleCover,
+            onSelectFilter: (filters) =>
+              actions.toggleAssociations("filters", filters),
+            onCategoryFilter: (categories) =>
+              actions.toggleAssociations("categories", categories),
+            onShapeFilter: actions.toggleShapes,
+            onSelectNarrative: this.setNarrative,
+          }}
+        />
+
         <Space
           kind={"map" in app ? "map" : "space3d"}
           onKeyDown={this.onKeyDown}
@@ -311,18 +283,18 @@ class Dashboard extends Component {
               : (ev) => this.handleSelect(ev, 1),
           }}
         />
-        {
-          <Timeline
-            onKeyDown={this.onKeyDown}
-            methods={{
-              onSelect: app.associations.narrative
-                ? this.selectNarrativeStep
-                : (ev) => this.handleSelect(ev, 0),
-              onUpdateTimerange: actions.updateTimeRange,
-              getCategoryColor: this.getCategoryColor,
-            }}
-          />
-        }
+
+        <Timeline
+          onKeyDown={this.onKeyDown}
+          methods={{
+            onSelect: app.associations.narrative
+              ? this.selectNarrativeStep
+              : (ev) => this.handleSelect(ev, 0),
+            onUpdateTimerange: actions.updateTimeRange,
+            getCategoryColor: this.getCategoryColor,
+          }}
+        />
+
         <CardStack
           timelineDims={timeline.dimensions}
           onViewSource={this.handleViewSource}
@@ -333,6 +305,7 @@ class Dashboard extends Component {
           onToggleCardstack={() => actions.updateSelected([])}
           getCategoryColor={this.getCategoryColor}
         />
+
         <NarrativeControls
           narrative={
             app.associations.narrative
@@ -348,13 +321,16 @@ class Dashboard extends Component {
             onSelectNarrative: this.setNarrative,
           }}
         />
+
         <InfoPopup
           language={app.language}
           styles={popupStyles}
           isOpen={app.flags.isInfopopup}
           onClose={actions.toggleInfoPopup}
         />
+
         {this.renderIntroPopup(popupStyles)}
+
         {app.debug ? (
           <Notification
             isNotification={app.flags.isNotification}
@@ -362,6 +338,7 @@ class Dashboard extends Component {
             onToggle={actions.markNotificationsRead}
           />
         ) : null}
+
         {features.USE_SEARCH && (
           <Search
             narrative={app.narrative}
@@ -370,23 +347,22 @@ class Dashboard extends Component {
             onSearchRowClick={this.handleSelect}
           />
         )}
+
         {app.source ? (
           <MediaOverlay
             source={app.source}
-            onCancel={() => {
-              actions.updateSource(null);
-            }}
+            onCancel={() => actions.updateSource(null)}
           />
         ) : null}
+
         <LoadingOverlay
           isLoading={app.loading || app.flags.isFetchingDomain}
           ui={app.flags.isFetchingDomain}
           language={app.language}
         />
+
         {features.USE_COVER && (
           <StaticPage showing={app.flags.isCover}>
-            {/* enable USE_COVER in config.js features, and customise your header */}
-            {/* pass 'actions.toggleCover' as a prop to your custom header */}
             <TemplateCover
               showing={app.flags.isCover}
               showAppHandler={actions.toggleCover}
@@ -404,7 +380,7 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(
+const ConnectedDashboard = connect(
   (state) => ({
     ...state,
     timeline: {
@@ -416,3 +392,25 @@ export default connect(
   }),
   mapDispatchToProps
 )(Dashboard);
+
+/** 
+ * 🔥 ESTE ES EL CAMBIO CRÍTICO:
+ * 
+ * Esta función desmonte completamente el Dashboard
+ * cuando estamos en /narrative (u otra ruta distinta de "/").
+ * 
+ * Con esto:
+ * - Timeline se desmonta
+ * - Map se desmonta
+ * - Al volver a "/", Dashboard se monta desde cero
+ * - scaleX vuelve a ser una función válida
+ */
+function DashboardWrapper(props) {
+  const location = useLocation();
+  if (location.pathname !== "/") {
+    return null;
+  }
+  return <ConnectedDashboard {...props} />;
+}
+
+export default DashboardWrapper;

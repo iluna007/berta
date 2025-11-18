@@ -1,12 +1,23 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  build: {
-    outDir: "build"
+
+  resolve: {
+    alias: {
+      "mapbox-gl": "mapbox-gl/dist/mapbox-gl.js",
+    },
   },
+
+  optimizeDeps: {
+    include: ["mapbox-gl"],
+  },
+
+  build: {
+    outDir: "build",
+  },
+
   server: {
     proxy: {
       "/api": {
@@ -14,15 +25,17 @@ export default defineConfig({
         changeOrigin: true,
       },
       "/timemap": {
-        target: "https://bellingcat-embeds.ams3.cdn.digitaloceanspaces.com/production/ukr",
+        target:
+          "https://bellingcat-embeds.ams3.cdn.digitaloceanspaces.com/production/ukr",
         changeOrigin: true,
-      }
-    }
+      },
+    },
   },
+
   test: {
     globals: true,
     environment: "jsdom",
     setupFiles: "./test/setup.js",
-    passWithNoTests: true
+    passWithNoTests: true,
   },
 });

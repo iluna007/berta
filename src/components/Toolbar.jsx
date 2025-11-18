@@ -4,11 +4,12 @@ import { bindActionCreators } from "redux";
 import * as actions from "../actions";
 import * as selectors from "../selectors";
 import config from "../../config";
+import { useNavigate } from "react-router-dom";
+import ToolbarNavigateButton from "./ToolbarNavigateButton";
 
 
 //Agregar capas de GeoJSON
 import GeoJsonLayers from "./controls/GeoJsonLayers";
-
 
 import { Tabs, TabList, TabPanel } from "react-tabs";
 import FilterListPanel from "./controls/FilterListPanel";
@@ -99,46 +100,49 @@ class Toolbar extends Component {
   }
 
   goToNarrative(narrative) {
-    // this.selectTab(-1); // set all unselected within this component
     this.props.methods.onSelectNarrative(narrative);
   }
 
-renderToolbarNarrativePanel() {
-  const { panels } = this.props.toolbarCopy;
-  const { narratives } = this.props;
+  renderToolbarNarrativePanel() {
+    const { panels } = this.props.toolbarCopy;
+    const { narratives } = this.props;
 
-  if (!narratives || narratives.length === 0) {
+    if (!narratives || narratives.length === 0) {
+      return (
+        <TabPanel>
+          <h2>{panels.narratives.label}</h2>
+          <p>No hay narrativas disponibles.</p>
+        </TabPanel>
+      );
+    }
+
     return (
       <TabPanel>
         <h2>{panels.narratives.label}</h2>
-        <p>No hay narrativas disponibles.</p>
+        <p>{panels.narratives.description}</p>
+
+        {narratives.map((narr) => (
+          <div key={narr.id} className="panel-action action">
+            <button onClick={() => this.goToNarrative(narr)}>
+              <p>
+                <strong>{narr.label || narr.id}</strong>
+              </p>
+              <p>
+                <small>
+                  {trimAndEllipse(narr.description || narr.desc || "", 120)}
+                </small>
+              </p>
+            </button>
+          </div>
+        ))}
+
+        <NarrativeControls
+          narratives={narratives}
+          onSelectNarrative={this.goToNarrative.bind(this)}
+        />
       </TabPanel>
     );
   }
-
-  return (
-    <TabPanel>
-      <h2>{panels.narratives.label}</h2>
-      <p>{panels.narratives.description}</p>
-
-      {/* Lista de narrativas */}
-      {narratives.map((narr) => (
-        <div key={narr.id} className="panel-action action">
-          <button onClick={() => this.goToNarrative(narr)}>
-            <p><strong>{narr.label || narr.id}</strong></p>
-            <p><small>{trimAndEllipse(narr.description || narr.desc || "", 120)}</small></p>
-          </button>
-        </div>
-      ))}
-
-      {/* Herramientas adicionales */}
-      <NarrativeControls
-        narratives={narratives}
-        onSelectNarrative={this.goToNarrative.bind(this)}
-      />
-    </TabPanel>
-  );
-}
 
   renderToolbarCategoriesPanel() {
     const { categories: panelCategories } = this.props.toolbarCopy.panels;
@@ -267,60 +271,38 @@ renderToolbarNarrativePanel() {
         {features.USE_SHAPES ? this.renderToolbarShapePanel() : null}
         {features.USE_DOWNLOAD ? this.renderToolbarDownloadPanel() : null}
 
-
-
-        
-        
-        {features.USE_GEOJSON_LAYERS && ( //AGREGAR PANEL DE CAPAS GEOJSON
-        <TabPanel>
-          {window.__LEAFLET_MAP__ ? (
-            <GeoJsonLayers
-              map={window.__LEAFLET_MAP__}
-              layersConfig={[
-                { label: "Río Gualcarque", url: "/geojson/Rio Gualcarque.geojson", color: "#0077be" },
-                { label: "Antenas Telefónicas", url: "/geojson/Antenas Telefonicas.geojson", color: "#000000" },
-                { label: "Impronta Bertha Cáceres", url: "/geojson/Impronta_Bertha Isabel Caceres Flores.geojson", color: "#4caf50" },
-                { label: "Impronta Oscar Aroldo", url: "/geojson/Impronta_Oscar Aroldo.geojson", color: "#ff0000" },
-                { label: "Impronta Douglas, Andys, Samir", url: "/geojson/Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson", color: "#ff9800" },
-                { label: "Predios Cuchilla El Naranjal", url: "/geojson/Poligonos_Predios_Cuchilla El Naranjal.geojson", color: "#f44336" },
-                { label: "Predios La Vega", url: "/geojson/Poligonos_Predios_La Vega.geojson", color: "#2196f3" },
-                { label: "Predios Las Lagunas", url: "/geojson/Poligonos_Predios_Las Lagunas.geojson", color: "#009688" },
-                { label: "Predios Río Blanco", url: "/geojson/Poligonos_Predios_Rio Blanco.geojson", color: "#e91e63" },
-                { label: "Predios Sisimetera", url: "/geojson/Poligonos_Predios_Sisimetera.geojson", color: "#3f51b5" }
-              ]}
-            />
-          ) : (
-            <p style={{ padding: "1rem" }}>⏳ Esperando inicialización del mapa...</p>
-          )}
-        </TabPanel>
-      )}
-
+        {features.USE_GEOJSON_LAYERS && (
+          <TabPanel>
+            {window.__LEAFLET_MAP__ ? (
+              <GeoJsonLayers
+                map={window.__LEAFLET_MAP__}
+                layersConfig={[
+                  {
+                    label: "Río Gualcarque",
+                    url: "/geojson/Rio Gualcarque.geojson",
+                    color: "#0077be",
+                  },
+                  {
+                    label: "Antenas Telefónicas",
+                    url: "/geojson/Antenas Telefonicas.geojson",
+                    color: "#000000",
+                  },
+                  {
+                    label: "Impronta Bertha Cáceres",
+                    url: "/geojson/Impronta_Bertha Isabel Caceres Flores.geojson",
+                    color: "#4caf50",
+                  },
+                ]}
+              />
+            ) : (
+              <p style={{ padding: "1rem" }}>
+                ⏳ Esperando inicialización del mapa...
+              </p>
+            )}
+          </TabPanel>
+        )}
       </div>
     );
-  }
-
-  renderToolbarNavs() {
-    if (this.props.narratives) {
-      return this.props.narratives.map((nar, idx) => {
-        const isActive =
-          idx === this.state._selected && this.state._active === true;
-
-        const classes = isActive ? "toolbar-tab active" : "toolbar-tab";
-
-        return (
-          <div
-            key={nar.id || idx}
-            className={classes}
-            onClick={() => {
-              this.selectTab(idx);
-            }}
-          >
-            <div className="tab-caption">{nar.label}</div>
-          </div>
-        );
-      });
-    }
-    return null;
   }
 
   renderToolbarTabs() {
@@ -343,14 +325,16 @@ renderToolbarNarrativePanel() {
     );
     const shapesIdx = filtersIdx + features.USE_SHAPES;
     const downloadIdx = shapesIdx + features.USE_DOWNLOAD;
-    
-
 
     return (
       <div className="toolbar">
         <div className="toolbar-header" onClick={this.props.methods.onTitle}>
           <p>{title}</p>
+          <ToolbarNavigateButton />
+
+          
         </div>
+
         <div className="toolbar-tabs">
           <TabList>
             {narrativesExist
@@ -384,17 +368,14 @@ renderToolbarNarrativePanel() {
                   panels.download.icon
                 )
               : null}
-              {features.USE_GEOJSON_LAYERS &&
-                this.renderToolbarTab(
-                  downloadIdx + 1,
-                  "Capas",
-                  "layers"
-                )}  
+            {features.USE_GEOJSON_LAYERS &&
+              this.renderToolbarTab(downloadIdx + 1, "Capas", "layers")}
             {features.USE_FULLSCREEN && (
               <FullscreenToggle language={this.props.language} />
             )}
           </TabList>
         </div>
+            
         <BottomActions
           info={{
             enabled: this.props.infoShowing,
@@ -444,11 +425,8 @@ function mapStateToProps(state) {
     categories: selectors.getCategories(state),
     narratives: selectors.selectNarratives(state) || [
       { id: "test1", desc: "Ejemplo de narrativa de prueba" },
-      { id: "test2", desc: "Segunda narrativa de ejemplo" }
+      { id: "test2", desc: "Segunda narrativa de ejemplo" },
     ],
-
-
-
     shapes: selectors.getShapes(state),
     language: state.app.language,
     toolbarCopy: state.app.toolbar,

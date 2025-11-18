@@ -310,8 +310,12 @@ class Timeline extends Component {
   }
 
   getDatetimeX(datetime) {
-    return this.state.scaleX(datetime);
+  if (!this.state.scaleX || typeof this.state.scaleX !== "function") {
+    console.warn("⚠️ Timeline: scaleX no definido, evitando render prematuro");
+    return 0;
   }
+  return this.state.scaleX(datetime);
+}
 
   getY(event) {
     const { features, domain, activeCategories } = this.props;

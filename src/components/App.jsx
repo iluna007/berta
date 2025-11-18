@@ -1,11 +1,18 @@
 import "../scss/main.scss";
-import { Component } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
+import NarrativePage from "./NarrativePage"; // ← archivo que ya creamos
 
-class App extends Component {
-  render() {
-    return <Layout />;
-  }
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        {/* Ruta principal, donde está tu plataforma actual */}
+        <Route path="/" element={<Layout />} />
+
+        {/* Nueva ruta para la página narrativa */}
+        <Route path="/narrative" element={<NarrativePage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App;

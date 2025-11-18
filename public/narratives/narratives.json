@@ -1,53 +1,26 @@
-[
-  {
-    "id": "nar1",
-    "label": "Territorios en resistencia",
-    "description": "Explora los eventos y territorios donde las comunidades Lenca enfrentaron proyectos hidroeléctricos en el Río Gualcarque.",
-    "color": "#E91E63",
-    "steps": [
-      {
-        "id": "nar1-step1",
-        "event_id": "A1CPDB01",
-        "datetime": "2013-07-20T00:00:00Z",
-        "latitude": 14.663333,
-        "longitude": -88.177778,
-        "title": "Inicio del conflicto en Río Blanco",
-        "description": "El conflicto comienza cuando la empresa intenta acceder al territorio Lenca sin consulta previa."
-      },
-      {
-        "id": "nar1-step2",
-        "event_id": "A1BCD02",
-        "datetime": "2015-01-26T00:00:00Z",
-        "latitude": 14.68831,
-        "longitude": -88.13494,
-        "title": "Amenazas en Agua Caliente",
-        "description": "Informantes alertan sobre emboscadas pagadas por la empresa en Agua Caliente."
+{
+  "chapters": [
+    {
+      "id": "intro",
+      "title": "Introducción",
+      "description": "Texto…",
+      "location": {
+        "center": [-83.0, 10.0],
+        "zoom": 7,
+        "pitch": 0,
+        "bearing": 0
       }
-    ],
-    "geojsonLayers": [
-      "/geojson/Rio Gualcarque.geojson",
-      "/geojson/Poligonos_Predios_Sisimetera.geojson"
-    ]
-  },
-  {
-    "id": "nar2",
-    "label": "Improntas y memorias",
-    "description": "Narrativa centrada en los lugares que guardan memoria de las víctimas y sus trayectorias.",
-    "color": "#9C27B0",
-    "steps": [
-      {
-        "id": "nar2-step1",
-        "event_id": "A1ABD01",
-        "datetime": "2016-03-03T01:00:00Z",
-        "latitude": 14.287161,
-        "longitude": -88.18404,
-        "title": "Asesinato de Berta Cáceres",
-        "description": "La noche del 3 de marzo de 2016, hombres armados irrumpen en su casa y la asesinan."
+    },
+    {
+      "id": "cap-2",
+      "title": "Capítulo 2",
+      "description": "Texto…",
+      "location": {
+        "center": [-84.0, 11.0],
+        "zoom": 8,
+        "pitch": 20,
+        "bearing": 10
       }
-    ],
-    "geojsonLayers": [
-      "/geojson/Impronta_Bertha Isabel Caceres Flores.geojson",
-      "/geojson/Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson"
-    ]
-  }
-]
+    }
+  ]
+}

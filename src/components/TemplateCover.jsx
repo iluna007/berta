@@ -5,6 +5,8 @@ import { marked } from "marked";
 import MediaOverlay from "./atoms/Media";
 // import falogo from "../assets/fa-logo.png";
 import bcatlogo from "../assets/VERTICAL_POSITIVO.svg";
+import { useNavigate } from "react-router-dom"; // ⬅️ añadido
+
 const MEDIA_HIDDEN = -2;
 
 /**
@@ -152,8 +154,10 @@ class TemplateCover extends Component {
       );
     }
 
-    const { videos, footerButton } = this.props.cover;
+    // ⬅️ aquí añadimos narrativeButton además de lo que ya había
+    const { videos, footerButton, narrativeButton } = this.props.cover;
     const { showing } = this.props;
+
     return (
       <div className="default-cover-container">
         <div className={showing ? "cover-header" : "cover-header minimized"}>
@@ -196,6 +200,19 @@ class TemplateCover extends Component {
                 {this.props.cover.exploreButton}
               </div>
             </div>
+
+            {/* ⬅️ NUEVO: botón para ir a /narrative */}
+            {narrativeButton && (
+              <div className="row">
+                <div
+                  className="cell plain"
+                  style={{ cursor: "pointer", marginTop: "8px" }}
+                  onClick={() => this.props.navigate("/narrative")}
+                >
+                  {narrativeButton}
+                </div>
+              </div>
+            )}
           </div>
 
           {Array.isArray(this.props.cover.description) ? (
@@ -267,4 +284,10 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(TemplateCover);
+// ⬅️ wrapper para inyectar navigate en el componente de clase
+function TemplateCoverWithNavigate(props) {
+  const navigate = useNavigate();
+  return <TemplateCover {...props} navigate={navigate} />;
+}
+
+export default connect(mapStateToProps)(TemplateCoverWithNavigate);
