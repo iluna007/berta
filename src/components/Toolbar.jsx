@@ -292,6 +292,43 @@ class Toolbar extends Component {
                     url: "/geojson/Impronta_Bertha Isabel Caceres Flores.geojson",
                     color: "#4caf50",
                   },
+                  {
+                    label: "Impronta Douglas Geovanny Bustillo Andys Iraheta Samir Antonio",
+                    url: "/geojson/Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson",
+                    color: "#eb9c34",
+                  },
+                  {
+                    label: "Impronta Oscar Aroldo",
+                    url: "/geojson/Impronta_Oscar Aroldo.geojson",
+                    color: "#eb4034",
+                  },
+                  {                    
+                    label: "Poligonos Predios Cuchilla El Naranjal",
+                    url: "/geojson/Poligonos_Predios_Cuchilla El Naranjal.geojson",
+                    color: "#34ebba",
+                  },
+                  {                    
+                    label: "Poligonos Predios La Vega",
+                    url: "/geojson/Poligonos_Predios_La Vega.geojson",
+                    color: "#34ebba",
+                  },
+                  {                    
+                    label: "Poligonos Predios Las Lagunas",
+                    url: "/geojson/Poligonos_Predios_Las Lagunas.geojson",
+                    color: "#34ebba",
+                  },
+                  {                    
+                    label: "Poligonos Predios Rio Blanco",
+                    url: "/geojson/Poligonos_Predios_Rio Blanco.geojson",
+                    color: "#34ebba",
+                  },
+                  {                    
+                    label: "Poligonos_Predios_Sisimetera",
+                    url: "/geojson/Poligonos_Predios_Sisimetera.geojson",
+                    color: "#34ebba",
+                  }                
+                  
+
                 ]}
               />
             ) : (
