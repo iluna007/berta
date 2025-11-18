@@ -7,31 +7,38 @@ import { hook_restore } from "../actions/hook_restore";
 
 import NarrativesScroller from "./narratives/NarrativesScroller";
 import NarrativesMap from "./narratives/NarrativesMap";
+import NarrativeMedia from "./narratives/NarrativeMedia";
 
 export default function NarrativePage() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const [activeChapterId, setActiveChapterId] = useState(null);
   const [chapters, setChapters] = useState([]);
   const [index, setIndex] = useState(0);
+  const [activeChapterId, setActiveChapterId] = useState(null);
 
+  // ------------------------------------------
   // 1) Cargar JSON
+  // ------------------------------------------
   useEffect(() => {
     fetch("/narratives/narratives.json")
       .then((res) => res.json())
       .then((data) => {
         setChapters(data.chapters);
         setActiveChapterId(data.chapters[0].id);
-      });
+      })
+      .catch((err) => console.error("Error cargando JSON:", err));
   }, []);
 
-  // 2) Scroll global: funciona sobre mapa y panel
+  // ------------------------------------------
+  // 2) Scroll global (funciona sobre mapa y panel)
+  // ------------------------------------------
   useEffect(() => {
     if (chapters.length === 0) return;
 
     const handler = (e) => {
       e.preventDefault();
+
       if (e.deltaY > 0) {
         setIndex((i) => Math.min(i + 1, chapters.length - 1));
       } else {
@@ -39,24 +46,32 @@ export default function NarrativePage() {
       }
     };
 
-    // Escuchar sobre toda la página
     window.addEventListener("wheel", handler, { passive: false });
-
     return () => window.removeEventListener("wheel", handler);
   }, [chapters.length]);
 
-  // 3) Aplicar capítulo activo
+  // ------------------------------------------
+  // 3) Cambiar capítulo activo
+  // ------------------------------------------
   useEffect(() => {
     if (chapters.length > 0) {
       setActiveChapterId(chapters[index].id);
     }
   }, [index, chapters]);
 
+  const activeChapter = chapters.find((c) => c.id === activeChapterId);
+
+  // ------------------------------------------
+  // Botón volver
+  // ------------------------------------------
   const goBack = async () => {
     await dispatch(hook_restore());
     navigate("/");
   };
 
+  // ------------------------------------------
+  // RENDER
+  // ------------------------------------------
   return (
     <div
       style={{
@@ -74,7 +89,7 @@ export default function NarrativePage() {
           position: "absolute",
           top: "20px",
           left: "20px",
-          zIndex: 5,
+          zIndex: 50,
           padding: "10px 20px",
           backgroundColor: "#333",
           color: "white",
@@ -86,12 +101,24 @@ export default function NarrativePage() {
         ← BACK TO PLATFORM
       </button>
 
-      {/* Mapa */}
-      <div style={{ position: "absolute", inset: 0 }}>
+      {/* MAPA (al fondo) */}
+      <div style={{ position: "absolute", inset: 0, zIndex: 1 }}>
         <NarrativesMap activeChapterId={activeChapterId} chapters={chapters} />
       </div>
 
-      {/* Panel scroller */}
+      {/* MEDIA (encima del mapa) */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          zIndex: 25,
+          pointerEvents: "none", // ← No bloquea interacción
+        }}
+      >
+        <NarrativeMedia media={activeChapter?.media} />
+      </div>
+
+      {/* PANEL SCROLLER */}
       <div
         style={{
           position: "absolute",
@@ -99,14 +126,11 @@ export default function NarrativePage() {
           left: "20px",
           height: "calc(100% - 100px)",
           width: "400px",
-          zIndex: 10,
+          zIndex: 30,
           overflow: "hidden",
         }}
       >
-        <NarrativesScroller
-          chapters={chapters}
-          index={index}
-        />
+        <NarrativesScroller chapters={chapters} index={index} />
       </div>
     </div>
   );

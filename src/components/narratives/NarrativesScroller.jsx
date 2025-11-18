@@ -1,12 +1,9 @@
 // src/components/narratives/NarrativesScroller.jsx
+import NarrativeMedia from "./NarrativeMedia";
 
 export default function NarrativesScroller({ chapters, index }) {
   if (!chapters || chapters.length === 0) {
-    return (
-      <div style={{ color: "#fff", padding: "20px" }}>
-        Cargando narrativas…
-      </div>
-    );
+    return <p style={{ color: "#fff" }}>Cargando narrativas...</p>;
   }
 
   const chapter = chapters[index];
@@ -21,19 +18,20 @@ export default function NarrativesScroller({ chapters, index }) {
     >
       <div
         style={{
-          background: "#000a",
+          background: "#0008",
           padding: "25px",
           borderRadius: "10px",
           color: "white",
           backdropFilter: "blur(6px)",
-          boxShadow: "0 4px 14px rgba(0,0,0,0.4)",
         }}
       >
-        <h2 style={{ marginBottom: "10px" }}>{chapter.title}</h2>
-
-        <p style={{ opacity: 0.85, lineHeight: "1.5" }}>
+        <h2>{chapter.title}</h2>
+        <p style={{ opacity: 0.85, whiteSpace: "pre-line" }}>
           {chapter.description}
         </p>
+
+        {/* AQUÍ se renderiza la media */}
+        <NarrativeMedia chapter={chapter} />
       </div>
     </div>
   );
