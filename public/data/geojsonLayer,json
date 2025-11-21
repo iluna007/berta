@@ -1,0 +1,227 @@
+[
+  {
+    "label": "Rio Gualcarque",
+    "url": "/geojson/BASE/HY_Rio Gualcarque/Rio Gualcarque.geojson",
+    "color": "#0077be"
+  },
+  {
+    "label": "OSM Waterways",
+    "url": "/geojson/BASE/HY_Rios y arroyos/OSM_Waterways.geojson",
+    "color": "#0077be"
+  },
+  {
+    "label": "Límite del Territorio Nacional",
+    "url": "/geojson/BASE/LT-Honduras/GOBJUS-Lφmite del Territorio Nacional.geojson",
+    "color": "#444444"
+  },
+  {
+    "label": "Departamentos Honduras (INE)",
+    "url": "/geojson/BASE/LT-Honduras_Departamentos/INE-Departamentos Honduras.geojson",
+    "color": "#444444"
+  },
+  {
+    "label": "Aldea Río Blanco (Límite)",
+    "url": "/geojson/BASE/LT_Aldea Rio Blanco/LT_ALD_Rio Blanco.geojson",
+    "color": "#444444"
+  },
+
+  {
+    "label": "Censo Rio Blanco 2013",
+    "url": "/geojson/CENSO Rio Blanco/Censo Rio Blanco_2013.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Aldea Río Blanco",
+    "url": "/geojson/CENSO Rio Blanco/CRB_aldea_Rio Blanco.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Caseríos Buena Vista",
+    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_Buena Vista.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Caseríos Cangel",
+    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_Cangel.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Caseríos El Barreal",
+    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_El Barreal.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Caseríos El Mezcalito",
+    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_El Mezcalito.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Caseríos La Tejera",
+    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_La Tejera.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Caseríos La Unión – Buena Vista",
+    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_La Union-Buena Vista.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Caseríos La Vega del Guineo",
+    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_La Vega del Guineo.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Caseríos La Vega",
+    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_La Vega.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Caseríos La Zarzalosa",
+    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_La Zarzalosa.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Caseríos Nuevo Caserío Río Blanco",
+    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_Nuevo Caserio de Rio Blanco.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Caseríos Nuevo Caserío San Isidro",
+    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_Nuevo Caserio de San Isidro.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Caseríos San Bartolo",
+    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_San Bartolo.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Caseríos Valle de Ángeles",
+    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_Valle de Angeles.geojson",
+    "color": "#b5651d"
+  },
+  {
+    "label": "CRB Caseríos Zacatales",
+    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_Zacatales.geojson",
+    "color": "#b5651d"
+  },
+
+  {
+    "label": "Impronta COPINH",
+    "url": "/geojson/IMPRONTAS/imp_COPINH.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta COPINH BICF",
+    "url": "/geojson/IMPRONTAS/imp_COPINH_BICF.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta COPINH SCF",
+    "url": "/geojson/IMPRONTAS/imp_COPINH_SCF.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta COPINH TG",
+    "url": "/geojson/IMPRONTAS/imp_COPINH_TG.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta Criminales",
+    "url": "/geojson/IMPRONTAS/imp_CRIMINALES.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta JBM",
+    "url": "/geojson/IMPRONTAS/imp_CRI_JBM.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta OATV",
+    "url": "/geojson/IMPRONTAS/imp_CRI_OATV.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta DESA",
+    "url": "/geojson/IMPRONTAS/imp_DESA.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta DESA JA",
+    "url": "/geojson/IMPRONTAS/imp_DESA_JA.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta DESA JSC",
+    "url": "/geojson/IMPRONTAS/imp_DESA_JSC.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta DESA SRRO",
+    "url": "/geojson/IMPRONTAS/imp_DESA_SRRO.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta Ejército",
+    "url": "/geojson/IMPRONTAS/imp_EJERCITO.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta EJE DGB",
+    "url": "/geojson/IMPRONTAS/imp_EJE_DGB.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta EJE HJHR",
+    "url": "/geojson/IMPRONTAS/imp_EJE_HJHR.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta EJE MDC",
+    "url": "/geojson/IMPRONTAS/imp_EJE_MDC.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta EJE RDC",
+    "url": "/geojson/IMPRONTAS/imp_EJE_RDC.geojson",
+    "color": "#d33f49"
+  },
+  {
+    "label": "Impronta Gobierno",
+    "url": "/geojson/IMPRONTAS/imp_GOBIERNO.geojson",
+    "color": "#d33f49"
+  },
+
+  {
+    "label": "Toma de El Roble",
+    "url": "/geojson/LOC/LOC_Toma de El Roble.geojson",
+    "color": "#2a9d8f"
+  },
+
+  {
+    "label": "Accesos clave Presa Agua Zarca 2011",
+    "url": "/geojson/PHAZ_2011/Accesos clave_Presa Agua Zarca _2011.geojson",
+    "color": "#f4a261"
+  },
+  {
+    "label": "Componentes Presa Agua Zarca 2011",
+    "url": "/geojson/PHAZ_2011/componentes_Presa Agua Zarca _2011.geojson",
+    "color": "#f4a261"
+  },
+  {
+    "label": "Predios Presa Agua Zarca 2011",
+    "url": "/geojson/PHAZ_2011/predios_Presa Agua Zarca _2011.geojson",
+    "color": "#f4a261"
+  },
+
+  {
+    "label": "Componentes Presa Agua Zarca 2016",
+    "url": "/geojson/PHAZ_2016/componentes_Presa Agua Zarca _2016.geojson",
+    "color": "#e76f51"
+  },
+  {
+    "label": "Tuberías Presa Agua Zarca 2016",
+    "url": "/geojson/PHAZ_2016/tuberφas_Presa Agua Zarca _2016.geojson",
+    "color": "#e76f51"
+  }
+]
