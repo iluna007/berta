@@ -1,103 +1,138 @@
-import { useEffect, useState } from "react";
+import React, { Component } from "react";
 import L from "leaflet";
 import PropTypes from "prop-types";
 
-/**
- * Componente de panel para activar/desactivar capas GeoJSON desde la Toolbar.
- * Compatible con Leaflet y Map.jsx.
- */
-const GeoJsonLayers = ({ map, layersConfig }) => {
-  const [layers, setLayers] = useState(
-    layersConfig.map(l => ({ ...l, visible: false, layer: null }))
-  );
-
-  // Limpieza al desmontar
-  useEffect(() => {
-    return () => {
-      layers.forEach(l => {
-        if (map && l.layer) map.removeLayer(l.layer);
-      });
+class GeoJsonLayers extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      layers: []
     };
-  }, [map]);
+  }
 
-  const toggleLayer = async (idx) => {
-    setLayers(prev => {
-      const updated = [...prev];
-      const target = updated[idx];
+  componentDidMount() {
+    this.loadLayersConfig();
+  }
 
-      if (!target.visible) {
-        fetch(target.url)
-          .then(res => res.json())
-          .then(data => {
+  async loadLayersConfig() {
+    try {
+      const res = await fetch("/data/geojsonLayers2.json");
+      const layersConfig = await res.json();
 
-            const geoLayer = L.geoJSON(data, {
+      const prepared = layersConfig.map((layer) => ({
+        ...layer,
+        mapLayer: null,
+        visible: false
+      }));
 
-              /** 🔴 DESACTIVA INTERACTIVIDAD PARA TODO TYPE */
-              interactive: false,
+      this.setState({ layers: prepared });
+    } catch (e) {
+      console.error("Error cargando geojsonLayers.json", e);
+    }
+  }
 
-              /** Estilo para líneas y polígonos */
-              style: () => ({
-                color: target.color || "#0077be",
-                weight: target.weight || 2,
-                fillOpacity: target.fillOpacity ?? 0.3,
-                interactive: false   // <- también aquí por seguridad
-              }),
+  async toggleLayer(layer) {
+    const { map } = this.props;
 
-              /** Estilo para puntos */
-              pointToLayer: (feature, latlng) =>
-                L.circleMarker(latlng, {
-                  radius: 5,
-                  fillColor: target.color || "#ff7800",
-                  color: "#000",
-                  weight: 1,
-                  opacity: 1,
-                  fillOpacity: 0.8,
-                  className: "leaflet-interactive soft-point",
+    // Apagar capa
+    if (layer.visible && layer.mapLayer) {
+      map.removeLayer(layer.mapLayer);
+      layer.mapLayer = null;
+      layer.visible = false;
+      this.setState({ layers: [...this.state.layers] });
+      return;
+    }
 
-                })
-            });
+    // Encender capa
+    const response = await fetch(layer.url);
+    const data = await response.json();
 
-            geoLayer.addTo(map);
+    // Crear pane para mantener orden visual
+    const paneId = `pane-${layer.label.replace(/\s+/g, "-").toLowerCase()}`;
+    if (!map.getPane(paneId)) {
+      const pane = map.createPane(paneId);
+      pane.style.zIndex = 450;
+    }
 
-            updated[idx] = { ...target, visible: true, layer: geoLayer };
-            setLayers([...updated]);
-          });
+    const mapLayer = L.geoJSON(data, {
+      pane: paneId,
 
-      } else {
-        if (target.layer) map.removeLayer(target.layer);
-        updated[idx] = { ...target, visible: false, layer: null };
-        setLayers([...updated]);
-      }
+      // Estilo original (líneas + polígonos)
+      style: () => ({
+        color: layer.color,
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 0.3
+      }),
 
-      return updated;
+      // Estilo ORIGINAL de puntos (con glow)
+      pointToLayer: (feature, latlng) =>
+        L.circleMarker(latlng, {
+          radius: 5,
+          fillColor: layer.color,
+          color: "#000",
+          weight: 1,
+          opacity: 1,
+          fillOpacity: 0.8,
+          className: "leaflet-interactive soft-point" // <- glow original restaurado
+        })
     });
-  };
 
-  return (
-    <div className="geojson-layers-panel" style={{ padding: "1rem" }}>
-      <h2>Capas</h2>
-      <ul style={{ listStyle: "none", padding: 0 }}>
-        {layers.map((l, i) => (
-          <li key={i} style={{ marginBottom: "0.5rem" }}>
-            <label style={{ cursor: "pointer" }}>
-              <input
-                type="checkbox"
-                checked={l.visible}
-                onChange={() => toggleLayer(i)}
-                style={{ marginRight: "8px" }}
-              />
-              {l.label || l.url}
-            </label>
-          </li>
+    mapLayer.addTo(map);
+
+    layer.mapLayer = mapLayer;
+    layer.visible = true;
+
+    this.setState({ layers: [...this.state.layers] });
+  }
+
+  render() {
+    const { layers } = this.state;
+
+    return (
+      <div className="panel-list" style={{ padding: "1rem" }}>
+        <h2 className="panel-title">Capas GeoJSON</h2>
+
+        {layers.map((layer, index) => (
+          <div
+            key={index}
+            className="panel-action action"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginBottom: "0.5rem"
+            }}
+          >
+            <input
+              type="checkbox"
+              checked={layer.visible}
+              onChange={() => this.toggleLayer(layer)}
+              style={{
+                width: "14px",
+                height: "14px",
+                cursor: "pointer",
+                marginRight: "8px"
+              }}
+            />
+
+            <span
+              style={{
+                borderBottom: `2px solid ${layer.color}`,
+                paddingBottom: "2px",
+                fontSize: "14px"
+              }}
+            >
+              {layer.label}
+            </span>
+          </div>
         ))}
-      </ul>
-    </div>
-  );
-};
+      </div>
+    );
+  }
+}
 
 GeoJsonLayers.propTypes = {
-  map: PropTypes.object.isRequired,
-  layersConfig: PropTypes.array.isRequired,
+  map: PropTypes.object.isRequired
 };
 
 export default GeoJsonLayers;

@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "componentes_Presa Agua Zarca _2011",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "ID": "PRESA", "Nombre pro": "Benigno Domínguez", "Receptor": "DESA, S.A.", "Área (Mz)": "3", "Ubicación": "Eje de presa, aguas arriba, margen derecha", "Terreno": "Ejidal", "Longitud": -88.18613832, "Latitud": 14.66930817, "Fuente": "DESA Memo Atala Zablah 23AGO11" }, "geometry": { "type": "Point", "coordinates": [ -88.18613832, 14.66930817 ] } },
+{ "type": "Feature", "properties": { "ID": "CASA DE MÁQUINAS", "Nombre pro": "Ricardo Pineda Madrid", "Receptor": "DESA, S.A.", "Área (Mz)": "2", "Ubicación": "Casa de máquinas", "Terreno": "Privado", "Longitud": -88.1751469, "Latitud": 14.69338965, "Fuente": "DESA Memo Atala Zablah 23AGO11" }, "geometry": { "type": "Point", "coordinates": [ -88.1751469, 14.69338965 ] } },
+{ "type": "Feature", "properties": { "ID": "TANQUE DE OSCILACIÓN", "Nombre pro": "Aquilino Madrid", "Receptor": "DESA, S.A.", "Área (Mz)": "3", "Ubicación": "Tanque de oscilación, Tubería de presión", "Terreno": "Privado", "Longitud": -88.17634996, "Latitud": 14.68871613, "Fuente": "DESA Memo Atala Zablah 23AGO11" }, "geometry": { "type": "Point", "coordinates": [ -88.17634996, 14.68871613 ] } }
+]
+}

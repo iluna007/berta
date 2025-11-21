@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "componentes_Presa Agua Zarca _2013",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 2013, "Nombre": "PRESA" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -88.197037939901179, 14.651571774420905 ] ] } },
+{ "type": "Feature", "properties": { "id": 2013, "Nombre": "CASA DE MÁQUINAS" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -88.176317459449706, 14.695368098916447 ] ] } },
+{ "type": "Feature", "properties": { "id": 3, "Nombre": "EMBALSE" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -88.186149219373007, 14.688885521679875 ] ] } }
+]
+}

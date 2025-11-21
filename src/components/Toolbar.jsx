@@ -4,11 +4,9 @@ import { bindActionCreators } from "redux";
 import * as actions from "../actions";
 import * as selectors from "../selectors";
 import config from "../../config";
-import { useNavigate } from "react-router-dom";
 import ToolbarNavigateButton from "./ToolbarNavigateButton";
 
-
-//Agregar capas de GeoJSON
+// Agregar capas de GeoJSON (AHORA SE CARGAN AUTOMÁTICAMENTE)
 import GeoJsonLayers from "./controls/GeoJsonLayers";
 
 import { Tabs, TabList, TabPanel } from "react-tabs";
@@ -17,6 +15,7 @@ import CategoriesListPanel from "./controls/CategoriesListPanel";
 import ShapesListPanel from "./controls/ShapesListPanel";
 import BottomActions from "./controls/BottomActions";
 import copy from "../common/data/copy.json";
+
 import {
   trimAndEllipse,
   getImmediateFilterParent,
@@ -26,8 +25,9 @@ import {
   removeFromColoringSet,
   mapCategoriesToPaths,
   getCategoryIdxs,
-  getFilterIdx,
+  getFilterIdx
 } from "../common/utilities";
+
 import { ToolbarButton } from "./controls/atoms/ToolbarButton";
 import { FullscreenToggle } from "./controls/FullScreenToggle";
 import DownloadPanel from "./controls/DownloadPanel";
@@ -41,10 +41,7 @@ class Toolbar extends Component {
   }
 
   selectTab(selected) {
-    let active = true;
-    if (this.state._selected === selected && this.state._active === true) {
-      active = false;
-    }
+    let active = !(this.state._selected === selected && this.state._active);
     this.setState({ _selected: selected, _active: active });
   }
 
@@ -62,28 +59,20 @@ class Toolbar extends Component {
     } else {
       if (parent && activeFilters.includes(parent)) {
         const siblings = getFilterSiblings(filters, parent, key);
-        let siblingsOff = true;
-        for (const sibling of siblings) {
-          if (activeFilters.includes(sibling)) {
-            siblingsOff = false;
-            break;
-          }
-        }
+        const siblingsOff = siblings.every((s) => !activeFilters.includes(s));
 
         if (siblingsOff) {
-          const grandparentsOn = getFilterAncestors(key).filter((filt) =>
-            activeFilters.includes(filt)
+          const grandparentsOn = getFilterAncestors(key).filter((f) =>
+            activeFilters.includes(f)
           );
           matchingKeys = matchingKeys.concat(grandparentsOn);
         }
       }
 
-      const updatedColoringSet = removeFromColoringSet(
-        coloringSet,
-        matchingKeys
-      );
+      const updatedColoringSet = removeFromColoringSet(coloringSet, matchingKeys);
       this.props.actions.updateColoringSet(updatedColoringSet);
     }
+
     this.props.methods.onSelectFilter(matchingKeys);
     this.props.actions.updateSelected([]);
   }
@@ -107,15 +96,6 @@ class Toolbar extends Component {
     const { panels } = this.props.toolbarCopy;
     const { narratives } = this.props;
 
-    if (!narratives || narratives.length === 0) {
-      return (
-        <TabPanel>
-          <h2>{panels.narratives.label}</h2>
-          <p>No hay narrativas disponibles.</p>
-        </TabPanel>
-      );
-    }
-
     return (
       <TabPanel>
         <h2>{panels.narratives.label}</h2>
@@ -128,9 +108,7 @@ class Toolbar extends Component {
                 <strong>{narr.label || narr.id}</strong>
               </p>
               <p>
-                <small>
-                  {trimAndEllipse(narr.description || narr.desc || "", 120)}
-                </small>
+                <small>{trimAndEllipse(narr.description || narr.desc || "", 120)}</small>
               </p>
             </button>
           </div>
@@ -153,27 +131,25 @@ class Toolbar extends Component {
 
     return (
       <div>
-        {Object.keys(catMap).map((type) => {
-          const children = catMap[type];
-          return (
-            <TabPanel key={type}>
-              <CategoriesListPanel
-                categories={children}
-                activeCategories={this.props.activeCategories}
-                onCategoryFilter={this.props.methods.onCategoryFilter}
-                language={this.props.language}
-                title={panelCategories[type].label}
-                description={panelCategories[type].description}
-              />
-            </TabPanel>
-          );
-        })}
+        {Object.keys(catMap).map((type) => (
+          <TabPanel key={type}>
+            <CategoriesListPanel
+              categories={catMap[type]}
+              activeCategories={this.props.activeCategories}
+              onCategoryFilter={this.props.methods.onCategoryFilter}
+              language={this.props.language}
+              title={panelCategories[type].label}
+              description={panelCategories[type].description}
+            />
+          </TabPanel>
+        ))}
       </div>
     );
   }
 
   renderToolbarFilterPanel() {
     const { panels } = this.props.toolbarCopy;
+
     return (
       <TabPanel>
         <FilterListPanel
@@ -193,20 +169,20 @@ class Toolbar extends Component {
   renderToolbarShapePanel() {
     const { panels } = this.props.toolbarCopy;
 
-    if (this.props.features.USE_SHAPES) {
-      return (
-        <TabPanel>
-          <ShapesListPanel
-            shapes={this.props.shapes}
-            activeShapes={this.props.activeShapes}
-            onShapeFilter={this.props.methods.onShapeFilter}
-            language={this.props.language}
-            title={panels.shapes.label}
-            description={panels.shapes.description}
-          />
-        </TabPanel>
-      );
-    }
+    if (!this.props.features.USE_SHAPES) return null;
+
+    return (
+      <TabPanel>
+        <ShapesListPanel
+          shapes={this.props.shapes}
+          activeShapes={this.props.activeShapes}
+          onShapeFilter={this.props.methods.onShapeFilter}
+          language={this.props.language}
+          title={panels.shapes.label}
+          description={panels.shapes.description}
+        />
+      </TabPanel>
+    );
   }
 
   renderToolbarDownloadPanel() {
@@ -224,117 +200,26 @@ class Toolbar extends Component {
     );
   }
 
-  renderToolbarTab(_selected, label, iconKey, key) {
-    return (
-      <ToolbarButton
-        key={key}
-        label={label}
-        iconKey={iconKey}
-        isActive={
-          this.state._selected === _selected && this.state._active === true
-        }
-        onClick={() => {
-          this.selectTab(_selected);
-        }}
-      />
-    );
-  }
-
-  renderToolbarCategoryTabs(idxs) {
-    const { categories: panelCategories } = this.props.toolbarCopy.panels;
-    return (
-      <div>
-        {Object.keys(idxs).map((key) => {
-          return this.renderToolbarTab(
-            idxs[key],
-            panelCategories[key].label,
-            panelCategories[key].icon,
-            key
-          );
-        })}
-      </div>
-    );
-  }
-
   renderToolbarPanels() {
     const { features, narratives } = this.props;
     const classes =
-      this.state._active === true ? "toolbar-panels" : "toolbar-panels folded";
+      this.state._active ? "toolbar-panels" : "toolbar-panels folded";
+
     return (
       <div className={classes}>
         {this.renderClosePanel()}
-        {narratives && narratives.length !== 0
-          ? this.renderToolbarNarrativePanel()
-          : null}
-        {features.USE_CATEGORIES ? this.renderToolbarCategoriesPanel() : null}
-        {features.USE_ASSOCIATIONS ? this.renderToolbarFilterPanel() : null}
-        {features.USE_SHAPES ? this.renderToolbarShapePanel() : null}
-        {features.USE_DOWNLOAD ? this.renderToolbarDownloadPanel() : null}
+        {narratives.length !== 0 && this.renderToolbarNarrativePanel()}
+        {features.USE_CATEGORIES && this.renderToolbarCategoriesPanel()}
+        {features.USE_ASSOCIATIONS && this.renderToolbarFilterPanel()}
+        {features.USE_SHAPES && this.renderToolbarShapePanel()}
+        {features.USE_DOWNLOAD && this.renderToolbarDownloadPanel()}
 
         {features.USE_GEOJSON_LAYERS && (
           <TabPanel>
             {window.__LEAFLET_MAP__ ? (
-              <GeoJsonLayers
-                map={window.__LEAFLET_MAP__}
-                layersConfig={[
-                  {
-                    label: "Río Gualcarque",
-                    url: "/geojson/Rio Gualcarque.geojson",
-                    color: "#0077be",
-                  },
-                  {
-                    label: "Antenas Telefónicas",
-                    url: "/geojson/Antenas Telefonicas.geojson",
-                    color: "#000000",
-                  },
-                  {
-                    label: "Impronta Bertha Cáceres",
-                    url: "/geojson/Impronta_Bertha Isabel Caceres Flores.geojson",
-                    color: "#4caf50",
-                  },
-                  {
-                    label: "Impronta Douglas Geovanny Bustillo Andys Iraheta Samir Antonio",
-                    url: "/geojson/Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson",
-                    color: "#eb9c34",
-                  },
-                  {
-                    label: "Impronta Oscar Aroldo",
-                    url: "/geojson/Impronta_Oscar Aroldo.geojson",
-                    color: "#eb4034",
-                  },
-                  {                    
-                    label: "Poligonos Predios Cuchilla El Naranjal",
-                    url: "/geojson/Poligonos_Predios_Cuchilla El Naranjal.geojson",
-                    color: "#34ebba",
-                  },
-                  {                    
-                    label: "Poligonos Predios La Vega",
-                    url: "/geojson/Poligonos_Predios_La Vega.geojson",
-                    color: "#34ebba",
-                  },
-                  {                    
-                    label: "Poligonos Predios Las Lagunas",
-                    url: "/geojson/Poligonos_Predios_Las Lagunas.geojson",
-                    color: "#34ebba",
-                  },
-                  {                    
-                    label: "Poligonos Predios Rio Blanco",
-                    url: "/geojson/Poligonos_Predios_Rio Blanco.geojson",
-                    color: "#34ebba",
-                  },
-                  {                    
-                    label: "Poligonos_Predios_Sisimetera",
-                    url: "/geojson/Poligonos_Predios_Sisimetera.geojson",
-                    color: "#34ebba",
-                  }                
-                  
-
-                ]}
-              />
+              <GeoJsonLayers map={window.__LEAFLET_MAP__} />
             ) : (
-              <p style={{ padding: "1rem" }}>
-                ⏳ Esperando inicialización del mapa...
-              </p>
+              <p style={{ padding: "1rem" }}>⏳ Esperando inicialización del mapa…</p>
             )}
           </TabPanel>
         )}
@@ -342,77 +227,99 @@ class Toolbar extends Component {
     );
   }
 
+  renderToolbarTab(_selected, label, iconKey, key) {
+    return (
+      <ToolbarButton
+        key={key}
+        label={label}
+        iconKey={iconKey}
+        isActive={this.state._selected === _selected && this.state._active}
+        onClick={() => this.selectTab(_selected)}
+      />
+    );
+  }
+
   renderToolbarTabs() {
     const { features, narratives, toolbarCopy } = this.props;
-    const narrativesExist = narratives && narratives.length !== 0;
-    let title = copy[this.props.language].toolbar.title;
-    if (config.display_title) title = config.display_title;
     const { panels } = toolbarCopy;
 
     const narrativesIdx = 0;
+    const narrativesExist = narratives.length !== 0;
+
     const categoryIdxs = getCategoryIdxs(
       Object.keys(panels.categories),
       narrativesExist ? 1 : 0
     );
+
     const numCategoryPanels = Object.keys(categoryIdxs).length;
+
     const filtersIdx = getFilterIdx(
       narrativesExist,
       features.USE_CATEGORIES,
-      numCategoryPanels || 0
+      numCategoryPanels
     );
+
     const shapesIdx = filtersIdx + features.USE_SHAPES;
     const downloadIdx = shapesIdx + features.USE_DOWNLOAD;
+
+    const title = config.display_title || copy[this.props.language].toolbar.title;
 
     return (
       <div className="toolbar">
         <div className="toolbar-header" onClick={this.props.methods.onTitle}>
           <p>{title}</p>
           <ToolbarNavigateButton />
-
-          
         </div>
 
         <div className="toolbar-tabs">
           <TabList>
-            {narrativesExist
-              ? this.renderToolbarTab(
-                  narrativesIdx,
-                  panels.narratives.label,
-                  panels.narratives.icon
+            {narrativesExist &&
+              this.renderToolbarTab(
+                narrativesIdx,
+                panels.narratives.label,
+                panels.narratives.icon
+              )}
+
+            {features.USE_CATEGORIES &&
+              Object.keys(categoryIdxs).map((key) =>
+                this.renderToolbarTab(
+                  categoryIdxs[key],
+                  panels.categories[key].label,
+                  panels.categories[key].icon,
+                  key
                 )
-              : null}
-            {features.USE_CATEGORIES
-              ? this.renderToolbarCategoryTabs(categoryIdxs)
-              : null}
-            {features.USE_ASSOCIATIONS
-              ? this.renderToolbarTab(
-                  filtersIdx,
-                  panels.filters.label,
-                  panels.filters.icon
-                )
-              : null}
-            {features.USE_SHAPES
-              ? this.renderToolbarTab(
-                  shapesIdx,
-                  panels.shapes.label,
-                  panels.shapes.icon
-                )
-              : null}
-            {features.USE_DOWNLOAD
-              ? this.renderToolbarTab(
-                  downloadIdx,
-                  panels.download.label,
-                  panels.download.icon
-                )
-              : null}
+              )}
+
+            {features.USE_ASSOCIATIONS &&
+              this.renderToolbarTab(
+                filtersIdx,
+                panels.filters.label,
+                panels.filters.icon
+              )}
+
+            {features.USE_SHAPES &&
+              this.renderToolbarTab(
+                shapesIdx,
+                panels.shapes.label,
+                panels.shapes.icon
+              )}
+
+            {features.USE_DOWNLOAD &&
+              this.renderToolbarTab(
+                downloadIdx,
+                panels.download.label,
+                panels.download.icon
+              )}
+
             {features.USE_GEOJSON_LAYERS &&
               this.renderToolbarTab(downloadIdx + 1, "Capas", "layers")}
+
             {features.USE_FULLSCREEN && (
               <FullscreenToggle language={this.props.language} />
             )}
           </TabList>
         </div>
-            
+
         <BottomActions
           info={{
             enabled: this.props.infoShowing,
@@ -440,14 +347,17 @@ class Toolbar extends Component {
   }
 
   render() {
-    const { isNarrative } = this.props;
-
     return (
       <div
         id="toolbar-wrapper"
-        className={`toolbar-wrapper ${isNarrative ? "narrative-mode" : ""}`}
+        className={`toolbar-wrapper ${
+          this.props.isNarrative ? "narrative-mode" : ""
+        }`}
       >
-        <Tabs onSelect={() => null} selectedIndex={this.state._selected}>
+        <Tabs
+          onSelect={() => null}
+          selectedIndex={this.state._selected}
+        >
           {this.renderToolbarTabs()}
           {this.renderToolbarPanels()}
         </Tabs>
@@ -460,18 +370,13 @@ function mapStateToProps(state) {
   return {
     filters: selectors.getFilters(state),
     categories: selectors.getCategories(state),
-    narratives: selectors.selectNarratives(state) || [
-      { id: "test1", desc: "Ejemplo de narrativa de prueba" },
-      { id: "test2", desc: "Segunda narrativa de ejemplo" },
-    ],
+    narratives: selectors.selectNarratives(state) || [],
     shapes: selectors.getShapes(state),
     language: state.app.language,
     toolbarCopy: state.app.toolbar,
     activeFilters: selectors.getActiveFilters(state),
     activeCategories: selectors.getActiveCategories(state),
     activeShapes: selectors.getActiveShapes(state),
-    viewFilters: state.app.associations.views,
-    narrative: state.app.associations.narrative,
     sitesShowing: state.app.flags.isShowingSites,
     infoShowing: state.app.flags.isInfopopup,
     coloringSet: state.app.associations.coloringSet,
