@@ -1,58 +1,39 @@
 // src/components/narratives/NarrativeMedia.jsx
 
+import React from "react";
+import PropTypes from "prop-types";
+import "../../scss/narrativeMedia.scss";
+
 export default function NarrativeMedia({ chapter }) {
-  if (!chapter || !chapter.media || chapter.media.length === 0) {
-    return null;
-  }
+  if (!chapter || !chapter.media || chapter.media.length === 0) return null;
+
+  // ❗ Si es un capítulo con sideMedia, NO mostrar imagen en el panel izquierdo
+  if (chapter.sideMedia) return null;
+
+  const item = chapter.media[0];
 
   return (
-    <div
-      style={{
-        width: "100%",
-        marginTop: "20px",
-        display: "flex",
-        justifyContent: "center"
-      }}
-    >
-      {chapter.media.map((m, i) => {
-        if (m.type === "image") {
-          return (
-            <img
-              key={i}
-              src={m.src}
-              alt=""
-              style={{
-                width: "100%",
-                maxWidth: "100%",
-                borderRadius: "10px",
-                opacity: m.opacity ?? 1,
-                display: "block"
-              }}
-            />
-          );
-        }
+    <div className="narrative-media-container">
+      {item.type === "image" && (
+        <img src={item.src} className="narrative-image" alt="" />
+      )}
 
-        if (m.type === "video") {
-          return (
-            <video
-              key={i}
-              src={m.src}
-              autoPlay={m.autoplay}
-              loop={m.loop}
-              muted={m.muted}
-              style={{
-                width: "100%",
-                maxWidth: "100%",
-                borderRadius: "10px",
-                opacity: m.opacity ?? 1,
-                display: "block"
-              }}
-            />
-          );
-        }
+      {item.type === "video" && (
+        <video
+          src={item.src}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="narrative-video"
+        />
+      )}
 
-        return null;
-      })}
+      {item.caption && <p className="media-caption">{item.caption}</p>}
     </div>
   );
 }
+
+NarrativeMedia.propTypes = {
+  chapter: PropTypes.object,
+};

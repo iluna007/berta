@@ -1,0 +1,26 @@
+/* src/scss/narrativeMedia.scss  */
+
+.narrative-media-container {
+  width: 100%;
+  margin-top: 10px;
+  opacity: 1 !important;     /* ← AHORA SE VEN */
+  pointer-events: auto;
+}
+
+.narrative-image {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.narrative-video {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.media-caption {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-top: 6px;
+}

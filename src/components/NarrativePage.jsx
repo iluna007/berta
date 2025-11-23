@@ -8,6 +8,7 @@ import { hook_restore } from "../actions/hook_restore";
 import NarrativesScroller from "./narratives/NarrativesScroller";
 import NarrativesMap from "./narratives/NarrativesMap";
 import NarrativeMedia from "./narratives/NarrativeMedia";
+import SideMediaPanel from "./narratives/SideMediaPanel";
 
 export default function NarrativePage() {
   const navigate = useNavigate();
@@ -17,24 +18,23 @@ export default function NarrativePage() {
   const [index, setIndex] = useState(0);
   const [activeChapterId, setActiveChapterId] = useState(null);
 
-  // ------------------------------------------
-  // 1) Cargar JSON
-  // ------------------------------------------
+  // ------------------------------
+  // CARGAR JSON
+  // ------------------------------
   useEffect(() => {
     fetch("/narratives/narratives.json")
       .then((res) => res.json())
       .then((data) => {
         setChapters(data.chapters);
         setActiveChapterId(data.chapters[0].id);
-      })
-      .catch((err) => console.error("Error cargando JSON:", err));
+      });
   }, []);
 
-  // ------------------------------------------
-  // 2) Scroll global (funciona sobre mapa y panel)
-  // ------------------------------------------
+  // ------------------------------
+  // SCROLL GLOBAL
+  // ------------------------------
   useEffect(() => {
-    if (chapters.length === 0) return;
+    if (!chapters.length) return;
 
     const handler = (e) => {
       e.preventDefault();
@@ -50,9 +50,9 @@ export default function NarrativePage() {
     return () => window.removeEventListener("wheel", handler);
   }, [chapters.length]);
 
-  // ------------------------------------------
-  // 3) Cambiar capítulo activo
-  // ------------------------------------------
+  // ------------------------------
+  // CAMBIO DE CAPÍTULO
+  // ------------------------------
   useEffect(() => {
     if (chapters.length > 0) {
       setActiveChapterId(chapters[index].id);
@@ -61,17 +61,14 @@ export default function NarrativePage() {
 
   const activeChapter = chapters.find((c) => c.id === activeChapterId);
 
-  // ------------------------------------------
-  // Botón volver
-  // ------------------------------------------
   const goBack = async () => {
     await dispatch(hook_restore());
     navigate("/");
   };
 
-  // ------------------------------------------
+  // ------------------------------
   // RENDER
-  // ------------------------------------------
+  // ------------------------------
   return (
     <div
       style={{
@@ -82,7 +79,7 @@ export default function NarrativePage() {
         background: "#000",
       }}
     >
-      {/* Botón volver */}
+      {/* BOTÓN VOLVER */}
       <button
         onClick={goBack}
         style={{
@@ -90,48 +87,49 @@ export default function NarrativePage() {
           top: "20px",
           left: "20px",
           zIndex: 50,
+          background: "#333",
+          color: "#fff",
           padding: "10px 20px",
-          backgroundColor: "#333",
-          color: "white",
-          border: "none",
           borderRadius: "4px",
+          border: "none",
           cursor: "pointer",
         }}
       >
         ← BACK TO PLATFORM
       </button>
 
-      {/* MAPA (al fondo) */}
+      {/* MAPA */}
       <div style={{ position: "absolute", inset: 0, zIndex: 1 }}>
         <NarrativesMap activeChapterId={activeChapterId} chapters={chapters} />
       </div>
 
-      {/* MEDIA (encima del mapa) */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          zIndex: 25,
-          pointerEvents: "none", // ← No bloquea interacción
-        }}
-      >
-        <NarrativeMedia media={activeChapter?.media} />
-      </div>
+      {/* PANEL DERECHO SOLO PARA sideMedia */}
+      {activeChapter?.sideMedia && (
+        <SideMediaPanel chapter={activeChapter} />
+      )}
 
-      {/* PANEL SCROLLER */}
+      {/* PANEL IZQUIERDO */}
       <div
         style={{
           position: "absolute",
           top: "80px",
           left: "20px",
-          height: "calc(100% - 100px)",
           width: "400px",
+          height: "calc(100% - 100px)",
           zIndex: 30,
-          overflow: "hidden",
+          overflow: "visible",
+          pointerEvents: "auto"
         }}
       >
         <NarrativesScroller chapters={chapters} index={index} />
+
+        {!activeChapter?.sideMedia && (
+          <div style={{ marginTop: "20px" }}>
+            <NarrativeMedia media={activeChapter?.media} />
+          </div>
+        )}
       </div>
+
     </div>
   );
 }
