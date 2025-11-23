@@ -1,7 +1,7 @@
 // src/components/narratives/SideMediaPanel.jsx
 import React from "react";
 import PropTypes from "prop-types";
-import "../../scss/sideMediaPanel.scss";
+import "../../scss/narratives_sideMediaPanel.scss";
 
 export default function SideMediaPanel({ chapter }) {
   if (!chapter || !chapter.sideMedia || !chapter.media?.length) return null;

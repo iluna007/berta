@@ -2,7 +2,7 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import "../../scss/narrativeMedia.scss";
+import "../../scss/narratives_narrativeMedia.scss";
 
 export default function NarrativeMedia({ chapter }) {
   if (!chapter || !chapter.media || chapter.media.length === 0) return null;
