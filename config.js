@@ -8,7 +8,6 @@ const config = {
   SOURCES_EXT: "/data/sources1.json",
   ASSOCIATIONS_EXT: "/data/associations1.json",
   NARRATIVE_EXT: "narratives/narratives.json",
-
   API_DATA: "",
   MAPBOX_TOKEN:
   "pk.eyJ1IjoiaWtlcmx1bmEiLCJhIjoiY203NjMwZHptMHAzaDJrcXlrbnNuMHJlZiJ9.hkoRlM6gQ-BflcGjpI40GA",
@@ -95,12 +94,12 @@ const config = {
         maxNumOfColors: 9,
         defaultColor: "#dfdfdf",
         colors: [
-          "#7E57C2",
-          "#F57C00",
+          "#bd1783",
+          "#ee1504",
+          "#fa8b31",
           "#FFEB3B",
           "#D34F73",
           "#08B2E3",
-          "#A1887F",
           "#90A4AE",
           "#E57373",
           "#80CBC4",
@@ -119,8 +118,11 @@ const config = {
       },
       tiles: {
         current: "ikerluna/cm7b6ykln005d01s7fdffhda4",
+        //current: ikerluna/cmicitjth00b701s4aarcc81h",
         default: "ikerluna/cm7b6ykln005d01s7fdffhda4",
-        satellite: "ikerluna/cmicdzb0y00au01s4c6v61lnh",
+        //default: "ikerluna/cmicitjth00b701s4aarcc81h",
+        satellite: "ikerluna/cmicey2jk00ay01s44px2evzg",
+
 
       },
     },
