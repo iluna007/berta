@@ -4,9 +4,9 @@ const config = {
   title: "Berta",
   display_title: "Berta Cáceres",
   SERVER_ROOT: "",
-  EVENTS_EXT: "/data/events1.json",
-  SOURCES_EXT: "/data/sources1.json",
-  ASSOCIATIONS_EXT: "/data/associations1.json",
+  EVENTS_EXT: "/data/events.json",
+  SOURCES_EXT: "/data/sources.json",
+  ASSOCIATIONS_EXT: "/data/associations.json",
   NARRATIVE_EXT: "narratives/narratives.json",
   API_DATA: "",
   MAPBOX_TOKEN:
