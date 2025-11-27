@@ -154,8 +154,7 @@ const config = {
       CUSTOM_EVENT_FIELDS: [],
     },
     GEOJSON_LAYERS: [
-      "public/geojson/Rio Gualcarque.geojson",
-      "public/geojson/Poligonos_Predios_Sisimetera.geojson",
+      
     ],
   },
 };

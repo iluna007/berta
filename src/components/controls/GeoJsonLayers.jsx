@@ -6,7 +6,9 @@ class GeoJsonLayers extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      layers: []
+      layers: [],
+      openGroups: {},
+      openSubgroups: {}
     };
   }
 
@@ -27,14 +29,31 @@ class GeoJsonLayers extends Component {
 
       this.setState({ layers: prepared });
     } catch (e) {
-      console.error("Error cargando geojsonLayers.json", e);
+      console.error("Error cargando geojsonLayers2.json", e);
     }
+  }
+
+  toggleGroup(groupName) {
+    this.setState((prev) => ({
+      openGroups: {
+        ...prev.openGroups,
+        [groupName]: !prev.openGroups[groupName]
+      }
+    }));
+  }
+
+  toggleSubgroup(subgroupName) {
+    this.setState((prev) => ({
+      openSubgroups: {
+        ...prev.openSubgroups,
+        [subgroupName]: !prev.openSubgroups[subgroupName]
+      }
+    }));
   }
 
   async toggleLayer(layer) {
     const { map } = this.props;
 
-    // Apagar capa
     if (layer.visible && layer.mapLayer) {
       map.removeLayer(layer.mapLayer);
       layer.mapLayer = null;
@@ -43,11 +62,14 @@ class GeoJsonLayers extends Component {
       return;
     }
 
-    // Encender capa
+    if (!layer.url || layer.url.trim() === "") {
+      console.warn("Capa sin URL definida:", layer.label);
+      return;
+    }
+
     const response = await fetch(layer.url);
     const data = await response.json();
 
-    // Crear pane para mantener orden visual
     const paneId = `pane-${layer.label.replace(/\s+/g, "-").toLowerCase()}`;
     if (!map.getPane(paneId)) {
       const pane = map.createPane(paneId);
@@ -56,16 +78,12 @@ class GeoJsonLayers extends Component {
 
     const mapLayer = L.geoJSON(data, {
       pane: paneId,
-
-      // Estilo original (líneas + polígonos)
       style: () => ({
         color: layer.color,
         weight: 2,
         opacity: 1,
         fillOpacity: 0.3
       }),
-
-      // Estilo ORIGINAL de puntos (con glow)
       pointToLayer: (feature, latlng) =>
         L.circleMarker(latlng, {
           radius: 5,
@@ -74,7 +92,7 @@ class GeoJsonLayers extends Component {
           weight: 1,
           opacity: 1,
           fillOpacity: 0.8,
-          className: "leaflet-interactive soft-point" // <- glow original restaurado
+          className: "leaflet-interactive soft-point"
         })
     });
 
@@ -87,43 +105,88 @@ class GeoJsonLayers extends Component {
   }
 
   render() {
-    const { layers } = this.state;
+    const { layers, openGroups, openSubgroups } = this.state;
+
+    // Agrupar por group → subgroup
+    const grouped = {};
+    layers.forEach((layer) => {
+      if (!grouped[layer.group]) grouped[layer.group] = {};
+      if (!grouped[layer.group][layer.subgroup])
+        grouped[layer.group][layer.subgroup] = [];
+      grouped[layer.group][layer.subgroup].push(layer);
+    });
 
     return (
       <div className="panel-list" style={{ padding: "1rem" }}>
-        <h2 className="panel-title">Capas GeoJSON</h2>
+        <h2 className="panel-title">Capas</h2>
 
-        {layers.map((layer, index) => (
-          <div
-            key={index}
-            className="panel-action action"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              marginBottom: "0.5rem"
-            }}
-          >
-            <input
-              type="checkbox"
-              checked={layer.visible}
-              onChange={() => this.toggleLayer(layer)}
+        {Object.keys(grouped).map((groupName) => (
+          <div key={groupName} style={{ marginBottom: "1rem" }}>
+            {/* ----------------- GRUPO ----------------- */}
+            <div
+              onClick={() => this.toggleGroup(groupName)}
               style={{
-                width: "14px",
-                height: "14px",
                 cursor: "pointer",
-                marginRight: "8px"
-              }}
-            />
-
-            <span
-              style={{
-                borderBottom: `2px solid ${layer.color}`,
-                paddingBottom: "2px",
-                fontSize: "14px"
+                fontWeight: "bold",
+                fontSize: "15px",
+                marginBottom: "6px"
               }}
             >
-              {layer.label}
-            </span>
+              {openGroups[groupName] ? "▼ " : "► "} {groupName}
+            </div>
+
+            {openGroups[groupName] &&
+              Object.keys(grouped[groupName]).map((subgroupName) => (
+                <div key={subgroupName} style={{ marginLeft: "12px" }}>
+                  {/* --------------- SUBGRUPO --------------- */}
+                  <div
+                    onClick={() => this.toggleSubgroup(subgroupName)}
+                    style={{
+                      cursor: "pointer",
+                      fontSize: "14px",
+                      marginBottom: "4px",
+                      color: "#555"
+                    }}
+                  >
+                    {openSubgroups[subgroupName] ? "▼ " : "► "} {subgroupName}
+                  </div>
+
+                  {openSubgroups[subgroupName] &&
+                    grouped[groupName][subgroupName].map((layer, index) => (
+                      <div
+                        key={index}
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          marginLeft: "20px",
+                          marginBottom: "4px"
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          checked={layer.visible}
+                          onChange={() => this.toggleLayer(layer)}
+                          style={{
+                            width: "14px",
+                            height: "14px",
+                            cursor: "pointer",
+                            marginRight: "8px"
+                          }}
+                        />
+
+                        <span
+                          style={{
+                            borderBottom: `2px solid ${layer.color}`,
+                            paddingBottom: "1px",
+                            fontSize: "13px"
+                          }}
+                        >
+                          {layer.label}
+                        </span>
+                      </div>
+                    ))}
+                </div>
+              ))}
           </div>
         ))}
       </div>
