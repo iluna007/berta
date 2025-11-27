@@ -50,9 +50,8 @@ const config = {
         },
       },
       intro: [
-        '<div class="two-columns"><div class="two-columns_column"><figure><img style="width: 100%; display:block;" src="https://bellingcat-embeds.ams3.cdn.digitaloceanspaces.com/ukraine-timemap/cover01-s.jpg" frameborder="0"><figcaption>Image: Vyacheslav Madiyevskyy/Reuters</figcaption></figure></div><div class="two-columns_column"><figure><img style="width: 100%; display:block;" src="https://bellingcat-embeds.ams3.cdn.digitaloceanspaces.com/ukraine-timemap/cover02-s.jpg" frameborder="0"><figcaption>Image: Järva Teataja/Scanpix Baltics via Reuters</figcaption></figure></div></div>',
-        'This map plots out and highlights incidents that have resulted in potential civilian impact or harm since Russia began its invasion of Ukraine. The incidents detailed have been collected by Bellingcat researchers. Included in the map are instances where civilian areas and infrastructure have been damaged or destroyed, where the presence of civilian injuries are visible and/or there is the presence of immobile civilian bodies. Collection for the incidences contained in this map began on February 24, 2022. Users can explore incidents by date and location. We intend this to be a living project that will continue to be updated as long as the conflict persists. For more detailed information about the entries included in this map, please refer to our methodology and explainer article which can be read <a href="https://www.bellingcat.com/news/2022/03/17/hospitals-bombed-and-apartments-destroyed-mapping-incidents-of-civilian-harm-in-ukraine/" >here</a>.',
-        '<p><b>Editor\'s note</b>: An error in our archiving system between October 21 and November 7 led to some incidents being published on our TimeMap before they were fully verified. We have fixed this issue and are working to verify all extra incidents.</p>',
+          "Esta plataforma web interactiva se desarrolla en el marco del mandato del Grupo Interdisciplinario de Expertas y Expertos Independientes (GIEI) para Honduras, el cual busca esclarecer hechos de violencia, identificar patrones de impunidad y contribuir a la memoria, la verdad, justicia y reparación en el caso del asesinato de la líder y defensora lenca, Berta Cáceres Flores, el 3 de marzo de 2016. La documentación aquí presentada aporta insumos técnicos y contextuales que complementan los esfuerzos de esclarecimiento y dignificación de las víctimas. ",
+
       ],
 
       flags: { isInfopoup: false, isInfopopup: false },
@@ -61,8 +60,6 @@ const config = {
         exploreButton: "PLATAFORMA",
         narrativeButton: "NARRATIVAS",
         description: [
-
-          "Esta plataforma web interactiva se desarrolla en el marco del mandato del Grupo Interdisciplinario de Expertas y Expertos Independientes (GIEI) para Honduras, el cual busca esclarecer hechos de violencia, identificar patrones de impunidad y contribuir a la memoria, la verdad, justicia y reparación en el caso del asesinato de la líder y defensora lenca, Berta Cáceres Flores, el 3 de marzo de 2016. La documentación aquí presentada aporta insumos técnicos y contextuales que complementan los esfuerzos de esclarecimiento y dignificación de las víctimas. ",
           "## Alcance de la investigación",
           "Esta plataforma interactiva reúne incidentes, evidencias y contextos relacionados con el caso del asesinato de Berta Cáceres Flores y el entramado de actores, infraestructuras y decisiones que lo rodean. El foco está en episodios que evidencian posibles daños a civiles, afectaciones a comunidades y territorios, construcción de infraestructuras, patrones de control territorial y relaciones entre distintos actores de distintas agrupaciones, como el Consejo Cívico de Organizaciones Populares e Indígenas de Honduras (COPINH), corporativos, agentes estatales de seguridad, instituciones del estado hondureño, y criminales sentenciados. La plataforma no pretende ser exhaustiva, sino un muestrario de narrativas y evidencias cuya localización y contexto han sido suficientemente corroborados para su publicación.",
           "## Fuentes",
