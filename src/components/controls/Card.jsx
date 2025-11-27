@@ -35,7 +35,7 @@ export const generateCardLayout = {
         ? [
             {
               kind: "list",
-              title: "Victims",
+              title: "Receptores",
               value: event.victims,
             },
           ]
@@ -48,7 +48,7 @@ export const generateCardLayout = {
         ? [
             {
               kind: "list",
-              title: "Attackers",
+              title: "Iniciadores",
               value: event.attackers,
             },
           ]

@@ -239,28 +239,28 @@
         "Testimony Group 03",
         "Other"
       ],
-      "info": "Showing <span>%n events</span> that occurred between",
-      "reset": "reset dates",
+      "info": "Mostrando <span>%n events</span> que ocurrieron entre",
+      "reset": "Reset dates",
       "default_categories_label": ""
     },
     "cardstack": {
-      "header": "selected events",
-      "timestamp": "Day and time",
-      "unknown_location": "Unknown location",
-      "estimated": "estimated",
-      "unknown_time": "Unknown time",
-      "location": "Localization",
-      "incident_type": "Type of action",
-      "description": "Summary",
-      "filters": "Filters",
-      "nofilters": "No known filters for this event.",
-      "sources": "Sources",
-      "unknown_source": "The information for this source could not be retrieved.",
-      "category": "Category",
-      "communication": "Communication",
-      "transmitter": "Transmitter",
-      "receiver": "Receiver",
-      "warning": "(!) Highly questioned"
+      "header": "Evento seleccionados",
+      "timestamp": "Dia y hora",
+      "unknown_location": "Ubicación incierta",
+      "estimated": "estimatedo",
+      "unknown_time": "Tiempo incierto",
+      "location": "Localización",
+      "incident_type": "Tipo de incidente",
+      "description": "Resumen",
+      "filters": "Eventos",
+      "nofilters": "No hay eventos conocidos para este evento. ",
+      "sources": "Fuentes",
+      "unknown_source": "No se pudo recuperar la información para esta fuente.",
+      "category": "Categoría",
+      "communication": "Comunicación",
+      "transmitter": "Transmisor",
+      "receiver": "Receptor",
+      "warning": "(!) Altamente cuestionado"
     }
   }
 }

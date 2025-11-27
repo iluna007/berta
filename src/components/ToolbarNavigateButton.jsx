@@ -16,7 +16,7 @@ export default function ToolbarNavigateButton() {
         cursor: "pointer",
       }}
     >
-      Visual Narrative Map
+      Mapa de Narrativas visuales
     </button>
   );
 }

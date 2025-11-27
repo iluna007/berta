@@ -336,10 +336,10 @@ class Toolbar extends Component {
         />
 
         <div id="made-with">
-          Made with{" "}
+          Elaborado con{" "}
           <a href="https://github.com/forensic-architecture/timemap">TimeMap</a>
           <br />
-          Free software from{" "}
+          Software libre de{" "}
           <a href="https://forensic-architecture.org">Forensic Architecture</a>
         </div>
       </div>

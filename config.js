@@ -2,7 +2,7 @@ const one_day = 1440;
 
 const config = {
   title: "Berta",
-  display_title: "Berta",
+  display_title: "Berta Cáceres",
   SERVER_ROOT: "",
   EVENTS_EXT: "/data/events1.json",
   SOURCES_EXT: "/data/sources1.json",
@@ -36,8 +36,8 @@ const config = {
           contentHeight: 90,
         },
         zoomLevels: [
-          { label: "Zoom to 1 year", duration: 12 * 31 * one_day },
-          { label: "Zoom to 8 years", duration: 96 * 31 * one_day },
+          { label: "Zoom de 1 año", duration: 12 * 31 * one_day },
+          { label: "Zoom de 8 años", duration: 96 * 31 * one_day },
         ],
         range: {
           // ✅ Define el rango de fechas visible al iniciar
@@ -57,28 +57,31 @@ const config = {
 
       flags: { isInfopoup: false, isInfopopup: false },
       cover: {
-        title: "About and Methodology",
+        title: "Introducción",
         exploreButton: "PLATAFORMA",
         narrativeButton: "NARRATIVAS",
         description: [
-          "## Scope of Research",
-          "This database, organised on Forensic Architecture's [TimeMap](https://github.com/forensic-architecture/timemap) platform and customised for this project, is focused on incidents in Ukraine that have resulted in potential civilian harm. These include: incidents where rockets or missiles struck civilian areas, where attacks have resulted in the destruction of civilian infrastructure, where the presence of civilian injuries are visible and/or the presence of immobile civilian bodies. This database began collection on February 24, 2022 and intends to be a living document that will continue to be updated as long as the conflict persists. While we are attempting to collect as many incidents as possible, we cannot possibly guarantee to collect them all nor will we be able to corroborate the locations of all the incidents we collect. Those we do not corroborate the originality or exact location of will not be shown on the map. Therefore, this map is not an exhaustive list of civilian harm in Ukraine but rather a representation of all incidents which we have been able to collect and of which we have been able to determine the exact locations. ",
-          "## Open Source Footage",
-          "The links in this map are all open source, meaning they are connected to an open link posted online. These sources were collected by Bellingcat researchers and placed in a database from where they are also being archived locally. After collection, our Global Authentication Project members have determined the location of each of these events <small>(you can read more about the Global Authentication Project and its makeup below)</small>. Bellingcat staff then cross-referenced these coordinates to ensure their accuracy. The resolution of these geolocations is within 150 metres of where the incident occurred but the public coordinates viewable on the map have been slightly obscured in order to protect the identity of the creators. Because this footage is open source, the users who uploaded the content are not directly affiliated to Bellingcat or our partners. Any opinions that may be contained within the posts are therefore not those of Bellingcat or our partners. Any claims contained within the posts have also not necessarily been confirmed or verified by Bellingcat, particularly in relation to which party may have been responsible for the incidents detailed.",
-          "## Verification Level",
-          "The data being collected is checked for originality, basic manipulation, and location by Bellingcat investigators. This level of verification is intended to indicate where incidents took place, when and where there are reasonable visual indications of civilian harm. Our investigation plan for the collection of this material and its uses are informed by the [Berkeley Protocol on Digital Open Source Investigations](https://www.ohchr.org/en/publications/policy-and-methodological-publications/berkeley-protocol-digital-open-source). These incidents are also being collected and archived at a [forensic level](https://mnemonic.org/en/our-work) for potential evidentiary use in the future. That level of in-depth analysis and verification will take many months and our goal with this map is to transparently report on the current situation in Ukraine, as it is happening, for public interest. To be clear, these two processes will be separate.",
-          "## Descriptions",
-          "Each incident is accompanied with source links, the exact location determined by our Global Authentication Project and Bellingcat researchers, as well as a brief description of the incident based on what is visually present. The descriptions indicate what is clearly visible but do not attempt to make assumptions about the exact number of casualties or which party to the conflict is responsible due to those factors being difficult to fully determine from short, visual imagery alone.",
-          "## Filters",
-          "On the left hand side of the map, a user can toggle between different kinds of areas impacted. We are characterising the areas as residential, industrial, administrative, healthcare, school/childcare, military, commercial, religious, or undefined. Decisions on these classifications are  based on  visual evidence in the footage and what the area is reportedly used as. We cannot fully exclude or exhaustively search for the potential of military use in some of these areas.",
-          "## Source Links/Embedding",
-          "We have chosen to embed the social media links directly onto the platform.  Should any be deleted by the uploader, they will still be visible on the map, but data on the post, user and footage will no longer be presented publicly. Where sensitive footage posted by individuals might allow them or their location to be identified, we have sought to preemptively take steps to anonymise these users.",
-          "## Privacy concerns and respect for the dead ",
-          "This footage is graphic and contains distressing scenes of war and conflict. Many of the areas represented are, at time of writing, also under attack both physically and through online attempts to discredit or harm users posting this content. For these reasons, we have chosen not to share certain posts that might indicate the direct identity of any of the persons filming. We have also filtered out posts that contain images where an immobile body is closely filmed and their identity might be ascertained out of respect for them and their close ones.",
-          "## A Note on Bellingcat's Global Authentication Project",
-          "The Global Authentication Project consists of a wide community of open source researchers assisting in Bellingcat research through structured tasks and feedback. Our aim is to authenticate events taking place around the world and fill in the gaps of knowledge that exist, particularly in situations where there are vast quantities of data. In creating a community for those interested in open source research, we are fostering Bellingcat's original aim of solving problems **together**, to diversify our investigations and promote the use of these skills. For this dataset, we are working with many individuals who have Ukrainian language skills and others with local contextual knowledge of the events and places seen on the map. Other participants include individuals skilled in geolocation and chronolocation, with all contributions being vetted by Bellingcat researchers. As we expand the Global Authentication Project in the coming months, more information will be available on our website and Twitter.",
-          "## Feedback",
-          "This map will continue to change and be updated for the duration of this conflict. We welcome feedback on our methodology,  data collection and take transparency seriously. Should you have any direct feedback about the platform, please indicate it on this [form](https://forms.gle/cV2YAojBoh6h4T3XA).",
+
+          "Esta plataforma web interactiva se desarrolla en el marco del mandato del Grupo Interdisciplinario de Expertas y Expertos Independientes (GIEI) para Honduras, el cual busca esclarecer hechos de violencia, identificar patrones de impunidad y contribuir a la memoria, la verdad, justicia y reparación en el caso del asesinato de la líder y defensora lenca, Berta Cáceres Flores, el 3 de marzo de 2016. La documentación aquí presentada aporta insumos técnicos y contextuales que complementan los esfuerzos de esclarecimiento y dignificación de las víctimas. ",
+          "## Alcance de la investigación",
+          "Esta plataforma interactiva reúne incidentes, evidencias y contextos relacionados con el caso del asesinato de Berta Cáceres Flores y el entramado de actores, infraestructuras y decisiones que lo rodean. El foco está en episodios que evidencian posibles daños a civiles, afectaciones a comunidades y territorios, construcción de infraestructuras, patrones de control territorial y relaciones entre distintos actores de distintas agrupaciones, como el Consejo Cívico de Organizaciones Populares e Indígenas de Honduras (COPINH), corporativos, agentes estatales de seguridad, instituciones del estado hondureño, y criminales sentenciados. La plataforma no pretende ser exhaustiva, sino un muestrario de narrativas y evidencias cuya localización y contexto han sido suficientemente corroborados para su publicación.",
+          "## Fuentes",
+          "Los insumos de la investigación provienen principalmente de evidencia forense y documentación judicial obtenida durante el proceso penal del caso Berta Cáceres: registros telefónicos y extracciones de dispositivos de los imputados, más de 400,000 chats de WhatsApp, transacciones financieras y correos electrónicos de bancos internacionales, títulos de propiedad y escrituras de compra de terrenos, censos de la comunidad Río Blanco, expedientes judiciales (sentencias y declaraciones), y estudios técnicos sobre el proyecto hidroeléctrico. Esta información ha sido complementada con materiales de acceso público cuando su divulgación no compromete a personas o procesos en curso. Cuando el material proviene de fuentes abiertas, se mantiene el enlace original y se resguarda una copia para preservación. La presencia de un enlace no implica afiliación entre quienes publicaron el contenido y este proyecto.",
+          "## Niveles de verificación",
+          "Cada registro documentado en esta plataforma pasa por controles de verificación que incluyen: autenticidad de la fuente, coherencia temporal, geolocalización mediante referencias cruzadas con mapas satelitales y cartografía oficial, y triangulación con múltiples fuentes cuando están disponibles. Los puntos del mapa, trayectorias y ubicaciones que se muestran públicamente han alcanzado un nivel de certeza espacial suficiente para su publicación; casos con localización incierta o que requieren protección adicional se resguardan para análisis interno del GIEI. La verificación forense avanzada para uso probatorio en procesos judiciales requiere peritajes especializados y se desarrolla en el marco del mandato oficial del GIEI, surgido de un acuerdo entre el gobierno hondureño y la Organización de los Estados Americanos (OEA).",
+          "## Descripciones y límites",
+          "Las fichas describen lo que es claramente visible o documentalmente sustentable: qué, cuándo, dónde y con qué afectaciones plausibles. No se infieren números precisos de víctimas ni se atribuye responsabilidad a una parte sin evidencia suficiente y trazable. Los campos narrativos priorizan la claridad, señalan incertidumbres y distinguen entre observación, inferencia y contexto. Los límites geográficos de los incidentes se representan con la mayor precisión posible según la evidencia disponible, pero no pretenden ser exhaustivos ni definitivos. La representación espacial busca equilibrar precisión y respeto por la privacidad y seguridad de las comunidades afectadas.",
+          "## Filtros y navegación",
+          "En el panel lateral puedes activar eventos por distintas categorías, seleccionar un periodo temporal, y activar capas geográficas y analíticas. Entre otros:",
+          "-Tipos de eventos: agresiones, concesiones, comunicaciones, transacciones, acciones de defensa del territorio.",
+          "-Actores involucrados: bancos y fondos internacionales, ejecutivos y personal de empresas o de seguridad privada, autoridades militares y policiales, actores de redes criminales, miembros del COPINH y comunidades afectadas.",
+          "-Capas territoriales: comunidades lencas afectadas (La Tejera, El Barreal, Río Blanco, La Vega), predios adquiridos por DESA, ubicaciones del proyecto hidroeléctrico (versiones de 2009 y 2013), infraestructuras relacionadas.",
+          "Las clasificaciones se basan en evidencia documental proveniente de expedientes judiciales, testimonios y registros oficiales; cada evento está vinculado a sus fuentes primarias para garantizar trazabilidad y verificabilidad.",
+          "## Privacidad, seguridad y respecto",
+          "El material puede ser sensible o perturbador. Se aplican medidas de minimización de daño: difuminado o recorte cuando hay riesgo de identificación de personas en situación de vulnerabilidad; exclusión de imágenes de cuerpos que permitan identidad directa; desajuste deliberado de coordenadas públicas en rangos prudentes cuando la revelación precisa implique riesgo. Se retiran datos personales no esenciales y se atienden solicitudes fundadas de retiro o mayor resguardo. ",
+          "## Créditos",
+          "Esta investigación, plataforma y videos fue desarrollada por el equipo de re/presentare en colaboración con el GIEI de Honduras para el caso del asesinato de Berta Cáceres. La plataforma utiliza código abierto desarrollado por Forensic Architecture y Bellingcat. ",
+
         ],
       },
       toolbar: {
