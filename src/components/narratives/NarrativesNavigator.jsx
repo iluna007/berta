@@ -70,7 +70,6 @@ export default function NarrativesNavigator({ onSelect }) {
         ← Volver al inicio
       </button>
 
-      <h2 style={{ color: "white", marginBottom: "16px" }}>Narrativas</h2>
 
       {items.map((item) => (
         <div
