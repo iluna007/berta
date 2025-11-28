@@ -43,8 +43,8 @@
     },
 
     {
-      "id": "Wakanda Forever-2",
-      "title": "El golpe de 2009 y la venta del territorio",
+      "id": "NR-1",
+      "title": "Wakanda Forever-2",
       "description": "Narrar la relación socioambiental sagrada de las comunidades lencas con el Gualcarque, a manera de introducción: la presencia de comunidades indígenas, procesos anteriores de criminalidad, contexto del golpe de 2009.",
       "location": { "center": [-88.15, 14.32], "zoom": 11, "pitch": 25, "bearing": -20 },
 
@@ -85,8 +85,8 @@
     },
 
     {
-      "id": "Wakanda Forever-3",
-      "title": "La red financiera: capitales, bancos, empresarios y la familia Atala, ",
+      "id": "NR-2",
+      "title": "Wakanda Forever-3",
       "description": "Narrar el papel de las redes de empresarios, en particular aquellos de la familia Atala, sobre sus inversiones en la región del Gualcarque y la defensa de Berta, las acciones criminales que desempeñaron, y describir cómo se vinculan sus intereses. Describir con claridad la conformación de las bolsas de capitales privados y capitales financieros—tanto nacionales como internacionales— a través de instrumentos e instituciones como fideicomisos y bancos, y cómo estas redes posibilitaron las acciones criminales que afectaron a Berta y COPINH.",
 
       "location": {
@@ -129,8 +129,8 @@
     },
 
     {
-      "id": "Wakanda Forever-4",
-      "title": "Compra de terrenos, infraestructuras y logísticas de despojo",
+      "id": "NR-3",
+      "title": "Wakanda Forever-4",
       "description": "Narrar la implementación de la red financiera y sus transformaciones de los espacios socioambientales en el Gualcarque: desde la compra de terrenos, al papel de infraestructuras preexistentes y construidas que permitieron implementar logísticas de control territorial y despojo.",
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
 
@@ -171,8 +171,8 @@
     },
 
     {
-      "id": "Wakanda Forever-4",
-      "title": "Los agresores: Los agentes estatales de seguridad y la red criminal",
+      "id": "NR-4",
+      "title": "Wakanda Forever-5",
       "description": "Narrar el papel que desempeñaron agentes estatales de seguridad, en particular policías y militares, en ejercer acciones de violencias (vigilancia, inteligencia, autoría intelectual en crímenes, mecanismos de impunidad). Apuntar hacia la relevancia de actores estatales que aún no han sido investigados ni sancionados. Narrar el papel de informantes, sicarios, y uso de miembros de las comunidades para agredir a COPINH y a Bertha",
       "location": { "center": [-88.04, 15.03], "zoom": 12, "pitch": 60, "bearing": -40 },
 
@@ -219,7 +219,7 @@
 
     {
       "id": "NR-5",
-      "title": "Wakanda Forever-5",
+      "title": "Wakanda Forever-6",
       "description": "Concentrarnos en cómo Berta interrumpió la racionalidad empresarial tejida por las redes de complicidades entre empresarios, agentes estatales y criminales; y explicar la racionalidad empresarial que decidió asesinarla. Mostrar con enfoque las acciones de las redes criminales en los días y semanas anteriores a su asesinato.",
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
 
@@ -260,7 +260,7 @@
     },
 
     {
-      "id": "Wakanda Forever-6",
+      "id": "Wakanda-7",
       "title": "El mecanismo generador de impunidad",
       "description": "Narrar cómo, tras el asesinato de Berta, las redes de agentes estatales se organizaron para procurar la impunidad del asesinato de Berta. Por otro lado, mostrar la persistencia de infraestructuras del despojo, pero sobre todo, la persistencia de las redes de resistencia que requieren recibir del Estado hondureño medidas de reparación y no repetición.",
 
