@@ -7,12 +7,12 @@ export default function NarrativesNavigator({ onSelect }) {
   const items = [
     {
       id: "01",
-      title: "Introducción al territorio",
+      title: "LALO LANDA",
       img: "/narratives/media/intro1.jpeg"
     },
     {
       id: "02",
-      title: "El golpe de 2009 y la venta del territorio",
+      title: "WAKANDA FOREVER ✊🏾 ",
       img: "/narratives/media/extractivismo1.jpeg"
     },
     {
