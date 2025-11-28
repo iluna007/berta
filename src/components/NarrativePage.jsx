@@ -12,18 +12,24 @@ import SideMediaPanel from "./narratives/NarrativesSideMediaPanel";
 
 import NarrativesNavigator from "./narratives/NarrativesNavigator";
 
+// ---------- CONFIGURA LA SENSIBILIDAD DEL SCROLL AQUÍ ----------
+const SCROLL_THRESHOLD = 200; 
+// Opciones recomendadas:
+// 80 → más lento / más controlado
+// 50 → sensibilidad media
+// 20 → muy sensible (similar a antes)
+
 export default function NarrativePage() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  // 🔥 narrativa activa (pero sin lógica por ahora)
   const [activeNarrative, setActiveNarrative] = useState("01");
 
   const [chapters, setChapters] = useState([]);
   const [index, setIndex] = useState(0);
   const [activeChapterId, setActiveChapterId] = useState(null);
 
-  // Cargar JSON cuando activeNarrative cambie (esto se activará en PASO 2)
+  // Cargar JSON dinámico
   useEffect(() => {
     fetch(`/narratives/narratives_${activeNarrative}.json`)
       .then((res) => res.json())
@@ -31,18 +37,31 @@ export default function NarrativePage() {
         setChapters(data.chapters || []);
         if (data.chapters?.length > 0) {
           setActiveChapterId(data.chapters[0].id);
+          setIndex(0);
         }
       });
   }, [activeNarrative]);
 
-  // Scroll
+  // Scroll handler con sensibilidad ajustable
   useEffect(() => {
     if (!chapters.length) return;
 
+    let accumulatedDelta = 0;
+
     const handler = (e) => {
       e.preventDefault();
+      accumulatedDelta += e.deltaY;
+
+      if (Math.abs(accumulatedDelta) < SCROLL_THRESHOLD) {
+        return; // Todavía no pasamos el umbral
+      }
+
+      // Reset acumulado
+      const direction = accumulatedDelta > 0 ? 1 : -1;
+      accumulatedDelta = 0;
+
       setIndex((i) =>
-        e.deltaY > 0
+        direction > 0
           ? Math.min(i + 1, chapters.length - 1)
           : Math.max(i - 1, 0)
       );
@@ -75,8 +94,7 @@ export default function NarrativePage() {
         background: "#000"
       }}
     >
-         
-      {/* 🔥 Barra lateral fija */}
+      {/* Barra lateral */}
       <NarrativesNavigator onSelect={(id) => setActiveNarrative(id)} />
 
       {/* Mapa */}
