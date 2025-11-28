@@ -1,16 +1,17 @@
+// src/components/App.jsx
 import "../scss/main.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
-import NarrativePage from "./NarrativePage"; // ← archivo que ya creamos
+import NarrativePage from "./NarrativePage";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Ruta principal, donde está tu plataforma actual */}
+        {/* Página principal de tu sitio */}
         <Route path="/" element={<Layout />} />
 
-        {/* Nueva ruta para la página narrativa */}
+        {/* Página única de narrativas (barra lateral + mapa) */}
         <Route path="/narrative" element={<NarrativePage />} />
       </Routes>
     </BrowserRouter>

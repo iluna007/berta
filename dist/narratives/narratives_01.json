@@ -1,0 +1,306 @@
+{
+  "chapters": [
+    {
+      "id": "NR-0",
+      "title": "LALO LANDA",
+      "description": "Lorem Ipsum is simply dummy text...",
+      "location": { "center": [-86.5, 14.8], "zoom": 6, "pitch": 0, "bearing": 0 },
+
+      "cameraMode": "flat",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOnEnter": [
+        "Poligonos_Predios_La Vega.geojson",
+        "Poligonos_Predios_Rio Blanco.geojson"
+      ],
+      "geojsonOnExit": [
+        "Poligonos_Predios_La Vega.geojson",
+        "Poligonos_Predios_Rio Blanco.geojson"
+      ],
+
+      "sideMedia": false,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/intro1.jpeg",
+          "position": "inside",
+          "opacity": 1
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": {
+        "width": "420px",
+        "position": "right"
+      }
+    },
+
+    {
+      "id": "NR-1",
+      "title": "LALO LANDA 1",
+      "description": "Narrar la relación socioambiental sagrada de las comunidades lencas con el Gualcarque, a manera de introducción: la presencia de comunidades indígenas, procesos anteriores de criminalidad, contexto del golpe de 2009.",
+      "location": { "center": [-88.15, 14.32], "zoom": 11, "pitch": 25, "bearing": -20 },
+
+      "cameraMode": "tilted",
+      "transitionDuration": 2500,
+
+      "highlightLayers": ["chapter-cap-2-Antenas Telefonicas.geojson-layer"],
+      "dimLayers": [],
+
+      "geojsonOnEnter": [
+        "Poligonos_Predios_Sisimetera.geojson",
+        "Antenas Telefonicas.geojson"
+      ],
+      "geojsonOnExit": [
+        "Poligonos_Predios_Sisimetera.geojson",
+        "Antenas Telefonicas.geojson"
+      ],
+
+      "sideMedia": false,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/extractivismo1.jpeg",
+          "position": "inside",
+          "opacity": 1
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": {
+        "width": "420px",
+        "position": "right"
+      }
+    },
+
+    {
+      "id": "NR-2",
+      "title": "LALO LANDA 2",
+      "description": "Narrar el papel de las redes de empresarios, en particular aquellos de la familia Atala, sobre sus inversiones en la región del Gualcarque y la defensa de Berta, las acciones criminales que desempeñaron, y describir cómo se vinculan sus intereses. Describir con claridad la conformación de las bolsas de capitales privados y capitales financieros—tanto nacionales como internacionales— a través de instrumentos e instituciones como fideicomisos y bancos, y cómo estas redes posibilitaron las acciones criminales que afectaron a Berta y COPINH.",
+
+      "location": {
+        "center": [-86.25, 14.80],
+        "zoom": 6.2,
+        "pitch": 0,
+        "bearing": 0
+      },
+
+      "cameraMode": "flat",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOnEnter": [],
+      "geojsonOnExit": [],
+
+      "sideMedia": true,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/Gephisample2.jpeg",
+          "caption": "Visualización generada con Gephi",
+          "credit": "Iker Luna / Archivo Experimental",
+          "position": "side",
+          "opacity": 1
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": {
+        "width": "420px",
+        "position": "right"
+      }
+    },
+
+    {
+      "id": "NR-3",
+      "title": "LALO LANDA 3",
+      "description": "Narrar la implementación de la red financiera y sus transformaciones de los espacios socioambientales en el Gualcarque: desde la compra de terrenos, al papel de infraestructuras preexistentes y construidas que permitieron implementar logísticas de control territorial y despojo.",
+      "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
+
+      "cameraMode": "dramatic",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOnEnter": [
+        "Impronta_Bertha Isabel Caceres Flores.geojson",
+        "Impronta_Oscar Aroldo.geojson"
+      ],
+      "geojsonOnExit": [
+        "Impronta_Bertha Isabel Caceres Flores.geojson",
+        "Impronta_Oscar Aroldo.geojson"
+      ],
+
+      "sideMedia": false,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/violencia_redes.jpeg",
+          "position": "inside",
+          "opacity": 1
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": {
+        "width": "420px",
+        "position": "right"
+      }
+    },
+
+    {
+      "id": "NR-4",
+      "title": "LALO LANDA 4",
+      "description": "Narrar el papel que desempeñaron agentes estatales de seguridad, en particular policías y militares, en ejercer acciones de violencias (vigilancia, inteligencia, autoría intelectual en crímenes, mecanismos de impunidad). Apuntar hacia la relevancia de actores estatales que aún no han sido investigados ni sancionados. Narrar el papel de informantes, sicarios, y uso de miembros de las comunidades para agredir a COPINH y a Bertha",
+      "location": { "center": [-88.04, 15.03], "zoom": 12, "pitch": 60, "bearing": -40 },
+
+      "cameraMode": "rotate",
+      "transitionDuration": 3500,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOnEnter": [
+        "Poligonos_Predios_Cuchilla El Naranjal.geojson",
+        "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson",
+        "Rio Gualcarque.geojson"
+      ],
+      "geojsonOnExit": [
+        "Poligonos_Predios_Cuchilla El Naranjal.geojson",
+        "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson",
+        "Rio Gualcarque.geojson"
+      ],
+
+      "sideMedia": false,
+
+      "media": [
+        {
+          "type": "video",
+          "src": "/narratives/media/infraestructura_conflicto.mp4",
+          "autoplay": true,
+          "loop": true,
+          "muted": true,
+          "position": "inside",
+          "opacity": 1
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": {
+        "width": "420px",
+        "position": "right"
+      }
+    },
+
+    {
+      "id": "NR-5",
+      "title": "LALO LANDA 5",
+      "description": "Concentrarnos en cómo Berta interrumpió la racionalidad empresarial tejida por las redes de complicidades entre empresarios, agentes estatales y criminales; y explicar la racionalidad empresarial que decidió asesinarla. Mostrar con enfoque las acciones de las redes criminales en los días y semanas anteriores a su asesinato.",
+      "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
+
+      "cameraMode": "dramatic",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOnEnter": [
+        "Impronta_Bertha Isabel Caceres Flores.geojson",
+        "Impronta_Oscar Aroldo.geojson"
+      ],
+      "geojsonOnExit": [
+        "Impronta_Bertha Isabel Caceres Flores.geojson",
+        "Impronta_Oscar Aroldo.geojson"
+      ],
+
+      "sideMedia": false,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/violencia_redes.jpeg",
+          "position": "inside",
+          "opacity": 1
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": {
+        "width": "420px",
+        "position": "right"
+      }
+    },
+
+    {
+      "id": "NR-6",
+      "title": "LALO LANDA 6",
+      "description": "Narrar cómo, tras el asesinato de Berta, las redes de agentes estatales se organizaron para procurar la impunidad del asesinato de Berta. Por otro lado, mostrar la persistencia de infraestructuras del despojo, pero sobre todo, la persistencia de las redes de resistencia que requieren recibir del Estado hondureño medidas de reparación y no repetición.",
+
+      "location": {
+        "center": [-86.25, 14.80],
+        "zoom": 6.2,
+        "pitch": 0,
+        "bearing": 0
+      },
+
+      "cameraMode": "flat",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOnEnter": [],
+      "geojsonOnExit": [],
+
+      "sideMedia": true,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/Gephisample2.jpeg",
+          "caption": "Visualización generada con Gephi",
+          "credit": "Iker Luna / Archivo Experimental",
+          "position": "side",
+          "opacity": 1
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": {
+        "width": "420px",
+        "position": "right"
+      }
+    }
+  ]
+}

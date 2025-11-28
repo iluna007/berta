@@ -10,48 +10,48 @@ import NarrativesMap from "./narratives/NarrativesMap";
 import NarrativeMedia from "./narratives/NarrativeMedia";
 import SideMediaPanel from "./narratives/NarrativesSideMediaPanel";
 
+import NarrativesNavigator from "./narratives/NarrativesNavigator";
+
 export default function NarrativePage() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  // 🔥 narrativa activa (pero sin lógica por ahora)
+  const [activeNarrative, setActiveNarrative] = useState("01");
 
   const [chapters, setChapters] = useState([]);
   const [index, setIndex] = useState(0);
   const [activeChapterId, setActiveChapterId] = useState(null);
 
-  // ------------------------------
-  // Load JSON
-  // ------------------------------
+  // Cargar JSON cuando activeNarrative cambie (esto se activará en PASO 2)
   useEffect(() => {
-    fetch("/narratives/narratives.json")
+    fetch(`/narratives/narratives_${activeNarrative}.json`)
       .then((res) => res.json())
       .then((data) => {
-        setChapters(data.chapters);
-        setActiveChapterId(data.chapters[0].id);
+        setChapters(data.chapters || []);
+        if (data.chapters?.length > 0) {
+          setActiveChapterId(data.chapters[0].id);
+        }
       });
-  }, []);
+  }, [activeNarrative]);
 
-  // ------------------------------
-  // Scroll navigation
-  // ------------------------------
+  // Scroll
   useEffect(() => {
     if (!chapters.length) return;
 
     const handler = (e) => {
       e.preventDefault();
-      if (e.deltaY > 0) {
-        setIndex((i) => Math.min(i + 1, chapters.length - 1));
-      } else {
-        setIndex((i) => Math.max(i - 1, 0));
-      }
+      setIndex((i) =>
+        e.deltaY > 0
+          ? Math.min(i + 1, chapters.length - 1)
+          : Math.max(i - 1, 0)
+      );
     };
 
     window.addEventListener("wheel", handler, { passive: false });
     return () => window.removeEventListener("wheel", handler);
   }, [chapters.length]);
 
-  // ------------------------------
-  // Update active chapter
-  // ------------------------------
   useEffect(() => {
     if (chapters.length > 0) {
       setActiveChapterId(chapters[index].id);
@@ -60,17 +60,11 @@ export default function NarrativePage() {
 
   const activeChapter = chapters.find((c) => c.id === activeChapterId);
 
-  // ------------------------------
-  // Back button
-  // ------------------------------
   const goBack = async () => {
     await dispatch(hook_restore());
     navigate("/");
   };
 
-  // ------------------------------
-  // Render
-  // ------------------------------
   return (
     <div
       style={{
@@ -78,64 +72,50 @@ export default function NarrativePage() {
         height: "100vh",
         overflow: "hidden",
         position: "relative",
-        background: "#000",
+        background: "#000"
       }}
     >
-      {/* Back button */}
-      <button
-        onClick={goBack}
+         
+      {/* 🔥 Barra lateral fija */}
+      <NarrativesNavigator onSelect={(id) => setActiveNarrative(id)} />
+
+      {/* Mapa */}
+      <div
         style={{
           position: "absolute",
-          top: "20px",
-          left: "20px",
-          zIndex: 50,
-          padding: "10px 20px",
-          backgroundColor: "#333",
-          color: "white",
-          border: "none",
-          borderRadius: "4px",
-          cursor: "pointer",
+          left: "240px",
+          right: 0,
+          top: 0,
+          bottom: 0,
+          zIndex: 1
         }}
       >
-        ← BACK TO PLATFORM
-      </button>
-
-      {/* MAP */}
-      <div style={{ position: "absolute", inset: 0, zIndex: 1 }}>
         <NarrativesMap activeChapterId={activeChapterId} chapters={chapters} />
       </div>
 
-      {/* RIGHT PANEL (side media only) */}
+      {/* Panel de media lateral */}
       <SideMediaPanel chapter={activeChapter} />
 
-      {/* LEFT PANEL */}
+      {/* Panel narrativo */}
       <div
         className="left-narrative-panel"
         style={{
           position: "absolute",
-          top: "80px",
-          left: "20px",
-          width: "400px",
-          height: "calc(100% - 100px)",
+          top: "40px",
+          left: "260px",
+          width: "380px",
+          height: "calc(100% - 80px)",
           zIndex: 30,
-          overflow: "hidden",
-          pointerEvents: "auto",
+          overflow: "hidden"
         }}
       >
         <NarrativesScroller chapters={chapters} index={index} />
 
-        {/* Normal media (only when NOT sideMedia) */}
         {!activeChapter?.sideMedia && (
           <div style={{ marginTop: "20px" }}>
-            <NarrativeMedia media={activeChapter?.media} />
+            <NarrativeMedia chapter={activeChapter} />
           </div>
         )}
-
-        {/* Scroll visual hint */}
-        <div className="left-panel-scroll-hint">
-          <span>scroll</span>
-          <div className="scroll-arrow"></div>
-        </div>
       </div>
     </div>
   );
