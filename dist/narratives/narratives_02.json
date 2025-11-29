@@ -2,8 +2,8 @@
   "chapters": [
     {
       "id": "NR-0",
-      "title": "Wakanda Forever-1",
-      "description": "Lorem Ipsum is simply dummy text...",
+      "title": "Las élites empresariales",
+      "description": "Las élites empresariales hondureñas —en particular la familia Atala— construyeron una red financiera compleja para ocultar responsabilidades, mover dinero sin una trazabilidad clara y sostener operaciones de despojo en territorio lenca. Para ello utilizaron fideicomisos, bancos de desarrollo y capital radicado en el extranjero. La formalidad financiera funcionó como escudo. Contratos, fideicomisos y mecanismos de supervisión dieron apariencia de orden y cumplimiento, mientras en la práctica encubrían decisiones y pagos que terminaron habilitando actos de violencia contra quienes defendían el territorio. Lo que, a primera vista, parece un rompecabezas técnico, se revela como una secuencia legible de decisiones orientadas a un objetivo práctico: preservar el proyecto a costa de la seguridad de las comunidades.",
       "location": { "center": [-86.5, 14.8], "zoom": 6, "pitch": 0, "bearing": 0 },
 
       "cameraMode": "flat",
@@ -44,8 +44,8 @@
 
     {
       "id": "NR-1",
-      "title": "Wakanda Forever-2",
-      "description": "Narrar la relación socioambiental sagrada de las comunidades lencas con el Gualcarque, a manera de introducción: la presencia de comunidades indígenas, procesos anteriores de criminalidad, contexto del golpe de 2009.",
+      "title": "Arquitectura financiera y opacidad fiduciaria",
+      "description": "El esquema combinó tres piezas principales: un holding familiar (Inversiones La Jacaranda), propietario de Desarrollos Energéticos, S.A. (DESA), empresa titular del proyecto Agua Zarca; dos versiones de PEMSA (una panameña, con cuentas en Panamá y Honduras); y capital de Evergreen International, radicada en Islas Vírgenes Británicas. A partir de este capital privado, DESA consiguió sumar a dos bancos internacionales para complementar la inversión: el Banco Centroamericano de Integración Económica (BCIE) y el Banco de Desarrollo Empresarial de los Países Bajos (FMO). Esta arquitectura permitió mover dinero entre cuentas en dólares y lempiras y cruzar fronteras bancarias. Sobre el papel, existía un control fiduciario operado por un agente administrativo de los bancos, un agente de seguridad —Deutsche Bank— y otros supervisores externos. En la práctica, esa cadena de intermediarios difuminó al beneficiario final de cada pago, mientras ofrecía una coartada de cumplimiento.",
       "location": { "center": [-88.15, 14.32], "zoom": 11, "pitch": 25, "bearing": -20 },
 
       "cameraMode": "tilted",
@@ -86,9 +86,8 @@
 
     {
       "id": "NR-2",
-      "title": "Wakanda Forever-3",
-      "description": "Narrar el papel de las redes de empresarios, en particular aquellos de la familia Atala, sobre sus inversiones en la región del Gualcarque y la defensa de Berta, las acciones criminales que desempeñaron, y describir cómo se vinculan sus intereses. Describir con claridad la conformación de las bolsas de capitales privados y capitales financieros—tanto nacionales como internacionales— a través de instrumentos e instituciones como fideicomisos y bancos, y cómo estas redes posibilitaron las acciones criminales que afectaron a Berta y COPINH.",
-
+      "title": "El inicio del espiral financiero",
+      "description": "Sinohydro Corporation, empresa china, fue la contratista original del proyecto Agua Zarca. Sin embargo, se retiró en 2013 tras episodios de violencia y homicidios contra la población lenca. A partir de ese momento, DESA enfrentó una crisis financiera sin precedentes: la salida de Sinohydro dejó a DESA atrapada entre cronogramas incumplibles e intereses crecientes sobre el financiamiento del BCIE y el FMO. En ese contexto, el activismo del COPINH y de Berta Cáceres fue leído por DESA como causante de esa “pérdida” empresarial directa. Según documentos presentados durante el juicio de Roberto David Castillo, Daniel Atala afirmó que las actividades de Berta habían causado pérdidas superiores a 3.5 millones de dólares a DESA. La respuesta de DESA no fue corregir el rumbo del proyecto ni abrir un diálogo genuino con las comunidades afectadas. Optó por blindar el flujo de fondos mediante un esquema fraudulento basado en facturas falsas y desvíos de recursos, y por asumir la violencia como parte de las estrategias de gestión del riesgo empresarial.",
       "location": {
         "center": [-86.25, 14.80],
         "zoom": 6.2,
@@ -130,10 +129,9 @@
 
     {
       "id": "NR-3",
-      "title": "Wakanda Forever-4",
-      "description": "Narrar la implementación de la red financiera y sus transformaciones de los espacios socioambientales en el Gualcarque: desde la compra de terrenos, al papel de infraestructuras preexistentes y construidas que permitieron implementar logísticas de control territorial y despojo.",
+      "title": "Diseño del fraude: quién paga y quién ejecuta",
+      "description": "La operación fraudulenta clave se articuló a través de las “Construction Requisitions”, un instrumento que supuestamente blindaba la construcción de Agua Zarca frente a la corrupción y al incumplimiento de obligaciones con el pueblo lenca. Sobre el papel, Constructora COPRECA, S.A. (COPRECA) y la supervisora de obra Carbón, S.A. (CARBÓN) justificaban los desembolsos. En la realidad, el dinero terminó en terceros sin rol real en la obra, principalmente Concretos del Caribe, S.A. de C.V. (CONCASA) —controlada por Roberto David Castillo, también director ejecutivo de DESA— y Desarrollos Ambientales, S.A., vinculada a Javier Prats. Un desliz documental en la Requisition #4 lo evidencia: por error se mantuvo la instrucción de pago a Monkey Forest Consulting (Monkey Forest) —encargada de auditar y supervisar el plan social y ambiental de Agua Zarca para evitar conflictos con poblaciones lencas— en lugar de sustituirla por COPRECA. Sin embargo, el flujo se reacomodó para que el dinero llegara a CONCASA, una redirección de capital que difícilmente pudo haberse ejecutado sin el aval de personal de los bancos responsables de asegurar el correcto destino de los pagos. El patrón se repite en distintas requisiciones: un pago inicial se realiza a COPRECA para “habilitar” su factura y, después, los documentos registran desvíos sistemáticos en los que aparecen pagos a COPRECA con destinos bancarios en CONCASA. Así se confunde entre quién recibe, quién ejecuta y quién responde.",
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
-
       "cameraMode": "dramatic",
       "transitionDuration": 2000,
 
@@ -172,8 +170,8 @@
 
     {
       "id": "NR-4",
-      "title": "Wakanda Forever-5",
-      "description": "Narrar el papel que desempeñaron agentes estatales de seguridad, en particular policías y militares, en ejercer acciones de violencias (vigilancia, inteligencia, autoría intelectual en crímenes, mecanismos de impunidad). Apuntar hacia la relevancia de actores estatales que aún no han sido investigados ni sancionados. Narrar el papel de informantes, sicarios, y uso de miembros de las comunidades para agredir a COPINH y a Bertha",
+      "title": "La banca internacional como canal y coartada",
+      "description": "Los acuerdos firmados por DESA con el BCIE y el FMO exigían que el crédito se utilizara exclusivamente en construcción y condicionaban los desembolsos a certificaciones técnicas y socioambientales. Aun así, parte del dinero se usó para comprar tierras a particulares, pagar fuerzas de seguridad y movilizar efectivo asociado a la logística del crimen contra Berta Cáceres. La ruta reconstruida muestra pagos directos de los bancos a CONCASA —sin rol declarado en los contratos de Agua Zarca—, transferencias a PEMSA Panamá, fondeo de PEMSA Panamá en Honduras y emisión de cheques en efectivo cobrados fuera de horario bancario. La ausencia de alertas antilavado ante la sustitución de beneficiarios  y  las transferencias a cuentas offshore apunta a fallas graves de debida diligencia y a posibles complicidades internas. Los bancos funcionaron al mismo tiempo como canal de liquidez y como coartada de formalidad.",
       "location": { "center": [-88.04, 15.03], "zoom": 12, "pitch": 60, "bearing": -40 },
 
       "cameraMode": "rotate",
@@ -219,8 +217,8 @@
 
     {
       "id": "NR-5",
-      "title": "Wakanda Forever-6",
-      "description": "Concentrarnos en cómo Berta interrumpió la racionalidad empresarial tejida por las redes de complicidades entre empresarios, agentes estatales y criminales; y explicar la racionalidad empresarial que decidió asesinarla. Mostrar con enfoque las acciones de las redes criminales en los días y semanas anteriores a su asesinato.",
+      "title": "Fraude",
+      "description": "La red empresarial montó instrumentos fiduciarios, utilizó una banca de desarrollo y recurrió a capital offshore para ocultar a los responsables, mover recursos y financiar despojo y violencia. La forma prevaleció sobre la sustancia: procedimientos “correctos” que encubrieron fines inaceptables. Lo que debía financiar desarrollo sostenible y protección de la vida terminó financiando despojo, represión y muerte. Faltan piezas —como los estados de cuenta completos de PEMSA Panamá y de COPRECA, cuya entrega fue solicitada por el GIEI sin obtener respuesta— para cerrar cada eslabón con documentos primarios. Aun así, los patrones persisten: desvíos repetidos, errores que delatan intención y coherencia entre estados, requisiciones y testimonios. Con ese andamiaje financiero establecido, la siguiente narrativa, «Compra de terrenos, infraestructuras y logística de despojo», explora cómo estos flujos se tradujeron en compras de tierra y en el despliegue de infraestructuras de control territorial.",
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
 
       "cameraMode": "dramatic",
@@ -257,50 +255,8 @@
         "width": "420px",
         "position": "right"
       }
-    },
-
-    {
-      "id": "",
-      "title": "Wakanda-7",
-      "description": "Narrar cómo, tras el asesinato de Berta, las redes de agentes estatales se organizaron para procurar la impunidad del asesinato de Berta. Por otro lado, mostrar la persistencia de infraestructuras del despojo, pero sobre todo, la persistencia de las redes de resistencia que requieren recibir del Estado hondureño medidas de reparación y no repetición.",
-
-      "location": {
-        "center": [-86.25, 14.80],
-        "zoom": 6.2,
-        "pitch": 0,
-        "bearing": 0
-      },
-
-      "cameraMode": "flat",
-      "transitionDuration": 2000,
-
-      "highlightLayers": [],
-      "dimLayers": [],
-
-      "geojsonOnEnter": [],
-      "geojsonOnExit": [],
-
-      "sideMedia": true,
-
-      "media": [
-        {
-          "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "Iker Luna / Archivo Experimental",
-          "position": "side",
-          "opacity": 1
-        }
-      ],
-
-      "markers": [],
-      "shapes": [],
-      "layers": [],
-
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
     }
+
+   
   ]
 }

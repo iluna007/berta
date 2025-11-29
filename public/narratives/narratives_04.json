@@ -2,8 +2,8 @@
   "chapters": [
     {
       "id": "NR-0",
-      "title": "Introducción",
-      "description": "Lorem Ipsum is simply dummy text...",
+      "title": "El brazo coercitivo para imponer Agua Zarca",
+      "description": "Para imponer Agua Zarca no bastaron contratos, escrituras e infraestructuras. Se activó una logística coercitiva que combinó empresas, agentes estatales y operadores criminales. La seguridad privada y las fuerzas policiales ocuparon accesos y caminos, instalaron retenes y realizaron rondines. Hubo una vigilancia visible y una presión sistemática sobre liderazgos como Berta Cáceres y el COPINH, con el fin de disuadir la protesta y condicionar la vida comunitaria. Este dispositivo articuló vigilancia, pagos a policías e informantes y coordinación operativa para responder a asambleas y plantones, como la toma de El Roble. No fue una suma de excesos, sino una forma de control territorial al servicio de decisiones empresariales.",
       "location": { "center": [-86.5, 14.8], "zoom": 6, "pitch": 0, "bearing": 0 },
 
       "cameraMode": "flat",
@@ -44,8 +44,8 @@
 
     {
       "id": "NR-1",
-      "title": "El golpe de 2009 y la venta del territorio",
-      "description": "Narrar la relación socioambiental sagrada de las comunidades lencas con el Gualcarque, a manera de introducción: la presencia de comunidades indígenas, procesos anteriores de criminalidad, contexto del golpe de 2009.",
+      "title": "El dispositivo de seguridad",
+      "description": "La “seguridad” se desplegó como un sistema. Policías, militares, vigilantes privados y personal de seguridad de la empresa actuaron de forma coordinada con sus mandos empresariales. Su presencia fue constante en accesos a comunidades y en vías cercanas a obras e instalaciones. Se instalaron retenes, se realizaron rondines con inspecciones a personas y vehículos, y se multiplicaron las prácticas de vigilancia e intimidación: estacionarse frente a casas de líderazgos, tomar fotografías o seguir trayectos cotidianos. El mensaje era claro: el territorio estaba bajo observación y cualquier protesta tendría costos.",
       "location": { "center": [-88.15, 14.32], "zoom": 11, "pitch": 25, "bearing": -20 },
 
       "cameraMode": "tilted",
@@ -86,8 +86,8 @@
 
     {
       "id": "NR-2",
-      "title": "La red financiera: capitales, bancos, empresarios y la familia Atala, ",
-      "description": "Narrar el papel de las redes de empresarios, en particular aquellos de la familia Atala, sobre sus inversiones en la región del Gualcarque y la defensa de Berta, las acciones criminales que desempeñaron, y describir cómo se vinculan sus intereses. Describir con claridad la conformación de las bolsas de capitales privados y capitales financieros—tanto nacionales como internacionales— a través de instrumentos e instituciones como fideicomisos y bancos, y cómo estas redes posibilitaron las acciones criminales que afectaron a Berta y COPINH.",
+      "title": "Vigilancia sistemática",
+      "description": "Los registros de comunicaciones, desplazamientos y presencias en puntos clave muestran patrones recurrentes: vehículos y agentes apostados en accesos a comunidades, presencias coincidentes en los mismos lugares a horas estratégicas y contactos entre ejecutivos y jefes de seguridad antes y después de incidentes. La vigilancia no fue episódica, sino una práctica sostenida a lo largo del tiempo. La información recogida en terreno se combinó con comunicaciones entre ejecutivos y jefes de seguridad, lo que permitió planear respuestas rápidas a asambleas, plantones o recorridos del COPINH. Testimonios y documentos de la investigación refieren listas de personas vigiladas, así como intervenciones policiales durante actividades pacíficas. La finalidad no era “proteger” una obra, sino condicionar la vida comunitaria: frenar la organización, desgastar a liderazgos como el de Berta Cáceres y normalizar la presencia armada en la vida diaria. Este patrón, tolerado por las autoridades, creó un clima de riesgo permanente que preparó el terreno para violencias mayores.",
 
       "location": {
         "center": [-86.25, 14.80],
@@ -130,8 +130,8 @@
 
     {
       "id": "NR-3",
-      "title": "Compra de terrenos, infraestructuras y logísticas de despojo",
-      "description": "Narrar la implementación de la red financiera y sus transformaciones de los espacios socioambientales en el Gualcarque: desde la compra de terrenos, al papel de infraestructuras preexistentes y construidas que permitieron implementar logísticas de control territorial y despojo.",
+      "title": "Pagos para hostigar",
+      "description": "La seguridad, vigilancia y coerción se sostuvieron con dinero. Planillas, recibos y anotaciones internas muestran recursos provenientes de la estructura empresarial destinados a policías, seguridad privada, informantes y mediadores comunitarios. Estos pagos no eran gastos operativos neutros: financiaron servicios de inteligencia, hostigamiento y operativos para liberar accesos o romper plantones. En varios episodios, las salidas de efectivo y las coordinaciones telefónicas coincidieron con intervenciones agresivas en territorio lenca. El flujo económico funcionó como engranaje del dispositivo de control. Pagos periódicos aseguraron lealtades, compraron información y facilitaron la movilización de fuerzas públicas. Así, el financiamiento empresarial lubricó la maquinaria coercitiva, mientras funcionarios bancarios y autoridades hondureñas omitían investigar el origen y destino de esos recursos pese a sus impactos en la seguridad comunitaria.",
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
 
       "cameraMode": "dramatic",
@@ -172,8 +172,8 @@
 
     {
       "id": "NR-4",
-      "title": "Los agresores: Los agentes estatales de seguridad y la red criminal",
-      "description": "Narrar el papel que desempeñaron agentes estatales de seguridad, en particular policías y militares, en ejercer acciones de violencias (vigilancia, inteligencia, autoría intelectual en crímenes, mecanismos de impunidad). Apuntar hacia la relevancia de actores estatales que aún no han sido investigados ni sancionados. Narrar el papel de informantes, sicarios, y uso de miembros de las comunidades para agredir a COPINH y a Bertha",
+      "title": "Cooptación comunitaria",
+      "description": "La división comunitaria fue también una táctica deliberada. Algunas personas recibieron ofertas de empleo, compras de terrenos, apoyos económicos o favores a cambio de información o de desactivar plantones y asambleas. Otras enfrentaron amenazas para forzar su colaboración. Estas prácticas generaron informantes, sembraron desconfianza y trasladaron el conflicto a la vida cotidiana. La cooptación debilitó la capacidad organizativa del COPINH, produjo fatiga social y dañó su cohesión, elemento clave para la defensa del territorio. Esta dinámica se sostuvo en el tiempo: promesas y pagos periódicos consolidaron redes locales leales a los intereses empresariales. La frontera entre “apoyo comunitario” y compra de voluntades se volvió difusa en los papeles, pero clara en sus efectos: desarticular procesos colectivos e instalar la idea de que oponerse al proyecto implicaba costos personales y familiares.",
       "location": { "center": [-88.04, 15.03], "zoom": 12, "pitch": 60, "bearing": -40 },
 
       "cameraMode": "rotate",
@@ -219,8 +219,8 @@
 
     {
       "id": "NR-5",
-      "title": "El asesinato de Berta Cáceres",
-      "description": "Concentrarnos en cómo Berta interrumpió la racionalidad empresarial tejida por las redes de complicidades entre empresarios, agentes estatales y criminales; y explicar la racionalidad empresarial que decidió asesinarla. Mostrar con enfoque las acciones de las redes criminales en los días y semanas anteriores a su asesinato.",
+      "title": "Estigma para justificar la represión",
+      "description": "El discurso en la esfera pública operó como otra herramienta de poder. Vocerías empresariales y actores estatales presentaron a defensoras y defensores lencas y del COPINH como «enemigos del desarrollo» o «agitadores». Estos mensajes circularon en comunicados, medios y conversaciones locales y sirvieron para justificar la presencia de fuerzas de seguridad y la criminalización de la protesta. El uso de etiquetas negativas no fue casual: buscó deslegitimar las denuncias sobre irregularidades, aislar a liderazgos y reducir apoyos en la comunidad y en la opinión pública. Este clima simbólico tuvo efectos concretos. Las personas estigmatizadas enfrentaron más vigilancia, detenciones durante actividades pacíficas y obstáculos para reunirse o transitar. Al construir la idea de que la resistencia “perjudicaba” el “desarrollo” de la mayoría, el discurso abrió camino para que medidas coercitivas parecieran razonables. Estigmatizar a Berta Cáceres y al COPINH formó parte del mismo dispositivo que combinó pagos, control territorial y cooptación.",
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
 
       "cameraMode": "dramatic",
@@ -260,9 +260,9 @@
     },
 
     {
-      "id": "NR-6",
-      "title": "El mecanismo generador de impunidad",
-      "description": "Narrar cómo, tras el asesinato de Berta, las redes de agentes estatales se organizaron para procurar la impunidad del asesinato de Berta. Por otro lado, mostrar la persistencia de infraestructuras del despojo, pero sobre todo, la persistencia de las redes de resistencia que requieren recibir del Estado hondureño medidas de reparación y no repetición.",
+      "id": "",
+      "title": "Cadena de mando y encubrimiento",
+      "description": "La coordinación entre mandos empresariales, agentes estatales y operadores criminales no fue un conjunto de excesos aislados, sino un sistema con roles definidos. Comunicaciones y presencias coincidentes en territorio muestran cómo se activaban respuestas a asambleas y protestas, cómo se financiaban operativos y cómo se protegía a quienes tomaban decisiones. Pese a los indicios, esta red raramente fue investigada a fondo: se privilegiaron causas contra operadores materiales, mientras la mayoría de los vínculos empresariales y estatales permanecieron sin ser indagados. Las violencias documentadas no constituyen “excesos” esporádicos, sino el modo de operación de un proyecto que se valió de la coerción para imponerse. La siguiente narrativa, «El asesinato de Berta Cáceres», muestra cómo ese dispositivo desembocó en la decisión criminal de eliminar a una lideresa reconocida globalmente cuya voz comprometía los intereses en juego.",
 
       "location": {
         "center": [-86.25, 14.80],

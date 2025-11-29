@@ -2,8 +2,8 @@
   "chapters": [
     {
       "id": "NR-0",
-      "title": "LALO LANDA",
-      "description": "Lorem Ipsum is simply dummy text...",
+      "title": "Del golpe al despojo legal",
+      "description": "El golpe de Estado del 28 de junio de 2009 en Honduras abrió un ciclo de reconfiguración institucional que facilitó la creación de andamiajes legales y financieros orientados a desregular salvaguardas de derechos humanos y acelerar concesiones privadas sobre ríos y otras riquezas naturales. En pocos años, territorios indígenas fueron convertidos en zonas de sacrificio para proyectos extractivos. Esta primera narrativa, «El golpe de 2009 y la venta del territorio», explica cómo ese marco permitió transformar el río sagrado Gualcarque, en el municipio de Río Blanco, departamento de Intibucá, en un objeto de inversión y especulación.  Asimismo, pone de manifiesto cuáles fueron las implicaciones de este proceso extractivo para las comunidades lencas que se movilizaron para defenderlo.",
       "location": { "center": [-86.5, 14.8], "zoom": 6, "pitch": 0, "bearing": 0 },
 
       "cameraMode": "flat",
@@ -44,8 +44,8 @@
 
     {
       "id": "NR-1",
-      "title": "LALO LANDA 1",
-      "description": "Narrar la relación socioambiental sagrada de las comunidades lencas con el Gualcarque, a manera de introducción: la presencia de comunidades indígenas, procesos anteriores de criminalidad, contexto del golpe de 2009.",
+      "title": "El Gualcarque es vida",
+      "description": "Desde la colonia española hasta el presente, los pueblos originarios de Centroamérica han resistido la convergencia entre gobernantes, capitales extranjeros y empresas que buscan explotar sus territorios. En Honduras, el pueblo lenca ha sostenido una relación socioambiental sagrada con el Gualcarque: el río no es un “recurso”, sino un ser vivo cuyo espíritu protege a las comunidades y convoca a su defensa. En palabras de Berta Cáceres, entregarlo equivaldría a entregar la vida misma.",
       "location": { "center": [-88.15, 14.32], "zoom": 11, "pitch": 25, "bearing": -20 },
 
       "cameraMode": "tilted",
@@ -86,8 +86,8 @@
 
     {
       "id": "NR-2",
-      "title": "LALO LANDA 2",
-      "description": "Narrar el papel de las redes de empresarios, en particular aquellos de la familia Atala, sobre sus inversiones en la región del Gualcarque y la defensa de Berta, las acciones criminales que desempeñaron, y describir cómo se vinculan sus intereses. Describir con claridad la conformación de las bolsas de capitales privados y capitales financieros—tanto nacionales como internacionales— a través de instrumentos e instituciones como fideicomisos y bancos, y cómo estas redes posibilitaron las acciones criminales que afectaron a Berta y COPINH.",
+      "title": "Consulta previa: lo que obliga el OIT 169",
+      "description": "Según el censo de 2013, al menos el 87 % de las personas que vivían en el municipio de Río Blanco se identificaban como lencas, muchas de ellas organizadas en el Consejo Cívico de Organizaciones Populares e Indígenas de Honduras (COPINH). Esa densidad organizativa y territorial explica por qué el Gualcarque se convirtió en un eje central de la defensa comunitaria. El Estado hondureño ha ratificado instrumentos internacionales, como el Convenio 169 de la Organización Internacional del Trabajo (OIT), que establece que en territorios indígenas, como es el caso de la cuenca del Gualcarque, rige la obligación de realizar consultas libres, previas, informadas, de buena fe y culturalmente adecuadas. Antes de autorizar obras como represas, el Estado debe informar, garantizar la participación efectiva y obtener el consentimiento cuando existan riesgos para la supervivencia cultural o territorial de los pueblos originarios. Sin ese estándar, las concesiones vulneran derechos colectivos y generan conflictos estructurales.",
 
       "location": {
         "center": [-86.25, 14.80],
@@ -130,10 +130,9 @@
 
     {
       "id": "NR-3",
-      "title": "LALO LANDA 3",
-      "description": "Narrar la implementación de la red financiera y sus transformaciones de los espacios socioambientales en el Gualcarque: desde la compra de terrenos, al papel de infraestructuras preexistentes y construidas que permitieron implementar logísticas de control territorial y despojo.",
+      "title": "Concesiones sin consulta",
+      "description": "Sin embargo, el Decreto No. 181-2009 del 14 de diciembre de 2009, conocido como Ley General de Aguas de Honduras, estableció un marco para la gestión privada de los recursos hídricos del país. Ese cambio normativo detonó la creación acelerada de empresas y proyectos de represas, entre ellos el complejo hidroeléctrico Agua Zarca sobre el río Gualcarque. Sin cumplir con las obligaciones de consulta y consentimiento hacia el pueblo lenca, agencias estatales habilitaron la concesión del proyecto, mientras que bancos de desarrollo e instituciones financieras internacionales respaldaban a una empresa recién creada y sin experiencia para ejecutarlo. La combinación de un marco legal desregulado, con la ausencia de consulta y una serie de financiamientos internacionales produjo una estructura de riesgo permanente para el territorio lenca.",
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
-
       "cameraMode": "dramatic",
       "transitionDuration": 2000,
 
@@ -172,8 +171,8 @@
 
     {
       "id": "NR-4",
-      "title": "LALO LANDA 4",
-      "description": "Narrar el papel que desempeñaron agentes estatales de seguridad, en particular policías y militares, en ejercer acciones de violencias (vigilancia, inteligencia, autoría intelectual en crímenes, mecanismos de impunidad). Apuntar hacia la relevancia de actores estatales que aún no han sido investigados ni sancionados. Narrar el papel de informantes, sicarios, y uso de miembros de las comunidades para agredir a COPINH y a Bertha",
+      "title": "Hostigamiento y el caso Tomás García",
+      "description": "En los años inmediatamente posteriores a la concesión de Agua Zarca, la población lenca enfrentó un patrón de hostigamiento: vigilancias, amenazas, campañas de estigmatización y uso de fuerzas de seguridad para contener protestas. Ese clima se hizo visible con el asesinato de Tomás García —autoridad comunitaria lenca— el 15 de julio de 2013, durante una protesta pacífica frente a las instalaciones del proyecto. Ese hecho marcó a la comunidad y anticipó una escalada de riesgos para quienes defendían el Gualcarque.",
       "location": { "center": [-88.04, 15.03], "zoom": 12, "pitch": 60, "bearing": -40 },
 
       "cameraMode": "rotate",
@@ -219,10 +218,9 @@
 
     {
       "id": "NR-5",
-      "title": "LALO LANDA 5",
-      "description": "Concentrarnos en cómo Berta interrumpió la racionalidad empresarial tejida por las redes de complicidades entre empresarios, agentes estatales y criminales; y explicar la racionalidad empresarial que decidió asesinarla. Mostrar con enfoque las acciones de las redes criminales en los días y semanas anteriores a su asesinato.",
+      "title": "Un crimen empresarial",
+      "description": "Esta investigación retoma posteriormente el asesinato de Berta Cáceres Flores, lideresa lenca y miembra del COPINH, para mostrar que la violencia contra defensores y defensoras del territorio no puede leerse como un acto aislado cometido por individuos ya condenados, sino como un “crimen empresarial” en el que decisiones corporativas convergen con actores estatales y lógicas de criminalidad organizada. Lo expuesto en esta narrativa sobre el viraje legal y territorial se enlaza con la siguiente, «La red financiera», que detalla la arquitectura financiera y de poder que hizo posible esa transformación: quién movió el dinero, con qué instrumentos y con qué incentivos.",
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
-
       "cameraMode": "dramatic",
       "transitionDuration": 2000,
 
@@ -257,50 +255,8 @@
         "width": "420px",
         "position": "right"
       }
-    },
-
-    {
-      "id": "NR-6",
-      "title": "LALO LANDA 6",
-      "description": "Narrar cómo, tras el asesinato de Berta, las redes de agentes estatales se organizaron para procurar la impunidad del asesinato de Berta. Por otro lado, mostrar la persistencia de infraestructuras del despojo, pero sobre todo, la persistencia de las redes de resistencia que requieren recibir del Estado hondureño medidas de reparación y no repetición.",
-
-      "location": {
-        "center": [-86.25, 14.80],
-        "zoom": 6.2,
-        "pitch": 0,
-        "bearing": 0
-      },
-
-      "cameraMode": "flat",
-      "transitionDuration": 2000,
-
-      "highlightLayers": [],
-      "dimLayers": [],
-
-      "geojsonOnEnter": [],
-      "geojsonOnExit": [],
-
-      "sideMedia": true,
-
-      "media": [
-        {
-          "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "Iker Luna / Archivo Experimental",
-          "position": "side",
-          "opacity": 1
-        }
-      ],
-
-      "markers": [],
-      "shapes": [],
-      "layers": [],
-
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
     }
+
+   
   ]
 }

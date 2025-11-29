@@ -1,51 +1,10 @@
 {
   "chapters": [
-    {
-      "id": "NR-0",
-      "title": "Introducción",
-      "description": "Lorem Ipsum is simply dummy text...",
-      "location": { "center": [-86.5, 14.8], "zoom": 6, "pitch": 0, "bearing": 0 },
-
-      "cameraMode": "flat",
-      "transitionDuration": 2000,
-
-      "highlightLayers": [],
-      "dimLayers": [],
-
-      "geojsonOnEnter": [
-        "Poligonos_Predios_La Vega.geojson",
-        "Poligonos_Predios_Rio Blanco.geojson"
-      ],
-      "geojsonOnExit": [
-        "Poligonos_Predios_La Vega.geojson",
-        "Poligonos_Predios_Rio Blanco.geojson"
-      ],
-
-      "sideMedia": false,
-
-      "media": [
-        {
-          "type": "image",
-          "src": "/narratives/media/intro1.jpeg",
-          "position": "inside",
-          "opacity": 1
-        }
-      ],
-
-      "markers": [],
-      "shapes": [],
-      "layers": [],
-
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
-    },
 
     {
       "id": "NR-1",
-      "title": "El golpe de 2009 y la venta del territorio",
-      "description": "Narrar la relación socioambiental sagrada de las comunidades lencas con el Gualcarque, a manera de introducción: la presencia de comunidades indígenas, procesos anteriores de criminalidad, contexto del golpe de 2009.",
+      "title": "Las infraestructuras para el despojo",
+      "description": "El andamiaje financiero descrito en «La red financiera» se materializó en el territorio a través de compras de tierras en contextos de presión y de gastos destinados a sostener el control territorial: pagos a policías, operadores locales y contramanifestaciones. Con dinero etiquetado como capital para “desarrollo”, se premió la coerción, se debilitó la organización comunitaria, utilizando  la obra como máscara.",
       "location": { "center": [-88.15, 14.32], "zoom": 11, "pitch": 25, "bearing": -20 },
 
       "cameraMode": "tilted",
@@ -86,8 +45,8 @@
 
     {
       "id": "NR-2",
-      "title": "La red financiera: capitales, bancos, empresarios y la familia Atala, ",
-      "description": "Narrar el papel de las redes de empresarios, en particular aquellos de la familia Atala, sobre sus inversiones en la región del Gualcarque y la defensa de Berta, las acciones criminales que desempeñaron, y describir cómo se vinculan sus intereses. Describir con claridad la conformación de las bolsas de capitales privados y capitales financieros—tanto nacionales como internacionales— a través de instrumentos e instituciones como fideicomisos y bancos, y cómo estas redes posibilitaron las acciones criminales que afectaron a Berta y COPINH.",
+      "title": "El rol notarial",
+      "description": "Los notarios jugaron un papel central en este proceso. Su firma dio forma legal a traspasos de propiedad, constituciones y endosos. Esa intervención convirtió operaciones irregulares en actos “válidos” ante terceros. En territorios indígenas donde el consentimiento debe ser libre e informado, la formalización notarial maquilló finalidades que chocaban con las propias condiciones del crédito y con las obligaciones estatales derivadas de convenios internacionales. La fe pública notarial fue la bisagra entre papeles y territorio: sin ese sello, el andamiaje de despojo habría sido más difícil de consolidar.",
 
       "location": {
         "center": [-86.25, 14.80],
@@ -130,8 +89,8 @@
 
     {
       "id": "NR-3",
-      "title": "Compra de terrenos, infraestructuras y logísticas de despojo",
-      "description": "Narrar la implementación de la red financiera y sus transformaciones de los espacios socioambientales en el Gualcarque: desde la compra de terrenos, al papel de infraestructuras preexistentes y construidas que permitieron implementar logísticas de control territorial y despojo.",
+      "title": "Rediseños de la presa",
+      "description": "Tras la salida de Sinohydro, DESA modificó el proyecto original, creó «Agua Zarca II» y trasladó parte de las obras a otra ubicación, del otro lado del río. En el discurso público se afirmó que el cambio buscaba evitar conflictos con el COPINH, pero existen indicios de que la decisión respondió a la incapacidad financiera de completar el proyecto original. En un campo de causalidades probables, la coincidencia entre tiempos financieros, movimientos de efectivo y el asesinato de Berta permite leer la construcción de un conjunto consistente de acciones orientadas a detener la espiral financiera de DESA. Es notable que, a pesar del rediseño sustancial de Agua Zarca, se mantuvieran inalteradas variables clave como la cantidad de megavatios a producir y la superficie de inundación. El proyecto cambió de forma, pero conservó su escala de impacto.",
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
 
       "cameraMode": "dramatic",
@@ -172,8 +131,8 @@
 
     {
       "id": "NR-4",
-      "title": "Los agresores: Los agentes estatales de seguridad y la red criminal",
-      "description": "Narrar el papel que desempeñaron agentes estatales de seguridad, en particular policías y militares, en ejercer acciones de violencias (vigilancia, inteligencia, autoría intelectual en crímenes, mecanismos de impunidad). Apuntar hacia la relevancia de actores estatales que aún no han sido investigados ni sancionados. Narrar el papel de informantes, sicarios, y uso de miembros de las comunidades para agredir a COPINH y a Bertha",
+      "title": "Obras como control territorial",
+      "description": "Las infraestructuras construidas alrededor del proyecto —caminos, puentes, instalaciones de obra— no sólo sirvieron para transportar materiales. También desempeñaron un papel de corredores logísticos de control territorial, facilitando la entrada de fuerzas de seguridad, el desplazamiento de comunidades y su vigilancia. Al superponer en el mapa las fechas de compra de terrenos, la construcción de infraestructuras y los episodios de violencia, se observa un mismo patrón: a medida que se consolidaba la propiedad empresarial sobre el Gualcarque, aumentaban las amenazas y las agresiones contra el COPINH y las comunidades lencas.",
       "location": { "center": [-88.04, 15.03], "zoom": 12, "pitch": 60, "bearing": -40 },
 
       "cameraMode": "rotate",
@@ -219,8 +178,8 @@
 
     {
       "id": "NR-5",
-      "title": "El asesinato de Berta Cáceres",
-      "description": "Concentrarnos en cómo Berta interrumpió la racionalidad empresarial tejida por las redes de complicidades entre empresarios, agentes estatales y criminales; y explicar la racionalidad empresarial que decidió asesinarla. Mostrar con enfoque las acciones de las redes criminales en los días y semanas anteriores a su asesinato.",
+      "title": "La logística coercitiva",
+      "description": "El marco normativo posterior al golpe de 2009, las escrituras notariales y las obras físicas se ensamblaron así en una sola maquinaria: una logística de despojo que tradujo la sacralidad del territorio en un proyecto de inversión y la resistencia comunitaria en un obstáculo a neutralizar. Con la infraestructura material en marcha, actores empresariales comenzaron a instalar y refinar logísticas de seguridad y agresión. La siguiente narrativa, «Los agresores», detalla cómo se articularon estos dispositivos en el territorio.",
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
 
       "cameraMode": "dramatic",
@@ -257,50 +216,8 @@
         "width": "420px",
         "position": "right"
       }
-    },
-
-    {
-      "id": "NR-6",
-      "title": "El mecanismo generador de impunidad",
-      "description": "Narrar cómo, tras el asesinato de Berta, las redes de agentes estatales se organizaron para procurar la impunidad del asesinato de Berta. Por otro lado, mostrar la persistencia de infraestructuras del despojo, pero sobre todo, la persistencia de las redes de resistencia que requieren recibir del Estado hondureño medidas de reparación y no repetición.",
-
-      "location": {
-        "center": [-86.25, 14.80],
-        "zoom": 6.2,
-        "pitch": 0,
-        "bearing": 0
-      },
-
-      "cameraMode": "flat",
-      "transitionDuration": 2000,
-
-      "highlightLayers": [],
-      "dimLayers": [],
-
-      "geojsonOnEnter": [],
-      "geojsonOnExit": [],
-
-      "sideMedia": true,
-
-      "media": [
-        {
-          "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "Iker Luna / Archivo Experimental",
-          "position": "side",
-          "opacity": 1
-        }
-      ],
-
-      "markers": [],
-      "shapes": [],
-      "layers": [],
-
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
     }
+
+   
   ]
 }

@@ -6,33 +6,38 @@ export default function NarrativesNavigator({ onSelect }) {
 
   const items = [
     {
+      id: "00",
+      title: "NR-0 Intro",
+      img: "/narratives/media/intro1.jpeg"
+    },
+    {
       id: "01",
-      title: "LALO LANDA",
+      title: "NR-1 El golpe de 2009 y la venta del territorio",
       img: "/narratives/media/intro1.jpeg"
     },
     {
       id: "02",
-      title: "WAKANDA FOREVER ✊🏾 ",
+      title: "NR-2 La red financiera: capitales bancos empresarios y la familia Atala",
       img: "/narratives/media/extractivismo1.jpeg"
     },
     {
       id: "03",
-      title: "Red financiera y empresarial",
+      title: "NR-3 Compra de terrenos infraestructuras y logísticas de despojo",
       img: "/narratives/media/Gephisample2.jpeg"
     },
     {
       id: "04",
-      title: "Infraestructuras y logística del despojo",
+      title: "NR-4 Los agresores: Los agentes estatales de seguridad y la red criminal",
       img: "/narratives/media/violencia_redes.jpeg"
     },
     {
       id: "05",
-      title: "Agresores y red criminal",
+      title: "NR-5 El asesinato de Berta Cáceres",
       img: "/narratives/media/infraestructura_conflicto.mp4"
     },
     {
       id: "06",
-      title: "Impunidad y resistencia",
+      title: "NR-6 El mecanismo generador de impunidad",
       img: "/narratives/media/Gephisample2.jpeg"
     }
   ];

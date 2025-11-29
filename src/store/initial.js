@@ -67,7 +67,7 @@ const initial = {
       },
     },
     shapes: [],
-    language: "en-US",
+    language: "es-MX",
     cluster: {
       radius: 30,
       minZoom: 2,

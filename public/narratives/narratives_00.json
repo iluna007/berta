@@ -1,0 +1,45 @@
+{
+  "chapters": [
+    {
+      "id": "NR-0",
+      "title": "Narrativas interactivas del GIEI",
+      "description": "Las narrativas interactivas de esta plataforma forman parte de la presentación de resultados que el Grupo Interdisciplinario de Expertos Independientes (GIEI) en Honduras dirige al pueblo hondureño. Estas narrativas incorporan datos, evidencia verificable y contexto a través de análisis espacial y territorial, para visibilizar la persistencia de las infraestructuras legales, financieras, territoriales y coercitivas que hicieron posible el asesinato de Berta Cáceres y que hoy siguen amenazando al pueblo lenca y a otros pueblos originarios de Honduras, poniendo en riesgo sus vidas y comunidades.",
+      "location": { "center": [-86.5, 14.8], "zoom": 6, "pitch": 0, "bearing": 0 },
+
+      "cameraMode": "flat",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOnEnter": [
+        "Poligonos_Predios_La Vega.geojson",
+        "Poligonos_Predios_Rio Blanco.geojson"
+      ],
+      "geojsonOnExit": [
+        "Poligonos_Predios_La Vega.geojson",
+        "Poligonos_Predios_Rio Blanco.geojson"
+      ],
+
+      "sideMedia": false,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/intro1.jpeg",
+          "position": "inside",
+          "opacity": 1
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": {
+        "width": "420px",
+        "position": "right"
+      }
+    }
+  ]
+}

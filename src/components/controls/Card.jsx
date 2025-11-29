@@ -145,7 +145,7 @@ export const Card = ({
   onSelect = () => {},
   sources = [],
   isSelected = false,
-  language = "en-US",
+  language = "es-MX",
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
