@@ -1,5 +1,3 @@
-// src/components/NarrativePage.jsx
-
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
@@ -12,12 +10,8 @@ import SideMediaPanel from "./narratives/NarrativesSideMediaPanel";
 
 import NarrativesNavigator from "./narratives/NarrativesNavigator";
 
-// ---------- CONFIGURA LA SENSIBILIDAD DEL SCROLL AQUÍ ----------
-const SCROLL_THRESHOLD = 200; 
-// Opciones recomendadas:
-// 80 → más lento / más controlado
-// 50 → sensibilidad media
-// 20 → muy sensible (similar a antes)
+// ---------- Sensibilidad del scroll ----------
+const SCROLL_THRESHOLD = 200;
 
 export default function NarrativePage() {
   const navigate = useNavigate();
@@ -42,7 +36,7 @@ export default function NarrativePage() {
       });
   }, [activeNarrative]);
 
-  // Scroll handler con sensibilidad ajustable
+  // Scroll
   useEffect(() => {
     if (!chapters.length) return;
 
@@ -52,11 +46,8 @@ export default function NarrativePage() {
       e.preventDefault();
       accumulatedDelta += e.deltaY;
 
-      if (Math.abs(accumulatedDelta) < SCROLL_THRESHOLD) {
-        return; // Todavía no pasamos el umbral
-      }
+      if (Math.abs(accumulatedDelta) < SCROLL_THRESHOLD) return;
 
-      // Reset acumulado
       const direction = accumulatedDelta > 0 ? 1 : -1;
       accumulatedDelta = 0;
 
@@ -95,7 +86,10 @@ export default function NarrativePage() {
       }}
     >
       {/* Barra lateral */}
-      <NarrativesNavigator onSelect={(id) => setActiveNarrative(id)} />
+      <NarrativesNavigator
+        onSelect={(id) => setActiveNarrative(id)}
+        activeId={activeNarrative}
+      />
 
       {/* Mapa */}
       <div
@@ -111,7 +105,7 @@ export default function NarrativePage() {
         <NarrativesMap activeChapterId={activeChapterId} chapters={chapters} />
       </div>
 
-      {/* Panel de media lateral */}
+      {/* Panel lateral de media */}
       <SideMediaPanel chapter={activeChapter} />
 
       {/* Panel narrativo */}

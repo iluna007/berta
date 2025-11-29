@@ -1,7 +1,7 @@
-// src/components/narratives/NarrativesNavigator.jsx
 import { useNavigate } from "react-router-dom";
+import "../../scss/narratives_NarrativesNavigator.scss";
 
-export default function NarrativesNavigator({ onSelect }) {
+export default function NarrativesNavigator({ onSelect, activeId }) {
   const navigate = useNavigate();
 
   const items = [
@@ -43,20 +43,8 @@ export default function NarrativesNavigator({ onSelect }) {
   ];
 
   return (
-    <div
-      style={{
-        width: "240px",
-        position: "fixed",
-        left: 0,
-        top: 0,
-        bottom: 0,
-        background: "#111",
-        padding: "20px",
-        overflowY: "auto",
-        zIndex: 9999
-      }}
-    >
-      {/* 🔙 Botón Volver */}
+    <div className="navigator-container">
+      {/* Botón Volver */}
       <button
         onClick={() => navigate("/")}
         style={{
@@ -75,33 +63,14 @@ export default function NarrativesNavigator({ onSelect }) {
         ← Volver al inicio
       </button>
 
-
       {items.map((item) => (
         <div
           key={item.id}
           onClick={() => onSelect(item.id)}
-          style={{
-            cursor: "pointer",
-            marginBottom: "20px",
-            padding: "10px",
-            borderRadius: "6px",
-            background: "#1a1a1a"
-          }}
+          className={`navigator-item ${activeId === item.id ? "active" : ""}`}
         >
-          <img
-            src={item.img}
-            alt={item.title}
-            style={{
-              width: "100%",
-              height: "80px",
-              objectFit: "cover",
-              borderRadius: "4px",
-              marginBottom: "8px"
-            }}
-          />
-          <div style={{ color: "white", fontSize: "14px" }}>
-            {item.title}
-          </div>
+          <img src={item.img} alt={item.title} />
+          <div className="title">{item.title}</div>
         </div>
       ))}
     </div>

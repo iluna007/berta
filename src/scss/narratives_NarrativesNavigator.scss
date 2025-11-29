@@ -1,0 +1,41 @@
+.navigator-container {
+  width: 240px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #111;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 9999;
+
+  .navigator-item {
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    background: #1a1a1a;
+    transition: background 0.25s ease;
+
+    &:hover {
+      background: #eb443e;
+    }
+
+    &.active {
+      background: #eb443e;
+    }
+
+    img {
+      width: 100%;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    .title {
+      color: white;
+      font-size: 14px;
+    }
+  }
+}
