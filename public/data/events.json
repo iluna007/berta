@@ -645,7 +645,8 @@
       "src2"
     ],
     "associations": [
-      "asc1"
+      "asc1",
+      "asc10"
     ],
     "time": "00:00"
   },
@@ -3199,8 +3200,7 @@
       "Familia Madrid"
     ],
     "sources": [
-      "src29",
-      "src41"
+      "src29"
     ],
     "associations": [
       "asc8"
@@ -3270,8 +3270,7 @@
       "Autoridades Estatales"
     ],
     "sources": [
-      "src15",
-      "src3"
+      "src15"
     ],
     "associations": [
       "asc8"
@@ -3771,8 +3770,7 @@
       "Donato Madrid"
     ],
     "sources": [
-      "src15",
-      "src38"
+      "src15"
     ],
     "associations": [
       "asc1",
@@ -4073,8 +4071,7 @@
       "Policía"
     ],
     "sources": [
-      "src15",
-      "src3"
+      "src15"
     ],
     "associations": [
       "asc3",
@@ -4351,7 +4348,7 @@
       "src3"
     ],
     "associations": [
-      "asc1"
+      "asc10"
     ],
     "time": "00:00"
   },
@@ -5378,7 +5375,6 @@
       "Selvin Caballero"
     ],
     "sources": [
-      "src50",
       "src16"
     ],
     "associations": [
@@ -6162,6 +6158,1025 @@
     "associations": [
       "asc2",
       "asc7"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "LMA-BC-A12",
+    "description": "Llamada realizada desde el celualr de Berta Isabel Cáceres Flores al celular de Tomás Gómez Membreño. Hora de la llamada: 05:45:23 Duración de llamada: 66 minutos.",
+    "date": "03/01/2016",
+    "location": "Antena EMBAJADA AMERICA TGU REMOTO",
+    "latitude": "14.103339999999998",
+    "longitude": "-87.1892",
+    "graphic": "false",
+    "victims": [
+      "Luis Madrid"
+    ],
+    "attackers": [
+      "Berta Isabel Cáceres Flores"
+    ],
+    "sources": [
+      "src55"
+    ],
+    "associations": [
+      "asc12"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CBQ-BC-A12",
+    "description": "Llamada realizada desde el celualr de Berta Isabel Cáceres Flores al celular de Tomás Gómez Membreño. Hora de la llamada: 7:28:51 Duración de llamada:  62 minutos. ",
+    "date": "01/03/2015",
+    "location": "Antena INTIBUCA_II_DG",
+    "latitude": "14.31332",
+    "longitude": "-88.1706",
+    "graphic": "false",
+    "victims": [
+      "Tomás Gómez Membreño"
+    ],
+    "attackers": [
+      "Berta Isabel Cáceres Flores"
+    ],
+    "sources": [
+      "src55"
+    ],
+    "associations": [
+      "asc12"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CBQ-BC-A12-1",
+    "description": "Llamada realizada desde el celualr de Berta Isabel Cáceres Flores al celular de Tomás Gómez Membreño. Hora de la llamada: 23:46:04 Duración de llamada:  192 minutos.",
+    "date": "01/03/2015",
+    "location": "Antena INTIBUCA",
+    "latitude": "14.309009",
+    "longitude": "-88.168697",
+    "graphic": "false",
+    "victims": [
+      "Tomás Gómez Membreño"
+    ],
+    "attackers": [
+      "Berta Isabel Cáceres Flores"
+    ],
+    "sources": [
+      "src55"
+    ],
+    "associations": [
+      "asc12"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "BICF-AMV-A12",
+    "description": "Llamada realizada desde el celualr de Aureliano Molina Villanueva al celular de Berta Isabel Cáceres Flores. Hora de la llamada: 17:09:04 Duración de llamada:  44 minutos.",
+    "date": "01/04/2015",
+    "location": "Antena LAS_DELICIAS_INTIBUCA",
+    "latitude": "14.311861110000002",
+    "longitude": "-88.1861111",
+    "graphic": "false",
+    "victims": [
+      "Berta Isabel Cáceres Flores"
+    ],
+    "attackers": [
+      "Aureliano Molina Villanueva"
+    ],
+    "sources": [
+      "src55"
+    ],
+    "associations": [
+      "asc13"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "GFE-BC-A12",
+    "description": "Llamada realizada desde el celular de Berta Isabel Cáceres Flores al celular de Francisco Javier Sánchez García. Hora de la llamada: 16:02:23 Duración de llamada:  44 minutos.",
+    "date": "01/05/2015",
+    "location": "Antena LA_ESPERANZA",
+    "latitude": "14.306634620000002",
+    "longitude": "-88.2172527",
+    "graphic": "false",
+    "victims": [
+      "Francisco Javier Sánchez García"
+    ],
+    "attackers": [
+      "Berta Isabel Cáceres Flores"
+    ],
+    "sources": [
+      "src55"
+    ],
+    "associations": [
+      "asc12"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "DGC-FA-A12",
+    "description": "Llamada realizada desde el celular de Daniel Atala Midence/Coordinación PHAZ/Seguridad PHAZ al celular de Douglas Geovanny Bustillo/Andys Iraheta/Samir Antonio Talhami Bustillo. Hora de la llamada: 16:02:23 Duración de llamada:  44 minutos.",
+    "date": "01/19/2015",
+    "location": "Antena LA_HACIENDA_II",
+    "latitude": "14.088734000000002",
+    "longitude": "-87.177488",
+    "graphic": "false",
+    "victims": [
+      "Douglas Geovanny Bustillo"
+    ],
+    "attackers": [
+      "Douglas Geovanny Bustillo"
+    ],
+    "sources": [
+      "src55"
+    ],
+    "associations": [
+      "asc13"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "DAM-DS-A12",
+    "description": "Llamada realizada desde el celular de Daniel Atala Midence/Coordinación PHAZ/Seguridad PHAZ al celular de Daniel Eduardo Atala Midence. Hora de la llamada: 16:15:34 Duración de llamada:  153 minutos.",
+    "date": "03/03/2016",
+    "location": "Antena LA_HACIENDA_II",
+    "latitude": "14.088734000000002",
+    "longitude": "-87.177488",
+    "graphic": "false",
+    "victims": [
+      "Daniel Eduardo Atala Midence"
+    ],
+    "attackers": [
+      "Daniel Eduardo Atala Midence"
+    ],
+    "sources": [
+      "src55"
+    ],
+    "associations": [
+      "asc13"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "DAM-DS-A12-1",
+    "description": "Llamada realizada desde el celular de Daniel Atala Midence/Coordinación PHAZ/Seguridad PHAZ al celular de Daniel Eduardo Atala Midence. Hora de la llamada: 19:21:35 Duración de llamada: 17 minutos.",
+    "date": "03/03/2016",
+    "location": "Antena LA_HACIENDA_II",
+    "latitude": "14.088734000000002",
+    "longitude": "-87.177488",
+    "graphic": "false",
+    "victims": [
+      "Daniel Eduardo Atala Midence"
+    ],
+    "attackers": [
+      "Daniel Eduardo Atala Midence"
+    ],
+    "sources": [
+      "src55"
+    ],
+    "associations": [
+      "asc13"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "DAM-DS-A12-2",
+    "description": "Llamada realizada desde el celular de Daniel Atala Midence/Coordinación PHAZ/Seguridad PHAZ al celular de Daniel Eduardo Atala Midence. Hora de la llamada: 17:58:05 Duración de llamada:  32 minutos.",
+    "date": "03/02/2016",
+    "location": "Antena CASA_PRESIDENCIAL_DG",
+    "latitude": "14.08999",
+    "longitude": "-87.18642",
+    "graphic": "false",
+    "victims": [
+      "Daniel Eduardo Atala Midence"
+    ],
+    "attackers": [
+      "Daniel Eduardo Atala Midence"
+    ],
+    "sources": [
+      "src55"
+    ],
+    "associations": [
+      "asc13"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "RDC-DS-A12",
+    "description": "Llamada realizada desde el celular de David Castillo al celular de Daniel Atala Midence/Coordinación PHAZ/Seguridad PHAZ. Hora de la llamada: 21:58:06 Duración de llamada:  105 minutos.",
+    "date": "03/10/2016",
+    "location": "Antena LA_HACIENDA_II",
+    "latitude": "14.088734000000002",
+    "longitude": "-87.177488",
+    "graphic": "false",
+    "victims": [
+      "Roberto David Castillo Mejía"
+    ],
+    "attackers": [
+      "Daniel Eduardo Atala Midence"
+    ],
+    "sources": [
+      "src55"
+    ],
+    "associations": [
+      "asc13"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "ISZ-DS-A14",
+    "description": "Inicio de toma de El Roble",
+    "date": "04/01/2013",
+    "location": "Toma de El Roble",
+    "latitude": "14.663333",
+    "longitude": "-88.177778",
+    "graphic": "false",
+    "victims": [
+      "Integrantes de COPINH"
+    ],
+    "attackers": [
+      "Desarrollos Energéticos S.A de C.V (DESA)"
+    ],
+    "sources": [
+      "src54"
+    ],
+    "associations": [
+      "asc14"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "ISZ-DS-A14-1",
+    "description": "Fin de toma de El Roble",
+    "date": "11/07/2015",
+    "location": "Toma de El Roble",
+    "latitude": "14.663333",
+    "longitude": "-88.177778",
+    "graphic": "false",
+    "victims": [
+      "Integrantes de COPINH"
+    ],
+    "attackers": [
+      "Desarrollos Energéticos S.A de C.V (DESA)"
+    ],
+    "sources": [
+      "src54"
+    ],
+    "associations": [
+      "asc14"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CDS-HLP-A12",
+    "description": "Registro del Contrato 001-2013 para la ejecución del proyecto de la Presa Hidroeléctrica “Las Piedras”.",
+    "date": "01/01/2013",
+    "location": "Casa de Máquinas Proyecto Las piedras",
+    "latitude": "15.09547",
+    "longitude": "-85.7717",
+    "graphic": "false",
+    "victims": [
+      "Aldea La Lima"
+    ],
+    "attackers": [
+      "Hidroelectrica Las Piedras S.A. De C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "WJR-LA-A12",
+    "description": "Registro del Contrato 005-2013 para la ejecución del proyecto de la Presa Hidroeléctrica “Aurora I”.",
+    "date": "02/01/2013",
+    "location": "Casa de Máquinas Proyecto Aurora I",
+    "latitude": "14.23318",
+    "longitude": "-87.8931",
+    "graphic": "false",
+    "victims": [
+      "Sociedad Civil"
+    ],
+    "attackers": [
+      "La Aurora S.A. de C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "WJR-LA-A12-1",
+    "description": "Registro del Contrato 006-2013 para la ejecución del proyecto de la Presa Hidroeléctrica “Aurora II”.",
+    "date": "03/01/2013",
+    "location": "Casa de Máquinas Proyecto Aurora II",
+    "latitude": "13.97735",
+    "longitude": "-87.7527",
+    "graphic": "false",
+    "victims": [
+      "Sociedad Civil"
+    ],
+    "attackers": [
+      "La Aurora S.A. de C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CCC-BE-A12",
+    "description": "Registro del Contrato 024-2013 para la ejecución del proyecto de la Presa Hidroeléctrica “Planta Río Cangel”.",
+    "date": "04/01/2013",
+    "location": "Casa de Máquinas Planta Río Canjel",
+    "latitude": "14.68304",
+    "longitude": "-88.1199",
+    "graphic": "false",
+    "victims": [
+      "Aldea Las Mojarras"
+    ],
+    "attackers": [
+      "Blue Energy S.A. de C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "EEY-A12",
+    "description": "Registro del Contrato 026-2014 para la ejecución del proyecto de la Presa Hidroeléctrica “Planta Arenal I-II”.",
+    "date": "01/01/2014",
+    "location": "Casa de Máquinas Planta Arenal I-II",
+    "latitude": "15.33951",
+    "longitude": "-86.7584",
+    "graphic": "false",
+    "victims": [
+      "Aldea Boca de La Quebrada",
+      "Aldea Las Almendras",
+      "Aldea El Retiro"
+    ],
+    "attackers": [
+      "Energias Limpias del Yaguala S.A. de C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CES-A12",
+    "description": "Registro del Contrato 028-2014 para la ejecución del proyecto de la Presa Hidroeléctrica “Arenal Etapa IV”.",
+    "date": "02/01/2014",
+    "location": "Casa de Máquinas Proyecto Arenal Etapa IV",
+    "latitude": "15.20777",
+    "longitude": "-86.8654",
+    "graphic": "false",
+    "victims": [
+      "Aldea La Esparramada"
+    ],
+    "attackers": [
+      "\"Energías Limpias DE Honduras",
+      "S.A DE C.V\""
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CQL-RP-A12",
+    "description": "Registro del Contrato 038-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Gualcarque G-940”.",
+    "date": "01/01/2010",
+    "location": "Casa de Máquinas Proyecto Gualcarque G-940",
+    "latitude": "14.55324",
+    "longitude": "-88.2262",
+    "graphic": "false",
+    "victims": [
+      "Aldea El Naranjo"
+    ],
+    "attackers": [
+      "Rio Power S.A. De C.V. (Riposa)"
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "WJR-A12",
+    "description": "Registro del Contrato 039-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Humuya”.",
+    "date": "02/01/2010",
+    "location": "Casa de Máquinas Proyecto Humuya",
+    "latitude": "14.57928",
+    "longitude": "-87.6698",
+    "graphic": "false",
+    "victims": [
+      "Sociedad Civil"
+    ],
+    "attackers": [
+      "\"Hidro-Power",
+      "S.A. (HIPO)\n\""
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CPL-ESA-A12",
+    "description": "Registro del Contrato 040-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Río Negro”.",
+    "date": "03/01/2010",
+    "location": "Casa de Máquinas Proyecto Río Negro",
+    "latitude": "15.54794",
+    "longitude": "-85.6999",
+    "graphic": "false",
+    "victims": [
+      "Aldea Aldea Monte Fresco"
+    ],
+    "attackers": [
+      "ENERGISA S.A. DE C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CRN-CPS-A12",
+    "description": "Registro del Contrato 041-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Río Frío”.",
+    "date": "04/01/2010",
+    "location": "Casa de Máquinas Proyecto Río Frío",
+    "latitude": "14.27754",
+    "longitude": "-86.123",
+    "graphic": "false",
+    "victims": [
+      "Aldea Cieneguita"
+    ],
+    "attackers": [
+      "Corporacion Patuca S.A. de C.V. (CORPASA)"
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CGL-HCP-A12",
+    "description": "Registro del Contrato 042-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Los Planes / Pajuiles”.",
+    "date": "05/01/2010",
+    "location": "Casa de Máquinas Proyecto Los Planes / Pajuiles",
+    "latitude": "15.60727",
+    "longitude": "-87.5984",
+    "graphic": "false",
+    "victims": [
+      "Aldea Los Planes"
+    ],
+    "attackers": [
+      "HIdroelectricas Centrales El Progreso S.A. de C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "RMB-DS-A12",
+    "description": "Registro del Contrato 043-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Agua Zarca”.",
+    "date": "06/01/2010",
+    "location": "Casa de Máquinas Proyecto Agua Zarca",
+    "latitude": "14.6922",
+    "longitude": "-88.1769",
+    "graphic": "false",
+    "victims": [
+      "Población Rio Blanco"
+    ],
+    "attackers": [
+      "Desarrollos Energéticos S.A de C.V (DESA)"
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "WJR-INV-A12",
+    "description": "Registro del Contrato 045-2011 para la ejecución del proyecto de la Presa Hidroeléctrica “Churune”.",
+    "date": "01/01/2011",
+    "location": "Casa de Máquinas Proyecto Churune",
+    "latitude": "14.59306",
+    "longitude": "-87.5818",
+    "graphic": "false",
+    "victims": [
+      "Sociedad Civil"
+    ],
+    "attackers": [
+      "Inversiones Renovables (INVERSA)"
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "WJR-AQF-A12",
+    "description": "Registro del Contrato 046-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “San Alejo”.",
+    "date": "07/01/2010",
+    "location": "Casa de Máquinas Proyecto San Alejo",
+    "latitude": "14.34417",
+    "longitude": "-87.4758",
+    "graphic": "false",
+    "victims": [
+      "Sociedad Civil"
+    ],
+    "attackers": [
+      "Acqua Futura S.A De C.V"
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "WJR-SHE-A12",
+    "description": "Registro del Contrato 049-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Sueño II”.",
+    "date": "08/01/2010",
+    "location": "Casa de Máquinas Proyecto Sueño II",
+    "latitude": "14.79432",
+    "longitude": "-88.3335",
+    "graphic": "false",
+    "victims": [
+      "Sociedad Civil"
+    ],
+    "attackers": [
+      "Sociedad hidroelectrica Enerblu S.A. de C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CJM-HEC-A12",
+    "description": "Registro del Contrato 049-2011 para la ejecución del proyecto de la Presa Hidroeléctrica “El Cisne”.",
+    "date": "02/01/2011",
+    "location": "Casa de Máquinas Proyecto El Cisne",
+    "latitude": "15.04079",
+    "longitude": "-89.1375",
+    "graphic": "false",
+    "victims": [
+      "Aldea El Cisne"
+    ],
+    "attackers": [
+      "Hidroelectrica el Cisne S.A. de C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "WJR-A12-1",
+    "description": "Registro del Contrato 050-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Zinguizapa I”.",
+    "date": "09/01/2010",
+    "location": "Casa de Máquinas Proyecto Zinguizapa I",
+    "latitude": "14.45796",
+    "longitude": "-87.354",
+    "graphic": "false",
+    "victims": [
+      "Sociedad Civil"
+    ],
+    "attackers": [
+      "\"Sociedad Mercantil Gutierrez Arevalo Energy",
+      "S.A. de C.V.\""
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "WJR-A12-2",
+    "description": "Registro del Contrato 051-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Blanco/La Puerta Etapa II”.",
+    "date": "10/01/2010",
+    "location": "Casa de Máquinas Proyecto Blanco/La Puerta Etapa II",
+    "latitude": "14.50701",
+    "longitude": "-87.4304",
+    "graphic": "false",
+    "victims": [
+      "Sociedad Civil"
+    ],
+    "attackers": [
+      "\"Sociedad Mercantil Gutierrez Arevalo Energy",
+      "S.A. de C.V.\""
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "WJR-GEM-A12",
+    "description": "Registro del Contrato 053-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Cuaca I”.",
+    "date": "11/01/2010",
+    "location": "Casa de Máquinas Cuaca I",
+    "latitude": "15.40424",
+    "longitude": "-86.1922",
+    "graphic": "false",
+    "victims": [
+      "Sociedad Civil"
+    ],
+    "attackers": [
+      "Generaciòn de energia multiple S.A. de C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "WJR-GEM-A12-1",
+    "description": "Registro del Contrato 053-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Cuaca II”.",
+    "date": "11/01/2010",
+    "location": "Casa de Máquinas Cuaca II",
+    "latitude": "15.47076",
+    "longitude": "-86.1175729",
+    "graphic": "false",
+    "victims": [
+      "Sociedad Civil"
+    ],
+    "attackers": [
+      "Generaciòn de energia multiple S.A. de C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "WJR-GEM-A12-2",
+    "description": "Registro del Contrato 053-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Cuaca III”.",
+    "date": "11/01/2010",
+    "location": "Casa de Máquinas Cuaca III",
+    "latitude": "15.5683981",
+    "longitude": "-86.0963799",
+    "graphic": "false",
+    "victims": [
+      "Sociedad Civil"
+    ],
+    "attackers": [
+      "Generaciòn de energia multiple S.A. de C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CSL-CFO-A12",
+    "description": "Registro del Contrato 054-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Rio Quilio I”.",
+    "date": "12/01/2010",
+    "location": "Casa de Máquinas Rio Quilio I",
+    "latitude": "14.52559",
+    "longitude": "-89.1457",
+    "graphic": "false",
+    "victims": [
+      "Aldea Dolores"
+    ],
+    "attackers": [
+      "Compania Fuerza De Occidente (Cofusa)"
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CLS-HCE-A12",
+    "description": "Registro del Contrato 054-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Cortecito”.",
+    "date": "03/01/2011",
+    "location": "Casa de Máquinas Cortecito",
+    "latitude": "15.57571",
+    "longitude": "-88.3322732",
+    "graphic": "false",
+    "victims": [
+      "Aldea Cortecito"
+    ],
+    "attackers": [
+      "HIDROCEL S.A. de C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "SMQ-HCE-A12",
+    "description": "Registro del Contrato 055-2011 para la ejecución del proyecto de la Presa Hidroeléctrica “San Carlos”.",
+    "date": "03/01/2011",
+    "location": "Casa de Máquinas San Carlos",
+    "latitude": "15.58211",
+    "longitude": "-88.3211",
+    "graphic": "false",
+    "victims": [
+      "Aldea San Carlos"
+    ],
+    "attackers": [
+      "HIDROCEL S.A. de C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CPB-SME-A12",
+    "description": "Registro del Contrato 057-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Ecoenergia Rio Guineo”.",
+    "date": "01/05/2010",
+    "location": "Casa de Máquinas Ecoenergia Rio Guineo",
+    "latitude": "14.346",
+    "longitude": "-85.8786",
+    "graphic": "false",
+    "victims": [
+      "Aldea Rio Guineo"
+    ],
+    "attackers": [
+      "Sociedad Mercantil Ecoenergía S.A. DE C.V."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "WJR-SCC-A12",
+    "description": "Registro del Contrato 057-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Hidroelectrico Rio Frio Fase I, Ii Y Iii El Palmar”.",
+    "date": "02/05/2010",
+    "location": "Casa de Máquinas Ecoenergia Hidroelectrico Rio Frio Fase I, Ii Y Iii El Palmar",
+    "latitude": "14.49298",
+    "longitude": "-89.2922",
+    "graphic": "false",
+    "victims": [
+      "Sociedad Civil"
+    ],
+    "attackers": [
+      "Sesecapa Energy Company S.A De C.V"
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CSB-SEM-A12",
+    "description": "Registro del Contrato 058-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Mezapa”.",
+    "date": "03/05/2010",
+    "location": "Casa de Máquinas Mezapa",
+    "latitude": "15.54319",
+    "longitude": "-87.3514",
+    "graphic": "false",
+    "victims": [
+      "Aldea Mezapa"
+    ],
+    "attackers": [
+      "Sociedad Electrica Mesoamericana SEMSA"
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "WJR-COD-A12",
+    "description": "Registro del Contrato 059-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Santa Elena”.",
+    "date": "04/05/2010",
+    "location": "Casa de Máquinas Santa Elena",
+    "latitude": "14.98",
+    "longitude": "-88.8311",
+    "graphic": "false",
+    "victims": [
+      "Sociedad Civil"
+    ],
+    "attackers": [
+      "CODERESA"
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CJC-CTM-A12",
+    "description": "Registro del Contrato 060-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “San Juan”.",
+    "date": "05/05/2010",
+    "location": "Casa de Máquinas San Juancito",
+    "latitude": "15.56624",
+    "longitude": "-87.2205",
+    "graphic": "false",
+    "victims": [
+      "Aldea Las Delicias"
+    ],
+    "attackers": [
+      "Industrias Contempo S.A."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CJC-CTM-A12-1",
+    "description": "Registro del Contrato 061-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “San Juancito”.",
+    "date": "05/10/2010",
+    "location": "Casa de Máquinas San Juan",
+    "latitude": "15.56108",
+    "longitude": "-87.2365",
+    "graphic": "false",
+    "victims": [
+      "Aldea Las Delicias"
+    ],
+    "attackers": [
+      "Industrias Contempo S.A."
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CJO-ENT-A12",
+    "description": "Registro del Contrato 061-2011 para la ejecución del proyecto de la Presa Hidroeléctrica “Cuyamapa”.",
+    "date": "04/01/2011",
+    "location": "Casa de Máquinas Cuyamapa",
+    "latitude": "15.25143",
+    "longitude": "-87.5023",
+    "graphic": "false",
+    "victims": [
+      "Aldea El Salto"
+    ],
+    "attackers": [
+      "Energia y Transmision S.A de C.V ENETRAN"
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "WJR-EIT-A12",
+    "description": "Registro del Contrato 062-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Morja”.",
+    "date": "06/05/2010",
+    "location": "Casa de Máquinas Morja",
+    "latitude": "15.06703",
+    "longitude": "-88.9843",
+    "graphic": "false",
+    "victims": [
+      "Sociedad Civil"
+    ],
+    "attackers": [
+      "Empresa Ingenieria Tecnica S.A. de C.V"
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CPV-ELC-A12",
+    "description": "Registro del Contrato 062-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “La Gloria”.",
+    "date": "05/01/2011",
+    "location": "Casa de Máquinas La Gloria",
+    "latitude": "15.75185",
+    "longitude": "-86.3657",
+    "graphic": "false",
+    "victims": [
+      "Comunidad La Gloria"
+    ],
+    "attackers": [
+      "Electrotecnia (La Gloria)"
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "CMZ-A12",
+    "description": "Registro del Contrato 063-2010 para la ejecución del proyecto de la Presa Hidroeléctrica “Agua Blanca”.",
+    "date": "07/05/2010",
+    "location": "Casa de Máquinas Agua Blanca",
+    "latitude": "14.20173",
+    "longitude": "-88.1581",
+    "graphic": "false",
+    "victims": [
+      "Aldea Los Patios"
+    ],
+    "attackers": [
+      "\"Sociedad Hidroelectrica Agua Blanca S.A",
+      "\""
+    ],
+    "sources": [
+      "src53"
+    ],
+    "associations": [
+      "asc11"
     ],
     "time": "00:00"
   }

@@ -98,5 +98,45 @@
       "Tipo de daño",
       "Salud"
     ]
+  },
+  {
+    "id": "asc11",
+    "title": "Hidroeléctricas",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Infraestructura",
+      "Hidroeléctricas"
+    ]
+  },
+  {
+    "id": "asc12",
+    "title": "Berta Isabel Cáceres Flores",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Llamadas",
+      "Berta Isabel Cáceres Flores"
+    ]
+  },
+  {
+    "id": "asc13",
+    "title": "David Atala",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Llamadas",
+      "David Atala"
+    ]
+  },
+  {
+    "id": "asc14",
+    "title": "Manifestación",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Defensa del territorio",
+      "Manifestación"
+    ]
   }
 ]

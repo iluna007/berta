@@ -37,14 +37,20 @@ const config = {
         },
         zoomLevels: [
           { label: "Zoom de 1 año", duration: 12 * 31 * one_day },
+          { label: "Zoom de 2 años", duration: 48 * 31 * one_day },
+          { label: "Zoom de 4 años", duration: 72 * 31 * one_day },
           { label: "Zoom de 8 años", duration: 96 * 31 * one_day },
+          { label: "Zoom de 10 años", duration: 120 * 31 * one_day },
+          { label: "Zoom de 12 años", duration: 144 * 31 * one_day },
+          { label: "Zoom de 14 años", duration: 168 * 31 * one_day },
+          
         ],
         range: {
           // ✅ Define el rango de fechas visible al iniciar
-          initial: ["2013-01-01T00:00:00.000Z", "2025-12-31T23:59:59.000Z"],
+          initial: ["2010-01-01T00:00:00.000Z", "2025-12-31T23:59:59.000Z"],
           initialDaysShown: 31 * 12,
           limits: {
-            lower: "2013-01-01T00:00:00.000Z",
+            lower: "2010-01-01T00:00:00.000Z",
             upper: "2025-12-31T23:59:59.000Z",
           },
         },
@@ -92,18 +98,29 @@ const config = {
     ui: {
       coloring: {
         mode: "STATIC",
-        maxNumOfColors: 9,
+        maxNumOfColors: 20,
         defaultColor: "#dfdfdf",
         colors: [
-          "#bd1783",
-          "#ee1504",
-          "#fa8b31",
-          "#FFEB3B",
-          "#D34F73",
-          "#08B2E3",
-          "#90A4AE",
-          "#E57373",
-          "#80CBC4",
+           "#cecece",  // Gray (base)
+           "#a559aa",  // Purple (base)
+           "#59a89c",  // Teal (base)
+           "#f0c571",  // Gold (base)
+           "#e02b35",  // Red (base)
+           "#082a54",  // Dark Blue (base)
+           "#c49cca",  // Purple pastel complementario
+           "#7d3c8c",  // Purple profundo
+           "#2f6b63",  // Teal oscuro
+           "#7bc5b9",  // Teal claro
+           "#f6dca6",  // Gold claro
+           "#b48224",  // Gold quemado
+           "#b22228",  // Red oscuro
+           "#f36b71",  // Red coral brillante
+           "#0b3e78",  // Blue intenso
+           "#1e4a73",  // Blue oceánico medio
+           "#3b5e7c",  // Slate azul gris
+           "#6b7c89",
+           "#8a8a8a",  
+           "#444b54"   
         ],
       },
       card: {
