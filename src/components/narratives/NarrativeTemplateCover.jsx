@@ -1,0 +1,125 @@
+// src/components/narratives/NarrativeTemplateCover.jsx
+
+import { useState } from "react";
+import { Player } from "video-react";
+import { marked } from "marked";
+import "../../scss/NarrativeTemplateCover.scss";
+import bcatlogo from "../../assets/VERTICAL_POSITIVO.svg";
+
+const MEDIA_HIDDEN = -1;
+
+export default function NarrativeTemplateCover({ onClose }) {
+  const [videoIndex, setVideoIndex] = useState(MEDIA_HIDDEN);
+
+  // 🔥 Insertamos directamente tu contenido y los bloques especiales
+  const data = {
+    title: "Introducción",
+    subtitle: "",
+    subsubtitle: "",
+    exploreButton: "PLATAFORMA",
+    narrativeButton: "NARRATIVAS",
+
+    description: [
+      // PÁRRAFO 1
+      "Esta plataforma web interactiva se desarrolla en el marco del mandato del Grupo Interdisciplinario de Expertas y Expertos Independientes (GIEI) para Honduras, el cual busca esclarecer hechos de violencia, identificar patrones de impunidad y contribuir a la memoria, la verdad, justicia y reparación en el caso del asesinato de la líder y defensora lenca, Berta Cáceres Flores, el 2 de marzo de 2016. La documentación aquí presentada aporta insumos técnicos y contextuales que complementan los esfuerzos de esclarecimiento y dignificación de las víctimas.",
+
+      // 👇 IMAGEN ENTRE P1 Y P2
+      { type: "image", src: "/narratives/media/intro1.jpeg", alt: "Intro" },
+
+      // PÁRRAFO 2
+      "## Alcance de la investigación",
+
+      // PÁRRAFO 3
+      "Esta plataforma interactiva reúne incidentes, evidencias y contextos relacionados con el caso del asesinato de Berta Cáceres Flores y el entramado de actores, infraestructuras y decisiones que lo rodean. El foco está en episodios que evidencian posibles daños a civiles, afectaciones a comunidades y territorios, construcción de infraestructuras, patrones de control territorial y relaciones entre distintos actores de distintas agrupaciones, como el Consejo Cívico de Organizaciones Populares e Indígenas de Honduras (COPINH), corporativos, agentes estatales de seguridad, instituciones del estado hondureño, y criminales sentenciados. La plataforma no pretende ser exhaustiva, sino un muestrario de narrativas y evidencias cuya localización y contexto han sido suficientemente corroborados para su publicación.",
+
+      // 👇 VIDEO ENTRE PÁRRAFO 3 Y 4
+      { type: "video", src: "/narratives/media/infraestructura_conflicto.mp4" },
+
+      // PÁRRAFO 4
+     "## Fuentes",
+      "Los insumos de la investigación provienen principalmente de evidencia forense y documentación judicial obtenida durante el proceso penal del caso Berta Cáceres: registros telefónicos y extracciones de dispositivos de los imputados, más de 400,000 chats de WhatsApp, transacciones financieras y correos electrónicos de bancos internacionales, títulos de propiedad y escrituras de compra de terrenos, censos de la comunidad Río Blanco, expedientes judiciales (sentencias y declaraciones), y estudios técnicos sobre el proyecto hidroeléctrico. Esta información ha sido complementada con materiales de acceso público cuando su divulgación no compromete a personas o procesos en curso. Cuando el material proviene de fuentes abiertas, se mantiene el enlace original y se resguarda una copia para preservación. La presencia de un enlace no implica afiliación entre quienes publicaron el contenido y este proyecto.",
+      "## Niveles de verificación",
+      "Cada registro documentado en esta plataforma pasa por controles de verificación que incluyen: autenticidad de la fuente, coherencia temporal, geolocalización mediante referencias cruzadas con mapas satelitales y cartografía oficial, y triangulación con múltiples fuentes cuando están disponibles. Los puntos del mapa, trayectorias y ubicaciones que se muestran públicamente han alcanzado un nivel de certeza espacial suficiente para su publicación; casos con localización incierta o que requieren protección adicional se resguardan para análisis interno del GIEI. La verificación forense avanzada para uso probatorio en procesos judiciales requiere peritajes especializados y se desarrolla en el marco del mandato oficial del GIEI, surgido de un acuerdo entre el gobierno hondureño y la Organización de los Estados Americanos (OEA).",
+      "## Descripciones y límites",
+      "Las fichas describen lo que es claramente visible o documentalmente sustentable: qué, cuándo, dónde y con qué afectaciones plausibles. No se infieren números precisos de víctimas ni se atribuye responsabilidad a una parte sin evidencia suficiente y trazable. Los campos narrativos priorizan la claridad, señalan incertidumbres y distinguen entre observación, inferencia y contexto. Los límites geográficos de los incidentes se representan con la mayor precisión posible según la evidencia disponible, pero no pretenden ser exhaustivos ni definitivos. La representación espacial busca equilibrar precisión y respeto por la privacidad y seguridad de las comunidades afectadas.",
+      "## Filtros y navegación",
+      "En el panel lateral puedes activar eventos por distintas categorías, seleccionar un periodo temporal, y activar capas geográficas y analíticas. Entre otros:",
+      "-Tipos de eventos: agresiones, concesiones, comunicaciones, transacciones, acciones de defensa del territorio.",
+      "-Actores involucrados: bancos y fondos internacionales, ejecutivos y personal de empresas o de seguridad privada, autoridades militares y policiales, actores de redes criminales, miembros del COPINH y comunidades afectadas.",
+      "-Capas territoriales: comunidades lencas afectadas (La Tejera, El Barreal, Río Blanco, La Vega), predios adquiridos por DESA, ubicaciones del proyecto hidroeléctrico (versiones de 2009 y 2013), infraestructuras relacionadas.",
+      "Las clasificaciones se basan en evidencia documental proveniente de expedientes judiciales, testimonios y registros oficiales; cada evento está vinculado a sus fuentes primarias para garantizar trazabilidad y verificabilidad.",
+      "## Privacidad, seguridad y respeto",
+      "El material puede ser sensible o perturbador. Se aplican medidas de minimización de daño: difuminado o recorte cuando hay riesgo de identificación de personas en situación de vulnerabilidad; exclusión de imágenes de cuerpos que permitan identidad directa; desajuste deliberado de coordenadas públicas en rangos prudentes cuando la revelación precisa implique riesgo. Se retiran datos personales no esenciales y se atienden solicitudes fundadas de retiro o mayor resguardo.",
+      "## Créditos",
+      "Esta investigación, plataforma y videos fue desarrollada por el equipo de re/presentare en colaboración con el GIEI de Honduras para el caso del asesinato de Berta Cáceres. La plataforma utiliza código abierto desarrollado por Forensic Architecture y Bellingcat."
+    ],
+
+
+    headerVideos: [],
+    videos: [],
+    featureVideo: null,
+    bgVideo: null,
+  };
+
+  // No hay videos interactivos en este modal
+  const activeVideo = null;
+
+  return (
+    <div
+      className="ntc-overlay"
+      onWheel={(e) => e.stopPropagation()}
+      onScroll={(e) => e.stopPropagation()}
+      onMouseDown={(e) => e.stopPropagation()}
+    >
+      <div className="ntc-container">
+        <div className="ntc-header">
+          <img className="ntc-logo" src={bcatlogo} alt="Logo" />
+          <div className="ntc-close" onClick={onClose}>
+            ✕
+          </div>
+        </div>
+
+        <h2 dangerouslySetInnerHTML={{ __html: data.title }} />
+
+        {/* 🔥 RENDER DINÁMICO SEGÚN TIPO DE BLOQUE */}
+        {data.description.map((block, i) => {
+          if (typeof block === "string") {
+            return (
+              <div
+                key={i}
+                className="ntc-md"
+                dangerouslySetInnerHTML={{ __html: marked(block) }}
+              />
+            );
+          }
+
+          if (block.type === "image") {
+            return (
+              <div key={i} className="ntc-img-block">
+                <img src={block.src} alt={block.alt || "image"} />
+              </div>
+            );
+          }
+
+          if (block.type === "video") {
+            return (
+              <div key={i} className="ntc-video-block">
+                <video controls className="ntc-inline-video">
+                  <source src={block.src} type="video/mp4" />
+                </video>
+              </div>
+            );
+          }
+
+          return null;
+        })}
+        <div className="ntc-header-center">
+  <div className="ntc-close" onClick={onClose}>
+    ✕
+  </div>
+</div>
+        
+      </div>
+    </div>
+  );
+}

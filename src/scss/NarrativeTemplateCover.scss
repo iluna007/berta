@@ -1,0 +1,193 @@
+/* === OVERLAY PRINCIPAL === */
+.ntc-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+
+  /* Previene que el scroll llegue al mapa */
+  pointer-events: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+}
+
+/* === CONTENEDOR DEL MODAL === */
+.ntc-container {
+  width: 65%;
+  max-width: 900px;
+  color: #fff;
+  pointer-events: auto;
+
+  background: rgba(10, 10, 10, 0.45);
+  padding: 40px 50px;
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+/* === HEADER === */
+.ntc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.ntc-header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+
+.ntc-logo {
+  height: 60px;
+  width: auto;
+}
+
+.ntc-close {
+  font-size: 32px;
+  cursor: pointer;
+  color: white;
+  transition: opacity 0.2s ease;
+}
+
+.ntc-close:hover {
+  color: #eb443e;   /* 🔥 rojo requerido */
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+/* === TITULOS === */
+.ntc-container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.ntc-container h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.ntc-container h5 {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* === TEXTO DEL CONTENIDO (MARKDOWN) === */
+.ntc-md {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #f0f0f0;
+
+  p {
+    margin-bottom: 12px;
+  }
+
+  ul, ol {
+    margin-left: 22px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+}
+
+/* === IMAGEN INSERTADA ENTRE PÁRRAFOS === */
+.ntc-img-block {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.ntc-img-block img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.35);
+}
+
+/* === VIDEO INLINE ENTRE PÁRRAFOS === */
+.ntc-video-block {
+  margin: 35px 0;
+  text-align: center;
+}
+
+.ntc-inline-video {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* === VIDEO OVERLAY (si en el futuro lo usás) === */
+.ntc-video-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ntc-video-box {
+  width: 80%;
+  max-width: 900px;
+  position: relative;
+}
+
+.ntc-video-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+  transition: opacity 0.2s ease;
+}
+
+.ntc-video-close:hover {
+  opacity: 0.7;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .ntc-container {
+    width: 90%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ntc-container {
+    padding: 25px;
+  }
+
+  .ntc-logo {
+    height: 45px;
+  }
+
+  .ntc-container h2 {
+    font-size: 26px;
+  }
+
+  .ntc-md {
+    font-size: 15px;
+  }
+
+  .ntc-inline-video,
+  .ntc-img-block img {
+    max-width: 100%;
+  }
+}
+

@@ -5,7 +5,7 @@ export default function ToolbarNavigateButton() {
   const navigate = useNavigate();
   return (
     <button
-      onClick={() => navigate("/narrative")}
+      onClick={() => navigate("/")}
       style={{
         marginLeft: "1rem",
         padding: "0.5rem 1rem",
@@ -16,7 +16,7 @@ export default function ToolbarNavigateButton() {
         cursor: "pointer",
       }}
     >
-      Mapa de Narrativas visuales
+      Volver a Narrativas visuales
     </button>
   );
 }

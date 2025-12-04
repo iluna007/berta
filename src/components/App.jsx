@@ -9,10 +9,10 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         {/* Página principal de tu sitio */}
-        <Route path="/" element={<Layout />} />
+        <Route path="/plataforma" element={<Layout />} />
 
         {/* Página única de narrativas (barra lateral + mapa) */}
-        <Route path="/narrative" element={<NarrativePage />} />
+        <Route path="/" element={<NarrativePage />} />
       </Routes>
     </BrowserRouter>
   );

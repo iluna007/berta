@@ -361,14 +361,7 @@ class Dashboard extends Component {
           language={app.language}
         />
 
-        {features.USE_COVER && (
-          <StaticPage showing={app.flags.isCover}>
-            <TemplateCover
-              showing={app.flags.isCover}
-              showAppHandler={actions.toggleCover}
-            />
-          </StaticPage>
-        )}
+       
       </div>
     );
   }
@@ -407,10 +400,14 @@ const ConnectedDashboard = connect(
  */
 function DashboardWrapper(props) {
   const location = useLocation();
-  if (location.pathname !== "/") {
+
+  // Renderiza Dashboard SOLO en /plataforma
+  if (location.pathname !== "/plataforma") {
     return null;
   }
+
   return <ConnectedDashboard {...props} />;
 }
+
 
 export default DashboardWrapper;

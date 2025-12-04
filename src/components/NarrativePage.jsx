@@ -1,3 +1,5 @@
+// src/components/NarrativePage.jsx
+
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
@@ -7,10 +9,10 @@ import NarrativesScroller from "./narratives/NarrativesScroller";
 import NarrativesMap from "./narratives/NarrativesMap";
 import NarrativeMedia from "./narratives/NarrativeMedia";
 import SideMediaPanel from "./narratives/NarrativesSideMediaPanel";
-
 import NarrativesNavigator from "./narratives/NarrativesNavigator";
 
-// ---------- Sensibilidad del scroll ----------
+import NarrativeTemplateCover from "./narratives/NarrativeTemplateCover";
+
 const SCROLL_THRESHOLD = 200;
 
 export default function NarrativePage() {
@@ -18,10 +20,24 @@ export default function NarrativePage() {
   const dispatch = useDispatch();
 
   const [activeNarrative, setActiveNarrative] = useState("01");
-
   const [chapters, setChapters] = useState([]);
   const [index, setIndex] = useState(0);
   const [activeChapterId, setActiveChapterId] = useState(null);
+
+  // 👇 NUEVO
+  const [showCover, setShowCover] = useState(true);
+
+  // ⛔ Bloquear scroll global cuando el modal está abierto
+  useEffect(() => {
+    if (showCover) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [showCover]);
 
   // Cargar JSON dinámico
   useEffect(() => {
@@ -36,9 +52,9 @@ export default function NarrativePage() {
       });
   }, [activeNarrative]);
 
-  // Scroll
+  // Scroll narrativo
   useEffect(() => {
-    if (!chapters.length) return;
+    if (!chapters.length || showCover) return;
 
     let accumulatedDelta = 0;
 
@@ -60,7 +76,7 @@ export default function NarrativePage() {
 
     window.addEventListener("wheel", handler, { passive: false });
     return () => window.removeEventListener("wheel", handler);
-  }, [chapters.length]);
+  }, [chapters.length, showCover]);
 
   useEffect(() => {
     if (chapters.length > 0) {
@@ -82,9 +98,14 @@ export default function NarrativePage() {
         height: "100vh",
         overflow: "hidden",
         position: "relative",
-        background: "#000"
+        background: "#000",
       }}
     >
+      {/* MODAL DE PORTADA */}
+      {showCover && (
+        <NarrativeTemplateCover onClose={() => setShowCover(false)} />
+      )}
+
       {/* Barra lateral */}
       <NarrativesNavigator
         onSelect={(id) => setActiveNarrative(id)}
@@ -99,7 +120,7 @@ export default function NarrativePage() {
           right: 0,
           top: 0,
           bottom: 0,
-          zIndex: 1
+          zIndex: 1,
         }}
       >
         <NarrativesMap activeChapterId={activeChapterId} chapters={chapters} />
@@ -118,7 +139,7 @@ export default function NarrativePage() {
           width: "380px",
           height: "calc(100% - 80px)",
           zIndex: 30,
-          overflow: "hidden"
+          overflow: "hidden",
         }}
       >
         <NarrativesScroller chapters={chapters} index={index} />

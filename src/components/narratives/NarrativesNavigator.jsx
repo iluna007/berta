@@ -44,9 +44,8 @@ export default function NarrativesNavigator({ onSelect, activeId }) {
 
   return (
     <div className="navigator-container">
-      {/* Botón Volver */}
       <button
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/plataforma")}
         style={{
           width: "100%",
           marginBottom: "20px",
@@ -60,7 +59,7 @@ export default function NarrativesNavigator({ onSelect, activeId }) {
           textAlign: "left"
         }}
       >
-        ← Volver al inicio
+        ← Plataforma
       </button>
 
       {items.map((item) => (
