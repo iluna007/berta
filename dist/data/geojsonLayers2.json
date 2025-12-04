@@ -13,14 +13,14 @@
     "subgroup": "Hidrografía",
     "label": "OSM Waterways",
     "url": "/geojson/BASE/HY_Rios y arroyos/OSM_Waterways.geojson",
-    "color": "#0077be"
+    "color": "#5EA4BF"
   },
   {
     "id": "limite-territorio-nacional",
     "group": "Capas Base",
     "subgroup": "Límites políticos",
     "label": "Límite del Territorio Nacional",
-    "url": "/geojson/BASE/LT-Honduras/GOBJUS-Territorio Nacional.geojson",
+    "url": "/geojson/BASE/LT-Honduras/GOBJUS-Límite del Territorio Nacional.geojson",
     "color": "#FFFFFF"
   },
   {
@@ -36,9 +36,19 @@
     "group": "Capas Base",
     "subgroup": "Límites políticos",
     "label": "Aldea Río Blanco (Límite)",
-    "url": "/geojson/BASE/LT_Aldea Rio Blanco/LT_ALD_Rio Blanco.geojson",
-    "color": "#d339"
+    "url": "/geojson/BASE/LT_Aldea Rio Blanco/Aldea Rio Blanco.geojson",
+    "color": "#195457"
   },
+  
+  {
+    "id": "censo-Rio-Blanco-2013",
+    "group": "Censo Rio Blanco 2013",
+    "subgroup": "Núcleos de población",
+    "label": "Censo Rio Blanco_2013",
+    "url": "/geojson/CENSO Rio Blanco/Censo Rio Blanco_2013.geojson",
+    "color": "#b5651d"
+  },
+
   {
     "id": "crb-aldea-rio-blanco",
     "group": "Censo Rio Blanco 2013",
@@ -159,102 +169,104 @@
     "url": "/geojson/CENSO Rio Blanco/CRB_caserios_Zacatales.geojson",
     "color": "#b5651d"
   },
+
+
+
   {
     "id": "accesos-agua-zarca-2011",
-    "group": "Infraestructuras y logísticas",
+    "group": "Infraestructuras",
     "subgroup": "Proyecto Agua Zarca",
     "label": "Accesos clave Presa Agua Zarca 2011",
-    "url": "/geojson/PHAZ_2011/Accesos clave_Presa Agua Zarca _2011.geojson",
+    "url": "/geojson/PHAZ_2011/Accesos clave_Presa Agua Zarca_2011.geojson",
     "color": "#f4a261"
   },
   {
     "id": "componentes-agua-zarca-2011",
-    "group": "Infraestructuras y logísticas",
+    "group": "Infraestructuras",
     "subgroup": "Proyecto Agua Zarca",
     "label": "Componentes Presa Agua Zarca 2011",
-    "url": "/geojson/PHAZ_2011/componentes_Presa Agua Zarca _2011.geojson",
+    "url": "/geojson/PHAZ_2011/componentes_Presa Agua Zarca_2011.geojson",
     "color": "#f4a261"
   },
   {
     "id": "predios-agua-zarca-2011",
-    "group": "Infraestructuras y logísticas",
+    "group": "Infraestructuras",
     "subgroup": "Proyecto Agua Zarca",
     "label": "Predios Presa Agua Zarca 2011",
-    "url": "/geojson/PHAZ_2011/predios_Presa Agua Zarca _2011.geojson",
+    "url": "/geojson/PHAZ_2011/predios_Presa Agua Zarca_2011.geojson",
     "color": "#f4a261"
   },
   {
     "id": "componentes-agua-zarca-2016",
-    "group": "Infraestructuras y logísticas",
+    "group": "Infraestructuras",
     "subgroup": "Proyecto Agua Zarca",
     "label": "Componentes Presa Agua Zarca 2016",
-    "url": "/geojson/PHAZ_2016/componentes_Presa Agua Zarca _2016.geojson",
+    "url": "/geojson/PHAZ_2016/componentes_Presa Agua Zarca_2016.geojson",
     "color": "#e76f51"
   },
   {
     "id": "tuberias-agua-zarca-2016",
-    "group": "Infraestructuras y logísticas",
+    "group": "Infraestructuras",
     "subgroup": "Proyecto Agua Zarca",
     "label": "Tuberías Presa Agua Zarca 2016",
-    "url": "/geojson/PHAZ_2016/tuberφas_Presa Agua Zarca _2016.geojson",
+    "url": "/geojson/PHAZ_2016/tuberías_Presa Agua Zarca_2016.geojson",
     "color": "#e76f51"
   },
-  {
-    "id": "poligonos",
-    "group": "Infraestructuras y logísticas",
-    "subgroup": "Compra de terrenos",
-    "label": "Polígonos",
-    "url": "",
-    "color": "#e9c46a"
-  },
+  
   {
     "id": "propiedades-privadas",
-    "group": "Infraestructuras y logísticas",
-    "subgroup": "Compra de terrenos",
+    "group": "Infraestructuras",
+    "subgroup": "Predios asociados al proyecto",
     "label": "Propiedades privadas",
-    "url": "",
+    "url": "/geojson/Predios asociados a proyecto.geojson",
     "color": "#e9c46a"
   },
+
+
+  
   {
-    "id": "carreteras-2006",
-    "group": "Infraestructuras y logísticas",
+    "id": "carreteras-2002",
+    "group": "Infraestructuras",
     "subgroup": "Carreteras",
-    "label": "2006",
-    "url": "",
+    "label": "Carretera 2002",
+    "url": "/geojson/Evolución Infraestructura/iv_caminos_2002.geojson",
     "color": "#2a9d8f"
   },
   {
-    "id": "carreteras-2009",
-    "group": "Infraestructuras y logísticas",
+    "id": "carreteras-2006",
+    "group": "Infraestructuras",
     "subgroup": "Carreteras",
-    "label": "2009",
-    "url": "",
+    "label": "Carretera 2006",
+    "url": "/geojson/Evolución Infraestructura/iv_caminos_2006.geojson",
     "color": "#2a9d8f"
   },
   {
     "id": "carreteras-2012",
-    "group": "Infraestructuras y logísticas",
+    "group": "Infraestructuras",
     "subgroup": "Carreteras",
-    "label": "2012",
-    "url": "",
-    "color": "#2a9d8f"
-  },
-  {
-    "id": "carreteras-2014",
-    "group": "Infraestructuras y logísticas",
-    "subgroup": "Carreteras",
-    "label": "2014",
-    "url": "",
+    "label": "Carretera 2012",
+    "url": "/geojson/Evolución Infraestructura/iv_caminos_2012.geojson",
     "color": "#2a9d8f"
   },
   {
     "id": "carreteras-2016",
-    "group": "Infraestructuras y logísticas",
+    "group": "Infraestructuras",
     "subgroup": "Carreteras",
-    "label": "2016",
-    "url": "",
+    "label": "Predios 2016",
+    "url": "/geojson/Evolución Infraestructura/iv_predios_2016.geojson",
     "color": "#2a9d8f"
   },
+  {
+    "id": "carreteras-2025",
+    "group": "Infraestructuras",
+    "subgroup": "Carreteras",
+    "label": "Carretera 2025",
+    "url": "/geojson/Evolución Infraestructura/iv_caminos_2025.geojson",
+    "color": "#2a9d8f"
+  },
+
+
+
   {
     "id": "imp-criminales",
     "group": "Los agresores",
@@ -396,7 +408,7 @@
     "group": "Berta Cáceres y COPINH",
     "subgroup": "Acciones",
     "label": "Toma de El Roble",
-    "url": "/geojson/LOC/LOC_Toma de El Roble.geojson",
+    "url": "/geojson/LOC_Toma de El Roble.geojson",
     "color": "#2a9d8f"
   }
 ]

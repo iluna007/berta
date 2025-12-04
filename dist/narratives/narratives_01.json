@@ -12,7 +12,7 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": ["crb-caserios-la-vega", "aldea-rio-blanco-limite"],
+      "geojsonOnEnter": [],
       "geojsonOnExit": ["crb-caserios-la-vega", "aldea-rio-blanco-limite"],
 
       "sideMedia": false,

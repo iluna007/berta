@@ -13,12 +13,10 @@
       "dimLayers": [],
 
       "geojsonOnEnter": [
-        "rio-gualcarque",
-        "departamentos-honduras-ine"
+        
       ],
       "geojsonOnExit": [
-        "osm-waterways",
-        "aldea-rio-blanco-limite"
+        
       ],
 
       "sideMedia": false,
