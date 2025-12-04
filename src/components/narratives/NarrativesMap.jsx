@@ -5,7 +5,7 @@ import mapboxgl from "mapbox-gl";
 import "/node_modules/mapbox-gl/dist/mapbox-gl.css";
 
 mapboxgl.accessToken =
-  "pk.eyJ1IjoiaWtlcmx1bmEiLCJhIjoiY203NjMwZHptMHAzaDJrcXlrbnNuMHJlZiJ9.hkoRlM6gQ-BflcGjpI40GA";
+  "pk.eyJ1IjoicmVwcmVzZW50YXJlIiwiYSI6ImNtaHdycWxxbjAycjYyanEzaTN1emtjbmUifQ.q26LsAXIbvhQiWiKhGt0Wg";
 
 export default function NarrativesMap({ activeChapterId, chapters }) {
   const mapContainer = useRef(null);
@@ -33,18 +33,29 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/ikerluna/cmicitjth00b701s4aarcc81h",
+      style: "mapbox://styles/representare/cmiruwsd6004k01s4av98fe2i",
       center: [-86.5, 14.8],
       zoom: 6,
+      pitch: 60,        // Necesario para ver el relieve
+      bearing: 20,
     });
 
     map.current.addControl(new mapboxgl.NavigationControl());
 
-    // Eliminar terreno (arreglar error "Couldn't find terrain source mapbox-dem")
-    map.current.on("style.load", () => {
-      if (map.current.getTerrain()) {
-        map.current.setTerrain(null);
-      }
+    // Activar terreno 3D cuando el mapa cargue
+    map.current.on("load", () => {
+      // Fuente DEM (obligatoria)
+      map.current.addSource("mapbox-dem", {
+        type: "raster-dem",
+        url: "mapbox://mapbox.mapbox-terrain-dem-v1",
+        tileSize: 512,
+        maxzoom: 14,
+      });
+
+      // Habilitar el modelo de elevación
+      map.current.setTerrain({ source: "mapbox-dem", exaggeration: 1.4 });
+
+      console.log("🌄 Terreno 3D activado");
     });
   }, []);
 
@@ -103,7 +114,7 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
         };
       }
 
-      // Insertar siempre arriba del estilo → soluciona capas negras
+      // Insertar siempre arriba del estilo → evita “capas negras”
       const topLayer =
         map.current.getStyle().layers[
           map.current.getStyle().layers.length - 1
@@ -135,7 +146,7 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
     map.current.flyTo({
       center,
       zoom,
-      pitch,
+      pitch: pitch ?? 60,   // asegura pitch adecuado para relieve
       bearing,
       duration: 3500,
       speed: 0.5,
