@@ -11,25 +11,36 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
   const mapContainer = useRef(null);
   const map = useRef(null);
 
-  // Guardamos las capas activas en memoria
+  // Cache de capas activas
   const activeLayers = useRef({});
 
-  // ----------------------------------------------------------
-  // 1) Inicialización del mapa
-  // ----------------------------------------------------------
+  // Cargar definición de capas (geojsonLayers2.json)
+  const layersRef = useRef(null);
+
+  useEffect(() => {
+    fetch("/data/geojsonLayers2.json")
+      .then((res) => res.json())
+      .then((json) => {
+        layersRef.current = json;
+        console.log("📌 geojsonLayers2.json cargado");
+      })
+      .catch((err) => console.error("Error cargando geojsonLayers2.json", err));
+  }, []);
+
+  // Inicialización del mapa
   useEffect(() => {
     if (map.current) return;
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/ikerluna/cmf6r44f700wq01pl39994oti",
+      style: "mapbox://styles/ikerluna/cmicitjth00b701s4aarcc81h",
       center: [-86.5, 14.8],
       zoom: 6,
     });
 
     map.current.addControl(new mapboxgl.NavigationControl());
 
-    // FIX del DEM
+    // Eliminar terreno (arreglar error "Couldn't find terrain source mapbox-dem")
     map.current.on("style.load", () => {
       if (map.current.getTerrain()) {
         map.current.setTerrain(null);
@@ -37,82 +48,88 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
     });
   }, []);
 
-  // ----------------------------------------------------------
-  // 2) Cargar GeoJSONs (solo si no existen) y mostrarlos
-  // ----------------------------------------------------------
-  const loadGeoJSON = async (filename) => {
-    const sourceId = `src-${filename}`;
-    const layerId = `layer-${filename}`;
+  // Cargar una capa desde layersRef (por ID)
+  const loadGeoLayer = async (layerId) => {
+    if (!layersRef.current) return;
 
-    // Si ya existe, solo lo mostramos
-    if (map.current.getLayer(layerId)) {
-      map.current.setLayoutProperty(layerId, "visibility", "visible");
+    const def = layersRef.current.find((l) => l.id === layerId);
+
+    if (!def) {
+      console.warn("⚠ No hay entrada en geojsonLayers2.json para:", layerId);
+      return;
+    }
+
+    const url = def.url;
+    const color = def.color ?? "#ff00ff";
+
+    const sourceId = `src-${layerId}`;
+    const mapLayerId = `layer-${layerId}`;
+
+    if (map.current.getLayer(mapLayerId)) {
+      map.current.setLayoutProperty(mapLayerId, "visibility", "visible");
       return;
     }
 
     try {
-      const res = await fetch(`/geojson/${filename}`);
+      const res = await fetch(url);
       const data = await res.json();
 
-      // Crear la fuente
       map.current.addSource(sourceId, { type: "geojson", data });
 
-      // Detectar si es punto, línea o polígono
-      const geometryType = data.features[0].geometry.type;
+      const geometry = data.features?.[0]?.geometry?.type;
 
       let layerConfig = {
-        id: layerId,
+        id: mapLayerId,
         source: sourceId,
       };
 
-      if (geometryType.includes("Polygon")) {
+      if (["Polygon", "MultiPolygon"].includes(geometry)) {
         layerConfig.type = "fill";
         layerConfig.paint = {
-          "fill-color": "#ff6600",
-          "fill-opacity": 0.5,
+          "fill-color": color,
+          "fill-opacity": 0.6,
         };
-      } else if (geometryType.includes("Line")) {
+      } else if (["LineString", "MultiLineString"].includes(geometry)) {
         layerConfig.type = "line";
         layerConfig.paint = {
-          "line-color": "#00b7ff",
+          "line-color": color,
           "line-width": 3,
         };
       } else {
         layerConfig.type = "circle";
         layerConfig.paint = {
           "circle-radius": 6,
-          "circle-color": "#ff33aa",
+          "circle-color": color,
         };
       }
 
-      map.current.addLayer(layerConfig);
-      activeLayers.current[layerId] = true;
+      // Insertar siempre arriba del estilo → soluciona capas negras
+      const topLayer =
+        map.current.getStyle().layers[
+          map.current.getStyle().layers.length - 1
+        ]?.id;
+
+      map.current.addLayer(layerConfig, topLayer);
+      activeLayers.current[mapLayerId] = true;
     } catch (err) {
-      console.error(`Error cargando GeoJSON ${filename}:`, err);
+      console.error("Error cargando capa:", layerId, err);
     }
   };
 
-  // ----------------------------------------------------------
-  // 3) Ocultar GeoJSONs
-  // ----------------------------------------------------------
-  const hideGeoJSON = (filename) => {
-    const layerId = `layer-${filename}`;
-
-    if (map.current.getLayer(layerId)) {
-      map.current.setLayoutProperty(layerId, "visibility", "none");
+  const hideGeoLayer = (layerId) => {
+    const mapLayerId = `layer-${layerId}`;
+    if (map.current.getLayer(mapLayerId)) {
+      map.current.setLayoutProperty(mapLayerId, "visibility", "none");
     }
   };
 
-  // ----------------------------------------------------------
-  // 4) Cuando cambia el capítulo
-  // ----------------------------------------------------------
+  // Cuando cambia el capítulo
   useEffect(() => {
     if (!map.current || !activeChapterId || !chapters?.length) return;
 
     const chapter = chapters.find((c) => c.id === activeChapterId);
     if (!chapter) return;
 
-    // --- Mover cámara ---
     const { center, zoom, pitch, bearing } = chapter.location;
 
     map.current.flyTo({
@@ -120,29 +137,20 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
       zoom,
       pitch,
       bearing,
-      
-      duration: 3500,     // ← duración del vuelo (ms)
-      speed: 0.5,         // ← más lento, más flotante
-      curve: 1.8,         // ← suavidad de la curva del vuelo
-      easing: (t) => t,   // ← easing lineal suave
-
-      essential: true
+      duration: 3500,
+      speed: 0.5,
+      curve: 1.8,
+      easing: (t) => t,
+      essential: true,
     });
 
-    // --- Procesar GeoJSONs (enter/exit) ---
-
-    // Primero ocultar lo que salga
+    // Ocultar lo que sale
     chapters.forEach((c) => {
-      if (c.geojsonOnExit) {
-        c.geojsonOnExit.forEach((file) => hideGeoJSON(file));
-      }
+      c.geojsonOnExit?.forEach((id) => hideGeoLayer(id));
     });
 
-    // Luego cargar lo que entra
-    if (chapter.geojsonOnEnter) {
-      chapter.geojsonOnEnter.forEach((file) => loadGeoJSON(file));
-    }
-
+    // Cargar lo que entra
+    chapter.geojsonOnEnter?.forEach((id) => loadGeoLayer(id));
   }, [activeChapterId, chapters]);
 
   return (

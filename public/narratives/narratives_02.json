@@ -12,14 +12,8 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
-        "Poligonos_Predios_La Vega.geojson",
-        "Poligonos_Predios_Rio Blanco.geojson"
-      ],
-      "geojsonOnExit": [
-        "Poligonos_Predios_La Vega.geojson",
-        "Poligonos_Predios_Rio Blanco.geojson"
-      ],
+      "geojsonOnEnter": ["crb-caserios-la-vega", "aldea-rio-blanco-limite"],
+      "geojsonOnExit": ["crb-caserios-la-vega", "aldea-rio-blanco-limite"],
 
       "sideMedia": false,
 
@@ -36,32 +30,23 @@
       "shapes": [],
       "layers": [],
 
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
+      "panel": { "width": "420px", "position": "right" }
     },
 
     {
       "id": "NR-1",
       "title": "Arquitectura financiera y opacidad fiduciaria",
-      "description": "El esquema combinó tres piezas principales: un holding familiar (Inversiones La Jacaranda), propietario de Desarrollos Energéticos, S.A. (DESA), empresa titular del proyecto Agua Zarca; dos versiones de PEMSA (una panameña, con cuentas en Panamá y Honduras); y capital de Evergreen International, radicada en Islas Vírgenes Británicas. A partir de este capital privado, DESA consiguió sumar a dos bancos internacionales para complementar la inversión: el Banco Centroamericano de Integración Económica (BCIE) y el Banco de Desarrollo Empresarial de los Países Bajos (FMO). Esta arquitectura permitió mover dinero entre cuentas en dólares y lempiras y cruzar fronteras bancarias. Sobre el papel, existía un control fiduciario operado por un agente administrativo de los bancos, un agente de seguridad —Deutsche Bank— y otros supervisores externos. En la práctica, esa cadena de intermediarios difuminó al beneficiario final de cada pago, mientras ofrecía una coartada de cumplimiento.",
+      "description": "El esquema combinó tres piezas principales: un holding familiar (Inversiones La Jacaranda), propietario de DESA; dos versiones de PEMSA (una panameña, con cuentas en Panamá y Honduras); y capital de Evergreen International, radicada en Islas Vírgenes Británicas. A partir de este capital privado, DESA consiguió sumar al BCIE y al FMO. Esta arquitectura permitió mover dinero entre múltiples jurisdicciones. Si bien existían controles fiduciarios formales, en la práctica estos difuminaron el beneficiario final de los pagos y ofrecieron una coartada de cumplimiento.",
       "location": { "center": [-88.15, 14.32], "zoom": 11, "pitch": 25, "bearing": -20 },
 
       "cameraMode": "tilted",
       "transitionDuration": 2500,
 
-      "highlightLayers": ["chapter-cap-2-Antenas Telefonicas.geojson-layer"],
+      "highlightLayers": ["carreteras-2012"],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
-        "Poligonos_Predios_Sisimetera.geojson",
-        "Antenas Telefonicas.geojson"
-      ],
-      "geojsonOnExit": [
-        "Poligonos_Predios_Sisimetera.geojson",
-        "Antenas Telefonicas.geojson"
-      ],
+      "geojsonOnEnter": ["crb-caserios-san-bartolo", "carreteras-2012"],
+      "geojsonOnExit": ["crb-caserios-san-bartolo", "carreteras-2012"],
 
       "sideMedia": false,
 
@@ -78,22 +63,14 @@
       "shapes": [],
       "layers": [],
 
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
+      "panel": { "width": "420px", "position": "right" }
     },
 
     {
       "id": "NR-2",
       "title": "El inicio del espiral financiero",
-      "description": "Sinohydro Corporation, empresa china, fue la contratista original del proyecto Agua Zarca. Sin embargo, se retiró en 2013 tras episodios de violencia y homicidios contra la población lenca. A partir de ese momento, DESA enfrentó una crisis financiera sin precedentes: la salida de Sinohydro dejó a DESA atrapada entre cronogramas incumplibles e intereses crecientes sobre el financiamiento del BCIE y el FMO. En ese contexto, el activismo del COPINH y de Berta Cáceres fue leído por DESA como causante de esa “pérdida” empresarial directa. Según documentos presentados durante el juicio de Roberto David Castillo, Daniel Atala afirmó que las actividades de Berta habían causado pérdidas superiores a 3.5 millones de dólares a DESA. La respuesta de DESA no fue corregir el rumbo del proyecto ni abrir un diálogo genuino con las comunidades afectadas. Optó por blindar el flujo de fondos mediante un esquema fraudulento basado en facturas falsas y desvíos de recursos, y por asumir la violencia como parte de las estrategias de gestión del riesgo empresarial.",
-      "location": {
-        "center": [-86.25, 14.80],
-        "zoom": 6.2,
-        "pitch": 0,
-        "bearing": 0
-      },
+      "description": "Sinohydro Corporation fue la contratista original del proyecto Agua Zarca, pero se retiró en 2013 tras episodios de violencia contra la población lenca. DESA quedó atrapada entre intereses crecientes del BCIE y FMO, y cronogramas incumplibles. Desde entonces, el activismo del COPINH fue interpretado como una causa directa de pérdidas financieras. Documentos del juicio de David Castillo muestran que Daniel Atala afirmaba pérdidas superiores a 3.5 millones de dólares. La respuesta de DESA fue blindar flujos mediante facturas falsas y asumir la violencia como parte de la gestión empresarial del riesgo.",
+      "location": { "center": [-86.25, 14.80], "zoom": 6.2, "pitch": 0, "bearing": 0 },
 
       "cameraMode": "flat",
       "transitionDuration": 2000,
@@ -121,31 +98,23 @@
       "shapes": [],
       "layers": [],
 
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
+      "panel": { "width": "420px", "position": "right" }
     },
 
     {
       "id": "NR-3",
       "title": "Diseño del fraude: quién paga y quién ejecuta",
-      "description": "La operación fraudulenta clave se articuló a través de las “Construction Requisitions”, un instrumento que supuestamente blindaba la construcción de Agua Zarca frente a la corrupción y al incumplimiento de obligaciones con el pueblo lenca. Sobre el papel, Constructora COPRECA, S.A. (COPRECA) y la supervisora de obra Carbón, S.A. (CARBÓN) justificaban los desembolsos. En la realidad, el dinero terminó en terceros sin rol real en la obra, principalmente Concretos del Caribe, S.A. de C.V. (CONCASA) —controlada por Roberto David Castillo, también director ejecutivo de DESA— y Desarrollos Ambientales, S.A., vinculada a Javier Prats. Un desliz documental en la Requisition #4 lo evidencia: por error se mantuvo la instrucción de pago a Monkey Forest Consulting (Monkey Forest) —encargada de auditar y supervisar el plan social y ambiental de Agua Zarca para evitar conflictos con poblaciones lencas— en lugar de sustituirla por COPRECA. Sin embargo, el flujo se reacomodó para que el dinero llegara a CONCASA, una redirección de capital que difícilmente pudo haberse ejecutado sin el aval de personal de los bancos responsables de asegurar el correcto destino de los pagos. El patrón se repite en distintas requisiciones: un pago inicial se realiza a COPRECA para “habilitar” su factura y, después, los documentos registran desvíos sistemáticos en los que aparecen pagos a COPRECA con destinos bancarios en CONCASA. Así se confunde entre quién recibe, quién ejecuta y quién responde.",
+      "description": "Las “Construction Requisitions” operaban como supuesto blindaje anticorrupción. En la práctica, los fondos terminaban en empresas sin rol real en la obra, principalmente CONCASA y Desarrollos Ambientales. Un error en la Requisition #4 reveló instrucciones de pago a Monkey Forest que debían ser sustituidas por COPRECA. Los desvíos muestran que el flujo real difícilmente pudo ser ejecutado sin aval de personal bancario encargado de asegurar la legitimidad de los pagos.",
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
+
       "cameraMode": "dramatic",
       "transitionDuration": 2000,
 
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
-        "Impronta_Bertha Isabel Caceres Flores.geojson",
-        "Impronta_Oscar Aroldo.geojson"
-      ],
-      "geojsonOnExit": [
-        "Impronta_Bertha Isabel Caceres Flores.geojson",
-        "Impronta_Oscar Aroldo.geojson"
-      ],
+      "geojsonOnEnter": ["imp-jbm", "imp-oatv"],
+      "geojsonOnExit": ["imp-jbm", "imp-oatv"],
 
       "sideMedia": false,
 
@@ -162,16 +131,13 @@
       "shapes": [],
       "layers": [],
 
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
+      "panel": { "width": "420px", "position": "right" }
     },
 
     {
       "id": "NR-4",
       "title": "La banca internacional como canal y coartada",
-      "description": "Los acuerdos firmados por DESA con el BCIE y el FMO exigían que el crédito se utilizara exclusivamente en construcción y condicionaban los desembolsos a certificaciones técnicas y socioambientales. Aun así, parte del dinero se usó para comprar tierras a particulares, pagar fuerzas de seguridad y movilizar efectivo asociado a la logística del crimen contra Berta Cáceres. La ruta reconstruida muestra pagos directos de los bancos a CONCASA —sin rol declarado en los contratos de Agua Zarca—, transferencias a PEMSA Panamá, fondeo de PEMSA Panamá en Honduras y emisión de cheques en efectivo cobrados fuera de horario bancario. La ausencia de alertas antilavado ante la sustitución de beneficiarios  y  las transferencias a cuentas offshore apunta a fallas graves de debida diligencia y a posibles complicidades internas. Los bancos funcionaron al mismo tiempo como canal de liquidez y como coartada de formalidad.",
+      "description": "Los créditos del BCIE y del FMO exigían usos exclusivos para construcción y certificaciones técnicas y socioambientales. Sin embargo, parte del dinero financió compra de tierras, fuerzas de seguridad y logística vinculada al crimen contra Berta Cáceres. La reconstrucción de flujos muestra pagos directos a CONCASA, transferencias a PEMSA Panamá y cheques en efectivo fuera de horario. La ausencia de alertas antilavado y la sustitución de beneficiarios indican fallas graves de debida diligencia.",
       "location": { "center": [-88.04, 15.03], "zoom": 12, "pitch": 60, "bearing": -40 },
 
       "cameraMode": "rotate",
@@ -180,16 +146,8 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
-        "Poligonos_Predios_Cuchilla El Naranjal.geojson",
-        "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson",
-        "Rio Gualcarque.geojson"
-      ],
-      "geojsonOnExit": [
-        "Poligonos_Predios_Cuchilla El Naranjal.geojson",
-        "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson",
-        "Rio Gualcarque.geojson"
-      ],
+      "geojsonOnEnter": ["poligonos", "imp-ejercito", "rio-gualcarque"],
+      "geojsonOnExit": ["poligonos", "imp-ejercito", "rio-gualcarque"],
 
       "sideMedia": false,
 
@@ -209,16 +167,13 @@
       "shapes": [],
       "layers": [],
 
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
+      "panel": { "width": "420px", "position": "right" }
     },
 
     {
       "id": "NR-5",
       "title": "Fraude",
-      "description": "La red empresarial montó instrumentos fiduciarios, utilizó una banca de desarrollo y recurrió a capital offshore para ocultar a los responsables, mover recursos y financiar despojo y violencia. La forma prevaleció sobre la sustancia: procedimientos “correctos” que encubrieron fines inaceptables. Lo que debía financiar desarrollo sostenible y protección de la vida terminó financiando despojo, represión y muerte. Faltan piezas —como los estados de cuenta completos de PEMSA Panamá y de COPRECA, cuya entrega fue solicitada por el GIEI sin obtener respuesta— para cerrar cada eslabón con documentos primarios. Aun así, los patrones persisten: desvíos repetidos, errores que delatan intención y coherencia entre estados, requisiciones y testimonios. Con ese andamiaje financiero establecido, la siguiente narrativa, «Compra de terrenos, infraestructuras y logística de despojo», explora cómo estos flujos se tradujeron en compras de tierra y en el despliegue de infraestructuras de control territorial.",
+      "description": "La red empresarial utilizó estructuras fiduciarias, banca de desarrollo y capital offshore para ocultar beneficiarios reales, mover recursos y financiar violencia. Aunque faltan documentos primarios —como estados de cuenta de PEMSA Panamá y COPRECA—, los patrones son consistentes: desvíos repetidos, sustitución de beneficiarios y coherencia entre requisiciones y testimonios. La siguiente narrativa examina cómo estos flujos se tradujeron en compras de tierra y despliegue de infraestructuras de control territorial.",
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
 
       "cameraMode": "dramatic",
@@ -227,14 +182,8 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
-        "Impronta_Bertha Isabel Caceres Flores.geojson",
-        "Impronta_Oscar Aroldo.geojson"
-      ],
-      "geojsonOnExit": [
-        "Impronta_Bertha Isabel Caceres Flores.geojson",
-        "Impronta_Oscar Aroldo.geojson"
-      ],
+      "geojsonOnEnter": ["imp-copinh", "imp-desa"],
+      "geojsonOnExit": ["imp-copinh", "imp-desa"],
 
       "sideMedia": false,
 
@@ -251,12 +200,7 @@
       "shapes": [],
       "layers": [],
 
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
+      "panel": { "width": "420px", "position": "right" }
     }
-
-   
   ]
 }

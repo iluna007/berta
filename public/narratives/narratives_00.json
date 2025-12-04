@@ -13,12 +13,12 @@
       "dimLayers": [],
 
       "geojsonOnEnter": [
-        "Poligonos_Predios_La Vega.geojson",
-        "Poligonos_Predios_Rio Blanco.geojson"
+        "rio-gualcarque",
+        "departamentos-honduras-ine"
       ],
       "geojsonOnExit": [
-        "Poligonos_Predios_La Vega.geojson",
-        "Poligonos_Predios_Rio Blanco.geojson"
+        "osm-waterways",
+        "aldea-rio-blanco-limite"
       ],
 
       "sideMedia": false,
