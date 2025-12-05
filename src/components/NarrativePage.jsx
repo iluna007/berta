@@ -2,7 +2,7 @@
 
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { hook_restore } from "../actions/hook_restore";
 
 import NarrativesScroller from "./narratives/NarrativesScroller";
@@ -15,6 +15,9 @@ import NarrativeTemplateCover from "./narratives/NarrativeTemplateCover";
 
 const SCROLL_THRESHOLD = 200;
 
+// ✅ ORDEN CANÓNICO DE TUS NARRATIVAS (según tu biblioteca izquierda)
+const NARRATIVE_ORDER = ["00", "01", "02", "03", "04", "05", "06"];
+
 export default function NarrativePage() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -24,8 +27,10 @@ export default function NarrativePage() {
   const [index, setIndex] = useState(0);
   const [activeChapterId, setActiveChapterId] = useState(null);
 
-  // 👇 NUEVO
   const [showCover, setShowCover] = useState(true);
+
+  const narrativePanelRef = useRef(null);
+  const isPointerInsidePanel = useRef(false);
 
   // ⛔ Bloquear scroll global cuando el modal está abierto
   useEffect(() => {
@@ -39,7 +44,7 @@ export default function NarrativePage() {
     };
   }, [showCover]);
 
-  // Cargar JSON dinámico
+  // Cargar JSON dinámico de la narrativa activa
   useEffect(() => {
     fetch(`/narratives/narratives_${activeNarrative}.json`)
       .then((res) => res.json())
@@ -52,13 +57,15 @@ export default function NarrativePage() {
       });
   }, [activeNarrative]);
 
-  // Scroll narrativo
+  // ✅ Scroll narrativo solo dentro del panel
   useEffect(() => {
     if (!chapters.length || showCover) return;
 
     let accumulatedDelta = 0;
 
     const handler = (e) => {
+      if (!isPointerInsidePanel.current) return;
+
       e.preventDefault();
       accumulatedDelta += e.deltaY;
 
@@ -67,20 +74,16 @@ export default function NarrativePage() {
       const direction = accumulatedDelta > 0 ? 1 : -1;
       accumulatedDelta = 0;
 
-      setIndex((i) =>
-        direction > 0
-          ? Math.min(i + 1, chapters.length - 1)
-          : Math.max(i - 1, 0)
-      );
+      moveIndex(direction);
     };
 
     window.addEventListener("wheel", handler, { passive: false });
     return () => window.removeEventListener("wheel", handler);
-  }, [chapters.length, showCover]);
+  }, [chapters.length, showCover, activeNarrative]);
 
   useEffect(() => {
     if (chapters.length > 0) {
-      setActiveChapterId(chapters[index].id);
+      setActiveChapterId(chapters[index]?.id);
     }
   }, [index, chapters]);
 
@@ -89,6 +92,38 @@ export default function NarrativePage() {
   const goBack = async () => {
     await dispatch(hook_restore());
     navigate("/");
+  };
+
+  // ✅ FUNCIÓN UNIFICADA: scroll + botones + salto automático de narrativa
+  const moveIndex = (direction) => {
+    setIndex((prev) => {
+      const next = prev + direction;
+
+      // 🔁 CASO 1: salir por abajo → pasar a la siguiente narrativa
+      if (next >= chapters.length) {
+        const currentIdx = NARRATIVE_ORDER.indexOf(activeNarrative);
+        const nextNarrative = NARRATIVE_ORDER[currentIdx + 1];
+
+        if (nextNarrative) {
+          setActiveNarrative(nextNarrative);
+        }
+        return prev; // se reseteará a 0 cuando cargue la nueva narrativa
+      }
+
+      // 🔁 CASO 2: salir por arriba → pasar a la narrativa anterior
+      if (next < 0) {
+        const currentIdx = NARRATIVE_ORDER.indexOf(activeNarrative);
+        const prevNarrative = NARRATIVE_ORDER[currentIdx - 1];
+
+        if (prevNarrative) {
+          setActiveNarrative(prevNarrative);
+        }
+        return prev; // se reseteará cuando cargue
+      }
+
+      // ✅ Caso normal: cambiar solo de capítulo
+      return next;
+    });
   };
 
   return (
@@ -106,7 +141,7 @@ export default function NarrativePage() {
         <NarrativeTemplateCover onClose={() => setShowCover(false)} />
       )}
 
-      {/* Barra lateral */}
+      {/* Barra lateral de biblioteca */}
       <NarrativesNavigator
         onSelect={(id) => setActiveNarrative(id)}
         activeId={activeNarrative}
@@ -123,7 +158,10 @@ export default function NarrativePage() {
           zIndex: 1,
         }}
       >
-        <NarrativesMap activeChapterId={activeChapterId} chapters={chapters} />
+        <NarrativesMap
+          activeChapterId={activeChapterId}
+          chapters={chapters}
+        />
       </div>
 
       {/* Panel lateral de media */}
@@ -131,7 +169,10 @@ export default function NarrativePage() {
 
       {/* Panel narrativo */}
       <div
-        className="left-narrative-panel"
+        ref={narrativePanelRef}
+        className="left-narrative-panel narrative-scroll-zone"
+        onMouseEnter={() => (isPointerInsidePanel.current = true)}
+        onMouseLeave={() => (isPointerInsidePanel.current = false)}
         style={{
           position: "absolute",
           top: "40px",
@@ -142,6 +183,14 @@ export default function NarrativePage() {
           overflow: "hidden",
         }}
       >
+        {/* Flecha arriba */}
+        <div
+          className="narrative-arrow arrow-up"
+          onClick={() => moveIndex(-1)}
+        >
+          ↑
+        </div>
+
         <NarrativesScroller chapters={chapters} index={index} />
 
         {!activeChapter?.sideMedia && (
@@ -149,6 +198,16 @@ export default function NarrativePage() {
             <NarrativeMedia chapter={activeChapter} />
           </div>
         )}
+
+        {/* Flecha abajo */}
+        <div
+          className="narrative-arrow arrow-down"
+          onClick={() => moveIndex(1)}
+        >
+          ↓
+        </div>
+
+        <div className="scroll-indicator">Scroll para avanzar</div>
       </div>
     </div>
   );
