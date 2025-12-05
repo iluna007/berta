@@ -33,7 +33,7 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/representare/cmirttsqx001001s65pu12zvg",
+      style: "mapbox://styles/representare/cmiruwsd6004k01s4av98fe2i",
       center: [-86.5, 14.8],
       zoom: 6,
       pitch: 60,        // Necesario para ver el relieve
