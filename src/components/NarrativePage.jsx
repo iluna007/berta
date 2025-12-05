@@ -207,7 +207,6 @@ export default function NarrativePage() {
           ↓
         </div>
 
-        <div className="scroll-indicator">Scroll para avanzar</div>
       </div>
     </div>
   );

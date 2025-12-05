@@ -8,25 +8,7 @@
   outline-offset: -1px;
 }
 
-/* Indicador */
-.scroll-indicator {
-  position: absolute;
-  bottom: 42px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 10px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #eb443e;
-  opacity: 0;
-  transition: opacity 0.25s ease;
-  pointer-events: none;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 4px 10px;
-  border-radius: 12px;
-  backdrop-filter: blur(6px);
-  border: 1px dashed rgba(235, 68, 62, 0.5);
-}
+
 
 .narrative-scroll-zone:hover .scroll-indicator {
   opacity: 1;
