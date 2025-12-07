@@ -1,27 +1,107 @@
 {
   "chapters": [
+    {
+      "id": "NR-0",
+      "title": "La materialización de la red financiera",
+      "description":["El andamiaje financiero descrito en «La red financiera» se materializó en el territorio lenca a través de compras de tierras, donde no solo se emplazaría la presa, sino también una serie de estructuras de vigilancia. Estas compras se realizaron en contextos de presión y a través de gastos destinados a sostener el control territorial constante: pagos a policías, operadores locales y contramanifestaciones."
+      ],
+
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 45,
+        "bearing": -30
+      },
+
+      "cameraMode": "flat",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine"],
+
+      "layerStyles": {
+        "aldea-rio-blanco-limite": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.3
+        },
+        "censo-Rio-Blanco-2013": {
+          "pointColor": "#eb443e",
+          "pointRadius": 3
+         
+        },
+        "departamentos-honduras-ine": {
+          "fill": false,
+          "lineColor": "#000000",
+          "lineWidth": 2
+          
+        }
+        
+      },
+
+      "sideMedia": false,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/intro1.jpeg",
+          "position": "inside",
+          "opacity": 1
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": { "width": "420px", "position": "right" }
+    },
 
     {
       "id": "NR-1",
-      "title": "Las infraestructuras para el despojo",
-      "description": "xxx",
+      "title": "Despojo a través de la compra de territorio lenca",
+      "description":["Los fondos de la banca internacional de desarrollo, condicionados exclusivamente para obras de construcción de energía renovable, fueron redirigidos para adquirir terrenos privados dentro de territorio lenca sin proceso de consulta libre, previa e informada. En los acuerdos firmados, DESA debía comprarlos con su propia bolsa de capital.",
+      "En ese desvío, el rol notarial fue pieza clave: mediante escrituras, endosos y certificaciones, dio apariencia de legalidad a traspasos que contradecían las restricciones del crédito y las obligaciones del Estado conforme a estándares internacionales. Esa cadena notarial evidencia cómo los poderes del Estado hondureño operaron de facto como engranajes del despojo. A la fecha, las propiedades en cuestión no han sido restituidas a las comunidades lencas."
+  ],
 
-      "location": { "center": [-88.15, 14.32], "zoom": 11, "pitch": 25, "bearing": -20 },
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 45,
+        "bearing": -30
+      },
 
       "cameraMode": "tilted",
       "transitionDuration": 2500,
 
-      "highlightLayers": ["chapter-cap-2-Antenas Telefonicas.geojson-layer"],
+      "highlightLayers": ["carreteras-2012"],
       "dimLayers": [],
 
-      "geojsonOn": [
-        "Poligonos_Predios_Sisimetera.geojson",
-        "Antenas Telefonicas.geojson"
-      ],
+      "geojsonOn": ["aldea-rio-blanco-limite","departamentos-honduras-ine","rio-gualcarque","osm-waterways"],
 
       "layerStyles": {
-        "Poligonos_Predios_Sisimetera.geojson": {},
-        "Antenas Telefonicas.geojson": {}
+        "aldea-rio-blanco-limite": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.3
+        },
+       
+        "departamentos-honduras-ine": {
+          "fill": false,
+          "lineColor": "#000000",
+          "lineWidth": 2
+        },
+        "rio-gualcarque": {
+          "lineColor": "#0077be",
+          "lineWidth": 4
+        },
+        "osm-waterways": {
+          "lineColor": "#5EA4BF",
+          "lineWidth": 2
+        }
+
       },
 
       "sideMedia": false,
@@ -44,10 +124,17 @@
 
     {
       "id": "NR-2",
-      "title": "El rol notarial",
-      "description": "xxx",
+      "title": "Rediseños de la presa",
+      "description":["Tras la salida de Sinohydro, DESA modificó el proyecto original, creó «Agua Zarca II» y trasladó parte de las obras a otra ubicación, del otro lado del río. En el discurso público se afirmó que el cambio buscaba evitar conflictos con el COPINH, pero existen indicios de que la decisión respondió a la incapacidad financiera de completar el proyecto original.",
+      "Llama la atención que, a pesar del rediseño sustancial de Agua Zarca II, se mantuvieran inalteradas variables clave como la cantidad de megavatios a producir y la superficie de inundación. El proyecto cambió de forma, pero conservó su escala de impacto."
+      ],
 
-      "location": { "center": [-86.25, 14.80], "zoom": 6.2, "pitch": 0, "bearing": 0 },
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 25,
+        "bearing": 60
+      },
 
       "cameraMode": "flat",
       "transitionDuration": 2000,
@@ -55,9 +142,12 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": [],
+      "geojsonOn": ["aldea-rio-blanco-limite", "osm-waterways" ],
 
-      "layerStyles": {},
+      "layerStyles": {
+        "aldea-rio-blanco-limite": {},
+        "osm-waterways": {}
+      },
 
       "sideMedia": true,
 
@@ -66,7 +156,7 @@
           "type": "image",
           "src": "/narratives/media/Gephisample2.jpeg",
           "caption": "Visualización generada con Gephi",
-          "credit": "Iker Luna / Archivo Experimental",
+          "credit": "re/presentare / Archivo Experimental",
           "position": "side",
           "opacity": 1
         }
@@ -81,10 +171,17 @@
 
     {
       "id": "NR-3",
-      "title": "Rediseños de la presa",
-      "description": "xxx",
+      "title": "Obras como control territorial",
+      "description":["Las infraestructuras construidas alrededor del proyecto —caminos, puentes, instalaciones de obra— no sólo sirvieron para transportar materiales. También desempeñaron un papel de corredores logísticos de control territorial, facilitando la entrada de fuerzas de seguridad, el desplazamiento de comunidades y su vigilancia.",
+      "Al superponer en el mapa las fechas de compra de terrenos, la construcción de infraestructuras y los episodios de violencia, se observa un mismo patrón: a medida que se consolidaba la propiedad empresarial sobre el Gualcarque, aumentaban las amenazas y las agresiones contra el COPINH y las comunidades lencas."
+      ],
 
-      "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
+      "location": {
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
+      },
 
       "cameraMode": "dramatic",
       "transitionDuration": 2000,
@@ -92,23 +189,26 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": [
-        "Impronta_Bertha Isabel Caceres Flores.geojson",
-        "Impronta_Oscar Aroldo.geojson"
-      ],
+      "geojsonOn": ["limite-territorio-nacional"],
 
       "layerStyles": {
-        "Impronta_Bertha Isabel Caceres Flores.geojson": {},
-        "Impronta_Oscar Aroldo.geojson": {}
+        "limite-territorio-nacional": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.5 
+ 
+        }
       },
 
-      "sideMedia": false,
+      "sideMedia": true,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/violencia_redes.jpeg",
-          "position": "inside",
+          "src": "/narratives/media/Gephisample2.jpeg",
+          "caption": "Visualización generada con Gephi",
+          "credit": "re/presentare / Archivo Experimental",
+          "position": "side",
           "opacity": 1
         }
       ],
@@ -122,56 +222,17 @@
 
     {
       "id": "NR-4",
-      "title": "Obras como control territorial",
-      "description": "xxx",
-
-      "location": { "center": [-88.04, 15.03], "zoom": 12, "pitch": 60, "bearing": -40 },
-
-      "cameraMode": "rotate",
-      "transitionDuration": 3500,
-
-      "highlightLayers": [],
-      "dimLayers": [],
-
-      "geojsonOn": [
-        "Poligonos_Predios_Cuchilla El Naranjal.geojson",
-        "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson",
-        "Rio Gualcarque.geojson"
+      "title": "Infraestructuras de despojo",
+      "description":["Los cambios legislativos, las arquitecturas financieras y las obras físicas se ensamblaron así en una infraestructura de despojo que tradujo la sacralidad del territorio en un proyecto de inversión y la resistencia comunitaria en un obstáculo a neutralizar.",
+      "Ya con las obras en marcha, actores empresariales comenzaron a instalar y refinar logísticas de seguridad y agresión. La siguiente narrativa, «Los agresores», detalla cómo se articularon estos dispositivos en el territorio."
       ],
 
-      "layerStyles": {
-        "Poligonos_Predios_Cuchilla El Naranjal.geojson": {},
-        "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson": {},
-        "Rio Gualcarque.geojson": {}
+     "location": {
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
       },
-
-      "sideMedia": false,
-
-      "media": [
-        {
-          "type": "video",
-          "src": "/narratives/media/infraestructura_conflicto.mp4",
-          "autoplay": true,
-          "loop": true,
-          "muted": true,
-          "position": "inside",
-          "opacity": 1
-        }
-      ],
-
-      "markers": [],
-      "shapes": [],
-      "layers": [],
-
-      "panel": { "width": "420px", "position": "right" }
-    },
-
-    {
-      "id": "NR-5",
-      "title": "La logística coercitiva",
-      "description": "xxx",
-
-      "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
 
       "cameraMode": "dramatic",
       "transitionDuration": 2000,
@@ -179,23 +240,26 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": [
-        "Impronta_Bertha Isabel Caceres Flores.geojson",
-        "Impronta_Oscar Aroldo.geojson"
-      ],
+      "geojsonOn": ["limite-territorio-nacional"],
 
       "layerStyles": {
-        "Impronta_Bertha Isabel Caceres Flores.geojson": {},
-        "Impronta_Oscar Aroldo.geojson": {}
+        "limite-territorio-nacional": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.5 
+ 
+        }
       },
 
-      "sideMedia": false,
+      "sideMedia": true,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/violencia_redes.jpeg",
-          "position": "inside",
+          "src": "/narratives/media/Gephisample2.jpeg",
+          "caption": "Visualización generada con Gephi",
+          "credit": "re/presentare / Archivo Experimental",
+          "position": "side",
           "opacity": 1
         }
       ],
@@ -207,5 +271,6 @@
       "panel": { "width": "420px", "position": "right" }
     }
 
+    
   ]
 }

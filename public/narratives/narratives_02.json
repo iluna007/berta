@@ -2,10 +2,18 @@
   "chapters": [
     {
       "id": "NR-0",
-      "title": "Las élites empresariales",
-      "description": "xxx",
+      "title": "La red empresarial y financiera",
+      "description":["Las élites empresariales hondureñas —en particular la familia Atala Zablah, dueña del Banco BAC— construyeron una red financiera compleja para ocultar responsabilidades, mover dinero sin cumpliento de trazabilidad y para sostener operaciones de despojo en territorio lenca. Para ello utilizaron bancos de desarrollo y capital radicado en el extranjero.",
+      "La formalidad financiera funcionó como escudo. Contratos, fideicomisos y mecanismos de supervisión dieron apariencia de orden y cumplimiento, mientras en la práctica encubrían decisiones y pagos que terminaron habilitando actos de violencia contra quienes defendían el territorio. Lo que, a primera vista, parece un rompecabezas técnico, se revela como una secuencia legible de decisiones orientadas a un objetivo práctico: preservar las ganancias financieras del proyecto a costa de la seguridad de las comunidades.",
+      "Para comprender mejor cómo leer estos diagramas, reproduce el video siguiente:"
+    ],
 
-      "location": { "center": [-86.5, 14.8], "zoom": 6, "pitch": 0, "bearing": 0 },
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 45,
+        "bearing": -30
+      },
 
       "cameraMode": "flat",
       "transitionDuration": 2000,
@@ -13,11 +21,26 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["crb-caserios-la-vega", "aldea-rio-blanco-limite"],
+      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine"],
 
       "layerStyles": {
-        "crb-caserios-la-vega": {},
-        "aldea-rio-blanco-limite": {}
+        "aldea-rio-blanco-limite": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.3
+        },
+        "censo-Rio-Blanco-2013": {
+          "pointColor": "#eb443e",
+          "pointRadius": 3
+         
+        },
+        "departamentos-honduras-ine": {
+          "fill": false,
+          "lineColor": "#000000",
+          "lineWidth": 2
+          
+        }
+        
       },
 
       "sideMedia": false,
@@ -40,10 +63,17 @@
 
     {
       "id": "NR-1",
-      "title": "Arquitectura financiera y opacidad fiduciaria",
-      "description": "xxx",
+      "title": "La bolsa de capital para arrancar Agua Zarca",
+      "description":["Para arrancar la red financiera, se requirieron de varias piezas para conformar una bolsa de capital privado: primero, una «holding» —o empresa matriz que posee la mayoría de las acciones de otras empresas subsidiarias para controlarlas— de la familia Atala Zablah llamada Inversiones La Jacaranda, que es propietaria de Desarrollos Energéticos, S.A. (DESA), la empresa titular del proyecto Agua Zarca que fue formada en 2010 sin experiencia previa en la generación de energía. Segundo, capital de otras empresas aliadas, como PEMSA (una panameña, con cuentas en Panamá y Honduras); y  Evergreen International, radicada en el paraíso fiscal de las Islas Vírgenes Británicas, quien aportó capital cuya proveniencia lícita es imposible de verificar.",
+      "A partir de este capital privado, DESA consiguió sumar a dos bancos internacionales para complementar la inversión: el Banco Centroamericano de Integración Económica (BCIE) y el Banco de Desarrollo Empresarial de los Países Bajos (FMO). Es importante aclarar que según los contratos firmados, el capital de los bancos internacionales solamente podía ser utilizada para construir Agua Zarca, lo cual veremos más adelante fue quebrantado por DESA en múltiples ocasiones."
+    ],
 
-      "location": { "center": [-88.15, 14.32], "zoom": 11, "pitch": 25, "bearing": -20 },
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 45,
+        "bearing": -30
+      },
 
       "cameraMode": "tilted",
       "transitionDuration": 2500,
@@ -51,11 +81,29 @@
       "highlightLayers": ["carreteras-2012"],
       "dimLayers": [],
 
-      "geojsonOn": ["crb-caserios-san-bartolo", "carreteras-2012"],
+      "geojsonOn": ["aldea-rio-blanco-limite","departamentos-honduras-ine","rio-gualcarque","osm-waterways"],
 
       "layerStyles": {
-        "crb-caserios-san-bartolo": {},
-        "carreteras-2012": {}
+        "aldea-rio-blanco-limite": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.3
+        },
+       
+        "departamentos-honduras-ine": {
+          "fill": false,
+          "lineColor": "#000000",
+          "lineWidth": 2
+        },
+        "rio-gualcarque": {
+          "lineColor": "#0077be",
+          "lineWidth": 4
+        },
+        "osm-waterways": {
+          "lineColor": "#5EA4BF",
+          "lineWidth": 2
+        }
+
       },
 
       "sideMedia": false,
@@ -78,10 +126,18 @@
 
     {
       "id": "NR-2",
-      "title": "El inicio del espiral financiero",
-      "description": "xxx",
+      "title": "Simulación de supervisión fiduciaria, costructiva y socioambiental",
+      "description":["Con esta red financiera, DESA pudo construir una arquitectura para mover dinero entre cuentas en dólares y lempiras y cruzar fronteras bancarias.",
+      "En el papel, existía un control fiduciario a cargo de Deutsche Bank, cuyo mandato era asegurar la implementación de políticas anticorrupción y antilavado de dinero. Este banco sólo podía desembolsar recursos de la bolsa de capital si las empresas supervisoras avalaban la correcta ejecución de los trabajos de DESA. Monkey Forest Consulting debía supervisar acciones orientadas a facilitar la aceptación del pueblo lenca mediante la gestión de riesgos, la participación comunitaria y el cumplimiento de normas ambientales internacionales. CARBON era responsable de supervisar la ejecución de los trabajos de construcción realizados por la empresa contratista designada en los contratos, Sinohydro Corporation. Finalmente, POYRY actuaba como agente técnico que certificaba los avances físicos de la obra.",
+      "En la práctica, esta cadena de intermediarios no sólo simuló operaciones de supervisión, sino que ofreció coartadas de cumplimiento e incluso operó para desviar capitales."
+    ],
 
-      "location": { "center": [-86.25, 14.8], "zoom": 6.2, "pitch": 0, "bearing": 0 },
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 25,
+        "bearing": 60
+      },
 
       "cameraMode": "flat",
       "transitionDuration": 2000,
@@ -89,9 +145,12 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": [],
+      "geojsonOn": ["aldea-rio-blanco-limite", "osm-waterways" ],
 
-      "layerStyles": {},
+      "layerStyles": {
+        "aldea-rio-blanco-limite": {},
+        "osm-waterways": {}
+      },
 
       "sideMedia": true,
 
@@ -100,7 +159,7 @@
           "type": "image",
           "src": "/narratives/media/Gephisample2.jpeg",
           "caption": "Visualización generada con Gephi",
-          "credit": "Iker Luna / Archivo Experimental",
+          "credit": "re/presentare / Archivo Experimental",
           "position": "side",
           "opacity": 1
         }
@@ -115,10 +174,19 @@
 
     {
       "id": "NR-3",
-      "title": "Diseño del fraude: quién paga y quién ejecuta",
-      "description": "xxx",
+      "title": "Riesgo empresarial y el inicio del espiral financiero",
+      "description":["Sinohydro Corporation, empresa china, fue la contratista original del proyecto Agua Zarca. Sin embargo, se retiró en 2013 en la estela de escándalos de episodios de violencia contra la población lenca. Así, el activismo del COPINH y de Berta Cáceres fue leído por DESA como un riesgo empresarial causante de la pérdida de Sinohydro. Según documentos presentados durante el juicio de David Castillo —entonces director ejecutivo de DESA—, Daniel Atala afirmó que las actividades de Berta habían causado pérdidas superiores a 3.5 millones de dólares a DESA.",
+      "A partir de ese momento, DESA comenzó a enfrentar una crisis financiera: la salida de la constructora dejó a DESA sin acceso a los capitales de bancos internacionales de desarrollo, y quedó atrapada entre cronogramas incumplibles e intereses crecientes sobre el financiamiento del BCIE y el FMO.",
+      "DESA sustituyó a Sinohydro con COPRECA, pero no fue para corregir el rumbo del proyecto ni para abrir un diálogo genuino con las comunidades afectadas. En su lugar, optó por blindar el flujo de fondos internacionales mediante un esquema fraudulento basado en facturas falsas y desvíos de recursos, y por asumir la violencia como parte de las estrategias de gestión del riesgo empresarial."
+    ],
 
-      "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
+
+      "location": {
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
+      },
 
       "cameraMode": "dramatic",
       "transitionDuration": 2000,
@@ -126,11 +194,135 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["imp-jbm", "imp-oatv"],
+      "geojsonOn": ["limite-territorio-nacional"],
 
       "layerStyles": {
-        "imp-jbm": {},
-        "imp-oatv": {}
+        "limite-territorio-nacional": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.5 
+ 
+        }
+      },
+
+      "sideMedia": true,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/Gephisample2.jpeg",
+          "caption": "Visualización generada con Gephi",
+          "credit": "re/presentare / Archivo Experimental",
+          "position": "side",
+          "opacity": 1
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": { "width": "420px", "position": "right" }
+    },
+
+    {
+      "id": "NR-4",
+      "title": "Diseño del fraude: las requisiciones de construcción",
+      "description":["La operación fraudulenta clave se articuló a través de las “Construction Requisitions”, un instrumento que supuestamente blindaba la construcción de Agua Zarca frente a la corrupción y al incumplimiento de obligaciones con el pueblo lenca. Sobre el papel, la nueva constructora COPRECA, S.A. (COPRECA) y la supervisora de obra Carbón, S.A. (CARBÓN) justificaban los desembolsos. En la realidad, el dinero terminó en terceros sin rol real en la obra, principalmente Concretos del Caribe, S.A. de C.V. (CONCASA) —controlada por Roberto David Castillo, también director ejecutivo de DESA— y Desarrollos Ambientales, S.A., vinculada a Javier Prats.",
+      "Un desliz documental en la Requisition #4 lo evidencia: por error se mantuvo la instrucción de pago a Monkey Forest Consulting (Monkey Forest) —encargada de auditar y supervisar el plan social y ambiental de Agua Zarca para evitar conflictos con poblaciones lencas— en lugar de sustituirla por COPRECA. Sin embargo, el flujo se reacomodó para que el dinero llegara a CONCASA, una redirección de capital que difícilmente pudo haberse ejecutado sin el aval de personal del banco responsable —Deutsche Bank— para asegurar el correcto destino de los pagos.",
+      "El patrón se repite en distintas requisiciones: un pago inicial se realiza a COPRECA para “habilitar” su factura y, después, los documentos registran desvíos sistemáticos en los que aparecen pagos a COPRECA con destinos bancarios en CONCASA. Así se confunde entre quién recibe, quién ejecuta y quién responde."
+    ],
+
+     "location": {
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
+      },
+
+      "cameraMode": "dramatic",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOn": ["limite-territorio-nacional"],
+
+      "layerStyles": {
+        "limite-territorio-nacional": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.5 
+ 
+        }
+      },
+
+      "sideMedia": true,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/Gephisample2.jpeg",
+          "caption": "Visualización generada con Gephi",
+          "credit": "re/presentare / Archivo Experimental",
+          "position": "side",
+          "opacity": 1
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": { "width": "420px", "position": "right" }
+    },
+
+    {
+      "id": "NR-5",
+      "title": "La banca internacional como canal y coartada",
+      "description":["Los acuerdos firmados por DESA con el BCIE y el FMO exigían que el crédito se utilizara exclusivamente en construcción y condicionaban los desembolsos a certificaciones técnicas y socioambientales. Aun así, parte del dinero se usó para comprar tierras a particulares en territorios lencas, pagar fuerzas de seguridad y movilizar efectivo asociado a la logística del crimen contra Berta Cáceres.",
+      "La ruta reconstruida muestra pagos directos de los bancos a CONCASA —sin rol declarado en los contratos de Agua Zarca—, transferencias a PEMSA Panamá, fondeo de PEMSA Panamá en Honduras y emisión de cheques en efectivo cobrados fuera de horario bancario. La ausencia de alertas antilavado ante la sustitución de beneficiarios  y  las transferencias a cuentas offshore apunta a fallas graves de debida diligencia y a posibles complicidades internas. Los bancos funcionaron al mismo tiempo como canal de liquidez y como coartada de formalidad. "
+    ],
+
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 45,
+        "bearing": 30
+      },
+
+      "cameraMode": "dramatic",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine","rio-gualcarque","osm-waterways"],
+
+      "layerStyles": {
+        "aldea-rio-blanco-limite": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.3
+        },
+        "censo-Rio-Blanco-2013": {
+          "pointColor": "#eb443e",
+          "pointRadius": 3,
+          "pointBlur": 3
+        },
+        "departamentos-honduras-ine": {
+          "fill": false,
+          "lineColor": "#eb443e",
+          "lineWidth": 2
+        },
+        "rio-gualcarque": {
+          "lineColor": "#0077be",
+          "lineWidth": 4
+        },
+        "osm-waterways": {
+          "lineColor": "#5EA4BF",
+          "lineWidth": 2
+        }
       },
 
       "sideMedia": false,
@@ -150,55 +342,20 @@
 
       "panel": { "width": "420px", "position": "right" }
     },
+     {
+      "id": "NR-6",
+      "title": "Banca de desarrollo para financiar despojo y perpetrar violencias",
+      "description":["La red empresarial montó instrumentos fiduciarios, utilizó bancas de desarrollo y recurrió a capital offshore para ocultar a responsables, mover recursos y financiar despojo y violencia. La forma prevaleció sobre la sustancia: los procedimientos “correctos” encubrieron fines inaceptables. Lo que debía financiar desarrollo sostenible y protección de la vida terminó financiando despojo, represión y muerte.",
+      "Faltan piezas —como los estados de cuenta completos de PEMSA Panamá y de COPRECA, cuya entrega fue solicitada por el GIEI sin obtener respuesta— para cerrar cada eslabón con documentos primarios. Aun así, los patrones persisten: desvíos repetidos, errores que delatan intención y coherencia entre estados, requisiciones y testimonios. Varias empresas y bancas se han escudado bajo el límite constitucional hondureño que establece un horizonte de resguardo de datos bancarios por un máximo de 5 años.",
+      "Con este andamiaje financiero establecido, la siguiente narrativa, «Compra de terrenos, infraestructuras y logística de despojo», explora cómo estos flujos se tradujeron en compras de tierra y en el despliegue de infraestructuras de control territorial."
+    ],
 
-    {
-      "id": "NR-4",
-      "title": "La banca internacional como canal y coartada",
-      "description": "xxx",
-
-      "location": { "center": [-88.04, 15.03], "zoom": 12, "pitch": 60, "bearing": -40 },
-
-      "cameraMode": "rotate",
-      "transitionDuration": 3500,
-
-      "highlightLayers": [],
-      "dimLayers": [],
-
-      "geojsonOn": ["poligonos", "imp-ejercito", "rio-gualcarque"],
-
-      "layerStyles": {
-        "poligonos": {},
-        "imp-ejercito": {},
-        "rio-gualcarque": {}
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 45,
+        "bearing": -30
       },
-
-      "sideMedia": false,
-
-      "media": [
-        {
-          "type": "video",
-          "src": "/narratives/media/infraestructura_conflicto.mp4",
-          "autoplay": true,
-          "loop": true,
-          "muted": true,
-          "position": "inside",
-          "opacity": 1
-        }
-      ],
-
-      "markers": [],
-      "shapes": [],
-      "layers": [],
-
-      "panel": { "width": "420px", "position": "right" }
-    },
-
-    {
-      "id": "NR-5",
-      "title": "Fraude",
-      "description": "xxx",
-
-      "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
 
       "cameraMode": "dramatic",
       "transitionDuration": 2000,
@@ -206,11 +363,15 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["imp-copinh", "imp-desa"],
+      "geojsonOn": ["departamentos-honduras-ine"],
 
       "layerStyles": {
-        "imp-copinh": {},
-        "imp-desa": {}
+      
+        "departamentos-honduras-ine": {
+          "fill": false,
+          "lineColor": "#eb443e",
+          "lineWidth": 2
+        }
       },
 
       "sideMedia": false,

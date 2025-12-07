@@ -1,12 +1,18 @@
 {
   "chapters": [
-
     {
       "id": "NR-0",
-      "title": "El brazo coercitivo para imponer Agua Zarca",
-      "description": "xxx",
+      "title": "XXX",
+      "description":["",
+      "",
+      ""],
 
-      "location": { "center": [-86.5, 14.8], "zoom": 6, "pitch": 0, "bearing": 0 },
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 45,
+        "bearing": -30
+      },
 
       "cameraMode": "flat",
       "transitionDuration": 2000,
@@ -14,12 +20,26 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": [
-        "Poligonos_Predios_La Vega.geojson"
-      ],
+      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine"],
 
       "layerStyles": {
-        "Poligonos_Predios_La Vega.geojson": {}
+        "aldea-rio-blanco-limite": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.3
+        },
+        "censo-Rio-Blanco-2013": {
+          "pointColor": "#eb443e",
+          "pointRadius": 3
+         
+        },
+        "departamentos-honduras-ine": {
+          "fill": false,
+          "lineColor": "#000000",
+          "lineWidth": 2
+          
+        }
+        
       },
 
       "sideMedia": false,
@@ -42,25 +62,47 @@
 
     {
       "id": "NR-1",
-      "title": "El dispositivo de seguridad",
-      "description": "xxx",
+      "title": "XXX",
+      "description":["",
+      "",
+      ""],
 
-      "location": { "center": [-88.15, 14.32], "zoom": 11, "pitch": 25, "bearing": -20 },
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 45,
+        "bearing": -30
+      },
 
       "cameraMode": "tilted",
       "transitionDuration": 2500,
 
-      "highlightLayers": ["chapter-cap-2-Antenas Telefonicas.geojson-layer"],
+      "highlightLayers": ["carreteras-2012"],
       "dimLayers": [],
 
-      "geojsonOn": [
-        "Poligonos_Predios_Sisimetera.geojson",
-        "Antenas Telefonicas.geojson"
-      ],
+      "geojsonOn": ["aldea-rio-blanco-limite","departamentos-honduras-ine","rio-gualcarque","osm-waterways"],
 
       "layerStyles": {
-        "Poligonos_Predios_Sisimetera.geojson": {},
-        "Antenas Telefonicas.geojson": {}
+        "aldea-rio-blanco-limite": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.3
+        },
+       
+        "departamentos-honduras-ine": {
+          "fill": false,
+          "lineColor": "#000000",
+          "lineWidth": 2
+        },
+        "rio-gualcarque": {
+          "lineColor": "#0077be",
+          "lineWidth": 4
+        },
+        "osm-waterways": {
+          "lineColor": "#5EA4BF",
+          "lineWidth": 2
+        }
+
       },
 
       "sideMedia": false,
@@ -83,10 +125,17 @@
 
     {
       "id": "NR-2",
-      "title": "Vigilancia sistemática",
-      "description": "xxx",
+      "title": "XXX",
+      "description":["",
+      "",
+      ""],
 
-      "location": { "center": [-86.25, 14.80], "zoom": 6.2, "pitch": 0, "bearing": 0 },
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 25,
+        "bearing": 60
+      },
 
       "cameraMode": "flat",
       "transitionDuration": 2000,
@@ -94,9 +143,12 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": [],
+      "geojsonOn": ["aldea-rio-blanco-limite", "osm-waterways" ],
 
-      "layerStyles": {},
+      "layerStyles": {
+        "aldea-rio-blanco-limite": {},
+        "osm-waterways": {}
+      },
 
       "sideMedia": true,
 
@@ -105,7 +157,7 @@
           "type": "image",
           "src": "/narratives/media/Gephisample2.jpeg",
           "caption": "Visualización generada con Gephi",
-          "credit": "Iker Luna / Archivo Experimental",
+          "credit": "re/presentare / Archivo Experimental",
           "position": "side",
           "opacity": 1
         }
@@ -120,10 +172,17 @@
 
     {
       "id": "NR-3",
-      "title": "Pagos para hostigar",
-      "description": "xxx",
+      "title": "XXX",
+      "description":["",
+      "",
+      ""],
 
-      "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
+      "location": {
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
+      },
 
       "cameraMode": "dramatic",
       "transitionDuration": 2000,
@@ -131,23 +190,26 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": [
-        "Impronta_Bertha Isabel Caceres Flores.geojson",
-        "Impronta_Oscar Aroldo.geojson"
-      ],
+      "geojsonOn": ["limite-territorio-nacional"],
 
       "layerStyles": {
-        "Impronta_Bertha Isabel Caceres Flores.geojson": {},
-        "Impronta_Oscar Aroldo.geojson": {}
+        "limite-territorio-nacional": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.5 
+ 
+        }
       },
 
-      "sideMedia": false,
+      "sideMedia": true,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/violencia_redes.jpeg",
-          "position": "inside",
+          "src": "/narratives/media/Gephisample2.jpeg",
+          "caption": "Visualización generada con Gephi",
+          "credit": "re/presentare / Archivo Experimental",
+          "position": "side",
           "opacity": 1
         }
       ],
@@ -161,39 +223,44 @@
 
     {
       "id": "NR-4",
-      "title": "Cooptación comunitaria",
-      "description": "xxx",
+      "title": "XXX",
+      "description":["",
+      "",
+      ""],
 
-      "location": { "center": [-88.04, 15.03], "zoom": 12, "pitch": 60, "bearing": -40 },
+     "location": {
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
+      },
 
-      "cameraMode": "rotate",
-      "transitionDuration": 3500,
+      "cameraMode": "dramatic",
+      "transitionDuration": 2000,
 
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": [
-        "Poligonos_Predios_Cuchilla El Naranjal.geojson",
-        "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson",
-        "Rio Gualcarque.geojson"
-      ],
+      "geojsonOn": ["limite-territorio-nacional"],
 
       "layerStyles": {
-        "Poligonos_Predios_Cuchilla El Naranjal.geojson": {},
-        "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson": {},
-        "Rio Gualcarque.geojson": {}
+        "limite-territorio-nacional": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.5 
+ 
+        }
       },
 
-      "sideMedia": false,
+      "sideMedia": true,
 
       "media": [
         {
-          "type": "video",
-          "src": "/narratives/media/infraestructura_conflicto.mp4",
-          "autoplay": true,
-          "loop": true,
-          "muted": true,
-          "position": "inside",
+          "type": "image",
+          "src": "/narratives/media/Gephisample2.jpeg",
+          "caption": "Visualización generada con Gephi",
+          "credit": "re/presentare / Archivo Experimental",
+          "position": "side",
           "opacity": 1
         }
       ],
@@ -207,10 +274,17 @@
 
     {
       "id": "NR-5",
-      "title": "Estigma para justificar la represión",
-      "description": "xxx",
+      "title": "XXX",
+      "description":["",
+      "",
+      ""],
 
-      "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 45,
+        "bearing": 30
+      },
 
       "cameraMode": "dramatic",
       "transitionDuration": 2000,
@@ -218,14 +292,32 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": [
-        "Impronta_Bertha Isabel Caceres Flores.geojson",
-        "Impronta_Oscar Aroldo.geojson"
-      ],
+      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine","rio-gualcarque","osm-waterways"],
 
       "layerStyles": {
-        "Impronta_Bertha Isabel Caceres Flores.geojson": {},
-        "Impronta_Oscar Aroldo.geojson": {}
+        "aldea-rio-blanco-limite": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.3
+        },
+        "censo-Rio-Blanco-2013": {
+          "pointColor": "#eb443e",
+          "pointRadius": 3,
+          "pointBlur": 3
+        },
+        "departamentos-honduras-ine": {
+          "fill": false,
+          "lineColor": "#eb443e",
+          "lineWidth": 2
+        },
+        "rio-gualcarque": {
+          "lineColor": "#0077be",
+          "lineWidth": 4
+        },
+        "osm-waterways": {
+          "lineColor": "#5EA4BF",
+          "lineWidth": 2
+        }
       },
 
       "sideMedia": false,
@@ -245,33 +337,44 @@
 
       "panel": { "width": "420px", "position": "right" }
     },
+     {
+      "id": "NR-6",
+      "title": "XXX",
+      "description":["",
+      "",
+      ""],
+      
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 45,
+        "bearing": -30
+      },
 
-    {
-      "id": "",
-      "title": "Cadena de mando y encubrimiento",
-      "description": "xxx",
-
-      "location": { "center": [-86.25, 14.80], "zoom": 6.2, "pitch": 0, "bearing": 0 },
-
-      "cameraMode": "flat",
+      "cameraMode": "dramatic",
       "transitionDuration": 2000,
 
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": [],
+      "geojsonOn": ["departamentos-honduras-ine"],
 
-      "layerStyles": {},
+      "layerStyles": {
+      
+        "departamentos-honduras-ine": {
+          "fill": false,
+          "lineColor": "#eb443e",
+          "lineWidth": 2
+        }
+      },
 
-      "sideMedia": true,
+      "sideMedia": false,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "Iker Luna / Archivo Experimental",
-          "position": "side",
+          "src": "/narratives/media/violencia_redes.jpeg",
+          "position": "inside",
           "opacity": 1
         }
       ],
@@ -282,6 +385,5 @@
 
       "panel": { "width": "420px", "position": "right" }
     }
-
   ]
 }
