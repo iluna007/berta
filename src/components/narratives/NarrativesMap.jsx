@@ -16,10 +16,7 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
   // GeoJSON layer definitions
   const layersRef = useRef(null);
 
-  // Cache of loaded sources so we don’t reload unnecessarily
-  const loadedSources = useRef({});
-
-  // Load layer definitions (geojsonLayers2.json)
+  // Load layer definitions
   useEffect(() => {
     fetch("/data/geojsonLayers2.json")
       .then((res) => res.json())
@@ -46,7 +43,6 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
     map.current.addControl(new mapboxgl.NavigationControl());
 
     map.current.on("load", () => {
-      // DEM source (terrain)
       if (!map.current.getSource("mapbox-dem")) {
         map.current.addSource("mapbox-dem", {
           type: "raster-dem",
@@ -57,22 +53,19 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
       }
 
       if (!map.current.getTerrain()) {
-        map.current.setTerrain({
-          source: "mapbox-dem",
-          exaggeration: 1.4,
-        });
+        map.current.setTerrain({ source: "mapbox-dem", exaggeration: 1.4 });
       }
 
       console.log("🌄 Terreno 3D activado");
-      setIsMapReady(true); // <--- CLAVE
+      setIsMapReady(true);
     });
   }, []);
 
   // ------------------------------------------------------
-  // 🔥 Recreate layer ALWAYS to apply new styles
+  // RECREATE LAYER (aplica overrides con sistema óptimo)
   // ------------------------------------------------------
   const recreateLayer = async (layerId, styleOverrides = {}) => {
-    if (!layersRef.current) return;
+    if (!layersRef.current || !map.current) return;
 
     const def = layersRef.current.find((l) => l.id === layerId);
     if (!def) {
@@ -81,100 +74,214 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
     }
 
     const url = def.url;
-    const color = def.color ?? "#ff00ff";
+    const baseColor = def.color ?? "#ff00ff";
 
     const sourceId = `src-${layerId}`;
     const mapLayerId = `layer-${layerId}`;
 
-    // If layer exists, remove it completely BEFORE recreating it
-    if (map.current.getLayer(mapLayerId)) {
-      map.current.removeLayer(mapLayerId);
-    }
-    if (map.current.getSource(sourceId)) {
-      map.current.removeSource(sourceId);
-    }
+    // Remove old layer + source
+    if (map.current.getLayer(mapLayerId)) map.current.removeLayer(mapLayerId);
+    if (map.current.getSource(sourceId)) map.current.removeSource(sourceId);
 
     try {
       const res = await fetch(url);
       const data = await res.json();
 
-      map.current.addSource(sourceId, {
-        type: "geojson",
-        data,
-      });
+      map.current.addSource(sourceId, { type: "geojson", data });
 
-      // Determine geometry type
-      const geometry = data.features?.[0]?.geometry?.type;
+      const geom = data.features?.[0]?.geometry?.type;
 
-      let layerConfig = {
-        id: mapLayerId,
-        source: sourceId,
-        paint: {},
-      };
+      // BASE LAYER
+      let layerType = "fill";
+      let paintProps = {};
 
-      if (["Polygon", "MultiPolygon"].includes(geometry)) {
-        layerConfig.type = "fill";
-        layerConfig.paint = {
-          "fill-color": color,
+      if (["Polygon", "MultiPolygon"].includes(geom)) {
+        layerType = "fill";
+        paintProps = {
+          "fill-color": baseColor,
           "fill-opacity": 0.6,
-          ...layerConfig.paint,
         };
-      } else if (["LineString", "MultiLineString"].includes(geometry)) {
-        layerConfig.type = "line";
-        layerConfig.paint = {
-          "line-color": color,
+      } else if (["LineString", "MultiLineString"].includes(geom)) {
+        layerType = "line";
+        paintProps = {
+          "line-color": baseColor,
           "line-width": 3,
-          ...layerConfig.paint,
         };
       } else {
-        layerConfig.type = "circle";
-        layerConfig.paint = {
+        layerType = "circle";
+        paintProps = {
+          "circle-color": baseColor,
           "circle-radius": 6,
-          "circle-color": color,
-          ...layerConfig.paint,
         };
       }
 
       // -----------------------------------------
-      // 🔵 OVERRIDES POR NARRATIVA
+      // ⭐ OVERRIDES ELEGANTES (sin mil ifs)
       // -----------------------------------------
-      if (styleOverrides.fill === false && layerConfig.type === "fill") {
-        layerConfig.type = "line";
-        layerConfig.paint = {
-          "line-color": layerConfig.paint["fill-color"] ?? color,
+
+      // Tabla de propiedades válidas por tipo
+      const STYLE_MAP = {
+  fill: [
+    "fill-color",
+    "fill-opacity",
+    "fill-outline-color",
+    "fill-translate",
+    "fill-translate-anchor",
+    "fill-antialias"
+  ],
+
+  line: [
+    "line-color",
+    "line-width",
+    "line-opacity",
+    "line-dasharray",
+    "line-translate",
+    "line-translate-anchor",
+    "line-gap-width",
+    "line-blur",
+    "line-offset",
+    "line-join",
+    "line-cap"
+  ],
+
+  circle: [
+    "circle-color",
+    "circle-opacity",
+    "circle-radius",
+    "circle-blur",
+    "circle-stroke-color",
+    "circle-stroke-width",
+    "circle-translate",
+    "circle-translate-anchor"
+  ],
+
+  symbol: [
+    "icon-image",
+    "icon-size",
+    "icon-opacity",
+    "icon-color",
+    "text-field",
+    "text-color",
+    "text-opacity",
+    "text-halo-color",
+    "text-halo-width",
+    "text-size",
+    "text-letter-spacing",
+    "text-justify",
+    "text-translate",
+    "text-translate-anchor"
+  ]
+};
+
+
+      // Mapping JS → Mapbox
+      const MAP_JS = {
+  // ---- FILLS (Polygon) ----
+  fillColor: "fill-color",
+  fillOpacity: "fill-opacity",
+  fillOutlineColor: "fill-outline-color",
+  fillTranslate: "fill-translate",
+  fillTranslateAnchor: "fill-translate-anchor",
+  fillAntialias: "fill-antialias",
+
+  // ---- LINES ----
+  lineColor: "line-color",
+  lineWidth: "line-width",
+  lineOpacity: "line-opacity",
+  lineDasharray: "line-dasharray",
+  lineTranslate: "line-translate",
+  lineTranslateAnchor: "line-translate-anchor",
+  lineGapWidth: "line-gap-width",
+  lineBlur: "line-blur",
+  lineOffset: "line-offset",
+  lineJoin: "line-join",
+  lineCap: "line-cap",
+
+  // ---- CIRCLES (POINTS) ----
+  pointColor: "circle-color",
+  pointOpacity: "circle-opacity",
+  pointRadius: "circle-radius",
+  pointBlur: "circle-blur",
+  pointStrokeColor: "circle-stroke-color",
+  pointStrokeWidth: "circle-stroke-width",
+  pointTranslate: "circle-translate",
+  pointTranslateAnchor: "circle-translate-anchor",
+
+  // ---- SYMBOLS (ICONOS / LABELS) ----
+  iconImage: "icon-image",
+  iconSize: "icon-size",
+  iconOpacity: "icon-opacity",
+  iconColor: "icon-color",
+  textField: "text-field",
+  textColor: "text-color",
+  textOpacity: "text-opacity",
+  textHaloColor: "text-halo-color",
+  textHaloWidth: "text-halo-width",
+  textSize: "text-size",
+  textLetterSpacing: "text-letter-spacing",
+  textJustify: "text-justify",
+  textTranslate: "text-translate",
+  textTranslateAnchor: "text-translate-anchor",
+
+  // ---- RASTER ----
+  rasterOpacity: "raster-opacity",
+  rasterHueRotate: "raster-hue-rotate",
+  rasterBrightnessMin: "raster-brightness-min",
+  rasterBrightnessMax: "raster-brightness-max",
+  rasterSaturation: "raster-saturation",
+  rasterContrast: "raster-contrast",
+  rasterFadeDuration: "raster-fade-duration",
+
+  // ---- HEATMAP ----
+  heatmapRadius: "heatmap-radius",
+  heatmapIntensity: "heatmap-intensity",
+  heatmapOpacity: "heatmap-opacity",
+  heatmapColor: "heatmap-color",
+  heatmapWeight: "heatmap-weight",
+
+  // ---- HILLSHADE ----
+  hillshadeIlluminationDirection: "hillshade-illumination-direction",
+  hillshadeIlluminationAnchor: "hillshade-illumination-anchor",
+  hillshadeExaggeration: "hillshade-exaggeration",
+  hillshadeShadowColor: "hillshade-shadow-color",
+  hillshadeHighlightColor: "hillshade-highlight-color",
+  hillshadeAccentColor: "hillshade-accent-color",
+
+  // ---- BACKGROUND ----
+  backgroundColor: "background-color",
+  backgroundOpacity: "background-opacity",
+  backgroundPattern: "background-pattern",
+};
+
+      // Si fill=false → convertir a line
+      if (styleOverrides.fill === false && layerType === "fill") {
+        layerType = "line";
+        paintProps = {
+          "line-color": baseColor,
           "line-width": styleOverrides.lineWidth ?? 2,
         };
       }
 
-      if (styleOverrides.fillColor) {
-        layerConfig.paint["fill-color"] = styleOverrides.fillColor;
-      }
+      // Aplicar overrides válidos según el tipo final
+      const allowed = STYLE_MAP[layerType] ?? [];
 
-      if (styleOverrides.fillOpacity !== undefined) {
-        layerConfig.paint["fill-opacity"] = styleOverrides.fillOpacity;
-      }
+      allowed.forEach((prop) => {
+        const jsProp = Object.keys(MAP_JS).find((k) => MAP_JS[k] === prop);
+        if (jsProp && styleOverrides[jsProp] !== undefined) {
+          paintProps[prop] = styleOverrides[jsProp];
+        }
+      });
 
-      if (styleOverrides.lineColor) {
-        layerConfig.paint["line-color"] = styleOverrides.lineColor;
-      }
+      const layerConfig = {
+        id: mapLayerId,
+        type: layerType,
+        source: sourceId,
+        paint: paintProps,
+      };
 
-      if (styleOverrides.lineWidth) {
-        layerConfig.paint["line-width"] = styleOverrides.lineWidth;
-      }
-
-      if (styleOverrides.pointColor) {
-        layerConfig.paint["circle-color"] = styleOverrides.pointColor;
-      }
-
-      if (styleOverrides.pointRadius) {
-        layerConfig.paint["circle-radius"] = styleOverrides.pointRadius;
-      }
-
-      // Insert at top of style
+      // Insert into top of style
       const topLayer =
-        map.current.getStyle().layers[
-          map.current.getStyle().layers.length - 1
-        ]?.id;
+        map.current.getStyle().layers.at(-1)?.id;
 
       map.current.addLayer(layerConfig, topLayer);
     } catch (err) {
@@ -182,7 +289,9 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
     }
   };
 
-  // Hide all dynamic layers
+  // ------------------------------------------------------
+  // Hide dynamic layers
+  // ------------------------------------------------------
   const hideAllLayers = () => {
     if (!map.current) return;
 
@@ -199,20 +308,20 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
   };
 
   // ------------------------------------------------------
-  // Chapter change
+  // CHAPTER CHANGE
   // ------------------------------------------------------
   useEffect(() => {
     if (!map.current) return;
-    if (!isMapReady) return; // <--- PREVIENE ERROR DEL INICIO
+    if (!isMapReady) return;
     if (!activeChapterId) return;
     if (!chapters?.length) return;
 
     const chapter = chapters.find((c) => c.id === activeChapterId);
     if (!chapter) return;
 
-    // Move camera
     const { center, zoom, pitch, bearing } = chapter.location;
 
+    // FLYTO intacto
     map.current.flyTo({
       center,
       zoom,
@@ -227,7 +336,6 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
 
     hideAllLayers();
 
-    // Load layers with style overrides
     chapter.geojsonOn?.forEach((layerId) => {
       const overrides = chapter.layerStyles?.[layerId] || {};
       recreateLayer(layerId, overrides);

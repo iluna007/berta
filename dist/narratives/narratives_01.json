@@ -29,9 +29,9 @@
         },
         "censo-Rio-Blanco-2013": {
           "pointColor": "#eb443e",
-          "pointRadius": 6,
+          "pointRadius": 3,
           "pointStrokeColor": "#000000",
-          "pointStrokeWidth": 1
+          "pointStrokeWidth": 2
         },
         "departamentos-honduras-ine": {
           "fill": false,
