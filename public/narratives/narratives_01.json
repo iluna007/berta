@@ -31,13 +31,15 @@
           "pointColor": "#eb443e",
           "pointRadius": 3,
           "pointStrokeColor": "#000000",
-          "pointStrokeWidth": 2
+          "pointStrokeWidth": 2,  
+          "pointBlur": 3
         },
         "departamentos-honduras-ine": {
           "fill": false,
           "lineColor": "#000000",
           "lineWidth": 2
-        }
+        },
+        
       },
 
       "sideMedia": false,
@@ -61,7 +63,7 @@
     {
       "id": "NR-1",
       "title": "Entregar el Gualcarque es entregar la vida misma",
-      "description": "xxx",
+      "description": "Desde la colonia española hasta el presente, los pueblos originarios de Centroamérica han resistido la convergencia entre gobernantes, capitales extranjeros y empresas que buscan explotar sus territorios. En Honduras, el pueblo lenca ha sostenido una relación socioambiental sagrada con el Gualcarque. Su río no es un “recurso natural”, sino un ser vivo cuyo espíritu protege a las comunidades y convoca a su defensa. En palabras de Berta Cáceres, entregarlo equivaldría a entregar la vida misma.",
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
@@ -76,11 +78,24 @@
       "highlightLayers": ["carreteras-2012"],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite", "osm-waterways"],
+      "geojsonOn": ["aldea-rio-blanco-limite","departamentos-honduras-ine","rio-gualcarque"],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {},
-        "osm-waterways": {}
+        "aldea-rio-blanco-limite": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.3
+        },
+       
+        "departamentos-honduras-ine": {
+          "fill": false,
+          "lineColor": "#000000",
+          "lineWidth": 2
+        },
+        "rio-gualcarque": {
+          "lineColor": "#0077be",
+          "lineWidth": 4
+        }
       },
 
       "sideMedia": false,
@@ -104,7 +119,8 @@
     {
       "id": "NR-2",
       "title": "Obligaciones del Estado hondureño hacia pueblos originarios",
-      "description": "xxx",
+      "description": ["Según el censo de 2013, al menos el 87 % de las personas que vivían en el municipio de Río Blanco se identificaban como lencas, muchas de ellas organizadas en el Consejo Cívico de Organizaciones Populares e Indígenas de Honduras (COPINH). Esa densidad organizativa y territorial explica por qué el Gualcarque se convirtió en un eje central de la defensa comunitaria.",
+    "El Estado hondureño ha ratificado instrumentos internacionales, como el Convenio 169 de la Organización Internacional del Trabajo (OIT), que establece que en territorios indígenas, como es el caso de la cuenca del Gualcarque, rige la obligación de realizar consultas libres, previas, informadas, de buena fe y culturalmente adecuadas. Antes de autorizar obras como represas, el Estado debe informar, garantizar la participación efectiva y obtener el consentimiento cuando existan riesgos para la supervivencia cultural o territorial de los pueblos originarios. Sin ese estándar, las concesiones vulneran derechos colectivos y generan conflictos estructurales. "],
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
@@ -119,12 +135,11 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite", "osm-waterways", "rio-gualcarque"],
+      "geojsonOn": ["aldea-rio-blanco-limite", "osm-waterways" ],
 
       "layerStyles": {
         "aldea-rio-blanco-limite": {},
-        "osm-waterways": {},
-        "rio-gualcarque": {}
+        "osm-waterways": {}
       },
 
       "sideMedia": true,
@@ -134,7 +149,7 @@
           "type": "image",
           "src": "/narratives/media/Gephisample2.jpeg",
           "caption": "Visualización generada con Gephi",
-          "credit": "Iker Luna / Archivo Experimental",
+          "credit": "re/presentare / Archivo Experimental",
           "position": "side",
           "opacity": 1
         }
@@ -150,7 +165,7 @@
     {
       "id": "NR-3",
       "title": "El Decreto No. 181-2009 del 14 de diciembre de 2009",
-      "description": "xxx",
+      "description": "Sin embargo, el Decreto No. 181-2009 del 14 de diciembre de 2009, conocido como Ley General de Aguas de Honduras, estableció un marco para la gestión privada de los recursos hídricos del país. Ese cambio normativo detonó la creación acelerada de empresas y proyectos de represas, entre ellos el complejo hidroeléctrico Agua Zarca sobre el río Gualcarque.",
 
       "location": {
         "center": [-86.5, 14.8],
@@ -168,7 +183,119 @@
       "geojsonOn": ["limite-territorio-nacional"],
 
       "layerStyles": {
-        "limite-territorio-nacional": {}
+        "limite-territorio-nacional": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.5 
+ 
+        }
+      },
+
+      "sideMedia": true,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/Gephisample2.jpeg",
+          "caption": "Visualización generada con Gephi",
+          "credit": "re/presentare / Archivo Experimental",
+          "position": "side",
+          "opacity": 1
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": { "width": "420px", "position": "right" }
+    },
+
+    {
+      "id": "NR-4",
+      "title": "Concesiones sin consulta",
+      "description": "Sin cumplir con las obligaciones de consulta y consentimiento hacia el pueblo lenca, agencias estatales habilitaron la concesión de Agua Zarca, mientras que bancos de desarrollo e instituciones financieras internacionales respaldaban a una empresa recién creada y sin experiencia para ejecutarlo. La combinación de un marco legal desregulado, con la ausencia de consulta y una serie de financiamientos internacionales ha producido una estructura de riesgo permanente para el territorio lenca.",
+
+     "location": {
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
+      },
+
+      "cameraMode": "dramatic",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOn": ["limite-territorio-nacional"],
+
+      "layerStyles": {
+        "limite-territorio-nacional": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.5 
+ 
+        }
+      },
+
+      "sideMedia": true,
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/media/Gephisample2.jpeg",
+          "caption": "Visualización generada con Gephi",
+          "credit": "re/presentare / Archivo Experimental",
+          "position": "side",
+          "opacity": 1
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": { "width": "420px", "position": "right" }
+    },
+
+    {
+      "id": "NR-5",
+      "title": "Hostigamiento y el asesinato de Tomás García",
+      "description": "En los años inmediatamente posteriores a la concesión de Agua Zarca, la población lenca enfrentó un patrón de hostigamiento: vigilancias, amenazas, campañas de estigmatización y uso de fuerzas de seguridad para contener protestas. Ese clima se hizo visible el 15 de julio de 2013 durante una protesta pacífica frente a las instalaciones del proyecto, donde un elemento del Ejército de Honduras asesinó a Tomás García —autoridad comunitaria lenca— e hiró de gravedad a su hijo Allan de 16 años. Ese hecho marcó a la comunidad y anticipó una escalada de riesgos para quienes defendían el Gualcarque.",
+
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 12,
+        "pitch": 45,
+        "bearing": 30
+      },
+
+      "cameraMode": "dramatic",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine"],
+
+      "layerStyles": {
+        "aldea-rio-blanco-limite": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.3
+        },
+        "censo-Rio-Blanco-2013": {
+          "pointColor": "#eb443e",
+          "pointRadius": 3,
+          "pointBlur": 3
+        },
+        "departamentos-honduras-ine": {
+          "fill": false,
+          "lineColor": "#eb443e",
+          "lineWidth": 2
+        }
       },
 
       "sideMedia": false,
@@ -188,58 +315,11 @@
 
       "panel": { "width": "420px", "position": "right" }
     },
-
-    {
-      "id": "NR-4",
-      "title": "Hostigamiento y el caso Tomás García",
-      "description": "xxx",
-
-      "location": {
-        "center": [-88.04, 15.03],
-        "zoom": 12,
-        "pitch": 60,
-        "bearing": -40
-      },
-
-      "cameraMode": "rotate",
-      "transitionDuration": 3500,
-
-      "highlightLayers": [],
-      "dimLayers": [],
-
-      "geojsonOn": ["crb-caserios-el-barreal", "imp-ejercito", "rio-gualcarque"],
-
-      "layerStyles": {
-        "crb-caserios-el-barreal": {},
-        "imp-ejercito": {},
-        "rio-gualcarque": {}
-      },
-
-      "sideMedia": false,
-
-      "media": [
-        {
-          "type": "video",
-          "src": "/narratives/media/infraestructura_conflicto.mp4",
-          "autoplay": true,
-          "loop": true,
-          "muted": true,
-          "position": "inside",
-          "opacity": 1
-        }
-      ],
-
-      "markers": [],
-      "shapes": [],
-      "layers": [],
-
-      "panel": { "width": "420px", "position": "right" }
-    },
-
-    {
-      "id": "NR-5",
+     {
+      "id": "NR-6",
       "title": "Un crimen empresarial",
-      "description": "xxx",
+      "description": ["Tres años después del asesinato de Tomás, Berta Cáceres Flores, lideresa lenca y miembra del COPINH, fue asesinada en su domicilio por dos sicarios. Esta investigación sostiene que que la violencia contra defensores y defensoras como Berta no puede leerse como un acto aislado cometido por individuos ya condenados, sino como un “crimen empresarial” en el que decisiones corporativas convergen con actores estatales y lógicas de criminalidad organizada.",
+      "El viraje legal y territorial se enlaza con la siguiente narrativa, «La red financiera», que detalla la arquitectura de poder financiero que hizo posible las violencias contra personas lencas: quién movió el dinero, con qué instrumentos y con qué incentivos."],
 
       "location": {
         "center": [-88.23, 14.43],
