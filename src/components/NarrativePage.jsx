@@ -22,7 +22,7 @@ export default function NarrativePage() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const [activeNarrative, setActiveNarrative] = useState("01");
+  const [activeNarrative, setActiveNarrative] = useState("00");
   const [chapters, setChapters] = useState([]);
   const [index, setIndex] = useState(0);
   const [activeChapterId, setActiveChapterId] = useState(null);

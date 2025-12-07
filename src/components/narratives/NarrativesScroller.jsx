@@ -26,11 +26,23 @@ export default function NarrativesScroller({ chapters, index }) {
         }}
       >
         <h2>{chapter.title}</h2>
-        <p style={{ opacity: 0.85, whiteSpace: "pre-line" }}>
-          {chapter.description}
-        </p>
 
-        {/* AQUÍ se renderiza la media */}
+        {/* Soporte para 1 párrafo (string) o varios (array) */}
+        {Array.isArray(chapter.description) ? (
+          chapter.description.map((paragraph, i) => (
+            <p
+              key={i}
+              style={{ opacity: 0.85, marginBottom: "1em", whiteSpace: "pre-line" }}
+            >
+              {paragraph}
+            </p>
+          ))
+        ) : (
+          <p style={{ opacity: 0.85, whiteSpace: "pre-line" }}>
+            {chapter.description}
+          </p>
+        )}
+
         <NarrativeMedia chapter={chapter} />
       </div>
     </div>

@@ -3,7 +3,8 @@
     {
       "id": "NR-0",
       "title": "Por qué Berta fue objetivo",
-      "description": "Berta Cáceres no solo confrontó a DESA: interrumpió la racionalidad empresarial que sostenía Agua Zarca. Hizo visibles redes de complicidad, frenó hitos de obra y elevó los costos políticos y financieros del proyecto. Su liderazgo, arraigado en la comunidad lenca y respaldado por documentación, atrajo atención nacional e internacional. Para quienes defendían Agua Zarca como “desarrollo sostenible”, su voz se convirtió en un riesgo operativo, reputacional y —sobre todo— financiero. Esta narrativa explica cómo, desde esa lógica de gestión de riesgos, se tomó una decisión criminal.El conflicto no fue un desacuerdo puntual. Contratos, créditos y cronogramas chocaron con la organización comunitaria, las exigencias de consulta y la evidencia de daños. A medida que los retrasos crecían y la presión financiera aumentaba, también crecían los incentivos para silenciar a quienes los provocaban. En ese escenario, Berta quedó en el centro del dispositivo coercitivo y se convirtió en un objetivo estratégico.",
+      "description": "xxx",
+
       "location": { "center": [-86.5, 14.8], "zoom": 6, "pitch": 0, "bearing": 0 },
 
       "cameraMode": "flat",
@@ -12,14 +13,15 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
+      "geojsonOn": [
         "Poligonos_Predios_La Vega.geojson",
         "Poligonos_Predios_Rio Blanco.geojson"
       ],
-      "geojsonOnExit": [
-        "Poligonos_Predios_La Vega.geojson",
-        "Poligonos_Predios_Rio Blanco.geojson"
-      ],
+
+      "layerStyles": {
+        "Poligonos_Predios_La Vega.geojson": {},
+        "Poligonos_Predios_Rio Blanco.geojson": {}
+      },
 
       "sideMedia": false,
 
@@ -45,7 +47,8 @@
     {
       "id": "NR-1",
       "title": "Amenaza a los flujos de capital",
-      "description": "Para empresas e inversionistas, Berta y el COPINH eran un “riesgo” con tres efectos: afectaban flujos de capital, erosionaban la legitimidad del proyecto y activaban escrutinio internacional. Su capacidad para articular evidencia, movilizar al pueblo lenca, convocar a los medios y conectar con redes globales elevó el costo reputacional de Agua Zarca y de sus financiadores. La salida de Sinohydro detonó reprogramaciones, nuevas deudas e intereses adicionales. La documentación financiera refuerza estos efectos. Daniel Atala presentó en el juicio un escrito atribuyendo a las acciones de Berta pérdidas superiores a 3.5 millones de dólares. Al mismo tiempo, requisiciones de construcción desviaron fondos a CONCASA y, desde allí, a PEMSA Panamá, ruta desde la que se emitieron los cheques en efectivo utilizados para pagar a los sicarios, según trazas bancarias y cronologías telefónicas.",
+      "description": "xxx",
+
       "location": { "center": [-88.15, 14.32], "zoom": 11, "pitch": 25, "bearing": -20 },
 
       "cameraMode": "tilted",
@@ -54,14 +57,15 @@
       "highlightLayers": ["chapter-cap-2-Antenas Telefonicas.geojson-layer"],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
+      "geojsonOn": [
         "Poligonos_Predios_Sisimetera.geojson",
         "Antenas Telefonicas.geojson"
       ],
-      "geojsonOnExit": [
-        "Poligonos_Predios_Sisimetera.geojson",
-        "Antenas Telefonicas.geojson"
-      ],
+
+      "layerStyles": {
+        "Poligonos_Predios_Sisimetera.geojson": {},
+        "Antenas Telefonicas.geojson": {}
+      },
 
       "sideMedia": false,
 
@@ -87,7 +91,7 @@
     {
       "id": "NR-2",
       "title": "La racionalidad empresarial del crimen",
-      "description": "Bajo esa racionalidad empresarial, silenciar la voz de Berta se calculó como un modo de proteger contratos, reputaciones y retornos. La decisión se alimentó de informes internos, alertas sobre el conflicto y coordinaciones con actores estatales y de seguridad. La idea de “neutralizar” a Berta dejó de ser una expresión de deseo de control y se transformó en una estrategia de mitigación de “riesgos”, ajena a la legalidad.",
+      "description": "xxx",
 
       "location": {
         "center": [-86.25, 14.80],
@@ -102,8 +106,9 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [],
-      "geojsonOnExit": [],
+      "geojsonOn": [],
+
+      "layerStyles": {},
 
       "sideMedia": true,
 
@@ -131,7 +136,8 @@
     {
       "id": "NR-3",
       "title": "La preparación del crimen",
-      "description": "La preparación del asesinato fue un proceso. En las semanas previas se registraron visitas de reconocimiento, reuniones operativas y comunicaciones cruzadas entre directivos y jefes de seguridad. Los cronogramas de movimientos y llamadas permiten ver cadenas de coordinación: avisos sobre rutas habituales, confirmaciones de presencia en puntos de observación y mensajes previos a desplazamientos clave. La información de terreno generada por el dispositivo de vigilancia alimentó estas decisiones. La sincronía entre comunicaciones y presencias en territorio muestra planificación. La identificación de horarios, trayectos y espacios de Berta y de otras personas del COPINH fue seguida de ajustes logísticos. La idea de una “oportunidad” no surgió de la nada: se construyó mediante monitoreo, intercambio de datos y ensayos de respuesta rápida.",
+      "description": "xxx",
+
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
 
       "cameraMode": "dramatic",
@@ -140,14 +146,15 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
+      "geojsonOn": [
         "Impronta_Bertha Isabel Caceres Flores.geojson",
         "Impronta_Oscar Aroldo.geojson"
       ],
-      "geojsonOnExit": [
-        "Impronta_Bertha Isabel Caceres Flores.geojson",
-        "Impronta_Oscar Aroldo.geojson"
-      ],
+
+      "layerStyles": {
+        "Impronta_Bertha Isabel Caceres Flores.geojson": {},
+        "Impronta_Oscar Aroldo.geojson": {}
+      },
 
       "sideMedia": false,
 
@@ -173,7 +180,8 @@
     {
       "id": "NR-4",
       "title": "El asesinato de Berta",
-      "description": "Berta Cáceres fue asesinada en la madrugada del 3 de marzo de 2016, en La Esperanza, Intibucá, dentro de su vivienda. Hombres armados ingresaron y le dispararon a corta distancia; después huyeron. El ataque ocurrió pocas horas después de que Berta regresara a su casa tras una jornada de trabajo comunitario y reuniones de incidencia. La escena y los testimonios la sitúan como un operativo planificado, no como un robo o una disputa común.",
+      "description": "xxx",
+
       "location": { "center": [-88.04, 15.03], "zoom": 12, "pitch": 60, "bearing": -40 },
 
       "cameraMode": "rotate",
@@ -182,16 +190,17 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
+      "geojsonOn": [
         "Poligonos_Predios_Cuchilla El Naranjal.geojson",
         "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson",
         "Rio Gualcarque.geojson"
       ],
-      "geojsonOnExit": [
-        "Poligonos_Predios_Cuchilla El Naranjal.geojson",
-        "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson",
-        "Rio Gualcarque.geojson"
-      ],
+
+      "layerStyles": {
+        "Poligonos_Predios_Cuchilla El Naranjal.geojson": {},
+        "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson": {},
+        "Rio Gualcarque.geojson": {}
+      },
 
       "sideMedia": false,
 
@@ -220,7 +229,8 @@
     {
       "id": "NR-5",
       "title": "Los asesinos de Berta",
-      "description": "Este asesinato no puede leerse sólo como “quién disparó”, sino como “quién decidió que Berta era sacrificable” y “qué estructuras hicieron posible ese crimen”. La evidencia muestra una secuencia: vigilancia y mapeo de rutas, coordinación entre mandos empresariales y jefes de seguridad, pagos que lubricaron los operativos y una logística que conectó las decisiones corporativas con operadores criminales y las tolerancias estatales. La pregunta adecuada sigue el dinero, las órdenes y las coberturas, no sólo el arma.",
+      "description": "xxx",
+
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
 
       "cameraMode": "dramatic",
@@ -229,14 +239,15 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
+      "geojsonOn": [
         "Impronta_Bertha Isabel Caceres Flores.geojson",
         "Impronta_Oscar Aroldo.geojson"
       ],
-      "geojsonOnExit": [
-        "Impronta_Bertha Isabel Caceres Flores.geojson",
-        "Impronta_Oscar Aroldo.geojson"
-      ],
+
+      "layerStyles": {
+        "Impronta_Bertha Isabel Caceres Flores.geojson": {},
+        "Impronta_Oscar Aroldo.geojson": {}
+      },
 
       "sideMedia": false,
 

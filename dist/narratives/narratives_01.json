@@ -3,8 +3,15 @@
     {
       "id": "NR-0",
       "title": "Del golpe al despojo legal",
-      "description": "El golpe de Estado del 28 de junio de 2009 en Honduras abrió un ciclo de reconfiguración institucional que facilitó la creación de andamiajes legales y financieros orientados a desregular salvaguardas de derechos humanos y acelerar concesiones privadas sobre ríos y otras riquezas naturales. En pocos años, territorios indígenas fueron convertidos en zonas de sacrificio para proyectos extractivos. Esta primera narrativa, «El golpe de 2009 y la venta del territorio», explica cómo ese marco permitió transformar el río sagrado Gualcarque, en el municipio de Río Blanco, departamento de Intibucá, en un objeto de inversión y especulación. Asimismo, pone de manifiesto cuáles fueron las implicaciones de este proceso extractivo para las comunidades lencas que se movilizaron para defenderlo.",
-      "location": { "center": [-86.5, 14.8], "zoom": 6, "pitch": 0, "bearing": 0 },
+      "description": ["El golpe de Estado del 28 de junio de 2009 en Honduras abrió un ciclo de reconfiguración institucional que facilitó la creación de andamiajes legales y financieros orientados a desregular salvaguardas de derechos humanos y acelerar concesiones privadas sobre ríos y otras riquezas naturales. En pocos años, territorios indígenas fueron convertidos en zonas de sacrificio para proyectos extractivos.",
+      "Esta primera narrativa, «El golpe de 2009 y la venta del territorio», explica cómo ese marco permitió transformar el río sagrado Gualcarque, en el municipio de Río Blanco, departamento de Intibucá, en un objeto de inversión y especulación.  Asimismo, pone de manifiesto cuáles fueron las implicaciones de este proceso extractivo para las comunidades lencas que se movilizaron para defenderlo."],
+
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 45,
+        "bearing": -30
+      },
 
       "cameraMode": "flat",
       "transitionDuration": 2000,
@@ -12,8 +19,26 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [],
-      "geojsonOnExit": ["crb-caserios-la-vega", "aldea-rio-blanco-limite"],
+      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine"],
+
+      "layerStyles": {
+        "aldea-rio-blanco-limite": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.3
+        },
+        "censo-Rio-Blanco-2013": {
+          "pointColor": "#eb443e",
+          "pointRadius": 6,
+          "pointStrokeColor": "#000000",
+          "pointStrokeWidth": 1
+        },
+        "departamentos-honduras-ine": {
+          "fill": false,
+          "lineColor": "#000000",
+          "lineWidth": 2
+        }
+      },
 
       "sideMedia": false,
 
@@ -35,9 +60,15 @@
 
     {
       "id": "NR-1",
-      "title": "El Gualcarque es vida",
-      "description": "Desde la colonia española hasta el presente, los pueblos originarios de Centroamérica han resistido la convergencia entre gobernantes, capitales extranjeros y empresas que buscan explotar sus territorios. En Honduras, el pueblo lenca ha sostenido una relación socioambiental sagrada con el Gualcarque: el río no es un “recurso”, sino un ser vivo cuyo espíritu protege a las comunidades y convoca a su defensa. En palabras de Berta Cáceres, entregarlo equivaldría a entregar la vida misma.",
-      "location": { "center": [-88.15, 14.32], "zoom": 11, "pitch": 25, "bearing": -20 },
+      "title": "Entregar el Gualcarque es entregar la vida misma",
+      "description": "xxx",
+
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 45,
+        "bearing": -30
+      },
 
       "cameraMode": "tilted",
       "transitionDuration": 2500,
@@ -45,8 +76,12 @@
       "highlightLayers": ["carreteras-2012"],
       "dimLayers": [],
 
-      "geojsonOnEnter": ["crb-caserios-la-tejera", "carreteras-2012"],
-      "geojsonOnExit": ["crb-caserios-la-tejera", "carreteras-2012"],
+      "geojsonOn": ["aldea-rio-blanco-limite", "osm-waterways"],
+
+      "layerStyles": {
+        "aldea-rio-blanco-limite": {},
+        "osm-waterways": {}
+      },
 
       "sideMedia": false,
 
@@ -68,9 +103,15 @@
 
     {
       "id": "NR-2",
-      "title": "Consulta previa: lo que obliga el OIT 169",
-      "description": "Según el censo de 2013, al menos el 87 % de las personas que vivían en el municipio de Río Blanco se identificaban como lencas, muchas de ellas organizadas en el COPINH. Esa densidad organizativa explica por qué el Gualcarque se convirtió en un eje central de la defensa comunitaria. El Estado hondureño ha ratificado instrumentos internacionales, como el Convenio 169 de la OIT, que obliga a consultas libres, previas e informadas en territorios indígenas. Sin ese estándar, las concesiones vulneran derechos colectivos y generan conflictos estructurales.",
-      "location": { "center": [-86.25, 14.80], "zoom": 6.2, "pitch": 0, "bearing": 0 },
+      "title": "Obligaciones del Estado hondureño hacia pueblos originarios",
+      "description": "xxx",
+
+      "location": {
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
+        "pitch": 25,
+        "bearing": 60
+      },
 
       "cameraMode": "flat",
       "transitionDuration": 2000,
@@ -78,8 +119,13 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [],
-      "geojsonOnExit": [],
+      "geojsonOn": ["aldea-rio-blanco-limite", "osm-waterways", "rio-gualcarque"],
+
+      "layerStyles": {
+        "aldea-rio-blanco-limite": {},
+        "osm-waterways": {},
+        "rio-gualcarque": {}
+      },
 
       "sideMedia": true,
 
@@ -103,9 +149,15 @@
 
     {
       "id": "NR-3",
-      "title": "Concesiones sin consulta",
-      "description": "El Decreto No. 181-2009 creó una vía para la gestión privada de los recursos hídricos. Ello detonó la creación de empresas y proyectos como Agua Zarca sin consulta previa al pueblo lenca. La combinación de desregulación, ausencia de consulta y financiamiento internacional generó riesgos estructurales para el territorio.",
-      "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
+      "title": "El Decreto No. 181-2009 del 14 de diciembre de 2009",
+      "description": "xxx",
+
+      "location": {
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
+      },
 
       "cameraMode": "dramatic",
       "transitionDuration": 2000,
@@ -113,8 +165,11 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": ["imp-copinh", "imp-desa"],
-      "geojsonOnExit": ["imp-copinh", "imp-desa"],
+      "geojsonOn": ["limite-territorio-nacional"],
+
+      "layerStyles": {
+        "limite-territorio-nacional": {}
+      },
 
       "sideMedia": false,
 
@@ -137,8 +192,14 @@
     {
       "id": "NR-4",
       "title": "Hostigamiento y el caso Tomás García",
-      "description": "En los años posteriores a la concesión de Agua Zarca, la población lenca enfrentó hostigamiento: vigilancias, amenazas, estigmatización y uso de fuerzas de seguridad. Ese clima se expresó en el asesinato de Tomás García el 15 de julio de 2013 durante una protesta pacífica.",
-      "location": { "center": [-88.04, 15.03], "zoom": 12, "pitch": 60, "bearing": -40 },
+      "description": "xxx",
+
+      "location": {
+        "center": [-88.04, 15.03],
+        "zoom": 12,
+        "pitch": 60,
+        "bearing": -40
+      },
 
       "cameraMode": "rotate",
       "transitionDuration": 3500,
@@ -146,8 +207,13 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": ["crb-caserios-el-barreal", "imp-ejercito", "rio-gualcarque"],
-      "geojsonOnExit": ["crb-caserios-el-barreal", "imp-ejercito", "rio-gualcarque"],
+      "geojsonOn": ["crb-caserios-el-barreal", "imp-ejercito", "rio-gualcarque"],
+
+      "layerStyles": {
+        "crb-caserios-el-barreal": {},
+        "imp-ejercito": {},
+        "rio-gualcarque": {}
+      },
 
       "sideMedia": false,
 
@@ -173,8 +239,14 @@
     {
       "id": "NR-5",
       "title": "Un crimen empresarial",
-      "description": "La violencia contra defensores del territorio no puede entenderse como hechos aislados. Lo expuesto en esta narrativa enlaza con «La red financiera», que detalla la arquitectura financiera y de poder detrás del caso.",
-      "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
+      "description": "xxx",
+
+      "location": {
+        "center": [-88.23, 14.43],
+        "zoom": 12,
+        "pitch": 45,
+        "bearing": 30
+      },
 
       "cameraMode": "dramatic",
       "transitionDuration": 2000,
@@ -182,8 +254,13 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": ["imp-jbm", "imp-oatv"],
-      "geojsonOnExit": ["imp-jbm", "imp-oatv"],
+      "geojsonOn": ["imp-jbm", "imp-oatv", "departamentos-honduras-ine"],
+
+      "layerStyles": {
+        "imp-jbm": {},
+        "imp-oatv": {},
+        "departamentos-honduras-ine": {}
+      },
 
       "sideMedia": false,
 

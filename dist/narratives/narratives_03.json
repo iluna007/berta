@@ -4,7 +4,8 @@
     {
       "id": "NR-1",
       "title": "Las infraestructuras para el despojo",
-      "description": "El andamiaje financiero descrito en «La red financiera» se materializó en el territorio a través de compras de tierras en contextos de presión y de gastos destinados a sostener el control territorial: pagos a policías, operadores locales y contramanifestaciones. Con dinero etiquetado como capital para “desarrollo”, se premió la coerción, se debilitó la organización comunitaria, utilizando  la obra como máscara.",
+      "description": "xxx",
+
       "location": { "center": [-88.15, 14.32], "zoom": 11, "pitch": 25, "bearing": -20 },
 
       "cameraMode": "tilted",
@@ -13,14 +14,15 @@
       "highlightLayers": ["chapter-cap-2-Antenas Telefonicas.geojson-layer"],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
+      "geojsonOn": [
         "Poligonos_Predios_Sisimetera.geojson",
         "Antenas Telefonicas.geojson"
       ],
-      "geojsonOnExit": [
-        "Poligonos_Predios_Sisimetera.geojson",
-        "Antenas Telefonicas.geojson"
-      ],
+
+      "layerStyles": {
+        "Poligonos_Predios_Sisimetera.geojson": {},
+        "Antenas Telefonicas.geojson": {}
+      },
 
       "sideMedia": false,
 
@@ -37,23 +39,15 @@
       "shapes": [],
       "layers": [],
 
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
+      "panel": { "width": "420px", "position": "right" }
     },
 
     {
       "id": "NR-2",
       "title": "El rol notarial",
-      "description": "Los notarios jugaron un papel central en este proceso. Su firma dio forma legal a traspasos de propiedad, constituciones y endosos. Esa intervención convirtió operaciones irregulares en actos “válidos” ante terceros. En territorios indígenas donde el consentimiento debe ser libre e informado, la formalización notarial maquilló finalidades que chocaban con las propias condiciones del crédito y con las obligaciones estatales derivadas de convenios internacionales. La fe pública notarial fue la bisagra entre papeles y territorio: sin ese sello, el andamiaje de despojo habría sido más difícil de consolidar.",
+      "description": "xxx",
 
-      "location": {
-        "center": [-86.25, 14.80],
-        "zoom": 6.2,
-        "pitch": 0,
-        "bearing": 0
-      },
+      "location": { "center": [-86.25, 14.80], "zoom": 6.2, "pitch": 0, "bearing": 0 },
 
       "cameraMode": "flat",
       "transitionDuration": 2000,
@@ -61,8 +55,9 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [],
-      "geojsonOnExit": [],
+      "geojsonOn": [],
+
+      "layerStyles": {},
 
       "sideMedia": true,
 
@@ -81,16 +76,14 @@
       "shapes": [],
       "layers": [],
 
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
+      "panel": { "width": "420px", "position": "right" }
     },
 
     {
       "id": "NR-3",
       "title": "Rediseños de la presa",
-      "description": "Tras la salida de Sinohydro, DESA modificó el proyecto original, creó «Agua Zarca II» y trasladó parte de las obras a otra ubicación, del otro lado del río. En el discurso público se afirmó que el cambio buscaba evitar conflictos con el COPINH, pero existen indicios de que la decisión respondió a la incapacidad financiera de completar el proyecto original. En un campo de causalidades probables, la coincidencia entre tiempos financieros, movimientos de efectivo y el asesinato de Berta permite leer la construcción de un conjunto consistente de acciones orientadas a detener la espiral financiera de DESA. Es notable que, a pesar del rediseño sustancial de Agua Zarca, se mantuvieran inalteradas variables clave como la cantidad de megavatios a producir y la superficie de inundación. El proyecto cambió de forma, pero conservó su escala de impacto.",
+      "description": "xxx",
+
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
 
       "cameraMode": "dramatic",
@@ -99,14 +92,15 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
+      "geojsonOn": [
         "Impronta_Bertha Isabel Caceres Flores.geojson",
         "Impronta_Oscar Aroldo.geojson"
       ],
-      "geojsonOnExit": [
-        "Impronta_Bertha Isabel Caceres Flores.geojson",
-        "Impronta_Oscar Aroldo.geojson"
-      ],
+
+      "layerStyles": {
+        "Impronta_Bertha Isabel Caceres Flores.geojson": {},
+        "Impronta_Oscar Aroldo.geojson": {}
+      },
 
       "sideMedia": false,
 
@@ -123,16 +117,14 @@
       "shapes": [],
       "layers": [],
 
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
+      "panel": { "width": "420px", "position": "right" }
     },
 
     {
       "id": "NR-4",
       "title": "Obras como control territorial",
-      "description": "Las infraestructuras construidas alrededor del proyecto —caminos, puentes, instalaciones de obra— no sólo sirvieron para transportar materiales. También desempeñaron un papel de corredores logísticos de control territorial, facilitando la entrada de fuerzas de seguridad, el desplazamiento de comunidades y su vigilancia. Al superponer en el mapa las fechas de compra de terrenos, la construcción de infraestructuras y los episodios de violencia, se observa un mismo patrón: a medida que se consolidaba la propiedad empresarial sobre el Gualcarque, aumentaban las amenazas y las agresiones contra el COPINH y las comunidades lencas.",
+      "description": "xxx",
+
       "location": { "center": [-88.04, 15.03], "zoom": 12, "pitch": 60, "bearing": -40 },
 
       "cameraMode": "rotate",
@@ -141,16 +133,17 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
+      "geojsonOn": [
         "Poligonos_Predios_Cuchilla El Naranjal.geojson",
         "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson",
         "Rio Gualcarque.geojson"
       ],
-      "geojsonOnExit": [
-        "Poligonos_Predios_Cuchilla El Naranjal.geojson",
-        "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson",
-        "Rio Gualcarque.geojson"
-      ],
+
+      "layerStyles": {
+        "Poligonos_Predios_Cuchilla El Naranjal.geojson": {},
+        "Impronta_Douglas Geovanny Bustillo_Andys Iraheta_Samir Antonio.geojson": {},
+        "Rio Gualcarque.geojson": {}
+      },
 
       "sideMedia": false,
 
@@ -170,16 +163,14 @@
       "shapes": [],
       "layers": [],
 
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
+      "panel": { "width": "420px", "position": "right" }
     },
 
     {
       "id": "NR-5",
       "title": "La logística coercitiva",
-      "description": "El marco normativo posterior al golpe de 2009, las escrituras notariales y las obras físicas se ensamblaron así en una sola maquinaria: una logística de despojo que tradujo la sacralidad del territorio en un proyecto de inversión y la resistencia comunitaria en un obstáculo a neutralizar. Con la infraestructura material en marcha, actores empresariales comenzaron a instalar y refinar logísticas de seguridad y agresión. La siguiente narrativa, «Los agresores», detalla cómo se articularon estos dispositivos en el territorio.",
+      "description": "xxx",
+
       "location": { "center": [-88.23, 14.43], "zoom": 12, "pitch": 45, "bearing": 30 },
 
       "cameraMode": "dramatic",
@@ -188,14 +179,15 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
+      "geojsonOn": [
         "Impronta_Bertha Isabel Caceres Flores.geojson",
         "Impronta_Oscar Aroldo.geojson"
       ],
-      "geojsonOnExit": [
-        "Impronta_Bertha Isabel Caceres Flores.geojson",
-        "Impronta_Oscar Aroldo.geojson"
-      ],
+
+      "layerStyles": {
+        "Impronta_Bertha Isabel Caceres Flores.geojson": {},
+        "Impronta_Oscar Aroldo.geojson": {}
+      },
 
       "sideMedia": false,
 
@@ -212,12 +204,8 @@
       "shapes": [],
       "layers": [],
 
-      "panel": {
-        "width": "420px",
-        "position": "right"
-      }
+      "panel": { "width": "420px", "position": "right" }
     }
 
-   
   ]
 }

@@ -3,8 +3,9 @@
     {
       "id": "NR-0",
       "title": "Narrativas interactivas del GIEI",
-      "description": "Las narrativas interactivas de esta plataforma forman parte de la presentación de resultados que el Grupo Interdisciplinario de Expertos Independientes (GIEI) en Honduras dirige al pueblo hondureño. Estas narrativas incorporan datos, evidencia verificable y contexto a través de análisis espacial y territorial, para visibilizar la persistencia de las infraestructuras legales, financieras, territoriales y coercitivas que hicieron posible el asesinato de Berta Cáceres y que hoy siguen amenazando al pueblo lenca y a otros pueblos originarios de Honduras, poniendo en riesgo sus vidas y comunidades.",
-      "location": { "center": [-86.5, 14.8], "zoom": 6, "pitch": 0, "bearing": 0 },
+      "description": ["Las narrativas interactivas de esta plataforma forman parte de la presentación de resultados que el Grupo Interdisciplinario de Expertos Independientes (GIEI) en Honduras dirige al pueblo hondureño. Estas narrativas incorporan datos, evidencia verificable y contexto a través de análisis espacial y territorial, para visibilizar la persistencia de las infraestructuras legales, financieras, territoriales y coercitivas que hicieron posible el asesinato de Berta Cáceres y que hoy siguen amenazando al pueblo lenca y a otros pueblos originarios de Honduras, poniendo en riesgo sus vidas y comunidades."],
+
+      "location": { "center": [-86.5, 14.8], "zoom": 6, "pitch": 5, "bearing": 0 },
 
       "cameraMode": "flat",
       "transitionDuration": 2000,
@@ -12,12 +13,16 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOnEnter": [
-        
-      ],
-      "geojsonOnExit": [
-        
-      ],
+      "geojsonOn": ["departamentos-honduras-ine"],
+
+      "layerStyles": {
+        "departamentos-honduras-ine": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.5 
+ 
+        }
+      },
 
       "sideMedia": false,
 

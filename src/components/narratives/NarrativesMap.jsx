@@ -1,6 +1,6 @@
 // src/components/narratives/NarrativesMap.jsx
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "/node_modules/mapbox-gl/dist/mapbox-gl.css";
 
@@ -11,12 +11,15 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
   const mapContainer = useRef(null);
   const map = useRef(null);
 
-  // Cache de capas activas
-  const activeLayers = useRef({});
+  const [isMapReady, setIsMapReady] = useState(false);
 
-  // Cargar definición de capas (geojsonLayers2.json)
+  // GeoJSON layer definitions
   const layersRef = useRef(null);
 
+  // Cache of loaded sources so we don’t reload unnecessarily
+  const loadedSources = useRef({});
+
+  // Load layer definitions (geojsonLayers2.json)
   useEffect(() => {
     fetch("/data/geojsonLayers2.json")
       .then((res) => res.json())
@@ -27,7 +30,7 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
       .catch((err) => console.error("Error cargando geojsonLayers2.json", err));
   }, []);
 
-  // Inicialización del mapa
+  // Initialize map
   useEffect(() => {
     if (map.current) return;
 
@@ -36,35 +39,42 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
       style: "mapbox://styles/representare/cmiruwsd6004k01s4av98fe2i",
       center: [-86.5, 14.8],
       zoom: 6,
-      pitch: 60,        // Necesario para ver el relieve
+      pitch: 60,
       bearing: 20,
     });
 
     map.current.addControl(new mapboxgl.NavigationControl());
 
-    // Activar terreno 3D cuando el mapa cargue
     map.current.on("load", () => {
-      // Fuente DEM (obligatoria)
-      map.current.addSource("mapbox-dem", {
-        type: "raster-dem",
-        url: "mapbox://mapbox.mapbox-terrain-dem-v1",
-        tileSize: 512,
-        maxzoom: 14,
-      });
+      // DEM source (terrain)
+      if (!map.current.getSource("mapbox-dem")) {
+        map.current.addSource("mapbox-dem", {
+          type: "raster-dem",
+          url: "mapbox://mapbox.mapbox-terrain-dem-v1",
+          tileSize: 512,
+          maxzoom: 14,
+        });
+      }
 
-      // Habilitar el modelo de elevación
-      map.current.setTerrain({ source: "mapbox-dem", exaggeration: 1.4 });
+      if (!map.current.getTerrain()) {
+        map.current.setTerrain({
+          source: "mapbox-dem",
+          exaggeration: 1.4,
+        });
+      }
 
       console.log("🌄 Terreno 3D activado");
+      setIsMapReady(true); // <--- CLAVE
     });
   }, []);
 
-  // Cargar una capa desde layersRef (por ID)
-  const loadGeoLayer = async (layerId) => {
+  // ------------------------------------------------------
+  // 🔥 Recreate layer ALWAYS to apply new styles
+  // ------------------------------------------------------
+  const recreateLayer = async (layerId, styleOverrides = {}) => {
     if (!layersRef.current) return;
 
     const def = layersRef.current.find((l) => l.id === layerId);
-
     if (!def) {
       console.warn("⚠ No hay entrada en geojsonLayers2.json para:", layerId);
       return;
@@ -76,22 +86,30 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
     const sourceId = `src-${layerId}`;
     const mapLayerId = `layer-${layerId}`;
 
+    // If layer exists, remove it completely BEFORE recreating it
     if (map.current.getLayer(mapLayerId)) {
-      map.current.setLayoutProperty(mapLayerId, "visibility", "visible");
-      return;
+      map.current.removeLayer(mapLayerId);
+    }
+    if (map.current.getSource(sourceId)) {
+      map.current.removeSource(sourceId);
     }
 
     try {
       const res = await fetch(url);
       const data = await res.json();
 
-      map.current.addSource(sourceId, { type: "geojson", data });
+      map.current.addSource(sourceId, {
+        type: "geojson",
+        data,
+      });
 
+      // Determine geometry type
       const geometry = data.features?.[0]?.geometry?.type;
 
       let layerConfig = {
         id: mapLayerId,
         source: sourceId,
+        paint: {},
       };
 
       if (["Polygon", "MultiPolygon"].includes(geometry)) {
@@ -99,70 +117,122 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
         layerConfig.paint = {
           "fill-color": color,
           "fill-opacity": 0.6,
+          ...layerConfig.paint,
         };
       } else if (["LineString", "MultiLineString"].includes(geometry)) {
         layerConfig.type = "line";
         layerConfig.paint = {
           "line-color": color,
           "line-width": 3,
+          ...layerConfig.paint,
         };
       } else {
         layerConfig.type = "circle";
         layerConfig.paint = {
           "circle-radius": 6,
           "circle-color": color,
+          ...layerConfig.paint,
         };
       }
 
-      // Insertar siempre arriba del estilo → evita “capas negras”
+      // -----------------------------------------
+      // 🔵 OVERRIDES POR NARRATIVA
+      // -----------------------------------------
+      if (styleOverrides.fill === false && layerConfig.type === "fill") {
+        layerConfig.type = "line";
+        layerConfig.paint = {
+          "line-color": layerConfig.paint["fill-color"] ?? color,
+          "line-width": styleOverrides.lineWidth ?? 2,
+        };
+      }
+
+      if (styleOverrides.fillColor) {
+        layerConfig.paint["fill-color"] = styleOverrides.fillColor;
+      }
+
+      if (styleOverrides.fillOpacity !== undefined) {
+        layerConfig.paint["fill-opacity"] = styleOverrides.fillOpacity;
+      }
+
+      if (styleOverrides.lineColor) {
+        layerConfig.paint["line-color"] = styleOverrides.lineColor;
+      }
+
+      if (styleOverrides.lineWidth) {
+        layerConfig.paint["line-width"] = styleOverrides.lineWidth;
+      }
+
+      if (styleOverrides.pointColor) {
+        layerConfig.paint["circle-color"] = styleOverrides.pointColor;
+      }
+
+      if (styleOverrides.pointRadius) {
+        layerConfig.paint["circle-radius"] = styleOverrides.pointRadius;
+      }
+
+      // Insert at top of style
       const topLayer =
         map.current.getStyle().layers[
           map.current.getStyle().layers.length - 1
         ]?.id;
 
       map.current.addLayer(layerConfig, topLayer);
-      activeLayers.current[mapLayerId] = true;
     } catch (err) {
       console.error("Error cargando capa:", layerId, err);
     }
   };
 
-  const hideGeoLayer = (layerId) => {
-    const mapLayerId = `layer-${layerId}`;
-    if (map.current.getLayer(mapLayerId)) {
-      map.current.setLayoutProperty(mapLayerId, "visibility", "none");
-    }
+  // Hide all dynamic layers
+  const hideAllLayers = () => {
+    if (!map.current) return;
+
+    const style = map.current.getStyle();
+    if (!style) return;
+
+    style.layers
+      .filter((l) => l.id.startsWith("layer-"))
+      .forEach((l) => {
+        if (map.current.getLayer(l.id)) {
+          map.current.setLayoutProperty(l.id, "visibility", "none");
+        }
+      });
   };
 
-  // Cuando cambia el capítulo
+  // ------------------------------------------------------
+  // Chapter change
+  // ------------------------------------------------------
   useEffect(() => {
-    if (!map.current || !activeChapterId || !chapters?.length) return;
+    if (!map.current) return;
+    if (!isMapReady) return; // <--- PREVIENE ERROR DEL INICIO
+    if (!activeChapterId) return;
+    if (!chapters?.length) return;
 
     const chapter = chapters.find((c) => c.id === activeChapterId);
     if (!chapter) return;
 
+    // Move camera
     const { center, zoom, pitch, bearing } = chapter.location;
 
     map.current.flyTo({
       center,
       zoom,
-      pitch: pitch ?? 60,   // asegura pitch adecuado para relieve
+      pitch: pitch ?? 60,
       bearing,
-      duration: 3500,
+      duration: 3000,
       speed: 0.5,
       curve: 1.8,
       easing: (t) => t,
       essential: true,
     });
 
-    // Ocultar lo que sale
-    chapters.forEach((c) => {
-      c.geojsonOnExit?.forEach((id) => hideGeoLayer(id));
-    });
+    hideAllLayers();
 
-    // Cargar lo que entra
-    chapter.geojsonOnEnter?.forEach((id) => loadGeoLayer(id));
-  }, [activeChapterId, chapters]);
+    // Load layers with style overrides
+    chapter.geojsonOn?.forEach((layerId) => {
+      const overrides = chapter.layerStyles?.[layerId] || {};
+      recreateLayer(layerId, overrides);
+    });
+  }, [activeChapterId, chapters, isMapReady]);
 
   return (
     <div
