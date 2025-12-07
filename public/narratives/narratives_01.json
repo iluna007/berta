@@ -29,16 +29,15 @@
         },
         "censo-Rio-Blanco-2013": {
           "pointColor": "#eb443e",
-          "pointRadius": 3,
-          "pointStrokeColor": "#000000",
-          "pointStrokeWidth": 2,  
-          "pointBlur": 3
+          "pointRadius": 3
+         
         },
         "departamentos-honduras-ine": {
           "fill": false,
           "lineColor": "#000000",
           "lineWidth": 2
-        },
+          
+        }
         
       },
 
@@ -78,7 +77,7 @@
       "highlightLayers": ["carreteras-2012"],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite","departamentos-honduras-ine","rio-gualcarque"],
+      "geojsonOn": ["aldea-rio-blanco-limite","departamentos-honduras-ine","rio-gualcarque","osm-waterways"],
 
       "layerStyles": {
         "aldea-rio-blanco-limite": {
@@ -95,7 +94,12 @@
         "rio-gualcarque": {
           "lineColor": "#0077be",
           "lineWidth": 4
+        },
+        "osm-waterways": {
+          "lineColor": "#5EA4BF",
+          "lineWidth": 2
         }
+
       },
 
       "sideMedia": false,
@@ -267,7 +271,7 @@
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 12,
+        "zoom": 11,
         "pitch": 45,
         "bearing": 30
       },
@@ -278,7 +282,7 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine"],
+      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine","rio-gualcarque","osm-waterways"],
 
       "layerStyles": {
         "aldea-rio-blanco-limite": {
@@ -294,6 +298,14 @@
         "departamentos-honduras-ine": {
           "fill": false,
           "lineColor": "#eb443e",
+          "lineWidth": 2
+        },
+        "rio-gualcarque": {
+          "lineColor": "#0077be",
+          "lineWidth": 4
+        },
+        "osm-waterways": {
+          "lineColor": "#5EA4BF",
           "lineWidth": 2
         }
       },
@@ -322,10 +334,10 @@
       "El viraje legal y territorial se enlaza con la siguiente narrativa, «La red financiera», que detalla la arquitectura de poder financiero que hizo posible las violencias contra personas lencas: quién movió el dinero, con qué instrumentos y con qué incentivos."],
 
       "location": {
-        "center": [-88.23, 14.43],
-        "zoom": 12,
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 11,
         "pitch": 45,
-        "bearing": 30
+        "bearing": -30
       },
 
       "cameraMode": "dramatic",
@@ -334,12 +346,15 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["imp-jbm", "imp-oatv", "departamentos-honduras-ine"],
+      "geojsonOn": ["departamentos-honduras-ine"],
 
       "layerStyles": {
-        "imp-jbm": {},
-        "imp-oatv": {},
-        "departamentos-honduras-ine": {}
+      
+        "departamentos-honduras-ine": {
+          "fill": false,
+          "lineColor": "#eb443e",
+          "lineWidth": 2
+        }
       },
 
       "sideMedia": false,
