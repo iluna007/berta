@@ -2,9 +2,9 @@
   "chapters": [
     {
       "id": "NR-0",
-      "title": "Coerción para imponer Agua Zarca",
-      "description":["Para imponer Agua Zarca se activó un dispositivo coercitivo que articuló empresas, agentes estatales y operadores criminales. Bajo directrices de personal de DESA se instalaron retenes, se vigiló a liderazgos del COPINH —en particular a Berta Cáceres— y se intervinieron asambleas y plantones.",
-      "Esta narrativa establece el funcionamiento del dispositivo: control de accesos, seguimiento de personas y respuestas coordinadas frente a acciones comunitarias. En lo que sigue, describimos los componentes de dispositivo coercitivo mediante financiamiento, vigilancia, cooptación, estigmatización y cadena de mando."
+      "title": "Cómo se administró la impunidad",
+      "description":["Tras el asesinato, se activó un manejo de crisis. Instituciones del Estado, operadores judiciales y vocerías empresariales ordenaron el relato, limitaron el alcance de las pesquisas y protegieron vínculos sensibles. Esta narrativa, «El mecanismo generador de impunidad», explica cómo funcionó ese mecanismo y por qué sigue afectando a las comunidades lencas.",
+      "Tres planos avanzaron en paralelo: decisiones procesales que estrecharon la investigación, comunicaciones y gestiones para encubrir responsabilidades empresariales y estatales, y la continuidad de infraestructuras y reglas que mantuvieron abierto el camino del despojo. Con estos componentes, el caso no cerró; cambió de forma."
       ],
 
       "location": {
@@ -62,9 +62,9 @@
 
     {
       "id": "NR-1",
-      "title": "Pagos ilícitos para crear el dispositivo de seguridad",
-      "description":["La seguridad coercitiva se sostuvo con recursos de la banca internacional de desarrollo que fue canalizado —mediante el mecanismo descrito en las narrativas anteriores— a policías, militares, seguridad privada, informantes y mediadores. Planillas, recibos y notas internas documentan pagos periódicos vinculados a operativos para liberar accesos, romper plantones y obtener información.",
-      "Los flujos de efectivo aseguraron disponibilidad de fuerza y lealtades, habilitaron servicios de inteligencia y coordinaron intervenciones puntuales antes y después de eventos de protesta. Ante la falta de cumplimiento con obligaciones ante pueblos como los lenca, este financiamiento no fue gasto operativo neutro, sino el engranaje económico del dispositivo de coerción para imponer Agua Zarca."],
+      "title": "Redes de encubrimiento",
+      "description":["Las mismas redes que impulsaron el proyecto se adaptaron para la estrategia de encubrimiento. Vocerías empresariales y autoridades delimitaron el relato público, enfatizando la responsabilidad de ejecutores materiales y omitiendo vínculos de decisión y financiamiento.",
+      "En paralelo, se operó para contener daños reputacionales y blindar contratos. El resultado fue un cerco narrativo y jurídico que redujo el caso a su expresión mínima, mientras que alertas y evidencias sobre coordinación y pagos quedaban en segundo plano. La crisis se administró no para esclarecer, sino para proteger intereses."],
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
@@ -124,10 +124,10 @@
 
     {
       "id": "NR-2",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "title": "Omisiones que fabrican impunidad",
+      "description":["La impunidad se construyó por acción y por omisión. En los expedientes constan líneas de investigación que no se siguieron, pruebas minimizadas y fragmentación de responsabilidades que diluyó el papel de los decisores. Diligencias clave quedaron postergadas; solicitudes de información financiera chocaron con regímenes de secreto; comunicaciones que evidenciaban coordinación se leyeron de forma aislada. Al reducir el foco a operadores materiales, el sistema dejó intactos los eslabones que conectaron decisiones empresariales y estatales con la violencia.",
+      "Estas omisiones no fueron simples errores. Su acumulación configuró un sesgo: investigar lo que confirma un relato restringido y dejar fuera lo que compromete estructuras de poder. Así, la verdad pública se estrechó y el aprendizaje institucional se debilitó, dejando abierta la posibilidad de repetición."
+      ],
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
@@ -171,10 +171,10 @@
 
     {
       "id": "NR-3",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "title": "Infraestrucuras de despojo que siguen intactas",
+      "description":["Pese a las sentencias contra algunos autores materiales e intelecuales, las infraestructuras que permitieron el crimen del asesinato de Berta, pero también aquellas que despojan tierras de pueblos como los lenca, siguen activas. En Honduras persisten redes empresariales y estatales con capacidad para imponer proyectos, influir en decisiones regulatorias y acceder ilícitamente a fuerzas coercitivas.",
+      "Esta inercia institucional y económica ha impedido una reparación integral para las comunidades lencas y ha mantenido vigentes los incentivos para repetir patrones de violencia. Sin cambios estructurales en leyes e instituciones, la rendición de cuentas se reduce a casos emblemáticos, mientras que las infraestructuras que posibilitan estas violencias permanece."
+    ],
 
       "location": {
         "center": [-86.5, 14.8],
@@ -222,10 +222,10 @@
 
     {
       "id": "NR-4",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "title": "El riesgo de la reactivación de las violencias",
+      "description":["Después del asesinato de Berta, se retiró el banco holandés FMO, y el BCIE vendió la deuda en mora de Agua Zarca por 500,000 dólares a Swiss International Wealth Management (SIWM). Detrás de esa operación, la deuda terminó bajo estructuras ligadas a Guillermo Bueso, dueño de Banco Atlántida. Con la deuda viva y nuevos tenedores, el proyecto no está muerto: puede reactivarse con otras manos y en el mismo territorio en disputa.",
+      "Si eso ocurre, las comunidades lencas volverán a enfrentar presiones conocidas: vigilancia en accesos, pagos para romper plantones, ofertas y amenazas para dividir a la gente, discursos que criminalizan la protesta y presencia de fuerza pública para abrir camino. No es un riesgo abstracto. Es el regreso probable de un dispositivo coercitivo ya documentado, ahora impulsado por una ingeniería financiera que mantiene el proyecto respirando."
+    ],
 
      "location": {
         "center": [-86.5, 14.8],
@@ -271,77 +271,13 @@
       "panel": { "width": "420px", "position": "right" }
     },
 
-    {
-      "id": "NR-5",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
-
-      "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 45,
-        "bearing": 30
-      },
-
-      "cameraMode": "dramatic",
-      "transitionDuration": 2000,
-
-      "highlightLayers": [],
-      "dimLayers": [],
-
-      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine","rio-gualcarque","osm-waterways"],
-
-      "layerStyles": {
-        "aldea-rio-blanco-limite": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.3
-        },
-        "censo-Rio-Blanco-2013": {
-          "pointColor": "#eb443e",
-          "pointRadius": 3,
-          "pointBlur": 3
-        },
-        "departamentos-honduras-ine": {
-          "fill": false,
-          "lineColor": "#eb443e",
-          "lineWidth": 2
-        },
-        "rio-gualcarque": {
-          "lineColor": "#0077be",
-          "lineWidth": 4
-        },
-        "osm-waterways": {
-          "lineColor": "#5EA4BF",
-          "lineWidth": 2
-        }
-      },
-
-      "sideMedia": false,
-
-      "media": [
-        {
-          "type": "image",
-          "src": "/narratives/media/violencia_redes.jpeg",
-          "position": "inside",
-          "opacity": 1
-        }
-      ],
-
-      "markers": [],
-      "shapes": [],
-      "layers": [],
-
-      "panel": { "width": "420px", "position": "right" }
-    },
+    
      {
-      "id": "NR-6",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "id": "NR-5",
+      "title": "Resistencia y no repetición",
+      "description":["Frente a esa continuidad, también persiste la red de resistencia. El COPINH, la familia de Berta y muchas otras comunidades exigen verdad, reparación integral y garantías de no repetición. Esta investigación aporta herramientas para nombrar y desmontar el mecanismo de impunidad, con evidencia trazable y estándares de verificación.",
+      "Las narrativas en esta plataforma muestran cómo el proyecto necesitó coerción, cómo el crimen se decidió dentro de una racionalidad empresarial y cómo la crisis se administró para proteger intereses empresariales y estatales. Explora la cartografía interactiva y las otras narrativas por ejes y periodos para relacionar hallazgos y profundizar en la importancia de conocer a fondo el caso del asesinato de Berta Cáceres."
+      ],
       
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],

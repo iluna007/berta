@@ -2,10 +2,10 @@
   "chapters": [
     {
       "id": "NR-0",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "title": "Coerción para imponer Agua Zarca",
+      "description":["Para imponer Agua Zarca se activó un dispositivo coercitivo que articuló empresas, agentes estatales y operadores criminales. Bajo directrices de personal de DESA se instalaron retenes, se vigiló a liderazgos del COPINH —en particular a Berta Cáceres— y se intervinieron asambleas y plantones.",
+      "Esta narrativa establece el funcionamiento del dispositivo: control de accesos, seguimiento de personas y respuestas coordinadas frente a acciones comunitarias. En lo que sigue, describimos los componentes de dispositivo coercitivo mediante financiamiento, vigilancia, cooptación, estigmatización y cadena de mando."
+    ],
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
@@ -62,10 +62,10 @@
 
     {
       "id": "NR-1",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "title": "Pagos ilícitos para crear el dispositivo de seguridad",
+      "description":["La seguridad coercitiva se sostuvo con recursos de la banca internacional de desarrollo que fue canalizado —mediante el mecanismo descrito en las narrativas anteriores— a policías, militares, seguridad privada, informantes y mediadores. Planillas, recibos y notas internas documentan pagos periódicos vinculados a operativos para liberar accesos, romper plantones y obtener información.",
+      "Los flujos de efectivo aseguraron disponibilidad de fuerza y lealtades, habilitaron servicios de inteligencia y coordinaron intervenciones puntuales antes y después de eventos de protesta. Ante la falta de cumplimiento con obligaciones ante pueblos como los lenca, este financiamiento no fue gasto operativo neutro, sino el engranaje económico del dispositivo de coerción para imponer Agua Zarca."
+    ],
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
@@ -125,10 +125,10 @@
 
     {
       "id": "NR-2",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "title": "Vigilancia sistemática y control territorial",
+      "description":["Registros de comunicaciones y presencias repetidas de actores clave muestran un patrón de vigilancia sostenida: vehículos y agentes apostados en accesos, rondines en horarios estratégicos y contactos entre ejecutivos y jefaturas de seguridad antes y después de incidentes.",
+      "La finalidad fue imponer un control territorial para condicionar la vida comunitaria lenca y desgastar sus liderazgos, normalizando la presencia armada y habilitando respuestas rápidas a asambleas y recorridos del COPINH. Esta práctica, tolerada y frecuentemente asistida por autoridades hondureñas, creó un clima de riesgo permanente."
+    ],
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
@@ -172,10 +172,10 @@
 
     {
       "id": "NR-3",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "title": "Cooptación comunitaria",
+      "description":["Los desvíos de capitales también operaron para cooptar a habitantes del territorio mediante ofertas de empleo, compras de terrenos, apoyos económicos y favores condicionados a información o a desactivar acciones colectivas. Cuando no bastó el incentivo, se recurrió a amenazas para forzar colaboración.",
+      "El resultado fue la generación de redes locales leales a intereses empresariales, la siembra de desconfianza e intentos de erosionar la capacidad organizativa del COPINH. La frontera entre apoyo comunitario y compra de voluntades se volvió difusa en los documentos, pero clara en sus efectos registrados como daños y violencias."
+    ],
 
       "location": {
         "center": [-86.5, 14.8],
@@ -223,10 +223,10 @@
 
     {
       "id": "NR-4",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "title": "Estigma para justificar la represión",
+      "description":["Por otro lado, es importante tomar en cuenta cómo el discurso público funcionó como dispositivo de legitimación de las violencias perpetradas contra la población lenca. Vocerías empresariales y actores estatales etiquetaron ante medios masivos a defensoras y defensores lencas y del COPINH como “enemigos del desarrollo” o “agitadores”, justificando presencia de fuerzas de seguridad y la criminalización.",
+      "Estas narrativas produjeron efectos materiales: ante la ausencia del escrutinio público, se facilitó mayor vigilancia contra la resistencia lenca, detenciones arbitrarias durante sus protestas y la creación de obstáculos para reunirse o transitar el territorio. La estigmatización operó en paralelo a pagos, control territorial y cooptación."
+    ],
 
      "location": {
         "center": [-86.5, 14.8],
@@ -274,10 +274,11 @@
 
     {
       "id": "NR-5",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "title": "Coordinación empresarial, criminal y estatal",
+      "description":["El conjunto de evidencias presentadas en esta narrativa establece un patrón operativo, sostenido en el tiempo, para imponer Agua Zarca mediante coerción articulada entre empresa, poderes del Estado y operadores criminales.",
+      "Las violencias que produjo la coerción no fueron excesos aislados, sino la modalidad regular de operación del proyecto Agua Zarca. El dispositivo combinó recursos económicos, control territorial, manipulación social y cobertura institucional para neutralizar la resistencia lenca y avanzar sobre su territorio.",
+      "Los hallazgos señalan a personas aún no investigadas por la justicia hondureña, donde señales de su participación en la cadena de mando deberán ser atendidas por fiscalías y jurisdicciones internacionales para fines de investigación, sanción y su eventual reparación."
+    ],
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
@@ -336,54 +337,7 @@
       "layers": [],
 
       "panel": { "width": "420px", "position": "right" }
-    },
-     {
-      "id": "NR-6",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
-      
-      "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 45,
-        "bearing": -30
-      },
-
-      "cameraMode": "dramatic",
-      "transitionDuration": 2000,
-
-      "highlightLayers": [],
-      "dimLayers": [],
-
-      "geojsonOn": ["departamentos-honduras-ine"],
-
-      "layerStyles": {
-      
-        "departamentos-honduras-ine": {
-          "fill": false,
-          "lineColor": "#eb443e",
-          "lineWidth": 2
-        }
-      },
-
-      "sideMedia": false,
-
-      "media": [
-        {
-          "type": "image",
-          "src": "/narratives/media/violencia_redes.jpeg",
-          "position": "inside",
-          "opacity": 1
-        }
-      ],
-
-      "markers": [],
-      "shapes": [],
-      "layers": [],
-
-      "panel": { "width": "420px", "position": "right" }
     }
+     
   ]
 }

@@ -2,10 +2,9 @@
   "chapters": [
     {
       "id": "NR-0",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "title": "Por qué Berta fue objetivo",
+      "description":["Berta Cáceres no solo confrontó a DESA: interrumpió la racionalidad empresarial que sostenía Agua Zarca. Para quienes defendían Agua Zarca como “desarrollo sostenible”, su voz se convirtió en un riesgo operativo, reputacional y —sobre todo— financiero. Esta narrativa explica cómo, desde esa lógica de gestión de riesgos, se tomó una decisión criminal."
+      ],
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
@@ -62,10 +61,10 @@
 
     {
       "id": "NR-1",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "title": "La importancia del activismo de Berta",
+      "description":["Berta hizo visibles redes de complicidad, frenó hitos de obra y elevó los costos políticos y financieros del proyecto. Su liderazgo, arraigado en la comunidad lenca y respaldado por documentación, atrajo atención nacional e internacional.",
+      "Para empresas e inversionistas, Berta y el COPINH eran un “riesgo” con tres efectos: afectaban flujos de capital, erosionaban la legitimidad del proyecto y activaban escrutinio internacional. Su capacidad para articular evidencia, movilizar al pueblo lenca, convocar a los medios y conectar con redes globales elevó el costo reputacional de Agua Zarca y de sus financiadores. La salida de Sinohydro detonó reprogramaciones, nuevas deudas e intereses adicionales."
+      ],
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
@@ -125,10 +124,10 @@
 
     {
       "id": "NR-2",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "title": "La racionalidad empresarial del crimen",
+      "description":["El conflicto no fue un desacuerdo puntual. Contratos, créditos y cronogramas chocaron con la organización comunitaria, las exigencias de consulta y la evidencia de daños. A medida que los retrasos crecían y la presión financiera aumentaba, también crecían los incentivos para silenciar a quienes los provocaban. En ese escenario, Berta quedó en el centro del dispositivo coercitivo y se convirtió en un objetivo estratégico.",
+      "Bajo esa racionalidad empresarial, silenciar la voz de Berta se calculó como un modo de proteger contratos, reputaciones y retornos. La decisión se alimentó de informes internos, alertas sobre el conflicto y coordinaciones con actores estatales y de seguridad. La idea de “neutralizar” a Berta dejó de ser una expresión de deseo de control y se transformó en una estrategia de mitigación de “riesgos”, ajena a la legalidad."
+      ],
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
@@ -168,65 +167,14 @@
       "layers": [],
 
       "panel": { "width": "420px", "position": "right" }
-    },
+    },  
 
     {
       "id": "NR-3",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
-
-      "location": {
-        "center": [-86.5, 14.8],
-        "zoom": 6,
-        "pitch": 5,
-        "bearing": 0
-      },
-
-      "cameraMode": "dramatic",
-      "transitionDuration": 2000,
-
-      "highlightLayers": [],
-      "dimLayers": [],
-
-      "geojsonOn": ["limite-territorio-nacional"],
-
-      "layerStyles": {
-        "limite-territorio-nacional": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.5 
- 
-        }
-      },
-
-      "sideMedia": true,
-
-      "media": [
-        {
-          "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "re/presentare / Archivo Experimental",
-          "position": "side",
-          "opacity": 1
-        }
-      ],
-
-      "markers": [],
-      "shapes": [],
-      "layers": [],
-
-      "panel": { "width": "420px", "position": "right" }
-    },
-
-    {
-      "id": "NR-4",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "title": "La preparación del crimen",
+      "description":["La preparación del asesinato fue un proceso. En las semanas previas se registraron visitas de reconocimiento, reuniones operativas y comunicaciones cruzadas entre directivos y jefes de seguridad. Los cronogramas de movimientos y llamadas permiten ver cadenas de coordinación: avisos sobre rutas habituales, confirmaciones de presencia en puntos de observación y mensajes previos a desplazamientos clave. La información de terreno generada por el dispositivo de vigilancia alimentó estas decisiones.",
+      "La sincronía entre comunicaciones y presencias en territorio muestra planificación. La identificación de horarios, trayectos y espacios de Berta y de otras personas del COPINH fue seguida de ajustes logísticos. La idea de una “oportunidad” no surgió de la nada: se construyó mediante monitoreo, intercambio de datos y ensayos de respuesta rápida."
+    ],
 
      "location": {
         "center": [-86.5, 14.8],
@@ -273,11 +221,11 @@
     },
 
     {
-      "id": "NR-5",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "id": "NR-4",
+      "title": "El asesinato de Berta",
+      "description":["Berta Cáceres fue asesinada en la madrugada del 2 de marzo de 2016, en La Esperanza, Intibucá, dentro de su vivienda. Hombres armados ingresaron y le dispararon a corta distancia; después huyeron. El ataque ocurrió pocas horas después de que Berta regresara a su casa tras una jornada de trabajo comunitario y reuniones de incidencia. La escena y los testimonios la sitúan como un operativo planificado, no como un robo o una disputa común.",
+      "En palabras de sus compañerxs en COPINH: 'Berta no murió, multiplicó.'"
+      ],
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
@@ -338,11 +286,10 @@
       "panel": { "width": "420px", "position": "right" }
     },
      {
-      "id": "NR-6",
-      "title": "XXX",
-      "description":["",
-      "",
-      ""],
+      "id": "NR-5",
+      "title": "Los asesinos de Berta",
+      "description":["Este asesinato no puede leerse sólo como “quién disparó”, sino como “quién decidió que Berta era sacrificable” y “qué estructuras hicieron posible ese crimen”. La evidencia muestra una secuencia: vigilancia y mapeo de rutas, coordinación entre mandos empresariales y jefes de seguridad, pagos que lubricaron los operativos y una logística que conectó las decisiones corporativas con operadores criminales y las tolerancias estatales. La pregunta adecuada sigue el dinero, las órdenes y las coberturas, no sólo el arma."
+    ],
       
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
