@@ -5,7 +5,7 @@
     "subgroup": "Hidrografía",
     "label": "Rio Gualcarque",
     "url": "/geojson/BASE/HY_Rio Gualcarque/Rio Gualcarque.geojson",
-    "color": "#0077be"
+    "color": "#C2E9F2"
   },
   {
     "id": "osm-waterways",
@@ -13,7 +13,7 @@
     "subgroup": "Hidrografía",
     "label": "OSM Waterways",
     "url": "/geojson/BASE/HY_Rios y arroyos/OSM_Waterways.geojson",
-    "color": "#5EA4BF"
+    "color": "##5EA4BF"
   },
   {
     "id": "limite-territorio-nacional",
@@ -178,7 +178,7 @@
     "subgroup": "Proyecto Agua Zarca",
     "label": "Accesos clave Presa Agua Zarca 2011",
     "url": "/geojson/PHAZ_2011/Accesos clave_Presa Agua Zarca_2011.geojson",
-    "color": "#f4a261"
+    "color": "#D9CBA3"
   },
   {
     "id": "componentes-agua-zarca-2011",
@@ -186,7 +186,7 @@
     "subgroup": "Proyecto Agua Zarca",
     "label": "Componentes Presa Agua Zarca 2011",
     "url": "/geojson/PHAZ_2011/componentes_Presa Agua Zarca_2011.geojson",
-    "color": "#f4a261"
+    "color": "#D99A88"
   },
   {
     "id": "predios-agua-zarca-2011",
@@ -194,7 +194,7 @@
     "subgroup": "Proyecto Agua Zarca",
     "label": "Predios Presa Agua Zarca 2011",
     "url": "/geojson/PHAZ_2011/predios_Presa Agua Zarca_2011.geojson",
-    "color": "#f4a261"
+    "color": "#D99873"
   },
   {
     "id": "componentes-agua-zarca-2016",
@@ -202,7 +202,7 @@
     "subgroup": "Proyecto Agua Zarca",
     "label": "Componentes Presa Agua Zarca 2016",
     "url": "/geojson/PHAZ_2016/componentes_Presa Agua Zarca_2016.geojson",
-    "color": "#e76f51"
+    "color": "#D49255"
   },
   {
     "id": "tuberias-agua-zarca-2016",
@@ -210,7 +210,7 @@
     "subgroup": "Proyecto Agua Zarca",
     "label": "Tuberías Presa Agua Zarca 2016",
     "url": "/geojson/PHAZ_2016/tuberías_Presa Agua Zarca_2016.geojson",
-    "color": "#e76f51"
+    "color": "#A53709"
   },
   
   {
@@ -279,17 +279,17 @@
     "id": "imp-jbm",
     "group": "Los agresores",
     "subgroup": "Impronta Criminales",
-    "label": "Impronta JBM",
+    "label": "Juan Bautista Madrid",
     "url": "/geojson/IMPRONTAS/imp_CRI_JBM.geojson",
-    "color": "#BD0A0A"
+    "color": "#8C045D"
   },
   {
     "id": "imp-oatv",
     "group": "Los agresores",
     "subgroup": "Impronta Criminales",
-    "label": "Impronta OATV",
+    "label": "Oscar Aroldo Torres Velásquez",
     "url": "/geojson/IMPRONTAS/imp_CRI_OATV.geojson",
-    "color": "#BD0A0A"
+    "color": "#8C0343"
   },
   {
     "id": "imp-desa",
@@ -303,25 +303,25 @@
     "id": "imp-desa-ja",
     "group": "Los agresores",
     "subgroup": "Impronta DESA",
-    "label": "Impronta DESA JA",
+    "label": "Jorge Ávila",
     "url": "/geojson/IMPRONTAS/imp_DESA_JA.geojson",
-    "color": "#BD0A0A"
+    "color": "#BF712C"
   },
   {
     "id": "imp-desa-jsc",
     "group": "Los agresores",
     "subgroup": "Impronta DESA",
-    "label": "Impronta DESA JSC",
+    "label": "Juan Carlos Sánchez Cantillano",
     "url": "/geojson/IMPRONTAS/imp_DESA_JSC.geojson",
-    "color": "#BD0A0A"
+    "color": "#D98E32"
   },
   {
     "id": "imp-desa-srro",
     "group": "Los agresores",
     "subgroup": "Impronta DESA",
-    "label": "Impronta DESA SRRO",
+    "label": "Sergio Ramón Rodríguez Orellana",
     "url": "/geojson/IMPRONTAS/imp_DESA_SRRO.geojson",
-    "color": "#BD0A0A"
+    "color": "#F2C36B"
   },
   {
     "id": "imp-ejercito",
@@ -335,73 +335,70 @@
     "id": "imp-eje-dgb",
     "group": "Los agresores",
     "subgroup": "Impronta Ejército",
-    "label": "Impronta EJE DGB",
+    "label": "Douglas Geovanny Bustillo",
     "url": "/geojson/IMPRONTAS/imp_EJE_DGB.geojson",
-    "color": "#BD0A0A"
+    "color": "#EFBBF5"
   },
   {
     "id": "imp-eje-hjhr",
     "group": "Los agresores",
     "subgroup": "Impronta Ejército",
-    "label": "Impronta EJE HJHR",
+    "label": "Henry Javier Hernández Rodríguez",
     "url": "/geojson/IMPRONTAS/imp_EJE_HJHR.geojson",
-    "color": "#BD0A0A"
+    "color": "#DB9AD8"
   },
   {
     "id": "imp-eje-mdc",
     "group": "Los agresores",
     "subgroup": "Impronta Ejército",
-    "label": "Impronta EJE MDC",
+    "label": "Mariano Díaz Chávez",
     "url": "/geojson/IMPRONTAS/imp_EJE_MDC.geojson",
-    "color": "#BD0A0A"
+    "color": "#B76FBE"
   },
   {
     "id": "imp-eje-rdc",
     "group": "Los agresores",
     "subgroup": "Impronta Ejército",
-    "label": "Impronta EJE RDC",
+    "label": "Roberto David Castillo",
     "url": "/geojson/IMPRONTAS/imp_EJE_RDC.geojson",
-    "color": "#BD0A0A"
+    "color": "#933DA7"
   },
   {
     "id": "imp-gobierno",
     "group": "Los agresores",
     "subgroup": "Impronta Gobierno",
-    "label": "Impronta Gobierno",
+    "label": "Plutarco Mejía Acosta Cardona",
     "url": "/geojson/IMPRONTAS/imp_GOBIERNO.geojson",
-    "color": "#BD0A0A"
+    "color": "#741462"
   },
-  {
-    "id": "imp-copinh",
-    "group": "Berta Cáceres y COPINH",
-    "subgroup": "Improntas COPINH",
-    "label": "Impronta COPINH",
-    "url": "/geojson/IMPRONTAS/imp_COPINH.geojson",
-    "color": "#2a5f31"
-  },
+  
+
+
+
+  
   {
     "id": "imp-copinh-bicf",
     "group": "Berta Cáceres y COPINH",
     "subgroup": "Improntas COPINH",
-    "label": "Impronta COPINH BICF",
+    "label": "Berta Isabel Cáceres Flores",
     "url": "/geojson/IMPRONTAS/imp_COPINH_BICF.geojson",
-    "color": "#2a5f31"
+    "color": "#BAFF53"
   },
   {
     "id": "imp-copinh-scf",
     "group": "Berta Cáceres y COPINH",
     "subgroup": "Improntas COPINH",
-    "label": "Impronta COPINH SCF",
+    "label": "Sotero Chavarría Flores",
     "url": "/geojson/IMPRONTAS/imp_COPINH_SCF.geojson",
-    "color": "#2a5f31"
+    "color": "#8DD428"
   },
   {
     "id": "imp-copinh-tg",
     "group": "Berta Cáceres y COPINH",
     "subgroup": "Improntas COPINH",
-    "label": "Impronta COPINH TG",
+    "label": "Tomás Gómez",
     "url": "/geojson/IMPRONTAS/imp_COPINH_TG.geojson",
-    "color": "#2a5f31"
+    "color": "#6CA907"
   },
   {
     "id": "toma-el-roble",
@@ -409,6 +406,6 @@
     "subgroup": "Acciones",
     "label": "Toma de El Roble",
     "url": "/geojson/LOC_Toma de El Roble.geojson",
-    "color": "#2a9d8f"
+    "color": "#5E8321"
   }
 ]
