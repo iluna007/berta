@@ -268,14 +268,6 @@
 
 
   {
-    "id": "imp-criminales",
-    "group": "Los agresores",
-    "subgroup": "Impronta Criminales",
-    "label": "Impronta Criminales",
-    "url": "/geojson/IMPRONTAS/imp_CRIMINALES.geojson",
-    "color": "#BD0A0A"
-  },
-  {
     "id": "imp-jbm",
     "group": "Los agresores",
     "subgroup": "Impronta Criminales",
@@ -291,14 +283,7 @@
     "url": "/geojson/IMPRONTAS/imp_CRI_OATV.geojson",
     "color": "#8C0343"
   },
-  {
-    "id": "imp-desa",
-    "group": "Los agresores",
-    "subgroup": "Impronta DESA",
-    "label": "Impronta DESA",
-    "url": "/geojson/IMPRONTAS/imp_DESA.geojson",
-    "color": "#BD0A0A"
-  },
+
   {
     "id": "imp-desa-ja",
     "group": "Los agresores",
@@ -323,14 +308,7 @@
     "url": "/geojson/IMPRONTAS/imp_DESA_SRRO.geojson",
     "color": "#F2C36B"
   },
-  {
-    "id": "imp-ejercito",
-    "group": "Los agresores",
-    "subgroup": "Impronta Ejército",
-    "label": "Impronta Ejército",
-    "url": "/geojson/IMPRONTAS/imp_EJERCITO.geojson",
-    "color": "#9D710B"
-  },
+
   {
     "id": "imp-eje-dgb",
     "group": "Los agresores",
@@ -375,7 +353,7 @@
 
 
 
-  
+
   {
     "id": "imp-copinh-bicf",
     "group": "Berta Cáceres y COPINH",
