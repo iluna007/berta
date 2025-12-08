@@ -5,6 +5,9 @@ import { Player } from "video-react";
 import { marked } from "marked";
 import "../../scss/NarrativeTemplateCover.scss";
 import bcatlogo from "../../assets/VERTICAL_POSITIVO.svg";
+import cejilogo from "../../assets/cejil.png";
+import copinh from "../../assets/copinh.png";
+import giei from "../../assets/GIEI.png";
 
 const MEDIA_HIDDEN = -1;
 
@@ -73,7 +76,24 @@ export default function NarrativeTemplateCover({ onClose }) {
     >
       <div className="ntc-container">
         <div className="ntc-header">
-          <img className="ntc-logo" src={bcatlogo} alt="Logo" />
+            
+            <a href="https://www.gieihonduras.org/" target="_blank" rel="noopener noreferrer">
+              <img className="ntc-logo" src={giei} alt="Logo GIEI" />
+            </a>
+
+            <a href="https://cejil.org" target="_blank" rel="noopener noreferrer">
+             <img className="ntc-logo" src={cejilogo} alt="Logo CEJIL" />
+            </a>
+
+            <a href="https://copinh.org" target="_blank" rel="noopener noreferrer">
+              <img className="ntc-logo" src={copinh} alt="Logo COPINH" />
+            </a>
+
+            <a href="http://www.re-presentare.org/" target="_blank" rel="noopener noreferrer">
+              <img className="ntc-logo" src={bcatlogo} alt="Logo re-presentare" />
+            </a>
+
+
           <div className="ntc-close" onClick={onClose}>
             ✕
           </div>
