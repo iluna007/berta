@@ -4,17 +4,15 @@
     "group": "Capas Base",
     "subgroup": "Hidrografía",
     "label": "Rio Gualcarque",
-    "url": "/geojson/BASE/HHRG/RG.geojson",
+    "url": "/geojson/Capas base/HHRG/RG.geojson",
     "color": "#C2E9F2"
   },
-
-
   {
     "id": "limite-territorio-nacional",
     "group": "Capas Base",
     "subgroup": "Límites políticos",
     "label": "Territorio Nacional de Honduras",
-    "url": "/geojson/BASE/LT-Honduras/GOBJUS-Límite del Territorio Nacional.geojson",
+    "url": "/geojson/Capas base/LT-Honduras/GOBJUS-Límite del Territorio Nacional.geojson",
     "color": "#807D7E"
   },
   {
@@ -22,7 +20,7 @@
     "group": "Capas Base",
     "subgroup": "Límites políticos",
     "label": "Departamentos Honduras (INE)",
-    "url": "/geojson/BASE/LT-Honduras_Departamentos/INE-Departamentos Honduras.geojson",
+    "url": "/geojson/Capas base/LT-Honduras_Departamentos/INE-Departamentos Honduras.geojson",
     "color": "#FFFFFF"
   },
   {
@@ -30,7 +28,7 @@
     "group": "Capas Base",
     "subgroup": "Límites políticos",
     "label": "Aldea Río Blanco (Límite)",
-    "url": "/geojson/BASE/LT_Aldea Rio Blanco/Aldea Rio Blanco.geojson",
+    "url": "/geojson/Capas base/LT_Aldea Rio Blanco/Aldea Rio Blanco.geojson",
     "color": "#FFFFFF"
   },
   
@@ -75,7 +73,7 @@
     "group": "Infraestructuras" ,
     "subgroup": "Proyecto Agua Zarca 2014",
     "label": "Tubería Presa Agua Zarca 2014",
-    "url": "/geojson/PHAZ_2014/TPAZ2014.geojson",
+    "url": "/geojson/PHAZ_2014/prueba.geojson",
     "color": "#A53709"
   },
   {

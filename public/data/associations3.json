@@ -1,66 +1,106 @@
 [
   {
     "id": "asc1",
-    "title": "Asesinato",
+    "title": "Físico",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Tipo de daño",
-      "Asesinato"
+      "Físico"
     ]
   },
   {
     "id": "asc2",
-    "title": "Daños Individuales",
+    "title": "Psicológico",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Tipo de daño",
-      "Daños Individuales"
+      "Psicológico"
     ]
   },
   {
     "id": "asc3",
-    "title": "Daños Colectivos a Río Blanco",
+    "title": "Económico",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Tipo de daño",
-      "Daños Colectivos a Río Blanco"
+      "Económico"
     ]
   },
   {
     "id": "asc4",
-    "title": "Daño al territorio y medio ambiente",
+    "title": "Social",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Tipo de daño",
-      "Daño al territorio y medio ambiente"
+      "Social"
     ]
   },
   {
     "id": "asc5",
-    "title": "Daños colectivos a COPINH",
+    "title": "Cultural",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Tipo de daño",
-      "Daños colectivos a COPINH"
+      "Cultural"
     ]
   },
   {
     "id": "asc6",
-    "title": "Daños colectivos a los movimientos sociales y la sociedad hondurela",
+    "title": "Ambiental",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Tipo de daño",
-      "Daños colectivos a los movimientos sociales y la sociedad hondurela"
+      "Ambiental"
     ]
   },
   {
     "id": "asc7",
+    "title": "Legal/Institucional",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Tipo de daño",
+      "Legal/Institucional"
+    ]
+  },
+  {
+    "id": "asc8",
+    "title": "Colectivo",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Tipo de daño",
+      "Colectivo"
+    ]
+  },
+  {
+    "id": "asc9",
+    "title": "Proyecto de Vida",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Tipo de daño",
+      "Proyecto de Vida"
+    ]
+  },
+  {
+    "id": "asc10",
+    "title": "Salud",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Tipo de daño",
+      "Salud"
+    ]
+  },
+  {
+    "id": "asc11",
     "title": "Hidroeléctricas",
     "mode": "FILTER",
     "desc": "",
@@ -70,7 +110,7 @@
     ]
   },
   {
-    "id": "asc8",
+    "id": "asc12",
     "title": "Berta Isabel Cáceres Flores",
     "mode": "FILTER",
     "desc": "",
@@ -80,7 +120,7 @@
     ]
   },
   {
-    "id": "asc9",
+    "id": "asc13",
     "title": "David Atala",
     "mode": "FILTER",
     "desc": "",
@@ -90,22 +130,13 @@
     ]
   },
   {
-    "id": "asc10",
+    "id": "asc14",
     "title": "Manifestación",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Defensa del territorio",
-      "Toma de caminos"
-    ]
-  },
-  {
-    "id": "asc11",
-    "title": "Transacciones",
-    "mode": "FILTER",
-    "desc": "",
-    "filter_paths": [
-      "Transacciones"
+      "Manifestación"
     ]
   }
 ]
