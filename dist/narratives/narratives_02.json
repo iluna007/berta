@@ -48,7 +48,7 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/intro1.jpeg",
+          "src": "/narratives/media/img14.jpeg",
           "position": "inside",
           "opacity": 1
         }
@@ -111,7 +111,7 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/extractivismo1.jpeg",
+          "src": "/narratives/media/img15.jpeg",
           "position": "inside",
           "opacity": 1
         }
@@ -157,7 +157,7 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
+          "src": "/narratives/media/img16.jpeg",
           "caption": "Visualización generada con Gephi",
           "credit": "re/presentare / Archivo Experimental",
           "position": "side",

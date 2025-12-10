@@ -29,7 +29,7 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/intro1.jpeg",
+          "src": "/narratives/media/img1.jpeg",
           "position": "inside",
           "opacity": 1
         }

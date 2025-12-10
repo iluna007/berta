@@ -46,7 +46,7 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/intro1.jpeg",
+          "src": "/narratives/media/img1.jpeg",
           "position": "inside",
           "opacity": 1
         }
@@ -107,7 +107,7 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/extractivismo1.jpeg",
+          "src": "/narratives/media/img5.jpeg",
           "position": "inside",
           "opacity": 1
         }
@@ -151,7 +151,7 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
+          "src": "/narratives/media/img7.jpeg",
           "caption": "Visualización generada con Gephi",
           "credit": "re/presentare / Archivo Experimental",
           "position": "side",
@@ -200,7 +200,7 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
+          "src": "/narratives/media/img10.jpeg",
           "caption": "Visualización generada con Gephi",
           "credit": "re/presentare / Archivo Experimental",
           "position": "side",
@@ -315,7 +315,7 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/violencia_redes.jpeg",
+          "src": "/narratives/media/img13.jpeg",
           "position": "inside",
           "opacity": 1
         }
