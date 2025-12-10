@@ -1,0 +1,55 @@
+.narrative-legend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  padding: 12px 18px;
+  border-radius: 8px;
+
+  color: white;
+  font-size: 14px;
+  max-width: 260px;
+  z-index: 20;
+}
+
+.legend-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.legend-row:last-child {
+  margin-bottom: 0;
+}
+
+.legend-symbol {
+  width: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.legend-label {
+  margin-left: 8px;
+  opacity: 0.85;
+}
+
+.legend-point {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.legend-line {
+  width: 22px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.legend-polygon {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  border: 1px solid white;
+}
