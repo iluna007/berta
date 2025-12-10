@@ -4,24 +4,18 @@
     "group": "Capas Base",
     "subgroup": "Hidrografía",
     "label": "Rio Gualcarque",
-    "url": "/geojson/BASE/HY_Rio Gualcarque/Rio Gualcarque.geojson",
+    "url": "/geojson/BASE/HHRG/RG.geojson",
     "color": "#C2E9F2"
   },
-  {
-    "id": "osm-waterways",
-    "group": "Capas Base",
-    "subgroup": "Hidrografía",
-    "label": "OSM Waterways",
-    "url": "/geojson/BASE/HY_Rios y arroyos/OSM_Waterways.geojson",
-    "color": "##5EA4BF"
-  },
+
+
   {
     "id": "limite-territorio-nacional",
     "group": "Capas Base",
     "subgroup": "Límites políticos",
-    "label": "Límite del Territorio Nacional",
+    "label": "Territorio Nacional de Honduras",
     "url": "/geojson/BASE/LT-Honduras/GOBJUS-Límite del Territorio Nacional.geojson",
-    "color": "#FFFFFF"
+    "color": "#807D7E"
   },
   {
     "id": "departamentos-honduras-ine",
@@ -37,200 +31,76 @@
     "subgroup": "Límites políticos",
     "label": "Aldea Río Blanco (Límite)",
     "url": "/geojson/BASE/LT_Aldea Rio Blanco/Aldea Rio Blanco.geojson",
-    "color": "#195457"
+    "color": "#FFFFFF"
   },
   
   {
-    "id": "censo-Rio-Blanco-2013",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "Censo Rio Blanco_2013",
-    "url": "/geojson/CENSO Rio Blanco/Censo Rio Blanco_2013.geojson",
-    "color": "#b5651d"
-  },
-
-  {
-    "id": "crb-aldea-rio-blanco",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Aldea Río Blanco",
-    "url": "/geojson/CENSO Rio Blanco/CRB_aldea_Rio Blanco.geojson",
-    "color": "#b5651d"
-  },
-  {
-    "id": "crb-caserios-buena-vista",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Caseríos Buena Vista",
-    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_Buena Vista.geojson",
-    "color": "#b5651d"
-  },
-  {
-    "id": "crb-caserios-cangel",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Caseríos Cangel",
-    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_Cangel.geojson",
-    "color": "#b5651d"
-  },
-  {
-    "id": "crb-caserios-el-barreal",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Caseríos El Barreal",
-    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_El Barreal.geojson",
-    "color": "#b5651d"
-  },
-  {
-    "id": "crb-caserios-el-mezcalito",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Caseríos El Mezcalito",
-    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_El Mezcalito.geojson",
-    "color": "#b5651d"
-  },
-  {
-    "id": "crb-caserios-la-tejera",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Caseríos La Tejera",
-    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_La Tejera.geojson",
-    "color": "#b5651d"
-  },
-  {
-    "id": "crb-caserios-la-union-buena-vista",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Caseríos La Unión – Buena Vista",
-    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_La Union-Buena Vista.geojson",
-    "color": "#b5651d"
-  },
-  {
-    "id": "crb-caserios-la-vega-del-guineo",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Caseríos La Vega del Guineo",
-    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_La Vega del Guineo.geojson",
-    "color": "#b5651d"
-  },
-  {
-    "id": "crb-caserios-la-vega",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Caseríos La Vega",
-    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_La Vega.geojson",
-    "color": "#b5651d"
-  },
-  {
-    "id": "crb-caserios-la-zarzalosa",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Caseríos La Zarzalosa",
-    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_La Zarzalosa.geojson",
-    "color": "#b5651d"
-  },
-  {
-    "id": "crb-caserios-nuevo-caserio-rio-blanco",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Caseríos Nuevo Caserío Río Blanco",
-    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_Nuevo Caserio de Rio Blanco.geojson",
-    "color": "#b5651d"
-  },
-  {
-    "id": "crb-caserios-nuevo-caserio-san-isidro",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Caseríos Nuevo Caserío San Isidro",
-    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_Nuevo Caserio de San Isidro.geojson",
-    "color": "#b5651d"
-  },
-  {
-    "id": "crb-caserios-san-bartolo",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Caseríos San Bartolo",
-    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_San Bartolo.geojson",
-    "color": "#b5651d"
-  },
-  {
-    "id": "crb-caserios-valle-de-angeles",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Caseríos Valle de Ángeles",
-    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_Valle de Angeles.geojson",
-    "color": "#b5651d"
-  },
-  {
-    "id": "crb-caserios-zacatales",
-    "group": "Censo Rio Blanco 2013",
-    "subgroup": "Núcleos de población",
-    "label": "CRB Caseríos Zacatales",
-    "url": "/geojson/CENSO Rio Blanco/CRB_caserios_Zacatales.geojson",
-    "color": "#b5651d"
+    "id": "poblacion-lenca",
+    "group": "Capas Base",
+    "subgroup": "Límites políticos",
+    "label": "Población lenca Aldea Río Blanco",
+    "url": "/geojson/CENSO Rio Blanco/CRB_Poblacion lenca.geojson",
+    "color": "#DEFCA2"
   },
 
 
-
   {
-    "id": "accesos-agua-zarca-2011",
-    "group": "Infraestructuras",
-    "subgroup": "Proyecto Agua Zarca",
-    "label": "Accesos clave Presa Agua Zarca 2011",
-    "url": "/geojson/PHAZ_2011/Accesos clave_Presa Agua Zarca_2011.geojson",
-    "color": "#D9CBA3"
-  },
-  {
-    "id": "componentes-agua-zarca-2011",
-    "group": "Infraestructuras",
-    "subgroup": "Proyecto Agua Zarca",
-    "label": "Componentes Presa Agua Zarca 2011",
-    "url": "/geojson/PHAZ_2011/componentes_Presa Agua Zarca_2011.geojson",
+    "id": "componentes-agua-zarca-2011-rio-blanco",
+    "group": "Infraestructuras" ,
+    "subgroup": "Proyecto Agua Zarca 2011",
+    "label": "Componentes Agua Zarca 2011",
+    "url": "/geojson/PHAZ_2011/componentes_Presa Agua Zarca _2011.geojson",
     "color": "#D99A88"
   },
-  {
-    "id": "predios-agua-zarca-2011",
-    "group": "Infraestructuras",
-    "subgroup": "Proyecto Agua Zarca",
-    "label": "Predios Presa Agua Zarca 2011",
-    "url": "/geojson/PHAZ_2011/predios_Presa Agua Zarca_2011.geojson",
-    "color": "#D99873"
+  { 
+    "id": "tuberia-agua-zarca-2011",
+    "group": "Infraestructuras" ,
+    "subgroup": "Proyecto Agua Zarca 2011",
+    "label": "Tubería Presa Agua Zarca 2011",
+    "url": "/geojson/PHAZ_2011/tubería_Presa Agua Zarca _2011.geojson",
+    "color": "#D9763D"
   },
+
+
   {
-    "id": "componentes-agua-zarca-2016",
-    "group": "Infraestructuras",
-    "subgroup": "Proyecto Agua Zarca",
-    "label": "Componentes Presa Agua Zarca 2016",
-    "url": "/geojson/PHAZ_2016/componentes_Presa Agua Zarca_2016.geojson",
+    "id": "componentes-agua-zarca-2014-rio-blanco",
+    "group": "Infraestructuras" ,
+    "subgroup": "Proyecto Agua Zarca 2014",
+    "label": "Componentes Agua Zarca 2014",
+    "url": "/geojson/PHAZ_2014/componentes_Presa Agua Zarca _2014.geojson",
     "color": "#D49255"
   },
-  {
-    "id": "tuberias-agua-zarca-2016",
-    "group": "Infraestructuras",
-    "subgroup": "Proyecto Agua Zarca",
-    "label": "Tuberías Presa Agua Zarca 2016",
-    "url": "/geojson/PHAZ_2016/tuberías_Presa Agua Zarca_2016.geojson",
+  { 
+    "id": "tuberia-agua-zarca-2014-rio-blanco",
+    "group": "Infraestructuras" ,
+    "subgroup": "Proyecto Agua Zarca 2014",
+    "label": "Tubería Presa Agua Zarca 2014",
+    "url": "/geojson/PHAZ_2014/TPAZ2014.geojson",
     "color": "#A53709"
   },
-  
   {
-    "id": "propiedades-privadas",
-    "group": "Infraestructuras",
-    "subgroup": "Predios asociados al proyecto",
-    "label": "Propiedades privadas",
+    "id": "predios-agua-zarca-2011-rio-blanco",
+    "group": "Infraestructuras" ,
+    "subgroup": "Compra de terrenos",
+    "label": "Predios Agua Zarca 2011",
     "url": "/geojson/Predios asociados a proyecto.geojson",
-    "color": "#e9c46a"
+    "color": "#D99873"
   },
-
-
-  
+  { 
+    "id": "ivpredios-agua-zarca-2014-rio-blanco",
+    "group": "Infraestructuras" ,
+    "subgroup": "Compra de terrenos",
+    "label": "Áreas de cambio de uso de suelo-2012",
+    "url": "/geojson/Compra de terreno/predios2012.geojson",
+    "color": "#F2C144"
+  },
   {
     "id": "carreteras-2002",
     "group": "Infraestructuras",
     "subgroup": "Carreteras",
     "label": "Carretera 2002",
     "url": "/geojson/Evolución Infraestructura/iv_caminos_2002.geojson",
-    "color": "#2a9d8f"
+    "color": "#CC9300"
   },
   {
     "id": "carreteras-2006",
@@ -238,7 +108,7 @@
     "subgroup": "Carreteras",
     "label": "Carretera 2006",
     "url": "/geojson/Evolución Infraestructura/iv_caminos_2006.geojson",
-    "color": "#2a9d8f"
+    "color": "#FFC930"
   },
   {
     "id": "carreteras-2012",
@@ -246,7 +116,7 @@
     "subgroup": "Carreteras",
     "label": "Carretera 2012",
     "url": "/geojson/Evolución Infraestructura/iv_caminos_2012.geojson",
-    "color": "#2a9d8f"
+    "color": "#F5D264"
   },
   {
     "id": "carreteras-2016",
@@ -254,7 +124,7 @@
     "subgroup": "Carreteras",
     "label": "Predios 2016",
     "url": "/geojson/Evolución Infraestructura/iv_predios_2016.geojson",
-    "color": "#2a9d8f"
+    "color": "#F5E099"
   },
   {
     "id": "carreteras-2025",
@@ -262,7 +132,7 @@
     "subgroup": "Carreteras",
     "label": "Carretera 2025",
     "url": "/geojson/Evolución Infraestructura/iv_caminos_2025.geojson",
-    "color": "#2a9d8f"
+    "color": "#FFF2CE"
   },
 
 
@@ -383,7 +253,7 @@
     "group": "Berta Cáceres y COPINH",
     "subgroup": "Acciones",
     "label": "Toma de El Roble",
-    "url": "/geojson/LOC_Toma de El Roble.geojson",
+    "url": "/geojson/loc.geojson",
     "color": "#5E8321"
   }
 ]
