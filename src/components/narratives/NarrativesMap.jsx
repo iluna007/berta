@@ -7,16 +7,22 @@ import "/node_modules/mapbox-gl/dist/mapbox-gl.css";
 mapboxgl.accessToken =
   "pk.eyJ1IjoicmVwcmVzZW50YXJlIiwiYSI6ImNtaHdycWxxbjAycjYyanEzaTN1emtjbmUifQ.q26LsAXIbvhQiWiKhGt0Wg";
 
-export default function NarrativesMap({ activeChapterId, chapters }) {
+export default function NarrativesMap({ activeChapterId, chapters,
+
+  // 🔥 NUEVO: Callback para actualizar leyenda
+  onLegendChange = () => {}
+
+}) {
   const mapContainer = useRef(null);
   const map = useRef(null);
 
   const [isMapReady, setIsMapReady] = useState(false);
 
-  // GeoJSON layer definitions
   const layersRef = useRef(null);
 
-  // Load layer definitions
+  // -----------------------------------------
+  // Cargar catálogo geojsonLayers2.json
+  // -----------------------------------------
   useEffect(() => {
     fetch("/data/geojsonLayers2.json")
       .then((res) => res.json())
@@ -27,7 +33,9 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
       .catch((err) => console.error("Error cargando geojsonLayers2.json", err));
   }, []);
 
-  // Initialize map
+  // -----------------------------------------
+  // Inicializar Mapa
+  // -----------------------------------------
   useEffect(() => {
     if (map.current) return;
 
@@ -43,6 +51,7 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
     map.current.addControl(new mapboxgl.NavigationControl());
 
     map.current.on("load", () => {
+      // DEM
       if (!map.current.getSource("mapbox-dem")) {
         map.current.addSource("mapbox-dem", {
           type: "raster-dem",
@@ -62,7 +71,7 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
   }, []);
 
   // ------------------------------------------------------
-  // RECREATE LAYER (aplica overrides con sistema óptimo)
+  // RECREAR UNA CAPA (siempre nueva para permitir overrides)
   // ------------------------------------------------------
   const recreateLayer = async (layerId, styleOverrides = {}) => {
     if (!layersRef.current || !map.current) return;
@@ -70,16 +79,17 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
     const def = layersRef.current.find((l) => l.id === layerId);
     if (!def) {
       console.warn("⚠ No hay entrada en geojsonLayers2.json para:", layerId);
-      return;
+      return null; // 🔥 NUEVO: para poder usar la info en la leyenda
     }
 
     const url = def.url;
     const baseColor = def.color ?? "#ff00ff";
+    const label = def.label ?? layerId; // 🔥 NUEVO: label para la leyenda
 
     const sourceId = `src-${layerId}`;
     const mapLayerId = `layer-${layerId}`;
 
-    // Remove old layer + source
+    // Remove old
     if (map.current.getLayer(mapLayerId)) map.current.removeLayer(mapLayerId);
     if (map.current.getSource(sourceId)) map.current.removeSource(sourceId);
 
@@ -91,7 +101,7 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
 
       const geom = data.features?.[0]?.geometry?.type;
 
-      // BASE LAYER
+      // Determine type
       let layerType = "fill";
       let paintProps = {};
 
@@ -116,144 +126,92 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
       }
 
       // -----------------------------------------
-      // ⭐ OVERRIDES ELEGANTES (sin mil ifs)
+      // TABLAS DE PROPIEDADES
       // -----------------------------------------
-
-      // Tabla de propiedades válidas por tipo
       const STYLE_MAP = {
-  fill: [
-    "fill-color",
-    "fill-opacity",
-    "fill-outline-color",
-    "fill-translate",
-    "fill-translate-anchor",
-    "fill-antialias"
-  ],
+        fill: [
+          "fill-color",
+          "fill-opacity",
+          "fill-outline-color",
+          "fill-translate",
+          "fill-translate-anchor",
+          "fill-antialias",
+        ],
 
-  line: [
-    "line-color",
-    "line-width",
-    "line-opacity",
-    "line-dasharray",
-    "line-translate",
-    "line-translate-anchor",
-    "line-gap-width",
-    "line-blur",
-    "line-offset",
-    "line-join",
-    "line-cap"
-  ],
+        line: [
+          "line-color",
+          "line-width",
+          "line-opacity",
+          "line-dasharray",
+          "line-translate",
+          "line-translate-anchor",
+          "line-gap-width",
+          "line-blur",
+          "line-offset",
+          "line-join",
+          "line-cap",
+        ],
 
-  circle: [
-    "circle-color",
-    "circle-opacity",
-    "circle-radius",
-    "circle-blur",
-    "circle-stroke-color",
-    "circle-stroke-width",
-    "circle-translate",
-    "circle-translate-anchor"
-  ],
+        circle: [
+          "circle-color",
+          "circle-opacity",
+          "circle-radius",
+          "circle-blur",
+          "circle-stroke-color",
+          "circle-stroke-width",
+          "circle-translate",
+          "circle-translate-anchor",
+        ],
 
-  symbol: [
-    "icon-image",
-    "icon-size",
-    "icon-opacity",
-    "icon-color",
-    "text-field",
-    "text-color",
-    "text-opacity",
-    "text-halo-color",
-    "text-halo-width",
-    "text-size",
-    "text-letter-spacing",
-    "text-justify",
-    "text-translate",
-    "text-translate-anchor"
-  ]
-};
+        symbol: [
+          "icon-image",
+          "icon-size",
+          "icon-opacity",
+          "icon-color",
+          "text-field",
+          "text-color",
+          "text-opacity",
+          "text-halo-color",
+          "text-halo-width",
+          "text-size",
+          "text-letter-spacing",
+          "text-justify",
+          "text-translate",
+          "text-translate-anchor",
+        ],
+      };
 
-
-      // Mapping JS → Mapbox
       const MAP_JS = {
-  // ---- FILLS (Polygon) ----
-  fillColor: "fill-color",
-  fillOpacity: "fill-opacity",
-  fillOutlineColor: "fill-outline-color",
-  fillTranslate: "fill-translate",
-  fillTranslateAnchor: "fill-translate-anchor",
-  fillAntialias: "fill-antialias",
+        fillColor: "fill-color",
+        fillOpacity: "fill-opacity",
+        fillOutlineColor: "fill-outline-color",
+        fillTranslate: "fill-translate",
+        fillTranslateAnchor: "fill-translate-anchor",
+        fillAntialias: "fill-antialias",
 
-  // ---- LINES ----
-  lineColor: "line-color",
-  lineWidth: "line-width",
-  lineOpacity: "line-opacity",
-  lineDasharray: "line-dasharray",
-  lineTranslate: "line-translate",
-  lineTranslateAnchor: "line-translate-anchor",
-  lineGapWidth: "line-gap-width",
-  lineBlur: "line-blur",
-  lineOffset: "line-offset",
-  lineJoin: "line-join",
-  lineCap: "line-cap",
+        lineColor: "line-color",
+        lineWidth: "line-width",
+        lineOpacity: "line-opacity",
+        lineDasharray: "line-dasharray",
+        lineTranslate: "line-translate",
+        lineTranslateAnchor: "line-translate-anchor",
+        lineGapWidth: "line-gap-width",
+        lineBlur: "line-blur",
+        lineOffset: "line-offset",
+        lineJoin: "line-join",
+        lineCap: "line-cap",
 
-  // ---- CIRCLES (POINTS) ----
-  pointColor: "circle-color",
-  pointOpacity: "circle-opacity",
-  pointRadius: "circle-radius",
-  pointBlur: "circle-blur",
-  pointStrokeColor: "circle-stroke-color",
-  pointStrokeWidth: "circle-stroke-width",
-  pointTranslate: "circle-translate",
-  pointTranslateAnchor: "circle-translate-anchor",
+        pointColor: "circle-color",
+        pointOpacity: "circle-opacity",
+        pointRadius: "circle-radius",
+        pointBlur: "circle-blur",
+        pointStrokeColor: "circle-stroke-color",
+        pointStrokeWidth: "circle-stroke-width",
+        pointTranslate: "circle-translate",
+        pointTranslateAnchor: "circle-translate-anchor",
+      };
 
-  // ---- SYMBOLS (ICONOS / LABELS) ----
-  iconImage: "icon-image",
-  iconSize: "icon-size",
-  iconOpacity: "icon-opacity",
-  iconColor: "icon-color",
-  textField: "text-field",
-  textColor: "text-color",
-  textOpacity: "text-opacity",
-  textHaloColor: "text-halo-color",
-  textHaloWidth: "text-halo-width",
-  textSize: "text-size",
-  textLetterSpacing: "text-letter-spacing",
-  textJustify: "text-justify",
-  textTranslate: "text-translate",
-  textTranslateAnchor: "text-translate-anchor",
-
-  // ---- RASTER ----
-  rasterOpacity: "raster-opacity",
-  rasterHueRotate: "raster-hue-rotate",
-  rasterBrightnessMin: "raster-brightness-min",
-  rasterBrightnessMax: "raster-brightness-max",
-  rasterSaturation: "raster-saturation",
-  rasterContrast: "raster-contrast",
-  rasterFadeDuration: "raster-fade-duration",
-
-  // ---- HEATMAP ----
-  heatmapRadius: "heatmap-radius",
-  heatmapIntensity: "heatmap-intensity",
-  heatmapOpacity: "heatmap-opacity",
-  heatmapColor: "heatmap-color",
-  heatmapWeight: "heatmap-weight",
-
-  // ---- HILLSHADE ----
-  hillshadeIlluminationDirection: "hillshade-illumination-direction",
-  hillshadeIlluminationAnchor: "hillshade-illumination-anchor",
-  hillshadeExaggeration: "hillshade-exaggeration",
-  hillshadeShadowColor: "hillshade-shadow-color",
-  hillshadeHighlightColor: "hillshade-highlight-color",
-  hillshadeAccentColor: "hillshade-accent-color",
-
-  // ---- BACKGROUND ----
-  backgroundColor: "background-color",
-  backgroundOpacity: "background-opacity",
-  backgroundPattern: "background-pattern",
-};
-
-      // Si fill=false → convertir a line
+      // convert fill → line if needed
       if (styleOverrides.fill === false && layerType === "fill") {
         layerType = "line";
         paintProps = {
@@ -262,7 +220,7 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
         };
       }
 
-      // Aplicar overrides válidos según el tipo final
+      // Apply overrides
       const allowed = STYLE_MAP[layerType] ?? [];
 
       allowed.forEach((prop) => {
@@ -279,18 +237,31 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
         paint: paintProps,
       };
 
-      // Insert into top of style
-      const topLayer =
-        map.current.getStyle().layers.at(-1)?.id;
-
+      // insert at top
+      const topLayer = map.current.getStyle().layers.at(-1)?.id;
       map.current.addLayer(layerConfig, topLayer);
+
+      // 🔥 NUEVO → return info para leyenda
+      return {
+        id: layerId,
+        label,
+        color:
+          layerType === "fill"
+            ? paintProps["fill-color"]
+            : layerType === "line"
+            ? paintProps["line-color"]
+            : paintProps["circle-color"],
+        type: layerType,
+      };
+
     } catch (err) {
       console.error("Error cargando capa:", layerId, err);
+      return null;
     }
   };
 
   // ------------------------------------------------------
-  // Hide dynamic layers
+  // Ocultar capas dinámicas
   // ------------------------------------------------------
   const hideAllLayers = () => {
     if (!map.current) return;
@@ -308,7 +279,7 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
   };
 
   // ------------------------------------------------------
-  // CHAPTER CHANGE
+  // CARGA POR CAMBIO DE CAPÍTULO
   // ------------------------------------------------------
   useEffect(() => {
     if (!map.current) return;
@@ -321,7 +292,6 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
 
     const { center, zoom, pitch, bearing } = chapter.location;
 
-    // FLYTO intacto
     map.current.flyTo({
       center,
       zoom,
@@ -336,12 +306,26 @@ export default function NarrativesMap({ activeChapterId, chapters }) {
 
     hideAllLayers();
 
-    chapter.geojsonOn?.forEach((layerId) => {
-      const overrides = chapter.layerStyles?.[layerId] || {};
-      recreateLayer(layerId, overrides);
-    });
+    // 🔥 NUEVO: construir leyenda
+    const legendCollector = [];
+
+    const run = async () => {
+      for (const layerId of chapter.geojsonOn || []) {
+        const overrides = chapter.layerStyles?.[layerId] || {};
+
+        const legendInfo = await recreateLayer(layerId, overrides);
+
+        if (legendInfo) legendCollector.push(legendInfo);
+      }
+
+      // 🔥 NUEVO: enviar lista final al componente padre
+      onLegendChange(legendCollector);
+    };
+
+    run();
   }, [activeChapterId, chapters, isMapReady]);
 
+  // ------------------------------------------------------
   return (
     <div
       ref={mapContainer}

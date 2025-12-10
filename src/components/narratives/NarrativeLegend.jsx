@@ -1,48 +1,43 @@
 // src/components/narratives/NarrativeLegend.jsx
-import "./narratives_legend.scss";
+import "../../scss/narratives_legend.scss";
 
-export default function NarrativeLegend({ items, show }) {
-  if (!show || !items || items.length === 0) return null;
+export default function NarrativeLegend({ items }) {
+  if (!items || items.length === 0) return null;
 
   return (
     <div className="narrative-legend">
-      {items.map((item) => (
-        <div className="legend-row" key={item.id}>
-          <div className="legend-symbol">
-            {item.type === "circle" && (
+      <div className="legend-title">Capas Visibles</div>
+
+      {items.map((item) => {
+        const { type, color, label } = item;
+
+        return (
+          <div key={label} className="legend-item">
+            {type === "fill" && (
               <div
-                className="legend-point"
-                style={{
-                  backgroundColor: item.color,
-                  border: item.strokeColor
-                    ? `${item.strokeWidth || 1}px solid ${item.strokeColor}`
-                    : "none",
-                }}
+                className="legend-swatch"
+                style={{ background: color }}
               />
             )}
 
-            {item.type === "line" && (
+            {type === "line" && (
               <div
                 className="legend-line"
-                style={{ backgroundColor: item.color }}
+                style={{ background: color }}
               />
             )}
 
-            {item.type === "fill" && (
+            {type === "circle" && (
               <div
-                className="legend-polygon"
-                style={{
-                  backgroundColor: item.fillColor,
-                  opacity: item.fillOpacity ?? 0.6,
-                  border: `2px solid ${item.color}`,
-                }}
+                className="legend-point"
+                style={{ background: color }}
               />
             )}
-          </div>
 
-          <span className="legend-label">{item.id}</span>
-        </div>
-      ))}
+            <span>{label}</span>
+          </div>
+        );
+      })}
     </div>
   );
 }

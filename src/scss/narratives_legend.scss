@@ -1,55 +1,57 @@
+// src/components/narratives/narratives_legend.scss
+
 .narrative-legend {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 25px;
+  z-index: 50;
 
   background: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(6px);
-  padding: 12px 18px;
   border-radius: 8px;
 
+  padding: 12px 16px;
+  min-width: 180px;
+
   color: white;
-  font-size: 14px;
-  max-width: 260px;
-  z-index: 20;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.4;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.legend-row {
-  display: flex;
-  align-items: center;
+.legend-title {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
   margin-bottom: 8px;
 }
 
-.legend-row:last-child {
-  margin-bottom: 0;
-}
-
-.legend-symbol {
-  width: 28px;
+.legend-item {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
 }
 
-.legend-label {
-  margin-left: 8px;
-  opacity: 0.85;
-}
-
-.legend-point {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
+.legend-swatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  border: 1px solid #fff5;
 }
 
 .legend-line {
   width: 22px;
-  height: 4px;
-  border-radius: 2px;
+  height: 3px;
+  border-radius: 1px;
+  margin-right: 6px;
 }
 
-.legend-polygon {
-  width: 18px;
-  height: 18px;
-  border-radius: 3px;
-  border: 1px solid white;
+.legend-point {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin-right: 6px;
 }

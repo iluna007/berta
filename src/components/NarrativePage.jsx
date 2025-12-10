@@ -10,12 +10,12 @@ import NarrativesMap from "./narratives/NarrativesMap";
 import NarrativeMedia from "./narratives/NarrativeMedia";
 import SideMediaPanel from "./narratives/NarrativesSideMediaPanel";
 import NarrativesNavigator from "./narratives/NarrativesNavigator";
-
 import NarrativeTemplateCover from "./narratives/NarrativeTemplateCover";
 
-const SCROLL_THRESHOLD = 200;
+// 🔥 NUEVO: importar leyenda
+import NarrativeLegend from "./narratives/NarrativeLegend";
 
-// ✅ ORDEN CANÓNICO DE TUS NARRATIVAS (según tu biblioteca izquierda)
+const SCROLL_THRESHOLD = 200;
 const NARRATIVE_ORDER = ["00", "01", "02", "03", "04", "05", "06"];
 
 export default function NarrativePage() {
@@ -29,22 +29,19 @@ export default function NarrativePage() {
 
   const [showCover, setShowCover] = useState(true);
 
+  // 🔥 NUEVO: estado para leyenda
+  const [legendItems, setLegendItems] = useState([]);
+
   const narrativePanelRef = useRef(null);
   const isPointerInsidePanel = useRef(false);
 
-  // ⛔ Bloquear scroll global cuando el modal está abierto
   useEffect(() => {
-    if (showCover) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-    return () => {
-      document.body.style.overflow = "auto";
-    };
+    if (showCover) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
+
+    return () => (document.body.style.overflow = "auto");
   }, [showCover]);
 
-  // Cargar JSON dinámico de la narrativa activa
   useEffect(() => {
     fetch(`/narratives/narratives_${activeNarrative}.json`)
       .then((res) => res.json())
@@ -57,7 +54,6 @@ export default function NarrativePage() {
       });
   }, [activeNarrative]);
 
-  // ✅ Scroll narrativo solo dentro del panel
   useEffect(() => {
     if (!chapters.length || showCover) return;
 
@@ -65,7 +61,6 @@ export default function NarrativePage() {
 
     const handler = (e) => {
       if (!isPointerInsidePanel.current) return;
-
       e.preventDefault();
       accumulatedDelta += e.deltaY;
 
@@ -94,34 +89,26 @@ export default function NarrativePage() {
     navigate("/");
   };
 
-  // ✅ FUNCIÓN UNIFICADA: scroll + botones + salto automático de narrativa
   const moveIndex = (direction) => {
     setIndex((prev) => {
       const next = prev + direction;
 
-      // 🔁 CASO 1: salir por abajo → pasar a la siguiente narrativa
       if (next >= chapters.length) {
         const currentIdx = NARRATIVE_ORDER.indexOf(activeNarrative);
         const nextNarrative = NARRATIVE_ORDER[currentIdx + 1];
 
-        if (nextNarrative) {
-          setActiveNarrative(nextNarrative);
-        }
-        return prev; // se reseteará a 0 cuando cargue la nueva narrativa
+        if (nextNarrative) setActiveNarrative(nextNarrative);
+        return prev;
       }
 
-      // 🔁 CASO 2: salir por arriba → pasar a la narrativa anterior
       if (next < 0) {
         const currentIdx = NARRATIVE_ORDER.indexOf(activeNarrative);
         const prevNarrative = NARRATIVE_ORDER[currentIdx - 1];
 
-        if (prevNarrative) {
-          setActiveNarrative(prevNarrative);
-        }
-        return prev; // se reseteará cuando cargue
+        if (prevNarrative) setActiveNarrative(prevNarrative);
+        return prev;
       }
 
-      // ✅ Caso normal: cambiar solo de capítulo
       return next;
     });
   };
@@ -136,18 +123,16 @@ export default function NarrativePage() {
         background: "#000",
       }}
     >
-      {/* MODAL DE PORTADA */}
       {showCover && (
         <NarrativeTemplateCover onClose={() => setShowCover(false)} />
       )}
 
-      {/* Barra lateral de biblioteca */}
       <NarrativesNavigator
         onSelect={(id) => setActiveNarrative(id)}
         activeId={activeNarrative}
       />
 
-      {/* Mapa */}
+      {/* MAPA */}
       <div
         style={{
           position: "absolute",
@@ -161,13 +146,14 @@ export default function NarrativePage() {
         <NarrativesMap
           activeChapterId={activeChapterId}
           chapters={chapters}
+          // 🔥 NUEVO: callback
+          onLegendChange={(items) => setLegendItems(items)}
         />
       </div>
 
-      {/* Panel lateral de media */}
       <SideMediaPanel chapter={activeChapter} />
 
-      {/* Panel narrativo */}
+      {/* PANEL IZQUIERDO */}
       <div
         ref={narrativePanelRef}
         className="left-narrative-panel narrative-scroll-zone"
@@ -183,11 +169,7 @@ export default function NarrativePage() {
           overflow: "hidden",
         }}
       >
-        {/* Flecha arriba */}
-        <div
-          className="narrative-arrow arrow-up"
-          onClick={() => moveIndex(-1)}
-        >
+        <div className="narrative-arrow arrow-up" onClick={() => moveIndex(-1)}>
           ↑
         </div>
 
@@ -199,15 +181,27 @@ export default function NarrativePage() {
           </div>
         )}
 
-        {/* Flecha abajo */}
         <div
           className="narrative-arrow arrow-down"
           onClick={() => moveIndex(1)}
         >
           ↓
         </div>
-
       </div>
+
+      {/* 🔥 NUEVO: LEYENDA DINÁMICA */}
+      {legendItems.length > 0 && (
+        <div
+          style={{
+            position: "absolute",
+            bottom: "20px",
+            right: "20px",
+            zIndex: 40,
+          }}
+        >
+          <NarrativeLegend items={legendItems} />
+        </div>
+      )}
     </div>
   );
 }
