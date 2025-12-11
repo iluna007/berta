@@ -1,257 +1,343 @@
 [
+
+
+    {
+    "id": "aldea-de-rio-blanco",
+    "group": "Capas Base",
+    "subgroup": "Límites políticos",
+    "label": "Aldea de Río Blanco",
+    "url": "geojson/Capas Base/Límites Políticos/RB.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "departamentos-de-honduras",
+    "group": "Capas Base",
+    "subgroup": "Límites políticos",
+    "label": "Departamentos de Honduras",
+    "url": "geojson/Capas Base/Límites Políticos/SP.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "territorio-nacional-de-honduras",
+    "group": "Capas Base",
+    "subgroup": "Límites políticos",
+    "label": "Territorio Nacional de Hondiras",
+    "url": "geojson/Capas Base/Límites Políticos/TN.geojson",
+    "color": "#807D7E"
+  },
+
+
   {
     "id": "rio-gualcarque",
     "group": "Capas Base",
     "subgroup": "Hidrografía",
-    "label": "Rio Gualcarque",
-    "url": "/geojson/Capas base/HHRG/RG.geojson",
+    "label": "Río Gualcarque",
+    "url": "geojson/Capas Base/Hidrografía/RG.geojson",
     "color": "#C2E9F2"
   },
-  {
-    "id": "limite-territorio-nacional",
-    "group": "Capas Base",
-    "subgroup": "Límites políticos",
-    "label": "Territorio Nacional de Honduras",
-    "url": "/geojson/Capas base/LT-Honduras/GOBJUS-Límite del Territorio Nacional.geojson",
-    "color": "#807D7E"
-  },
-  {
-    "id": "departamentos-honduras-ine",
-    "group": "Capas Base",
-    "subgroup": "Límites políticos",
-    "label": "Departamentos Honduras (INE)",
-    "url": "/geojson/Capas base/LT-Honduras_Departamentos/INE-Departamentos Honduras.geojson",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "aldea-rio-blanco-limite",
-    "group": "Capas Base",
-    "subgroup": "Límites políticos",
-    "label": "Aldea Río Blanco (Límite)",
-    "url": "/geojson/Capas base/LT_Aldea Rio Blanco/Aldea Rio Blanco.geojson",
-    "color": "#FFFFFF"
-  },
-  
-  {
-    "id": "poblacion-lenca",
-    "group": "Capas Base",
-    "subgroup": "Límites políticos",
-    "label": "Población lenca Aldea Río Blanco",
-    "url": "/geojson/CENSO Rio Blanco/CRB_Poblacion lenca.geojson",
-    "color": "#DEFCA2"
-  },
 
 
   {
-    "id": "componentes-agua-zarca-2011-rio-blanco",
-    "group": "Infraestructuras" ,
+    "id": "territorio-chorotenga",
+    "group": "Capas Base",
+    "subgroup": "Dinámica Poblacional",
+    "label": "Territorio Chorotenga",
+    "url": "geojson/Capas Base/Dinámica Poblacional/TCH.geojson",
+    "color": "#2D8C81"
+  },
+  {
+    "id": "territorio-garifuna",
+    "group": "Capas Base",
+    "subgroup": "Dinámica Poblacional",
+    "label": "Territorio Garífuna",
+    "url": "geojson/Capas Base/Dinámica Poblacional/TGA.geojson",
+    "color": "#207074"
+  },
+  {
+    "id": "territorio-isleno",
+    "group": "Capas Base",
+    "subgroup": "Dinámica Poblacional",
+    "label": "Territorio Isleño",
+    "url": "geojson/Capas Base/Dinámica Poblacional/TIS.geojson",
+    "color": "#257C81"
+  },
+  {
+    "id": "territorio-lenca",
+    "group": "Capas Base",
+    "subgroup": "Dinámica Poblacional",
+    "label": "Territorio Lenca",
+    "url": "geojson/Capas Base/Dinámica Poblacional/TLN.geojson",
+    "color": "#195457"
+  },
+  {
+    "id": "territorio-maya-chorti",
+    "group": "Capas Base",
+    "subgroup": "Dinámica Poblacional",
+    "label": "Territorio Maya Chortí",
+    "url": "geojson/Capas Base/Dinámica Poblacional/TMC.geojson",
+    "color": "#36997D"
+  },
+  {
+    "id": "territorio-miskito-miskitu",
+    "group": "Capas Base",
+    "subgroup": "Dinámica Poblacional",
+    "label": "Territorio Miskito (Miskitu)",
+    "url": "geojson/Capas Base/Dinámica Poblacional/TME.geojson",
+    "color": "#3CA276"
+  },
+  {
+    "id": "territorio-nahua",
+    "group": "Capas Base",
+    "subgroup": "Dinámica Poblacional",
+    "label": "Territorio Nahua",
+    "url": "geojson/Capas Base/Dinámica Poblacional/TMK.geojson",
+    "color": "#46AA79"
+  },
+  {
+    "id": "territorio-nahoa",
+    "group": "Capas Base",
+    "subgroup": "Dinámica Poblacional",
+    "label": "Territorio Nahoa",
+    "url": "geojson/Capas Base/Dinámica Poblacional/TNH.geojson",
+    "color": "#5ABA83"
+  },
+  {
+    "id": "territorio-pech",
+    "group": "Capas Base",
+    "subgroup": "Dinámica Poblacional",
+    "label": "Territorio Pech",
+    "url": "geojson/Capas Base/Dinámica Poblacional/TPC.geojson",
+    "color": "#50B27E"
+  },
+  {
+    "id": "territorio-tawahka",
+    "group": "Capas Base",
+    "subgroup": "Dinámica Poblacional",
+    "label": "Territotio Tauahka",
+    "url": "geojson/Capas Base/Dinámica Poblacional/TTH.geojson",
+    "color": "#6AC483"
+  },
+  {
+    "id": "territorio-tolupan",
+    "group": "Capas Base",
+    "subgroup": "Dinámica Poblacional",
+    "label": "Territorio Tolupan",
+    "url": "geojson/Capas Base/Dinámica Poblacional/TTL.geojson",
+    "color": "#7ACE84"
+  },
+  {
+    "id": "territorio-tekeh",
+    "group": "Capas Base",
+    "subgroup": "Dinámica Poblacional",
+    "label": "Territorio Texiihuat",
+    "url": "geojson/Capas Base/Dinámica Poblacional/TTX.geojson",
+    "color": "#6AC483"
+  },
+
+
+
+
+
+
+  {
+    "id": "predios-agua-zarca-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predios Agua Zarca 2011",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11AM.geojson",
+    "color": "#D99873"
+  },
+  {
+    "id": "componentes-agua-zarca-2011",
+    "group": "Infraestructura y logísticas",
     "subgroup": "Proyecto Agua Zarca 2011",
     "label": "Componentes Agua Zarca 2011",
-    "url": "/geojson/PHAZ_2011/componentes_Presa Agua Zarca _2011.geojson",
+    "url": "geojson/Infraestructura y logísticas/Proyecto Agua Zarca 2011/CM11.geojson",
     "color": "#D99A88"
   },
-  { 
-    "id": "tuberia-agua-zarca-2011",
-    "group": "Infraestructuras" ,
+  {
+    "id": "tuberia-presa-agua-zarca-2011",
+    "group": "Infraestructura y logísticas",
     "subgroup": "Proyecto Agua Zarca 2011",
     "label": "Tubería Presa Agua Zarca 2011",
-    "url": "/geojson/PHAZ_2011/tubería_Presa Agua Zarca _2011.geojson",
+    "url": "geojson/Infraestructura y logísticas/Proyecto Agua Zarca 2011/TPA11.geojson",
     "color": "#D9763D"
   },
-
-
   {
-    "id": "componentes-agua-zarca-2014-rio-blanco",
-    "group": "Infraestructuras" ,
+    "id": "componentes-agua-zarca-2014",
+    "group": "Infraestructura y logísticas",
     "subgroup": "Proyecto Agua Zarca 2014",
     "label": "Componentes Agua Zarca 2014",
-    "url": "/geojson/PHAZ_2014/componentes_Presa Agua Zarca _2014.geojson",
+    "url": "geojson/Infraestructura y logísticas/Proyecto Agua Zarca 2014/CM14.geojson",
     "color": "#D49255"
   },
-  { 
-    "id": "tuberia-agua-zarca-2014-rio-blanco",
-    "group": "Infraestructuras" ,
+  {
+    "id": "tuberia-presa-agua-zarca-2014",
+    "group": "Infraestructura y logísticas",
     "subgroup": "Proyecto Agua Zarca 2014",
     "label": "Tubería Presa Agua Zarca 2014",
-    "url": "/geojson/PHAZ_2014/prueba.geojson",
+    "url": "geojson/Infraestructura y logísticas/Proyecto Agua Zarca 2014/TPA14.geojson",
     "color": "#A53709"
   },
   {
-    "id": "predios-agua-zarca-2011-rio-blanco",
-    "group": "Infraestructuras" ,
-    "subgroup": "Compra de terrenos",
-    "label": "Predios Agua Zarca 2011",
-    "url": "/geojson/Predios asociados a proyecto.geojson",
-    "color": "#D99873"
-  },
-  { 
-    "id": "ivpredios-agua-zarca-2014-rio-blanco",
-    "group": "Infraestructuras" ,
-    "subgroup": "Compra de terrenos",
-    "label": "Áreas de cambio de uso de suelo-2012",
-    "url": "/geojson/Compra de terreno/predios2012.geojson",
-    "color": "#F2C144"
-  },
-  {
-    "id": "carreteras-2002",
-    "group": "Infraestructuras",
+    "id": "carretera-2002",
+    "group": "Infraestructura y logísticas",
     "subgroup": "Carreteras",
     "label": "Carretera 2002",
-    "url": "/geojson/Evolución Infraestructura/iv_caminos_2002.geojson",
+    "url": "geojson/Infraestructura y logísticas/Carreteras/CA02.geojson",
     "color": "#CC9300"
   },
   {
-    "id": "carreteras-2006",
-    "group": "Infraestructuras",
+    "id": "carretera-2006",
+    "group": "Infraestructura y logísticas",
     "subgroup": "Carreteras",
     "label": "Carretera 2006",
-    "url": "/geojson/Evolución Infraestructura/iv_caminos_2006.geojson",
+    "url": "geojson/Infraestructura y logísticas/Carreteras/CA06.geojson",
     "color": "#FFC930"
   },
   {
-    "id": "carreteras-2012",
-    "group": "Infraestructuras",
+    "id": "carretera-2012",
+    "group": "Infraestructura y logísticas",
     "subgroup": "Carreteras",
     "label": "Carretera 2012",
-    "url": "/geojson/Evolución Infraestructura/iv_caminos_2012.geojson",
+    "url": "geojson/Infraestructura y logísticas/Carreteras/CA12.geojson",
     "color": "#F5D264"
   },
   {
-    "id": "carreteras-2016",
-    "group": "Infraestructuras",
+    "id": "carretera-2016",
+    "group": "Infraestructura y logísticas",
     "subgroup": "Carreteras",
-    "label": "Predios 2016",
-    "url": "/geojson/Evolución Infraestructura/iv_predios_2016.geojson",
+    "label": "Carretera 2016",
+    "url": "geojson/Infraestructura y logísticas/Carreteras/CA16.geojson",
     "color": "#F5E099"
   },
   {
-    "id": "carreteras-2025",
-    "group": "Infraestructuras",
+    "id": "carretera-2025",
+    "group": "Infraestructura y logísticas",
     "subgroup": "Carreteras",
     "label": "Carretera 2025",
-    "url": "/geojson/Evolución Infraestructura/iv_caminos_2025.geojson",
+    "url": "geojson/Infraestructura y logísticas/Carreteras/CA25.geojson",
     "color": "#FFF2CE"
   },
-
-
-
   {
-    "id": "imp-jbm",
+    "id": "impronta-criminal-jbm",
     "group": "Los agresores",
-    "subgroup": "Impronta Criminales",
-    "label": "Juan Bautista Madrid",
-    "url": "/geojson/IMPRONTAS/imp_CRI_JBM.geojson",
+    "subgroup": "Improntas",
+    "label": "Impronta Criminal JBM",
+    "url": "geojson/Los agresores/Improntas/imp_CRI_JBM.geojson",
     "color": "#8C045D"
   },
   {
-    "id": "imp-oatv",
+    "id": "impronta-criminal-oatv",
     "group": "Los agresores",
-    "subgroup": "Impronta Criminales",
-    "label": "Oscar Aroldo Torres Velásquez",
-    "url": "/geojson/IMPRONTAS/imp_CRI_OATV.geojson",
+    "subgroup": "Improntas",
+    "label": "Impronta Criminal OATV",
+    "url": "geojson/Los agresores/Improntas/imp_CRI_OATV.geojson",
     "color": "#8C0343"
   },
-
   {
-    "id": "imp-desa-ja",
+    "id": "impronta-desa-ja",
     "group": "Los agresores",
-    "subgroup": "Impronta DESA",
-    "label": "Jorge Ávila",
-    "url": "/geojson/IMPRONTAS/imp_DESA_JA.geojson",
+    "subgroup": "Improntas",
+    "label": "Impronta DESA JA",
+    "url": "geojson/Los agresores/Improntas/imp_DESA_JA.geojson",
     "color": "#BF712C"
   },
   {
-    "id": "imp-desa-jsc",
+    "id": "impronta-desa-jsc",
     "group": "Los agresores",
-    "subgroup": "Impronta DESA",
-    "label": "Juan Carlos Sánchez Cantillano",
-    "url": "/geojson/IMPRONTAS/imp_DESA_JSC.geojson",
+    "subgroup": "Improntas",
+    "label": "Impronta DESA JSC",
+    "url": "geojson/Los agresores/Improntas/imp_DESA_JSC.geojson",
     "color": "#D98E32"
   },
-  {
-    "id": "imp-desa-srro",
+    {
+    "id": "impronta-desa-srro",
     "group": "Los agresores",
-    "subgroup": "Impronta DESA",
-    "label": "Sergio Ramón Rodríguez Orellana",
-    "url": "/geojson/IMPRONTAS/imp_DESA_SRRO.geojson",
+    "subgroup": "Improntas",
+    "label": "Impronta DESA SRRO",
+    "url": "geojson/Los agresores/Improntas/imp_DESA_SRRO.geojson",
     "color": "#F2C36B"
   },
-
   {
-    "id": "imp-eje-dgb",
+    "id": "impronta-ejercito-dgb",
     "group": "Los agresores",
-    "subgroup": "Impronta Ejército",
-    "label": "Douglas Geovanny Bustillo",
-    "url": "/geojson/IMPRONTAS/imp_EJE_DGB.geojson",
+    "subgroup": "Improntas",
+    "label": "Impronta Ejército DGB",
+    "url": "geojson/Los agresores/Improntas/imp_EJE_DGB.geojson",
     "color": "#EFBBF5"
   },
   {
-    "id": "imp-eje-hjhr",
+    "id": "impronta-ejercito-hjhr",
     "group": "Los agresores",
-    "subgroup": "Impronta Ejército",
-    "label": "Henry Javier Hernández Rodríguez",
-    "url": "/geojson/IMPRONTAS/imp_EJE_HJHR.geojson",
+    "subgroup": "Improntas",
+    "label": "Impronta Ejército HJHR",
+    "url": "geojson/Los agresores/Improntas/imp_EJE_HJHR.geojson",
     "color": "#DB9AD8"
   },
   {
-    "id": "imp-eje-mdc",
+    "id": "impronta-ejercito-mdc",
     "group": "Los agresores",
-    "subgroup": "Impronta Ejército",
-    "label": "Mariano Díaz Chávez",
-    "url": "/geojson/IMPRONTAS/imp_EJE_MDC.geojson",
+    "subgroup": "Improntas",
+    "label": "Impronta Ejército MDC",
+    "url": "geojson/Los agresores/Improntas/imp_EJE_MDC.geojson",
     "color": "#B76FBE"
   },
   {
-    "id": "imp-eje-rdc",
+    "id": "impronta-ejercito-rdc",
     "group": "Los agresores",
-    "subgroup": "Impronta Ejército",
-    "label": "Roberto David Castillo",
-    "url": "/geojson/IMPRONTAS/imp_EJE_RDC.geojson",
+    "subgroup": "Improntas",
+    "label": "Impronta Ejército RDC",
+    "url": "geojson/Los agresores/Improntas/imp_EJE_RDC.geojson",
     "color": "#933DA7"
   },
   {
-    "id": "imp-gobierno",
+    "id": "impronta-gobierno",
     "group": "Los agresores",
-    "subgroup": "Impronta Gobierno",
-    "label": "Plutarco Mejía Acosta Cardona",
-    "url": "/geojson/IMPRONTAS/imp_GOBIERNO.geojson",
+    "subgroup": "Improntas",
+    "label": "Impronta Gobierno",
+    "url": "geojson/Los agresores/Improntas/imp_GOBIERNO.geojson",
     "color": "#741462"
   },
-  
-
-
-
-
   {
-    "id": "imp-copinh-bicf",
-    "group": "Berta Cáceres y COPINH",
-    "subgroup": "Improntas COPINH",
+    "id": "impronta-copinh",
+    "group": "Improntas",
+    "subgroup": "Berta Cáceres y COPINH",
+    "label": "Impronta COPINH",
+    "url": "geojson/Berta Cáceres y COPINH/imp_COPINH.geojson",
+    "color": "#97e164"
+  },
+  {
+    "id": "berta-isabel-caceres-flores",
+    "group": "Improntas",
+    "subgroup": "Berta Cáceres y COPINH",
     "label": "Berta Isabel Cáceres Flores",
-    "url": "/geojson/IMPRONTAS/imp_COPINH_BICF.geojson",
+    "url": "geojson/Berta Cáceres y COPINH/imp_COPINH_BICF.geojson",
     "color": "#BAFF53"
   },
   {
-    "id": "imp-copinh-scf",
-    "group": "Berta Cáceres y COPINH",
-    "subgroup": "Improntas COPINH",
+    "id": "sotero-chavarria-flores",
+    "group": "Improntas",
+    "subgroup": "Berta Cáceres y COPINH",
     "label": "Sotero Chavarría Flores",
-    "url": "/geojson/IMPRONTAS/imp_COPINH_SCF.geojson",
+    "url": "geojson/Berta Cáceres y COPINH/imp_COPINH_SCF.geojson",
     "color": "#8DD428"
   },
   {
-    "id": "imp-copinh-tg",
-    "group": "Berta Cáceres y COPINH",
-    "subgroup": "Improntas COPINH",
+    "id": "tomas-gomez",
+    "group": "Improntas",
+    "subgroup": "Berta Cáceres y COPINH",
     "label": "Tomás Gómez",
-    "url": "/geojson/IMPRONTAS/imp_COPINH_TG.geojson",
+    "url": "geojson/Berta Cáceres y COPINH/imp_COPINH_TG.geojson",
     "color": "#6CA907"
   },
   {
-    "id": "toma-el-roble",
-    "group": "Berta Cáceres y COPINH",
-    "subgroup": "Acciones",
+    "id": "toma-de-el-roble",
+    "group": "Improntas",
+    "subgroup": "Berta Cáceres y COPINH",
     "label": "Toma de El Roble",
-    "url": "/geojson/loc.geojson",
+    "url": "geojson/Berta Cáceres y COPINH/LOC_Toma de El Roble.geojson",
     "color": "#5E8321"
   }
 ]
+
