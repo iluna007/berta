@@ -36,7 +36,15 @@
     "color": "#C2E9F2"
   },
 
-
+  {
+    "id": "cuenca-rio-ulua",
+    "group": "Capas Base",
+    "subgroup": "Hidrografía",
+    "label": "Cuenca Ulúa",
+    "url": "geojson/Capas Base/Hidrografía/CH.geojson",
+    "color": "#5EA4BF"
+  },
+  
   {
     "id": "territorio-chorotenga",
     "group": "Capas Base",

@@ -19,20 +19,21 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine"],
+      "geojsonOn": ["aldea-de-rio-blanco", "territorio-lenca","departamentos-de-honduras"],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {
+        "aldea-de-rio-blanco": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 1
+        },
+        "territorio-lenca": {
           "fill": true,
           "fillColor": "#eb443e",
           "fillOpacity": 0.3
-        },
-        "censo-Rio-Blanco-2013": {
-          "pointColor": "#eb443e",
-          "pointRadius": 3
          
         },
-        "departamentos-honduras-ine": {
+        "departamentos-de-honduras": {
           "fill": false,
           "lineColor": "#000000",
           "lineWidth": 2
@@ -77,25 +78,26 @@
       "highlightLayers": ["carreteras-2012"],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite","departamentos-honduras-ine","rio-gualcarque","osm-waterways"],
+      "geojsonOn": ["aldea-de-rio-blanco","departamentos-de-honduras","rio-gualcarque","cuenca-rio-ulua"],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {
+        "aldea-de-rio-blanco": {
           "fill": true,
           "fillColor": "#eb443e",
           "fillOpacity": 0.3
         },
        
-        "departamentos-honduras-ine": {
+        "departamentos-de-honduras": {
           "fill": false,
           "lineColor": "#000000",
-          "lineWidth": 2
+          "lineWidth": 2,
+          "line-dasharray": [2,4]
         },
-        "rio-gualcarque": {
+        "rio-gualcarque": { 
           "lineColor": "#0077be",
           "lineWidth": 4
         },
-        "osm-waterways": {
+        "cuenca-rio-ulua": {
           "lineColor": "#5EA4BF",
           "lineWidth": 2
         }

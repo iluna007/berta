@@ -13,10 +13,10 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["departamentos-honduras-ine"],
+      "geojsonOn": ["departamentos-de-honduras"],
 
       "layerStyles": {
-        "departamentos-honduras-ine": {
+        "departamentos-de-honduras": {
           "fill": true,
           "fillColor": "#eb443e",
           "fillOpacity": 0.5 
