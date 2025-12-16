@@ -11,52 +11,52 @@
   },
   {
     "id": "asc2",
-    "title": "Daños Individuales",
+    "title": "Individuales",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Tipo de daño",
-      "Daños Individuales"
+      "Individuales"
     ]
   },
   {
     "id": "asc3",
-    "title": "Daños Colectivos a Río Blanco",
+    "title": "Colectivos a Río Blanco",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Tipo de daño",
-      "Daños Colectivos a Río Blanco"
+      "Colectivos a Río Blanco"
     ]
   },
   {
     "id": "asc4",
-    "title": "Daño al territorio y medio ambiente",
+    "title": "Territorio y medio ambiente",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Tipo de daño",
-      "Daño al territorio y medio ambiente"
+      "Territorio y medio ambiente"
     ]
   },
   {
     "id": "asc5",
-    "title": "Daños colectivos a COPINH",
+    "title": "Colectivos a COPINH",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Tipo de daño",
-      "Daños colectivos a COPINH"
+      "Colectivos a COPINH"
     ]
   },
   {
     "id": "asc6",
-    "title": "Daños colectivos a los movimientos sociales y la sociedad hondurela",
+    "title": "Colectivos a los movimientos sociales y la sociedad hondurela",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Tipo de daño",
-      "Daños colectivos a los movimientos sociales y la sociedad hondurela"
+      "Colectivos a los movimientos sociales y la sociedad hondurela"
     ]
   },
   {
