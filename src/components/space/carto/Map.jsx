@@ -365,7 +365,7 @@ addBaseMap(map, styleKey = "current") {
   }
 
   renderTiles() {
-    const pane = this.map.getPanes().overlayPane;
+    const pane = this.map.getPanes().markerPane;
     const { width, height } = this.getClientDims();
 
     return this.map ? (

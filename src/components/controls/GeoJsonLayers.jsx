@@ -73,11 +73,12 @@ class GeoJsonLayers extends Component {
     const paneId = `pane-${layer.label.replace(/\s+/g, "-").toLowerCase()}`;
     if (!map.getPane(paneId)) {
       const pane = map.createPane(paneId);
-      pane.style.zIndex = 450;
+      pane.style.zIndex = 300;
     }
 
     const mapLayer = L.geoJSON(data, {
       pane: paneId,
+      interactive: false,
       style: () => ({
         color: layer.color,
         weight: 2,
