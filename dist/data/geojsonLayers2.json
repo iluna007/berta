@@ -142,51 +142,217 @@
     "color": "#6AC483"
   },
 
-
-
-
-
-
-  {
-    "id": "predios-agua-zarca-2011",
-    "group": "Infraestructura y logísticas",
-    "subgroup": "Compra de terrenos",
-    "label": "Predios Agua Zarca 2011",
-    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11AM.geojson",
-    "color": "#D99873"
-  },
-  {
-    "id": "componentes-agua-zarca-2011",
+   {
+    "id": "cm11-cuarto-de-maquinas",
     "group": "Infraestructura y logísticas",
     "subgroup": "Proyecto Agua Zarca 2011",
-    "label": "Componentes Agua Zarca 2011",
+    "label": "Cuarto de Máquinas",
     "url": "geojson/Infraestructura y logísticas/Proyecto Agua Zarca 2011/CM11.geojson",
     "color": "#D99A88"
   },
   {
-    "id": "tuberia-presa-agua-zarca-2011",
+    "id": "pr11-presa",
     "group": "Infraestructura y logísticas",
     "subgroup": "Proyecto Agua Zarca 2011",
-    "label": "Tubería Presa Agua Zarca 2011",
+    "label": "Presa",
+    "url": "geojson/Infraestructura y logísticas/Proyecto Agua Zarca 2011/PR11.geojson",
+    "color": "#D99A88"
+  },
+  {
+    "id": "to11-tanque-de-oscilacion",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Proyecto Agua Zarca 2011",
+    "label": "Tanque de Oscilación",
+    "url": "geojson/Infraestructura y logísticas/Proyecto Agua Zarca 2011/TO11.geojson",
+    "color": "#D99A88"
+  },
+  {
+    "id": "ad11-addit",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Proyecto Agua Zarca 2011",
+    "label": "Addit",
+    "url": "geojson/Infraestructura y logísticas/Proyecto Agua Zarca 2011/AD11.geojson",
+    "color": "#D99A88"
+  },
+  {
+    "id": "tpa11-tuberia",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Proyecto Agua Zarca 2011",
+    "label": "Tubería",
     "url": "geojson/Infraestructura y logísticas/Proyecto Agua Zarca 2011/TPA11.geojson",
     "color": "#D9763D"
   },
   {
-    "id": "componentes-agua-zarca-2014",
+    "id": "cm14-cuarto-de-maquinas",
     "group": "Infraestructura y logísticas",
     "subgroup": "Proyecto Agua Zarca 2014",
-    "label": "Componentes Agua Zarca 2014",
+    "label": "Cuarto de Máquinas",
     "url": "geojson/Infraestructura y logísticas/Proyecto Agua Zarca 2014/CM14.geojson",
     "color": "#D49255"
   },
   {
-    "id": "tuberia-presa-agua-zarca-2014",
+    "id": "pr14-presa",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Proyecto Agua Zarca 2014",
+    "label": "Presa",
+    "url": "geojson/Infraestructura y logísticas/Proyecto Agua Zarca 2014/PR14.geojson",
+    "color": "#D49256"
+  },
+  {
+    "id": "em14-embalse",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Proyecto Agua Zarca 2014",
+    "label": "Embalse",
+    "url": "geojson/Infraestructura y logísticas/Proyecto Agua Zarca 2014/EM14.geojson",
+    "color": "#D49257"
+  },
+  {
+    "id": "tpa14-tuberia-presa-agua-zarca-2014",
     "group": "Infraestructura y logísticas",
     "subgroup": "Proyecto Agua Zarca 2014",
     "label": "Tubería Presa Agua Zarca 2014",
     "url": "geojson/Infraestructura y logísticas/Proyecto Agua Zarca 2014/TPA14.geojson",
     "color": "#A53709"
   },
+
+
+
+
+
+  {
+  "id": "predios-agua-zarca-2011",
+  "group": "Infraestructura y logísticas",
+  "subgroup": "Compra de terrenos",
+  "label": "Predio Aquilino Madrid (PHAZ 2011)",
+  "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11AM.geojson",
+  "color": "#D99880"
+  },
+  {
+    "id": "predio-benigno-dominguez-phaz-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predio Benigno Domínguez (PHAZ 2011)",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11BD.geojson",
+    "color": "#D99884"
+  },
+  {
+    "id": "predio-francisco-madrid-phaz-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predio Francisco Madrid (PHAZ 2011)",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11FM.geojson",
+    "color": "#D99877"
+  },
+  {
+    "id": "predio-ismael-dominguez-phaz-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predio Ismael Domínguez (PHAZ 2011)",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11ID.geojson",
+    "color": "#D99883"
+  },
+  {
+    "id": "predio-ignacio-gomez-phaz-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predio Ignacio Gómez (PHAZ 2011)",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11IG.geojson",
+    "color": "#D99882"
+  },
+  {
+    "id": "predio-jose-miranda-phaz-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predio José Miranda (PHAZ 2011)",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11JM.geojson",
+    "color": "#D99885"
+  },
+  {
+    "id": "predio-jose-santos-phaz-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predio José Santos (PHAZ 2011)",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11JS.geojson",
+    "color": "#D99879"
+  },
+  {
+    "id": "predio-leonel-madrid-phaz-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predio Leonel Madrid (PHAZ 2011)",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11LM.geojson",
+    "color": "#D99887"
+  },
+  {
+    "id": "predio-miguel-isaac-phaz-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predio Miguel Isaac (PHAZ 2011)",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11MI.geojson",
+    "color": "#D99881"
+  },
+  {
+    "id": "predio-pablo-aguilar-phaz-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predio Pablo Aguilar (PHAZ 2011)",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11PA.geojson",
+    "color": "#D99886"
+  },
+  {
+    "id": "predio-ramon-aguero-phaz-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predio Ramón Agüero (PHAZ 2011)",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11RA.geojson",
+    "color": "#D99884"
+  },
+  {
+    "id": "predio-ricardo-pineda-phaz-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predio Ricardo Pineda (PHAZ 2011)",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11RP.geojson",
+    "color": "#D99874"
+  },
+  {
+    "id": "predio-simeon-dominguez-phaz-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predio Simeón Domínguez (PHAZ 2011)",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11SD.geojson",
+    "color": "#D99878"
+  },
+  {
+    "id": "predio-santos-gomez-phaz-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predio Santos Gómez (PHAZ 2011)",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11SG.geojson",
+    "color": "#D99876"
+  },
+  {
+    "id": "predio-victor-perez-phaz-2011",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predio Víctor Pérez (PHAZ 2011)",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11VP.geojson",
+    "color": "#D99875"
+  },
+  {
+    "id": "predios-agua-zarca-2014",
+    "group": "Infraestructura y logísticas",
+    "subgroup": "Compra de terrenos",
+    "label": "Predios Agua Zarca 2014",
+    "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA14.geojson",
+    "color": "#D99873"
+  },
+
+
+
+
+
+ 
   {
     "id": "carretera-2002",
     "group": "Infraestructura y logísticas",
@@ -341,8 +507,8 @@
   },
   {
     "id": "toma-de-el-roble",
-    "group": "Improntas",
-    "subgroup": "Berta Cáceres y COPINH",
+    "group": "Sitios clave",
+    "subgroup": "Resistencia",
     "label": "Toma de El Roble",
     "url": "geojson/Berta Cáceres y COPINH/LOC_Toma de El Roble.geojson",
     "color": "#5E8321"

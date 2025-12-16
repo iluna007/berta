@@ -69,13 +69,15 @@ class GeoJsonLayers extends Component {
 
     const response = await fetch(layer.url);
     const data = await response.json();
+    const SOFT_POINT_GROUPS = new Set(["Improntas", "Los agresores"]);
+    const shouldSoft = SOFT_POINT_GROUPS.has(layer.group);
 
     const paneId = `pane-${layer.label.replace(/\s+/g, "-").toLowerCase()}`;
     if (!map.getPane(paneId)) {
       const pane = map.createPane(paneId);
       pane.style.zIndex = 300;
     }
-
+    
     const mapLayer = L.geoJSON(data, {
       pane: paneId,
       interactive: false,
@@ -86,15 +88,17 @@ class GeoJsonLayers extends Component {
         fillOpacity: 0.3
       }),
       pointToLayer: (feature, latlng) =>
-        L.circleMarker(latlng, {
-          radius: 5,
-          fillColor: layer.color,
-          color: "#000",
-          weight: 1,
-          opacity: 1,
-          fillOpacity: 0.8,
-          className: "leaflet-interactive soft-point"
-        })
+      L.circleMarker(latlng, {
+        radius: 5,
+        fillColor: layer.color,
+        color: "#000",
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 0.8,
+        className:  shouldSoft
+          ? "leaflet-interactive soft-point"
+          : "leaflet-interactive"
+      })
     });
 
     mapLayer.addTo(map);
