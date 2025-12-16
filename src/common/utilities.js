@@ -42,9 +42,8 @@ export function zipColorsToPercentages(colors, percentages) {
   if (colors.length < percentages.length) {
     throw new Error("You must declare an appropriate number of filter colors");
   }
-
   return percentages.reduce((map, percent, idx) => {
-    map[colors[idx]] = percent;
+    if (percent > 0) map[colors[idx]] = percent; // <- evita 0%
     return map;
   }, {});
 }
@@ -170,27 +169,47 @@ export function getFilterSiblings(allFilters, filterParent, filterKey) {
   return Object.keys(siblings).filter((sib) => sib !== filterKey);
 }
 
+
+
+
+function initColoringSet(maxNumOfColors) {
+  return Array.from({ length: maxNumOfColors }, () => []);
+}
+
+function stableColorIdx(key, maxNumOfColors) {
+  const h = hash(key);
+  const n = parseInt(String(h).slice(0, 8), 16);
+  return (Number.isFinite(n) ? n : 0) % maxNumOfColors;
+}
+
+
 /**
  * Looks at the current coloring set (ie. a map between sets of filters and colors) and configures where to add next set
  */
-export function addToColoringSet(coloringSet, filters) {
-  const flattenedColoringSet = coloringSet.flatMap((f) => f);
-  const newColoringSet = filters.filter(
-    (k) => flattenedColoringSet.indexOf(k) === -1
-  );
-  return [...coloringSet, newColoringSet];
+export function addToColoringSet(coloringSet, filters, key, maxNumOfColors) {
+  const set =
+    Array.isArray(coloringSet) && coloringSet.length === maxNumOfColors
+      ? coloringSet.map((a) => [...a])
+      : initColoringSet(maxNumOfColors);
+
+  const idx = stableColorIdx(key, maxNumOfColors);
+  const merged = new Set(set[idx]);
+  filters.forEach((f) => merged.add(f));
+  set[idx] = Array.from(merged);
+  return set;
 }
 
 /**
  * Looks at the current coloring set (ie. a map between sets of filters and colors) and configures new sets based off of existing filters
  */
-export function removeFromColoringSet(coloringSet, filters) {
-  const newColoringSets = coloringSet.map((set) =>
-    set.filter((s) => {
-      return !filters.includes(s);
-    })
-  );
-  return newColoringSets.filter((item) => item.length !== 0);
+export function removeFromColoringSet(coloringSet, filters, key, maxNumOfColors) {
+  const set =
+    Array.isArray(coloringSet) && coloringSet.length === maxNumOfColors
+      ? coloringSet.map((a) => [...a])
+      : initColoringSet(maxNumOfColors);
+
+  const toRemove = new Set(filters);
+  return set.map((arr) => arr.filter((f) => !toRemove.has(f)));
 }
 
 export function getEventCategories(event, activeCategories) {
@@ -584,3 +603,4 @@ export const isOdd = (num) => num % 2 !== 0;
 export function isEmptyObject(o) {
   return o == null || (typeof o === "object" && !Object.keys(o).length);
 }
+

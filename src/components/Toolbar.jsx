@@ -52,7 +52,7 @@ class Toolbar extends Component {
     const isTurningOff = activeFilters.includes(key);
 
     if (!isTurningOff) {
-      const updatedColoringSet = addToColoringSet(coloringSet, matchingKeys);
+      const updatedColoringSet = addToColoringSet(coloringSet, matchingKeys, key, maxNumOfColors);
       if (updatedColoringSet.length <= maxNumOfColors) {
         this.props.actions.updateColoringSet(updatedColoringSet);
       }
@@ -69,7 +69,7 @@ class Toolbar extends Component {
         }
       }
 
-      const updatedColoringSet = removeFromColoringSet(coloringSet, matchingKeys);
+      const updatedColoringSet = removeFromColoringSet(coloringSet, matchingKeys, key, maxNumOfColors);
       this.props.actions.updateColoringSet(updatedColoringSet);
     }
 
