@@ -25,9 +25,16 @@ export const generateCardLayout = {
         },
         {
           kind: "text",
+          title: "precision",
+          value: event.precision || `—`,
+        },
+        {
+          kind: "text",
           title: "id",
           value: event.civId || `—`,
         },
+        
+
       ],
 
       // ⬇️ NUEVA SECCIÓN: LISTA DE VÍCTIMAS
@@ -73,13 +80,18 @@ export const generateCardLayout = {
       [
         {
           kind: "date",
-          title: "Reported Incident Date",
+          title: "Fecha",
           value: event.datetime || event.date || ``,
         },
         {
           kind: "text",
-          title: "Location",
+          title: "Ubicación",
           value: event.location || `—`,
+        },
+        {
+          kind: "text",
+          title: "precision",
+          value: event.precision || `—`,
         },
         {
           kind: "text",
@@ -87,35 +99,35 @@ export const generateCardLayout = {
           value: event.civId || `—`,
         },
       ],
-
-      // ⬇️ NUEVA SECCIÓN: LISTA DE VÍCTIMAS TAMBIÉN EN SOURCED
-      event.victims && event.victims.length > 0
-        ? [
-            {
-              kind: "list",
-              title: "Victims",
-              value: event.victims,
-            },
-          ]
-        : [],
-        // ⬇️ NUEVA SECCIÓN: LISTA DE ATACANTES
+      // ⬇️ NUEVA SECCIÓN: LISTA DE ATACANTES
       event.attackers && event.attackers.length > 0
         ? [
             {
               kind: "list",
-              title: "Attackers",
+              title: "Iniciadores",
               value: event.attackers,
             },
           ]
         : [],
         
+      // ⬇️ NUEVA SECCIÓN: LISTA DE VÍCTIMAS TAMBIÉN EN SOURCED
+      event.victims && event.victims.length > 0
+        ? [
+            {
+              kind: "list",
+              title: "Receptores",
+              value: event.victims,
+            },
+          ]
+        : [],
+    
 
       [{ kind: "line-break", times: 0.4 }],
 
       [
         {
           kind: "text",
-          title: "Summary",
+          title: "Resumen",
           value: event.description || ``,
           scaleFont: 1.1,
         },
@@ -292,8 +304,8 @@ export const Card = ({
                 <summary>
                   <span className="summary-line"></span>
                   <span className="summary-text">
-                    <span className="summary-show">Show</span>{" "}
-                    <span className="summary-hide">Hide</span> sources (
+                    <span className="summary-show">Mostrar</span>{" "}
+                    <span className="summary-hide">Esconder</span> fuentes (
                     {row[0].values.length})
                   </span>
                   <span className="summary-line"></span>

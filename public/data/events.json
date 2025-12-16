@@ -6,6 +6,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -32,6 +33,7 @@
     "location": "Planta Hidroeléctrica Canjel",
     "latitude": "14.683039",
     "longitude": "-88.119892",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores"
@@ -55,6 +57,7 @@
     "location": "Agua Caliente",
     "latitude": "14.70920",
     "longitude": "-88.12860",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores"
@@ -78,6 +81,7 @@
     "location": "Casa de Austra Bertha Flóres López",
     "latitude": "14.748506",
     "longitude": "-88.192364",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -102,6 +106,7 @@
     "location": "Desvío hacia El Roble, camino hacia La Tejera",
     "latitude": "14.6624476",
     "longitude": "-88.1699240",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores"
@@ -125,6 +130,7 @@
     "location": "Municipio de San Francisco de Ojuera",
     "latitude": "14.74936",
     "longitude": "-88.19135",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores"
@@ -148,6 +154,7 @@
     "location": "Casa de Austra Bertha Flóres López",
     "latitude": "14.748506",
     "longitude": "-88.192364",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -173,6 +180,7 @@
     "location": "Casa de Austra Bertha Flóres López",
     "latitude": "14.748506",
     "longitude": "-88.192364",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Austra Bertha Flores López"
@@ -195,6 +203,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -219,6 +228,7 @@
     "location": "Guise",
     "latitude": "14.3010333",
     "longitude": "-88.0720211",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores"
@@ -243,6 +253,7 @@
     "location": "Casa de Austra Bertha Flóres López",
     "latitude": "14.748506",
     "longitude": "-88.192364",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Austra Bertha Flores López"
@@ -266,6 +277,7 @@
     "location": "Ministerio Publico Sede Tegucigalpa",
     "latitude": "14.09635179669581",
     "longitude": "-87.18339204606276",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Familia Cáceres"
@@ -289,6 +301,7 @@
     "location": "Tegucigalpa",
     "latitude": "14.10583",
     "longitude": "-87.20472",
+    "precision": ">10000",
     "graphic": "FALSE",
     "victims": [
       "Laura Zúñiga Cáceres",
@@ -313,6 +326,7 @@
     "location": "Casa de Austra Bertha Flóres López",
     "latitude": "14.748506",
     "longitude": "-88.192364",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -337,6 +351,7 @@
     "location": "Aldea Locomapa",
     "latitude": "15.31667",
     "longitude": "-87.28333",
+    "precision": "≤10000",
     "graphic": "FALSE",
     "victims": [
       "Arnold Guifarro"
@@ -360,6 +375,7 @@
     "location": "Casa de Olivia Zúñiga Cáceres",
     "latitude": "14.29151431067253",
     "longitude": "-88.17811774446508",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Olivia Zúñiga Cáceres"
@@ -382,6 +398,7 @@
     "location": "Casa de Olivia Zúñiga Cáceres",
     "latitude": "14.29151431067253",
     "longitude": "-88.17811774446508",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Olivia Zúñiga Cáceres"
@@ -405,6 +422,7 @@
     "location": "Comunidad de San Bartolo",
     "latitude": "14.604023",
     "longitude": "-88.171449",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Olvín Gustavo García Mejía"
@@ -428,6 +446,7 @@
     "location": "Casa de Laura Zúñiga Cáceres",
     "latitude": "14.300745195486346",
     "longitude": "-88.16770107892505",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Laura Zúñiga Cáceres"
@@ -450,6 +469,7 @@
     "location": "Casa de Olivia Zúñiga Cáceres",
     "latitude": "14.29151431067253",
     "longitude": "-88.17811774446508",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Olivia Zúñiga Cáceres"
@@ -473,6 +493,7 @@
     "location": "Casa de Olivia Zúñiga Cáceres",
     "latitude": "14.29151431067253",
     "longitude": "-88.17811774446508",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Olivia Zúñiga Cáceres"
@@ -496,6 +517,7 @@
     "location": "Casa de Laura Zúñiga Cáceres",
     "latitude": "14.300745195486346",
     "longitude": "-88.16770107892505",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Laura Zúñiga Cáceres"
@@ -519,6 +541,7 @@
     "location": "Casa de Sanación y Justicia de las Mujeres del COPINH",
     "latitude": "14.3133086778",
     "longitude": "-88.1796978286",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Laura Zúñiga Cáceres"
@@ -542,6 +565,7 @@
     "location": "Casa de Laura Zúñiga Cáceres",
     "latitude": "14.300745195486346",
     "longitude": "-88.16770107892505",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Laura Zúñiga Cáceres"
@@ -565,6 +589,7 @@
     "location": "Casa de Laura Zúñiga Cáceres",
     "latitude": "14.300745195486346",
     "longitude": "-88.16770107892505",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Laura Zúñiga Cáceres"
@@ -588,6 +613,7 @@
     "location": "Casa de Laura Zúñiga Cáceres",
     "latitude": "14.300745195486346",
     "longitude": "-88.16770107892505",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Laura Zúñiga Cáceres"
@@ -611,6 +637,7 @@
     "location": "Casa de Laura Zúñiga Cáceres",
     "latitude": "14.300745195486346",
     "longitude": "-88.16770107892505",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Laura Zúñiga Cáceres"
@@ -634,6 +661,7 @@
     "location": "Casa de Austra Bertha Flóres López",
     "latitude": "14.748506",
     "longitude": "-88.192364",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Olivia Zúñiga Cáceres"
@@ -657,6 +685,7 @@
     "location": "Tegucigalpa",
     "latitude": "14.10583",
     "longitude": "-87.20472",
+    "precision": ">10000",
     "graphic": "FALSE",
     "victims": [
       "Olivia Zúñiga Cáceres"
@@ -680,6 +709,7 @@
     "location": "Casa de Austra Bertha Flóres López",
     "latitude": "14.748506",
     "longitude": "-88.192364",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Olivia Zúñiga Cáceres"
@@ -703,6 +733,7 @@
     "location": "Cancillería de Relaciones Exteriores",
     "latitude": "14.10382748081195",
     "longitude": "-87.20487942784219",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Olivia Zúñiga Cáceres"
@@ -726,6 +757,7 @@
     "location": "Campamento DESA",
     "latitude": "14.669888",
     "longitude": "-88.173917",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Aureliano Molina Villanueva"
@@ -752,6 +784,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -778,6 +811,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -802,6 +836,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -828,6 +863,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -851,6 +887,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -873,6 +910,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad Lenca"
@@ -896,6 +934,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -921,6 +960,7 @@
     "location": "San Pedro Zacapa",
     "latitude": "14.755822",
     "longitude": "-88.115472",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Aureliano Molina Villanueva",
@@ -946,6 +986,7 @@
     "location": "Santa Bárbara",
     "latitude": "14.921644",
     "longitude": "-88.236447",
+    "precision": ">10000",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -971,6 +1012,7 @@
     "location": "Casa de María Santos Domínguez",
     "latitude": "14.6255523",
     "longitude": "-88.1697320",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "María Santos Domínguez"
@@ -995,6 +1037,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco",
@@ -1023,6 +1066,7 @@
     "location": "Pito Solo",
     "latitude": "14.78687",
     "longitude": "-87.97809",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -1046,6 +1090,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco",
@@ -1071,6 +1116,7 @@
     "location": "El Ocote",
     "latitude": "14.3",
     "longitude": "-87.03333",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -1097,6 +1143,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Clementino Martínez",
@@ -1124,6 +1171,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad La Tejera",
@@ -1150,6 +1198,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Félix Gómez",
@@ -1177,6 +1226,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad La Tejera"
@@ -1202,6 +1252,7 @@
     "location": "Monte arriba de la toma",
     "latitude": "14.662433",
     "longitude": "-88.170007",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Francisco Javier Sánchez García"
@@ -1225,6 +1276,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -1248,6 +1300,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Roque Domínguez"
@@ -1272,6 +1325,7 @@
     "location": "Monte arriba de la toma",
     "latitude": "14.662433",
     "longitude": "-88.170007",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -1295,6 +1349,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -1319,6 +1374,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -1343,6 +1399,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Edmunda González González"
@@ -1366,6 +1423,7 @@
     "location": "Casa de Francisco Javier Sánchez",
     "latitude": "14.6541499",
     "longitude": "-88.1724659",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Francisco Javier Sánchez García"
@@ -1389,6 +1447,7 @@
     "location": "La Unión",
     "latitude": "14.814506",
     "longitude": "-88.407372",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Miembros de COPINH"
@@ -1414,6 +1473,7 @@
     "location": "Jesús de Otoro",
     "latitude": "14.484394",
     "longitude": "-87.982203",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Tomás García Domínguez",
@@ -1440,6 +1500,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -1464,6 +1525,7 @@
     "location": "San Francisco",
     "latitude": "14.11472",
     "longitude": "-88.37111",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Aureliano Molina Villanueva"
@@ -1487,6 +1549,7 @@
     "location": "Siguatepeque",
     "latitude": "14.597778",
     "longitude": "-87.835311",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Aureliano Molina Villanueva"
@@ -1510,6 +1573,7 @@
     "location": "El Barreal",
     "latitude": "14.6489515",
     "longitude": "-88.1641218",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad La Tejera"
@@ -1534,6 +1598,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad La Tejera",
@@ -1558,6 +1623,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad La Tejera"
@@ -1582,6 +1648,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Francisco Javier Sánchez García"
@@ -1605,6 +1672,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Desiderio Méndez",
@@ -1633,6 +1701,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Marvin García"
@@ -1656,6 +1725,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Francisco Javier Sánchez García",
@@ -1683,6 +1753,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Francisco Javier Sánchez García",
@@ -1710,6 +1781,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Guadalupe Benítez",
@@ -1735,6 +1807,7 @@
     "location": "El Barreal",
     "latitude": "14.6489515",
     "longitude": "-88.1641218",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad Lenca"
@@ -1760,6 +1833,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -1784,6 +1858,7 @@
     "location": "Pito Solo",
     "latitude": "14.78687",
     "longitude": "-87.97809",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -1808,6 +1883,7 @@
     "location": "Santa Ana",
     "latitude": "14.064830",
     "longitude": "-87.953914",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Comunidad Santa Ana",
@@ -1834,6 +1910,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Iván Sánchez",
@@ -1859,6 +1936,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad El Barreal",
@@ -1884,6 +1962,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Lucio Sánchez"
@@ -1908,6 +1987,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Victor Fernández",
@@ -1933,6 +2013,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Pueblo Lenca"
@@ -1957,6 +2038,7 @@
     "location": "Santa Ana",
     "latitude": "14.064830",
     "longitude": "-87.953914",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Felix Molina",
@@ -1981,6 +2063,7 @@
     "location": "Río Gualcarque",
     "latitude": "14.669488",
     "longitude": "-88.186883",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco",
@@ -2007,6 +2090,7 @@
     "location": "Casa de Francisco Javier Sánchez",
     "latitude": "14.6541499",
     "longitude": "-88.1724659",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Francisco Javier Sánchez García",
@@ -2036,6 +2120,7 @@
     "location": "El Barreal",
     "latitude": "14.6489515",
     "longitude": "-88.1641218",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Francisco Javier Sánchez García",
@@ -2061,6 +2146,7 @@
     "location": "Santa Ana",
     "latitude": "14.064830",
     "longitude": "-87.953914",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Comunidad La Tejera",
@@ -2087,6 +2173,7 @@
     "location": "San Pedro Zacapa",
     "latitude": "14.755822",
     "longitude": "-88.115472",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -2110,6 +2197,7 @@
     "location": "El Barreal",
     "latitude": "14.6489515",
     "longitude": "-88.1641218",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad La Tejera",
@@ -2134,6 +2222,7 @@
     "location": "Casa de María Santos Domínguez",
     "latitude": "14.6255523",
     "longitude": "-88.1697320",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "María Santos Domínguez"
@@ -2161,6 +2250,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad La Tejera"
@@ -2184,6 +2274,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad La Tejera"
@@ -2207,6 +2298,7 @@
     "location": "La Unión",
     "latitude": "14.814506",
     "longitude": "-88.407372",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "María Santos Domínguez",
@@ -2231,6 +2323,7 @@
     "location": "Casa de María Santos Domínguez",
     "latitude": "14.6255523",
     "longitude": "-88.1697320",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "María Santos Domínguez",
@@ -2255,6 +2348,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad La Tejera",
@@ -2280,6 +2374,7 @@
     "location": "Casa de Ángela Benitez",
     "latitude": "14.28505",
     "longitude": "-88.182572",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Ángela Benítez",
@@ -2305,6 +2400,7 @@
     "location": "Marcala",
     "latitude": "14.154625",
     "longitude": "-88.034742",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Señora Urquía"
@@ -2328,6 +2424,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco",
@@ -2352,6 +2449,7 @@
     "location": "San Ramón",
     "latitude": "14.668180",
     "longitude": "-88.199618",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Armando Pineda Sánchez",
@@ -2378,6 +2476,7 @@
     "location": "Casa De Ángela Benitez",
     "latitude": "14.28505",
     "longitude": "-88.182572",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Ángela Benítez"
@@ -2402,6 +2501,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Rosalina Domínguez Madrid"
@@ -2425,6 +2525,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Rosalina Domínguez",
@@ -2451,6 +2552,7 @@
     "location": "La Vega del Achotal",
     "latitude": "14.690112",
     "longitude": "-88.173570",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco",
@@ -2478,6 +2580,7 @@
     "location": "La Vega del Achotal",
     "latitude": "14.690112",
     "longitude": "-88.173570",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco",
@@ -2503,6 +2606,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco",
@@ -2528,6 +2632,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Rosalina Domínguez",
@@ -2553,6 +2658,7 @@
     "location": "La Vega del Achotal",
     "latitude": "14.690112",
     "longitude": "-88.173570",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco",
@@ -2578,6 +2684,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Familia Rosalina Domínguez",
@@ -2603,6 +2710,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Lucio Sánchez",
@@ -2627,6 +2735,7 @@
     "location": "Comunidad de Montaña Verde",
     "latitude": "14.60296",
     "longitude": "-88.35241",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad Montaña Verde"
@@ -2649,6 +2758,7 @@
     "location": "Comunidad Nueva Esperanza",
     "latitude": "14.639983977",
     "longitude": "-88.215648707",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Comunidad Nueva Esperanza"
@@ -2672,6 +2782,7 @@
     "location": "La Iguala",
     "latitude": "14.6181",
     "longitude": "-88.4692",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Comunidad Montaña Verde",
@@ -2697,6 +2808,7 @@
     "location": "Comunidad de Montaña Verde",
     "latitude": "14.60296",
     "longitude": "-88.35241",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad Montaña Verde"
@@ -2720,6 +2832,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Wilmer Madrid"
@@ -2744,6 +2857,7 @@
     "location": "San Antonio",
     "latitude": "14.548997",
     "longitude": "-88.165213",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Edgar Isaias Domínguez Madrid",
@@ -2768,6 +2882,7 @@
     "location": "Universidad Nacional de Agricultura (UNAG)",
     "latitude": "14.83011117",
     "longitude": "-85.84551877",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Manuel de Jesús Castro Aranda"
@@ -2792,6 +2907,7 @@
     "location": "Universidad Nacional de Agricultura (UNAG)",
     "latitude": "14.83011117",
     "longitude": "-85.84551877",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Comunidad Nueva Esperanza"
@@ -2816,6 +2932,7 @@
     "location": "Valle de Ángeles",
     "latitude": "14.49857",
     "longitude": "-87.64199",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Comunidad Valle de Ángeles"
@@ -2841,6 +2958,7 @@
     "location": "Valle de Ángeles",
     "latitude": "14.49857",
     "longitude": "-87.64199",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Justino Paz Mejía"
@@ -2864,6 +2982,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -2894,6 +3013,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -2917,6 +3037,7 @@
     "location": "Santa Bárbara",
     "latitude": "14.921644",
     "longitude": "-88.236447",
+    "precision": ">10000",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -2940,6 +3061,7 @@
     "location": "Camino de La Esperanza a Santa Bárbara",
     "latitude": "14.643163270937722",
     "longitude": "-87.93036017798899",
+    "precision": ">10000",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -2962,6 +3084,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Lenca no Identificada",
@@ -2986,6 +3109,7 @@
     "location": "Monte arriba de la toma",
     "latitude": "14.662433",
     "longitude": "-88.170007",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Francisco Javier Sánchez García"
@@ -3008,6 +3132,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Roque Domínguez"
@@ -3032,6 +3157,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Roque Domínguez"
@@ -3056,6 +3182,7 @@
     "location": "Utopía COPINH",
     "latitude": "14.318554945842111",
     "longitude": "-88.14124116592568",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Alexander García Sorto"
@@ -3078,6 +3205,7 @@
     "location": "Campamento DESA",
     "latitude": "14.669888",
     "longitude": "-88.173917",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -3101,6 +3229,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Delio Mesa Sánchez"
@@ -3123,6 +3252,7 @@
     "location": "El Barreal",
     "latitude": "14.6489515",
     "longitude": "-88.1641218",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Lenin"
@@ -3145,6 +3275,7 @@
     "location": "Casa de María Santos Domínguez",
     "latitude": "14.6255523",
     "longitude": "-88.1697320",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Familia Santos Domínguez"
@@ -3167,6 +3298,7 @@
     "location": "Casa de María Santos Domínguez",
     "latitude": "14.6255523",
     "longitude": "-88.1697320",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "María Santos Domínguez",
@@ -3190,6 +3322,7 @@
     "location": "La Unión",
     "latitude": "14.814506",
     "longitude": "-88.407372",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Rolando Mendez Benitez",
@@ -3221,6 +3354,7 @@
     "location": "El Barreal",
     "latitude": "14.6489515",
     "longitude": "-88.1641218",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Francisco Javier Sánchez García",
@@ -3245,6 +3379,7 @@
     "location": "Río Gualcarque",
     "latitude": "14.669488",
     "longitude": "-88.186883",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -3270,6 +3405,7 @@
     "location": "Agua Caliente",
     "latitude": "14.70920",
     "longitude": "-88.12860",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores"
@@ -3293,6 +3429,7 @@
     "location": "Tegucigalpa",
     "latitude": "14.10583",
     "longitude": "-87.20472",
+    "precision": ">10000",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores"
@@ -3315,6 +3452,7 @@
     "location": "Agua Caliente",
     "latitude": "14.70920",
     "longitude": "-88.12860",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -3338,6 +3476,7 @@
     "location": "Agua Caliente",
     "latitude": "14.70920",
     "longitude": "-88.12860",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -3363,6 +3502,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Rigoberto Méndez"
@@ -3385,6 +3525,7 @@
     "location": "Río Gualcarque",
     "latitude": "14.669488",
     "longitude": "-88.186883",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -3412,6 +3553,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Catalino Martínez"
@@ -3435,6 +3577,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -3458,6 +3601,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -3481,6 +3625,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Dionico Gómez"
@@ -3504,6 +3649,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -3526,6 +3672,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -3548,6 +3695,7 @@
     "location": "Siguatepeque",
     "latitude": "14.597778",
     "longitude": "-87.835311",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Tomás Gómez Membreño"
@@ -3572,6 +3720,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Tomás Gómez Membreño"
@@ -3595,6 +3744,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Selvin Milla"
@@ -3617,6 +3767,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -3642,6 +3793,7 @@
     "location": "San Francisco de Ojuera (Municipio)",
     "latitude": "14.70228",
     "longitude": "-88.22816",
+    "precision": ">10000",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores"
@@ -3665,6 +3817,7 @@
     "location": "San Francisco de Ojuera (Municipio)",
     "latitude": "14.70228",
     "longitude": "-88.22816",
+    "precision": ">10000",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores"
@@ -3689,6 +3842,7 @@
     "location": "Fiscalía Regional de Santa Bárbara",
     "latitude": "14.09645950591295",
     "longitude": "-87.18333806531727",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -3711,6 +3865,7 @@
     "location": "Campamento DESA",
     "latitude": "14.669888",
     "longitude": "-88.173917",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -3733,6 +3888,7 @@
     "location": "La Esperanza",
     "latitude": "14.307349",
     "longitude": "-88.176424",
+    "precision": "≤10000",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -3757,6 +3913,7 @@
     "location": "Desvío para la Esperanza, Siguatepeque",
     "latitude": "14.594452157319484",
     "longitude": "-87.86319362139082",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores"
@@ -3779,6 +3936,7 @@
     "location": "Casa de Austra Bertha Flóres López",
     "latitude": "14.748506",
     "longitude": "-88.192364",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -3803,6 +3961,7 @@
     "location": "Colonia Miramontes",
     "latitude": "14.085794037942314",
     "longitude": "-87.19637610397379",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Carlo Jimenez"
@@ -3826,6 +3985,7 @@
     "location": "Colonia Miramontes",
     "latitude": "14.085794037942314",
     "longitude": "-87.19637610397379",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Carlo Jimenez"
@@ -3849,6 +4009,7 @@
     "location": "La Esperanza",
     "latitude": "14.307349",
     "longitude": "-88.176424",
+    "precision": "≤10000",
     "graphic": "FALSE",
     "victims": [
       "Sotero Chavarría Funez"
@@ -3872,6 +4033,7 @@
     "location": "La Esperanza",
     "latitude": "14.307349",
     "longitude": "-88.176424",
+    "precision": "≤10000",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -3896,6 +4058,7 @@
     "location": "San Francisco de Ojuera (Municipio)",
     "latitude": "14.70228",
     "longitude": "-88.22816",
+    "precision": ">10000",
     "graphic": "FALSE",
     "victims": [
       "Luis Díaz Terán",
@@ -3927,6 +4090,7 @@
     "location": "San Francisco de Ojuera (Municipio)",
     "latitude": "14.70228",
     "longitude": "-88.22816",
+    "precision": ">10000",
     "graphic": "FALSE",
     "victims": [
       "Tomás Gómez Membreño",
@@ -3953,6 +4117,7 @@
     "location": "San Francisco de Ojuera (Municipio)",
     "latitude": "14.70228",
     "longitude": "-88.22816",
+    "precision": ">10000",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -3977,6 +4142,7 @@
     "location": "Colonia Miramontes",
     "latitude": "14.085794037942314",
     "longitude": "-87.19637610397379",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Carlo Jimenez"
@@ -3999,6 +4165,7 @@
     "location": "Llano Grande",
     "latitude": "13.97428920",
     "longitude": "-88.30105911",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Alexander García Sorto"
@@ -4022,6 +4189,7 @@
     "location": "Palacio José Cecilio del Valle",
     "latitude": "14.088708",
     "longitude": "-87.187803",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Tomás Gómez Membreño",
@@ -4051,6 +4219,7 @@
     "location": "La Vega del Achotal",
     "latitude": "14.690112",
     "longitude": "-88.173570",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -4073,6 +4242,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -4097,6 +4267,7 @@
     "location": "Sede del COPINH",
     "latitude": "14.316313234067147",
     "longitude": "-88.18394298164668",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Olban Milla"
@@ -4119,6 +4290,7 @@
     "location": "Ministerio Publico Sede Tegucigalpa",
     "latitude": "14.09635179669581",
     "longitude": "-87.18339204606276",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -4144,6 +4316,7 @@
     "location": "Aeropuerto Internacional Toncontín",
     "latitude": "14.061094444444",
     "longitude": "-87.217588888889",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Luis Díaz Terán"
@@ -4167,6 +4340,7 @@
     "location": "La Vega del Achotal",
     "latitude": "14.690112",
     "longitude": "-88.173570",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Mauro Gómez González",
@@ -4195,6 +4369,7 @@
     "location": "Río Gualcarque",
     "latitude": "14.669488",
     "longitude": "-88.186883",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -4217,6 +4392,7 @@
     "location": "La Vega del Achotal",
     "latitude": "14.690112",
     "longitude": "-88.173570",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad Lenca",
@@ -4241,6 +4417,7 @@
     "location": "Estación de radio La Voz Lenca",
     "latitude": "14.107333155715585",
     "longitude": "-88.3662079735667",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Estación de radio La Voz Lenca"
@@ -4263,6 +4440,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -4287,6 +4465,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -4310,6 +4489,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -4333,6 +4513,7 @@
     "location": "La Vega del Achotal",
     "latitude": "14.690112",
     "longitude": "-88.173570",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -4366,6 +4547,7 @@
     "location": "La Vega del Achotal",
     "latitude": "14.690112",
     "longitude": "-88.173570",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Desiderio Méndez",
@@ -4392,6 +4574,7 @@
     "location": "La Vega del Achotal",
     "latitude": "14.690112",
     "longitude": "-88.173570",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -4420,6 +4603,7 @@
     "location": "La Vega del Achotal",
     "latitude": "14.690112",
     "longitude": "-88.173570",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -4447,6 +4631,7 @@
     "location": "Propiedad de Mauro Gómez",
     "latitude": "14.6579915",
     "longitude": "-88.1780923",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Mauro Gómez González"
@@ -4470,6 +4655,7 @@
     "location": "Cansire",
     "latitude": "14.33333",
     "longitude": "-87.88333",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Sotero Chavarría Funez",
@@ -4494,6 +4680,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -4519,6 +4706,7 @@
     "location": "San Francisco de Ojuera (municipio)",
     "latitude": "14.70228",
     "longitude": "-88.22816",
+    "precision": ">10000",
     "graphic": "FALSE",
     "victims": [
       "Rosalina Domínguez",
@@ -4548,6 +4736,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Arnold Cruz Sánchez"
@@ -4571,6 +4760,7 @@
     "location": "Comunidad de Montaña Verde",
     "latitude": "14.60296",
     "longitude": "-88.35241",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -4593,6 +4783,7 @@
     "location": "Nueva Esperanza",
     "latitude": "14.44938",
     "longitude": "-87.61723",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -4615,6 +4806,7 @@
     "location": "Somolagua",
     "latitude": "14.820799",
     "longitude": "-88.240308",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -4637,6 +4829,7 @@
     "location": "Comunidad El Mirador",
     "latitude": "14.8824",
     "longitude": "-89.01082",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad El Mirador"
@@ -4662,6 +4855,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -4688,6 +4882,7 @@
     "location": "Santa Elena",
     "latitude": "14.094164",
     "longitude": "-88.109647",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Jose Trochez",
@@ -4712,6 +4907,7 @@
     "location": "Jefatura Municipal de Colomoncagua",
     "latitude": "13.961892215720793",
     "longitude": "-88.2766028488581",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Adner Adadlid Díaz del Cid"
@@ -4736,6 +4932,7 @@
     "location": "Universidad Nacional de Agricultura (UNAG)",
     "latitude": "14.83011117",
     "longitude": "-85.84551877",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -4761,6 +4958,7 @@
     "location": "Utopía COPINH",
     "latitude": "14.318554945842111",
     "longitude": "-88.14124116592568",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Tania Carolina Hernández",
@@ -4789,6 +4987,7 @@
     "location": "Sede del COPINH",
     "latitude": "14.316313234067147",
     "longitude": "-88.18394298164668",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -4812,6 +5011,7 @@
     "location": "Coliseo Maya",
     "latitude": "14.315502235547724",
     "longitude": "-88.18323211648314",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "José Agustín López",
@@ -4836,6 +5036,7 @@
     "location": "Sede del COPINH",
     "latitude": "14.316313234067147",
     "longitude": "-88.18394298164668",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Tania Carolina Hernández"
@@ -4859,6 +5060,7 @@
     "location": "Casa de Sanación y Justicia de las Mujeres del COPINH",
     "latitude": "14.3133086778",
     "longitude": "-88.1796978286",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -4882,6 +5084,7 @@
     "location": "Antiguo Mercadito Melissa",
     "latitude": "14.315156042642224",
     "longitude": "-88.18077793972945",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Dunia Maheli Sánchez Domínguez"
@@ -4905,6 +5108,7 @@
     "location": "Sede del COPINH",
     "latitude": "14.316313234067147",
     "longitude": "-88.18394298164668",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -4927,6 +5131,7 @@
     "location": "Casa de Sanación y Justicia de las Mujeres del COPINH",
     "latitude": "14.3133086778",
     "longitude": "-88.1796978286",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -4949,6 +5154,7 @@
     "location": "Estadio Municipal de La Esperanza",
     "latitude": "14.314560471857298",
     "longitude": "-88.15481130902067",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "José Agustín López"
@@ -4972,6 +5178,7 @@
     "location": "Casa de Laura Zúñiga Cáceres",
     "latitude": "14.300745195486346",
     "longitude": "-88.16770107892505",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Laura Zúñiga Cáceres"
@@ -4995,6 +5202,7 @@
     "location": "Sede del COPINH",
     "latitude": "14.316313234067147",
     "longitude": "-88.18394298164668",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Dania Patricia Hernández"
@@ -5018,6 +5226,7 @@
     "location": "Sede del COPINH",
     "latitude": "14.316313234067147",
     "longitude": "-88.18394298164668",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -5042,6 +5251,7 @@
     "location": "Utopía COPINH",
     "latitude": "14.318554945842111",
     "longitude": "-88.14124116592568",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Camilo Bermudez",
@@ -5066,6 +5276,7 @@
     "location": "Sede del COPINH",
     "latitude": "14.316313234067147",
     "longitude": "-88.18394298164668",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -5090,6 +5301,7 @@
     "location": "Casa de Sanación y Justicia de las Mujeres del COPINH",
     "latitude": "14.3133086778",
     "longitude": "-88.1796978286",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -5115,6 +5327,7 @@
     "location": "Sede del COPINH",
     "latitude": "14.316313234067147",
     "longitude": "-88.18394298164668",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Laura Ortíz",
@@ -5139,6 +5352,7 @@
     "location": "Sede del COPINH",
     "latitude": "14.316313234067147",
     "longitude": "-88.18394298164668",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Grisel Suazo",
@@ -5163,6 +5377,7 @@
     "location": "Casa de Sanación y Justicia de las Mujeres del COPINH",
     "latitude": "14.3133086778",
     "longitude": "-88.1796978286",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -5186,6 +5401,7 @@
     "location": "Comayagua",
     "latitude": "14.452767",
     "longitude": "-87.637925",
+    "precision": ">10000",
     "graphic": "FALSE",
     "victims": [
       "Laura Ortíz",
@@ -5211,6 +5427,7 @@
     "location": "Casa de Sanación y Justicia de las Mujeres del COPINH",
     "latitude": "14.3133086778",
     "longitude": "-88.1796978286",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Margarita López"
@@ -5234,6 +5451,7 @@
     "location": "Utopía COPINH",
     "latitude": "14.318554945842111",
     "longitude": "-88.14124116592568",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -5257,6 +5475,7 @@
     "location": "San Francisco de Opalaca",
     "latitude": "14.569861",
     "longitude": "-88.307517",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores",
@@ -5280,6 +5499,7 @@
     "location": "Tribunal de Sentencias Tegucigalpa",
     "latitude": "14.0727037224948",
     "longitude": "-87.20119209418384",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -5302,6 +5522,7 @@
     "location": "Utopía COPINH",
     "latitude": "14.318554945842111",
     "longitude": "-88.14124116592568",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -5326,6 +5547,7 @@
     "location": "Corte Suprema de Justicia de Honduras",
     "latitude": "14.072822296696417",
     "longitude": "-87.20205219116882",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -5349,6 +5571,7 @@
     "location": "Casa de Sanación y Justicia de las Mujeres del COPINH",
     "latitude": "14.3133086778",
     "longitude": "-88.1796978286",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -5371,6 +5594,7 @@
     "location": "Casa de Sanación y Justicia de las Mujeres del COPINH",
     "latitude": "14.3133086778",
     "longitude": "-88.1796978286",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -5393,6 +5617,7 @@
     "location": "",
     "latitude": "",
     "longitude": "",
+    "precision": "",
     "graphic": "FALSE",
     "victims": [
       "Carmen Gutiérrez"
@@ -5416,6 +5641,7 @@
     "location": "Casa de Sanación y Justicia de las Mujeres del COPINH",
     "latitude": "14.3133086778",
     "longitude": "-88.1796978286",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH"
@@ -5439,6 +5665,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -5462,6 +5689,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -5485,6 +5713,7 @@
     "location": "Río Gualcarque",
     "latitude": "14.669488",
     "longitude": "-88.186883",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -5508,6 +5737,7 @@
     "location": "El Barreal",
     "latitude": "14.6489515",
     "longitude": "-88.1641218",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -5531,6 +5761,7 @@
     "location": "San Francisco de Opalaca",
     "latitude": "14.569861",
     "longitude": "-88.307517",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Vasilico Lara Lemuz"
@@ -5553,6 +5784,7 @@
     "location": "El Barreal",
     "latitude": "14.6489515",
     "longitude": "-88.1641218",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Grupo organizado Lenca de la Tejera"
@@ -5575,6 +5807,7 @@
     "location": "Palacio José Cecilio del Valle",
     "latitude": "14.088708",
     "longitude": "-87.187803",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Comunidad Lenca"
@@ -5601,6 +5834,7 @@
     "location": "San Pedro Zacapa",
     "latitude": "14.755822",
     "longitude": "-88.115472",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Policía Nacional"
@@ -5623,6 +5857,7 @@
     "location": "Campamento DESA",
     "latitude": "14.669888",
     "longitude": "-88.173917",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Población Rio Blanco"
@@ -5646,6 +5881,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Comunidad Lenca"
@@ -5672,6 +5908,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Francisco Javier Sánchez García"
@@ -5696,6 +5933,7 @@
     "location": "La Esperanza",
     "latitude": "14.307349",
     "longitude": "-88.176424",
+    "precision": "≤10000",
     "graphic": "FALSE",
     "victims": [
       "Berta Isabel Cáceres Flores"
@@ -5718,6 +5956,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Grupo organizado Lenca de la Tejera"
@@ -5742,6 +5981,7 @@
     "location": "San Pedro Zacapa",
     "latitude": "14.755822",
     "longitude": "-88.115472",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Francisco Javier Sánchez García"
@@ -5765,6 +6005,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Grupo organizado Lenca de la Tejera"
@@ -5788,6 +6029,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Grupo organizado Lenca de la Tejera"
@@ -5811,6 +6053,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Policía Nacional",
@@ -5834,6 +6077,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Francisco Javier Sánchez García"
@@ -5856,6 +6100,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Grupo organizado Lenca de la Tejera"
@@ -5879,6 +6124,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Observadores Internacionales",
@@ -5907,6 +6153,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Francisco Javier Sánchez García",
@@ -5934,6 +6181,7 @@
     "location": "La Unión",
     "latitude": "14.814506",
     "longitude": "-88.407372",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "María Santos Domínguez"
@@ -5956,6 +6204,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Francisco Javier Sánchez García",
@@ -5982,6 +6231,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Grupo organizado Lenca de la Tejera"
@@ -6004,6 +6254,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Grupo organizado Lenca de la Tejera"
@@ -6027,6 +6278,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Grupo organizado Lenca de la Tejera"
@@ -6049,6 +6301,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Grupo organizado Lenca de la Tejera"
@@ -6072,6 +6325,7 @@
     "location": "Santa Ana",
     "latitude": "14.064830",
     "longitude": "-87.953914",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Comunidad Santa Ana",
@@ -6097,6 +6351,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Santos Sánchez",
@@ -6128,6 +6383,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Estación de radio La Voz Lenca",
@@ -6152,6 +6408,7 @@
     "location": "Las Piedras - Presa Rio Las Piedras",
     "latitude": "15.0870217",
     "longitude": "-85.7623282",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidroelectrica Las Piedras S.A. De C.V."
@@ -6174,6 +6431,7 @@
     "location": "Las Piedras - Presa Rio Charrasca",
     "latitude": "15.0956191",
     "longitude": "-85.757552",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidroelectrica Las Piedras S.A. De C.V."
@@ -6196,6 +6454,7 @@
     "location": "Aurora I",
     "latitude": "14.2028924",
     "longitude": "-87.8938895",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "La Aurora S.A. de C.V."
@@ -6218,6 +6477,7 @@
     "location": "Aurora II",
     "latitude": "13.96335",
     "longitude": "-87.730819",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "La Aurora S.A. de C.V."
@@ -6240,6 +6500,7 @@
     "location": "Hidroelectrica Zacapa",
     "latitude": "14.6613999",
     "longitude": "-88.1925",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa CENIT S.A. de C.V."
@@ -6262,6 +6523,7 @@
     "location": "Planta Rio Canjel",
     "latitude": "14.683039",
     "longitude": "-88.119892",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Blue Energy S.A. de C.V."
@@ -6284,6 +6546,7 @@
     "location": "Planta Arenal I-II",
     "latitude": "15.2947377",
     "longitude": "-86.7770844",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Energias Limpias del Yaguala S.A. de C.V."
@@ -6306,6 +6569,7 @@
     "location": "Arenal Etapa IV",
     "latitude": "15.176944",
     "longitude": "-86.8563378",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Energías Limpias DE Honduras",
@@ -6329,6 +6593,7 @@
     "location": "Gualcarque G-940",
     "latitude": "14.5220022",
     "longitude": "-88.2519245",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Rio Power S.A. De C.V. (Riposa)"
@@ -6351,6 +6616,7 @@
     "location": "Humuya",
     "latitude": "14.5629183",
     "longitude": "-87.7013222",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Hidro-Power",
@@ -6374,6 +6640,7 @@
     "location": "Rio Negro",
     "latitude": "15.5530632",
     "longitude": "-85.7354718",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "ENERGISA S.A. DE C.V."
@@ -6396,6 +6663,7 @@
     "location": "Rio Frio",
     "latitude": "14.2564388",
     "longitude": "-86.1006163",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Corporacion Patuca S.A. de C.V. (CORPASA)"
@@ -6418,6 +6686,7 @@
     "location": "Los Planes / Pajuiles",
     "latitude": "15.605683",
     "longitude": "-87.5810982",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "HIdroelectricas Centrales El Progreso S.A. de C.V."
@@ -6440,6 +6709,7 @@
     "location": "Los Planes / Pajuiles",
     "latitude": "15.605683",
     "longitude": "-87.5810982",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "HIdroelectricas Centrales El Progreso S.A. de C.V."
@@ -6462,6 +6732,7 @@
     "location": "Agua Zarca",
     "latitude": "14.669484",
     "longitude": "-88.186468",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Desarrollos Energéticos S.A de C.V (DESA)"
@@ -6484,6 +6755,7 @@
     "location": "Churune - Presa I",
     "latitude": "14.5662381",
     "longitude": "-87.6138711",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Inversiones Renovables (INVERSA)"
@@ -6506,6 +6778,7 @@
     "location": "Churune - Presa II",
     "latitude": "14.5501011",
     "longitude": "-87.613316",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Inversiones Renovables (INVERSA)"
@@ -6528,6 +6801,7 @@
     "location": "San Alejo",
     "latitude": "14.3469438",
     "longitude": "-87.5355557",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Acqua Futura S.A De C.V"
@@ -6550,6 +6824,7 @@
     "location": "Sueno II",
     "latitude": "14.7799852",
     "longitude": "-88.3489547",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Sociedad hidroelectrica Enerblu S.A. de C.V."
@@ -6572,6 +6847,7 @@
     "location": "El Cisne",
     "latitude": "15.0483219",
     "longitude": "-89.1144688",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidroelectrica el Cisne S.A. de C.V."
@@ -6594,6 +6870,7 @@
     "location": "Zinguizapa I",
     "latitude": "14.4446323",
     "longitude": "-87.3673204",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Sociedad Mercantil Gutierrez Arevalo Energy",
@@ -6617,6 +6894,7 @@
     "location": "Blanco/La Puerta Etapa II",
     "latitude": "14.5070108",
     "longitude": "-87.4304102",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Sociedad Mercantil Gutierrez Arevalo Energy",
@@ -6640,6 +6918,7 @@
     "location": "Cuaca I",
     "latitude": "15.2947377",
     "longitude": "-86.7770844",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Generaciòn de energia multiple S.A. de C.V."
@@ -6662,6 +6941,7 @@
     "location": "Cuaca II",
     "latitude": "15.4605543",
     "longitude": "-86.1422609",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Generaciòn de energia multiple S.A. de C.V."
@@ -6684,6 +6964,7 @@
     "location": "Cuaca III",
     "latitude": "15.5272042",
     "longitude": "-86.1031609",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Generaciòn de energia multiple S.A. de C.V."
@@ -6706,6 +6987,7 @@
     "location": "Rio Quilio I",
     "latitude": "14.5288407",
     "longitude": "-89.1355365",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Compania Fuerza De Occidente (Cofusa)"
@@ -6728,6 +7010,7 @@
     "location": "Cortecito",
     "latitude": "15.5536417",
     "longitude": "-88.3200099",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "HIDROCEL S.A. de C.V."
@@ -6750,6 +7033,7 @@
     "location": "San Carlos",
     "latitude": "15.5605066",
     "longitude": "-88.305601",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "HIDROCEL S.A. de C.V."
@@ -6772,6 +7056,7 @@
     "location": "Ecoenergia Rio Guineo",
     "latitude": "14.346",
     "longitude": "-85.8785656",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Sociedad Mercantil Ecoenergía S.A. DE C.V."
@@ -6794,6 +7079,7 @@
     "location": "Hidroelectrico Rio Frio Fase I, Ii Y Iii El Palmar",
     "latitude": "14.4934743",
     "longitude": "-89.3009435",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Sesecapa Energy Company S.A De C.V"
@@ -6816,6 +7102,7 @@
     "location": "Mezapa",
     "latitude": "15.5431934",
     "longitude": "-87.3513788",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Sociedad Electrica Mesoamericana SEMSA"
@@ -6838,6 +7125,7 @@
     "location": "Santa Elena",
     "latitude": "14.9624998",
     "longitude": "-88.8313887",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "CODERESA"
@@ -6860,6 +7148,7 @@
     "location": "San Juan",
     "latitude": "15.539835",
     "longitude": "-87.2481319",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Industrias Contempo S.A."
@@ -6882,6 +7171,7 @@
     "location": "San Juancito",
     "latitude": "15.5615642",
     "longitude": "-87.2358657",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Industrias Contempo S.A."
@@ -6904,6 +7194,7 @@
     "location": "Cuyamapa",
     "latitude": "15.2339401",
     "longitude": "-87.4979565",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Energia y Transmision S.A de C.V ENETRAN"
@@ -6926,6 +7217,7 @@
     "location": "Morja",
     "latitude": "15.0570477",
     "longitude": "-88.9888795",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa Ingenieria Tecnica S.A. de C.V"
@@ -6948,6 +7240,7 @@
     "location": "La Gloria",
     "latitude": "15.7316193",
     "longitude": "-86.3562991",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Electrotecnia (La Gloria)"
@@ -6970,6 +7263,7 @@
     "location": "Agua Blanca",
     "latitude": "14.2197095",
     "longitude": "-88.1589626",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Sociedad Hidroelectrica Agua Blanca S.A",
@@ -6993,6 +7287,7 @@
     "location": "Cuyamel",
     "latitude": "15.6113164",
     "longitude": "-88.1669522",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "CUYAMEL (COHCUY)"
@@ -7015,6 +7310,7 @@
     "location": "Rio Tapalapa",
     "latitude": "15.205656",
     "longitude": "-88.4644249",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "COMGELSA"
@@ -7037,6 +7333,7 @@
     "location": "Chamelecon 280",
     "latitude": "15.1964921",
     "longitude": "-88.6148516",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "GERSA CHAMELECON"
@@ -7059,6 +7356,7 @@
     "location": "Rio Perla",
     "latitude": "15.6631429",
     "longitude": "-86.9654751",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidroelectrica Rio Perla S.A. De C.V. (HIDROPERLA S.A.)"
@@ -7081,6 +7379,7 @@
     "location": "Puringla Sazagua",
     "latitude": "14.3704024",
     "longitude": "-87.944631",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Compania Electrica Centroamericana CECA"
@@ -7103,6 +7402,7 @@
     "location": "Puringla Sazagua",
     "latitude": "14.3704024",
     "longitude": "-87.944631",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Compania Electrica Centroamericana CECA"
@@ -7125,6 +7425,7 @@
     "location": "Rio Wampu (Guano I)",
     "latitude": "15.0214658",
     "longitude": "-85.4890199",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidroluz S.A De C.V"
@@ -7147,6 +7448,7 @@
     "location": "Lagunetas Fase I",
     "latitude": "15.1897656",
     "longitude": "-87.8676577",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "HIDRIOELECTRICIDAD S.A DE C. V"
@@ -7169,6 +7471,7 @@
     "location": "Rio Cuyamel II",
     "latitude": "15.6205261",
     "longitude": "-87.0226068",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Compania de Energia San Francisco CONERSA"
@@ -7191,6 +7494,7 @@
     "location": "Lagunetas Fase II",
     "latitude": "15.123736",
     "longitude": "-87.7515258",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "HIDROENERGIAS S.A DE C. V"
@@ -7213,6 +7517,7 @@
     "location": "Betulia",
     "latitude": "15.8673615",
     "longitude": "-86.1415519",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "General Equipment supply S.A. De Cv"
@@ -7235,6 +7540,7 @@
     "location": "Chinacla",
     "latitude": "14.0716862",
     "longitude": "-88.2606493",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidroelectrica La Sierra S.A. de C.V."
@@ -7257,6 +7563,7 @@
     "location": "Rio Marmol",
     "latitude": "15.8860236",
     "longitude": "-86.0558227",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Central Hidroelectrica Lempira (CEHL S.A. de C.V.)"
@@ -7279,6 +7586,7 @@
     "location": "Jilamito",
     "latitude": "15.5338979",
     "longitude": "-87.3000825",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Inversiones De Generacion Electricas",
@@ -7302,6 +7610,7 @@
     "location": "Los Planes Fase I",
     "latitude": "14.2349644",
     "longitude": "-87.890373",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Electromecánica ALFA",
@@ -7325,6 +7634,7 @@
     "location": "Los Planes Fase II",
     "latitude": "14.2708782",
     "longitude": "-87.8673573",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Electromecánica ALFA",
@@ -7348,6 +7658,7 @@
     "location": "Los Laureles",
     "latitude": "15.7440582",
     "longitude": "-88.0087327",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa Generadora El Reto S.A. de C.V. (EGERETO)"
@@ -7370,6 +7681,7 @@
     "location": "Rio Cuero Etapa I",
     "latitude": "15.4664445",
     "longitude": "-87.1687315",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidrogeneraciones Eléctricas de Honduras S.A DE C.V"
@@ -7392,6 +7704,7 @@
     "location": "Rio Cuero Etapa II",
     "latitude": "15.4732919",
     "longitude": "-87.1375068",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidrogeneraciones Eléctricas de Honduras S.A DE C.V"
@@ -7414,6 +7727,7 @@
     "location": "Santiago",
     "latitude": "15.5711336",
     "longitude": "-87.0546985",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa generadora de Santiago EGESA"
@@ -7436,6 +7750,7 @@
     "location": "Rio Cuero Etapa III",
     "latitude": "15.4968001",
     "longitude": "-87.1341658",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidrogeneraciones Eléctricas de Honduras S.A DE C.V"
@@ -7458,6 +7773,7 @@
     "location": "Pencaligue",
     "latitude": "14.9615987",
     "longitude": "-88.5043044",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidroelectricas de Occidente S. de R.L de C.V (Hidrocci)"
@@ -7480,6 +7796,7 @@
     "location": "Rio Cuero Etapa IV - Presa I",
     "latitude": "15.499899",
     "longitude": "-87.0832139",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidrogeneraciones Eléctricas de Honduras S.A DE C.V"
@@ -7502,6 +7819,7 @@
     "location": "Rio Cuero Etapa IV - Presa II",
     "latitude": "15.5035129",
     "longitude": "-87.089509",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidrogeneraciones Eléctricas de Honduras S.A DE C.V"
@@ -7524,6 +7842,7 @@
     "location": "Blanco/La Puerta Etapa I",
     "latitude": "14.4808332",
     "longitude": "-87.4594445",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Gutierrez Arevalo Energy",
@@ -7547,6 +7866,7 @@
     "location": "Blanco/La Puerta Etapa III",
     "latitude": "14.548611",
     "longitude": "-87.4194445",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Sociedad Mercantil Gutierrez Arevalo Energy",
@@ -7570,6 +7890,7 @@
     "location": "Ojo De Agua",
     "latitude": "15.4354841",
     "longitude": "-85.5150905",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Sociedad Olanchana S.A.De C.V. (Shol)"
@@ -7592,6 +7913,7 @@
     "location": "Santa Maria de Quipua",
     "latitude": "14.9396169",
     "longitude": "-87.3571555",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Sociedad Hidroelectrica Santa Maria De Quipua",
@@ -7615,6 +7937,7 @@
     "location": "El Nispero (Expansion)",
     "latitude": "14.7644126",
     "longitude": "-88.3599252",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Consorcio Enee-Php Energy Honduras S.A. De C.V."
@@ -7637,6 +7960,7 @@
     "location": "Petacon",
     "latitude": "13.9329039",
     "longitude": "-87.48615",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa Promotora de Generación de Energía Limpia  S.A DE C. V. (PROGELSA)"
@@ -7659,6 +7983,7 @@
     "location": "Los Laureles / Genera",
     "latitude": "15.5393055",
     "longitude": "-87.2145556",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Generación Renovable y Ambiental",
@@ -7682,6 +8007,7 @@
     "location": "Agua Verde",
     "latitude": "14.9759129",
     "longitude": "-88.0317642",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Sociedad Hidroeléctrica Agua Verde",
@@ -7705,6 +8031,7 @@
     "location": "La Vegona",
     "latitude": "15.0857572",
     "longitude": "-87.7349321",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "COHERSA"
@@ -7727,6 +8054,7 @@
     "location": "Tornillito",
     "latitude": "15.2136997",
     "longitude": "-88.0470076",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidroelectrica El Volcan S.A De C.V.(Hidrovolcan)"
@@ -7749,6 +8077,7 @@
     "location": "La Esperanza o \"La Pozona\" - Presa 1a",
     "latitude": "14.2726565",
     "longitude": "-88.1813218",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Consorcio de Inversiones S.A de C.V. CISA"
@@ -7771,6 +8100,7 @@
     "location": "La Esperanza o \"La Pozona\" - Presa 1b",
     "latitude": "14.2687369",
     "longitude": "-88.1860101",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Consorcio de Inversiones S.A de C.V. CISA"
@@ -7793,6 +8123,7 @@
     "location": "La Esperanza o \"La Pozona\" - Presa II",
     "latitude": "14.262897",
     "longitude": "-88.180548",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Consorcio de Inversiones S.A de C.V. CISA"
@@ -7815,6 +8146,7 @@
     "location": "Cangrejal",
     "latitude": "15.6752475",
     "longitude": "-86.7022482",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidrowest y asociados a S.A. (Hidro Honduras)"
@@ -7837,6 +8169,7 @@
     "location": "La Entrada Fase I",
     "latitude": "15.0214658",
     "longitude": "-85.4890199",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Corporación Hondureña de SIstemas Eléctricos",
@@ -7860,6 +8193,7 @@
     "location": "Rio Blanco",
     "latitude": "15.0298699",
     "longitude": "-88.0026456",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa Hidroelectrica RIO BLANCO S.A. de C.V."
@@ -7882,6 +8216,7 @@
     "location": "La Entrada Fase II",
     "latitude": "14.9859054",
     "longitude": "-85.3341434",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Corporación Hondureña de SIstemas Eléctricos",
@@ -7905,6 +8240,7 @@
     "location": "Rio Pataste",
     "latitude": "15.0706313",
     "longitude": "-85.623944",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Electromecánica ALFA",
@@ -7928,6 +8264,7 @@
     "location": "Cececapa I",
     "latitude": "15.0510693",
     "longitude": "-88.1559402",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "COMGELSA"
@@ -7950,6 +8287,7 @@
     "location": "La Nieve",
     "latitude": "15.0576788",
     "longitude": "-88.1048022",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Sociedad Hidroelectrica La Nieve S.A. de C.V."
@@ -7972,6 +8310,7 @@
     "location": "El Zapote",
     "latitude": "15.0620668",
     "longitude": "-87.871483",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "HIDROTECH S.A DE C. V"
@@ -7994,6 +8333,7 @@
     "location": "Corral de Piedras",
     "latitude": "14.2180754",
     "longitude": "-88.0322232",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Energia de Occidente S.A. de C.V. (ENERCO)"
@@ -8016,6 +8356,7 @@
     "location": "Quiscamote",
     "latitude": "15.5042774",
     "longitude": "-85.5142141",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Socierdad Hidroeléctrica Quiscamote",
@@ -8039,6 +8380,7 @@
     "location": "Monga",
     "latitude": "15.4610572",
     "longitude": "-86.2299334",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Sociedad Hidroeléctrica El Bosque",
@@ -8062,6 +8404,7 @@
     "location": "El Rancho",
     "latitude": "15.0036271",
     "longitude": "-88.4851443",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Telefónica de Honduras",
@@ -8085,6 +8428,7 @@
     "location": "Santa Lucia",
     "latitude": "15.485718",
     "longitude": "-88.3120095",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Hidroeléctrica Cuyugal",
@@ -8108,6 +8452,7 @@
     "location": "Jacaleapa",
     "latitude": "15.291206",
     "longitude": "-86.5980863",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidroeléctrica Jacaleapa S.A de C.V"
@@ -8130,6 +8475,7 @@
     "location": "Ojo de Agua No.2",
     "latitude": "15.4882781",
     "longitude": "-85.5342836",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"HIDROELECTRICA OJO DE AGUA No. 2",
@@ -8153,6 +8499,7 @@
     "location": "La Balsa",
     "latitude": "15.2857266",
     "longitude": "-86.4639302",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"PROMOTORA DE ENERGiA",
@@ -8176,6 +8523,7 @@
     "location": "Jicaro I",
     "latitude": "14.2391396",
     "longitude": "-88.6591515",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"GENERADORA LOS CERROS",
@@ -8199,6 +8547,7 @@
     "location": "Jicaro II",
     "latitude": "14.2636802",
     "longitude": "-88.6847321",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"GENERADORA LOS CERROS",
@@ -8222,6 +8571,7 @@
     "location": "Matarras I",
     "latitude": "15.5250773",
     "longitude": "-87.3883577",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa CENIT S.A. de C.V."
@@ -8244,6 +8594,7 @@
     "location": "Las Ventanas",
     "latitude": "14.6088439",
     "longitude": "-88.0142208",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Proveedores Internacional S.A PROINTER"
@@ -8266,6 +8617,7 @@
     "location": "Chachaguala Etapa I",
     "latitude": "15.6933456",
     "longitude": "-88.0605786",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"HELECTRONICA OMOA",
@@ -8289,6 +8641,7 @@
     "location": "Chachaguala Etapa II",
     "latitude": "15.6855642",
     "longitude": "-88.0805993",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"HELECTRONICA OMOA",
@@ -8312,6 +8665,7 @@
     "location": "El Naranjito",
     "latitude": "14.9474157",
     "longitude": "-88.6105751",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"HIDROELECTRICA NARANJITO",
@@ -8335,6 +8689,7 @@
     "location": "Joya de la Laguna",
     "latitude": "15.0025516",
     "longitude": "-88.5435622",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"GRUPO HONDUREnO DE INVERSIONISTAS",
@@ -8358,6 +8713,7 @@
     "location": "Rio Beutulia (ampliacion)",
     "latitude": "15.8689508",
     "longitude": "-86.1411343",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"GENERAL EQUIPMENT SUPPLY",
@@ -8381,6 +8737,7 @@
     "location": "Las Perlas I",
     "latitude": "15.4082957",
     "longitude": "-86.4587806",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"HIDROELECTRICA INVERSIONES LATINOAMERICANAS LAS TRES PERLAS",
@@ -8404,6 +8761,7 @@
     "location": "Las Perlas II",
     "latitude": "15.3880876",
     "longitude": "-86.4843931",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"HIDROELECTRICA INVERSIONES LATINOAMERICANAS LAS TRES PERLAS",
@@ -8427,6 +8785,7 @@
     "location": "Netapa",
     "latitude": "14.6216216",
     "longitude": "-87.3930269",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"COMPAniA ELECTRICA DE AGALTECA",
@@ -8450,6 +8809,7 @@
     "location": "La Junta",
     "latitude": "15.5462302",
     "longitude": "-87.3519062",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"HIDROELECTRICA LA JUNTA",
@@ -8473,6 +8833,7 @@
     "location": "Rio Verde I",
     "latitude": "15.5714065",
     "longitude": "-85.4130943",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Sociedad Hidroelectrica Iriona S.A De C.V."
@@ -8495,6 +8856,7 @@
     "location": "Rio Verde II",
     "latitude": "15.5714522",
     "longitude": "-85.4136372",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Sociedad Hidroelectrica Iriona S.A De C.V."
@@ -8517,6 +8879,7 @@
     "location": "Proyecto Hidroelectrico Alao Eatapa I",
     "latitude": "15.0775726",
     "longitude": "-87.0200431",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Hidroelectrica Honduras",
@@ -8540,6 +8903,7 @@
     "location": "San Martin",
     "latitude": "15.0229422",
     "longitude": "-85.8338096",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Inversiones San Martin",
@@ -8563,6 +8927,7 @@
     "location": "Playitas Etapa I",
     "latitude": "14.893132",
     "longitude": "-88.5570187",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"HIDROELECTRICA AQUA DULCE HN",
@@ -8586,6 +8951,7 @@
     "location": "Proyecto Hidroelectrico Azacualpita",
     "latitude": "14.2292951",
     "longitude": "-88.3670256",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"ENERGIA RENOVABLE DE Honduras",
@@ -8609,6 +8975,7 @@
     "location": "Las Juntas Petuncara",
     "latitude": "14.324152",
     "longitude": "-88.6244808",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"RENOVABLES Y GENERACIoN DE LEMPIRA",
@@ -8632,6 +8999,7 @@
     "location": "Pena Blanca",
     "latitude": "14.9780805",
     "longitude": "-88.0302123",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Hidroelectrica Pena Blanca",
@@ -8655,6 +9023,7 @@
     "location": "San Antonio",
     "latitude": "-88.165213",
     "longitude": "14.548997",
+    "precision": "≤500",
     "graphic": "false",
     "victims": [
       "\"POTENCIA HIDRaULICA\n DEL ATLANTICO",
@@ -8678,6 +9047,7 @@
     "location": "El Molo",
     "latitude": "14.7163157",
     "longitude": "-88.2236117",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Castillo Torres Energy S.A. De C.V. (Castor)"
@@ -8700,6 +9070,7 @@
     "location": "Tomhawa",
     "latitude": "15.2641342",
     "longitude": "-85.8017543",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"ENERGIA RENOVABLE DE OLANCHO",
@@ -8723,6 +9094,7 @@
     "location": "Santa Maria de Quipua II",
     "latitude": "14.9381881",
     "longitude": "-87.3559642",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Sociedad Hidroelectrica Santa Maria De Quipua",
@@ -8746,6 +9118,7 @@
     "location": "Ojo de Agua Fase II",
     "latitude": "15.4355021",
     "longitude": "-85.5150587",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"Sociedad Hidroelectrica Olanchana",
@@ -8769,6 +9142,7 @@
     "location": "La Ensenada",
     "latitude": "15.7654203",
     "longitude": "-86.6382244",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"HIDROELECTRICA LA ENSENADA",
@@ -8792,6 +9166,7 @@
     "location": "Zompopero",
     "latitude": "14.6652738",
     "longitude": "-88.0760115",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"HIDROELECTRICA ZOMPOPERO",
@@ -8815,6 +9190,7 @@
     "location": "Chiligatoro I",
     "latitude": "14.4469623",
     "longitude": "-88.2176356",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"ROTA INVERSIONES",
@@ -8838,6 +9214,7 @@
     "location": "Chiligatoro II",
     "latitude": "14.4687381",
     "longitude": "-88.1967317",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"ROTA INVERSIONES",
@@ -8861,6 +9238,7 @@
     "location": "Chiligatoro III",
     "latitude": "14.4777645",
     "longitude": "-88.2064475",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"ROTA INVERSIONES",
@@ -8884,6 +9262,7 @@
     "location": "Mercedes II",
     "latitude": "14.2663844",
     "longitude": "-88.9695157",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"ENERGIA RENOVABLE COPANECAS",
@@ -8907,6 +9286,7 @@
     "location": "Loma Larga",
     "latitude": "15.4649301",
     "longitude": "-87.4227924",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"ENERGY HSTAR",
@@ -8930,6 +9310,7 @@
     "location": "Las Piedras II",
     "latitude": "15.5300028",
     "longitude": "-85.5957526",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "\"INVERSIONES HIDROMETALES",
@@ -8953,6 +9334,7 @@
     "location": "San Jose De Las Brisas",
     "latitude": "15.6113164",
     "longitude": "-88.1669522",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Compania Hidroelectrica Cuyamel S.A De C.V. (COHCUY)"
@@ -8975,6 +9357,7 @@
     "location": "Union Del Rio Frio",
     "latitude": "15.5527978",
     "longitude": "-88.1633677",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Hidroelectrica Nacional S.A. De C.V. (Hensa)"
@@ -8997,6 +9380,7 @@
     "location": "Mangungo I",
     "latitude": "15.528359",
     "longitude": "-87.3672152",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "EMPRESA\n CENTROAMERICANA DE ENERGIA S.A. DE C.V. (ECAE)"
@@ -9019,6 +9403,7 @@
     "location": "Zinguizapa Il",
     "latitude": "14.4607661",
     "longitude": "-87.3530577",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "G. A. Energy"
@@ -9041,6 +9426,7 @@
     "location": "NACAOME / Jose Cecilio del Valle",
     "latitude": "13.6889444",
     "longitude": "-87.3628056",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Electrificaciones del Norte S.A. de C.V. (ELECNOR)"
@@ -9063,6 +9449,7 @@
     "location": "Jicatuyo",
     "latitude": "14.9777633",
     "longitude": "-88.2557884",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa Nacional de Energía Eléctrica (ENEE)"
@@ -9085,6 +9472,7 @@
     "location": "Los Llanitos",
     "latitude": "14.7973078",
     "longitude": "-88.241058",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa Nacional de Energía Eléctrica (ENEE)"
@@ -9107,6 +9495,7 @@
     "location": "Patuca III",
     "latitude": "14.4427138",
     "longitude": "-85.9660067",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa Nacional de Energía Eléctrica (ENEE)"
@@ -9129,6 +9518,7 @@
     "location": "Francisco Morazan / El Cajon",
     "latitude": "15.0279",
     "longitude": "-87.7454",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Estatal"
@@ -9151,6 +9541,7 @@
     "location": "Rio Lindo",
     "latitude": "15.0387613",
     "longitude": "-87.9842919",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa Nacional de Energía Eléctrica (ENEE)"
@@ -9173,6 +9564,7 @@
     "location": "Canaveral",
     "latitude": "14.985",
     "longitude": "-88.0242",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa Nacional de Energía Eléctrica (ENEE)"
@@ -9195,6 +9587,7 @@
     "location": "Santa Maria del Real",
     "latitude": "14.8228",
     "longitude": "-85.9356",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa Nacional de Energía Eléctrica (ENEE)"
@@ -9217,6 +9610,7 @@
     "location": "Coyolar",
     "latitude": "14.3167",
     "longitude": "-87.5167",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa Nacional de Energía Eléctrica (ENEE)"
@@ -9239,6 +9633,7 @@
     "location": "El Nispero",
     "latitude": "14.77",
     "longitude": "-88.34",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Empresa Nacional de Energía Eléctrica (ENEE)"
@@ -9261,6 +9656,7 @@
     "location": "Planta Hidroeléctrica Yojoa",
     "latitude": "14.9835",
     "longitude": "-87.9237",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "PH Yojoa"
@@ -9283,6 +9679,7 @@
     "location": "Antena EMBAJADA AMERICA TGU REMOTO",
     "latitude": "-87.1892",
     "longitude": "-87.1892",
+    "precision": "",
     "graphic": "false",
     "victims": [
       "Luis Madrid"
@@ -9305,6 +9702,7 @@
     "location": "Antena INTIBUCA_II_DG",
     "latitude": "14.31332",
     "longitude": "-88.1706",
+    "precision": "",
     "graphic": "false",
     "victims": [
       "Tomás Gómez Membreño"
@@ -9327,6 +9725,7 @@
     "location": "Antena INTIBUCA",
     "latitude": "14.309009",
     "longitude": "-88.168697",
+    "precision": "",
     "graphic": "false",
     "victims": [
       "Tomás Gómez Membreño"
@@ -9349,6 +9748,7 @@
     "location": "Antena LAS_DELICIAS_INTIBUCA",
     "latitude": "14.311861110000002",
     "longitude": "-88.1861111",
+    "precision": "",
     "graphic": "false",
     "victims": [
       "Berta Isabel Cáceres Flores"
@@ -9371,6 +9771,7 @@
     "location": "Antena LA_ESPERANZA",
     "latitude": "14.306634620000002",
     "longitude": "-88.2172527",
+    "precision": "",
     "graphic": "false",
     "victims": [
       "Francisco Javier Sánchez García"
@@ -9393,6 +9794,7 @@
     "location": "Antena LA_HACIENDA_II",
     "latitude": "14.088734000000002",
     "longitude": "-87.177488",
+    "precision": "",
     "graphic": "false",
     "victims": [
       "Douglas Geovanny Bustillo"
@@ -9415,6 +9817,7 @@
     "location": "Antena LA_HACIENDA_II",
     "latitude": "14.088734000000002",
     "longitude": "-87.177488",
+    "precision": "",
     "graphic": "false",
     "victims": [
       "Daniel Eduardo Atala Midence"
@@ -9437,6 +9840,7 @@
     "location": "Antena LA_HACIENDA_II",
     "latitude": "14.088734000000002",
     "longitude": "-87.177488",
+    "precision": "",
     "graphic": "false",
     "victims": [
       "Daniel Eduardo Atala Midence"
@@ -9459,6 +9863,7 @@
     "location": "Antena CASA_PRESIDENCIAL_DG",
     "latitude": "14.08999",
     "longitude": "-87.18642",
+    "precision": "",
     "graphic": "false",
     "victims": [
       "Daniel Eduardo Atala Midence"
@@ -9481,6 +9886,7 @@
     "location": "Antena LA_HACIENDA_II",
     "latitude": "14.088734000000002",
     "longitude": "-87.177488",
+    "precision": "",
     "graphic": "false",
     "victims": [
       "Roberto David Castillo Mejía"
@@ -9503,6 +9909,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "false",
     "victims": [
       "Integrantes de COPINH"
@@ -9525,6 +9932,7 @@
     "location": "Toma de El Roble",
     "latitude": "14.663333",
     "longitude": "-88.177778",
+    "precision": "≤500",
     "graphic": "false",
     "victims": [
       "Integrantes de COPINH"
@@ -9547,6 +9955,7 @@
     "location": "La Vega del Culatón",
     "latitude": "14.687297",
     "longitude": "-88.175461",
+    "precision": "≤500",
     "graphic": "false",
     "victims": [
       "Comunidad Vega El Culatón"
@@ -9569,6 +9978,7 @@
     "location": "Calle donde pasa por Agua Caliente",
     "latitude": "14.707429",
     "longitude": "-88.127706",
+    "precision": "≤100",
     "graphic": "false",
     "victims": [
       "Policía Nacional"
@@ -9591,6 +10001,7 @@
     "location": "Calle en la salida de Zacapa",
     "latitude": "14.771402",
     "longitude": "-88.093418",
+    "precision": "≤500",
     "graphic": "false",
     "victims": [
       "Policía Nacional"
@@ -9613,6 +10024,7 @@
     "location": "San Pedro Zacapa",
     "latitude": "14.755822",
     "longitude": "-88.115472",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Personas no identificadas"
@@ -9635,6 +10047,7 @@
     "location": "Casa de Berta Isabel Cáceres Flores",
     "latitude": "14.284974",
     "longitude": "-88.182361",
+    "precision": "≤10",
     "graphic": "false",
     "victims": [
       "Berta Isabel Cáceres Flores"
@@ -9659,6 +10072,7 @@
     "location": "Campamento PHAZ",
     "latitude": "14.669434",
     "longitude": "-88.173627",
+    "precision": "≤500",
     "graphic": "false",
     "victims": [
       "Tomás García Domínguez",
@@ -9683,6 +10097,7 @@
     "location": "Río Gualcarque (La Tejera)",
     "latitude": "14.664278951840538",
     "longitude": "-88.1890895748518",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Maycol Rodríguez"
@@ -9706,6 +10121,7 @@
     "location": "San Ramón",
     "latitude": "14.668180",
     "longitude": "-88.199618",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Digna Pineda Sánchez"
@@ -9731,6 +10147,7 @@
     "location": "Tocoa",
     "latitude": "15.6575",
     "longitude": "-86.005",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "José Ángel Flores",
@@ -9755,6 +10172,7 @@
     "location": "Marcala",
     "latitude": "14.154625",
     "longitude": "-88.034742",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Lesbia Yaneth Urquía",
@@ -9779,6 +10197,7 @@
     "location": "La Tejera",
     "latitude": "14.642011",
     "longitude": "-88.171513",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "Baudilo Sánchez"
@@ -9801,6 +10220,7 @@
     "location": "Río Blanco",
     "latitude": "14.62693",
     "longitude": "-88.16748",
+    "precision": "≤500",
     "graphic": "FALSE",
     "victims": [
       "William Jacobo Rodríguez",
@@ -9824,6 +10244,7 @@
     "location": "Somolagua",
     "latitude": "14.820799",
     "longitude": "-88.240308",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Integrantes de COPINH",
@@ -9847,6 +10268,7 @@
     "location": "",
     "latitude": "",
     "longitude": "",
+    "precision": "",
     "graphic": "",
     "victims": [
       "Elvin Saúl Madrid Gómez"
@@ -9870,6 +10292,7 @@
     "location": "Colomoncagua",
     "latitude": "13.961972",
     "longitude": "-88.27575",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Husbaldo Guzmán"
@@ -9892,6 +10315,7 @@
     "location": "Valle de Ángeles",
     "latitude": "14.49857",
     "longitude": "-87.64199",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Wilmar Alexy Madrid Domínguez"
@@ -9912,6 +10336,7 @@
     "location": "Valle de Ángeles",
     "latitude": "14.49857",
     "longitude": "-87.64199",
+    "precision": "≤100",
     "graphic": "FALSE",
     "victims": [
       "Carmen Gutiérrez"
@@ -9932,6 +10357,7 @@
     "location": "Fiscalía Regional de Santa Bárbara",
     "latitude": "14.09645950591295",
     "longitude": "-87.18333806531727",
+    "precision": "≤10",
     "graphic": "FALSE",
     "victims": [
       "Moises Durán Sánchez",
@@ -9959,6 +10385,7 @@
     "location": "Tocoa",
     "latitude": "15.6575",
     "longitude": "-86.005",
+    "precision": "≤1000",
     "graphic": "FALSE",
     "victims": [
       "Juan López",
