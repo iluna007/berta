@@ -1,0 +1,82 @@
+[
+  {
+    "id": "asc1",
+    "title": "Físico",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Tipo de daño",
+      "Físico"
+    ]
+  },
+  {
+    "id": "asc2",
+    "title": "Psicológico",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Tipo de daño",
+      "Psicológico"
+    ]
+  },
+  {
+    "id": "asc3",
+    "title": "Económico",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Tipo de daño",
+      "Económico"
+    ]
+  },
+  {
+    "id": "asc4",
+    "title": "Social",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Tipo de daño",
+      "Social"
+    ]
+  },
+  {
+    "id": "asc5",
+    "title": "Cultural",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Tipo de daño",
+      "Cultural"
+    ]
+  },
+  {
+    "id": "asc6",
+    "title": "Ambiental",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Tipo de daño",
+      "Ambiental"
+    ]
+  },
+  {
+    "id": "asc7",
+    "title": "Legal/Institucional",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Tipo de daño",
+      "Legal"
+    ]
+  },
+  {
+    "id": "asc8",
+    "title": "Colectivo",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Tipo de daño",
+      "Colectivo"
+    ]
+  }
+]

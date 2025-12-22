@@ -101,27 +101,49 @@ const config = {
         maxNumOfColors: 20,
         defaultColor: "#dfdfdf",
         colors: [
-           "#cecece",  // Gray (base)
-           "#a559aa",  // Purple (base)
-           "#59a89c",  // Teal (base)
-           "#f0c571",  // Gold (base)
-           "#e02b35",  // Red (base)
-           "#082a54",  // Dark Blue (base)
-           "#c49cca",  // Purple pastel complementario
-           "#7d3c8c",  // Purple profundo
-           "#2f6b63",  // Teal oscuro
-           "#7bc5b9",  // Teal claro
-           "#f6dca6",  // Gold claro
-           "#b48224",  // Gold quemado
-           "#b22228",  // Red oscuro
-           "#f36b71",  // Red coral brillante
-           "#0b3e78",  // Blue intenso
-           "#1e4a73",  // Blue oceánico medio
-           "#3b5e7c",  // Slate azul gris
-           "#6b7c89",
-           "#8a8a8a",  
-           "#444b54"   
-        ],
+          "#D97A07", // 1
+          "#F2A30F", // 2
+          "#F2BC1B", // 3
+          "#F2CE16", // 4
+          "#FCE98B", // 5
+          "#00700E", // 6
+          "#009E5F", // 7
+          "#30CF60", // 8
+          "#8DD483", // 9
+          "#A9D636", // 10
+          "#C90000", // 11
+          "#CCF5EF", // 12
+          "#83D3D4", // 13
+          "#7A548F", // 14
+          "#2E99CA", // 15
+          "#8F3C6A", // 16
+          "#792AF5", // 17
+          "#C628F7", // 18
+          "#D422AC", // 19
+          "#EB3147", // 20
+          "#D43E22", // 21
+          "#F66515", // 22
+          "#F48B1B", // 23
+          "#F3F3F5", // 24
+          "#C4C4EE", // 25
+          "#B3CCF0", // 26
+          "#8AA4DD", // 27
+          "#EBE6D2", // 28
+          "#DECCA6", // 29
+
+          // resto (se mantiene igual que antes)
+          "#e0a63a", // 30
+          "#8a6a1f", // 31
+          "#fff1cf", // 32
+          "#8f1d24", // 33
+          "#ff8a80", // 34
+          "#c93a3f", // 35
+          "#5f0f14", // 36
+          "#123b6d", // 37
+          "#2b6cb0", // 38
+          "#7aa6d8", // 39
+          "#0a1f33", // 40
+        ]
       },
       card: {
         layout: {

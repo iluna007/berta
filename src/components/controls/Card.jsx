@@ -33,7 +33,7 @@ export const generateCardLayout = {
           title: "id",
           value: event.civId || `—`,
         },
-        
+                
 
       ],
 
@@ -98,6 +98,7 @@ export const generateCardLayout = {
           title: "id",
           value: event.civId || `—`,
         },
+        
       ],
       // ⬇️ NUEVA SECCIÓN: LISTA DE ATACANTES
       event.attackers && event.attackers.length > 0

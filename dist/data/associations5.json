@@ -1,6 +1,6 @@
 [
   {
-    "id": "asc1",
+    "id": "",
     "title": "Daños Individuales",
     "mode": "FILTER",
     "desc": "",
@@ -10,7 +10,7 @@
     ]
   },
   {
-    "id": "asc2",
+    "id": "",
     "title": "Daños Colectivos a Río Blanco",
     "mode": "FILTER",
     "desc": "",
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "id": "asc3",
+    "id": "",
     "title": "Daño al territorio y medio ambiente",
     "mode": "FILTER",
     "desc": "",
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "id": "asc4",
+    "id": "",
     "title": "Daños colectivos a COPINH",
     "mode": "FILTER",
     "desc": "",
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "id": "asc5",
+    "id": "",
     "title": "Daños colectivos a los movimientos sociales y la sociedad hondurela",
     "mode": "FILTER",
     "desc": "",
@@ -50,7 +50,7 @@
     ]
   },
   {
-    "id": "asc6",
+    "id": "",
     "title": "Daños Individuales",
     "mode": "FILTER",
     "desc": "",
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "id": "asc7",
+    "id": "",
     "title": "Daños Colectivos a Río Blanco",
     "mode": "FILTER",
     "desc": "",
@@ -70,7 +70,7 @@
     ]
   },
   {
-    "id": "asc8",
+    "id": "",
     "title": "Daño al territorio y medio ambiente",
     "mode": "FILTER",
     "desc": "",
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "id": "asc9",
+    "id": "",
     "title": "Daños colectivos a COPINH",
     "mode": "FILTER",
     "desc": "",
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "id": "asc10",
+    "id": "",
     "title": "Daños colectivos a los movimientos sociales y la sociedad hondurela",
     "mode": "FILTER",
     "desc": "",
@@ -100,7 +100,7 @@
     ]
   },
   {
-    "id": "asc11",
+    "id": "",
     "title": "Asesinatos de Defensores de Territorio",
     "mode": "FILTER",
     "desc": "",
@@ -110,7 +110,7 @@
     ]
   },
   {
-    "id": "asc12",
+    "id": "",
     "title": "Operación Comercial",
     "mode": "FILTER",
     "desc": "",
@@ -120,7 +120,7 @@
     ]
   },
   {
-    "id": "asc13",
+    "id": "",
     "title": "Vigente",
     "mode": "FILTER",
     "desc": "",
@@ -130,7 +130,7 @@
     ]
   },
   {
-    "id": "asc14",
+    "id": "",
     "title": "Construcción",
     "mode": "FILTER",
     "desc": "",
@@ -140,7 +140,7 @@
     ]
   },
   {
-    "id": "asc15",
+    "id": "",
     "title": "Suspenso",
     "mode": "FILTER",
     "desc": "",
@@ -150,7 +150,7 @@
     ]
   },
   {
-    "id": "asc 29",
+    "id": "",
     "title": "Aprobado",
     "mode": "FILTER",
     "desc": "",
@@ -160,7 +160,7 @@
     ]
   },
   {
-    "id": "asc 16",
+    "id": "",
     "title": "Copresencias Víctima-DESA",
     "mode": "FILTER",
     "desc": "",
@@ -170,7 +170,7 @@
     ]
   },
   {
-    "id": "asc 17",
+    "id": "",
     "title": "Copresencias Víctima-Sicarios",
     "mode": "FILTER",
     "desc": "",
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "id": "asc 18",
+    "id": "",
     "title": "Copresencias Víctima-Policía",
     "mode": "FILTER",
     "desc": "",
@@ -190,7 +190,7 @@
     ]
   },
   {
-    "id": "asc 19",
+    "id": "",
     "title": "Copresencias Policía-Sicarios",
     "mode": "FILTER",
     "desc": "",
@@ -200,7 +200,7 @@
     ]
   },
   {
-    "id": "asc 20",
+    "id": "",
     "title": "Copresencias Sicarios reunidos",
     "mode": "FILTER",
     "desc": "",
@@ -210,7 +210,7 @@
     ]
   },
   {
-    "id": "asc 21",
+    "id": "",
     "title": "Copresencias DESA-Sicarios",
     "mode": "FILTER",
     "desc": "",
@@ -220,7 +220,7 @@
     ]
   },
   {
-    "id": "asc 22",
+    "id": "",
     "title": "Copresencias DESA-Policía",
     "mode": "FILTER",
     "desc": "",
@@ -230,7 +230,7 @@
     ]
   },
   {
-    "id": "asc 24",
+    "id": "",
     "title": "Crédito HND",
     "mode": "FILTER",
     "desc": "",
@@ -240,7 +240,7 @@
     ]
   },
   {
-    "id": "asc 25",
+    "id": "",
     "title": "Débito HND",
     "mode": "FILTER",
     "desc": "",
@@ -250,7 +250,7 @@
     ]
   },
   {
-    "id": "asc 26",
+    "id": "",
     "title": "Crédito USD",
     "mode": "FILTER",
     "desc": "",
@@ -260,7 +260,7 @@
     ]
   },
   {
-    "id": "asc 27",
+    "id": "",
     "title": "Débito USD",
     "mode": "FILTER",
     "desc": "",
@@ -270,7 +270,7 @@
     ]
   },
   {
-    "id": "asc 23",
+    "id": "",
     "title": "Acciones",
     "mode": "FILTER",
     "desc": "",
@@ -280,7 +280,7 @@
     ]
   },
   {
-    "id": "asc 28",
+    "id": "",
     "title": "Intervenciones",
     "mode": "FILTER",
     "desc": "",

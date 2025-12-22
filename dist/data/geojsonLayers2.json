@@ -35,15 +35,6 @@
     "url": "geojson/Capas Base/Hidrografía/RG.geojson",
     "color": "#C2E9F2"
   },
-
-  {
-    "id": "cuenca-rio-ulua",
-    "group": "Capas Base",
-    "subgroup": "Hidrografía",
-    "label": "Cuenca Ulúa",
-    "url": "geojson/Capas Base/Hidrografía/CH.geojson",
-    "color": "#5EA4BF"
-  },
   
   {
     "id": "territorio-chorotenga",
@@ -284,10 +275,10 @@
     "color": "#D99887"
   },
   {
-    "id": "predio-miguel-isaac-phaz-2011",
+    "id": "predio-municipalidad-intibuca-phaz-2011",
     "group": "Infraestructura y logísticas",
     "subgroup": "Compra de terrenos",
-    "label": "Predio Miguel Isaac (PHAZ 2011)",
+    "label": "Predio Municipalidad de Intibucá (PHAZ 2011)",
     "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11MI.geojson",
     "color": "#D99881"
   },
@@ -300,10 +291,10 @@
     "color": "#D99886"
   },
   {
-    "id": "predio-ramon-aguero-phaz-2011",
+    "id": "predio-ramon-argueta-phaz-2011",
     "group": "Infraestructura y logísticas",
     "subgroup": "Compra de terrenos",
-    "label": "Predio Ramón Agüero (PHAZ 2011)",
+    "label": "Predio Ramón Argueta (PHAZ 2011)",
     "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11RA.geojson",
     "color": "#D99884"
   },
@@ -316,10 +307,10 @@
     "color": "#D99874"
   },
   {
-    "id": "predio-simeon-dominguez-phaz-2011",
+    "id": "predio-santos-dominguez-phaz-2011",
     "group": "Infraestructura y logísticas",
     "subgroup": "Compra de terrenos",
-    "label": "Predio Simeón Domínguez (PHAZ 2011)",
+    "label": "Predio Santos Domínguez (PHAZ 2011)",
     "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11SD.geojson",
     "color": "#D99878"
   },
@@ -332,10 +323,10 @@
     "color": "#D99876"
   },
   {
-    "id": "predio-victor-perez-phaz-2011",
+    "id": "predio-virgilio-pineda-phaz-2011",
     "group": "Infraestructura y logísticas",
     "subgroup": "Compra de terrenos",
-    "label": "Predio Víctor Pérez (PHAZ 2011)",
+    "label": "Predio Virgilio Pineda (PHAZ 2011)",
     "url": "geojson/Infraestructura y logísticas/Compra de terrenos/PA11VP.geojson",
     "color": "#D99875"
   },
