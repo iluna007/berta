@@ -101,7 +101,7 @@ const config = {
         maxNumOfColors: 20,
         defaultColor: "#dfdfdf",
         colors: [
-          "#dfdfdf",
+          "#dfdfdf", 
           "#D97A07", // 1
           "#F2A30F", // 2
           "#F2BC1B", // 3

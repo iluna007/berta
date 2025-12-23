@@ -41,12 +41,12 @@
   },
   {
     "id": "asc5",
-    "title": "Daños colectivos a los movimientos sociales y la sociedad hondurela",
+    "title": "Movimientos sociales y la sociedad hondureña",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Daños reportados por el GIEI",
-      "Colectivos a los movimientos sociales y la sociedad hondurela"
+      "Movimientos sociales y la sociedad hondureña"
     ]
   },
   {
@@ -91,12 +91,12 @@
   },
   {
     "id": "asc10",
-    "title": "Daños colectivos a los movimientos sociales y la sociedad hondurela",
+    "title": "Movimientos sociales y la sociedad hondureña",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Daños reportados por COPINH",
-      "Colectivos a los movimientos sociales y la sociedad hondurela"
+      "Movimientos sociales y la sociedad hondureña"
     ]
   },
   {
