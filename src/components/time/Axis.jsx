@@ -4,6 +4,7 @@ import { setD3Locale } from "../../common/utilities";
 
 const TEXT_HEIGHT = 15;
 setD3Locale();
+
 class TimelineAxis extends Component {
   constructor() {
     super();
@@ -23,10 +24,10 @@ class TimelineAxis extends Component {
       sndFmt = "";
       // 1yr
     } else if (this.props.extent > 43200) {
-      sndFmt = "%d %b";
+      sndFmt = "%d %b %Y";
       fstFmt = "";
     } else {
-      sndFmt = "%d %b";
+      sndFmt = "%d %b %Y";
       // fstFmt = "%H:%M";
       fstFmt = "";
     }

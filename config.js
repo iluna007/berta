@@ -36,13 +36,13 @@ const config = {
           contentHeight: 90,
         },
         zoomLevels: [
+          { label: "Zoom de 1 día", duration: one_day },
+          { label: "Zoom de 1 semana", duration: 7 * one_day },
+          { label: "Zoom de 1 mes", duration: 1 * 31 * one_day },
+          { label: "Zoom de 3 meses", duration: 3 * 31 * one_day },
+          { label: "Zoom de 6 meses", duration: 6 * 31 * one_day },
           { label: "Zoom de 1 año", duration: 12 * 31 * one_day },
-          { label: "Zoom de 2 años", duration: 48 * 31 * one_day },
-          { label: "Zoom de 4 años", duration: 72 * 31 * one_day },
-          { label: "Zoom de 8 años", duration: 96 * 31 * one_day },
-          { label: "Zoom de 10 años", duration: 120 * 31 * one_day },
-          { label: "Zoom de 12 años", duration: 144 * 31 * one_day },
-          { label: "Zoom de 14 años", duration: 168 * 31 * one_day },
+          { label: "Todos los eventos", duration: 168 * 31 * one_day },
           
         ],
         range: {
