@@ -13,7 +13,7 @@ export default function NarrativesNavigator({ onSelect, activeId }) {
     {
       id: "01",
       title: "NR-1 El golpe de 2009 y la venta del territorio",
-      img: "/narratives/media/intro1.jpeg"
+      img: "/narratives/Narrativa 1/1.1-1.jpeg"
     },
     {
       id: "02",

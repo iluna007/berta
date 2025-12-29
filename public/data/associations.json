@@ -6,7 +6,7 @@
     "desc": "",
     "filter_paths": [
       "Daños reportados por el GIEI",
-      "Individuales"
+      "Daños Individuales"
     ]
   },
   {
@@ -16,7 +16,7 @@
     "desc": "",
     "filter_paths": [
       "Daños reportados por el GIEI",
-      "Colectivos a Río Blanco"
+      "Daños Colectivos a Río Blanco"
     ]
   },
   {
@@ -26,7 +26,7 @@
     "desc": "",
     "filter_paths": [
       "Daños reportados por el GIEI",
-      "Al territorio  medio ambiente"
+      "Daño al territorio y medio ambiente"
     ]
   },
   {
@@ -36,17 +36,17 @@
     "desc": "",
     "filter_paths": [
       "Daños reportados por el GIEI",
-      "Colectivos a COPINH"
+      "Daños colectivos a COPINH"
     ]
   },
   {
     "id": "asc5",
-    "title": "Movimientos sociales y la sociedad hondureña",
+    "title": "Daños colectivos a los movimientos sociales y la sociedad hondurela",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Daños reportados por el GIEI",
-      "Movimientos sociales y la sociedad hondureña"
+      "Colectivos a los movimientos sociales y la sociedad hondureñas"
     ]
   },
   {
@@ -56,7 +56,7 @@
     "desc": "",
     "filter_paths": [
       "Daños reportados por COPINH",
-      "Individuales"
+      "Daños Individuales"
     ]
   },
   {
@@ -66,7 +66,7 @@
     "desc": "",
     "filter_paths": [
       "Daños reportados por COPINH",
-      "Colectivos a Río Blanco"
+      "Daños Colectivos a Río Blanco"
     ]
   },
   {
@@ -76,7 +76,7 @@
     "desc": "",
     "filter_paths": [
       "Daños reportados por COPINH",
-      "Al territorio  medio ambiente"
+      "Daño al territorio y medio ambiente"
     ]
   },
   {
@@ -86,17 +86,17 @@
     "desc": "",
     "filter_paths": [
       "Daños reportados por COPINH",
-      "Colectivos a COPINH"
+      "Daños colectivos a COPINH"
     ]
   },
   {
     "id": "asc10",
-    "title": "Movimientos sociales y la sociedad hondureña",
+    "title": "Daños colectivos a los movimientos sociales y la sociedad hondurela",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Daños reportados por COPINH",
-      "Movimientos sociales y la sociedad hondureña"
+      "Colectivos a los movimientos sociales y la sociedad hondureñas"
     ]
   },
   {
@@ -231,42 +231,115 @@
   },
   {
     "id": "asc 24",
-    "title": "Crédito HND",
+    "title": "Capitalización / equity",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Transacciones",
-      "Crédito HNL"
+      "Capitalización / equity"
     ]
   },
   {
     "id": "asc 25",
-    "title": "Débito HND",
+    "title": "Contratos, concesiones y sector público",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Transacciones",
-      "Débito HNL"
+      "\"Contratos",
+      "concesiones y sector público\""
     ]
   },
   {
     "id": "asc 26",
-    "title": "Crédito USD",
+    "title": "Costos financieros y comisiones",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Transacciones",
-      "Crédito USD"
+      "Costos financieros y comisiones"
     ]
   },
   {
     "id": "asc 27",
-    "title": "Débito USD",
+    "title": "Financiamiento (préstamos, deuda y fondos)",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Transacciones",
-      "Débito USD"
+      "\"Financiamiento (préstamos",
+      "deuda y fondos)\""
+    ]
+  },
+  {
+    "id": "asc 29",
+    "title": "Gastos operativos y administración",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Transacciones",
+      "Gastos operativos y administración"
+    ]
+  },
+  {
+    "id": "asc 30",
+    "title": "Obra, contrastistas y proveedores",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Transacciones",
+      "\"Obra",
+      "contrastistas y proveedores\""
+    ]
+  },
+  {
+    "id": "asc 31",
+    "title": "Otros / sin clasificar",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Transacciones",
+      "Otros / sin clasificar"
+    ]
+  },
+  {
+    "id": "asc 32",
+    "title": "Seguros y garantías",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Transacciones",
+      "Seguros y garantías"
+    ]
+  },
+  {
+    "id": "asc 33",
+    "title": "Servicios profesionales (legal/consultoría)",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Transacciones",
+      "Servicios profesionales (legal/consultoría)"
+    ]
+  },
+  {
+    "id": "asc 34",
+    "title": "Transferencias internas / administración de cuentas",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Transacciones",
+      "Transferencias internas / administración de cuentas"
+    ]
+  },
+  {
+    "id": "asc 35",
+    "title": "Pagos ilícitos",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Transacciones",
+      "Pagos ilícitos"
     ]
   },
   {

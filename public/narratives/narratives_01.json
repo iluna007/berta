@@ -3,15 +3,11 @@
     {
       "id": "NR-0",
       "title": "Del golpe al despojo legal",
-      "description": ["El golpe de Estado del 28 de junio de 2009 en Honduras abrió un ciclo de reconfiguración institucional que facilitó la creación de andamiajes legales y financieros orientados a desregular salvaguardas de derechos humanos y acelerar concesiones privadas sobre ríos y otras riquezas naturales. En pocos años, territorios indígenas fueron convertidos en zonas de sacrificio para proyectos extractivos.",
-      "Esta primera narrativa, «El golpe de 2009 y la venta del territorio», explica cómo ese marco permitió transformar el río sagrado Gualcarque, en el municipio de Río Blanco, departamento de Intibucá, en un objeto de inversión y especulación.  Asimismo, pone de manifiesto cuáles fueron las implicaciones de este proceso extractivo para las comunidades lencas que se movilizaron para defenderlo."],
+      "description": [
+        "El golpe de Estado del 28 de junio de 2009 en Honduras abrió un ciclo de reconfiguración institucional que facilitó la creación de andamiajes legales y financieros orientados a debilitar salvaguardas de derechos humanos y acelerar concesiones privadas sobre ríos y otros bienes comunes. En pocos años, territorios ancestrales, incluidos los de pueblos indígenas y afrodescendientes, fueron convertidos en zonas de sacrificio para proyectos extractivos.  Esta primera narrativa, «El golpe de 2009 y la venta del territorio», explica cómo ese marco permitió transformar el río sagrado Gualcarque —en Río Blanco, departamento de Intibucá— en un objeto de inversión y especulación. Asimismo, pone de manifiesto cuáles fueron las implicaciones de este proceso extractivo para las comunidades lencas que se movilizaron para defenderlo."
+      ],
 
-      "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 45,
-        "bearing": -30
-      },
+      "location": { "center": [-86.5, 14.8], "zoom": 6, "pitch": 5, "bearing": 0 },
 
       "cameraMode": "flat",
       "transitionDuration": 2000,
@@ -19,35 +15,18 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-de-rio-blanco", "territorio-lenca","departamentos-de-honduras"],
+      "geojsonOn": [],
 
       "layerStyles": {
-        "aldea-de-rio-blanco": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 1
-        },
-        "territorio-lenca": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.3
-         
-        },
-        "departamentos-de-honduras": {
-          "fill": false,
-          "lineColor": "#000000",
-          "lineWidth": 2
-          
-        }
         
       },
 
-      "sideMedia": false,
+      "sideMedia": true,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/img1.jpeg",
+          "src": "/narratives/Narrativa 1/1.0.jpg",
           "position": "inside",
           "opacity": 1
         }
@@ -62,9 +41,11 @@
 
     {
       "id": "NR-1",
-      "title": "Entregar el Gualcarque es entregar la vida misma",
-      "description": "Desde la colonia española hasta el presente, los pueblos originarios de Centroamérica han resistido la convergencia entre gobernantes, capitales extranjeros y empresas que buscan explotar sus territorios. En Honduras, el pueblo lenca ha sostenido una relación socioambiental sagrada con el Gualcarque. Su río no es un “recurso natural”, sino un ser vivo cuyo espíritu protege a las comunidades y convoca a su defensa. En palabras de Berta Cáceres, entregarlo equivaldría a entregar la vida misma.",
-
+      "title": "BERTA CACERES: ENTREGAR EL GUALCARQUE ES ENTREGAR LA VIDA MISMA",
+      "description": [
+        "Durante siglos, los pueblos indígenas de Centroamérica han resistido la actuación coordinada entre gobernantes, capitales extranjeros y empresas que buscan despojar sus territorios. En Honduras, el pueblo lenca ha sostenido una relación sagrada con el río Gualcarque. Su río no es un “recurso natural”, sino un ser vivo cuyo espíritu protege a las comunidades.",
+        "La mujer lenca, Berta Cáceres, encarnó esta resistencia. Su liderazgo, forjado en la defensa de los territorios y los bienes comunes, combinó la organización comunitaria con una profunda espiritualidad y visión internacionalista. Su reconocimiento mundial con el Premio Goldman en 2015 evidenció su lucha, pero también incrementó los riesgos. En palabras de Berta, entregar el Gualcarque a una hidroeléctrica equivaldría a entregar la vida misma. Por ello convocó a la defensa del río."
+      ],
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
         "zoom": 11,
@@ -109,7 +90,13 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/img5.jpeg",
+          "src": "/narratives/Narrativa 1/1.1-1.jpeg",
+          "position": "inside",
+          "opacity": 1
+        },
+        {
+          "type": "image",
+          "src": "/narratives/Narrativa 1/1.1-2.jpeg",
           "position": "inside",
           "opacity": 1
         }
@@ -329,7 +316,7 @@
 
       "panel": { "width": "420px", "position": "right" }
     },
-     {
+    {
       "id": "NR-6",
       "title": "Un crimen empresarial",
       "description": ["Tres años después del asesinato de Tomás, Berta Cáceres Flores, lideresa lenca y miembra del COPINH, fue asesinada en su domicilio por dos sicarios. Esta investigación sostiene que que la violencia contra defensores y defensoras como Berta no puede leerse como un acto aislado cometido por individuos ya condenados, sino como un “crimen empresarial” en el que decisiones corporativas convergen con actores estatales y lógicas de criminalidad organizada.",
