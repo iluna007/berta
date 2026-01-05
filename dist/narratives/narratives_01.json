@@ -110,9 +110,9 @@
       "id": "NR-2",
       "title": "OBLIGACIONES DEL ESTADO HONDUREÑO HACIA PUEBLOS INDÍGENAS",
       "description": ["Según un censo de 2013, al menos el 94.7 % de las personas que vivían en la aldea de Río Blanco se identificaban como personas lencas, muchas de ellas organizadas en el Consejo Cívico de Organizaciones Populares e Indígenas de Honduras (COPINH).",
-    "La Ley de Propiedad de Honduras establece la obligación del Estado hondureño de reconocer como propiedades comunales las tierras que históricamente han ocupado las comunidades indígenas y afrohondureñas. Sin embargo, desde 2013 no se ha otorgado ni un solo título de propiedad colectiva. Esta claudicación de sus obligaciones ha debilitado a las comunidades, en especial en su lucha contra proyectos de inversión que buscan despojarlas de sus tierras ancestrales. Aun así, la comunidad lenca de Río Blanco ha resistido por siglos los intentos de captura y ocupación, una crisis que se ha profundizado desde principios del siglo XXI.",
-    "El Estado hondureño ha ratificado instrumentos internacionales, como el Convenio 169 de la Organización Internacional del Trabajo (OIT), que establece que en territorios indígenas, como es el caso de la cuenca del Gualcarque, rige la obligación de realizar consultas libres, previas, informadas, de buena fe y culturalmente adecuadas. Eso significa que antes de autorizar obras como represas, el Estado debe informar a las personas indígenas que serían afectadas, garantizar su participación efectiva y obtener su consentimiento cuando existan riesgos para su supervivencia cultural o territorial. La experiencia ha demostrado que cualquier concesión empresarial otorgada sin el cumplimiento de ese estándar no sólo vulnera derechos colectivos, sino que genera conflictos sociales importantes."   ],
-
+        "La Ley de Propiedad de Honduras establece la obligación del Estado hondureño de reconocer como propiedades comunales las tierras que históricamente han ocupado las comunidades indígenas y afrohondureñas. Sin embargo, desde 2013 no se ha otorgado ni un solo título de propiedad colectiva. Esta claudicación de sus obligaciones ha debilitado a las comunidades, en especial en su lucha contra proyectos de inversión que buscan despojarlas de sus tierras ancestrales. Aun así, la comunidad lenca de Río Blanco ha resistido por siglos los intentos de captura y ocupación, una crisis que se ha profundizado desde principios del siglo XXI."
+      ],
+   
       "location": {
         "center": [-88.1755, 14.6574],
         "zoom": 12.5,
@@ -164,8 +164,8 @@
 
     {
       "id": "NR-3",
-      "title": "El Decreto No. 181-2009 del 14 de diciembre de 2009",
-      "description": "Sin embargo, el Decreto No. 181-2009 del 14 de diciembre de 2009, conocido como Ley General de Aguas de Honduras, estableció un marco para la gestión privada de los recursos hídricos del país. Ese cambio normativo detonó la creación acelerada de empresas y proyectos de represas, entre ellos el complejo hidroeléctrico Agua Zarca sobre el río Gualcarque.",
+      "title": "OBLIGACIONES DEL ESTADO HONDUREÑO HACIA PUEBLOS INDÍGENAS",
+      "description": "El Estado hondureño ha ratificado instrumentos internacionales, como el Convenio 169 de la Organización Internacional del Trabajo (OIT), que establece que en territorios indígenas, como es el caso de la cuenca del Gualcarque, rige la obligación de realizar consultas libres, previas, informadas, de buena fe y culturalmente adecuadas. Eso significa que antes de autorizar obras como represas, el Estado debe informar a las personas indígenas que serían afectadas, garantizar su participación efectiva y obtener su consentimiento cuando existan riesgos para su supervivencia cultural o territorial. La experiencia ha demostrado que cualquier concesión empresarial otorgada sin el cumplimiento de ese estándar no sólo vulnera derechos colectivos, sino que genera conflictos sociales importantes.",
 
       "location": {
         "center": [-86.5, 14.8],
@@ -196,7 +196,7 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/img10.jpeg",
+          "src": "/narratives/Narrativa 1/1.2-2.jpg",
           "caption": "Visualización generada con Gephi",
           "credit": "re/presentare / Archivo Experimental",
           "position": "side",
@@ -213,8 +213,10 @@
 
     {
       "id": "NR-4",
-      "title": "Concesiones sin consulta",
-      "description": "Sin cumplir con las obligaciones de consulta y consentimiento hacia el pueblo lenca, agencias estatales habilitaron la concesión de Agua Zarca, mientras que bancos de desarrollo e instituciones financieras internacionales respaldaban a una empresa recién creada y sin experiencia para ejecutarlo. La combinación de un marco legal desregulado, con la ausencia de consulta y una serie de financiamientos internacionales ha producido una estructura de riesgo permanente para el territorio lenca.",
+      "title": "RECONFIGURACIÓN ENERGÉTICA",
+      "description": ["A partir de 2009, el plan de desarrollo del país se inscribió en un paquete de reformas orientadas a reconfigurar la matriz energética hondureña en favor del capital privado. El Plan Nacional de 2010 fijó metas ambiciosas de generación de energía renovable, y en 2011 el gobierno lanzó la iniciativa Honduras is Open for Business, promoviendo masivamente proyectos energéticos acompañados de amplios incentivos a la inversión.",
+      "Entre 2010 y 2014, la Empresa Nacional de Energía Eléctrica (ENEE), adjudicó decenas de concesiones y contratos de compra de energía —muchos sin licitación— en condiciones excepcionalmente favorables, mientras el sector se fragmentaba para facilitar asociaciones público-privadas. Este entorno atrajo rápidamente a bancos internacionales, que identificaron un nuevo mercado, y permitió la expansión acelerada de proyectos hidroeléctricos en territorios indígenas, incluido Agua Zarca. David Castillo, quien hasta ese momento era empleado en la ENEE, fundó DESA—Desarrollos Energéticos, S.A.—con el fin de obtener concesiones para desarrollar proyectos energéticos."
+      ],
 
      "location": {
         "center": [-86.5, 14.8],
@@ -240,17 +242,10 @@
         }
       },
 
-      "sideMedia": true,
+      "sideMedia": false,
 
       "media": [
-        {
-          "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "re/presentare / Archivo Experimental",
-          "position": "side",
-          "opacity": 1
-        }
+        
       ],
 
       "markers": [],
@@ -262,8 +257,8 @@
 
     {
       "id": "NR-5",
-      "title": "Hostigamiento y el asesinato de Tomás García",
-      "description": "En los años inmediatamente posteriores a la concesión de Agua Zarca, la población lenca enfrentó un patrón de hostigamiento: vigilancias, amenazas, campañas de estigmatización y uso de fuerzas de seguridad para contener protestas. Ese clima se hizo visible el 15 de julio de 2013 durante una protesta pacífica frente a las instalaciones del proyecto, donde un elemento del Ejército de Honduras asesinó a Tomás García —autoridad comunitaria lenca— e hiró de gravedad a su hijo Allan de 16 años. Ese hecho marcó a la comunidad y anticipó una escalada de riesgos para quienes defendían el Gualcarque.",
+      "title": "RESPALDOS A CONCESIONES SIN CONSULTA",
+      "description": "Las concesiones y licencias para estos nuevos proyectos se adjudicaron en condiciones de opacidad y corrupción. El gobierno hondureño concesionó Agua Zarca sin cumplir con las obligaciones de consulta y consentimiento hacia el pueblo lenca. La empresa a la cual se le otorgó la concesión —Desarrollos Energéticos, S.A. (DESA)— se había constituido apenas en 2009 y no tenía experiencia previa en la generación energética. Aún así recibió el respaldo financiero de bancos de desarrollo e instituciones internacionales. La combinación de un marco legal desregulado, con la ausencia de consulta y una serie de financiamientos internacionales produjo una estructura de riesgo permanente para el territorio lenca.",
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
