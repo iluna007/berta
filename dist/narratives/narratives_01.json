@@ -2,7 +2,7 @@
   "chapters": [
     {
       "id": "NR-0",
-      "title": "Del golpe al despojo legal",
+      "title": "DEL GOLPE AL DESPOJO LEGAL",
       "description": [
         "El golpe de Estado del 28 de junio de 2009 en Honduras abrió un ciclo de reconfiguración institucional que facilitó la creación de andamiajes legales y financieros orientados a debilitar salvaguardas de derechos humanos y acelerar concesiones privadas sobre ríos y otros bienes comunes. En pocos años, territorios ancestrales, incluidos los de pueblos indígenas y afrodescendientes, fueron convertidos en zonas de sacrificio para proyectos extractivos.  Esta primera narrativa, «El golpe de 2009 y la venta del territorio», explica cómo ese marco permitió transformar el río sagrado Gualcarque —en Río Blanco, departamento de Intibucá— en un objeto de inversión y especulación. Asimismo, pone de manifiesto cuáles fueron las implicaciones de este proceso extractivo para las comunidades lencas que se movilizaron para defenderlo."
       ],
@@ -59,7 +59,7 @@
       "highlightLayers": ["carreteras-2012"],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-de-rio-blanco","departamentos-de-honduras","rio-gualcarque","cuenca-rio-ulua"],
+      "geojsonOn": ["aldea-de-rio-blanco","departamentos-de-honduras","rio-gualcarque"],
 
       "layerStyles": {
         "aldea-de-rio-blanco": {
@@ -77,11 +77,8 @@
         "rio-gualcarque": { 
           "lineColor": "#0077be",
           "lineWidth": 4
-        },
-        "cuenca-rio-ulua": {
-          "lineColor": "#5EA4BF",
-          "lineWidth": 2
         }
+    
 
       },
 
@@ -111,15 +108,17 @@
 
     {
       "id": "NR-2",
-      "title": "Obligaciones del Estado hondureño hacia pueblos originarios",
-      "description": ["Según el censo de 2013, al menos el 87 % de las personas que vivían en el municipio de Río Blanco se identificaban como lencas, muchas de ellas organizadas en el Consejo Cívico de Organizaciones Populares e Indígenas de Honduras (COPINH). Esa densidad organizativa y territorial explica por qué el Gualcarque se convirtió en un eje central de la defensa comunitaria.",
-    "El Estado hondureño ha ratificado instrumentos internacionales, como el Convenio 169 de la Organización Internacional del Trabajo (OIT), que establece que en territorios indígenas, como es el caso de la cuenca del Gualcarque, rige la obligación de realizar consultas libres, previas, informadas, de buena fe y culturalmente adecuadas. Antes de autorizar obras como represas, el Estado debe informar, garantizar la participación efectiva y obtener el consentimiento cuando existan riesgos para la supervivencia cultural o territorial de los pueblos originarios. Sin ese estándar, las concesiones vulneran derechos colectivos y generan conflictos estructurales. "],
+      "title": "OBLIGACIONES DEL ESTADO HONDUREÑO HACIA PUEBLOS INDÍGENAS",
+      "description": ["Según un censo de 2013, al menos el 94.7 % de las personas que vivían en la aldea de Río Blanco se identificaban como personas lencas, muchas de ellas organizadas en el Consejo Cívico de Organizaciones Populares e Indígenas de Honduras (COPINH).",
+    "La Ley de Propiedad de Honduras establece la obligación del Estado hondureño de reconocer como propiedades comunales las tierras que históricamente han ocupado las comunidades indígenas y afrohondureñas. Sin embargo, desde 2013 no se ha otorgado ni un solo título de propiedad colectiva. Esta claudicación de sus obligaciones ha debilitado a las comunidades, en especial en su lucha contra proyectos de inversión que buscan despojarlas de sus tierras ancestrales. Aun así, la comunidad lenca de Río Blanco ha resistido por siglos los intentos de captura y ocupación, una crisis que se ha profundizado desde principios del siglo XXI.",
+    "El Estado hondureño ha ratificado instrumentos internacionales, como el Convenio 169 de la Organización Internacional del Trabajo (OIT), que establece que en territorios indígenas, como es el caso de la cuenca del Gualcarque, rige la obligación de realizar consultas libres, previas, informadas, de buena fe y culturalmente adecuadas. Eso significa que antes de autorizar obras como represas, el Estado debe informar a las personas indígenas que serían afectadas, garantizar su participación efectiva y obtener su consentimiento cuando existan riesgos para su supervivencia cultural o territorial. La experiencia ha demostrado que cualquier concesión empresarial otorgada sin el cumplimiento de ese estándar no sólo vulnera derechos colectivos, sino que genera conflictos sociales importantes."   ],
 
       "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 25,
-        "bearing": 60
+        "center": [-88.1755, 14.6574],
+        "zoom": 12.5,
+        "pitch": 75,
+        "bearing": 75
+      
       },
 
       "cameraMode": "flat",
@@ -128,24 +127,32 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite", "osm-waterways" ],
+      "geojsonOn": ["aldea-de-rio-blanco","narrative1_censo_territorios","rio-gualcarque"],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {},
-        "osm-waterways": {}
+        
+        "aldea-de-rio-blanco": {
+          "fill": true,
+          "fillColor": "#000000",
+          "fillOpacity": 0.3
+        },
+        "narrative1_censo_territorios": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "circleRadius": 1,
+          "circleBlur": 3  
+        },
+        "rio-gualcarque": { 
+          "lineColor": "#0077be",
+          "lineWidth": 4
+        }
+        
       },
 
-      "sideMedia": true,
+      "sideMedia": false,
 
       "media": [
-        {
-          "type": "image",
-          "src": "/narratives/media/img7.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "re/presentare / Archivo Experimental",
-          "position": "side",
-          "opacity": 1
-        }
+  
       ],
 
       "markers": [],
