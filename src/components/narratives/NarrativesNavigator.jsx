@@ -8,17 +8,17 @@ export default function NarrativesNavigator({ onSelect, activeId }) {
     {
       id: "00",
       title: "NR-0 Intro",
-      img: "/narratives/media/intro1.jpeg"
+      img: "/narratives/Narrativa 1/1.1-1.jpeg"
     },
     {
       id: "01",
       title: "NR-1 El golpe de 2009 y la venta del territorio",
-      img: "/narratives/Narrativa 1/1.1-1.jpeg"
+      img: "/narratives/Narrativa 1/1.1-2.jpeg"
     },
     {
       id: "02",
       title: "NR-2 La red financiera: capitales bancos empresarios y la familia Atala",
-      img: "/narratives/media/extractivismo1.jpeg"
+      img: "/narratives/Narrativa 2/2.1.jpeg"
     },
     {
       id: "03",
