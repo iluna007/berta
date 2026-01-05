@@ -113,3 +113,9 @@
 .ntc-inline-video {
   width: 100%;
 }
+
+.ntc-md p {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
