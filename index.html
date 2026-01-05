@@ -1,26 +1,33 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>Berta</title>
+
   <link rel="icon" type="image/x-icon" href="favico.ico">
   <link rel="stylesheet" href="https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css">
-  
+
+  <!-- Google Fonts: Inter (Regular, Negrita, Cursiva) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 
+  <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Analytics -->
   <script defer data-domain="ukraine.bellingcat.com" src="https://plausible.io/js/script.js"></script>
-  <!-- Styles are always go to the head, never the body -->
+
+  <!-- Styles always go in the head -->
   <style>
     @media (hover: none) {
       #id {
         display: none;
       }
-
       #nodisplay {
         display: block;
       }
@@ -37,11 +44,12 @@
 <body>
   <div class="page">
     <div id="explore-app"></div>
+
     <div id="nodisplay">
       If you see this message wait up to 30s, otherwise please revisit on a desktop device.
     </div>
   </div>
+
   <script type="module" src="/src/index.jsx"></script>
 </body>
-
 </html>

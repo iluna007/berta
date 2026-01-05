@@ -161,7 +161,8 @@ export default function NarrativePage() {
         onMouseLeave={() => (isPointerInsidePanel.current = false)}
         style={{
           position: "absolute",
-          top: "40px",
+          top: "20px",
+          bottom: "20px",
           left: "260px",
           width: "380px",
           height: "calc(100% - 80px)",
