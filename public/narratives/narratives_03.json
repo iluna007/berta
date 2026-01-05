@@ -19,7 +19,7 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine"],
+      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine","punto-compras-tierras-rio-blanco"],
 
       "layerStyles": {
         "aldea-rio-blanco-limite": {
@@ -37,6 +37,10 @@
           "lineColor": "#000000",
           "lineWidth": 2
           
+        },
+        "punto-compras-tierras-rio-blanco": {
+          "pointColor": "#eb443e",
+          "pointRadius": 5
         }
         
       },

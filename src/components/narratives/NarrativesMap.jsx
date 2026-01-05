@@ -7,11 +7,12 @@ import "/node_modules/mapbox-gl/dist/mapbox-gl.css";
 mapboxgl.accessToken =
   "pk.eyJ1IjoicmVwcmVzZW50YXJlIiwiYSI6ImNtaHdycWxxbjAycjYyanEzaTN1emtjbmUifQ.q26LsAXIbvhQiWiKhGt0Wg";
 
-export default function NarrativesMap({ activeChapterId, chapters,
+export default function NarrativesMap({
+  activeChapterId,
+  chapters,
 
   // 🔥 NUEVO: Callback para actualizar leyenda
   onLegendChange = () => {}
-
 }) {
   const mapContainer = useRef(null);
   const map = useRef(null);
@@ -20,8 +21,11 @@ export default function NarrativesMap({ activeChapterId, chapters,
 
   const layersRef = useRef(null);
 
+  // 🔥 NUEVO: referencia al popup activo
+  const activePopupRef = useRef(null);
+
   // -----------------------------------------
-  // Cargar catálogo geojsonLayers2.json
+  // Cargar catálogo geojson_narratives.json
   // -----------------------------------------
   useEffect(() => {
     fetch("/data/geojson_narratives.json")
@@ -30,7 +34,9 @@ export default function NarrativesMap({ activeChapterId, chapters,
         layersRef.current = json;
         console.log("📌 geojson_narratives.json cargado");
       })
-      .catch((err) => console.error("Error cargando geojson_narratives.json", err));
+      .catch((err) =>
+        console.error("Error cargando geojson_narratives.json", err)
+      );
   }, []);
 
   // -----------------------------------------
@@ -51,7 +57,6 @@ export default function NarrativesMap({ activeChapterId, chapters,
     map.current.addControl(new mapboxgl.NavigationControl());
 
     map.current.on("load", () => {
-      // DEM
       if (!map.current.getSource("mapbox-dem")) {
         map.current.addSource("mapbox-dem", {
           type: "raster-dem",
@@ -79,19 +84,63 @@ export default function NarrativesMap({ activeChapterId, chapters,
     const def = layersRef.current.find((l) => l.id === layerId);
     if (!def) {
       console.warn("⚠ No hay entrada en geojsonLayers2.json para:", layerId);
-      return null; // 🔥 NUEVO: para poder usar la info en la leyenda
+      return null;
     }
 
-    const url = def.url;
     const baseColor = def.color ?? "#ff00ff";
-    const label = def.label ?? layerId; // 🔥 NUEVO: label para la leyenda
+    const label = def.label ?? layerId;
 
+    // ======================================================
+    // 🔥 NUEVO CASO: PUNTO NARRATIVO POR COORDENADA (SIN GEOJSON)
+    // ======================================================
+    if (def.coordinates && Array.isArray(def.coordinates)) {
+      if (activePopupRef.current) {
+        activePopupRef.current.remove();
+        activePopupRef.current = null;
+      }
+
+      const popupData = def.popup || {};
+
+      const popup = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false,
+        offset: 14,
+      })
+        .setLngLat(def.coordinates)
+        .setHTML(`
+          <strong>${popupData.title ?? ""}</strong>
+          ${popupData.date ? `<br/><em>${popupData.date}</em>` : ""}
+          ${popupData.description ? `<p>${popupData.description}</p>` : ""}
+        `)
+        .addTo(map.current);
+
+      activePopupRef.current = popup;
+
+      return {
+        id: layerId,
+        label,
+        color: baseColor,
+        type: "point",
+      };
+    }
+
+    // ======================================================
+    // FLUJO ORIGINAL (GeoJSON)
+    // ======================================================
+
+    const url = def.url;
     const sourceId = `src-${layerId}`;
     const mapLayerId = `layer-${layerId}`;
 
-    // Remove old
-    if (map.current.getLayer(mapLayerId)) map.current.removeLayer(mapLayerId);
-    if (map.current.getSource(sourceId)) map.current.removeSource(sourceId);
+    if (map.current.getLayer(mapLayerId))
+      map.current.removeLayer(mapLayerId);
+    if (map.current.getSource(sourceId))
+      map.current.removeSource(sourceId);
+
+    if (activePopupRef.current) {
+      activePopupRef.current.remove();
+      activePopupRef.current = null;
+    }
 
     try {
       const res = await fetch(url);
@@ -99,9 +148,10 @@ export default function NarrativesMap({ activeChapterId, chapters,
 
       map.current.addSource(sourceId, { type: "geojson", data });
 
-      const geom = data.features?.[0]?.geometry?.type;
+      const feature = data.features?.[0];
+      const geom = feature?.geometry?.type;
+      const popupData = def.popup || null;
 
-      // Determine type
       let layerType = "fill";
       let paintProps = {};
 
@@ -125,9 +175,6 @@ export default function NarrativesMap({ activeChapterId, chapters,
         };
       }
 
-      // -----------------------------------------
-      // TABLAS DE PROPIEDADES
-      // -----------------------------------------
       const STYLE_MAP = {
         fill: [
           "fill-color",
@@ -137,7 +184,6 @@ export default function NarrativesMap({ activeChapterId, chapters,
           "fill-translate-anchor",
           "fill-antialias",
         ],
-
         line: [
           "line-color",
           "line-width",
@@ -151,7 +197,6 @@ export default function NarrativesMap({ activeChapterId, chapters,
           "line-join",
           "line-cap",
         ],
-
         circle: [
           "circle-color",
           "circle-opacity",
@@ -162,23 +207,6 @@ export default function NarrativesMap({ activeChapterId, chapters,
           "circle-translate",
           "circle-translate-anchor",
         ],
-
-        symbol: [
-          "icon-image",
-          "icon-size",
-          "icon-opacity",
-          "icon-color",
-          "text-field",
-          "text-color",
-          "text-opacity",
-          "text-halo-color",
-          "text-halo-width",
-          "text-size",
-          "text-letter-spacing",
-          "text-justify",
-          "text-translate",
-          "text-translate-anchor",
-        ],
       };
 
       const MAP_JS = {
@@ -188,7 +216,6 @@ export default function NarrativesMap({ activeChapterId, chapters,
         fillTranslate: "fill-translate",
         fillTranslateAnchor: "fill-translate-anchor",
         fillAntialias: "fill-antialias",
-
         lineColor: "line-color",
         lineWidth: "line-width",
         lineOpacity: "line-opacity",
@@ -200,7 +227,6 @@ export default function NarrativesMap({ activeChapterId, chapters,
         lineOffset: "line-offset",
         lineJoin: "line-join",
         lineCap: "line-cap",
-
         pointColor: "circle-color",
         pointOpacity: "circle-opacity",
         pointRadius: "circle-radius",
@@ -211,7 +237,6 @@ export default function NarrativesMap({ activeChapterId, chapters,
         pointTranslateAnchor: "circle-translate-anchor",
       };
 
-      // convert fill → line if needed
       if (styleOverrides.fill === false && layerType === "fill") {
         layerType = "line";
         paintProps = {
@@ -220,7 +245,6 @@ export default function NarrativesMap({ activeChapterId, chapters,
         };
       }
 
-      // Apply overrides
       const allowed = STYLE_MAP[layerType] ?? [];
 
       allowed.forEach((prop) => {
@@ -237,11 +261,26 @@ export default function NarrativesMap({ activeChapterId, chapters,
         paint: paintProps,
       };
 
-      // insert at top
       const topLayer = map.current.getStyle().layers.at(-1)?.id;
       map.current.addLayer(layerConfig, topLayer);
 
-      // 🔥 NUEVO → return info para leyenda
+      if (geom === "Point" && popupData) {
+        const popup = new mapboxgl.Popup({
+          closeButton: false,
+          closeOnClick: false,
+          offset: 14,
+        })
+          .setLngLat(feature.geometry.coordinates)
+          .setHTML(`
+            <strong>${popupData.title ?? ""}</strong>
+            ${popupData.date ? `<br/><em>${popupData.date}</em>` : ""}
+            ${popupData.description ? `<p>${popupData.description}</p>` : ""}
+          `)
+          .addTo(map.current);
+
+        activePopupRef.current = popup;
+      }
+
       return {
         id: layerId,
         label,
@@ -253,7 +292,6 @@ export default function NarrativesMap({ activeChapterId, chapters,
             : paintProps["circle-color"],
         type: layerType,
       };
-
     } catch (err) {
       console.error("Error cargando capa:", layerId, err);
       return null;
@@ -276,6 +314,11 @@ export default function NarrativesMap({ activeChapterId, chapters,
           map.current.setLayoutProperty(l.id, "visibility", "none");
         }
       });
+
+    if (activePopupRef.current) {
+      activePopupRef.current.remove();
+      activePopupRef.current = null;
+    }
   };
 
   // ------------------------------------------------------
@@ -306,26 +349,21 @@ export default function NarrativesMap({ activeChapterId, chapters,
 
     hideAllLayers();
 
-    // 🔥 NUEVO: construir leyenda
     const legendCollector = [];
 
     const run = async () => {
       for (const layerId of chapter.geojsonOn || []) {
         const overrides = chapter.layerStyles?.[layerId] || {};
-
         const legendInfo = await recreateLayer(layerId, overrides);
-
         if (legendInfo) legendCollector.push(legendInfo);
       }
 
-      // 🔥 NUEVO: enviar lista final al componente padre
       onLegendChange(legendCollector);
     };
 
     run();
   }, [activeChapterId, chapters, isMapReady]);
 
-  // ------------------------------------------------------
   return (
     <div
       ref={mapContainer}

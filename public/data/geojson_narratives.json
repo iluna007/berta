@@ -141,7 +141,22 @@
     "label": "Censo de Territorios Indígenas",
     "url": "public/narratives/Narrativa 1/1.2-1.geojson",
     "color": "#eb443e"
+  },
+  {
+  "id": "punto-compras-tierras-rio-blanco",
+  "type": "narrative-point",
+  "label": "Compras de tierras",
+  "color": "#eb443e",
+
+  "coordinates": [-88.1762, 14.6581],
+
+  "popup": {
+    "title": "Compras de tierras en Río Blanco",
+    "date": "2013–2014",
+    "description": "Punto representativo de las adquisiciones de terrenos realizadas bajo presión en territorio lenca."
+    }
   }
+
 
  
 
