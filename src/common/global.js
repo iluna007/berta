@@ -1,5 +1,5 @@
 export const colors = {
-  fa_red: "#eb443e",
+  fa_red: "#00a261",
   yellow: "#ffd800",
   black: "#000",
   white: "#fff",
