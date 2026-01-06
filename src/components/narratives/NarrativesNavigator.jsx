@@ -7,37 +7,37 @@ export default function NarrativesNavigator({ onSelect, activeId }) {
   const items = [
     {
       id: "00",
-      title: "NR-0 Intro",
+      title: "Intro",
       img: "/narratives/Narrativa 1/1.1-1.jpeg"
     },
     {
       id: "01",
-      title: "NR-1 El golpe de 2009 y la venta del territorio",
+      title: "El golpe de 2009 y la venta del territorio",
       img: "/narratives/Narrativa 1/1.1-2.jpeg"
     },
     {
       id: "02",
-      title: "NR-2 La red financiera: capitales bancos empresarios y la familia Atala",
+      title: "La red financiera: capitales bancos empresarios y la familia Atala",
       img: "/narratives/Narrativa 2/2.1.jpeg"
     },
     {
       id: "03",
-      title: "NR-3 Compra de terrenos infraestructuras y logísticas de despojo",
+      title: "Compra de terrenos infraestructuras y logísticas de despojo",
       img: "/narratives/media/Gephisample2.jpeg"
     },
     {
       id: "04",
-      title: "NR-4 Los agresores: Los agentes estatales de seguridad y la red criminal",
+      title: "Los agresores: Los agentes estatales de seguridad y la red criminal",
       img: "/narratives/media/violencia_redes.jpeg"
     },
     {
       id: "05",
-      title: "NR-5 El asesinato de Berta Cáceres",
+      title: "El asesinato de Berta Cáceres",
       img: "/narratives/media/infraestructura_conflicto.mp4"
     },
     {
       id: "06",
-      title: "NR-6 El mecanismo generador de impunidad",
+      title: "El mecanismo generador de impunidad",
       img: "/narratives/media/Gephisample2.jpeg"
     }
   ];
