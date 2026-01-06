@@ -267,9 +267,9 @@
 
       "location": {
         "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
+        "zoom": 12,
         "pitch": 45,
-        "bearing": 30
+        "bearing": -30
       },
 
       "cameraMode": "dramatic",
@@ -278,40 +278,18 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine","rio-gualcarque","osm-waterways"],
+      "geojsonOn": [],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.3
-        },
-        "censo-Rio-Blanco-2013": {
-          "pointColor": "#eb443e",
-          "pointRadius": 3,
-          "pointBlur": 3
-        },
-        "departamentos-honduras-ine": {
-          "fill": false,
-          "lineColor": "#eb443e",
-          "lineWidth": 2
-        },
-        "rio-gualcarque": {
-          "lineColor": "#0077be",
-          "lineWidth": 4
-        },
-        "osm-waterways": {
-          "lineColor": "#5EA4BF",
-          "lineWidth": 2
-        }
+        
       },
 
-      "sideMedia": false,
+      "sideMedia": true,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/img13.jpeg",
+          "src": "/narratives/Narrativa 1/1.4.jpg",
           "position": "inside",
           "opacity": 1
         }
@@ -323,6 +301,7 @@
 
       "panel": { "width": "420px", "position": "right" }
     },
+
     {
       "id": "NR-6",
       "title": "HOSTIGAMIENTO Y EL ASESINATO DE TOMÁS GARCÍA",
@@ -330,11 +309,13 @@
       "El viraje legal y territorial se enlaza con la siguiente narrativa, «La red financiera», que detalla la arquitectura de poder financiero que hizo posible las violencias contra personas lencas: quién movió el dinero, con qué instrumentos y con qué incentivos."],
 
       "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 45,
-        "bearing": -30
+        "center": [-88.20, 14.67],
+        "zoom": 13,
+        "pitch": 30,
+        "bearing": 70
       },
+
+      
 
       "cameraMode": "dramatic",
       "transitionDuration": 2000,
@@ -342,14 +323,24 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["departamentos-honduras-ine"],
+      "geojsonOn": ["departamentos-de-honduras","rio-gualcarque","Proyecto Agua Zarca 2011"],
 
       "layerStyles": {
-      
-        "departamentos-honduras-ine": {
+             
+        "departamentos-de-honduras": {
           "fill": false,
+          "lineColor": "#000000",
+          "lineWidth": 2,
+          "line-dasharray": [2,4]
+        },
+        "rio-gualcarque": { 
+          "lineColor": "#0077be",
+          "lineWidth": 4
+        },
+        
+        "Proyecto Agua Zarca 2011": { 
           "lineColor": "#eb443e",
-          "lineWidth": 2
+          "lineWidth": 4
         }
       },
 
@@ -357,11 +348,64 @@
 
       "media": [
         {
-          "type": "image",
-          "src": "/narratives/media/violencia_redes.jpeg",
+          "type": "video",
+          "src": "/narratives/Narrativa 1/1.5.mp4",
           "position": "inside",
-          "opacity": 1
+          "opacity": 1,
+          "footer": "COPINH, Declacraciones de Berta Cáceres justicia para Tomás García. (Video: Publicado por Luis Díaz Terán @luisdiazteran4001, 8 Diciembre 2015, en YouTube)."
         }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": { "width": "420px", "position": "right" }
+    },
+
+    {
+      "id": "NR-7",
+      "title": "UN CRIMEN EMPRESARIAL",
+      "description": ["Tres años después del asesinato de Tomás García, Berta Cáceres, cofundadora del COPINH, fue asesinada en su domicilio por cuatro sicarios contratados por DESA, en el marco de una decisión adoptada desde su estructura corporativa.",
+      "La investigación del GIEI sostiene que la violencia contra defensores y defensoras como Berta no puede leerse como un acto aislado cometido por individuos ya condenados. En respuesta, visibilizamos estas violencias como operaciones que buscaron preservar los intereses financieros ligados al desarrollo del proyecto, bajo una lógica de «crimen empresarial», en la que las decisiones corporativas convergieron con actores estatales y estrategias de criminalidad organizada.",
+    "Las infraestructuras legales expuestas en esta narrativa se enlazan con la siguiente, «La red empresarial y trama financiera», que detalla la arquitectura de poder financiero que hizo posible las violencias contra las personas lencas: quién movió el dinero, con qué instrumentos y con qué incentivos."],
+
+      "location": { "center": [-86.9, 14.8], "zoom": 6.5, "pitch": 5, "bearing": 0 },
+
+
+      
+
+      "cameraMode": "dramatic",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOn": ["departamentos-de-honduras","rio-gualcarque","Proyecto Agua Zarca 2011"],
+
+      "layerStyles": {
+             
+        "departamentos-de-honduras": {
+          "fill": false,
+          "lineColor": "#000000",
+          "lineWidth": 2,
+          "line-dasharray": [2,4]
+        },
+        "rio-gualcarque": { 
+          "lineColor": "#0077be",
+          "lineWidth": 4
+        },
+        
+        "Proyecto Agua Zarca 2011": { 
+          "lineColor": "#eb443e",
+          "lineWidth": 4
+        }
+      },
+
+      "sideMedia": false,
+
+      "media": [
+        
       ],
 
       "markers": [],

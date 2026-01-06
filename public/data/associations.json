@@ -26,7 +26,7 @@
     "desc": "",
     "filter_paths": [
       "Daños Individuales y Colectivos",
-      "Colectivos a Río Blanco"
+      "Al territorio y medio ambiente"
     ]
   },
   {
@@ -230,7 +230,7 @@
     ]
   },
   {
-    "id": "asc 29",
+    "id": "asc1",
     "title": "Transacciones con irregularidades",
     "mode": "FILTER",
     "desc": "",

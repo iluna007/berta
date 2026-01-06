@@ -48,6 +48,14 @@
     "color": "#eb443e"
   },
 
+   {
+    "id": "Proyecto Agua Zarca 2011",
+    "group": "Narrativa1",
+    "label": "Proyecto Agua Zarca 2011",
+    "url": "public/narratives/Narrativa 1/Proyecto Agua Zarca 2011.geojson",
+    "color": "#eb443e"
+  },
+
   {
   "id": "punto-compras-tierras-rio-blanco",
   "type": "narrative-point",
