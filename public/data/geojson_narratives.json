@@ -4,7 +4,6 @@
     {
     "id": "aldea-de-rio-blanco",
     "group": "Capas Base",
-    "subgroup": "Límites políticos",
     "label": "Aldea de Río Blanco",
     "url": "geojson/Capas Base/Límites Políticos/RB.geojson",
     "color": "#FFFFFF"
@@ -12,15 +11,13 @@
   {
     "id": "departamentos-de-honduras",
     "group": "Capas Base",
-    "subgroup": "Límites políticos",
-    "label": "Departamentos de Honduras",
+    "label": "Límites políticos",
     "url": "geojson/Capas Base/Límites Políticos/SP.geojson",
     "color": "#FFFFFF"
   },
   {
     "id": "territorio-nacional-de-honduras",
     "group": "Capas Base",
-    "subgroup": "Límites políticos",
     "label": "Territorio Nacional de Hondiras",
     "url": "geojson/Capas Base/Límites Políticos/TN.geojson",
     "color": "#807D7E"
@@ -30,115 +27,24 @@
   {
     "id": "rio-gualcarque",
     "group": "Capas Base",
-    "subgroup": "Hidrografía",
     "label": "Río Gualcarque",
     "url": "geojson/Capas Base/Hidrografía/RG.geojson",
     "color": "#C2E9F2"
   },
-  
-  {
-    "id": "territorio-chorotenga",
-    "group": "Capas Base",
-    "subgroup": "Dinámica Poblacional",
-    "label": "Territorio Chorotenga",
-    "url": "geojson/Capas Base/Dinámica Poblacional/TCH.geojson",
-    "color": "#2D8C81"
-  },
-  {
-    "id": "territorio-garifuna",
-    "group": "Capas Base",
-    "subgroup": "Dinámica Poblacional",
-    "label": "Territorio Garífuna",
-    "url": "geojson/Capas Base/Dinámica Poblacional/TGA.geojson",
-    "color": "#207074"
-  },
-  {
-    "id": "territorio-isleno",
-    "group": "Capas Base",
-    "subgroup": "Dinámica Poblacional",
-    "label": "Territorio Isleño",
-    "url": "geojson/Capas Base/Dinámica Poblacional/TIS.geojson",
-    "color": "#257C81"
-  },
-  {
-    "id": "territorio-lenca",
-    "group": "Capas Base",
-    "subgroup": "Dinámica Poblacional",
-    "label": "Territorio Lenca",
-    "url": "geojson/Capas Base/Dinámica Poblacional/TLN.geojson",
-    "color": "#195457"
-  },
-  {
-    "id": "territorio-maya-chorti",
-    "group": "Capas Base",
-    "subgroup": "Dinámica Poblacional",
-    "label": "Territorio Maya Chortí",
-    "url": "geojson/Capas Base/Dinámica Poblacional/TMC.geojson",
-    "color": "#36997D"
-  },
-  {
-    "id": "territorio-miskito-miskitu",
-    "group": "Capas Base",
-    "subgroup": "Dinámica Poblacional",
-    "label": "Territorio Miskito (Miskitu)",
-    "url": "geojson/Capas Base/Dinámica Poblacional/TME.geojson",
-    "color": "#3CA276"
-  },
-  {
-    "id": "territorio-nahua",
-    "group": "Capas Base",
-    "subgroup": "Dinámica Poblacional",
-    "label": "Territorio Nahua",
-    "url": "geojson/Capas Base/Dinámica Poblacional/TMK.geojson",
-    "color": "#46AA79"
-  },
-  {
-    "id": "territorio-nahoa",
-    "group": "Capas Base",
-    "subgroup": "Dinámica Poblacional",
-    "label": "Territorio Nahoa",
-    "url": "geojson/Capas Base/Dinámica Poblacional/TNH.geojson",
-    "color": "#5ABA83"
-  },
-  {
-    "id": "territorio-pech",
-    "group": "Capas Base",
-    "subgroup": "Dinámica Poblacional",
-    "label": "Territorio Pech",
-    "url": "geojson/Capas Base/Dinámica Poblacional/TPC.geojson",
-    "color": "#50B27E"
-  },
-  {
-    "id": "territorio-tawahka",
-    "group": "Capas Base",
-    "subgroup": "Dinámica Poblacional",
-    "label": "Territotio Tauahka",
-    "url": "geojson/Capas Base/Dinámica Poblacional/TTH.geojson",
-    "color": "#6AC483"
-  },
-  {
-    "id": "territorio-tolupan",
-    "group": "Capas Base",
-    "subgroup": "Dinámica Poblacional",
-    "label": "Territorio Tolupan",
-    "url": "geojson/Capas Base/Dinámica Poblacional/TTL.geojson",
-    "color": "#7ACE84"
-  },
-  {
-    "id": "territorio-tekeh",
-    "group": "Capas Base",
-    "subgroup": "Dinámica Poblacional",
-    "label": "Territorio Texiihuat",
-    "url": "geojson/Capas Base/Dinámica Poblacional/TTX.geojson",
-    "color": "#6AC483"
-  },
-
+    
   {
     "id": "Territorios indigenas",
     "group": "Narrativa1",
-    "subgroup": "NR-2",
-    "label": "Censo de Territorios Indígenas",
+    "label": "Territorios Indígenas",
     "url": "public/narratives/Narrativa 1/Territorios indigenas.geojson",
+    "color": "#eb443e"
+  },
+
+   {
+    "id": "Hidroelectricas",
+    "group": "Narrativa1",
+    "label": "Hidroeléctricas",
+    "url": "public/narratives/Narrativa 1/Hidroelectricas.geojson",
     "color": "#eb443e"
   },
 

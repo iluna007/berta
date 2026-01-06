@@ -193,8 +193,6 @@
         {
           "type": "image",
           "src": "/narratives/Narrativa 1/1.2-2.jpg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "re/presentare / Archivo Experimental",
           "position": "side",
           "opacity": 1,
           "footer": "Tabla de concesiones de proyectos de represas hidroeléctricas aprobadas al 2014. (CESPAD, Río Blanco: la reconstrucción histórica de la lucha de la defensa del rio Gualcarque, 2016)."
@@ -228,14 +226,24 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["limite-territorio-nacional"],
+      "geojsonOn": ["Hidroelectricas","departamentos-de-honduras","rio-gualcarque"],
 
       "layerStyles": {
-        "limite-territorio-nacional": {
+        "Hidroelectricas": {
           "fill": true,
           "fillColor": "#eb443e",
-          "fillOpacity": 0.5 
- 
+          "circleRadius": 0.1
+        },
+       
+        "departamentos-de-honduras": {
+          "fill": false,
+          "lineColor": "#000000",
+          "lineWidth": 2,
+          "line-dasharray": [2,4]
+        },
+        "rio-gualcarque": { 
+          "lineColor": "#0077be",
+          "lineWidth": 4
         }
       },
 
