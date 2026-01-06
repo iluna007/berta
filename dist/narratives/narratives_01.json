@@ -196,7 +196,8 @@
           "caption": "Visualización generada con Gephi",
           "credit": "re/presentare / Archivo Experimental",
           "position": "side",
-          "opacity": 1
+          "opacity": 1,
+          "footer": "Tabla de concesiones de proyectos de represas hidroeléctricas aprobadas al 2014. (CESPAD, Río Blanco: la reconstrucción histórica de la lucha de la defensa del rio Gualcarque, 2016)."
         }
       ],
 
