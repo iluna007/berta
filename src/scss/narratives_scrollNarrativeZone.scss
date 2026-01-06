@@ -4,8 +4,8 @@
 }
 
 .narrative-scroll-zone:hover {
-  outline: 1px dashed #00a261;
-  outline-offset: -1px;
+  outline: 3px dashed #00a261;
+  outline-offset: -4px;
 }
 
 
@@ -30,7 +30,7 @@
 .narrative-arrow:hover {
   color: #00a261;   /* mismo rojo que ntc-close */
   opacity: 1;
-  transform: translateX(-50%) scale(1.5);
+  transform: translateX(-50%) scale(2);
 }
 
 .arrow-up {

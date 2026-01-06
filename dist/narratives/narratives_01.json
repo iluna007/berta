@@ -109,14 +109,13 @@
       "description": ["Según un censo de 2013, al menos el 94.7 % de las personas que vivían en la aldea de Río Blanco se identificaban como personas lencas, muchas de ellas organizadas en el Consejo Cívico de Organizaciones Populares e Indígenas de Honduras (COPINH).",
         "La Ley de Propiedad de Honduras establece la obligación del Estado hondureño de reconocer como propiedades comunales las tierras que históricamente han ocupado las comunidades indígenas y afrohondureñas. Sin embargo, desde 2013 no se ha otorgado ni un solo título de propiedad colectiva. Esta claudicación de sus obligaciones ha debilitado a las comunidades, en especial en su lucha contra proyectos de inversión que buscan despojarlas de sus tierras ancestrales. Aun así, la comunidad lenca de Río Blanco ha resistido por siglos los intentos de captura y ocupación, una crisis que se ha profundizado desde principios del siglo XXI."
       ],
-   
       "location": {
-        "center": [-88.1755, 14.6574],
-        "zoom": 12.5,
-        "pitch": 75,
-        "bearing": 75
-      
+        "center": [-88.17555253907234, 14.657499179720105],
+        "zoom": 7,
+        "pitch": 5,
+        "bearing": 0
       },
+
 
       "cameraMode": "flat",
       "transitionDuration": 2000,
@@ -124,16 +123,16 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-de-rio-blanco","narrative1_censo_territorios","rio-gualcarque"],
+      "geojsonOn": ["aldea-de-rio-blanco","Territorios indigenas","rio-gualcarque"],
 
       "layerStyles": {
         
         "aldea-de-rio-blanco": {
           "fill": true,
           "fillColor": "#000000",
-          "fillOpacity": 0.3
+          "fillOpacity": 1
         },
-        "narrative1_censo_territorios": {
+        "Territorios indigenas": {
           "fill": true,
           "fillColor": "#eb443e",
           "circleRadius": 1,

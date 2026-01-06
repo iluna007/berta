@@ -133,15 +133,15 @@
     "color": "#6AC483"
   },
 
-
   {
-    "id": "narrative1_censo_territorios",
+    "id": "Territorios indigenas",
     "group": "Narrativa1",
     "subgroup": "NR-2",
     "label": "Censo de Territorios Indígenas",
-    "url": "public/narratives/Narrativa 1/1.2-1.geojson",
+    "url": "public/narratives/Narrativa 1/Territorios indigenas.geojson",
     "color": "#eb443e"
   },
+
   {
   "id": "punto-compras-tierras-rio-blanco",
   "type": "narrative-point",

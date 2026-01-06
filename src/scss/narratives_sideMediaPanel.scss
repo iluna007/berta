@@ -13,7 +13,7 @@
   height: 100vh;
 
   /* ANCHO BASE (igual que antes para que no desaparezca) */
-  width: 1200px;
+  width: 900px;
 
   /* PERMITE EXPANDIRSE SI LA IMAGEN LO NECESITA */
   max-width: 100vw;
@@ -22,7 +22,7 @@
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
 
-  padding: 20px;
+  padding: 10px;
 
   z-index: 20; /* siempre por encima del mapa */
   overflow: hidden;
