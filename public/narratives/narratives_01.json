@@ -28,7 +28,8 @@
           "type": "image",
           "src": "/narratives/Narrativa 1/1.0.jpg",
           "position": "inside",
-          "opacity": 1
+          "opacity": 1,
+          "footer": "Fig 1. Reacción de los medios ante la destitución de Zelaya. (La Tribuna, 29 de junio, 2009). Fig 2. Encabezado ante golpe de Estado, (Prensa Libre, 29 de junio, 2009).Fig 3. Artículo que promueve la convención Honduras Is Open for Business. (La Prensa, 10 de abril, 2011). Fig 4. “Honduras Is Open for Buitres”. Fotografía de las protestas realizadas el 5 de mayo de 2011 en oposición a la convocatoria de inversión internacional de la convención HOB. (Fotografía publicada en: Protestas Honduras is Open for Business by @gatitog en Slideshare)."
         }
       ],
 
@@ -89,14 +90,10 @@
           "type": "image",
           "src": "/narratives/Narrativa 1/1.1-1.jpeg",
           "position": "inside",
-          "opacity": 1
-        },
-        {
-          "type": "image",
-          "src": "/narratives/Narrativa 1/1.1-2.jpeg",
-          "position": "inside",
-          "opacity": 1
+          "opacity": 1,
+          "footer": "Foto: Protesta de COPINH contra conseciones, ('Estudiante de la UNAH a Río Blanco', COPINH, 12/11/2019)."
         }
+        
       ],
 
       "markers": [],

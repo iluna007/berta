@@ -1,26 +1,77 @@
-/* src/scss/narrativeMedia.scss  */
+/* =========================================================
+   Narrative Media
+   ========================================================= */
 
 .narrative-media-container {
-  width: 100%;
-  margin-top: 10px;
-  opacity: 1 !important;     /* ← AHORA SE VEN */
-  pointer-events: auto;
+  margin-top: 20px;
 }
 
+/* Imágenes */
 .narrative-image {
   width: 100%;
-  border-radius: 8px;
+  height: auto;
   display: block;
 }
 
+/* Videos */
 .narrative-video {
   width: 100%;
-  border-radius: 8px;
+  height: auto;
   display: block;
 }
 
+/* Caption existente */
 .media-caption {
-  font-size: 0.85rem;
-  opacity: 0.8;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.75);
   margin-top: 6px;
+}
+
+/* =========================================================
+   🔥 NUEVO: Wrapper para hover contextual
+   ========================================================= */
+
+.media-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================================================
+   🔥 Footer oculto por defecto
+   ========================================================= */
+
+.media-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 10px 14px;
+
+  font-size: 0.75rem;
+  line-height: 1.4;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* =========================================================
+   🔥 Mostrar footer SOLO en hover
+   ========================================================= */
+
+.media-wrapper:hover .media-footer {
+  opacity: 1;
+  transform: translateY(0);
 }
