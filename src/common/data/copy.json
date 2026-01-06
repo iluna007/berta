@@ -197,7 +197,7 @@
       "filters": "Filtros",
       "filters_label": "Filtros",
       "explore_by_filter__title": "Explore by filter",
-      "explore_by_filter__description": "'Filtros' Consulte los tipos de incidentes. Seleccione varios filtros para introducir códigos de colores.<br><br><span class='hint'>If no filters are selected, all datapoints are displayed.</span>",
+      "explore_by_filter__description": "'Filtros' Consulte los tipos de incidentes. Seleccione varios filtros para introducir códigos de colores.<br><br><span class='hint'>Si no se selecciona ningún filtro, se muestran todos los puntos de datos.</span>",
       "categories": "Categories",
       "categories_label": "Categories",
       "explore_by_category__title": "Explore events by category",
