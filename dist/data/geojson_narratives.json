@@ -13,7 +13,7 @@
     "group": "Capas Base",
     "label": "Límites políticos",
     "url": "geojson/Capas Base/Límites Políticos/SP.geojson",
-    "color": "#FFFFFF"
+    "color": "#807D7E"
   },
   {
     "id": "territorio-nacional-de-honduras",
@@ -48,7 +48,7 @@
     "color": "#eb443e"
   },
 
-   {
+  {
     "id": "Proyecto Agua Zarca 2011",
     "group": "Narrativa1",
     "label": "Proyecto Agua Zarca 2011",
@@ -56,6 +56,13 @@
     "color": "#eb443e"
   },
 
+  {
+    "id": "Asesinatos",
+    "group": "Narrativa1",
+    "label": "Asesinatos",
+    "url": "public/narratives/Narrativa 1/Asesinatos.geojson",
+    "color": "#000000"
+  },
   {
   "id": "punto-compras-tierras-rio-blanco",
   "type": "narrative-point",

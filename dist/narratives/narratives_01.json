@@ -381,10 +381,14 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["departamentos-de-honduras","rio-gualcarque","Proyecto Agua Zarca 2011"],
+      "geojsonOn": ["Hidroelectricas","departamentos-de-honduras","rio-gualcarque","Asesinatos"],
 
       "layerStyles": {
-             
+        "Hidroelectricas": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "circleRadius": 0.1
+        },     
         "departamentos-de-honduras": {
           "fill": false,
           "lineColor": "#000000",
@@ -396,10 +400,12 @@
           "lineWidth": 4
         },
         
-        "Proyecto Agua Zarca 2011": { 
-          "lineColor": "#eb443e",
-          "lineWidth": 4
+        "Asesinatos": { 
+          "fill": true,
+          "fillColor": "#000000",
+          "circleRadius": 0.1
         }
+
       },
 
       "sideMedia": false,

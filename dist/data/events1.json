@@ -1,0 +1,521 @@
+[
+  {
+    "id": "A1CPDB01",
+    "description": "Un sicario reconocido en la zona pagado por la empresa para asesinar a Berta Cáceres, Tomas Gómez, y Aureliano Molina ha llegado a la toma en Rio Blanco y la casa donde quedan Berta, Tomas, y Aureliano cuando visitan Rio Blanco, buscado a Berta, Tomas, y Aureliano. El sicario Doroteo Benítez que ha sido pagado por DESA para andarnos buscando, ha llegado buscarnos a la toma, el abiertamente dice a la comunidad que nos andan buscando para matar, a nosotros tres. Nos ha perseguido... El siempre cuando estamos allí, llega allí a la casa donde quedamos. Él ha macheteado la barandilla. Queda circulando allí cuando nosotros estamos.\nVarias veces hombres con pasamontañas han llegado en la noche a la casa donde se hospedan Aureliano, Tomas, Berta cuando visitan a Rio Blanco para buscarles pero no estaban. Han llegado alrededor de la casa y también al corredor. También, han llegado alrededor de la casa y en el corredor. “Han dicho a la comunidad que andan buscando a la casa para matarnos.",
+    "date": "07/20/2013",
+    "location": "Toma de El Roble",
+    "latitude": "14.663333",
+    "longitude": "-88.177778",
+    "graphic": "false",
+    "victims": [
+      "Claudia"
+    ],
+    "attackers": [
+      "Doroteo Benítez",
+      "Seguridad Blue Energy"
+    ],
+    "sources": [
+      "src2"
+    ],
+    "associations": [
+      "asc1"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A1BCSB01",
+    "description": "Hostigamiento por parte de guardias armados de la empresa Blue Energy que la amenazaron cuando se encontraban con la comunidad haciendo un protesta",
+    "date": "12/30/2014",
+    "location": "Planta Hidroeléctrica Canjel",
+    "latitude": "14.683039",
+    "longitude": "-88.119892",
+    "graphic": "false",
+    "victims": [
+      "Claudia",
+      "Berta"
+    ],
+    "attackers": [
+      "Estado"
+    ],
+    "sources": [
+      "src3"
+    ],
+    "associations": [
+      "asc1"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A1BCD01",
+    "description": "Berta recibió de nuevo un mensaje de texto en que se le aconsejaba tener cuidado a su paso por Agua Caliente\nEl sábado, 24 de enero de 2015, a las 8:59 p.m., Berta recibió un mensaje de ese mismo número: \n\nOla.buenas.noches,tenga.mucho.cuidado.cuando.pase.por.agua.caliente,.yamame.mañana.para.explicarle,",
+    "date": "01/24/2015",
+    "location": "Agua Caliente",
+    "latitude": "14.68831",
+    "longitude": "-88.13494",
+    "graphic": "false",
+    "victims": [
+      "Victima4",
+      "Victima5"
+    ],
+    "attackers": [
+      "Doroteo Benítez"
+    ],
+    "sources": [
+      "src3"
+    ],
+    "associations": [
+      "asc1"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A1BCD02",
+    "description": "Berta llamó de nuevo al número desconocido que le habían proporcionado para obtener mayor información. El informante le indicó que a su paso por Agua Caliente, debía de transitar con su vehículo sin detenerse dado que habría gente afín a la empresa Blue Energy para impedir el paso de la beneficiaria y los demás miembros del COPINH\nEl 26 de enero, Berta hablo con este hombre, le dijo que tenían una trampa para Berta y que si ella iba a pasar por Agua Caliente, lo cual está en el camino hacia Rio Blanco, y que no detuviera el carro por que la empresa que está en el Río Cangel estaba pagando gente para que la detuvieran en Agua Caliente, y que no detuviera el carro porque ahí estaba los informantes y “uno de ellos es un tipo malo y peligroso.",
+    "date": "01/26/2015",
+    "location": "Agua Caliente",
+    "latitude": "14.68831",
+    "longitude": "-88.13494",
+    "graphic": "false",
+    "victims": [
+      "Claudia",
+      "Victima3",
+      "Victima4"
+    ],
+    "attackers": [
+      "Estado",
+      "Sicarios",
+      "Victima5"
+    ],
+    "sources": [
+      "src15"
+    ],
+    "associations": [
+      "asc1"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A2BCD01",
+    "description": "Se produjo el robo de la computadora propiedad del COPINH del domicilio de la madre de Berta, lugar en que la había dejado mientras se encontraba de viaje en Tegucigalpa. Esta contenía gran cantidad de información de las actividades de defensa de los derechos humanos ejercidas por el COPINH y sus miembros.",
+    "date": "11/04/2015",
+    "location": "Casa de Austra Bertha Flóres López",
+    "latitude": "14.748506",
+    "longitude": "-88.192364",
+    "graphic": "false",
+    "victims": [
+      "Berta"
+    ],
+    "attackers": [
+      "Doroteo Benítez"
+    ],
+    "sources": [
+      "src3"
+    ],
+    "associations": [
+      "asc2"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A2BCD02",
+    "description": "El 6 de noviembre de 2015 cuando Berta Cáceres se encontraba manejando el vehículo del COPINH hacia la comunidad de La Tejera, a la altura del desvío hacia El Roble, dispararon en  tres ocasiones en su contra. Ella no pudo identificar la procedencia de los disparos, siguió manejando y se alejó del lugar",
+    "date": "11/06/2015",
+    "location": "Desvío hacia El Roble, camino hacia La Tejera",
+    "latitude": "14.6624476",
+    "longitude": "-88.1699240",
+    "graphic": "false",
+    "victims": [
+      "Victima4",
+      "Victima3"
+    ],
+    "attackers": [
+      "Seguridad Blue Energy"
+    ],
+    "sources": [
+      "src4"
+    ],
+    "associations": [
+      "asc2"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A2BCE01",
+    "description": "Días después, el 30 de noviembre de 2015, integrantes del COPINH –incluyendo su  lideresa, Berta Cáceres– se dirigían en dos autobuses hacia el municipio de San Francisco de Ojuera . . .  les esperaban varios trabajadores municipales con machetes y armas cortas, que comenzaron a lanzarles piedras, además les amenazaron diciendo entre otras cosas, que “esta es la vieja puta que hay que matar” –en clara referencia a Berta Cáceres–, y les quitaron las pancartas que portaban. Todo lo anterior, tolerado por agentes policiales y militares que se encontraban en el lugar. Según el relato de una de las integrantes del COPINH, uno de los hombres armados estuvo cerca de apuñalar en el tórax a la señora Cáceres",
+    "date": "11/30/2015",
+    "location": "Municipio de San Francisco de Ojuera",
+    "latitude": "14.74936",
+    "longitude": "-88.19135",
+    "graphic": "false",
+    "victims": [
+      "Victima5",
+      "Berta"
+    ],
+    "attackers": [
+      "Doroteo Benítez"
+    ],
+    "sources": [
+      "src5"
+    ],
+    "associations": [
+      "asc2"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A1BCD03",
+    "description": "A few months before Berta was killed, some people went to Austra Bertha's home, tricked the housekeeper into letting them in, and stole some things of Berta's, including her computer",
+    "date": "01/01/2016",
+    "location": "Casa de Austra Bertha Flóres López",
+    "latitude": "14.748506",
+    "longitude": "-88.192364",
+    "graphic": "false",
+    "victims": [
+      "Berta",
+      "Claudia"
+    ],
+    "attackers": [
+      "Doroteo Benítez"
+    ],
+    "sources": [
+      "src6"
+    ],
+    "associations": [
+      "asc1",
+      "asc2",
+      "asc4"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A1ABS01",
+    "description": "La Sra. Austra Berta vio a los sicarrios que mataron a Berta en frente de su casa dias antes de que mataron a Berta. Berta lived with her mother until shortly before her murder when she moved out because she said she knew she was going to be killed",
+    "date": "02/01/2016",
+    "location": "Casa de Austra Bertha Flóres López",
+    "latitude": "14.748506",
+    "longitude": "-88.192364",
+    "graphic": "false",
+    "victims": [
+      "Claudia",
+      "Victima4"
+    ],
+    "attackers": [
+      "Doroteo Benítez"
+    ],
+    "sources": [
+      "src7"
+    ],
+    "associations": [
+      "asc1"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A2BCE02",
+    "description": "Berta y otros integrantes de COPINH fueron perseguidos por hombres armados mientras iban manejando de salida de Rio Blanco después de una visita al pueblo Lenca en resistencia a la represa. Los hombres armados persiguieron al vehículo de Berta, quien logró huir hasta llegar a un pueblo.",
+    "date": "02/16/2016",
+    "location": "Río Blanco",
+    "latitude": "14.62693",
+    "longitude": "-88.16748",
+    "graphic": "false",
+    "victims": [
+      "Victima4",
+      "Berta"
+    ],
+    "attackers": [
+      "Doroteo Benítez",
+      "Seguridad Blue Energy"
+    ],
+    "sources": [
+      "src3"
+    ],
+    "associations": [
+      "asc2"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A2CPS01",
+    "description": "Mientras policías y militares desalojaban a 50 familias de COPINH de sus casas en Jarcia, Guinse, Intibucá, un elemento de la DGIC hostigó a Berta y le dijo que las fuerzas de seguridad no respondían por ella si pasaba algo.",
+    "date": "02/25/2016",
+    "location": "Guise",
+    "latitude": "14.3010333",
+    "longitude": "-88.0720211",
+    "graphic": "false",
+    "victims": [
+      "Victima4",
+      "Victima5"
+    ],
+    "attackers": [
+      "Doroteo Benítez",
+      "Seguridad Blue Energy"
+    ],
+    "sources": [
+      "src3"
+    ],
+    "associations": [
+      "asc2"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A1ABD01",
+    "description": "El día de ayer, 3 de marzo, alrededor de la 1:00 a.m., personas desconocidas forzaron la entrada de la vivienda de la beneficiaria, ubicada en la colonia El Líbano, La Esperanza, Intibucá, accedieron a su interior y le quitaron la vida. El asesinato de Berta Cáceres se da apenas días después de que hubiere denunciado el desalojo violento de 50 familias en La Jarcia, Guise, Intibucá\" Tentativa de Homicidio de Gustavo Castro.",
+    "date": "03/03/2016",
+    "location": "Colonia El Líbano",
+    "latitude": "14.287161",
+    "longitude": "-88.184040",
+    "graphic": "false",
+    "victims": [
+      "Berta"
+    ],
+    "attackers": [
+      "Doroteo Benítez",
+      "Seguridad Blue Energy"
+    ],
+    "sources": [
+      "src5"
+    ],
+    "associations": [
+      "asc2"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A1LZD01",
+    "description": "Un hombre desconocido le tomo fotos a la casa de la madre de Bertha Caceres. Cuando Roberto Caceres Flores (hermano) lo reporto a la policia, negaron recibir la denuncia",
+    "date": "03/22/2016",
+    "location": "Casa de Austra Bertha Flóres López",
+    "latitude": "14.748506",
+    "longitude": "-88.192364",
+    "graphic": "false",
+    "victims": [
+      "Victima4",
+      "Victima3",
+      "Victima5"
+    ],
+    "attackers": [
+      "Doroteo Benítez"
+    ],
+    "sources": [
+      "src8"
+    ],
+    "associations": [
+      "asc1"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A1CPE01",
+    "description": "El día 28 de abril de 2016, sobre las 5:20 p.m., el beneficiario Camilo Bermúdez, integrante de la coordinación del COPINH, junto con la beneficiaria Laura Zúñiga Cáceres, hija de Berta Cáceres, y una acompañante internacional de origen italiano, fueron a recargar combustible en la Gasolinera Uno, ubicada en la salida de la ciudad de Tegucigalpa. En el lugar, se percataron que un hombre de estatura media y tez trigueña les observaba de forma constante e intimidante mientras caminaba alrededor de ellos, además les tomó fotos con su celular, al tiempo que tecleaba en el mismo.  Luego de diez minutos, las personas beneficiarias y la acompañante italiana, abandonaron el lugar y pudieron observar que el hombre sospechoso comenzaba a hacer llamadas desde su teléfono celular",
+    "date": "04/28/2016",
+    "location": "Tegucigalpa",
+    "latitude": "14.10583",
+    "longitude": "-87.20472",
+    "graphic": "false",
+    "victims": [
+      "Berta",
+      "Claudia",
+      "Victima3",
+      "Victima4",
+      "Victima5"
+    ],
+    "attackers": [
+      "Doroteo Benítez",
+      "Sicarios"
+    ],
+    "sources": [
+      "src9"
+    ],
+    "associations": [
+      "asc1"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A2CPD01",
+    "description": "The Caceres (berta's?) house was broken into and COPINH materials and electronics were stolen. State agents would not provide Camilo Bermúdez y Berta Zúniga (reps of Caceres family) with documentation of the theft/break-in or clarity on what was taken. The house was supposed to be watched by security forces 24 hrs.",
+    "date": "08/04/2016",
+    "location": "Casa de Austra Bertha Flóres López",
+    "latitude": "14.748506",
+    "longitude": "-88.192364",
+    "graphic": "false",
+    "victims": [
+      "Berta",
+      "Claudia",
+      "Victima3",
+      "Victima4",
+      "Victima5"
+    ],
+    "attackers": [
+      "Sicarios"
+    ],
+    "sources": [
+      "src10"
+    ],
+    "associations": [
+      "asc1",
+      "asc2",
+      "asc3"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A1FCD01",
+    "description": " A man cornered Arnold Guifarro in a bar bathroom, pointed a gun at his throat, and threatened to kill him. Guifarro had been comemorating the  3rd anniversary of an assasination of indigenous people in the aldea Locomapa. By this point the state had still not provided any security measures for him even after being advised that the legal team was unprotected.",
+    "date": "08/27/2016",
+    "location": "Aldea Locomapa",
+    "latitude": "15.31667",
+    "longitude": "-87.28333",
+    "graphic": "false",
+    "victims": [
+      "Claudia",
+      "Victima3",
+      "Victima4",
+      "Berta"
+    ],
+    "attackers": [
+      "Sicarios",
+      "Victima5",
+      "Doroteo Benítez",
+      "Estado",
+      "Seguridad Blue Energy"
+    ],
+    "sources": [
+      "src11"
+    ],
+    "associations": [
+      "asc2"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A1OZD01",
+    "description": "Observaron un carro hilux doble cabina, color negro, sin placas, carro nuevo estacionado frente a la Casa de sanación en dirección hacia la habitación de Berta, horarios de 5:30 a 6:20 pm, incidente recurrente en esos mismos horarios. ",
+    "date": "07/18/2022",
+    "location": "Casa de Sanación y Justicia de las Mujeres del COPINH",
+    "latitude": "14.3133086778",
+    "longitude": "-88.1796978286",
+    "graphic": "false",
+    "victims": [
+      "Berta",
+      "Claudia",
+      "Victima3",
+      "Victima4"
+    ],
+    "attackers": [
+      "Sicarios",
+      "Victima5",
+      "Doroteo Benítez",
+      "Estado",
+      "Seguridad Blue Energy"
+    ],
+    "sources": [
+      "src12"
+    ],
+    "associations": [
+      "asc1",
+      "asc2"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A1OZD02",
+    "description": "Olivia was followed and surveilled by 5 men while on embassy duties around the time the arrest warrant for Daniel Atala was made public",
+    "date": "12/07/2023",
+    "location": "Casa de Austra Bertha Flóres López",
+    "latitude": "14.748506",
+    "longitude": "-88.192364",
+    "graphic": "false",
+    "victims": [
+      "Victima5",
+      "Victima4",
+      "Victima3"
+    ],
+    "attackers": [
+      "Sicarios",
+      "Victima5",
+      "Doroteo Benítez",
+      "Estado",
+      "Seguridad Blue Energy"
+    ],
+    "sources": [
+      "src13"
+    ],
+    "associations": [
+      "asc1"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A1OZD03",
+    "description": "Olivia Zuniga fue objecto de seguimiento por un Honda CRV, color beige, con vidrios polarizados, sin placas y con la antena torcida. La siguieron por varios dias en su rutina, en la zona de su residencia, en casa de su abuela, y en la ciudad de Tegucigalpa.",
+    "date": "01/09/2025",
+    "location": "Tegucigalpa",
+    "latitude": "14.10583",
+    "longitude": "-87.20472",
+    "graphic": "false",
+    "victims": [
+      "Berta"
+    ],
+    "attackers": [
+      "Sicarios",
+      "Victima5",
+      "Doroteo Benítez",
+      "Estado",
+      "Seguridad Blue Energy"
+    ],
+    "sources": [
+      "src14"
+    ],
+    "associations": [
+      "asc1"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A1OZD04",
+    "description": "Olivia Zuniga fue objecto de seguimiento por un Honda CRV, color beige, con vidrios polarizados, sin placas y con la antena torcida. La siguieron por varios dias en su rutina, en la zona de su residencia, en casa de su abuela, y en la ciudad de Tegucigalpa.",
+    "date": "01/09/2025",
+    "location": "Casa de Austra Bertha Flóres López",
+    "latitude": "14.748506",
+    "longitude": "-88.192364",
+    "graphic": "false",
+    "victims": [
+      "Berta",
+      "Claudia"
+    ],
+    "attackers": [
+      "Sicarios"
+    ],
+    "sources": [
+      "src14"
+    ],
+    "associations": [
+      "asc1"
+    ],
+    "time": "00:00"
+  },
+  {
+    "id": "A1OZD05",
+    "description": "El mismo vehículo le dio seguimiento a la rutina de Olivia Zuniga cuando se desplazaba por Tegucigalpa y en las instalaciones de la Secretaria de Relaciones Exteriores.",
+    "date": "01/21/2025",
+    "location": "Cancillería de Relaciones Exteriores",
+    "latitude": "14.10382748081195",
+    "longitude": "-87.20487942784219",
+    "graphic": "false",
+    "victims": [
+      "Victima5"
+    ],
+    "attackers": [
+      "Sicarios"
+    ],
+    "sources": [
+      "src14"
+    ],
+    "associations": [
+      "asc1"
+    ],
+    "time": "00:00"
+  }
+]

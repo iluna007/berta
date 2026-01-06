@@ -1,52 +1,102 @@
 [
   {
-    "id": "asc6",
-    "title": "Individuales",
+    "id": "asc1",
+    "title": "Daños Individuales",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
-      "Daños Individuales y Colectivos",
+      "Daños reportados por el GIEI",
+      "Individuales"
+    ]
+  },
+  {
+    "id": "asc2",
+    "title": "Daños Colectivos a Río Blanco",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Daños reportados por el GIEI",
+      "Colectivos a Río Blanco"
+    ]
+  },
+  {
+    "id": "asc3",
+    "title": "Daño al territorio y medio ambiente",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Daños reportados por el GIEI",
+      "Al territorio  medio ambiente"
+    ]
+  },
+  {
+    "id": "asc4",
+    "title": "Daños colectivos a COPINH",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Daños reportados por el GIEI",
+      "Colectivos a COPINH"
+    ]
+  },
+  {
+    "id": "asc5",
+    "title": "Movimientos sociales y la sociedad hondureña",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Daños reportados por el GIEI",
+      "Movimientos sociales y la sociedad hondureña"
+    ]
+  },
+  {
+    "id": "asc6",
+    "title": "Daños Individuales",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Daños reportados por COPINH",
       "Individuales"
     ]
   },
   {
     "id": "asc7",
-    "title": "Colectivos a Río Blanco",
+    "title": "Daños Colectivos a Río Blanco",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
-      "Daños Individuales y Colectivos",
+      "Daños reportados por COPINH",
       "Colectivos a Río Blanco"
     ]
   },
   {
     "id": "asc8",
-    "title": "Al territorio y medio ambiente",
+    "title": "Daño al territorio y medio ambiente",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
-      "Daños Individuales y Colectivos",
-      "Al territorio y medio ambiente"
+      "Daños reportados por COPINH",
+      "Al territorio  medio ambiente"
     ]
   },
   {
     "id": "asc9",
-    "title": "Colectivos a COPINH",
+    "title": "Daños colectivos a COPINH",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
-      "Daños Individuales y Colectivos",
+      "Daños reportados por COPINH",
       "Colectivos a COPINH"
     ]
   },
   {
     "id": "asc10",
-    "title": "A movimientos sociales y sociedad hondureña",
+    "title": "Movimientos sociales y la sociedad hondureña",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
-      "Daños Individuales y Colectivos",
-      "A movimientos sociales y sociedad hondureñas"
+      "Daños reportados por COPINH",
+      "Movimientos sociales y la sociedad hondureña"
     ]
   },
   {
@@ -55,7 +105,7 @@
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
-      "Daños Individuales y Colectivos",
+      "Daños reportados en fuentes abiertas",
       "Asesinatos de Defensores del territorio"
     ]
   },
@@ -180,63 +230,43 @@
     ]
   },
   {
-    "id": "asc 36",
-    "title": "Incursiones contra Berta",
-    "mode": "FILTER",
-    "desc": "",
-    "filter_paths": [
-      "Comunicaciones",
-      "Incursiones contra Berta"
-    ]
-  },
-  {
     "id": "asc 24",
-    "title": "Capitalización y financiamiento",
+    "title": "Crédito HND",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Transacciones",
-      "Capitalización y financiamiento"
+      "Crédito HNL"
     ]
   },
   {
     "id": "asc 25",
-    "title": "Contratistas y obra",
+    "title": "Débito HND",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Transacciones",
-      "Contratistas y obra"
+      "Débito HNL"
     ]
   },
   {
     "id": "asc 26",
-    "title": "Costos financieros y comisiones",
+    "title": "Crédito USD",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Transacciones",
-      "Costos financieros y comisiones"
+      "Crédito USD"
     ]
   },
   {
     "id": "asc 27",
-    "title": "Servicios profesionales",
+    "title": "Débito USD",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Transacciones",
-      "Servicios profesionales"
-    ]
-  },
-  {
-    "id": "asc1",
-    "title": "Transacciones con irregularidades",
-    "mode": "FILTER",
-    "desc": "",
-    "filter_paths": [
-      "Transacciones",
-      "Transacciones con irregularidades"
+      "Débito USD"
     ]
   },
   {

@@ -87,7 +87,11 @@ export default function NarrativesMap({
       return null;
     }
 
-    const baseColor = def.color ?? "#ff00ff";
+    const baseColor =
+      styleOverrides.fillColor ??
+      styleOverrides.lineColor ??
+      styleOverrides.pointColor ??
+      "#ff00ff";
     const label = def.label ?? layerId;
 
     // ======================================================

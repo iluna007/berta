@@ -1,52 +1,102 @@
 [
   {
-    "id": "asc6",
-    "title": "Individuales",
+    "id": "asc1",
+    "title": "Daños Individuales",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
-      "Daños Individuales y Colectivos",
-      "Individuales"
+      "Daños reportados por el GIEI",
+      "Daños Individuales"
+    ]
+  },
+  {
+    "id": "asc2",
+    "title": "Daños Colectivos a Río Blanco",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Daños reportados por el GIEI",
+      "Daños Colectivos a Río Blanco"
+    ]
+  },
+  {
+    "id": "asc3",
+    "title": "Daño al territorio y medio ambiente",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Daños reportados por el GIEI",
+      "Daño al territorio y medio ambiente"
+    ]
+  },
+  {
+    "id": "asc4",
+    "title": "Daños colectivos a COPINH",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Daños reportados por el GIEI",
+      "Daños colectivos a COPINH"
+    ]
+  },
+  {
+    "id": "asc5",
+    "title": "Daños colectivos a los movimientos sociales y la sociedad hondurela",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Daños reportados por el GIEI",
+      "Colectivos a los movimientos sociales y la sociedad hondureñas"
+    ]
+  },
+  {
+    "id": "asc6",
+    "title": "Daños Individuales",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Daños reportados por COPINH",
+      "Daños Individuales"
     ]
   },
   {
     "id": "asc7",
-    "title": "Colectivos a Río Blanco",
+    "title": "Daños Colectivos a Río Blanco",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
-      "Daños Individuales y Colectivos",
-      "Colectivos a Río Blanco"
+      "Daños reportados por COPINH",
+      "Daños Colectivos a Río Blanco"
     ]
   },
   {
     "id": "asc8",
-    "title": "Al territorio y medio ambiente",
+    "title": "Daño al territorio y medio ambiente",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
-      "Daños Individuales y Colectivos",
-      "Al territorio y medio ambiente"
+      "Daños reportados por COPINH",
+      "Daño al territorio y medio ambiente"
     ]
   },
   {
     "id": "asc9",
-    "title": "Colectivos a COPINH",
+    "title": "Daños colectivos a COPINH",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
-      "Daños Individuales y Colectivos",
-      "Colectivos a COPINH"
+      "Daños reportados por COPINH",
+      "Daños colectivos a COPINH"
     ]
   },
   {
     "id": "asc10",
-    "title": "A movimientos sociales y sociedad hondureña",
+    "title": "Daños colectivos a los movimientos sociales y la sociedad hondurela",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
-      "Daños Individuales y Colectivos",
-      "A movimientos sociales y sociedad hondureñas"
+      "Daños reportados por COPINH",
+      "Colectivos a los movimientos sociales y la sociedad hondureñas"
     ]
   },
   {
@@ -55,7 +105,7 @@
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
-      "Daños Individuales y Colectivos",
+      "Daños reportados en fuentes abiertas",
       "Asesinatos de Defensores del territorio"
     ]
   },
@@ -180,33 +230,24 @@
     ]
   },
   {
-    "id": "asc 36",
-    "title": "Incursiones contra Berta",
-    "mode": "FILTER",
-    "desc": "",
-    "filter_paths": [
-      "Comunicaciones",
-      "Incursiones contra Berta"
-    ]
-  },
-  {
     "id": "asc 24",
-    "title": "Capitalización y financiamiento",
+    "title": "Capitalización / equity",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Transacciones",
-      "Capitalización y financiamiento"
+      "Capitalización / equity"
     ]
   },
   {
     "id": "asc 25",
-    "title": "Contratistas y obra",
+    "title": "Contratos, concesiones y sector público",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Transacciones",
-      "Contratistas y obra"
+      "\"Contratos",
+      "concesiones y sector público\""
     ]
   },
   {
@@ -221,22 +262,84 @@
   },
   {
     "id": "asc 27",
-    "title": "Servicios profesionales",
+    "title": "Financiamiento (préstamos, deuda y fondos)",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Transacciones",
-      "Servicios profesionales"
+      "\"Financiamiento (préstamos",
+      "deuda y fondos)\""
     ]
   },
   {
-    "id": "asc1",
-    "title": "Transacciones con irregularidades",
+    "id": "asc 29",
+    "title": "Gastos operativos y administración",
     "mode": "FILTER",
     "desc": "",
     "filter_paths": [
       "Transacciones",
-      "Transacciones con irregularidades"
+      "Gastos operativos y administración"
+    ]
+  },
+  {
+    "id": "asc 30",
+    "title": "Obra, contrastistas y proveedores",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Transacciones",
+      "\"Obra",
+      "contrastistas y proveedores\""
+    ]
+  },
+  {
+    "id": "asc 31",
+    "title": "Otros / sin clasificar",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Transacciones",
+      "Otros / sin clasificar"
+    ]
+  },
+  {
+    "id": "asc 32",
+    "title": "Seguros y garantías",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Transacciones",
+      "Seguros y garantías"
+    ]
+  },
+  {
+    "id": "asc 33",
+    "title": "Servicios profesionales (legal/consultoría)",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Transacciones",
+      "Servicios profesionales (legal/consultoría)"
+    ]
+  },
+  {
+    "id": "asc 34",
+    "title": "Transferencias internas / administración de cuentas",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Transacciones",
+      "Transferencias internas / administración de cuentas"
+    ]
+  },
+  {
+    "id": "asc 35",
+    "title": "Pagos ilícitos",
+    "mode": "FILTER",
+    "desc": "",
+    "filter_paths": [
+      "Transacciones",
+      "Pagos ilícitos"
     ]
   },
   {
