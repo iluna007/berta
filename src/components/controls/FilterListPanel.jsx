@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Checkbox from "../atoms/Checkbox";
 import { marked } from "marked";
 import {
@@ -29,15 +30,29 @@ function FilterListPanel({
   title,
   description,
 }) {
+  // 🔥 NUEVO: estado de nodos abiertos/cerrados
+  const [openNodes, setOpenNodes] = useState({});
+
+  function toggleNode(key) {
+    setOpenNodes((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  }
+
   function createNodeComponent(filter, depth) {
     const [key, children] = filter;
     const pathLeaf = getPathLeaf(key);
+    const hasChildren = Object.keys(children).length > 0;
+
     const matchingKeys = getFiltersToToggle(filter, activeFilters);
     const idxFromColorSet = getFilterIdxFromColorSet(key, coloringSet);
     const assignedColor =
       idxFromColorSet !== -1 && activeFilters.includes(key)
         ? filterColors[idxFromColorSet]
         : "";
+
+    const isOpen = openNodes[key];
 
     const styles = {
       color: assignedColor,
@@ -46,26 +61,46 @@ function FilterListPanel({
 
     return (
       <li
-        key={pathLeaf.replace(/ /g, "_")}
+        key={key}
         className="filter-filter"
         style={{ ...styles }}
       >
-        <Checkbox
-          label={pathLeaf}
-          isActive={activeFilters.includes(key)}
-          onClickCheckbox={(e) => {
-            e.preventDefault();
-            onSelectFilter(key, matchingKeys);
-          }}
-          color={assignedColor}
-        />
-        {Object.keys(children).length > 0 ? (
+        <div style={{ display: "flex", alignItems: "center" }}>
+          {/* ▶ / ▼ TOGGLE */}
+          {hasChildren && (
+            <span
+              onClick={() => toggleNode(key)}
+              style={{
+                cursor: "pointer",
+                width: "16px",
+                display: "inline-block",
+                userSelect: "none",
+              }}
+            >
+              {isOpen ? "▼" : "▶"}
+            </span>
+          )}
+
+          {/* Checkbox */}
+          <Checkbox
+            label={pathLeaf}
+            isActive={activeFilters.includes(key)}
+            onClickCheckbox={(e) => {
+              e.preventDefault();
+              onSelectFilter(key, matchingKeys);
+            }}
+            color={assignedColor}
+          />
+        </div>
+
+        {/* Children */}
+        {hasChildren && isOpen && (
           <ul>
             {Object.entries(children).map((filter) =>
               createNodeComponent(filter, depth + 1)
             )}
           </ul>
-        ) : null}
+        )}
       </li>
     );
   }
@@ -75,9 +110,11 @@ function FilterListPanel({
 
     return (
       <div className="scrolled-area">
-        {Object.entries(aggregatedFilterPaths).map((filter) =>
-          createNodeComponent(filter, 0)
-        )}
+        <ul style={{ paddingLeft: 0 }}>
+          {Object.entries(aggregatedFilterPaths).map((filter) =>
+            createNodeComponent(filter, 0)
+          )}
+        </ul>
       </div>
     );
   }
@@ -87,12 +124,14 @@ function FilterListPanel({
       <div className="sticky-header">
         <h2>{title}</h2>
       </div>
+
       <div
         className="panel-description"
         dangerouslySetInnerHTML={{
           __html: marked(description),
         }}
       />
+
       {renderTree(filters)}
     </div>
   );
