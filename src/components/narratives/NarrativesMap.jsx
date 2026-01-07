@@ -28,14 +28,14 @@ export default function NarrativesMap({
   // Cargar catálogo geojson_narratives.json
   // -----------------------------------------
   useEffect(() => {
-    fetch("/data/geojsonLayers.json")
+    fetch("/data/geojson_narratives.json")
       .then((res) => res.json())
       .then((json) => {
         layersRef.current = json;
-        console.log("📌 geojsonLayers.json cargado");
+        console.log("📌 geojson_narratives.json cargado");
       })
       .catch((err) =>
-        console.error("Error cargando geojsonLayers.json", err)
+        console.error("Error cargando geojson_narratives.json", err)
       );
   }, []);
 

@@ -1,149 +1,149 @@
 [
-   {
+  {
     "id": "limites territoriosales",
-    "url": "public/narratives/Narrativa 0/Límite territorio nacional.geojson",
+    "url": "geojson/Límite territorio nacional.geojson",
     "color": "#FFFFFF"
   },
 
    {
     "id": "Asesinatos",
-    "url": "public/narratives/Narrativa 1/Asesinatos.geojson",
+    "url": "geojson/Asesinatos.geojson",
     "color": "#FFFFFF"
   },
    {
     "id": "Hidroelectricas",
-    "url": "public/narratives/Narrativa 1/Hidroelectricas.geojson",
+    "url": "geojson/Hidroelectricas.geojson",
     "color": "#FFFFFF"
   },
    {
     "id": "Proyecto Agua Zarca 2011",
-    "url": "public/narratives/Narrativa 1/Proyecto Agua Zarca 2011.geojson",
+    "url": "geojson/Proyecto Agua Zarca 2011.geojson",
     "color": "#FFFFFF"
   },
   {
     "id": "Río Gualcarque",
-    "url": "public/narratives/Narrativa 1/Río Gualcarque.geojson",
+    "url": "geojson/Río Gualcarque.geojson",
     "color": "#FFFFFF"
   },
   {
     "id": "Territorios indigenas",
-    "url": "public/narratives/Narrativa 1/Territorios indigenas.geojson",
+    "url": "geojson/Territorios indigenas.geojson",
     "color": "#FFFFFF"
   },
    {
     "id": "Aldea Rio Blanco",
-    "url": "public/narratives/Narrativa 1/Aldea Rio Blanco.geojson",
+    "url": "geojson/Aldea Rio Blanco.geojson",
     "color": "#FFFFFF"
   },
     {
     "id": "Departamentos Honduras",
-    "url": "public/narratives/Narrativa 1/Departamentos Honduras.geojson",
+    "url": "geojson/Departamentos Honduras.geojson",
     "color": "#FFFFFF"
   },
 
   {
     "id": "Poblacion lenca (CRB 2013)",
-    "url": "public/narratives/Narrativa 1/Poblacion lenca (CRB 2013).geojson",
+    "url": "geojson/Poblacion lenca (CRB 2013).geojson",
     "color": "#FFFFFF"
   },
 
   {
     "id": "CA02",
-    "url": "public/narratives/Narrativa 3/CA02.geojson",
+    "url": "geojson/CA02.geojson",
     "color": "#FFFFFF"
   },
   {
     "id": "CA06",
-    "url": "public/narratives/Narrativa 3/CA06.geojson",
+    "url": "geojson/CA06.geojson",
     "color": "#FFFFFF"
   },
   {
     "id": "CA12",
-    "url": "public/narratives/Narrativa 3/CA12.geojson",
+    "url": "geojson/CA12.geojson",
     "color": "#FFFFFF"
   },
   {
     "id": "CA16",
-    "url": "public/narratives/Narrativa 3/CA16.geojson",
+    "url": "geojson/CA16.geojson",
     "color": "#FFFFFF"
   },
   
   {
     "id": "CA25",
-    "url": "public/narratives/Narrativa 3/CA25.geojson",
+    "url": "geojson/CA25.geojson",
     "color": "#FFFFFF"
   },
   {
     "id": "CM11",
-    "url": "public/narratives/Narrativa 3/CM11.geojson",
+    "url": "geojson/CM11.geojson",
     "color": "#FFFFFF"
   },
   {
     "id": "CM14",
-    "url": "public/narratives/Narrativa 3/CM14.geojson",
+    "url": "geojson/CM14.geojson",
     "color": "#FFFFFF"
   },
   {
     "id": "PA11",
-    "url": "public/narratives/Narrativa 3/PA11.geojson",
+    "url": "geojson/PA11.geojson",
     "color": "#FFFFFF"
   },
   {
     "id": "PA14",
-    "url": "public/narratives/Narrativa 3/PA14.geojson",
+    "url": "geojson/PA14.geojson",
     "color": "#FFFFFF"
   },
   
   {
     "id": "PR11",
-    "url": "public/narratives/Narrativa 3/PR11.geojson",
+    "url": "geojson/PR11.geojson",
     "color": "#FFFFFF"
   },
   
   {
     "id": "PR14",
-    "url": "public/narratives/Narrativa 3/PR14.geojson",
+    "url": "geojson/PR14.geojson",
     "color": "#FFFFFF"
   },
 
   
   {
     "id": "RG",
-    "url": "public/narratives/Narrativa 3/RG.geojson",
+    "url": "geojson/RG.geojson",
     "color": "#FFFFFF"
   },
 
   
   {
     "id": "TPA11",
-    "url": "public/narratives/Narrativa 3/TPA11.geojson",
+    "url": "geojson/TPA11.geojson",
     "color": "#FFFFFF"
   },
 
   
   {
     "id": "TPA14",
-    "url": "public/narratives/Narrativa 3/TPA14.geojson",
+    "url": "geojson/TPA14.geojson",
     "color": "#FFFFFF"
   },
   {
     "id": "Daños",
-    "url": "public/narratives/Narrativa 4/Daños.geojson",
+    "url": "geojson/Daños.geojson",
     "color": "#FFFFFF"
   },
    {
     "id": "Comunicaciones",
-    "url": "public/narratives/Narrativa 4/Comunicaciones.geojson",
+    "url": "geojson/Comunicaciones.geojson",
     "color": "#FFFFFF"
   },
   {
     "id": "IAC",
-    "url": "public/narratives/Narrativa 4/IAC.geojson",
+    "url": "geojson/IAC.geojson",
     "color": "#FFFFFF"
   },
   {
     "id": "IBICF",
-    "url": "public/narratives/Narrativa 4/IBICF.geojson",
+    "url": "geojson/IBICF.geojson",
     "color": "#FFFFFF"
   },
 
