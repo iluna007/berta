@@ -1,28 +1,29 @@
 // src/components/narratives/NarrativeMedia.jsx
 import React from "react";
 import PropTypes from "prop-types";
+import "../../scss/narratives_sideMediaPanel.scss";
 import "../../scss/narratives_narrativeMedia.scss";
 
 export default function NarrativeMedia({ chapter }) {
   if (!chapter?.media?.length) return null;
 
-  // Si es un capítulo con sideMedia, NO mostrar media en el panel izquierdo
-  if (chapter.sideMedia) return null;
+  // 🔥 NUEVO: media destinada al scroller
+  const scrollerMedia = chapter.media.filter(
+    (item) => item.target !== "side"
+  );
+
+  if (!scrollerMedia.length) return null;
 
   return (
-    <div className="narrative-media-container">
-      {chapter.media.map((item, idx) => (
-        <div
-          key={`${item.src}-${idx}`}
-          className="media-wrapper"
-          style={{ marginTop: idx === 0 ? 0 : 12 }}
-        >
+    <div className="narrative-media">
+      {scrollerMedia.map((item, idx) => (
+        <div key={`${item.src}-${idx}`} className="media-wrapper">
           {item.type === "image" && (
             <img
               src={item.src}
               className="narrative-image"
-              alt=""
               style={{ opacity: item.opacity ?? 1 }}
+              alt=""
             />
           )}
 
@@ -38,6 +39,7 @@ export default function NarrativeMedia({ chapter }) {
             />
           )}
 
+          {/* 🔥 footer SOLO visible vía hover (ya lo tienes resuelto) */}
           {item.footer && (
             <div className="media-footer">
               {item.footer}
@@ -52,5 +54,3 @@ export default function NarrativeMedia({ chapter }) {
     </div>
   );
 }
-
-NarrativeMedia.propTypes = { chapter: PropTypes.object };

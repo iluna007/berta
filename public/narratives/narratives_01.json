@@ -21,13 +21,13 @@
         
       },
 
-      "sideMedia": true,
 
       "media": [
         {
           "type": "image",
           "src": "/narratives/Narrativa 1/1.0.jpg",
           "position": "inside",
+          "target": "side",
           "opacity": 1,
           "footer": "Fig 1. Reacción de los medios ante la destitución de Zelaya. (La Tribuna, 29 de junio, 2009). Fig 2. Encabezado ante golpe de Estado, (Prensa Libre, 29 de junio, 2009).Fig 3. Artículo que promueve la convención Honduras Is Open for Business. (La Prensa, 10 de abril, 2011). Fig 4. “Honduras Is Open for Buitres”. Fotografía de las protestas realizadas el 5 de mayo de 2011 en oposición a la convocatoria de inversión internacional de la convención HOB. (Fotografía publicada en: Protestas Honduras is Open for Business by @gatitog en Slideshare)."
         }
@@ -60,22 +60,22 @@
       "highlightLayers": ["carreteras-2012"],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-de-rio-blanco","departamentos-de-honduras","rio-gualcarque"],
+      "geojsonOn": ["Aldea Rio Blanco","Departamentos Honduras","Río Gualcarque"],
 
       "layerStyles": {
-        "aldea-de-rio-blanco": {
+        "Aldea Rio Blanco": {
           "fill": true,
           "fillColor": "#eb443e",
           "fillOpacity": 0.3
         },
        
-        "departamentos-de-honduras": {
+        "Departamentos Honduras": {
           "fill": false,
           "lineColor": "#000000",
           "lineWidth": 2,
           "line-dasharray": [2,4]
         },
-        "rio-gualcarque": { 
+        "Río Gualcarque": { 
           "lineColor": "#0077be",
           "lineWidth": 4
         }
@@ -83,13 +83,13 @@
 
       },
 
-      "sideMedia": false,
 
       "media": [
         {
           "type": "image",
           "src": "/narratives/Narrativa 1/1.1-1.jpeg",
           "position": "inside",
+          "target": "scroller",
           "opacity": 1,
           "footer": "Foto: Protesta de COPINH contra conseciones, ('Estudiante de la UNAH a Río Blanco', COPINH, 12/11/2019)."
         }
@@ -123,14 +123,15 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-de-rio-blanco","Territorios indigenas","rio-gualcarque"],
+      "geojsonOn": ["Territorios indigenas","Río Gualcarque","Departamentos Honduras","Poblacion lenca (CRB 2013)"],
 
       "layerStyles": {
         
-        "aldea-de-rio-blanco": {
-          "fill": true,
-          "fillColor": "#000000",
-          "fillOpacity": 1
+         "Departamentos Honduras": {
+          "fill": false,
+          "lineColor": "#000000",
+          "lineWidth": 2,
+          "line-dasharray": [2,4]
         },
         "Territorios indigenas": {
           "fill": true,
@@ -138,14 +139,19 @@
           "circleRadius": 1,
           "circleBlur": 3  
         },
-        "rio-gualcarque": { 
+        "Río Gualcarque": { 
           "lineColor": "#0077be",
           "lineWidth": 4
+        },
+        "Poblacion lenca (CRB 2013)": {
+          "fill": true,
+          "fillColor": "#ffff",
+          "circleRadius": 1,
+          "circleBlur": 3  
         }
         
       },
 
-      "sideMedia": false,
 
       "media": [
   
@@ -187,13 +193,12 @@
         }
       },
 
-      "sideMedia": true,
-
       "media": [
         {
           "type": "image",
           "src": "/narratives/Narrativa 1/1.2-2.jpg",
-          "position": "side",
+          "position": "inside",
+          "target": "side",
           "opacity": 1,
           "footer": "Tabla de concesiones de proyectos de represas hidroeléctricas aprobadas al 2014. (CESPAD, Río Blanco: la reconstrucción histórica de la lucha de la defensa del rio Gualcarque, 2016)."
         }
@@ -226,7 +231,7 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["Hidroelectricas","departamentos-de-honduras","rio-gualcarque"],
+      "geojsonOn": ["Hidroelectricas","Departamentos Honduras","Río Gualcarque"],
 
       "layerStyles": {
         "Hidroelectricas": {
@@ -235,19 +240,18 @@
           "circleRadius": 0.1
         },
        
-        "departamentos-de-honduras": {
+        "Departamentos Honduras": {
           "fill": false,
           "lineColor": "#000000",
           "lineWidth": 2,
           "line-dasharray": [2,4]
         },
-        "rio-gualcarque": { 
+        "Río Gualcarque": { 
           "lineColor": "#0077be",
           "lineWidth": 4
         }
       },
 
-      "sideMedia": false,
 
       "media": [
         
@@ -284,13 +288,12 @@
         
       },
 
-      "sideMedia": true,
-
       "media": [
         {
           "type": "image",
           "src": "/narratives/Narrativa 1/1.4.jpg",
           "position": "inside",
+          "target": "side",
           "opacity": 1
         }
       ],
@@ -323,17 +326,17 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["departamentos-de-honduras","rio-gualcarque","Proyecto Agua Zarca 2011"],
+      "geojsonOn": ["Departamentos Honduras","Río Gualcarque","Proyecto Agua Zarca 2011"],
 
       "layerStyles": {
              
-        "departamentos-de-honduras": {
+        "Departamentos Honduras": {
           "fill": false,
           "lineColor": "#000000",
           "lineWidth": 2,
           "line-dasharray": [2,4]
         },
-        "rio-gualcarque": { 
+        "Río Gualcarque": { 
           "lineColor": "#0077be",
           "lineWidth": 4
         },
@@ -344,13 +347,12 @@
         }
       },
 
-      "sideMedia": false,
 
       "media": [
         {
           "type": "video",
           "src": "/narratives/Narrativa 1/1.5.mp4",
-          "position": "inside",
+          "position": "scroller",
           "opacity": 1,
           "footer": "COPINH, Declacraciones de Berta Cáceres justicia para Tomás García. (Video: Publicado por Luis Díaz Terán @luisdiazteran4001, 8 Diciembre 2015, en YouTube)."
         }
@@ -381,7 +383,7 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["Hidroelectricas","departamentos-de-honduras","rio-gualcarque","Asesinatos"],
+      "geojsonOn": ["Hidroelectricas","Departamentos Honduras","Asesinatos","Territorios indigenas"],
 
       "layerStyles": {
         "Hidroelectricas": {
@@ -389,21 +391,23 @@
           "fillColor": "#eb443e",
           "circleRadius": 0.1
         },     
-        "departamentos-de-honduras": {
+        "Departamentos Honduras": {
           "fill": false,
           "lineColor": "#000000",
           "lineWidth": 2,
           "line-dasharray": [2,4]
         },
-        "rio-gualcarque": { 
-          "lineColor": "#0077be",
-          "lineWidth": 4
-        },
-        
+             
         "Asesinatos": { 
           "fill": true,
           "fillColor": "#000000",
           "circleRadius": 0.1
+        },
+        "Territorios indigenas": {
+          "fill": true,
+          "fillColor": "#ffffff",
+          "circleRadius": 1,
+          "circleBlur": 3  
         }
 
       },

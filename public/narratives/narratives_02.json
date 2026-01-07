@@ -371,15 +371,22 @@
         
       },
 
-      "sideMedia": true,
-
       "media": [
         {
           "type": "image",
           "src": "/narratives/Narrativa 2/2.6.jpeg",
           "position": "inside",
+          "target": "side",
+          "opacity": 1
+        },
+        {
+          "type": "image",
+          "src": "/narratives/Narrativa 2/2.4-2.jpg",
+          "position": "inside",
+          "target": "scroller",
           "opacity": 1
         }
+
       ],
 
       "markers": [],

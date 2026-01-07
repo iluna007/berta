@@ -1,68 +1,54 @@
 [
-
-
-    {
-    "id": "aldea-de-rio-blanco",
-    "group": "Capas Base",
-    "label": "Aldea de Río Blanco",
-    "url": "geojson/Capas Base/Límites Políticos/RB.geojson",
+   {
+    "id": "limites territoriosales",
+    "url": "public/narratives/Narrativa 0/Límite territorio nacional.geojson",
     "color": "#FFFFFF"
-  },
-  {
-    "id": "departamentos-de-honduras",
-    "group": "Capas Base",
-    "label": "Límites políticos",
-    "url": "geojson/Capas Base/Límites Políticos/SP.geojson",
-    "color": "#807D7E"
-  },
-  {
-    "id": "territorio-nacional-de-honduras",
-    "group": "Capas Base",
-    "label": "Territorio Nacional de Hondiras",
-    "url": "geojson/Capas Base/Límites Políticos/TN.geojson",
-    "color": "#807D7E"
-  },
-
-
-  {
-    "id": "rio-gualcarque",
-    "group": "Capas Base",
-    "label": "Río Gualcarque",
-    "url": "geojson/Capas Base/Hidrografía/RG.geojson",
-    "color": "#C2E9F2"
-  },
-    
-  {
-    "id": "Territorios indigenas",
-    "group": "Narrativa1",
-    "label": "Territorios Indígenas",
-    "url": "public/narratives/Narrativa 1/Territorios indigenas.geojson",
-    "color": "#eb443e"
   },
 
    {
-    "id": "Hidroelectricas",
-    "group": "Narrativa1",
-    "label": "Hidroeléctricas",
-    "url": "public/narratives/Narrativa 1/Hidroelectricas.geojson",
-    "color": "#eb443e"
-  },
-
-  {
-    "id": "Proyecto Agua Zarca 2011",
-    "group": "Narrativa1",
-    "label": "Proyecto Agua Zarca 2011",
-    "url": "public/narratives/Narrativa 1/Proyecto Agua Zarca 2011.geojson",
-    "color": "#eb443e"
-  },
-
-  {
     "id": "Asesinatos",
-    "group": "Narrativa1",
-    "label": "Asesinatos",
     "url": "public/narratives/Narrativa 1/Asesinatos.geojson",
-    "color": "#000000"
+    "color": "#FFFFFF"
   },
+   {
+    "id": "Hidroelectricas",
+    "url": "public/narratives/Narrativa 1/Hidroelectricas.geojson",
+    "color": "#FFFFFF"
+  },
+   {
+    "id": "Proyecto Agua Zarca 2011",
+    "url": "public/narratives/Narrativa 1/Proyecto Agua Zarca 2011.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "Río Gualcarque",
+    "url": "public/narratives/Narrativa 1/Río Gualcarque.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "Territorios indigenas",
+    "url": "public/narratives/Narrativa 1/Territorios indigenas.geojson",
+    "color": "#FFFFFF"
+  },
+   {
+    "id": "Aldea Rio Blanco",
+    "url": "public/narratives/Narrativa 1/Aldea Rio Blanco.geojson",
+    "color": "#FFFFFF"
+  },
+    {
+    "id": "Departamentos Honduras",
+    "url": "public/narratives/Narrativa 1/Departamentos Honduras.geojson",
+    "color": "#FFFFFF"
+  },
+
+  {
+    "id": "Poblacion lenca (CRB 2013)",
+    "url": "public/narratives/Narrativa 1/Poblacion lenca (CRB 2013).geojson",
+    "color": "#FFFFFF"
+  },
+
+
+ 
   {
   "id": "punto-compras-tierras-rio-blanco",
   "type": "narrative-point",

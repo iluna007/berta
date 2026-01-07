@@ -15,10 +15,10 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["departamentos-de-honduras"],
+      "geojsonOn": ["limites territoriosales"],
 
       "layerStyles": {
-        "departamentos-de-honduras": {
+        "limites territoriosales": {
           "fill": true,
           "fillColor": "#eb443e",
           "fillOpacity": 0.5 
