@@ -145,9 +145,8 @@
         },
         "Poblacion lenca (CRB 2013)": {
           "fill": true,
-          "fillColor": "#ffff",
-          "circleRadius": 1,
-          "circleBlur": 3  
+          "fillColor": "#ffffff",
+          "circleRadius": 0.05
         }
         
       },
