@@ -2,16 +2,16 @@
   "chapters": [
     {
       "id": "NR-0",
-      "title": "Cómo se administró la impunidad",
-      "description":["Tras el asesinato, se activó un manejo de crisis. Instituciones del Estado, operadores judiciales y vocerías empresariales ordenaron el relato, limitaron el alcance de las pesquisas y protegieron vínculos sensibles. Esta narrativa, «El mecanismo generador de impunidad», explica cómo funcionó ese mecanismo y por qué sigue afectando a las comunidades lencas.",
-      "Tres planos avanzaron en paralelo: decisiones procesales que estrecharon la investigación, comunicaciones y gestiones para encubrir responsabilidades empresariales y estatales, y la continuidad de infraestructuras y reglas que mantuvieron abierto el camino del despojo. Con estos componentes, el caso no cerró; cambió de forma."
-      ],
+      "title": "CÓMO SE ADMINISTRÓ LA IMPUNIDAD",
+      "description":["Tras el asesinato, se activó un plan de gestión de crisis. Instituciones del Estado, operadores judiciales y vocerías empresariales ordenaron el relato, limitaron el alcance de las pesquisas y protegieron vínculos sensibles.",
+      "Una de las primeras estrategias, antes de que la investigación se enfocara en los agentes materiales, fue retratar el asesinato como un crimen pasional —un “lío de faldas”—; seguido de intentos de criminalizar el entorno de Berta Cáceres, mediante la intervención de los teléfonos del COPINH y de sus personas aliadas, así como la detención de Aureliano; también se intentó criminalizar a Gustavo Castro —el único testigo ocular y víctima del mismo ataque— con el fin de impedir que desmintiera la hipótesis del crimen pasional."
+    ],
 
       "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 45,
-        "bearing": -30
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
       },
 
       "cameraMode": "flat",
@@ -20,36 +20,20 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine"],
+      "geojsonOn": [],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.3
-        },
-        "censo-Rio-Blanco-2013": {
-          "pointColor": "#eb443e",
-          "pointRadius": 3
-         
-        },
-        "departamentos-honduras-ine": {
-          "fill": false,
-          "lineColor": "#000000",
-          "lineWidth": 2
-          
-        }
         
       },
-
-      "sideMedia": false,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/intro1.jpeg",
+          "src": "/narratives/Narrativa 6/6.0-1.jpg",
           "position": "inside",
-          "opacity": 1
+          "target": "side",
+          "opacity": 1,
+          "footer":"Mensajes entre Daniel Atala y Sergio Rodríguez el 08/03/2016, sobre una conversación entre Pedro Atala con el Ministro de Seguridad. Presentados durante el dia 13 del juicio contra David Castillo. (@COPINHHONDURAS 11 de mayo de 2021). "
         }
       ],
 
@@ -62,56 +46,38 @@
 
     {
       "id": "NR-1",
-      "title": "Redes de encubrimiento",
-      "description":["Las mismas redes que impulsaron el proyecto se adaptaron para la estrategia de encubrimiento. Vocerías empresariales y autoridades delimitaron el relato público, enfatizando la responsabilidad de ejecutores materiales y omitiendo vínculos de decisión y financiamiento.",
-      "En paralelo, se operó para contener daños reputacionales y blindar contratos. El resultado fue un cerco narrativo y jurídico que redujo el caso a su expresión mínima, mientras que alertas y evidencias sobre coordinación y pagos quedaban en segundo plano. La crisis se administró no para esclarecer, sino para proteger intereses."],
+      "title": "CÓMO SE ADMINISTRÓ LA IMPUNIDAD",
+      "description":["Al no prosperar estas campañas de distracción y criminalización, se planeó una estrategia en tres frentes paralelos: 1) decisiones procesales que redujeron las posibilidades de la investigación, 2) comunicaciones y gestiones para encubrir responsabilidades empresariales y estatales, y 3) la continuidad de infraestructuras y reglas que mantuvieron abierto el camino del despojo.",
+      "El COPINH ha realizado un trabajo de documentación...."
+    ],
 
       "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 45,
-        "bearing": -30
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
       },
 
-      "cameraMode": "tilted",
-      "transitionDuration": 2500,
+      "cameraMode": "flat",
+      "transitionDuration": 2000,
 
-      "highlightLayers": ["carreteras-2012"],
+      "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite","departamentos-honduras-ine","rio-gualcarque","osm-waterways"],
+      "geojsonOn": [],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.3
-        },
-       
-        "departamentos-honduras-ine": {
-          "fill": false,
-          "lineColor": "#000000",
-          "lineWidth": 2
-        },
-        "rio-gualcarque": {
-          "lineColor": "#0077be",
-          "lineWidth": 4
-        },
-        "osm-waterways": {
-          "lineColor": "#5EA4BF",
-          "lineWidth": 2
-        }
-
+        
       },
-
-      "sideMedia": false,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/extractivismo1.jpeg",
+          "src": "/narratives/Narrativa 6/6.1-2.jpg",
           "position": "inside",
-          "opacity": 1
+          "target": "side",
+          "opacity": 1,
+          "footer":""
         }
       ],
 
@@ -121,19 +87,19 @@
 
       "panel": { "width": "420px", "position": "right" }
     },
-
+    
     {
       "id": "NR-2",
-      "title": "Omisiones que fabrican impunidad",
-      "description":["La impunidad se construyó por acción y por omisión. En los expedientes constan líneas de investigación que no se siguieron, pruebas minimizadas y fragmentación de responsabilidades que diluyó el papel de los decisores. Diligencias clave quedaron postergadas; solicitudes de información financiera chocaron con regímenes de secreto; comunicaciones que evidenciaban coordinación se leyeron de forma aislada. Al reducir el foco a operadores materiales, el sistema dejó intactos los eslabones que conectaron decisiones empresariales y estatales con la violencia.",
-      "Estas omisiones no fueron simples errores. Su acumulación configuró un sesgo: investigar lo que confirma un relato restringido y dejar fuera lo que compromete estructuras de poder. Así, la verdad pública se estrechó y el aprendizaje institucional se debilitó, dejando abierta la posibilidad de repetición."
-      ],
+      "title": "REDES DE ENCUBRIMIENTO PARA FABRICAR OMISIONES E IMPUNIDAD",
+      "description":["Las redes que impulsaron el proyecto se adaptaron para encubrirlo. Vocerías empresariales y autoridades controlaron el relato público, culpando a los ejecutores materiales y omitiendo vínculos de decisión y financiamiento. Al centrarse en los operadores materiales, el sistema dejó intactos los eslabones entre las decisiones empresariales y estatales y la violencia. Así, lograron reducir la autoría del asesinato a un puñado de responsables, y alejaron la atención pública de la responsabilidad empresarial de quienes impulsaban Agua Zarca como desarrollo sostenible.",
+      "Estas omisiones no fueron errores. Su acumulación creó un sesgo: investigar lo que confirmara un relato restringido y omitir lo que comprometiera el poder y su visión de Estado. Así, la verdad pública se estrechó, debilitó el aprendizaje institucional y dejó abierta la posibilidad de repetición. La siguiente narrativa, «Impunidad empresarial y resistencia del pueblo lenca», explica la supervivencia de las estructuras de corrupción y coerción en territorio lenca y por qué siguen afectando a estas comunidades."
+    ],
 
       "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 25,
-        "bearing": 60
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
       },
 
       "cameraMode": "flat",
@@ -142,23 +108,20 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite", "osm-waterways" ],
+      "geojsonOn": [],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {},
-        "osm-waterways": {}
+        
       },
-
-      "sideMedia": true,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "re/presentare / Archivo Experimental",
-          "position": "side",
-          "opacity": 1
+          "src": "/narratives/Narrativa 6/6.1.jpg",
+          "position": "inside",
+          "target": "side",
+          "opacity": 1,
+          "footer":"Fig 1. Declaraciones del presidente Oscar Hernández tras la captura de los autores materiales del asesinato de Berta Cáceres, (La Prensa, 02 de mayo de 2016). Fig 2. Nota de prensa sobre la condena de siete autores materiales por el aseisnato de Berta (El Faro, 02 de diciembre, 2019)."
         }
       ],
 
@@ -171,9 +134,9 @@
 
     {
       "id": "NR-3",
-      "title": "Infraestrucuras de despojo que siguen intactas",
-      "description":["Pese a las sentencias contra algunos autores materiales e intelecuales, las infraestructuras que permitieron el crimen del asesinato de Berta, pero también aquellas que despojan tierras de pueblos como los lenca, siguen activas. En Honduras persisten redes empresariales y estatales con capacidad para imponer proyectos, influir en decisiones regulatorias y acceder ilícitamente a fuerzas coercitivas.",
-      "Esta inercia institucional y económica ha impedido una reparación integral para las comunidades lencas y ha mantenido vigentes los incentivos para repetir patrones de violencia. Sin cambios estructurales en leyes e instituciones, la rendición de cuentas se reduce a casos emblemáticos, mientras que las infraestructuras que posibilitan estas violencias permanece."
+      "title": "EL RIESGO DE LA REACTIVACIÓN DE LAS VIOLENCIAS",
+      "description":["Después del asesinato de Berta, los bancos europeos FinnFund y FMO se retiraron y perdonaron la deuda de DESA sin consecuencia alguna, efectivamente regalando millones de dólares a sus accionistas. En 2019, el BCIE vendió la deuda en mora de PHAZ por $500,000 USD a Swiss International Wealth Management (SIWM). Aun cuando resultaba evidente que los fondos provenientes de estos bancos habían sido utilizados en campañas de represión e incluso en un asesinato, a su salida, estos bancos no realizaron ninguna labor de reparación hacia las comunidades afectadas. Detrás de esa operación, la deuda terminó bajo estructuras vinculadas a Guillermo Bueso, dueño de Banco Atlántida. Con la deuda viva y nuevos tenedores, el proyecto no está muerto: puede reactivarse con otras manos y en el mismo territorio en disputa.",
+      ""
     ],
 
       "location": {
@@ -183,33 +146,26 @@
         "bearing": 0
       },
 
-      "cameraMode": "dramatic",
+      "cameraMode": "flat",
       "transitionDuration": 2000,
 
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["limite-territorio-nacional"],
+      "geojsonOn": [],
 
       "layerStyles": {
-        "limite-territorio-nacional": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.5 
- 
-        }
+        
       },
-
-      "sideMedia": true,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "re/presentare / Archivo Experimental",
-          "position": "side",
-          "opacity": 1
+          "src": "/narratives/Narrativa 6/6.2-1.jpg",
+          "position": "inside",
+          "target": "side",
+          "opacity": 1,
+          "footer":""
         }
       ],
 
@@ -222,45 +178,38 @@
 
     {
       "id": "NR-4",
-      "title": "El riesgo de la reactivación de las violencias",
-      "description":["Después del asesinato de Berta, se retiró el banco holandés FMO, y el BCIE vendió la deuda en mora de Agua Zarca por 500,000 dólares a Swiss International Wealth Management (SIWM). Detrás de esa operación, la deuda terminó bajo estructuras ligadas a Guillermo Bueso, dueño de Banco Atlántida. Con la deuda viva y nuevos tenedores, el proyecto no está muerto: puede reactivarse con otras manos y en el mismo territorio en disputa.",
-      "Si eso ocurre, las comunidades lencas volverán a enfrentar presiones conocidas: vigilancia en accesos, pagos para romper plantones, ofertas y amenazas para dividir a la gente, discursos que criminalizan la protesta y presencia de fuerza pública para abrir camino. No es un riesgo abstracto. Es el regreso probable de un dispositivo coercitivo ya documentado, ahora impulsado por una ingeniería financiera que mantiene el proyecto respirando."
+      "title": "EL RIESGO DE LA REACTIVACIÓN DE LAS VIOLENCIAS",
+      "description":["Pese a las sentencias contra algunos autores materiales e intelectuales, persisten las infraestructuras y redes empresariales y estatales con capacidad para imponer proyectos como Agua Zarca. Sin cambios estructurales en leyes e instituciones, la rendición de cuentas se reduce a casos emblemáticos, mientras que las infraestructuras que posibilitan estas violencias permanecen.",
+      ""
     ],
 
-     "location": {
+      "location": {
         "center": [-86.5, 14.8],
         "zoom": 6,
         "pitch": 5,
         "bearing": 0
       },
 
-      "cameraMode": "dramatic",
+      "cameraMode": "flat",
       "transitionDuration": 2000,
 
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["limite-territorio-nacional"],
+      "geojsonOn": [],
 
       "layerStyles": {
-        "limite-territorio-nacional": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.5 
- 
-        }
+        
       },
-
-      "sideMedia": true,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "re/presentare / Archivo Experimental",
-          "position": "side",
-          "opacity": 1
+          "src": "/narratives/Narrativa 6/6.2-2.jpg",
+          "position": "inside",
+          "target": "side",
+          "opacity": 1,
+          "footer":"Nota de prensa sobre la inversión del hondureño Guillermo Bueso, dueño del banco español EBN en el paquete de deuda de Agua Zarca (El Diario, 27 de noviembre, 2024)."
         }
       ],
 
@@ -271,46 +220,40 @@
       "panel": { "width": "420px", "position": "right" }
     },
 
-    
-     {
+    {
       "id": "NR-5",
-      "title": "Resistencia y no repetición",
-      "description":["Frente a esa continuidad, también persiste la red de resistencia. El COPINH, la familia de Berta y muchas otras comunidades exigen verdad, reparación integral y garantías de no repetición. Esta investigación aporta herramientas para nombrar y desmontar el mecanismo de impunidad, con evidencia trazable y estándares de verificación.",
-      "Las narrativas en esta plataforma muestran cómo el proyecto necesitó coerción, cómo el crimen se decidió dentro de una racionalidad empresarial y cómo la crisis se administró para proteger intereses empresariales y estatales. Explora la cartografía interactiva y las otras narrativas por ejes y periodos para relacionar hallazgos y profundizar en la importancia de conocer a fondo el caso del asesinato de Berta Cáceres."
-      ],
-      
+      "title": "RESISTENCIA ANTE INFRAESTRUCTURAS QUE PERSISTEN PARA BUSCAR LA NO REPETICIÓN",
+      "description":["Si se reactiva Agua Zarca, las comunidades lencas volverán a enfrentar presiones conocidas: vigilancia en los accesos, pagos para romper plantones, ofertas y amenazas para dividir a la gente, discursos que criminalizan la protesta y la presencia de la fuerza pública para abrir camino. No es un riesgo abstracto, sino el regreso probable de un dispositivo coercitivo ya documentado, ahora impulsado por una nueva arquitectura financiera. Frente a esa continuidad, también persiste la red de resistencia. El COPINH, la familia de Berta y muchas otras comunidades exigen verdad, reparación integral y garantías de no repetición.",
+      "Esta investigación aporta herramientas para nombrar y desmontar el mecanismo de impunidad, con evidencia trazable y estándares de verificación. Explora la cartografía interactiva y las otras narrativas por ejes y periodos para relacionar hallazgos y profundizar en la importancia de conocer a fondo el caso del asesinato de Berta Cáceres."
+    ],
+
       "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 45,
-        "bearing": -30
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
       },
 
-      "cameraMode": "dramatic",
+      "cameraMode": "flat",
       "transitionDuration": 2000,
 
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["departamentos-honduras-ine"],
+      "geojsonOn": [],
 
       "layerStyles": {
-      
-        "departamentos-honduras-ine": {
-          "fill": false,
-          "lineColor": "#eb443e",
-          "lineWidth": 2
-        }
+        
       },
-
-      "sideMedia": false,
 
       "media": [
         {
-          "type": "image",
-          "src": "/narratives/media/violencia_redes.jpeg",
+          "type": "video",
+          "src": "/narratives/Narrativa 6/6.3.mp4",
           "position": "inside",
-          "opacity": 1
+          "target": "side",
+          "opacity": 1,
+          "footer":"Mensaje fin de año, 27 dic 2025. (Comunicación COPINH, Youtube)"
         }
       ],
 
@@ -320,5 +263,7 @@
 
       "panel": { "width": "420px", "position": "right" }
     }
+
+  
   ]
 }
