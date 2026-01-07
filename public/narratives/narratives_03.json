@@ -129,10 +129,11 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/Narrativa 3/3.1-1.jpeg",
+          "src": "/narratives/Narrativa 3/3.1-1.jpg",
           "position": "inside",
           "target": "scroller",
-          "opacity": 1
+          "opacity": 1,
+          "footer": "Extracto del documento 'Construction Requisition No. 4, Schedule 1 to Exhibit A'. (13 de mayo, 2015), correspondiente a la orden de pago del fideicomiso administrado por Deutsche Bank para el Proyecto Agua Zarca, con énfasis en los montos asignados a DESA y a la compra de tierras."
         }
       ],
 
