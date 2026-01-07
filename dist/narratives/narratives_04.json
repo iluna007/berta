@@ -107,6 +107,14 @@
 
 
       "media": [
+        {
+          "type": "image",
+          "src": "/narratives/Narrativa 4/4.1.jpg",
+          "position": "inside",
+          "target": "side",
+          "opacity": 1,
+          "footer":"Fig. 1. Diagrama de transacciones ilícitas desde el Fondo del proyecto Agua Zarca. Ya una vez consolidado a través de préstamos bancarios y capital social, se produce un desvío y entre COPRECA y CONCASA que termina finalmente en cuentas bancarias de PEMSA Honduras y PEMSA Panamá. Estos fondos fueron utilizados para pagar labores de vigilancia, intimidación y finalmente el asesinato de Berta Cáceres."
+        }
        
       ],
 
