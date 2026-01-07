@@ -47,6 +47,89 @@
     "color": "#FFFFFF"
   },
 
+  {
+    "id": "CA02",
+    "url": "public/narratives/Narrativa 3/CA02.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "CA06",
+    "url": "public/narratives/Narrativa 3/CA06.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "CA12",
+    "url": "public/narratives/Narrativa 3/CA12.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "CA16",
+    "url": "public/narratives/Narrativa 3/CA16.geojson",
+    "color": "#FFFFFF"
+  },
+  
+  {
+    "id": "CA25",
+    "url": "public/narratives/Narrativa 3/CA25.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "CM11",
+    "url": "public/narratives/Narrativa 3/CM11.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "CM14",
+    "url": "public/narratives/Narrativa 3/CM14.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "PA11",
+    "url": "public/narratives/Narrativa 3/PA11.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "PA14",
+    "url": "public/narratives/Narrativa 3/PA14.geojson",
+    "color": "#FFFFFF"
+  },
+  
+  {
+    "id": "PR11",
+    "url": "public/narratives/Narrativa 3/PR11.geojson",
+    "color": "#FFFFFF"
+  },
+  
+  {
+    "id": "PR14",
+    "url": "public/narratives/Narrativa 3/PR14.geojson",
+    "color": "#FFFFFF"
+  },
+
+  
+  {
+    "id": "RG",
+    "url": "public/narratives/Narrativa 3/RG.geojson",
+    "color": "#FFFFFF"
+  },
+
+  
+  {
+    "id": "TPA11",
+    "url": "public/narratives/Narrativa 3/TPA11.geojson",
+    "color": "#FFFFFF"
+  },
+
+  
+  {
+    "id": "TPA14",
+    "url": "public/narratives/Narrativa 3/TPA14.geojson",
+    "color": "#FFFFFF"
+  },
+
+
+
+
 
  
   {

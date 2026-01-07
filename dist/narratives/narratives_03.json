@@ -3,14 +3,14 @@
     {
       "id": "NR-0",
       "title": "La materialización de la red financiera",
-      "description":["El andamiaje financiero descrito en «La red financiera» se materializó en el territorio lenca a través de compras de tierras, donde no solo se emplazaría la presa, sino también una serie de estructuras de vigilancia. Estas compras se realizaron en contextos de presión y a través de gastos destinados a sostener el control territorial constante: pagos a policías, operadores locales y contramanifestaciones."
+      "description":["Esta narrativa explica cómo las infraestructuras legales y financieras de las dos narrativas anteriores se materializaron en el territorio lenca para construir un control territorial. Esto se logró a través de compras de tierras que se realizaron en contextos de presión y la construcción de obras que modificaron relaciones en el territorio."
       ],
 
       "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 45,
-        "bearing": -30
+        "center": [-88.20, 14.67],
+        "zoom": 13,
+        "pitch": 40,
+        "bearing": 70
       },
 
       "cameraMode": "flat",
@@ -19,25 +19,45 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine","punto-compras-tierras-rio-blanco"],
+      "geojsonOn": ["Río Gualcarque","Departamentos Honduras","CA02","CA06","CA12","CA16","CA25","Proyecto Agua Zarca 2011"],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.3
+        "Río Gualcarque": {
+          "lineColor": "#0077be",
+          "lineWidth": 4    
         },
-        "censo-Rio-Blanco-2013": {
-          "pointColor": "#eb443e",
-          "pointRadius": 3
-         
-        },
-        "departamentos-honduras-ine": {
+        "Departamentos Honduras": {
           "fill": false,
           "lineColor": "#000000",
-          "lineWidth": 2
-          
+          "lineWidth": 2,
+          "line-dasharray": [2,4]
         },
+        "CA02": {
+          "lineColor": "#eb443e",
+          "lineWidth": 1   
+        },
+        "CA06": {
+          "lineColor": "#eb443e",
+          "lineWidth": 1   
+        },
+        "CA12": {
+          "lineColor": "#eb443e",
+          "lineWidth": 1   
+        },
+        "CA16": {
+          "lineColor": "#eb443e",
+          "lineWidth": 1   
+        },
+        "CA25": {
+          "lineColor": "#eb443e",
+          "lineWidth": 1   
+        },
+        "Proyecto Agua Zarca 2011": {
+          "fill": true,
+          "fillColor": "#ff6d01",
+          "fillOpacity": 0.5
+        },
+
         "punto-compras-tierras-rio-blanco": {
           "pointColor": "#eb443e",
           "pointRadius": 5
@@ -45,15 +65,9 @@
         
       },
 
-      "sideMedia": false,
 
       "media": [
-        {
-          "type": "image",
-          "src": "/narratives/media/intro1.jpeg",
-          "position": "inside",
-          "opacity": 1
-        }
+       
       ],
 
       "markers": [],
