@@ -80,15 +80,17 @@
     {
       "id": "NR-1",
       "title": "Despojo a través de la compra de territorio lenca",
-      "description":["Los fondos de la banca internacional de desarrollo, condicionados exclusivamente para obras de construcción de energía renovable, fueron redirigidos para adquirir terrenos privados dentro de territorio lenca sin proceso de consulta libre, previa e informada. En los acuerdos firmados, DESA debía comprarlos con su propia bolsa de capital.",
-      "En ese desvío, el rol notarial fue pieza clave: mediante escrituras, endosos y certificaciones, dio apariencia de legalidad a traspasos que contradecían las restricciones del crédito y las obligaciones del Estado conforme a estándares internacionales. Esa cadena notarial evidencia cómo los poderes del Estado hondureño operaron de facto como engranajes del despojo. A la fecha, las propiedades en cuestión no han sido restituidas a las comunidades lencas."
+      "description":["Los fondos para desarrollo del BCIE y FMO, condicionados exclusivamente para obras de construcción de energía renovable, fueron redirigidos para adquirir terrenos privados dentro de territorio lenca sin proceso de consulta libre, previa e informada. Según las condiciones de los contratos firmados por DESA, la compañía debía comprarlos con su propio capital.",
+      " El rol notarial fue una pieza clave: mediante escrituras, endosos y certificaciones, se dio apariencia de legalidad a traspasos que contradecían las restricciones del crédito y las obligaciones del Estado conforme a estándares internacionales. Esa cadena notarial evidencia cómo los poderes del Estado hondureño operaron de facto como engranajes en el sistema de despojo.",
+      "El despojo solo fue posible debido al incumplimiento del Estado de reconocer la propiedad comunitaria de tierras lencas. Estos títulos de propiedad habrían fortalecido su defensa y complicado las operaciones de adjudicación de terrenos.",
+      "A la fecha, estas propiedades no han sido restituidas."
   ],
 
       "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 45,
-        "bearing": -30
+        "center": [-88.184459, 14.672019],
+        "zoom": 14,
+        "pitch": 5,
+        "bearing": 11
       },
 
       "cameraMode": "tilted",
@@ -97,38 +99,39 @@
       "highlightLayers": ["carreteras-2012"],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite","departamentos-honduras-ine","rio-gualcarque","osm-waterways"],
+      "geojsonOn": ["Río Gualcarque","Proyecto Agua Zarca 2011","PA11","PA14"],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {
+        "Proyecto Agua Zarca 2011": {
           "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.3
+          "fillColor": "#ff6d01",
+          "fillOpacity": 0.5
         },
-       
-        "departamentos-honduras-ine": {
-          "fill": false,
-          "lineColor": "#000000",
-          "lineWidth": 2
+        "PA11": {
+          "fill": true,
+          "fillColor": "#a53709",
+          "fillOpacity": 0.6
         },
-        "rio-gualcarque": {
+        "PA14": {
+          "fill": true,
+          "fillColor": "#d9763d",
+          "fillOpacity": 0.6
+        },
+               
+        "Río Gualcarque": {
           "lineColor": "#0077be",
           "lineWidth": 4
-        },
-        "osm-waterways": {
-          "lineColor": "#5EA4BF",
-          "lineWidth": 2
         }
+        
 
       },
-
-      "sideMedia": false,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/extractivismo1.jpeg",
+          "src": "/narratives/Narrativa 3/3.1-1.jpeg",
           "position": "inside",
+          "target": "scroller",
           "opacity": 1
         }
       ],
