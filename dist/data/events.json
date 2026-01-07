@@ -2261,29 +2261,7 @@
     ],
     "time": "00:00"
   },
-  {
-    "id": "DS-DO-CL",
-    "description": "Saul was taken from Valle de Angeles and killed. He was found in pieces. \"la gente sale a trabajar y si no regresan a casa – dicho y hecho se les encuentra hecho pedazos\"",
-    "date": "01/01/2015",
-    "location": "",
-    "latitude": "",
-    "longitude": "",
-    "precision": "",
-    "graphic": "FALSE",
-    "victims": [
-      "Saúl Madrid"
-    ],
-    "attackers": [
-      "Desconocido"
-    ],
-    "sources": [
-      "src16"
-    ],
-    "associations": [
-      "asc10"
-    ],
-    "time": "00:00"
-  },
+
   {
     "id": "JL-ED-TN",
     "description": "Seguimento de lideres en la tejera(41-42: \"francisco se pone nervioso...\"), y planificacion de como evitar que \"se fortalece copinh en Tejera\"",

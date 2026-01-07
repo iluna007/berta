@@ -69,7 +69,7 @@ class GeoJsonLayers extends Component {
 
     const response = await fetch(layer.url);
     const data = await response.json();
-    const SOFT_POINT_GROUPS = new Set(["Improntas", "Los agresores"]);
+    const SOFT_POINT_GROUPS = new Set(["Presencias territoriales"]);
     const shouldSoft = SOFT_POINT_GROUPS.has(layer.group);
 
     const paneId = `pane-${layer.label.replace(/\s+/g, "-").toLowerCase()}`;
