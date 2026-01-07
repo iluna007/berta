@@ -49,7 +49,7 @@
     },
     "toolbar": {
       "title": "Título",
-      "filters": "Filtros",
+      "filters": "Datos",
       "explore_by_filter__title": "Explorar por filtros",
       "explore_by_filter__description": "Al seleccionar filtros, puede ver los eventos que tienen esa categoria. Para ver todos los eventos puede quitar todas las selecciones (o seleccionarlos todos).",
       "panels": {
@@ -194,10 +194,10 @@
       "narratives_label": "Narratives",
       "explore_by_narrative__title": "Explore events by narrative",
       "explore_by_narrative__description": "Follow a path through the data, from one key event to the next.",
-      "filters": "Filtros",
-      "filters_label": "Filtros",
+      "filters": "Datos",
+      "filters_label": "Datos",
       "explore_by_filter__title": "Explore by filter",
-      "explore_by_filter__description": "'Filtros' Consulte los tipos de incidentes. Seleccione varios filtros para introducir códigos de colores.<br><br><span class='hint'>Si no se selecciona ningún filtro, se muestran todos los puntos de datos.</span>",
+      "explore_by_filter__description": "Consulte los tipos de incidentes. Seleccione varios filtros para introducir códigos de colores.<br><br><span class='hint'>Si no se selecciona ningún filtro, se muestran todos los puntos de datos.</span>",
       "categories": "Categories",
       "categories_label": "Categories",
       "explore_by_category__title": "Explore events by category",

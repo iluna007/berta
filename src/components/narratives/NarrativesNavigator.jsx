@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../scss/narratives_NarrativesNavigator.scss";
 
 export default function NarrativesNavigator({ onSelect, activeId }) {
   const navigate = useNavigate();
+  const [hover, setHover] = useState(false);
 
   const items = [
     {
@@ -46,17 +48,21 @@ export default function NarrativesNavigator({ onSelect, activeId }) {
     <div className="navigator-container">
       <button
         onClick={() => navigate("/plataforma")}
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
         style={{
           width: "100%",
           marginBottom: "20px",
-          background: "#222",
+          background: hover ? "#2ecc71" : "#222",
           color: "white",
           padding: "10px 16px",
           border: "1px solid #444",
           borderRadius: "4px",
           cursor: "pointer",
           fontSize: "14px",
-          textAlign: "left"
+          textAlign: "left",
+          transform: hover ? "scale(1.05)" : "scale(1)",
+          transition: "background-color 0.25s ease, transform 0.2s ease"
         }}
       >
         ← Plataforma
