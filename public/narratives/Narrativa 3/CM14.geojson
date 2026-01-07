@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "CM14",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "id": 2013, "Nombre": "CASA DE MÁQUINAS" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -88.176317459449706, 14.695368098916447 ] ] } }
-]
-}

@@ -304,5 +304,94 @@
     "label": "COPINH",
     "url": "geojson/ICOP.geojson",
     "color": "#6ca907"
+  },
+
+
+
+
+
+
+
+
+   {
+    "id": "limites territoriosales",
+    "url": "geojson/Límite territorio nacional.geojson",
+    "color": "#FFFFFF"
+  },
+
+   {
+    "id": "Asesinatos",
+    "url": "geojson/Asesinatos.geojson",
+    "color": "#FFFFFF"
+  },
+   {
+    "id": "Hidroelectricas",
+    "url": "geojson/Hidroelectricas.geojson",
+    "color": "#FFFFFF"
+  },
+   {
+    "id": "Proyecto Agua Zarca 2011",
+    "url": "geojson/Proyecto Agua Zarca 2011.geojson",
+    "color": "#FFFFFF"
+  },
+  
+  {
+    "id": "Territorios indigenas",
+    "url": "geojson/Territorios indigenas.geojson",
+    "color": "#FFFFFF"
+  },
+   {
+    "id": "Aldea Rio Blanco",
+    "url": "geojson/Aldea Rio Blanco.geojson",
+    "color": "#FFFFFF"
+  },
+    {
+    "id": "Departamentos Honduras",
+    "url": "geojson/Departamentos Honduras.geojson",
+    "color": "#FFFFFF"
+  },
+
+  {
+    "id": "Poblacion lenca (CRB 2013)",
+    "url": "geojson/Poblacion lenca (CRB 2013).geojson",
+    "color": "#FFFFFF"
+  },
+
+ 
+  {
+    "id": "Daños",
+    "url": "geojson/Daños.geojson",
+    "color": "#FFFFFF"
+  },
+   {
+    "id": "Comunicaciones",
+    "url": "geojson/Comunicaciones.geojson",
+    "color": "#FFFFFF"
+  },
+  
+
+
+
+
+
+
+ 
+  {
+  "id": "punto-compras-tierras-rio-blanco",
+  "type": "narrative-point",
+  "label": "Compras de tierras",
+  "color": "#eb443e",
+
+  "coordinates": [-88.1762, 14.6581],
+
+  "popup": {
+    "title": "Compras de tierras en Río Blanco",
+    "date": "2013–2014",
+    "description": "Punto representativo de las adquisiciones de terrenos realizadas bajo presión en territorio lenca."
+    }
   }
+
+
+
+
 ]
