@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "EM14",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "id": 3, "Nombre": "EMBALSE" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -88.186149219373007, 14.688885521679875 ] ] } }
-]
-}

@@ -1,0 +1,308 @@
+[
+  {
+    "id": "Río Gualcarque",
+    "group": "Capas Base",
+    "subgroup": "Hidrografía",
+    "label": "Río Gualcarque",
+    "url": "geojson/RG.geojson",
+    "color": "#C2E9F2"
+  },
+  {
+    "id": "Territorio Nacional de Honduras",
+    "group": "Capas Base",
+    "subgroup": "Límites políticos",
+    "label": "Territorio Nacional de Honduras",
+    "url": "geojson/TN.geojson",
+    "color": "#807D7E"
+  },
+  {
+    "id": "Departamentos de Honduras",
+    "group": "Capas Base",
+    "subgroup": "Límites políticos",
+    "label": "Departamentos de Honduras",
+    "url": "geojson/SP.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "Aldea de Río Blanco",
+    "group": "Capas Base",
+    "subgroup": "Límites políticos",
+    "label": "Aldea de Río Blanco",
+    "url": "geojson/RB.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "Territorio Lenca",
+    "group": "Capas Base",
+    "subgroup": "Territorios reconocidos de pueblos indigenas y/o afrodecendientes",
+    "label": "Territorio Lenca",
+    "url": "geojson/TLN.geojson",
+    "color": "#195457"
+  },
+  {
+    "id": "Territorio Garífuna",
+    "group": "Capas Base",
+    "subgroup": "Territorios reconocidos de pueblos indigenas y/o afrodecendientes",
+    "label": "Territorio Garífuna",
+    "url": "geojson/TGA.geojson",
+    "color": "#207074"
+  },
+  {
+    "id": "Territorio Isleno",
+    "group": "Capas Base",
+    "subgroup": "Territorios reconocidos de pueblos indigenas y/o afrodecendientes",
+    "label": "Territorio Isleno",
+    "url": "geojson/TIS.geojson",
+    "color": "#257C81"
+  },
+  {
+    "id": "Territorio Chorotenga",
+    "group": "Capas Base",
+    "subgroup": "Territorios reconocidos de pueblos indigenas y/o afrodecendientes",
+    "label": "Territorio Chorotenga",
+    "url": "geojson/TCH.geojson",
+    "color": "#2D8C81"
+  },
+  {
+    "id": "Territorio Maya Chorti",
+    "group": "Capas Base",
+    "subgroup": "Territorios reconocidos de pueblos indigenas y/o afrodecendientes",
+    "label": "Territorio Maya Chorti",
+    "url": "geojson/TMC.geojson",
+    "color": "#36997D"
+  },
+  {
+    "id": "Territorio Miskito (Miskitu)",
+    "group": "Capas Base",
+    "subgroup": "Territorios reconocidos de pueblos indigenas y/o afrodecendientes",
+    "label": "Territorio Miskito (Miskitu)",
+    "url": "geojson/TMK.geojson",
+    "color": "#3CA276"
+  },
+  {
+    "id": "Territorio Nahua",
+    "group": "Capas Base",
+    "subgroup": "Territorios reconocidos de pueblos indigenas y/o afrodecendientes",
+    "label": "Territorio Nahua",
+    "url": "geojson/TNH.geojson",
+    "color": "#46AA79"
+  },
+  {
+    "id": "Territorio Pech",
+    "group": "Capas Base",
+    "subgroup": "Territorios reconocidos de pueblos indigenas y/o afrodecendientes",
+    "label": "Territorio Pech",
+    "url": "geojson/TPC.geojson",
+    "color": "#50B27E"
+  },
+  {
+    "id": "Territotio Tauahka",
+    "group": "Capas Base",
+    "subgroup": "Territorios reconocidos de pueblos indigenas y/o afrodecendientes",
+    "label": "Territotio Tauahka",
+    "url": "geojson/TTH.geojson",
+    "color": "#5ABA83"
+  },
+  {
+    "id": "Territorio Texiihuat",
+    "group": "Capas Base",
+    "subgroup": "Territorios reconocidos de pueblos indigenas y/o afrodecendientes",
+    "label": "Territorio Texiihuat",
+    "url": "geojson/TTX.geojson",
+    "color": "#6AC483"
+  },
+  {
+    "id": "Territorio Tolupan",
+    "group": "Capas Base",
+    "subgroup": "Territorios reconocidos de pueblos indigenas y/o afrodecendientes",
+    "label": "Territorio Tolupan",
+    "url": "geojson/TTL.geojson",
+    "color": "#7ACE84"
+  },
+  {
+    "id": "Territorio Multiétnico",
+    "group": "Capas Base",
+    "subgroup": "Territorios reconocidos de pueblos indigenas y/o afrodecendientes",
+    "label": "Territorio Multiétnico",
+    "url": "geojson/TME.geojson",
+    "color": "#8bd984"
+  },
+  {
+    "id": "El Roble",
+    "group": "Capas Base",
+    "subgroup": "Sitios Clave",
+    "label": "El Roble",
+    "url": "geojson/ER01.geojson",
+    "color": "#e06666"
+  },
+  {
+    "id": "La Tejera",
+    "group": "Capas Base",
+    "subgroup": "Sitios Clave",
+    "label": "La Tejera",
+    "url": "geojson/LT01.geojson",
+    "color": "#ea9999"
+  },
+  {
+    "id": "El Barreal",
+    "group": "Capas Base",
+    "subgroup": "Sitios Clave",
+    "label": "El Barreal",
+    "url": "geojson/EB01.geojson",
+    "color": "#f4cccc"
+  },
+
+  {
+    "id": "Cuarto de Máquinas",
+    "group": "Infraestructuras y logísticas",
+    "subgroup": "Proyecto Agua Zarca 2011",
+    "label": "Cuarto de Máquinas",
+    "url": "geojson/CM11.geojson",
+    "color": "#ff6d01"
+  },
+  {
+    "id": "Presa",
+    "group": "Infraestructuras y logísticas",
+    "subgroup": "Proyecto Agua Zarca 2011",
+    "label": "Presa",
+    "url": "geojson/PR11.geojson",
+    "color": "#ff6d01"
+  },
+  {
+    "id": "Tubería",
+    "group": "Infraestructuras y logísticas",
+    "subgroup": "Proyecto Agua Zarca 2011",
+    "label": "Tubería",
+    "url": "geojson/TPA11.geojson",
+    "color": "#ff6d01"
+  },
+  {
+    "id": "Cuarto de Máquinas",
+    "group": "Infraestructuras y logísticas",
+    "subgroup": "Proyecto Agua Zarca 2014",
+    "label": "Cuarto de Máquinas",
+    "url": "geojson/CM14.geojson",
+    "color": "#f1c232"
+  },
+  {
+    "id": "Presa",
+    "group": "Infraestructuras y logísticas",
+    "subgroup": "Proyecto Agua Zarca 2014",
+    "label": "Presa",
+    "url": "geojson/PR14.geojson",
+    "color": "#f1c232"
+  },
+  {
+    "id": "Tubería ",
+    "group": "Infraestructuras y logísticas",
+    "subgroup": "Proyecto Agua Zarca 2014",
+    "label": "Tubería ",
+    "url": "geojson/TPA14.geojson",
+    "color": "#f1c232"
+  },
+  {
+    "id": "Predios PHAZ 2011",
+    "group": "Infraestructuras y logísticas",
+    "subgroup": "Compra de Terrenos",
+    "label": "Predios PHAZ 2011",
+    "url": "geojson/PA11.geojson",
+    "color": "#a53709"
+  },
+  {
+    "id": "Predios PHAZ 2014",
+    "group": "Infraestructuras y logísticas",
+    "subgroup": "Compra de Terrenos",
+    "label": "Predios PHAZ 2014",
+    "url": "geojson/PA14.geojson",
+    "color": "#d9763d"
+  },
+  {
+    "id": "2002",
+    "group": "Infraestructuras y logísticas",
+    "subgroup": "Carreteras",
+    "label": "2002",
+    "url": "geojson/CA02.geojson",
+    "color": "#bf712c"
+  },
+  {
+    "id": "2006",
+    "group": "Infraestructuras y logísticas",
+    "subgroup": "Carreteras",
+    "label": "2006",
+    "url": "geojson/CA06.geojson",
+    "color": "#d98e32"
+  },
+  {
+    "id": "2012",
+    "group": "Infraestructuras y logísticas",
+    "subgroup": "Carreteras",
+    "label": "2012",
+    "url": "geojson/CA12.geojson",
+    "color": "#f2c36b"
+  },
+  {
+    "id": "2016",
+    "group": "Infraestructuras y logísticas",
+    "subgroup": "Carreteras",
+    "label": "2016",
+    "url": "geojson/CA16.geojson",
+    "color": "#f5d264"
+  },
+  {
+    "id": "2025",
+    "group": "Infraestructuras y logísticas",
+    "subgroup": "Carreteras",
+    "label": "2025",
+    "url": "geojson/CA25.geojson",
+    "color": "#FFF2CE"
+  },
+
+  {
+    "id": "Berta Isabel Cáceres Flores",
+    "group": "Presencias territoriales",
+    "subgroup": "Actores",
+    "label": "Berta Isabel Cáceres Flores",
+    "url": "geojson/IBICF.geojson",
+    "color": "#baff53"
+  },
+  {
+    "id": "Criminales",
+    "group": "Presencias territoriales",
+    "subgroup": "Actores",
+    "label": "Criminales",
+    "url": "geojson/IAC.geojson",
+    "color": "#bf0a80"
+  },
+  {
+    "id": "Relacionados con DESA",
+    "group": "Presencias territoriales",
+    "subgroup": "Actores",
+    "label": "Relacionados con DESA",
+    "url": "geojson/IDESA.geojson",
+    "color": "#ffc930"
+  },
+  {
+    "id": "Ejército",
+    "group": "Presencias territoriales",
+    "subgroup": "Actores",
+    "label": "Ejército",
+    "url": "geojson/IEJ.geojson",
+    "color": "#efbbf5"
+  },
+  {
+    "id": "Funcionarios de Gobierno",
+    "group": "Presencias territoriales",
+    "subgroup": "Actores",
+    "label": "Funcionarios de Gobierno",
+    "url": "geojson/IGOB.geojson",
+    "color": "#46bdc6"
+  },
+  {
+    "id": "COPINH",
+    "group": "Presencias territoriales",
+    "subgroup": "Actores",
+    "label": "COPINH",
+    "url": "geojson/ICOP.geojson",
+    "color": "#6ca907"
+  }
+]

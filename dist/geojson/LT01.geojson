@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "La Tejera",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3207" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1 }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 14432922.826789340004325, 2959531.779180759564042 ] ] } }
+]
+}

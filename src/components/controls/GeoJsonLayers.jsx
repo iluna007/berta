@@ -18,7 +18,7 @@ class GeoJsonLayers extends Component {
 
   async loadLayersConfig() {
     try {
-      const res = await fetch("/data/geojsonLayers2.json");
+      const res = await fetch("/data/geojsonLayers.json");
       const layersConfig = await res.json();
 
       const prepared = layersConfig.map((layer) => ({

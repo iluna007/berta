@@ -83,7 +83,7 @@ export default function NarrativesMap({
 
     const def = layersRef.current.find((l) => l.id === layerId);
     if (!def) {
-      console.warn("⚠ No hay entrada en geojsonLayers2.json para:", layerId);
+      console.warn("⚠ No hay entrada en geojsonLayers.json para:", layerId);
       return null;
     }
 
