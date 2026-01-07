@@ -126,6 +126,26 @@
     "url": "public/narratives/Narrativa 3/TPA14.geojson",
     "color": "#FFFFFF"
   },
+  {
+    "id": "Daños",
+    "url": "public/narratives/Narrativa 4/Daños.geojson",
+    "color": "#FFFFFF"
+  },
+   {
+    "id": "Comunicaciones",
+    "url": "public/narratives/Narrativa 4/Comunicaciones.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "IAC",
+    "url": "public/narratives/Narrativa 4/IAC.geojson",
+    "color": "#FFFFFF"
+  },
+  {
+    "id": "IBICF",
+    "url": "public/narratives/Narrativa 4/IBICF.geojson",
+    "color": "#FFFFFF"
+  },
 
 
 

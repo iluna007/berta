@@ -2,15 +2,16 @@
   "chapters": [
     {
       "id": "NR-0",
-      "title": "Por qué Berta fue objetivo",
-      "description":["Berta Cáceres no solo confrontó a DESA: interrumpió la racionalidad empresarial que sostenía Agua Zarca. Para quienes defendían Agua Zarca como “desarrollo sostenible”, su voz se convirtió en un riesgo operativo, reputacional y —sobre todo— financiero. Esta narrativa explica cómo, desde esa lógica de gestión de riesgos, se tomó una decisión criminal."
-      ],
+      "title": "¿POR QUÉ BERTA FUE OBJETIVO?",
+      "description":["Berta Cáceres no solo confrontó a DESA: detuvo Agua Zarca. Su acción colectiva, junto a las comunidades lencas, bloqueó el avance de la obra y cerró la posibilidad del negocio basado en la explotación del río Gualcarque. ",
+      " Para DESA y su red de aliados, Berta se convirtió en un obstáculo operativo y financiero: alguien que hacía imposible que el proyecto se construyera a tiempo y generara ganancias. Desde esta lógica empresarial, esta narrativa explica cómo se fue configurando una decisión criminal orientada a eliminar el «obstáculo» para proteger capitales."
+    ],
 
       "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 45,
-        "bearing": -30
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
       },
 
       "cameraMode": "flat",
@@ -19,36 +20,20 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine"],
+      "geojsonOn": [],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.3
-        },
-        "censo-Rio-Blanco-2013": {
-          "pointColor": "#eb443e",
-          "pointRadius": 3
-         
-        },
-        "departamentos-honduras-ine": {
-          "fill": false,
-          "lineColor": "#000000",
-          "lineWidth": 2
-          
-        }
         
       },
-
-      "sideMedia": false,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/intro1.jpeg",
+          "src": "/narratives/Narrativa 5/5.1-1.jpg",
           "position": "inside",
-          "opacity": 1
+          "target": "side",
+          "opacity": 1,
+          "footer":"Fig 1. Anuncio de Premio Goldman a Berta Cáceres (The Goldman Environmental Prize, 2015). Fig 2. COMUNICADO DEL COPINH exigiendo el retiro de los bancos del proyecto Agua Zarca. (COPINH, 21/04/2016)."
         }
       ],
 
@@ -61,57 +46,38 @@
 
     {
       "id": "NR-1",
-      "title": "La importancia del activismo de Berta",
-      "description":["Berta hizo visibles redes de complicidad, frenó hitos de obra y elevó los costos políticos y financieros del proyecto. Su liderazgo, arraigado en la comunidad lenca y respaldado por documentación, atrajo atención nacional e internacional.",
-      "Para empresas e inversionistas, Berta y el COPINH eran un “riesgo” con tres efectos: afectaban flujos de capital, erosionaban la legitimidad del proyecto y activaban escrutinio internacional. Su capacidad para articular evidencia, movilizar al pueblo lenca, convocar a los medios y conectar con redes globales elevó el costo reputacional de Agua Zarca y de sus financiadores. La salida de Sinohydro detonó reprogramaciones, nuevas deudas e intereses adicionales."
-      ],
+      "title": "¿POR QUÉ BERTA FUE OBJETIVO?",
+      "description":["Berta y el COPINH hicieron visibles redes de complicidad, frenaron hitos de obra y elevaron los costos políticos y financieros del proyecto. El liderazgo de Berta, arraigado en la comunidad lenca y respaldado por la documentación, atrajo atención nacional e internacional.",
+      " Para empresas e inversionistas, Berta y el COPINH eran un «riesgo» con tres efectos: afectaban los flujos de capital, erosionaban la legitimidad del proyecto y activaban el escrutinio internacional. Su capacidad para articular evidencia, movilizar al pueblo lenca, convocar a los medios y conectar con redes globales elevó el costo reputacional de Agua Zarca y de sus financiadores. La salida de la constructora china, Sinohydro, detonó rearticulaciones entre relaciones empresariales, nuevas deudas e intereses adicionales."
+    ],
 
       "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 45,
-        "bearing": -30
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
       },
 
-      "cameraMode": "tilted",
-      "transitionDuration": 2500,
+      "cameraMode": "flat",
+      "transitionDuration": 2000,
 
-      "highlightLayers": ["carreteras-2012"],
+      "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite","departamentos-honduras-ine","rio-gualcarque","osm-waterways"],
+      "geojsonOn": [],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.3
-        },
-       
-        "departamentos-honduras-ine": {
-          "fill": false,
-          "lineColor": "#000000",
-          "lineWidth": 2
-        },
-        "rio-gualcarque": {
-          "lineColor": "#0077be",
-          "lineWidth": 4
-        },
-        "osm-waterways": {
-          "lineColor": "#5EA4BF",
-          "lineWidth": 2
-        }
-
+        
       },
-
-      "sideMedia": false,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/extractivismo1.jpeg",
+          "src": "/narratives/Narrativa 5/5.1-2.jpg",
           "position": "inside",
-          "opacity": 1
+          "target": "side",
+          "opacity": 1,
+          "footer":"Respuesta de la constructora China Sinohydro a reportes de violaciones de derechos humanos hacia comunidades indígenas por el proyecto Agua Zarca. (business-humanrights.org, 2013). "
         }
       ],
 
@@ -123,17 +89,17 @@
     },
 
     {
-      "id": "NR-2",
-      "title": "La racionalidad empresarial del crimen",
-      "description":["El conflicto no fue un desacuerdo puntual. Contratos, créditos y cronogramas chocaron con la organización comunitaria, las exigencias de consulta y la evidencia de daños. A medida que los retrasos crecían y la presión financiera aumentaba, también crecían los incentivos para silenciar a quienes los provocaban. En ese escenario, Berta quedó en el centro del dispositivo coercitivo y se convirtió en un objetivo estratégico.",
-      "Bajo esa racionalidad empresarial, silenciar la voz de Berta se calculó como un modo de proteger contratos, reputaciones y retornos. La decisión se alimentó de informes internos, alertas sobre el conflicto y coordinaciones con actores estatales y de seguridad. La idea de “neutralizar” a Berta dejó de ser una expresión de deseo de control y se transformó en una estrategia de mitigación de “riesgos”, ajena a la legalidad."
-      ],
+      "id": "NR-3",
+      "title": "LA RACIONALIDAD EMPRESARIAL DEL CRIMEN",
+      "description":["El conflicto entre Agua Zarca y COPINH no fue un desacuerdo puntual. Contratos, créditos y cronogramas chocaron con la organización comunitaria, las exigencias legales de consulta obligada y la evidencia de daños al territorio. A medida que los retrasos crecían y la presión financiera aumentaba, también aumentaban los incentivos para silenciar a quienes los provocaban. En ese escenario, Berta quedó en el centro del dispositivo coercitivo descrito en la narrativa anterior y se convirtió en un objetivo estratégico.",
+      " Bajo esa racionalidad empresarial, silenciar la voz de Berta se calculó como un modo de proteger contratos y retornos. La decisión se alimentó de informes internos, alertas sobre el conflicto y coordinaciones con actores estatales y de seguridad. La idea de “neutralizar” a Berta dejó de ser una expresión de deseo de control y se transformó en una estrategia de mitigación de “riesgos”, ajena a la legalidad."
+    ],
 
       "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 25,
-        "bearing": 60
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
       },
 
       "cameraMode": "flat",
@@ -142,74 +108,20 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite", "osm-waterways" ],
+      "geojsonOn": [],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {},
-        "osm-waterways": {}
+        
       },
-
-      "sideMedia": true,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "re/presentare / Archivo Experimental",
-          "position": "side",
-          "opacity": 1
-        }
-      ],
-
-      "markers": [],
-      "shapes": [],
-      "layers": [],
-
-      "panel": { "width": "420px", "position": "right" }
-    },  
-
-    {
-      "id": "NR-3",
-      "title": "La preparación del crimen",
-      "description":["La preparación del asesinato fue un proceso. En las semanas previas se registraron visitas de reconocimiento, reuniones operativas y comunicaciones cruzadas entre directivos y jefes de seguridad. Los cronogramas de movimientos y llamadas permiten ver cadenas de coordinación: avisos sobre rutas habituales, confirmaciones de presencia en puntos de observación y mensajes previos a desplazamientos clave. La información de terreno generada por el dispositivo de vigilancia alimentó estas decisiones.",
-      "La sincronía entre comunicaciones y presencias en territorio muestra planificación. La identificación de horarios, trayectos y espacios de Berta y de otras personas del COPINH fue seguida de ajustes logísticos. La idea de una “oportunidad” no surgió de la nada: se construyó mediante monitoreo, intercambio de datos y ensayos de respuesta rápida."
-    ],
-
-     "location": {
-        "center": [-86.5, 14.8],
-        "zoom": 6,
-        "pitch": 5,
-        "bearing": 0
-      },
-
-      "cameraMode": "dramatic",
-      "transitionDuration": 2000,
-
-      "highlightLayers": [],
-      "dimLayers": [],
-
-      "geojsonOn": ["limite-territorio-nacional"],
-
-      "layerStyles": {
-        "limite-territorio-nacional": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.5 
- 
-        }
-      },
-
-      "sideMedia": true,
-
-      "media": [
-        {
-          "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "re/presentare / Archivo Experimental",
-          "position": "side",
-          "opacity": 1
+          "src": "/narratives/Narrativa 5/5.2.jpg",
+          "position": "inside",
+          "target": "side",
+          "opacity": 1,
+          "footer":"Mensajes extraídos de tres teléfonos de personas involucradas en el asesinato de Berta Cáceres. (Reporte “Represa de violencia: el plan que asesinó a Berta Cáceres”, 2017)."
         }
       ],
 
@@ -222,60 +134,38 @@
 
     {
       "id": "NR-4",
-      "title": "El asesinato de Berta",
-      "description":["Berta Cáceres fue asesinada en la madrugada del 2 de marzo de 2016, en La Esperanza, Intibucá, dentro de su vivienda. Hombres armados ingresaron y le dispararon a corta distancia; después huyeron. El ataque ocurrió pocas horas después de que Berta regresara a su casa tras una jornada de trabajo comunitario y reuniones de incidencia. La escena y los testimonios la sitúan como un operativo planificado, no como un robo o una disputa común.",
-      "En palabras de sus compañerxs en COPINH: 'Berta no murió, multiplicó.'"
-      ],
+      "title": "LA PREPARACIÓN DEL CRIMEN",
+      "description":["La preparación del asesinato fue un proceso. El GIEI evidenció, a través de mensajes de WhatsApp y registros formales, que los ejecutivos de DESA dirigían y financiaban una red sistemática de informantes para espiar metódicamente las actividades de Berta Cáceres y el COPINH.",
+      " La plataforma nos permite cruzar información de cronogramas de movimientos y de llamadas para visualizar estas cadenas de coordinación: avisos sobre rutas habituales, confirmaciones de presencia en puntos de observación y mensajes previos a desplazamientos clave. La información obtenida por el dispositivo de vigilancia y control que tenía la empresa sobre el terreno alimentó estas decisiones."
+    ],
 
       "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 45,
-        "bearing": 30
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
       },
 
-      "cameraMode": "dramatic",
+      "cameraMode": "flat",
       "transitionDuration": 2000,
 
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite", "censo-Rio-Blanco-2013","departamentos-honduras-ine","rio-gualcarque","osm-waterways"],
+      "geojsonOn": [],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.3
-        },
-        "censo-Rio-Blanco-2013": {
-          "pointColor": "#eb443e",
-          "pointRadius": 3,
-          "pointBlur": 3
-        },
-        "departamentos-honduras-ine": {
-          "fill": false,
-          "lineColor": "#eb443e",
-          "lineWidth": 2
-        },
-        "rio-gualcarque": {
-          "lineColor": "#0077be",
-          "lineWidth": 4
-        },
-        "osm-waterways": {
-          "lineColor": "#5EA4BF",
-          "lineWidth": 2
-        }
+        
       },
-
-      "sideMedia": false,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/violencia_redes.jpeg",
+          "src": "/narratives/Narrativa 5/5.3.jpeg",
           "position": "inside",
-          "opacity": 1
+          "target": "side",
+          "opacity": 1,
+          "footer":""
         }
       ],
 
@@ -285,44 +175,88 @@
 
       "panel": { "width": "420px", "position": "right" }
     },
-     {
+
+        {
       "id": "NR-5",
-      "title": "Los asesinos de Berta",
-      "description":["Este asesinato no puede leerse sólo como “quién disparó”, sino como “quién decidió que Berta era sacrificable” y “qué estructuras hicieron posible ese crimen”. La evidencia muestra una secuencia: vigilancia y mapeo de rutas, coordinación entre mandos empresariales y jefes de seguridad, pagos que lubricaron los operativos y una logística que conectó las decisiones corporativas con operadores criminales y las tolerancias estatales. La pregunta adecuada sigue el dinero, las órdenes y las coberturas, no sólo el arma."
+      "title": "LA PREPARACIÓN DEL CRIMEN",
+      "description":["La red de vigilancia identificó los horarios, trayectos y espacios de Berta y de otras personas del COPINH. La idea de una «oportunidad» no surgió de la nada: se construyó mediante el monitoreo, el intercambio de datos y ensayos de respuesta rápida.",
+      " Existieron al menos 5 incursiones en las que Berta estuvo bajo riesgo de ser gravemente herida por una red de sicarios vinculada a DESA, que, mediante informantes infiltrados y la cooptación de la policía, orquestó el crimen."
     ],
-      
+
       "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 45,
-        "bearing": -30
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
       },
 
-      "cameraMode": "dramatic",
+      "cameraMode": "flat",
       "transitionDuration": 2000,
 
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["departamentos-honduras-ine"],
+      "geojsonOn": [],
 
       "layerStyles": {
-      
-        "departamentos-honduras-ine": {
-          "fill": false,
-          "lineColor": "#eb443e",
-          "lineWidth": 2
-        }
+        
       },
 
-      "sideMedia": false,
+      "media": [
+        {
+          
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": { "width": "420px", "position": "right" }
+    },
+
+    {
+      "id": "NR-6",
+      "title": "EL ASESINATO DE BERTA",
+      "description":["Berta Cáceres fue asesinada en la madrugada del 2 de marzo de 2016, en La Esperanza, Intibucá, dentro de su vivienda. Cuatro hombres armados ingresaron a la casa, donde hirieron a Gustavo Castro Soto, defensor mexicano hospedado en su casa, y dispararon a Berta a corta distancia; después huyeron. El ataque ocurrió pocas horas después de que Berta regresara a su casa tras una jornada de trabajo comunitario y reuniones de incidencia. La escena y los testimonios lo sitúan como un operativo planificado, no como un robo ni una disputa común.",
+      " Entre el 3 y 4 de marzo, tres cheques emitidos por una suma de 500,000.00 HNL desde la cuenta de PEMSA Honduras —pero provenientes de los desvíos de fondos internacionales que terminaron en la cuenta de CONCASA— fueron cobrados por personal de DESA para pagar a los sicarios."
+    ],
+
+      "location": {
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
+      },
+
+      "cameraMode": "flat",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOn": [],
+
+      "layerStyles": {
+        
+      },
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/violencia_redes.jpeg",
+          "src": "/narratives/Narrativa 5/5.4-1.png",
           "position": "inside",
-          "opacity": 1
+          "target": "scroll",
+          "opacity": 1,
+          "footer":"Cheques girados a ejecutores de asesinato de Berta Cáceres con fecha de 27 de febrero de 2016."
+        },
+        {
+          "type": "image",
+          "src": "/narratives/Narrativa 5/5.4-2.jpg",
+          "position": "inside",
+          "target": "side",
+          "opacity": 1,
+          "footer":"Fig 1. Comunicado familia de Berta Caceres y COPINH sobre el assesinato de Berta; Fig 2. Imagen del altar de Berta (Foto: Kavitha Chekuru/Al Jazeera)."
         }
       ],
 
@@ -332,5 +266,6 @@
 
       "panel": { "width": "420px", "position": "right" }
     }
+  
   ]
 }
