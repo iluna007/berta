@@ -146,16 +146,16 @@
 
     {
       "id": "NR-2",
-      "title": "Rediseños de la presa",
+      "title": "REDISEÑOS DE LA PRESA",
       "description":["Tras la salida de Sinohydro, DESA modificó el proyecto original, creó «Agua Zarca II» y trasladó parte de las obras a otra ubicación, del otro lado del río. En el discurso público se afirmó que el cambio buscaba evitar conflictos con el COPINH, pero existen indicios de que la decisión respondió a la incapacidad financiera de completar el proyecto original.",
       "Llama la atención que, a pesar del rediseño sustancial de Agua Zarca II, se mantuvieran inalteradas variables clave como la cantidad de megavatios a producir y la superficie de inundación. El proyecto cambió de forma, pero conservó su escala de impacto."
       ],
 
       "location": {
-        "center": [-88.17555253907234, 14.657499179720105],
-        "zoom": 11,
-        "pitch": 25,
-        "bearing": 60
+        "center": [-88.184459, 14.672019],
+        "zoom": 14,
+        "pitch": 5,
+        "bearing": 11
       },
 
       "cameraMode": "flat",
@@ -164,24 +164,24 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["aldea-rio-blanco-limite", "osm-waterways" ],
+      "geojsonOn": ["Río Gualcarque","Proyecto Agua Zarca 2011"],
 
       "layerStyles": {
-        "aldea-rio-blanco-limite": {},
-        "osm-waterways": {}
+        "Río Gualcarque": { 
+          "lineColor": "#0077be",
+          "lineWidth": 4
+        },
+        "Proyecto Agua Zarca 2011": {
+          "fill": true,
+          "fillColor": "#ff6d01",
+          "fillOpacity": 0.5
+        }
+        
       },
 
-      "sideMedia": true,
 
       "media": [
-        {
-          "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "re/presentare / Archivo Experimental",
-          "position": "side",
-          "opacity": 1
-        }
+        
       ],
 
       "markers": [],
@@ -194,15 +194,15 @@
     {
       "id": "NR-3",
       "title": "Obras como control territorial",
-      "description":["Las infraestructuras construidas alrededor del proyecto —caminos, puentes, instalaciones de obra— no sólo sirvieron para transportar materiales. También desempeñaron un papel de corredores logísticos de control territorial, facilitando la entrada de fuerzas de seguridad, el desplazamiento de comunidades y su vigilancia.",
-      "Al superponer en el mapa las fechas de compra de terrenos, la construcción de infraestructuras y los episodios de violencia, se observa un mismo patrón: a medida que se consolidaba la propiedad empresarial sobre el Gualcarque, aumentaban las amenazas y las agresiones contra el COPINH y las comunidades lencas."
+      "description":["Hemos mapeado las infraestructuras construidas alrededor del proyecto —caminos, puentes, instalaciones de obra— para mostrar cómo estas construcciones no solo sirvieron para facilitar el transporte de materiales. También desempeñaron un papel de corredores logísticos para el control territorial, facilitando la entrada de fuerzas de seguridad, el control sobre el desplazamiento de comunidades y su vigilancia.",
+      " Al superponer en el mapa las fechas de compra de terrenos, la construcción de infraestructuras y los episodios de violencia, se observa un patrón: a medida que se consolidaba la propiedad empresarial sobre el Gualcarque, aumentaban las amenazas y las agresiones contra el COPINH y las comunidades lencas."
       ],
 
       "location": {
-        "center": [-86.5, 14.8],
-        "zoom": 6,
+        "center": [-88.184459, 14.672019],
+        "zoom": 14,
         "pitch": 5,
-        "bearing": 0
+        "bearing": 11
       },
 
       "cameraMode": "dramatic",
@@ -211,28 +211,56 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["limite-territorio-nacional"],
+      "geojsonOn": ["Río Gualcarque","CA02","CA06","CA12","CA16","CA25","PA11","PA14"],
 
       "layerStyles": {
-        "limite-territorio-nacional": {
+        "Río Gualcarque": {
+          "lineColor": "#0077be",
+          "lineWidth": 4    
+        },
+       
+        "CA02": {
+          "lineColor": "#eb443e",
+          "lineWidth": 1   
+        },
+        "CA06": {
+          "lineColor": "#eb443e",
+          "lineWidth": 1   
+        },
+        "CA12": {
+          "lineColor": "#eb443e",
+          "lineWidth": 1   
+        },
+        "CA16": {
+          "lineColor": "#eb443e",
+          "lineWidth": 1   
+        },
+        "CA25": {
+          "lineColor": "#eb443e",
+          "lineWidth": 1   
+        },
+        "Proyecto Agua Zarca 2011": {
           "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.5 
- 
+          "fillColor": "#ff6d01",
+          "fillOpacity": 0.5
+        },
+        "PA11": {
+          "fill": true,
+          "fillColor": "#a53709",
+          "fillOpacity": 0.6
+        },
+        "PA14": {
+          "fill": true,
+          "fillColor": "#d9763d",
+          "fillOpacity": 0.6
         }
+
+        
       },
 
-      "sideMedia": true,
 
       "media": [
-        {
-          "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "re/presentare / Archivo Experimental",
-          "position": "side",
-          "opacity": 1
-        }
+        
       ],
 
       "markers": [],
@@ -244,9 +272,9 @@
 
     {
       "id": "NR-4",
-      "title": "Infraestructuras de despojo",
-      "description":["Los cambios legislativos, las arquitecturas financieras y las obras físicas se ensamblaron así en una infraestructura de despojo que tradujo la sacralidad del territorio en un proyecto de inversión y la resistencia comunitaria en un obstáculo a neutralizar.",
-      "Ya con las obras en marcha, actores empresariales comenzaron a instalar y refinar logísticas de seguridad y agresión. La siguiente narrativa, «Los agresores», detalla cómo se articularon estos dispositivos en el territorio."
+      "title": "LA HUELLA TERRITORIAL DE AGUA ZARCA",
+      "description":["Al trasladar el proyecto al lado poniente del río Gualcarque, la investigación enfrenta un vacío documental: no encontramos registros de los predios adquiridos en ese lado para la reconfiguración propuesta a partir de febrero de 2014. Ante la ausencia de esta información, realizamos un extenso análisis de imágenes satelitales para identificar cambios en el uso del suelo asociados al proyecto. ",
+      " A partir de imágenes históricas, identificamos transformaciones territoriales que coinciden temporal y espacialmente con la nueva fase del proyecto, iniciada formalmente en 2014. Estos cambios visibles fueron demarcados para generar polígonos que representan áreas donde el uso de suelo fue modificado para dar cabida al proyecto Agua Zarca."
       ],
 
      "location": {
@@ -262,27 +290,108 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["limite-territorio-nacional"],
+      "geojsonOn": [],
 
       "layerStyles": {
-        "limite-territorio-nacional": {
-          "fill": true,
-          "fillColor": "#eb443e",
-          "fillOpacity": 0.5 
- 
-        }
+        
       },
-
-      "sideMedia": true,
 
       "media": [
         {
           "type": "image",
-          "src": "/narratives/media/Gephisample2.jpeg",
-          "caption": "Visualización generada con Gephi",
-          "credit": "re/presentare / Archivo Experimental",
+          "src": "/narratives/Narrativa 3/3.4-1.jpeg",
           "position": "side",
-          "opacity": 1
+          "target": "side",
+          "opacity": 1,
+          "footer":"Extracto del documento 'Construction Requisition No. 4, Schedule 1 to Exhibit A'. (13 de mayo, 2015), correspondiente a la orden de pago del fideicomiso administrado por Deutsche Bank para el Proyecto Agua Zarca, con énfasis en los montos asignados a DESA y a la compra de tierras."
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": { "width": "420px", "position": "right" }
+    },
+
+     {
+      "id": "NR-5",
+      "title": "LA HUELLA TERRITORIAL DE AGUA ZARCA",
+      "description":["Si bien estos polígonos no necesariamente corresponden a terrenos formalmente vendidos, sí delimitan las zonas efectivamente intervenidas. Al superponer el trazo de la tubería del proyecto de 2014 (publicado por DESA) sobre estos polígonos, se observa una clara coincidencia con las áreas transformadas, lo que confirma la validez de esta aseveración."
+      ],
+
+     "location": {
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
+      },
+
+      "cameraMode": "dramatic",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOn": [],
+
+      "layerStyles": {
+        
+      },
+
+      "media": [
+        {
+          "type": "video",
+          "src": "/narratives/Narrativa 3/3.4-2.mp4",
+          "position": "side",
+          "target": "side",
+          "opacity": 1,
+          "footer":"Animación del proceso de localización y transformación territorial en Río Blanco (2014–2017)."
+        }
+      ],
+
+      "markers": [],
+      "shapes": [],
+      "layers": [],
+
+      "panel": { "width": "420px", "position": "right" }
+    },
+
+         {
+      "id": "NR-6",
+      "title": "EL IMPACTO AMBIENTAL DE AGUA ZARCA",
+      "description":["Un informe elaborado en 2015 por Monkey Forest, revela cómo la falta de un diseño final de Agua Zarca II provocó obras y desmontes de bosque improvisados. Un reporte de avance de obra, basado en observaciones de campo realizadas en septiembre de 2015 y publicado en agosto del mismo año, registra, mediante evidencia fotográfica, excavaciones significativas en territorio aledaño al Gualcarque, donde se pretendía desarrollar la nueva versión de la presa.",
+      "La paradoja final es contundente: los mismos fondos destinados a apoyar proyectos que supuestamente contribuirían al cuidado ambiental fueron los que posibilitaron y sostuvieron la destrucción de relaciones ancestrales, profundamente ligadas a la vida cultural y social de las comunidades que han habitado y seguirán habitando este territorio.",
+      "Con las obras en marcha, actores empresariales comenzaron a instalar y refinar logísticas de seguridad y agresión. La siguiente narrativa, «Los agresores», detalla cómo se articularon estos dispositivos en el territorio."
+      ],
+
+     "location": {
+        "center": [-86.5, 14.8],
+        "zoom": 6,
+        "pitch": 5,
+        "bearing": 0
+      },
+
+      "cameraMode": "dramatic",
+      "transitionDuration": 2000,
+
+      "highlightLayers": [],
+      "dimLayers": [],
+
+      "geojsonOn": [],
+
+      "layerStyles": {
+        
+      },
+
+      "media": [
+        {
+          "type": "image",
+          "src": "/narratives/Narrativa 3/3.5.jpg",
+          "position": "side",
+          "target": "side",
+          "opacity": 1,
+          "footer":"Páginas del reporte interno de avance e informe de visitas realizadas en el periodo de agosto y septiembre de 2015, (Hidroeléctrica Agua Zarca, publicado en la página de COPINH)."
         }
       ],
 
