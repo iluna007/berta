@@ -166,7 +166,7 @@
     {
       "id": "NR-3",
       "title": "OBLIGACIONES DEL ESTADO HONDUREÑO HACIA PUEBLOS INDÍGENAS",
-      "description": "El Estado hondureño ha ratificado instrumentos internacionales, como el Convenio 169 de la Organización Internacional del Trabajo (OIT), que establece que en territorios indígenas, como es el caso de la cuenca del Gualcarque, rige la obligación de realizar consultas libres, previas, informadas, de buena fe y culturalmente adecuadas. Eso significa que antes de autorizar obras como represas, el Estado debe informar a las personas indígenas que serían afectadas, garantizar su participación efectiva y obtener su consentimiento cuando existan riesgos para su supervivencia cultural o territorial. La experiencia ha demostrado que cualquier concesión empresarial otorgada sin el cumplimiento de ese estándar no sólo vulnera derechos colectivos, sino que genera conflictos sociales importantes.",
+      "description": "El Estado hondureño ha ratificado instrumentos internacionales, como el Convenio 169 de la Organización Internacional del Trabajo (OIT), que establece que en territorios indígenas, como es el caso de la cuenca del Gualcarque, rige la obligación de realizar consultas libres, previas, informadas, de buena fe y culturalmente adecuadas. Eso significa que antes de autorizar obras como represas, el Estado debe informar a las personas indígenas que serían afectadas, garantizar su participación efectiva y obtener su consentimiento cuando existan riesgos para su supervivencia cultural o territorial. La experiencia ha demostrado que cualquier concesión empresarial otorgada sin el cumplimiento de ese estándar no sólo vulnera derechos colectivos, sino que también genera conflictos sociales importantes.",
 
       "location": {
         "center": [-86.5, 14.8],
@@ -198,8 +198,7 @@
           "src": "/narratives/Narrativa 1/1.2-2.jpg",
           "position": "inside",
           "target": "side",
-          "opacity": 1,
-          "footer": "Tabla de concesiones de proyectos de represas hidroeléctricas aprobadas al 2014. (CESPAD, Río Blanco: la reconstrucción histórica de la lucha de la defensa del rio Gualcarque, 2016)."
+          "opacity": 1
         }
       ],
 
@@ -293,7 +292,8 @@
           "src": "/narratives/Narrativa 1/1.4.jpg",
           "position": "inside",
           "target": "side",
-          "opacity": 1
+          "opacity": 1,
+          "footer": "Tabla de concesiones de proyectos de represas hidroeléctricas aprobadas al 2014. (CESPAD, Río Blanco: la reconstrucción histórica de la lucha de la defensa del rio Gualcarque, 2016)."
         }
       ],
 

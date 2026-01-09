@@ -71,9 +71,16 @@
         "media": [
         {
           "type": "image",
-          "src": "/narratives/Narrativa 2/2.2.jpeg",
+          "src": "/narratives/Narrativa 2/2.1-1.jpg",
           "position": "inside",
           "target": "side",
+          "opacity": 1
+        },
+        {
+          "type": "image",
+          "src": "/narratives/Narrativa 2/2.1-L1.jpg",
+          "position": "inside",
+          "target": "scroller",
           "opacity": 1
         }
       ],
@@ -112,9 +119,16 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/Narrativa 2/2.3.jpeg",
+          "src": "/narratives/Narrativa 2/2.1-2.jpg",
           "position": "inside",
           "target": "side",
+          "opacity": 1
+        },
+        {
+          "type": "image",
+          "src": "/narratives/Narrativa 2/2.1-L2.jpg",
+          "position": "inside",
+          "target": "scroller",
           "opacity": 1
         }
       ],
@@ -130,7 +144,7 @@
       "id": "NR-3",
       "title": "RIESGO EMPRESARIAL Y EL INICIO DE LA CRISIS FINANCIERA",
       "description":["La empresa china Sinohydro Corporation fue la contratista original del proyecto Agua Zarca. Sin embargo, se retiró en 2013 tras la ola de indignación provocada por el asesinato del líder lenca Tomás García, que detonó episodios de protesta y violencia contra la población lenca. Tras una queja presentada por Berta, el banco CAMIF decide no invertir en el proyecto Agua Zarca.",
-    " A partir de ese momento, DESA comenzó a enfrentar una crisis financiera: la salida de la constructora Sinohydro dejó a la compañía sin acceso a los capitales de los bancos internacionales de desarrollo. Asimismo, los préstamos de las bancas internacionales tenían cronogramas de pago y un tiempo de gracia para empezar a ser solventados, que se estaban agotando debido a la oposición al proyecto por parte del COPINH y de Berta Cáceres. Es decir, la lucha de COPINH fue interpretada por DESA como un riesgo empresarial."],
+      "A partir de ese momento, DESA comenzó a enfrentar una crisis financiera: la salida de la constructora Sinohydro dejó a la compañía sin acceso a los capitales de los bancos internacionales de desarrollo. Asimismo, los préstamos de las bancas internacionales tenían cronogramas de pago y un tiempo de gracia para empezar a ser solventados, que se estaban agotando debido a la oposición al proyecto por parte del COPINH y de Berta Cáceres. Es decir, la lucha de COPINH fue interpretada por DESA como un riesgo empresarial."],
 
       "location": {
         "center": [-86.5, 14.8],
@@ -154,9 +168,16 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/Narrativa 2/2.4.jpeg",
+          "src": "/narratives/Narrativa 2/2.2-1.jpg",
           "position": "inside",
           "target": "side",
+          "opacity": 1
+        },
+        {
+          "type": "image",
+          "src": "/narratives/Narrativa 2/2.2-L1.jpg",
+          "position": "inside",
+          "target": "scroller",
           "opacity": 1
         }
       ],
@@ -196,9 +217,16 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/Narrativa 2/2.5.jpeg",
+          "src": "/narratives/Narrativa 2/2.2-2.jpg",
           "position": "inside", 
           "target": "side",
+          "opacity": 1
+        },
+        {
+          "type": "image",
+          "src": "/narratives/Narrativa 2/2.2-L2.jpg",
+          "position": "inside", 
+          "target": "scroller",
           "opacity": 1
         }
       ],
@@ -238,9 +266,10 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/Narrativa 2/2.3-2.jpeg",
+          "src": "/narratives/Narrativa 2/2.3-1.jpg",
           "position": "inside",
           "target": "side",
+          "footer": "Fig. 1. Cada Construction Requisition debía seguir el proceso marcado en el diagrama presentado. La supervisión pretendía dar legitimidad y vigilar ante posibles intentos de corrupción.",
           "opacity": 1
         }
       ],
@@ -281,9 +310,10 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/Narrativa 2/2.6.jpeg",
+          "src": "/narratives/Narrativa 2/2.3-2.jpg",
           "position": "inside",
           "target": "side",
+          "footer":"Fig. 1. Las consultoras figuran como supervisoras de cada Construction Requisition y su aprobación era necesaria para la transferecnia de fondos hacia cuentas bancarias determinadas y analizadas.",
           "opacity": 1
         }
       ],
@@ -324,9 +354,10 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/Narrativa 2/2.4-1.jpeg",
+          "src": "/narratives/Narrativa 2/2.4-1.jpg",
           "position": "inside",
           "target": "side",
+          "footer":"Fig. 1. El blindaje que debía proporcionar la supervisión de varias consultorías sirvió para dar una apariencia de legalidad a los procesos realizados sin autorización previa de los bancos. La compra de terrenos, desvío de fondos y pagos a vigilantes y agresores fueron diluídos entre transacciones en cuentas en dólares o lempiras.",
           "opacity": 1
         }
       ],
@@ -367,9 +398,10 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/Narrativa 2/2.6.jpeg",
+          "src": "/narratives/Narrativa 2/2.4-3.jpeg",
           "position": "inside",
           "target": "side",
+          "footer":"Un desliz documental en la Requisition #4 evidencia estas operaciones: por error, se indicó la dirección bancaria de MFC en una instrucción de pago de $1,039,375.00 USD para COPRECA. Sin embargo, los fondos nunca llegaron a MFC, sino que el flujo se redirigió para que, siete días después, $1,039,647.30 USD llegaran a la cuenta de CONCASA. Esta redirección de capital difícilmente pudo haberse ejecutado sin la participación de DB y el FMO. El patrón se repite en siete de las nueve requisiciones. En la Requisition #5 hay dos irregularidades más: aparecen instrucciones de pago a COPRECA que se desvían a destinos bancarios de CONCASA; y un pago para CARBON se desvía hacia una empresa llamada Desarrollos Ambientales, S.A. Estas operaciones vuelven confuso quién recibe, quién ejecuta y quién es responsable de Agua Zarca.",
           "opacity": 1
         },
         {
@@ -435,7 +467,7 @@
 
     {
       "id": "NR-10",
-      "title": "LA BANCA INTERNACIONAL COMO CANAL Y COARTADA",
+      "title": "BANCA DE DESARROLLO PARA FINANCIAR DESPOJO Y PERPETRAR VIOLENCIAS",
       "description":["Al reconstruir estas rutas, mostramos los pagos directos de los bancos a CONCASA —sin rol declarado en los contratos de PHAZ—, las transferencias a cuentas de PEMSA Honduras y desde allí la emisión de cheques en efectivo cobrados por los asesinos de Berta. La ausencia de alertas antilavado ante la sustitución de beneficiarios y las transferencias a cuentas offshore apunta a fallas graves de debida diligencia y a posibles complicidades internas. Así, los bancos como FMO y BAC funcionaron al mismo tiempo como coartada de formalidad y como canal de liquidez para pagar el asesinato de Berta."
       ], 
 
@@ -461,53 +493,16 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/Narrativa 2/2.5-2.jpeg",
+          "src": "/narratives/Narrativa 2/2.5-2.jpg",
           "position": "inside",
           "target": "side",
           "opacity": 1
-        }
-      ],
-
-      "markers": [],
-      "shapes": [],
-      "layers": [],
-
-      "panel": { "width": "420px", "position": "right" }
-    },
-
-    {
-      "id": "NR-11",
-      "title": "BANCA DE DESARROLLO PARA FINANCIAR DESPOJO Y PERPETRAR VIOLENCIAS",
-      "description":["La red empresarial montó instrumentos fiduciarios, utilizó bancas de desarrollo y recurrió a capital offshore para ocultar a los responsables, mover recursos y financiar acciones de despojo y violencia. Lo que debía financiar desarrollo sostenible, terminó financiando despojo, represión y muerte.",
-      "Faltan piezas —como los estados de cuenta completos de PEMSA Panamá y de COPRECA, cuya entrega fue solicitada por el GIEI sin obtener respuesta— para cerrar cada eslabón con fuentes primarias. Aun así, los patrones persisten: desvíos repetidos, errores que delatan intención y coherencia entre estados, requisiciones y testimonios. Varias empresas y bancas se han escudado en el límite constitucional hondureño, que establece un horizonte de resguardo de datos bancarios de hasta 5 años.",
-      "Con este andamiaje financiero establecido, la siguiente narrativa, «Compra de terrenos, infraestructuras y logística de despojo», explora cómo estos flujos se tradujeron en compras de tierra y en el despliegue de infraestructuras de control territorial."
-      ], 
-
-      "location": {
-        "center": [-86.5, 14.8],
-        "zoom": 6,
-        "pitch": 5,
-        "bearing": 0
-      },
-
-      "cameraMode": "flat",
-      "transitionDuration": 2000,
-
-      "highlightLayers": [],
-      "dimLayers": [],
-
-      "geojsonOn": [],
-
-      "layerStyles": {
-        
-      },
-
-      "media": [
+        },
         {
           "type": "image",
-          "src": "/narratives/Narrativa 2/2.6-1.jpeg",
+          "src": "/narratives/Narrativa 2/2.5-L2.jpg",
           "position": "inside",
-          "target": "side",
+          "target": "scroller",
           "opacity": 1
         }
       ],
