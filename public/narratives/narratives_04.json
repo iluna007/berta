@@ -20,19 +20,14 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["Río Gualcarque","Departamentos Honduras","CA02","CA06","CA12","CA16","CA25","Daños"],
+      "geojsonOn": ["Río Gualcarque","CA02","CA06","CA12","CA16","CA25","Daños"],
 
       "layerStyles": {
         "Río Gualcarque": {
           "lineColor": "#0077be",
           "lineWidth": 4    
         },
-        "Departamentos Honduras": {
-          "fill": false,
-          "lineColor": "#000000",
-          "lineWidth": 2,
-          "line-dasharray": [2,4]
-        },
+       
         "CA02": {
           "lineColor": "#d9763d",
           "lineWidth": 1   
@@ -78,7 +73,7 @@
       "panel": { "width": "420px", "position": "right" }
    },
 
-  {
+   {
       "id": "NR-1",
       "title": "PAGOS ILÍCITOS PARA CREAR EL DISPOSITIVO DE 'SEGURIDAD'",
       "description":["La seguridad coercitiva se sostuvo con recursos de la banca internacional de desarrollo que fueron canalizados —mediante el mecanismo descrito en las narrativas anteriores— a policías, militares, seguridad privada, informantes y mediadores. Planillas, recibos y notas internas documentan pagos periódicos vinculados a operativos para liberar accesos, romper plantones y obtener información.",
@@ -180,7 +175,7 @@
       "layers": [],
 
       "panel": { "width": "420px", "position": "right" }
-   },
+  },
 
   {
       "id": "NR-3",
@@ -216,15 +211,8 @@
           "target": "side",
           "opacity": 1,
           "footer":"Comunicados de vecinos de San Francisco de Ojeda, San Ramón y Valle de Ángeles en apoyo al proyecto Agua Zarca. Publicados por DESA en su sala de prensa en febrero de 2016. (Recuperado de Wayback Machine, hidroelectricaaguzazarca.hn)"
-        },
-        {
-          "type": "image",
-          "src": "/narratives/Narrativa 4/4.4.jpg",
-          "position": "inside",
-          "target": "scroll",
-          "opacity": 1,
-          "footer":"Fig 1. Libro blanco encargado por DESA a Amsterdam & Partners LLP. (Publicado en SCRIBD por Robert Amsterdam). Fig 2. Comunicado en página de Amsterdam & Partners LLP. sobre contratación de asesoría legal por parte de DESA. (amsterdamandpartners.com, 15 de mayo 2018)."
         }
+       
       ],
 
       "markers": [],
@@ -232,7 +220,7 @@
       "layers": [],
 
       "panel": { "width": "420px", "position": "right" }
-   },
+  },
 
    {
       "id": "NR-4",
@@ -286,7 +274,7 @@
       "panel": { "width": "420px", "position": "right" }
    },
 
-     {
+   {
       "id": "NR-5",
       "title": "EL DISPOSITIVO COERCITIVO: COORDINACIÓN EMPRESARIAL, CRIMINAL Y ESTATAL",
       "description":["El conjunto de evidencias introducidas en esta narrativa establece un patrón operativo, sostenido en el tiempo, para imponer el proyecto Agua Zarca (PHAZ) mediante una coerción articulada entre la empresa, los poderes del Estado y operadores criminales. Te invitamos a conocer este patrón a mayor profundidad en la plataforma cartográfica.",

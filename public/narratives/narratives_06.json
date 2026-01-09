@@ -48,7 +48,7 @@
       "id": "NR-1",
       "title": "CÓMO SE ADMINISTRÓ LA IMPUNIDAD",
       "description":["Al no prosperar estas campañas de distracción y criminalización, se planeó una estrategia en tres frentes paralelos: 1) decisiones procesales que redujeron las posibilidades de la investigación, 2) comunicaciones y gestiones para encubrir responsabilidades empresariales y estatales, y 3) la continuidad de infraestructuras y reglas que mantuvieron abierto el camino del despojo.",
-      "El COPINH ha realizado un trabajo de documentación...."
+      "El COPINH ha realizado un trabajo de documentación fundamental sobre estas estrategias."
     ],
 
       "location": {
@@ -161,7 +161,7 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/Narrativa 6/6.2-1.jpeg",
+          "src": "/narratives/Narrativa 6/6.2-1.jpg",
           "position": "inside",
           "target": "side",
           "opacity": 1,
@@ -179,8 +179,7 @@
     {
       "id": "NR-4",
       "title": "EL RIESGO DE LA REACTIVACIÓN DE LAS VIOLENCIAS",
-      "description":["Pese a las sentencias contra algunos autores materiales e intelectuales, persisten las infraestructuras y redes empresariales y estatales con capacidad para imponer proyectos como Agua Zarca. Sin cambios estructurales en leyes e instituciones, la rendición de cuentas se reduce a casos emblemáticos, mientras que las infraestructuras que posibilitan estas violencias permanecen.",
-      ""
+      "description":["Pese a las sentencias contra algunos autores materiales e intelectuales, persisten las infraestructuras y redes empresariales y estatales con capacidad para imponer proyectos como Agua Zarca. Sin cambios estructurales en leyes e instituciones, la rendición de cuentas se reduce a casos emblemáticos, mientras que las infraestructuras que posibilitan estas violencias permanecen."
     ],
 
       "location": {
@@ -263,6 +262,7 @@
 
       "panel": { "width": "420px", "position": "right" }
     },
+
     {
       "id": "NR-6",
       "title": "PRUEBAAN",

@@ -3,9 +3,7 @@
     {
       "id": "NR-0",
       "title": "¿POR QUÉ BERTA FUE OBJETIVO?",
-      "description":["Berta Cáceres no solo confrontó a DESA: detuvo Agua Zarca. Su acción colectiva, junto a las comunidades lencas, bloqueó el avance de la obra y cerró la posibilidad del negocio basado en la explotación del río Gualcarque. ",
-      " Para DESA y su red de aliados, Berta se convirtió en un obstáculo operativo y financiero: alguien que hacía imposible que el proyecto se construyera a tiempo y generara ganancias. Desde esta lógica empresarial, esta narrativa explica cómo se fue configurando una decisión criminal orientada a eliminar el «obstáculo» para proteger capitales."
-    ],
+      "description":["Berta Cáceres no solo confrontó a DESA: detuvo Agua Zarca. Su acción colectiva junto a las comunidades lencas bloqueó el avance de la obra y cerró la posibilidad del negocio basado en la explotación del río Gualcarque. No fue su prestigio público lo que incomodó a la empresa —pues atender sus demandas habría podido fortalecer la legitimidad de DESA—, sino el hecho de que volvió inviable la inversión.Para DESA y su red de aliados, Berta se convirtió en un obstáculo operativo y financiero: alguien que hacía imposible que el proyecto se construyera y generara ganancias. Desde esta lógica empresarial, esta narrativa explica cómo se fue configurando una decisión criminal orientada a eliminar el «obstáculo» para proteger capitales."],
 
       "location": {
         "center": [-86.5, 14.8],
@@ -165,7 +163,7 @@
           "position": "inside",
           "target": "side",
           "opacity": 1,
-          "footer":""
+          "footer":"Extracto de mensajes entre Douglas Geovanny Bustillo y un ejecutivo de DESA, (Informe GAIPE 'Represa de violencia, el plan que asesinó a Berta Cáceres. Noviembre, 2017). "
         }
       ],
 
@@ -176,7 +174,7 @@
       "panel": { "width": "420px", "position": "right" }
     },
 
-        {
+    {
       "id": "NR-5",
       "title": "LA PREPARACIÓN DEL CRIMEN",
       "description":["La red de vigilancia identificó los horarios, trayectos y espacios de Berta y de otras personas del COPINH. La idea de una «oportunidad» no surgió de la nada: se construyó mediante el monitoreo, el intercambio de datos y ensayos de respuesta rápida.",
