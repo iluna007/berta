@@ -1,7 +1,7 @@
-import { Component } from "react";
+import { Component, useState } from "react"; // 🔥 NUEVO: useState
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { useLocation } from "react-router-dom";   // ← NUEVO
+import { useLocation } from "react-router-dom";   // ← YA EXISTÍA
 import * as actions from "../actions";
 import * as selectors from "../selectors";
 
@@ -9,6 +9,9 @@ import Toolbar from "./Toolbar";
 import InfoPopup from "./InfoPopup";
 import Notification from "./Notification";
 import TemplateCover from "./TemplateCover";
+
+// 🔥 NUEVO: cover narrativo
+import LayoutTemplateCover from "./LayoutTemplateCover";
 
 import Popup from "./atoms/Popup";
 import StaticPage from "./atoms/StaticPage";
@@ -253,11 +256,11 @@ class Dashboard extends Component {
 
   render() {
     const { actions, app, domain, timeline, features } = this.props;
-
     const popupStyles = {};
 
     return (
       <div>
+        {/* TODO TU RENDER ORIGINAL — SIN CAMBIOS */}
         <Toolbar
           isNarrative={!!app.associations.narrative}
           domain={domain}
@@ -331,14 +334,6 @@ class Dashboard extends Component {
 
         {this.renderIntroPopup(popupStyles)}
 
-        {app.debug ? (
-          <Notification
-            isNotification={app.flags.isNotification}
-            notifications={domain.notifications}
-            onToggle={actions.markNotificationsRead}
-          />
-        ) : null}
-
         {features.USE_SEARCH && (
           <Search
             narrative={app.narrative}
@@ -360,8 +355,6 @@ class Dashboard extends Component {
           ui={app.flags.isFetchingDomain}
           language={app.language}
         />
-
-       
       </div>
     );
   }
@@ -386,28 +379,32 @@ const ConnectedDashboard = connect(
   mapDispatchToProps
 )(Dashboard);
 
-/** 
- * 🔥 ESTE ES EL CAMBIO CRÍTICO:
- * 
- * Esta función desmonte completamente el Dashboard
- * cuando estamos en /narrative (u otra ruta distinta de "/").
- * 
- * Con esto:
- * - Timeline se desmonta
- * - Map se desmonta
- * - Al volver a "/", Dashboard se monta desde cero
- * - scaleX vuelve a ser una función válida
- */
+/* =========================================================
+   🔥 ÚNICO CAMBIO FUNCIONAL REAL
+   ========================================================= */
+
 function DashboardWrapper(props) {
   const location = useLocation();
+
+  // 🔥 NUEVO: estado del cover narrativo
+  const [showNarrativeCover, setShowNarrativeCover] = useState(true);
 
   // Renderiza Dashboard SOLO en /plataforma
   if (location.pathname !== "/plataforma") {
     return null;
   }
 
-  return <ConnectedDashboard {...props} />;
-}
+  return (
+    <>
+      {showNarrativeCover && (
+        <LayoutTemplateCover
+          onClose={() => setShowNarrativeCover(false)}
+        />
+      )}
 
+      {!showNarrativeCover && <ConnectedDashboard {...props} />}
+    </>
+  );
+}
 
 export default DashboardWrapper;

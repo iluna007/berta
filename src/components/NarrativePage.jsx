@@ -84,10 +84,7 @@ export default function NarrativePage() {
 
   const activeChapter = chapters.find((c) => c.id === activeChapterId);
 
-  const goBack = async () => {
-    await dispatch(hook_restore());
-    navigate("/");
-  };
+
 
   const moveIndex = (direction) => {
     setIndex((prev) => {

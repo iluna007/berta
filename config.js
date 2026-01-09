@@ -178,7 +178,7 @@ const config = {
       USE_SOURCES: true,
       USE_SPOTLIGHTS: false,
       USE_SHAPES: false,
-      USE_COVER: true,
+      USE_COVER: false,
       USE_INTRO: false,
       USE_SATELLITE_OVERLAY_TOGGLE: true,
       USE_SEARCH: false,

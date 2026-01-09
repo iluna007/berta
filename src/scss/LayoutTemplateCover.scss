@@ -1,0 +1,121 @@
+/* ---------- OVERLAY ---------- */
+.ntc-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  overflow-y: auto;
+}
+
+/* ---------- CONTENEDOR ---------- */
+.ntc-container {
+  position: relative;
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 3rem 2rem 4rem;
+  background: rgba(0, 0, 0, 0.90)0;
+  color: #fff;
+}
+
+/* ---------- TÍTULO ---------- */
+.ntc-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 2rem auto 3rem;
+  max-width: 820px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+/* ---------- BOTÓN CERRAR (EFECTO ORIGINAL) ---------- */
+.ntc-close {
+  color: #ffffff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+  transform-origin: center;
+}
+
+.ntc-close:hover {
+  color: #00a261;   /* 🔥 rojo original */
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+/* ---------- POSICIÓN DE LAS ✕ ---------- */
+.ntc-close-top {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+.ntc-close-bottom {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+/* ---------- LOGOS ---------- */
+.ntc-header-logos,
+.ntc-footer-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.ntc-logo1 {
+  height: 96px;
+  object-fit: contain;
+}
+.ntc-logo2 {
+  height: 48px;
+  object-fit: contain;
+}
+
+/* ---------- CONTENIDO ---------- */
+.ntc-md {
+  max-width: 720px;
+  margin: 1.5rem auto;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-weight: 400; 
+}
+
+.ntc-md h4 {
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ---------- IMÁGENES ---------- */
+.ntc-img-block {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.ntc-img-block img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- VIDEO ---------- */
+.ntc-video-block {
+  max-width: 720px;
+  margin: 2rem auto;
+}
+
+.ntc-inline-video {
+  width: 100%;
+}
+
+.ntc-md p {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}

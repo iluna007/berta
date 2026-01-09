@@ -47,7 +47,7 @@ export default function NarrativesMap({
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/representare/cmj93y2ji002m01s3c3r41vb1",
+      style: "mapbox://styles/representare/cmk7dqln8002n01s613weebum",
       center: [-86.5, 14.8],
       zoom: 6,
       pitch: 60,
