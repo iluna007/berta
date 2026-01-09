@@ -72,6 +72,18 @@ export const generateCardLayout = {
           scaleFont: 1.1,
         },
       ],
+
+      [{ kind: "line-break", times: 0.4 }],
+
+      [
+        {
+          kind: "text",
+          title: "Fuente",
+          value: event.fuente || ``,
+          scaleFont: 1.1,
+        },
+      ],
+
     ];
   },
 
@@ -133,6 +145,18 @@ export const generateCardLayout = {
           scaleFont: 1.1,
         },
       ],
+
+      [{ kind: "line-break", times: 0.4 }],
+
+      [
+        {
+          kind: "text",
+          title: "Fuente",
+          value: event.fuente || ``,
+          scaleFont: 1.1,
+        },
+      ],
+
       [
         {
           kind: "sources",

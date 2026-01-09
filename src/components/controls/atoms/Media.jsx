@@ -133,7 +133,7 @@ const Media = ({ cardIdx, src, title, graphic }) => {
           </div>
         );
       } else {
-        return <div><a href={src}>other source</a></div>
+        return <div><a href={src}>otras fuentes</a></div>
       }
   }
 };
