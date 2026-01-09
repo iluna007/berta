@@ -37,8 +37,10 @@ export default function NarrativeTemplateCover({ onClose }) {
       // PÁRRAFO 2
       "#### Alcance de la investigación",
       // 👇 VIDEO ENTRE PÁRRAFO 3 Y 4
-      //{ type: "video", src: "/narratives/media/infraestructura_conflicto.mp4" },
-
+        {
+          type: "video",
+          src: "/narratives/media/infraestructura_conflicto.mp4"
+        },
       // PÁRRAFO 4
      "#### LA PLATAFORMA COMO MEDIO DE INVESTIGACIÓN",
       "Esta plataforma, en su versión 1.0, busca volver visibles posibles interacciones y relaciones entre actores y eventos. Al reunir miles de entradas de datos se convierte en una herramienta investigativa que abre la posibilidad de nuevas investigaciones a sus usuarios.",
