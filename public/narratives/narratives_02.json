@@ -398,7 +398,7 @@
       "media": [
         {
           "type": "image",
-          "src": "/narratives/Narrativa 2/2.4-3.jpeg",
+          "src": "/narratives/Narrativa 2/2.4-2.jpg",
           "position": "inside",
           "target": "side",
           "footer":"Un desliz documental en la Requisition #4 evidencia estas operaciones: por error, se indicó la dirección bancaria de MFC en una instrucción de pago de $1,039,375.00 USD para COPRECA. Sin embargo, los fondos nunca llegaron a MFC, sino que el flujo se redirigió para que, siete días después, $1,039,647.30 USD llegaran a la cuenta de CONCASA. Esta redirección de capital difícilmente pudo haberse ejecutado sin la participación de DB y el FMO. El patrón se repite en siete de las nueve requisiciones. En la Requisition #5 hay dos irregularidades más: aparecen instrucciones de pago a COPRECA que se desvían a destinos bancarios de CONCASA; y un pago para CARBON se desvía hacia una empresa llamada Desarrollos Ambientales, S.A. Estas operaciones vuelven confuso quién recibe, quién ejecuta y quién es responsable de Agua Zarca.",
@@ -406,7 +406,7 @@
         },
         {
           "type": "image",
-          "src": "/narratives/Narrativa 2/2.4-2.jpg",
+          "src": "/narratives/Narrativa 2/2.4-L2.jpg",
           "position": "inside",
           "target": "scroller",
           "opacity": 1,
@@ -500,7 +500,7 @@
         },
         {
           "type": "image",
-          "src": "/narratives/Narrativa 2/2.5-L2.jpg",
+          "src": "/narratives/Narrativa 2/2.6-L.jpg",
           "position": "inside",
           "target": "scroller",
           "opacity": 1
