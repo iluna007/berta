@@ -165,7 +165,7 @@
     "group": "Infraestructuras y logísticas",
     "subgroup": "Proyecto Agua Zarca 2011",
     "label": "Presa",
-    "url": "geojson/Proyecto Agua Zarca 2011.geojson",
+    "url": "geojson/PR11.geojson",
     "color": "#ff6d01"
   },
   {
@@ -189,7 +189,7 @@
     "group": "Infraestructuras y logísticas",
     "subgroup": "Proyecto Agua Zarca 2014",
     "label": "Predios",
-    "url": "geojson/Proyecto Agua Zarca 2014.geojson",
+    "url": "geojson/PR14.geojson",
     "color": "#f1c232"
   },
   {

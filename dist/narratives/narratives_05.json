@@ -154,6 +154,7 @@
 
       "layerStyles": {
         
+        
       },
 
       "media": [
@@ -194,10 +195,20 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": [],
+      "geojsonOn": ["Asc36","Departamentos Honduras"],
 
       "layerStyles": {
-        
+        "Asc36": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "circleRadius": 0.1
+        },
+        "Departamentos Honduras": {
+          "fill": false,
+          "lineColor": "#000000",
+          "lineWidth": 2,
+          "line-dasharray": [2,4]
+        }
       },
 
       "media": [
