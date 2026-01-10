@@ -6,7 +6,7 @@ export default function NarrativeLegend({ items }) {
 
   return (
     <div className="narrative-legend">
-      <div className="legend-title">Capas Visibles</div>
+      <div className="legend-title">Capas</div>
 
       {items.map((item) => {
         const { type, color, label } = item;

@@ -83,7 +83,7 @@
   ],
 
       "location": {
-        "center": [-88.184459, 14.672019],
+        "center": [-88.187279499001775, 14.668527754531583],
         "zoom": 14,
         "pitch": 5,
         "bearing": 11
@@ -95,22 +95,18 @@
       "highlightLayers": ["carreteras-2012"],
       "dimLayers": [],
 
-      "geojsonOn": ["Río Gualcarque","Proyecto Agua Zarca 2011","PA11","PA14"],
+      "geojsonOn": ["Río Gualcarque","Predios Agua Zarca 2011","Predios Agua Zarca 2014"],
 
       "layerStyles": {
-        "Proyecto Agua Zarca 2011": {
+        "Predios Agua Zarca 2011": {
           "fill": true,
-          "fillColor": "#ff6d01",
-          "fillOpacity": 0.5
+          "fillColor": "#eb443e",
+          "circleRadius": 1,
+          "circleBlur": 3 
         },
-        "PA11": {
+        "Predios Agua Zarca 2014": {
           "fill": true,
-          "fillColor": "#a53709",
-          "fillOpacity": 0.6
-        },
-        "PA14": {
-          "fill": true,
-          "fillColor": "#d9763d",
+          "fillColor": "#000000",
           "fillOpacity": 0.6
         },
                
@@ -149,7 +145,7 @@
 
       "location": {
         "center": [-88.184459, 14.672019],
-        "zoom": 14,
+        "zoom": 13,
         "pitch": 5,
         "bearing": 11
       },
@@ -160,18 +156,43 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["Río Gualcarque","Proyecto Agua Zarca 2011"],
+      "geojsonOn": ["Río Gualcarque","Cuarto de Maquinas 2011","Presa 2011","Tuberia 2011", "Cuarto de Maquinas 2014","Presa 2014","Tuberia 2014"],
 
       "layerStyles": {
         "Río Gualcarque": { 
           "lineColor": "#0077be",
           "lineWidth": 4
         },
-        "Proyecto Agua Zarca 2011": {
+        "Cuarto de Maquinas 2011": {
           "fill": true,
-          "fillColor": "#ff6d01",
+          "fillColor": "#eb443e",
           "fillOpacity": 0.5
+        },
+        "Presa 2011": {
+          "fill": true,
+          "fillColor": "#eb443e",
+          "fillOpacity": 0.5
+        },
+        "Tuberia 2011": {
+          "lineColor": "#eb443e",
+          "lineWidth": 4    
+        },
+        "Cuarto de Maquinas 2014": {
+          "fill": true,
+          "fillColor": "#000000",
+          "fillOpacity": 0.5
+        },
+        "Presa 2014": {
+          "fill": true,
+          "fillColor": "#000000",
+          "fillOpacity": 0.5
+        },
+        "Tuberia 2014": {
+          "lineColor": "#000000",
+          "lineWidth": 4    
         }
+
+        
         
       },
 
@@ -196,7 +217,7 @@
 
       "location": {
         "center": [-88.184459, 14.672019],
-        "zoom": 14,
+        "zoom": 13,
         "pitch": 5,
         "bearing": 11
       },
@@ -207,7 +228,7 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["Río Gualcarque","Carreteras 2002","Carreteras 2006","Carreteras 2012","Carreteras 2016","Carreteras 2025","PA11","PA14"],
+      "geojsonOn": ["Río Gualcarque","Carreteras 2002","Carreteras 2006","Carreteras 2012","Carreteras 2016","Carreteras 2025","Predios Agua Zarca 2011","Predios Agua Zarca 2014"],
 
       "layerStyles": {
         "Río Gualcarque": {
@@ -235,19 +256,15 @@
           "lineColor": "#FFF2CE ",
           "lineWidth": 1   
         },
-        "Proyecto Agua Zarca 2011": {
+        "Predios Agua Zarca 2011": {
           "fill": true,
-          "fillColor": "#ff6d01",
-          "fillOpacity": 0.5
+          "fillColor": "#eb443e",
+          "circleRadius": 1,
+          "circleBlur": 3 
         },
-        "PA11": {
+        "Predios Agua Zarca 2014": {
           "fill": true,
-          "fillColor": "#a53709",
-          "fillOpacity": 0.6
-        },
-        "PA14": {
-          "fill": true,
-          "fillColor": "#d9763d",
+          "fillColor": "#000000",
           "fillOpacity": 0.6
         }
 

@@ -74,12 +74,12 @@
     "color": "#FFFFFF"
   },
   {
-    "id": "CM11",
+    "id": "Cuarto de Maquinas 2011",
     "url": "geojson/CM11.geojson",
     "color": "#FFFFFF"
   },
   {
-    "id": "CM14",
+    "id": "Cuarto de Maquinas 2014",
     "url": "geojson/CM14.geojson",
     "color": "#FFFFFF"
   },
@@ -95,13 +95,13 @@
   },
   
   {
-    "id": "PR11",
+    "id": "Presa 2011",
     "url": "geojson/PR11.geojson",
     "color": "#FFFFFF"
   },
   
   {
-    "id": "PR14",
+    "id": "Presa 2014",
     "url": "geojson/PR14.geojson",
     "color": "#FFFFFF"
   },
@@ -115,14 +115,26 @@
 
   
   {
-    "id": "TPA11",
+    "id": "Tuberia 2011",
     "url": "geojson/TPA11.geojson",
+    "color": "#FFFFFF"
+  },
+
+  {
+    "id": "Predios Agua Zarca 2011",
+    "url": "geojson/PA11.geojson",
+    "color": "#FFFFFF"
+  },
+
+  {
+    "id": "Predios Agua Zarca 2014",
+    "url": "geojson/PA14.geojson",
     "color": "#FFFFFF"
   },
 
   
   {
-    "id": "TPA14",
+    "id": "Tuberia 2014",
     "url": "geojson/TPA14.geojson",
     "color": "#FFFFFF"
   },
