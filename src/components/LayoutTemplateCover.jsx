@@ -22,28 +22,28 @@ export default function LayoutTemplateCover({ onClose }) {
       "Esta plataforma cartográfica es una herramienta investigativa legible e interactiva para el público general. Permite visualizar y cruzar información de miles de eventos documentados tanto en la investigación del GIEI para el caso de Berta Cáceres, así como en el análisis territorial conducido por re/presentare para visibilizar espacial y temporalmente coincidencias, patrones y estructuras de operación.",
       "La plataforma cartográfica esta organizada a través de capas, que organizan y visualizan  información en extensiones de territorios; datos, que contienen categorías de eventos como son comunicaciones, daños, infraestructuras, y transacciones. Cada punto de dato tiene una ubicación espacial y temporal, que en la línea de tiempo permite comprender la evolución de eventos.",
       // 👇 IMAGEN ENTRE P1 Y P2
-      { type: "image", src: "src/assets/tutorial1.jpg", alt: "foto: t1" },
+      { type: "image", src: "/images/tutorial1.jpg", alt: "foto: t1" },
 
       // PÁRRAFO 2
       "#### DATOS",
       "En la línea del tiempo se puede escoger ver 'todos los eventos' (2009-2024) o solo eventos en un espacio temporal, haciendo clic en el 'zoom de un año' hasta 'zoom de un día'. Las flechas a los costados de la línea de tiempo permite retroceder o avanzar en el tiempo, y la ventana temporal elegida filtra los datos que se expresan espacialmente. Cuando la plataforma cartográfica carga por primera vez, todos los datos se visibilizan como puntos blancos.",
-      { type: "image", src: "src/assets/tutorial2.jpg", alt: "foto: t2" },
+      { type: "image", src: "/images/tutorial2.jpg", alt: "foto: t2" },
 
       "Por ejemplo, podemos seleccionar en datos todos los eventos de daños a todos los colectivos de movimientos sociales (verde) y los asesinatos de defensores de territorio (rojo). Es importante señalar que los colores no son estáticos ni absolutos, sino que cambian de color de acuerdo al orden en que se seleccionan, para así facilitar comparaciones entre datos.",
-      { type: "image", src: "src/assets/tutorial3.jpg", alt: "foto: t3" },
+      { type: "image", src: "/images/tutorial3.jpg", alt: "foto: t3" },
 
       "Cuando un dato está seleccionado, aparecerá un círculo punteado en el mapa y linea de tiempo para distinguir su ubicación espacio-temporal. Al seleccionar uno de los puntos de datos en el mapa o la línea de tiempo, un cuadro de información aparecerá del lado derecho, que brinda mayor riqueza de información que contextualiza el punto de dato.",
-      { type: "image", src: "src/assets/tutorial4.jpg", alt: "foto: t4" },
+      { type: "image", src: "/images/tutorial4.jpg", alt: "foto: t4" },
 
       "#### CAPAS",
       "Las capas brindan información contextual y en extensión de territorio. De esta manera nos brindan información adicional para ubicar un dato dentro de una zona, infraestructura, fenómeno, clasificación o grupo.",
       "Las capas son estáticas y, a diferencia de los datos, no viene acompañadas de un recuadro de información ya que no corresponden a un evento en el tiempo preciso.",
 
-      { type: "image", src: "src/assets/tutorial5.jpg", alt: "foto: t5" },
+      { type: "image", src: "/images/tutorial5.jpg", alt: "foto: t5" },
       
       "Se pueden combinar datos y capas para cruzar información y empezar a distinguir patrones. En este ejemplo se cruzan los datos de 'hidroeléctricas' con 'asesinatos de defensores' y 'daños a los movimientos sociales', sobre estos se seleccionan las capas de 'presencias territoriales'.  Este cruce de información nos permite tener un primer acercamiento al control territorial que se ha ejercido sobre territorios de personas indígenas y/o afrodescendientes.",
 
-      { type: "image", src: "src/assets/tutorial6.jpg", alt: "foto: t6" },
+      { type: "image", src: "/images/tutorial6.jpg", alt: "foto: t6" },
 
       "De la misma manera podríamos seleccionar la huella de construcción del proyecto Agua Zarca en sus dos fases y los ataques a miembros del COPINH o las comunicaciones en un dia en particular, por ejemplo de la toma de El Roble, o el día del asesinato de Berta.",
       "Te invitamos a utilizar la plataforma y experimentar con filtros, datos y la información en los cuadros.",  
