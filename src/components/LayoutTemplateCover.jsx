@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Player } from "video-react";
 import { marked } from "marked";
-import "X:/Proyectos/2025/RE presentare/berta/src/scss/LayoutTemplateCover.scss";
+import "../scss/LayoutTemplateCover.scss";
 
 
 const MEDIA_HIDDEN = -1;
