@@ -37,10 +37,12 @@ export default function NarrativeTemplateCover({ onClose }) {
       // PÁRRAFO 2
       "#### Alcance de la investigación",
       // 👇 VIDEO ENTRE PÁRRAFO 3 Y 4
-        {
-          type: "video",
-          src: "/narratives/media/infraestructura_conflicto.mp4"
-        },
+      {
+        type: "vimeo",
+        src: "https://player.vimeo.com/video/1153048012?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1",
+        title: "El asesinato de Berta Isabel Cáceres Flores"
+      },
+
       // PÁRRAFO 4
      "#### LA PLATAFORMA COMO MEDIO DE INVESTIGACIÓN",
       "Esta plataforma, en su versión 1.0, busca volver visibles posibles interacciones y relaciones entre actores y eventos. Al reunir miles de entradas de datos se convierte en una herramienta investigativa que abre la posibilidad de nuevas investigaciones a sus usuarios.",
@@ -91,7 +93,7 @@ export default function NarrativeTemplateCover({ onClose }) {
     bgVideo: null,
   };
 
- return (
+  return (
     <div
       className="ntc-overlay"
       onWheel={(e) => e.stopPropagation()}
@@ -101,7 +103,9 @@ export default function NarrativeTemplateCover({ onClose }) {
       <div className="ntc-container">
         {/* ✕ superior izquierda */}
         <div className="ntc-close-top">
-          <div className="ntc-close" onClick={onClose}>✕</div>
+          <div className="ntc-close" onClick={onClose}>
+            ✕
+          </div>
         </div>
 
         {/* Logos superiores */}
@@ -115,13 +119,13 @@ export default function NarrativeTemplateCover({ onClose }) {
           </a>
         </div>
 
-        {/* Título centrado */}
+        {/* Título */}
         <h2
           className="ntc-title"
           dangerouslySetInnerHTML={{ __html: data.title }}
         />
 
-        {/* Contenido */}
+        {/* CONTENIDO */}
         {data.description.map((block, i) => {
           if (typeof block === "string") {
             return (
@@ -151,6 +155,33 @@ export default function NarrativeTemplateCover({ onClose }) {
             );
           }
 
+          // 🔥 VIMEO
+          if (block.type === "vimeo") {
+            return (
+              <div
+                key={i}
+                className="ntc-video-block"
+                style={{ position: "relative", paddingTop: "56.25%" }}
+              >
+                <iframe
+                  src={block.src}
+                  title={block.title || "Vimeo video"}
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                  }}
+                />
+              </div>
+            );
+          }
+
           return null;
         })}
 
@@ -174,9 +205,11 @@ export default function NarrativeTemplateCover({ onClose }) {
         </div>
 
         {/* ✕ inferior derecha */}
-          <div className="ntc-close-bottom">
-            <div className="ntc-close" onClick={onClose}>✕</div>
+        <div className="ntc-close-bottom">
+          <div className="ntc-close" onClick={onClose}>
+            ✕
           </div>
+        </div>
       </div>
     </div>
   );
