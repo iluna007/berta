@@ -153,7 +153,7 @@
   },
 
   {
-    "id": "Cuarto de Máquinas",
+    "id": "Cuarto de Máquinas11",
     "group": "Infraestructuras y logísticas",
     "subgroup": "Proyecto Agua Zarca 2011",
     "label": "Cuarto de Máquinas",
@@ -161,15 +161,15 @@
     "color": "#ff6d01"
   },
   {
-    "id": "Presa",
+    "id": "Presa11",
     "group": "Infraestructuras y logísticas",
     "subgroup": "Proyecto Agua Zarca 2011",
     "label": "Presa",
-    "url": "geojson/PR11.geojson",
+    "url": "geojson/Proyecto Agua Zarca 2011.geojson",
     "color": "#ff6d01"
   },
   {
-    "id": "Tubería",
+    "id": "Tubería11",
     "group": "Infraestructuras y logísticas",
     "subgroup": "Proyecto Agua Zarca 2011",
     "label": "Tubería",
@@ -177,7 +177,7 @@
     "color": "#ff6d01"
   },
   {
-    "id": "Cuarto de Máquinas",
+    "id": "Cuarto de Máquinas14",
     "group": "Infraestructuras y logísticas",
     "subgroup": "Proyecto Agua Zarca 2014",
     "label": "Cuarto de Máquinas",
@@ -185,18 +185,18 @@
     "color": "#f1c232"
   },
   {
-    "id": "Presa",
+    "id": "Presa14",
     "group": "Infraestructuras y logísticas",
     "subgroup": "Proyecto Agua Zarca 2014",
-    "label": "Presa",
-    "url": "geojson/PR14.geojson",
+    "label": "Predios",
+    "url": "geojson/Proyecto Agua Zarca 2014.geojson",
     "color": "#f1c232"
   },
   {
-    "id": "Tubería ",
+    "id": "Tubería14",
     "group": "Infraestructuras y logísticas",
     "subgroup": "Proyecto Agua Zarca 2014",
-    "label": "Tubería ",
+    "label": "Tubería",
     "url": "geojson/TPA14.geojson",
     "color": "#f1c232"
   },
@@ -221,7 +221,7 @@
     "group": "Infraestructuras y logísticas",
     "subgroup": "Carreteras",
     "label": "2002",
-    "url": "geojson/CA02.geojson",
+    "url": "geojson/Carreteras 2002.geojson",
     "color": "#bf712c"
   },
   {
@@ -229,7 +229,7 @@
     "group": "Infraestructuras y logísticas",
     "subgroup": "Carreteras",
     "label": "2006",
-    "url": "geojson/CA06.geojson",
+    "url": "geojson/Carreteras 2006.geojson",
     "color": "#d98e32"
   },
   {
@@ -237,7 +237,7 @@
     "group": "Infraestructuras y logísticas",
     "subgroup": "Carreteras",
     "label": "2012",
-    "url": "geojson/CA12.geojson",
+    "url": "geojson/Carreteras 2012.geojson",
     "color": "#f2c36b"
   },
   {
@@ -245,7 +245,7 @@
     "group": "Infraestructuras y logísticas",
     "subgroup": "Carreteras",
     "label": "2016",
-    "url": "geojson/CA16.geojson",
+    "url": "geojson/Carreteras 2016.geojson",
     "color": "#f5d264"
   },
   {
@@ -253,7 +253,7 @@
     "group": "Infraestructuras y logísticas",
     "subgroup": "Carreteras",
     "label": "2025",
-    "url": "geojson/CA25.geojson",
+    "url": "geojson/Carreteras 2025.geojson",
     "color": "#FFF2CE"
   },
 
@@ -262,7 +262,7 @@
     "group": "Presencias territoriales",
     "subgroup": "Actores",
     "label": "Berta Isabel Cáceres Flores",
-    "url": "geojson/IBICF.geojson",
+    "url": "geojson/Presencia Berta Isabel Cáceres Flores.geojson",
     "color": "#baff53"
   },
   {

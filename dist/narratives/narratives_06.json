@@ -261,43 +261,6 @@
       "layers": [],
 
       "panel": { "width": "420px", "position": "right" }
-    },
-
-    {
-      "id": "NR-6",
-      "title": "PRUEBAAN",
-      "description":["Si se reactiva Agua Zarca, las comunidades lencas volverán a enfrentar presiones conocidas: vigilancia en los accesos, pagos para romper plantones, ofertas y amenazas para dividir a la gente, discursos que criminalizan la protesta y la presencia de la fuerza pública para abrir camino. No es un riesgo abstracto, sino el regreso probable de un dispositivo coercitivo ya documentado, ahora impulsado por una nueva arquitectura financiera. Frente a esa continuidad, también persiste la red de resistencia. El COPINH, la familia de Berta y muchas otras comunidades exigen verdad, reparación integral y garantías de no repetición.",
-      "Esta investigación aporta herramientas para nombrar y desmontar el mecanismo de impunidad, con evidencia trazable y estándares de verificación. Explora la cartografía interactiva y las otras narrativas por ejes y periodos para relacionar hallazgos y profundizar en la importancia de conocer a fondo el caso del asesinato de Berta Cáceres."
-    ],
-
-      "location": {
-        "center": [-86.5, 14.8],
-        "zoom": 6,
-        "pitch": 5,
-        "bearing": 0
-      },
-
-      "cameraMode": "flat",
-      "transitionDuration": 2000,
-
-      "highlightLayers": [],
-      "dimLayers": [],
-
-      "geojsonOn": [],
-
-      "layerStyles": {
-        
-      },
-
-      "media": [
-       
-      ],
-
-      "markers": [],
-      "shapes": [],
-      "layers": [],
-
-      "panel": { "width": "420px", "position": "right" }
     }
 
   

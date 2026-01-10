@@ -11,8 +11,8 @@
     "color": "#FFFFFF"
   },
    {
-    "id": "Hidroelectricas",
-    "url": "geojson/Hidroelectricas.geojson",
+    "id": "Hidroeléctricas",
+    "url": "geojson/Hidroeléctricas.geojson",
     "color": "#FFFFFF"
   },
    {
@@ -42,35 +42,35 @@
   },
 
   {
-    "id": "Poblacion lenca (CRB 2013)",
-    "url": "geojson/Poblacion lenca (CRB 2013).geojson",
+    "id": "Censo Rio Blanco 2013",
+    "url": "geojson/Censo Rio Blanco 2013.geojson",
     "color": "#FFFFFF"
   },
 
   {
-    "id": "CA02",
-    "url": "geojson/CA02.geojson",
+    "id": "Carreteras 2002",
+    "url": "geojson/Carreteras 2002.geojson",
     "color": "#FFFFFF"
   },
   {
-    "id": "CA06",
-    "url": "geojson/CA06.geojson",
+    "id": "Carreteras 2006",
+    "url": "geojson/Carreteras 2006.geojson",
     "color": "#FFFFFF"
   },
   {
-    "id": "CA12",
-    "url": "geojson/CA12.geojson",
+    "id": "Carreteras 2012",
+    "url": "geojson/Carreteras 2012.geojson",
     "color": "#FFFFFF"
   },
   {
-    "id": "CA16",
-    "url": "geojson/CA16.geojson",
+    "id": "Carreteras 2016",
+    "url": "geojson/Carreteras 2016.geojson",
     "color": "#FFFFFF"
   },
   
   {
-    "id": "CA25",
-    "url": "geojson/CA25.geojson",
+    "id": "Carreteras 2025",
+    "url": "geojson/Carreteras 2025.geojson",
     "color": "#FFFFFF"
   },
   {
@@ -84,13 +84,13 @@
     "color": "#FFFFFF"
   },
   {
-    "id": "PA11",
-    "url": "geojson/PA11.geojson",
+    "id": "Predios Agua Zarca 2011",
+    "url": "geojson/Predios Agua Zarca 2011.geojson",
     "color": "#FFFFFF"
   },
   {
-    "id": "PA14",
-    "url": "geojson/PA14.geojson",
+    "id": "Predios Agua Zarca 2014",
+    "url": "geojson/Predios Agua Zarca 2014.geojson",
     "color": "#FFFFFF"
   },
   
@@ -137,13 +137,13 @@
     "color": "#FFFFFF"
   },
   {
-    "id": "IAC",
-    "url": "geojson/IAC.geojson",
+    "id": "Presencia Actores Criminales",
+    "url": "geojson/Presencia Actores Criminales.geojson",
     "color": "#FFFFFF"
   },
   {
-    "id": "IBICF",
-    "url": "geojson/IBICF.geojson",
+    "id": "Presencia Berta Isabel Cáceres Flores",
+    "url": "geojson/Presencia Berta Isabel Cáceres Flores.geojson",
     "color": "#FFFFFF"
   },
 

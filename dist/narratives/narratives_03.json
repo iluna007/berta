@@ -19,7 +19,7 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["Río Gualcarque","Departamentos Honduras","CA02","CA06","CA12","CA16","CA25","Proyecto Agua Zarca 2011"],
+      "geojsonOn": ["Río Gualcarque","Departamentos Honduras","Carreteras 2006","Carreteras 2012","Carreteras 2016","Carreteras 2025","Proyecto Agua Zarca 2011"],
 
       "layerStyles": {
         "Río Gualcarque": {
@@ -32,36 +32,32 @@
           "lineWidth": 2,
           "line-dasharray": [2,4]
         },
-        "CA02": {
-          "lineColor": "#eb443e",
+        "Carreteras 2002": {
+          "lineColor": "#bf712c",
           "lineWidth": 1   
         },
-        "CA06": {
-          "lineColor": "#eb443e",
+        "Carreteras 2006": {
+          "lineColor": "#d98e32",
           "lineWidth": 1   
         },
-        "CA12": {
-          "lineColor": "#eb443e",
+        "Carreteras 2012": {
+          "lineColor": "#f2c36b",
           "lineWidth": 1   
         },
-        "CA16": {
-          "lineColor": "#eb443e",
+        "Carreteras 2016": {
+          "lineColor": "#f5d264",
           "lineWidth": 1   
         },
-        "CA25": {
-          "lineColor": "#eb443e",
+        "Carreteras 2025": {
+          "lineColor": "#FFF2CE",
           "lineWidth": 1   
         },
         "Proyecto Agua Zarca 2011": {
           "fill": true,
-          "fillColor": "#ff6d01",
+          "fillColor": "#eb443e",
           "fillOpacity": 0.5
-        },
-
-        "punto-compras-tierras-rio-blanco": {
-          "pointColor": "#eb443e",
-          "pointRadius": 5
         }
+
         
       },
 
@@ -211,7 +207,7 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["Río Gualcarque","CA02","CA06","CA12","CA16","CA25","PA11","PA14"],
+      "geojsonOn": ["Río Gualcarque","Carreteras 2002","Carreteras 2006","Carreteras 2012","Carreteras 2016","Carreteras 2025","PA11","PA14"],
 
       "layerStyles": {
         "Río Gualcarque": {
@@ -219,24 +215,24 @@
           "lineWidth": 4    
         },
        
-        "CA02": {
-          "lineColor": "#eb443e",
+        "Carreteras 2002": {
+          "lineColor": "#bf712c",
           "lineWidth": 1   
         },
-        "CA06": {
-          "lineColor": "#eb443e",
+        "Carreteras 2006": {
+          "lineColor": "#d98e32",
           "lineWidth": 1   
         },
-        "CA12": {
-          "lineColor": "#eb443e",
+        "Carreteras 2012": {
+          "lineColor": "#f2c36b",
           "lineWidth": 1   
         },
-        "CA16": {
-          "lineColor": "#eb443e",
+        "Carreteras 2016": {
+          "lineColor": "#f5d264",
           "lineWidth": 1   
         },
-        "CA25": {
-          "lineColor": "#eb443e",
+        "Carreteras 2025": {
+          "lineColor": "#FFF2CE ",
           "lineWidth": 1   
         },
         "Proyecto Agua Zarca 2011": {

@@ -20,7 +20,7 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["Río Gualcarque","CA02","CA06","CA12","CA16","CA25","Daños"],
+      "geojsonOn": ["Río Gualcarque","Carreteras 2002","Carreteras 2006","Carreteras 2012","Carreteras 2016","Carreteras 2025","Daños"],
 
       "layerStyles": {
         "Río Gualcarque": {
@@ -28,24 +28,24 @@
           "lineWidth": 4    
         },
        
-        "CA02": {
-          "lineColor": "#d9763d",
+        "Carreteras 2002": {
+          "lineColor": "#bf712c",
           "lineWidth": 1   
         },
-        "CA06": {
-          "lineColor": "#d9763d",
+        "Carreteras 2006": {
+          "lineColor": "#d98e32",
           "lineWidth": 1   
         },
-        "CA12": {
-          "lineColor": "#d9763d",
+        "Carreteras 2012": {
+          "lineColor": "#f2c36b",
           "lineWidth": 1   
         },
-        "CA16": {
-          "lineColor": "#d9763d",
+        "Carreteras 2016": {
+          "lineColor": "#f5d264",
           "lineWidth": 1   
         },
-        "CA25": {
-          "lineColor": "#d9763d",
+        "Carreteras 2025": {
+          "lineColor": "#FFF2CE",
           "lineWidth": 1   
         },
         "Daños": {
@@ -140,7 +140,7 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["Daños","Comunicaciones","IAC","IBICF"],
+      "geojsonOn": ["Daños","Comunicaciones","Presencia Actores Criminales","Presencia Berta Isabel Cáceres Flores"],
 
       "layerStyles": {
         "Daños": {
@@ -153,12 +153,12 @@
           "fillColor": "#807D7E",
           "circleRadius": 0.1
         },
-        "IAC":  {
+        "Presencia Actores Criminales":  {
           "fill": true,
           "fillColor": "#8bd984",
           "circleRadius": 0.1
         },
-        "IBICF":  {
+        "Presencia Berta Isabel Cáceres Flores":  {
           "fill": true,
           "fillColor": "#f2c36b",
           "circleRadius": 0.1
@@ -290,7 +290,7 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["Daños","Comunicaciones","IAC","IBICF"],
+      "geojsonOn": ["Daños","Comunicaciones","Presencia Actores Criminales","Presencia Berta Isabel Cáceres Flores"],
 
       "layerStyles": {
         "Daños": {
@@ -303,12 +303,12 @@
           "fillColor": "#807D7E",
           "circleRadius": 0.1
         },
-        "IAC":  {
+        "Presencia Actores Criminales":  {
           "fill": true,
           "fillColor": "#8bd984",
           "circleRadius": 0.1
         },
-        "IBICF":  {
+        "Presencia Berta Isabel Cáceres Flores":  {
           "fill": true,
           "fillColor": "#f2c36b",
           "circleRadius": 0.1
