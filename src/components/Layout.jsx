@@ -13,7 +13,6 @@ import TemplateCover from "./TemplateCover";
 // 🔥 NUEVO: cover narrativo
 import LayoutTemplateCover from "./LayoutTemplateCover";
 
-import Popup from "./atoms/Popup";
 import StaticPage from "./atoms/StaticPage";
 import MediaOverlay from "./atoms/Media";
 import LoadingOverlay from "./atoms/Loading";
@@ -236,18 +235,8 @@ class Dashboard extends Component {
       !searchParams.has("id")
     ) {
       return (
-        <Popup
-          title="Introduction to the platform"
-          theme="dark"
-          isOpen={
-            app.flags.isIntropopup && searchParams.get("cover") !== "false"
-          }
-          onClose={() => {
-            actions.toggleIntroPopup();
-            localStorage.setItem(localStorageKey, "true");
-          }}
-          content={app.intro}
-          styles={styles}
+        <LayoutTemplateCover
+          onClose={() => actions.toggleCover()}
         />
       );
     }
