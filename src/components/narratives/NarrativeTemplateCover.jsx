@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Player } from "video-react";
 import { marked } from "marked";
 import "../../scss/NarrativeTemplateCover.scss";
 import bcatlogo from "../../assets/HORIZONTAL_NEGATIVO.svg";
@@ -34,16 +33,12 @@ export default function NarrativeTemplateCover({ onClose }) {
       // PÁRRAFO 3
       "Esta plataforma interactiva documenta incidentes, evidencias y contextos relacionados con el caso del asesinato de Berta Cáceres Flores y el entramado de actores, infraestructuras y decisiones empresariales que lo rodearon. La plataforma facilita el análisis de episodios que evidencian daños a civiles, afectaciones a comunidades, territorios y agrupaciones de defensa, principalmente el Consejo Cívico de Organizaciones Populares e Indígenas de Honduras (COPINH), como consecuencia del Proyecto Hidroeléctrico Agua Zarca (PHAZ) que se materializó a través de la construcción de infraestructuras, patrones de control territorial y cooptación y fragmentación de las comunidades indígenas. Estos incidentes de violencia no fueron casos aislados, sino parte de una lógica empresarial en la que estuvieron involucrados corporativos, agentes estatales de seguridad, instituciones del estado hondureño, y criminales sentenciados. La plataforma no pretende ser exhaustiva, sino un muestrario de narrativas y evidencias cuya localización y contexto han sido suficientemente corroborados para su publicación.",
 
-
-     
-
       // PÁRRAFO 4
      "#### LA PLATAFORMA COMO MEDIO DE INVESTIGACIÓN",
       "Esta plataforma, en su versión 1.0, busca volver visibles posibles interacciones y relaciones entre actores y eventos. Al reunir miles de entradas de datos se convierte en una herramienta investigativa que abre la posibilidad de nuevas investigaciones a sus usuarios.",
 
       "Siguiendo las enseñanzas de Berta y COPINH, esta plataforma ha sido concebida como el inicio de un esfuerzo colectivo a la cual pueden contribuir colectivos, defensores, investigadores, activistas y público en general. Debido a la restricción en tiempo, que se ajusta al mandato del GIEI, lo que mostramos aquí es el resultado de ese primer esfuerzo por registrar, esclarecer y dar sentido a la compleja y vasta investigación realizada por los miembros de este grupo. Invitamos así a los usuarios a contribuir a su enriquecimiento por medio de nuestro contacto info@re-presentare.org",
       
-      "Aprende mas sobre la plataforma aquí.",
 
     "#### FUENTES",
       "Los insumos de la investigación provienen principalmente de evidencia forense y documentación judicial obtenida durante el proceso penal del caso Berta Cáceres: registros telefónicos y extracciones de dispositivos de los imputados, más de 400,000 chats de WhatsApp, transacciones financieras y correos electrónicos de bancos internacionales, títulos de propiedad y escrituras de compra de terrenos, censos de la comunidad Río Blanco, expedientes judiciales (sentencias y declaraciones), y estudios técnicos sobre el proyecto hidroeléctrico. Esta información ha sido complementada con materiales de acceso público cuando su divulgación no compromete a personas o procesos en curso. Cuando el material proviene de fuentes abiertas, se mantiene el enlace original y se resguarda una copia para preservación. La presencia de un enlace no implica afiliación entre quienes publicaron el contenido y este proyecto.",
@@ -59,25 +54,25 @@ export default function NarrativeTemplateCover({ onClose }) {
      "La plataforma utiliza código abierto desarrollado por nuestros aliados en [Forensic Architecture](https://forensic-architecture.org/) y [Bellingcat](https://www.bellingcat.com/).",
   
     "#### Miembros del GIEI-Honduras:",
-      "Roxanna Altholz, experta en derecho internacional de los derechos humanos.",
-      "Pedro Biscay, experto en análisis financiero y criminalidad económica.",
-      "Ricardo Guzmán, experto en derecho penal y ciencias forenses.",
+      "- Roxanna Altholz, experta en derecho internacional de los derechos humanos.",
+      "- Pedro Biscay, experto en análisis financiero y criminalidad económica.",
+      "- Ricardo Guzmán, experto en derecho penal y ciencias forenses.",
+
 
     "#### Colaboradores del GIEI-Honduras:",
-      "Aníbal Argüello - analista criminal especializado en minería de datos y macrocriminalidad.",
-      "Vincenzo Caruso - economista y analista principal de transacciones y finanzas.",
-      "Julián Corti - abogado especializado en derecho penal e investigación de delitos complejos.",
-      "Omar Gómez Trejo - abogado especializado en investigaciones criminales y de derechos humanos.",
-      "Helen Kerwin - abogada especializada en derecho internacional de los derechos humanos.",
-      "Fernando Vallone - abogado especializado en análisis e investigación de corrupción y criminalidad organizada.",
-
+      "- Aníbal Argüello - analista criminal especializado en minería de datos y macrocriminalidad.",
+      "- Vincenzo Caruso - economista y analista principal de transacciones y finanzas.",
+      "- Julián Corti - abogado especializado en derecho penal e investigación de delitos complejos.",
+      "- Omar Gómez Trejo - abogado especializado en investigaciones criminales y de derechos humanos.",
+      "- Helen Kerwin - abogada especializada en derecho internacional de los derechos humanos.",
+      "- Fernando Vallone - abogado especializado en análisis e investigación de corrupción y criminalidad organizada.",
     
     "#### re/presentare",
-      "Sergio Beltrán-García",
-      "Elis Mendoza",
-      "Fernanda Gómez Seoane",
-      "Emiliano Farfán Gómez",
-      "Iker Luna",
+      "- Sergio Beltrán-García - arquitecto forense e investigador espacial ",
+      "- Elis Mendoza - arquitecta forense e investigadora espacial",
+      "- Fernanda Gómez Seoane - arquitecta forense e investigadora espacial",
+      "- Emiliano Farfán Gómez - arquitecto forense e investigador espacial",
+      "- Iker Luna - arquitecto forense e investigador espacial",
       ],
 
 
@@ -152,11 +147,7 @@ export default function NarrativeTemplateCover({ onClose }) {
           // 🔥 VIMEO
           if (block.type === "vimeo") {
             return (
-              <div
-                key={i}
-                className="ntc-video-block"
-                style={{ position: "relative", paddingTop: "56.25%" }}
-              >
+              <div key={i} className="ntc-video-block">
                 <iframe
                   src={block.src}
                   title={block.title || "Vimeo video"}
@@ -164,13 +155,6 @@ export default function NarrativeTemplateCover({ onClose }) {
                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                  }}
                 />
               </div>
             );

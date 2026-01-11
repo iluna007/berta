@@ -13,33 +13,30 @@
   max-width: 960px;
   margin: 3rem auto;
   padding: 3rem 2rem 4rem;
-  background: rgba(0, 0, 0, 0.90)0;
+  background: rgba(0, 0, 0, 0.9);
   color: #fff;
 }
 
 /* ---------- TÍTULO ---------- */
 .ntc-title {
   text-align: center;
-  font-size: 2.4rem;
-  font-weight: 800;
+  font-size: 2.15rem;
   margin: 2rem auto 3rem;
   max-width: 820px;
-  line-height: 1.4;
+  line-height: 1.25;
   font-weight: 700;
 }
 
-/* ---------- BOTÓN CERRAR (EFECTO ORIGINAL) ---------- */
+/* ---------- BOTÓN CERRAR ---------- */
 .ntc-close {
   color: #ffffff;
   font-size: 2.5rem;
   cursor: pointer;
-  transition: transform 0.2s ease, color 0.2s ease, opacity 0.2s ease;
-  transform-origin: center;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .ntc-close:hover {
-  color: #00a261;   /* 🔥 rojo original */
-  opacity: 1;
+  color: #00a261;
   transform: scale(1.5);
 }
 
@@ -71,24 +68,52 @@
   height: 96px;
   object-fit: contain;
 }
+
 .ntc-logo2 {
   height: 48px;
   object-fit: contain;
 }
 
-/* ---------- CONTENIDO ---------- */
+/* ---------- TEXTO GENERAL ---------- */
 .ntc-md {
   max-width: 720px;
-  margin: 0.25rem auto;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin: 1.2rem auto;
   font-size: 0.95rem;
   line-height: 1.6;
-  font-weight: 400; 
 }
 
+/* Párrafo base */
+.ntc-md p {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+/* 🔥 Párrafos narrativos (separación normal) */
+.ntc-md p + p {
+  margin-top: 0.6rem;
+}
+
+/* ---------- CRÉDITOS / LISTAS DE NOMBRES ---------- */
+/* Reduce el espacio entre líneas tipo lista */
+.ntc-md h4 + p,
+.ntc-md p + p {
+  line-height: 1.45;
+}
+
+/* Cuando son listas de nombres consecutivos */
+.ntc-md h4 ~ p {
+  margin-top: 0.2rem;
+}
+
+/* Evita aire excesivo entre nombres */
+.ntc-md h4 ~ p + p {
+  margin-top: 0.15rem;
+}
+
+/* ---------- TÍTULOS MARKDOWN ---------- */
 .ntc-md h4 {
-  margin-top: 2.5rem;
+  margin: 2rem 0 0.75rem;
   font-size: 0.9rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -106,30 +131,59 @@
   height: auto;
 }
 
-/* ---------- VIDEO ---------- */
-/* 🔽 AJUSTE FINO DE ESPACIADO (ÚNICO CAMBIO REAL) */
+/* ---------- VIDEO (VIMEO / MP4) ---------- */
 .ntc-video-block {
   max-width: 720px;
-  margin: 0.0rem auto;   /* antes: 2rem auto */
+  margin: 0 auto;
+  padding: 0;
 }
 
 .ntc-inline-video {
   width: 100%;
+  display: block;
 }
 
-/* 🔽 Reducir espacio cuando el video está entre párrafos */
+/* Eliminar espacio texto ↔ video */
 .ntc-md + .ntc-video-block {
-  margin-top: 0rem auto;
-
+  margin-top: 0;
 }
 
 .ntc-video-block + .ntc-md {
-  margin-top: 0.75rem auto;
+  margin-top: 0.4rem;
 }
 
-/* ---------- TEXTO ---------- */
-.ntc-md p {
-  text-align: justify;
-  -webkit-hyphens: auto;
-  hyphens: auto;
+.ntc-video-block iframe {
+  display: block;
+}
+/* ---------- VIDEO ---------- */
+.ntc-video-block {
+  max-width: 720px;
+  margin: 0 auto;          /* sin margen vertical */
+  padding: 0;
+}
+
+.ntc-video-block iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;    /* 🔥 CLAVE */
+  border: 0;
+}
+
+/* Elimina espacio texto ↔ video */
+.ntc-md {
+  margin-bottom: 0.4rem;
+}
+
+.ntc-video-block + .ntc-md {
+  margin-top: 0.4rem;
+}
+
+.ntc-md ul {
+  margin: 0.4rem 0;
+  padding-left: 1.2rem;
+}
+
+.ntc-md li {
+  margin: 0.0rem 0;
+  line-height: 1rem
 }
