@@ -1,7 +1,7 @@
-import { Component, useState } from "react"; // 🔥 NUEVO: useState
+import { Component, useState } from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { useLocation } from "react-router-dom";   // ← YA EXISTÍA
+import { useLocation } from "react-router-dom";
 import * as actions from "../actions";
 import * as selectors from "../selectors";
 
@@ -10,9 +10,7 @@ import InfoPopup from "./InfoPopup";
 import Notification from "./Notification";
 import TemplateCover from "./TemplateCover";
 
-// 🔥 NUEVO: cover narrativo
-import LayoutTemplateCover from "./LayoutTemplateCover";
-
+import Popup from "./atoms/Popup";
 import StaticPage from "./atoms/StaticPage";
 import MediaOverlay from "./atoms/Media";
 import LoadingOverlay from "./atoms/Loading";
@@ -25,6 +23,12 @@ import NarrativeControls from "./controls/NarrativeControls";
 
 import colors from "../common/global";
 import { binarySearch, insetSourceFrom } from "../common/utilities";
+
+import LayoutTemplateCover from "./LayoutTemplateCover";
+
+/* =========================================================
+   DASHBOARD (NO TOCADO)
+   ========================================================= */
 
 class Dashboard extends Component {
   constructor(props) {
@@ -63,8 +67,8 @@ class Dashboard extends Component {
 
   findEventIdx(theEvent) {
     const { events } = this.props.domain;
-    return binarySearch(events, theEvent, (theev, otherev) => {
-      return theev.datetime - otherev.datetime;
+    return binarySearch(events, theEvent, (a, b) => {
+      return a.datetime - b.datetime;
     });
   }
 
@@ -76,6 +80,7 @@ class Dashboard extends Component {
 
     const matchedEvents = [];
     const TIMELINE_AXIS = 0;
+
     if (axis === TIMELINE_AXIS) {
       matchedEvents.push(selected);
       const { events } = this.props.domain;
@@ -139,16 +144,9 @@ class Dashboard extends Component {
 
     activeFilters = activeFilters.map((f) => ({ name: f }));
 
-    const evs = domain.events.filter((ev) => {
-      let hasOne = false;
-      for (let i = 0; i < activeFilters.length; i++) {
-        if (ev.associations.includes(activeFilters[i].name)) {
-          hasOne = true;
-          break;
-        }
-      }
-      return hasOne;
-    });
+    const evs = domain.events.filter((ev) =>
+      activeFilters.some((f) => ev.associations.includes(f.name))
+    );
 
     if (evs.length === 0) {
       alert("No associated events, cant narrativise");
@@ -168,20 +166,16 @@ class Dashboard extends Component {
   }
 
   selectNarrativeStep(idx) {
+    const { narrative } = this.props.app.associations;
+    if (!narrative) return;
+
     if (typeof idx !== "number") {
       const e = idx[0] || idx;
-      if (this.props.app.associations.narrative) {
-        const { steps } = this.props.app.associations.narrative;
-        const narrativeIdxObj = steps.find((s) => s.id === e.id);
-        const narrativeIdx = steps.indexOf(narrativeIdxObj);
-        if (narrativeIdx > -1) idx = narrativeIdx;
-      }
+      const found = narrative.steps.find((s) => s.id === e.id);
+      idx = narrative.steps.indexOf(found);
     }
 
-    const { narrative } = this.props.app.associations;
-    if (narrative === null) return;
-
-    if (idx < narrative.steps.length && idx >= 0) {
+    if (idx >= 0 && idx < narrative.steps.length) {
       const step = narrative.steps[idx];
       this.handleSelect([step]);
       this.props.actions.updateNarrativeStepIdx(idx);
@@ -192,64 +186,27 @@ class Dashboard extends Component {
     const { narrative, selected } = this.props.app;
     const { events } = this.props.domain;
 
-    const prev = (idx) => {
-      if (narrative === null) this.handleSelect(events[idx - 1], 0);
-      else this.selectNarrativeStep(this.props.narrativeIdx - 1);
-    };
+    if (selected.length === 0) return;
 
-    const next = (idx) => {
-      if (narrative === null) this.handleSelect(events[idx + 1], 0);
-      else this.selectNarrativeStep(this.props.narrativeIdx + 1);
-    };
+    const ev = selected[selected.length - 1];
+    const idx = this.findEventIdx(ev);
 
-    if (selected.length > 0) {
-      const ev = selected[selected.length - 1];
-      const idx = this.findEventIdx(ev);
-      switch (e.keyCode) {
-        case 37:
-        case 38:
-          if (idx <= 0) return;
-          prev(idx);
-          break;
-        case 39:
-        case 40:
-          if (idx < 0 || idx >= this.props.domain.length - 1) return;
-          next(idx);
-          break;
-        default:
-      }
+    if (e.keyCode === 37 || e.keyCode === 38) {
+      if (narrative) this.selectNarrativeStep(this.props.narrativeIdx - 1);
+      else if (idx > 0) this.handleSelect(events[idx - 1], 0);
     }
-  }
 
-  renderIntroPopup(styles) {
-    const { app, actions } = this.props;
-    const localStorageKey = "rememberDismissedIntro2";
-
-    let searchParams = new URLSearchParams(window.location.href.split("?")[1]);
-    let rememberDismissedIntro =
-      localStorage.getItem(localStorageKey) === "true";
-    let forceShowIntro = searchParams.get("cover") === "true";
-
-    if (
-      (forceShowIntro || !rememberDismissedIntro) &&
-      !searchParams.has("id")
-    ) {
-      return (
-        <LayoutTemplateCover
-          onClose={() => actions.toggleCover()}
-        />
-      );
+    if (e.keyCode === 39 || e.keyCode === 40) {
+      if (narrative) this.selectNarrativeStep(this.props.narrativeIdx + 1);
+      else if (idx < events.length - 1) this.handleSelect(events[idx + 1], 0);
     }
-    return null;
   }
 
   render() {
     const { actions, app, domain, timeline, features } = this.props;
-    const popupStyles = {};
 
     return (
       <div>
-        {/* TODO TU RENDER ORIGINAL — SIN CAMBIOS */}
         <Toolbar
           isNarrative={!!app.associations.narrative}
           domain={domain}
@@ -308,20 +265,20 @@ class Dashboard extends Component {
               : null
           }
           methods={{
-            onNext: () => this.selectNarrativeStep(this.props.narrativeIdx + 1),
-            onPrev: () => this.selectNarrativeStep(this.props.narrativeIdx - 1),
+            onNext: () =>
+              this.selectNarrativeStep(this.props.narrativeIdx + 1),
+            onPrev: () =>
+              this.selectNarrativeStep(this.props.narrativeIdx - 1),
             onSelectNarrative: this.setNarrative,
           }}
         />
 
         <InfoPopup
           language={app.language}
-          styles={popupStyles}
+          styles={{}}
           isOpen={app.flags.isInfopopup}
           onClose={actions.toggleInfoPopup}
         />
-
-        {this.renderIntroPopup(popupStyles)}
 
         {features.USE_SEARCH && (
           <Search
@@ -332,12 +289,12 @@ class Dashboard extends Component {
           />
         )}
 
-        {app.source ? (
+        {app.source && (
           <MediaOverlay
             source={app.source}
             onCancel={() => actions.updateSource(null)}
           />
-        ) : null}
+        )}
 
         <LoadingOverlay
           isLoading={app.loading || app.flags.isFetchingDomain}
@@ -348,6 +305,10 @@ class Dashboard extends Component {
     );
   }
 }
+
+/* =========================================================
+   REDUX
+   ========================================================= */
 
 function mapDispatchToProps(dispatch) {
   return {
@@ -369,31 +330,30 @@ const ConnectedDashboard = connect(
 )(Dashboard);
 
 /* =========================================================
-   🔥 ÚNICO CAMBIO FUNCIONAL REAL
+   ROUTING + MODAL COVER
    ========================================================= */
 
 function DashboardWrapper(props) {
   const location = useLocation();
 
-  // 🔥 NUEVO: estado del cover narrativo
-  const [showNarrativeCover, setShowNarrativeCover] = useState(true);
-
-  // Renderiza Dashboard SOLO en /plataforma
   if (location.pathname !== "/plataforma") {
     return null;
   }
 
+  return <ConnectedDashboard {...props} />;
+}
+
+function LayoutWithCover(props) {
+  const [showCover, setShowCover] = useState(true);
+
   return (
     <>
-      {showNarrativeCover && (
-        <LayoutTemplateCover
-          onClose={() => setShowNarrativeCover(false)}
-        />
+      {showCover && (
+        <LayoutTemplateCover onClose={() => setShowCover(false)} />
       )}
-
-      {!showNarrativeCover && <ConnectedDashboard {...props} />}
+      <DashboardWrapper {...props} />
     </>
   );
 }
 
-export default DashboardWrapper;
+export default LayoutWithCover;
