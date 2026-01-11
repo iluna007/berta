@@ -39,7 +39,7 @@ export default function NarrativeTemplateCover({ onClose }) {
       // 👇 VIDEO ENTRE PÁRRAFO 3 Y 4
       {
         type: "vimeo",
-        src: "https://player.vimeo.com/video/1153048012?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1",
+        src: "https://player.vimeo.com/video/1153048012?autopause=0",
         title: "El asesinato de Berta Isabel Cáceres Flores"
       },
 

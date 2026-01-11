@@ -15,10 +15,10 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["limites territoriosales"],
+      "geojsonOn": ["Límites terrritoriales"],
 
       "layerStyles": {
-        "limites territoriosales": {
+        "Límites terrritoriales": {
           "fill": true,
           "fillColor": "#eb443e",
           "fillOpacity": 0.5 
