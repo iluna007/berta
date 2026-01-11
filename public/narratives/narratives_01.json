@@ -123,7 +123,7 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["Territorios indigenas","Río Gualcarque","Departamentos Honduras","Población lenca (Censo Río Blanco 2013)"],
+      "geojsonOn": ["Territorios indígenas y/o afrodescendientes","Río Gualcarque","Departamentos Honduras","Población lenca (Censo Río Blanco 2013)"],
 
       "layerStyles": {
         
@@ -133,7 +133,7 @@
           "lineWidth": 2,
           "line-dasharray": [2,4]
         },
-        "Territorios indigenas": {
+        "Territorios indígenas y/o afrodescendientes": {
           "fill": true,
           "fillColor": "#eb443e",
           "circleRadius": 1,
@@ -382,7 +382,7 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["Hidroeléctricas","Departamentos Honduras","Asesinatos","Territorios indigenas"],
+      "geojsonOn": ["Hidroeléctricas","Departamentos Honduras","Asesinatos","Territorios indígenas y/o afrodescendientes"],
 
       "layerStyles": {
         "Hidroeléctricas": {
@@ -402,7 +402,7 @@
           "fillColor": "#000000",
           "circleRadius": 0.1
         },
-        "Territorios indigenas": {
+        "Territorios indígenas y/o afrodescendientes": {
           "fill": true,
           "fillColor": "#ffffff",
           "circleRadius": 1,

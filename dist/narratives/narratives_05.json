@@ -195,10 +195,10 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["Asc36","Departamentos Honduras"],
+      "geojsonOn": ["Comunicaciones de actores que incursionaron contra Berta","Departamentos Honduras"],
 
       "layerStyles": {
-        "Asc36": {
+        "Comunicaciones de actores que incursionaron contra Berta": {
           "fill": true,
           "fillColor": "#eb443e",
           "circleRadius": 0.1
