@@ -12,13 +12,13 @@ export default function ToolbarNavigateButton() {
       onMouseLeave={() => setHover(false)}
       style={{
         marginLeft: "1rem",
-        padding: "0.5rem 1rem",
-        background: hover ? "#2ecc71" : "#222",
+        padding: "0.5rem 2rem",
+        background: hover ? "#222" : "#2ecc71",
         color: "#fff",
         border: "1px solid #444",
         borderRadius: "4px",
         cursor: "pointer",
-        transform: hover ? "scale(1.08)" : "scale(1)",
+        transform: hover ? "scale(1.1)" : "scale(1)",
         transition: "background-color 0.25s ease, transform 0.2s ease",
       }}
     >

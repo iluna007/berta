@@ -19,7 +19,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 24px;
+  font-size: 36px;
   cursor: pointer;
   color: white;
   transition: opacity 0.2s ease, transform 0.2s ease;
@@ -30,7 +30,7 @@
 .narrative-arrow:hover {
   color: #00a261;   /* mismo rojo que ntc-close */
   opacity: 1;
-  transform: translateX(-50%) scale(2);
+  transform: translateX(-50%) scale(1.5);
 }
 
 .arrow-up {

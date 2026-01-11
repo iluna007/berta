@@ -53,7 +53,7 @@ export default function NarrativesNavigator({ onSelect, activeId }) {
         style={{
           width: "100%",
           marginBottom: "20px",
-          background: hover ? "#2ecc71" : "#222",
+          background: hover ? "#222" : "#2ecc71",
           color: "white",
           padding: "10px 16px",
           border: "1px solid #444",
@@ -61,7 +61,7 @@ export default function NarrativesNavigator({ onSelect, activeId }) {
           cursor: "pointer",
           fontSize: "14px",
           textAlign: "left",
-          transform: hover ? "scale(1.05)" : "scale(1)",
+          transform: hover ? "scale(1.1)" : "scale(1)",
           transition: "background-color 0.25s ease, transform 0.2s ease"
         }}
       >
