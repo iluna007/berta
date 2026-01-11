@@ -23,25 +23,19 @@ export default function NarrativeTemplateCover({ onClose }) {
     description: [
       // PÁRRAFO 1
       "Esta plataforma web interactiva ha sido desarrollada en el marco del mandato del Grupo Interdisciplinario de Expertas y Expertos Independientes (GIEI) para Honduras, cuyo encargo es esclarecer hechos de violencia, identificar patrones de impunidad y contribuir a la memoria, la verdad, justicia y reparación en el caso del asesinato de la líder y defensora lenca, Berta Cáceres Flores, el 2 de marzo de 2016. La documentación aquí presentada aporta insumos técnicos y contextuales que complementan los esfuerzos de esclarecimiento y dignificación de las víctimas.",
-
       // 👇 IMAGEN ENTRE P1 Y P2
-      { type: "image", src: "/narratives/media/Berta1.jpg", alt: "foto: Justice for Berta" },
-
-      // PÁRRAFO 2
-      "#### Alcance de la investigación",
-
-      // PÁRRAFO 3
-      "Esta plataforma interactiva documenta incidentes, evidencias y contextos relacionados con el caso del asesinato de Berta Cáceres Flores y el entramado de actores, infraestructuras y decisiones empresariales que lo rodearon. La plataforma facilita el análisis de episodios que evidencian daños a civiles, afectaciones a comunidades, territorios y agrupaciones de defensa, principalmente el Consejo Cívico de Organizaciones Populares e Indígenas de Honduras (COPINH), como consecuencia del Proyecto Hidroeléctrico Agua Zarca (PHAZ) que se materializó a través de la construcción de infraestructuras, patrones de control territorial y cooptación y fragmentación de las comunidades indígenas. Estos incidentes de violencia no fueron casos aislados, sino parte de una lógica empresarial en la que estuvieron involucrados corporativos, agentes estatales de seguridad, instituciones del estado hondureño, y criminales sentenciados. La plataforma no pretende ser exhaustiva, sino un muestrario de narrativas y evidencias cuya localización y contexto han sido suficientemente corroborados para su publicación.",
-
-
-      // PÁRRAFO 2
-      "#### Alcance de la investigación",
-      // 👇 VIDEO ENTRE PÁRRAFO 3 Y 4
       {
         type: "vimeo",
         src: "https://player.vimeo.com/video/1153048012?autopause=0",
         title: "El asesinato de Berta Isabel Cáceres Flores"
       },
+      // PÁRRAFO 2
+      "#### Alcance de la investigación",
+      // PÁRRAFO 3
+      "Esta plataforma interactiva documenta incidentes, evidencias y contextos relacionados con el caso del asesinato de Berta Cáceres Flores y el entramado de actores, infraestructuras y decisiones empresariales que lo rodearon. La plataforma facilita el análisis de episodios que evidencian daños a civiles, afectaciones a comunidades, territorios y agrupaciones de defensa, principalmente el Consejo Cívico de Organizaciones Populares e Indígenas de Honduras (COPINH), como consecuencia del Proyecto Hidroeléctrico Agua Zarca (PHAZ) que se materializó a través de la construcción de infraestructuras, patrones de control territorial y cooptación y fragmentación de las comunidades indígenas. Estos incidentes de violencia no fueron casos aislados, sino parte de una lógica empresarial en la que estuvieron involucrados corporativos, agentes estatales de seguridad, instituciones del estado hondureño, y criminales sentenciados. La plataforma no pretende ser exhaustiva, sino un muestrario de narrativas y evidencias cuya localización y contexto han sido suficientemente corroborados para su publicación.",
+
+
+     
 
       // PÁRRAFO 4
      "#### LA PLATAFORMA COMO MEDIO DE INVESTIGACIÓN",

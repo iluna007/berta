@@ -12,7 +12,7 @@ dayjs.extend(customParseFormat);
 const DATE_FMT = config.DATE_FMT ?? "MM/DD/YYYY";
 const TIME_FMT = config.TIME_FMT ?? "HH:mm";
 
-export const language = config.store.app.language || "en-US";
+export const language = config.store.app.language || "es-MX";
 
 export function getPathLeaf(path) {
   const splitPath = path.split("/");

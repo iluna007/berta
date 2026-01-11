@@ -79,7 +79,9 @@
 /* ---------- CONTENIDO ---------- */
 .ntc-md {
   max-width: 720px;
-  margin: 1.5rem auto;
+  margin: 0.25rem auto;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
   font-size: 0.95rem;
   line-height: 1.6;
   font-weight: 400; 
@@ -105,15 +107,27 @@
 }
 
 /* ---------- VIDEO ---------- */
+/* 🔽 AJUSTE FINO DE ESPACIADO (ÚNICO CAMBIO REAL) */
 .ntc-video-block {
   max-width: 720px;
-  margin: 2rem auto;
+  margin: 0.0rem auto;   /* antes: 2rem auto */
 }
 
 .ntc-inline-video {
   width: 100%;
 }
 
+/* 🔽 Reducir espacio cuando el video está entre párrafos */
+.ntc-md + .ntc-video-block {
+  margin-top: 0rem auto;
+
+}
+
+.ntc-video-block + .ntc-md {
+  margin-top: 0.75rem auto;
+}
+
+/* ---------- TEXTO ---------- */
 .ntc-md p {
   text-align: justify;
   -webkit-hyphens: auto;
