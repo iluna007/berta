@@ -123,7 +123,7 @@
       "highlightLayers": [],
       "dimLayers": [],
 
-      "geojsonOn": ["Territorios indigenas","Río Gualcarque","Departamentos Honduras","Censo Rio Blanco 2013"],
+      "geojsonOn": ["Territorios indigenas","Río Gualcarque","Departamentos Honduras","Población lenca (Censo Río Blanco 2013)"],
 
       "layerStyles": {
         
@@ -143,7 +143,7 @@
           "lineColor": "#0077be",
           "lineWidth": 4
         },
-        "Censo Rio Blanco 2013": {
+        "Población lenca (Censo Río Blanco 2013)": {
           "fill": true,
           "fillColor": "#ffffff",
           "circleRadius": 0.05
