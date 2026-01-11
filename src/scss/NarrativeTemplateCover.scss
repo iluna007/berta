@@ -134,8 +134,8 @@
 /* ---------- VIDEO (VIMEO / MP4) ---------- */
 .ntc-video-block {
   max-width: 720px;
-  margin: 0 auto;
-  padding: 0;
+  margin: 1 auto;
+  padding: 1rem 0;
 }
 
 .ntc-inline-video {
@@ -145,7 +145,7 @@
 
 /* Eliminar espacio texto ↔ video */
 .ntc-md + .ntc-video-block {
-  margin-top: 0;
+  margin-top: 4rem;
 }
 
 .ntc-video-block + .ntc-md {

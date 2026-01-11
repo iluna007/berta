@@ -13,7 +13,7 @@ export default function NarrativeTemplateCover({ onClose }) {
 
   const data = {
     title:
-      "GRUPO INTERDISCIPLINARIO DE EXPERTOS INDEPENDIENTES EN EL CASO DE BERTA CÁCERES",
+      "El asesinato de Berta Isabel Cáceres Flores",
     subtitle: "",
     subsubtitle: "",
     exploreButton: "PLATAFORMA",
