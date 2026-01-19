@@ -100,7 +100,7 @@ export default function NarrativeTemplateCover({ onClose }) {
         {/* Logos superiores */}
         <div className="ntc-header-logos">
           <a
-            href="https://www.gieihonduras.org/"
+            href="https://gieihondurasbc.wixsite.com/bertacaceres"
             target="_blank"
             rel="noopener noreferrer"
           >
