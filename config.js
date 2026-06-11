@@ -9,9 +9,20 @@ const config = {
   ASSOCIATIONS_EXT: "/data/associations.json",
   NARRATIVE_EXT: "narratives/narratives.json",
   API_DATA: "",
+  // Mapa principal (cuenta ikerluna). Override en dev: VITE_MAPBOX_TOKEN en .env.local
+  // Producción: restringir en Mapbox a https://gieihonduras.oas.org/*
   MAPBOX_TOKEN:
-  "pk.eyJ1IjoiaWtlcmx1bmEiLCJhIjoiY203NjMwZHptMHAzaDJrcXlrbnNuMHJlZiJ9.hkoRlM6gQ-BflcGjpI40GA",
-  
+    import.meta.env.VITE_MAPBOX_TOKEN ||
+    "pk.eyJ1IjoiaWtlcmx1bmEiLCJhIjoiY203NjMwZHptMHAzaDJrcXlrbnNuMHJlZiJ9.hkoRlM6gQ-BflcGjpI40GA",
+
+  // Mapa de narrativas (cuenta representare). Override en dev: VITE_NARRATIVES_MAPBOX_TOKEN
+  NARRATIVES_MAPBOX_TOKEN:
+    import.meta.env.VITE_NARRATIVES_MAPBOX_TOKEN ||
+    "pk.eyJ1IjoicmVwcmVzZW50YXJlIiwiYSI6ImNtaHdycWxxbjAycjYyanEzaTN1emtjbmUifQ.q26LsAXIbvhQiWiKhGt0Wg",
+
+  NARRATIVES_MAPBOX_STYLE:
+    "mapbox://styles/representare/cmk7dqln8002n01s613weebum",
+
 
 
   DATE_FMT: "M/D/YYYY",

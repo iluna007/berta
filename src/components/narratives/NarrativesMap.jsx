@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "/node_modules/mapbox-gl/dist/mapbox-gl.css";
+import config from "../../../config";
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoicmVwcmVzZW50YXJlIiwiYSI6ImNtaHdycWxxbjAycjYyanEzaTN1emtjbmUifQ.q26LsAXIbvhQiWiKhGt0Wg";
+mapboxgl.accessToken = config.NARRATIVES_MAPBOX_TOKEN;
 
 export default function NarrativesMap({
   activeChapterId,
@@ -47,7 +47,7 @@ export default function NarrativesMap({
 
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/representare/cmk7dqln8002n01s613weebum",
+      style: config.NARRATIVES_MAPBOX_STYLE,
       center: [-86.5, 14.8],
       zoom: 6,
       pitch: 60,
