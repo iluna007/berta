@@ -13,12 +13,12 @@ const config = {
   // Producción: restringir en Mapbox a https://gieihonduras.oas.org/*
   MAPBOX_TOKEN:
     import.meta.env.VITE_MAPBOX_TOKEN ||
-    "pk.eyJ1IjoiaWtlcmx1bmEiLCJhIjoiY203NjMwZHptMHAzaDJrcXlrbnNuMHJlZiJ9.hkoRlM6gQ-BflcGjpI40GA",
+    "pk.eyJ1IjoiaWtlcmx1bmEiLCJhIjoiY21xZ3htamJiMDBqaTJzcHc3aGMxcWp2MCJ9.SbDPWSsXIsnDyYSYf6flpw",
 
   // Mapa de narrativas (cuenta representare). Override en dev: VITE_NARRATIVES_MAPBOX_TOKEN
   NARRATIVES_MAPBOX_TOKEN:
     import.meta.env.VITE_NARRATIVES_MAPBOX_TOKEN ||
-    "pk.eyJ1IjoicmVwcmVzZW50YXJlIiwiYSI6ImNtaHdycWxxbjAycjYyanEzaTN1emtjbmUifQ.q26LsAXIbvhQiWiKhGt0Wg",
+    "pk.eyJ1IjoicmVwcmVzZW50YXJlIiwiYSI6ImNtcWd4cThoODA1aXQydG9uMTBqOHcyNWkifQ.OGCnSDliGP9CkgN2ejsO2A",
 
   NARRATIVES_MAPBOX_STYLE:
     "mapbox://styles/representare/cmk7dqln8002n01s613weebum",
