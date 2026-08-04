@@ -8,11 +8,5 @@
 # Sitio: https://bertacaceresrepresentare.netlify.app/
 # SPA routing: public/_redirects se copia a dist/ durante el build de Vite.
 #
-# Mapbox (obligatorio para que carguen los mapas):
-# En cada cuenta (ikerluna + representare), agregar en Account > Access tokens:
-#   https://bertacaceresrepresentare.netlify.app
-#   https://bertacaceresrepresentare.netlify.app/*
-# Opcional para deploy previews:
-#   https://*.netlify.app/*
-#
-# No definir VITE_MAPBOX_TOKEN en Netlify salvo tokens distintos a config.js.
+# Tokens Mapbox: Vite lee .env.production en el build (VITE_MAPBOX_TOKEN, etc.).
+# Alternativa: definir las mismas variables en Netlify → Environment variables.
