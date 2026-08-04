@@ -5,6 +5,14 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Sitio: https://bertacaceresrepresentare.netlify.app/
 # SPA routing: public/_redirects se copia a dist/ durante el build de Vite.
-# Tokens Mapbox: usar los de config.js (producción). No definir VITE_* en Netlify
-# salvo que sean tokens restringidos a https://gieihonduras.oas.org/*
+#
+# Mapbox (obligatorio para que carguen los mapas):
+# En cada cuenta (ikerluna + representare), agregar en Account > Access tokens:
+#   https://bertacaceresrepresentare.netlify.app
+#   https://bertacaceresrepresentare.netlify.app/*
+# Opcional para deploy previews:
+#   https://*.netlify.app/*
+#
+# No definir VITE_MAPBOX_TOKEN en Netlify salvo tokens distintos a config.js.

@@ -9,13 +9,13 @@ const config = {
   ASSOCIATIONS_EXT: "/data/associations.json",
   NARRATIVE_EXT: "narratives/narratives.json",
   API_DATA: "",
-  // Mapa principal (cuenta ikerluna). Override en dev: VITE_MAPBOX_TOKEN en .env.local
-  // Producción: restringir en Mapbox a https://gieihonduras.oas.org/*
+  // Mapa principal (cuenta ikerluna). Override: VITE_MAPBOX_TOKEN (.env.local o Netlify)
+  // Restricción Mapbox requerida: https://bertacaceresrepresentare.netlify.app/*
   MAPBOX_TOKEN:
     import.meta.env.VITE_MAPBOX_TOKEN ||
     "pk.eyJ1IjoiaWtlcmx1bmEiLCJhIjoiY21xZ3htamJiMDBqaTJzcHc3aGMxcWp2MCJ9.SbDPWSsXIsnDyYSYf6flpw",
 
-  // Mapa de narrativas (cuenta representare). Override en dev: VITE_NARRATIVES_MAPBOX_TOKEN
+  // Mapa de narrativas (cuenta representare). Override: VITE_NARRATIVES_MAPBOX_TOKEN
   NARRATIVES_MAPBOX_TOKEN:
     import.meta.env.VITE_NARRATIVES_MAPBOX_TOKEN ||
     "pk.eyJ1IjoicmVwcmVzZW50YXJlIiwiYSI6ImNtcWd4cThoODA1aXQydG9uMTBqOHcyNWkifQ.OGCnSDliGP9CkgN2ejsO2A",
