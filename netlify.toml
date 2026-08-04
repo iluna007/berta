@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# SPA routing: public/_redirects se copia a dist/ durante el build de Vite.
+# Tokens Mapbox: usar los de config.js (producción). No definir VITE_* en Netlify
+# salvo que sean tokens restringidos a https://gieihonduras.oas.org/*
